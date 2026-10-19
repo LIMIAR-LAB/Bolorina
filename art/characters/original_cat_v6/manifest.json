@@ -1,0 +1,113 @@
+{
+  "original": true,
+  "directional": true,
+  "source": "PixelLab original generation for Ilha das Cinzas",
+  "character_id": "837a8345-40f1-472c-8ddc-6bfaacdc9105",
+  "directions": [
+    "south",
+    "south-west",
+    "west",
+    "north-west",
+    "north",
+    "north-east",
+    "east",
+    "south-east"
+  ],
+  "world_height": 1.72,
+  "anims": {
+    "idle_south": {
+      "files": [
+        "idle/south/000.png",
+        "idle/south/001.png",
+        "idle/south/002.png",
+        "idle/south/003.png",
+        "idle/south/004.png",
+        "idle/south/005.png",
+        "idle/south/006.png",
+        "idle/south/007.png"
+      ],
+      "fps": 6,
+      "loop": true,
+      "bounds": [
+        17,
+        10,
+        33,
+        34
+      ],
+      "size": [
+        48,
+        48
+      ],
+      "feet": [
+        34,
+        34,
+        34,
+        34,
+        34,
+        34,
+        34,
+        34
+      ]
+    },
+    "idle_west": {
+      "files": [
+        "rotations/west.png"
+      ],
+      "fps": 6,
+      "loop": true,
+      "bounds": [
+        11,
+        10,
+        43,
+        35
+      ],
+      "size": [
+        48,
+        48
+      ],
+      "feet": [
+        35
+      ]
+    },
+    "idle_east": {
+      "files": [
+        "rotations/east.png"
+      ],
+      "fps": 6,
+      "loop": true,
+      "bounds": [
+        5,
+        10,
+        37,
+        35
+      ],
+      "size": [
+        48,
+        48
+      ],
+      "feet": [
+        35
+      ]
+    },
+    "idle_north": {
+      "files": [
+        "rotations/north.png"
+      ],
+      "fps": 6,
+      "loop": true,
+      "bounds": [
+        17,
+        6,
+        30,
+        38
+      ],
+      "size": [
+        48,
+        48
+      ],
+      "feet": [
+        38
+      ]
+    }
+  }
+}

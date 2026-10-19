@@ -1,0 +1,746 @@
+{
+ "original": true,
+ "directional": true,
+ "experimental": true,
+ "source": "PixelLab (assinatura do usuario), 19/10/2026: edit-image-pixen + create-character-v3 (referencia) + template walking + pixflux (asas)",
+ "derived_from": "original_apprentice (V4) rotations/south.png como imagem de entrada da edicao",
+ "character_id": "39d5ea40-d5f8-405f-8ce4-2097c4db6634",
+ "directions": [
+  "south",
+  "south-west",
+  "west",
+  "north-west",
+  "north",
+  "north-east",
+  "east",
+  "south-east"
+ ],
+ "world_height": 1.28,
+ "min_normalization_height": 24,
+ "anims": {
+  "idle_south": {
+   "files": [
+    "rotations/south.png"
+   ],
+   "fps": 6,
+   "loop": true,
+   "bounds": [
+    10,
+    2,
+    39,
+    46
+   ],
+   "size": [
+    48,
+    48
+   ],
+   "feet": [
+    46
+   ]
+  },
+  "walk_south": {
+   "files": [
+    "walk/south/000.png",
+    "walk/south/001.png",
+    "walk/south/002.png",
+    "walk/south/003.png",
+    "walk/south/004.png",
+    "walk/south/005.png"
+   ],
+   "fps": 9,
+   "loop": true,
+   "bounds": [
+    11,
+    1,
+    37,
+    40
+   ],
+   "size": [
+    48,
+    48
+   ],
+   "feet": [
+    40,
+    40,
+    40,
+    40,
+    40,
+    40
+   ]
+  },
+  "run_south": {
+   "files": [
+    "walk/south/000.png",
+    "walk/south/001.png",
+    "walk/south/002.png",
+    "walk/south/003.png",
+    "walk/south/004.png",
+    "walk/south/005.png"
+   ],
+   "fps": 14,
+   "loop": true,
+   "bounds": [
+    11,
+    1,
+    37,
+    40
+   ],
+   "size": [
+    48,
+    48
+   ],
+   "feet": [
+    40,
+    40,
+    40,
+    40,
+    40,
+    40
+   ]
+  },
+  "idle_south-west": {
+   "files": [
+    "rotations/south-west.png"
+   ],
+   "fps": 6,
+   "loop": true,
+   "bounds": [
+    9,
+    2,
+    39,
+    46
+   ],
+   "size": [
+    48,
+    48
+   ],
+   "feet": [
+    46
+   ]
+  },
+  "walk_south-west": {
+   "files": [
+    "walk/south-west/000.png",
+    "walk/south-west/001.png",
+    "walk/south-west/002.png",
+    "walk/south-west/003.png",
+    "walk/south-west/004.png",
+    "walk/south-west/005.png"
+   ],
+   "fps": 9,
+   "loop": true,
+   "bounds": [
+    12,
+    1,
+    38,
+    41
+   ],
+   "size": [
+    48,
+    48
+   ],
+   "feet": [
+    40,
+    41,
+    41,
+    40,
+    40,
+    40
+   ]
+  },
+  "run_south-west": {
+   "files": [
+    "walk/south-west/000.png",
+    "walk/south-west/001.png",
+    "walk/south-west/002.png",
+    "walk/south-west/003.png",
+    "walk/south-west/004.png",
+    "walk/south-west/005.png"
+   ],
+   "fps": 14,
+   "loop": true,
+   "bounds": [
+    12,
+    1,
+    38,
+    41
+   ],
+   "size": [
+    48,
+    48
+   ],
+   "feet": [
+    40,
+    41,
+    41,
+    40,
+    40,
+    40
+   ]
+  },
+  "idle_west": {
+   "files": [
+    "rotations/west.png"
+   ],
+   "fps": 6,
+   "loop": true,
+   "bounds": [
+    9,
+    2,
+    39,
+    46
+   ],
+   "size": [
+    48,
+    48
+   ],
+   "feet": [
+    46
+   ]
+  },
+  "walk_west": {
+   "files": [
+    "walk/west/000.png",
+    "walk/west/001.png",
+    "walk/west/002.png",
+    "walk/west/003.png",
+    "walk/west/004.png",
+    "walk/west/005.png"
+   ],
+   "fps": 9,
+   "loop": true,
+   "bounds": [
+    13,
+    2,
+    37,
+    42
+   ],
+   "size": [
+    48,
+    48
+   ],
+   "feet": [
+    42,
+    41,
+    42,
+    42,
+    42,
+    42
+   ]
+  },
+  "run_west": {
+   "files": [
+    "walk/west/000.png",
+    "walk/west/001.png",
+    "walk/west/002.png",
+    "walk/west/003.png",
+    "walk/west/004.png",
+    "walk/west/005.png"
+   ],
+   "fps": 14,
+   "loop": true,
+   "bounds": [
+    13,
+    2,
+    37,
+    42
+   ],
+   "size": [
+    48,
+    48
+   ],
+   "feet": [
+    42,
+    41,
+    42,
+    42,
+    42,
+    42
+   ]
+  },
+  "idle_north-west": {
+   "files": [
+    "rotations/north-west.png"
+   ],
+   "fps": 6,
+   "loop": true,
+   "bounds": [
+    11,
+    2,
+    39,
+    46
+   ],
+   "size": [
+    48,
+    48
+   ],
+   "feet": [
+    46
+   ]
+  },
+  "walk_north-west": {
+   "files": [
+    "walk/north-west/000.png",
+    "walk/north-west/001.png",
+    "walk/north-west/002.png",
+    "walk/north-west/003.png",
+    "walk/north-west/004.png",
+    "walk/north-west/005.png"
+   ],
+   "fps": 9,
+   "loop": true,
+   "bounds": [
+    12,
+    1,
+    36,
+    42
+   ],
+   "size": [
+    48,
+    48
+   ],
+   "feet": [
+    41,
+    41,
+    40,
+    42,
+    42,
+    42
+   ]
+  },
+  "run_north-west": {
+   "files": [
+    "walk/north-west/000.png",
+    "walk/north-west/001.png",
+    "walk/north-west/002.png",
+    "walk/north-west/003.png",
+    "walk/north-west/004.png",
+    "walk/north-west/005.png"
+   ],
+   "fps": 14,
+   "loop": true,
+   "bounds": [
+    12,
+    1,
+    36,
+    42
+   ],
+   "size": [
+    48,
+    48
+   ],
+   "feet": [
+    41,
+    41,
+    40,
+    42,
+    42,
+    42
+   ]
+  },
+  "idle_north": {
+   "files": [
+    "rotations/north.png"
+   ],
+   "fps": 6,
+   "loop": true,
+   "bounds": [
+    9,
+    2,
+    38,
+    46
+   ],
+   "size": [
+    48,
+    48
+   ],
+   "feet": [
+    46
+   ]
+  },
+  "walk_north": {
+   "files": [
+    "walk/north/000.png",
+    "walk/north/001.png",
+    "walk/north/002.png",
+    "walk/north/003.png",
+    "walk/north/004.png",
+    "walk/north/005.png"
+   ],
+   "fps": 9,
+   "loop": true,
+   "bounds": [
+    11,
+    1,
+    38,
+    42
+   ],
+   "size": [
+    48,
+    48
+   ],
+   "feet": [
+    42,
+    42,
+    42,
+    41,
+    42,
+    42
+   ]
+  },
+  "run_north": {
+   "files": [
+    "walk/north/000.png",
+    "walk/north/001.png",
+    "walk/north/002.png",
+    "walk/north/003.png",
+    "walk/north/004.png",
+    "walk/north/005.png"
+   ],
+   "fps": 14,
+   "loop": true,
+   "bounds": [
+    11,
+    1,
+    38,
+    42
+   ],
+   "size": [
+    48,
+    48
+   ],
+   "feet": [
+    42,
+    42,
+    42,
+    41,
+    42,
+    42
+   ]
+  },
+  "idle_north-east": {
+   "files": [
+    "rotations/north-east.png"
+   ],
+   "fps": 6,
+   "loop": true,
+   "bounds": [
+    9,
+    2,
+    37,
+    46
+   ],
+   "size": [
+    48,
+    48
+   ],
+   "feet": [
+    46
+   ]
+  },
+  "walk_north-east": {
+   "files": [
+    "walk/north-east/000.png",
+    "walk/north-east/001.png",
+    "walk/north-east/002.png",
+    "walk/north-east/003.png",
+    "walk/north-east/004.png",
+    "walk/north-east/005.png"
+   ],
+   "fps": 9,
+   "loop": true,
+   "bounds": [
+    12,
+    1,
+    36,
+    42
+   ],
+   "size": [
+    48,
+    48
+   ],
+   "feet": [
+    41,
+    42,
+    42,
+    40,
+    40,
+    40
+   ]
+  },
+  "run_north-east": {
+   "files": [
+    "walk/north-east/000.png",
+    "walk/north-east/001.png",
+    "walk/north-east/002.png",
+    "walk/north-east/003.png",
+    "walk/north-east/004.png",
+    "walk/north-east/005.png"
+   ],
+   "fps": 14,
+   "loop": true,
+   "bounds": [
+    12,
+    1,
+    36,
+    42
+   ],
+   "size": [
+    48,
+    48
+   ],
+   "feet": [
+    41,
+    42,
+    42,
+    40,
+    40,
+    40
+   ]
+  },
+  "idle_east": {
+   "files": [
+    "rotations/east.png"
+   ],
+   "fps": 6,
+   "loop": true,
+   "bounds": [
+    9,
+    2,
+    39,
+    46
+   ],
+   "size": [
+    48,
+    48
+   ],
+   "feet": [
+    46
+   ]
+  },
+  "walk_east": {
+   "files": [
+    "walk/east/000.png",
+    "walk/east/001.png",
+    "walk/east/002.png",
+    "walk/east/003.png",
+    "walk/east/004.png",
+    "walk/east/005.png"
+   ],
+   "fps": 9,
+   "loop": true,
+   "bounds": [
+    11,
+    2,
+    36,
+    42
+   ],
+   "size": [
+    48,
+    48
+   ],
+   "feet": [
+    42,
+    42,
+    42,
+    41,
+    41,
+    41
+   ]
+  },
+  "run_east": {
+   "files": [
+    "walk/east/000.png",
+    "walk/east/001.png",
+    "walk/east/002.png",
+    "walk/east/003.png",
+    "walk/east/004.png",
+    "walk/east/005.png"
+   ],
+   "fps": 14,
+   "loop": true,
+   "bounds": [
+    11,
+    2,
+    36,
+    42
+   ],
+   "size": [
+    48,
+    48
+   ],
+   "feet": [
+    42,
+    42,
+    42,
+    41,
+    41,
+    41
+   ]
+  },
+  "idle_south-east": {
+   "files": [
+    "rotations/south-east.png"
+   ],
+   "fps": 6,
+   "loop": true,
+   "bounds": [
+    9,
+    2,
+    39,
+    46
+   ],
+   "size": [
+    48,
+    48
+   ],
+   "feet": [
+    46
+   ]
+  },
+  "walk_south-east": {
+   "files": [
+    "walk/south-east/000.png",
+    "walk/south-east/001.png",
+    "walk/south-east/002.png",
+    "walk/south-east/003.png",
+    "walk/south-east/004.png",
+    "walk/south-east/005.png"
+   ],
+   "fps": 9,
+   "loop": true,
+   "bounds": [
+    9,
+    0,
+    36,
+    42
+   ],
+   "size": [
+    48,
+    48
+   ],
+   "feet": [
+    40,
+    40,
+    40,
+    40,
+    42,
+    40
+   ]
+  },
+  "run_south-east": {
+   "files": [
+    "walk/south-east/000.png",
+    "walk/south-east/001.png",
+    "walk/south-east/002.png",
+    "walk/south-east/003.png",
+    "walk/south-east/004.png",
+    "walk/south-east/005.png"
+   ],
+   "fps": 14,
+   "loop": true,
+   "bounds": [
+    9,
+    0,
+    36,
+    42
+   ],
+   "size": [
+    48,
+    48
+   ],
+   "feet": [
+    40,
+    40,
+    40,
+    40,
+    42,
+    40
+   ]
+  }
+ },
+ "wings": {
+  "asa_esquerda": {
+   "file": "asa_esquerda.png",
+   "size": [
+    26,
+    62
+   ],
+   "root": [
+    25,
+    19
+   ]
+  },
+  "asa_direita": {
+   "file": "asa_direita.png",
+   "size": [
+    26,
+    62
+   ],
+   "root": [
+    0,
+    19
+   ]
+  }
+ },
+ "sha256": {
+  "asa_direita.png": "370ea81ef33f40e24c4c33c25592aa8ab2ba65ed5f4b4832dc17964947d9e315",
+  "asa_esquerda.png": "13d8e912bdff31b35c9fd24a2e3ebb62fb80b36656a690f72794963e4d7b336b",
+  "rotations/east.png": "b75134d18ea1cc46239b779c39bfcc4cb0813a45a9082676fde08ee009fbd5eb",
+  "rotations/north-east.png": "fada16dd68c1171a8d6f800fd8218c19dfe7268191b617a79dc27e2bdd342a9a",
+  "rotations/north-west.png": "51931774550cbd40d211ddcb3689bc96189b8da8d2e05f31a3f32618c6f3daab",
+  "rotations/north.png": "bda179f424a8027af696f055b018d58c6daca7c396396526e5d873c8150ad9fa",
+  "rotations/south-east.png": "59b5e1e2e758c1b4169654b9739b9f66960b00d42fbb80365bf95d006e04b1f3",
+  "rotations/south-west.png": "13d687a5e55b0d9abb52ae701e3200504069f50a0d33d6c6ef2330fe3955c320",
+  "rotations/south.png": "2f4ba3f663b5970b2fe34bda6dc2fb2a25ece7c4e86c2efe2990aba4c8b69fc9",
+  "rotations/west.png": "7f332b3ca3743a09cd95c21bff48c551f734d02eeb54651c9a868ce5261aee3c",
+  "walk/east/000.png": "54ee901dc6a561ee142555e1faf23a60c83a35a5eab20002a2d83d7afefb14f3",
+  "walk/east/001.png": "ee0a0db2e629323948319d4e555d7f4a26220361d2f5a983a0b581bddc99807a",
+  "walk/east/002.png": "a36c0bade637ca74f4109689b8c3b117a30364ab64d426ccf54000d172ee3fc7",
+  "walk/east/003.png": "ac03f65454ff8bd38ea6423daa3cdae28e0b04e0dbcf9da371bc066ff2c067f1",
+  "walk/east/004.png": "68af7a734d9601b9aaaa5e38faa1aead83fd928f7dedc463a6f10ada11218660",
+  "walk/east/005.png": "c8d08f9054be9af9b407f928fc2b2775d74cfdf5ba4690276b350138717699b6",
+  "walk/north-east/000.png": "52b03c025794898a6d82bb8a6777499c84c783f8446bb6d2b5c5a0a31538eb79",
+  "walk/north-east/001.png": "e7a9c92ef84d67b67961563e404dce2c852fc0cf87807eeff63fab8a03bed75c",
+  "walk/north-east/002.png": "2bb424788d0b29a3523a3c949bfa6310354ba3d2bd1716105d0964d2eb2868e4",
+  "walk/north-east/003.png": "7ea544bea73f857711c491a6191ec7c99131ce14241aa16bae85a4d9129e889e",
+  "walk/north-east/004.png": "742c199f9c0b5575a261e18336a4bab5a86b624036db230ddd1cb5c7671cdec8",
+  "walk/north-east/005.png": "869795ab34b2706fd3e7d4b943c20215a8e20c2c49c1f7ba24d06076b2772aa7",
+  "walk/north-west/000.png": "6a838369328c44edb6a283aaa374787dad850a5290698edb011f7c4ece6d195b",
+  "walk/north-west/001.png": "4fbe4f2857ec04e837651d37173ee7453572920ebc498f290541174b220732cb",
+  "walk/north-west/002.png": "d150b961955bb3657538d3bb670935ec731c39671f7df902eb3b6848dc53a80b",
+  "walk/north-west/003.png": "3ae5851dffcec2c51783d466f54f0fe9dc10f80fa5f2f5ec4d04c9dbe9204002",
+  "walk/north-west/004.png": "702293715e08d0108d8887f7c3f89c2eef48e09cca1294044d90c6f915d6d62d",
+  "walk/north-west/005.png": "726aab8af46c978fc5153938d840f031c2dd8d2d811bcc2d84ea7b4ca832f38a",
+  "walk/north/000.png": "8521538da1ac854ca12d78100a49e2f662021c8e5ca60bd0d897d6ccd1f19c9c",
+  "walk/north/001.png": "b0e5176fe918186422faf6aa11bf59328e1abd3ccb6b34b63d0b58de4744d7e9",
+  "walk/north/002.png": "63c59c1bcdc32a298dcbc6bcc90dcb058d00e6c670eeeea50051d7031bb5acc1",
+  "walk/north/003.png": "1104f35e42497cb43a5a64a5fcf26cc9f9debb828dfcb78e21c2b61bc6e97be5",
+  "walk/north/004.png": "6ab19f00ddcd24c37f7bcfccf665514883c10cc4b54b3201f08c0d8e62e8ada6",
+  "walk/north/005.png": "2094c1345732b61837f69d1e107da4faf32f4c1d7a080dc7af9baaf8653d03d0",
+  "walk/south-east/000.png": "ce84615d20735ccf03faea944a2eecdf4fd4c0980bccf5201ab12b7905a64b1f",
+  "walk/south-east/001.png": "5c13f576fc5fa9928fe977ad132d0227a4076a539bd84e280040aa6e7d9d4f0b",
+  "walk/south-east/002.png": "e66c8dbc98020b9852b79ed3e941a6d30f819547b30bb81ce09a4c783d5b0ffa",
+  "walk/south-east/003.png": "da41a2e7d29906a140d46a63d68a239f4e112c7803e3a766524e1911bc1d3ef4",
+  "walk/south-east/004.png": "b97f9dc63b78ccfab053b461f0f13cc16733186763283c552349ea2671a3ac68",
+  "walk/south-east/005.png": "0c0acc52584322448c985a8633787c30baad6ecffd2ead0408580d76f00771fe",
+  "walk/south-west/000.png": "fb5141b3e356343eced2c30a3968568c5772d1bf6f335249626468feb6674ca7",
+  "walk/south-west/001.png": "c9303d66eabdfc78a0b028cc43ef9f5711ee33840519f2255d346c0ea278c086",
+  "walk/south-west/002.png": "1097215579798b164913ee8c7620a65b197a7035e90342934501998ffd6e5c37",
+  "walk/south-west/003.png": "88766251ad7f8b424fa511c2ff8d8d1d8ed47491305b0a81f82a68d4adea67ee",
+  "walk/south-west/004.png": "940a14704d19fc91768824dfea3494ca88dc6f37f020380bb02648292db7ec3e",
+  "walk/south-west/005.png": "53b743bbd06694c812fa7050c8c2b436cebda0aaf1fa31d5d20c88cf6a5b4f7b",
+  "walk/south/000.png": "57ea57ab4a1ba5a1aa2c13698a0390cdc0d55867e7d7b13ce84b15403ef42a51",
+  "walk/south/001.png": "178773d0e6f5e664fb5a6084db82d0a55fdf15f88948abae926039f76ae34ea4",
+  "walk/south/002.png": "da35ee3c847863f422b690f24f6d13ee5b1b7f42da363febb9e0221ff58ae72c",
+  "walk/south/003.png": "8eee2443eaa651698cdc6ae8012c0f7e68666331ecf139ad3af10e25a17570c6",
+  "walk/south/004.png": "c1926495a4668152cbf22c456af90804acc4740debd2dd74fe2e5a79ece60e81",
+  "walk/south/005.png": "bbd5f2967f1b6452a34a1946129082b36c6fa3da40e9796343d6637b5deedaeb",
+  "walk/west/000.png": "b8000e927a26c0290971fda9d691ccb2e1bd41e7ef29f96f08da2da1b81f1c53",
+  "walk/west/001.png": "9b07e8ea534c665ee8b5c1824cd8d85c9cdbabe7664a3cd0d36b113cc3ea9e7e",
+  "walk/west/002.png": "e49124f29710037aba2e84dc99fd740f9366e70fdc54d0930d008db5c85761f8",
+  "walk/west/003.png": "cedeb0508ba45acee2012e4290640b2565e54a9583c72db77c1c64fcb01be78d",
+  "walk/west/004.png": "2953fe755e51e7e568c1392b523ffdaab42ebb837490c8ae84639207ae58dc38",
+  "walk/west/005.png": "c0f797bd794096eca8671ebdfd156a00b0139ddc9052021960eacf2fcb1a60c7"
+ }
+}

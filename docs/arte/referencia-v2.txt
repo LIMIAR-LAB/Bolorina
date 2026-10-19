@@ -1,0 +1,5 @@
+Referencia visual v2: construcao dinamica modular
+Gerada com ferramenta integrada image_gen em 18/10/2026.
+Resumo do prompt: imagem de gameplay 2.5D com camera elevada, terreno edificavel, casas de pedra/madeira com pecas modulares repetiveis, oficina, casa em construcao, horta expansivel, vegetacao nas bordas, ruinas fixas distantes, iluminacao quente sobre atmosfera fria e pequenos personagens em sprites 2D pixelados.
+Estado: conceito para validacao, nao captura da engine nem garantia de qualidade/desempenho atingidos.
+O prototipo nao foi alterado nesta etapa de referencia visual.

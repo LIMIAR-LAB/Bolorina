@@ -1,0 +1,56 @@
+VILAREJO DE REFERENCIA — LABORATORIO VISUAL
+18/10/2026
+
+Abrir Ver-vilarejo.ps1 ou executar reference_village.tscn no Godot 4.7.2.
+O jogo principal continua em main.tscn. A cena de referencia tem ilha fixa,
+inicia sem ler o save e nao grava progresso. Reutiliza movimento, horta,
+arvore cortavel, NPC e transicao de iluminacao do prototipo.
+
+CONTROLES
+WASD: andar. Shift: correr. Roda do mouse: aproximar/afastar.
+F6: comparar sprites com luz 3D e sprites sem luz.
+F7: mostrar/ocultar o novo lote de flores nas bordas.
+L: transicao continua ate a noite (35 segundos); retorna a tarde em 8 segundos.
+H: esconder interface. E/R/F: interagir/regar/cortar. C: companhia explicita.
+F5 nao grava; F8 nao muda a ilha neste laboratorio.
+
+IMPLEMENTACAO
+Sprites originais de oito direcoes com material nativo iluminado, pixels
+preservados, recorte de transparencia e teste de profundidade. Recebem luzes
+do mundo e uma luz de preenchimento exclusiva dos atores, para leitura nas
+sombras. Nao utilizam emissao artificial. Sem normal maps pintados por quadro:
+a resposta de luz ainda e a de um plano voltado para a camera, nao um corpo 3D.
+Sombras de contato estabilizam os pes. O sprite nao projeta sombra de silhueta.
+
+Vegetacao adicional em MultiMesh, vento no shader, exclusoes nos lotes e vias.
+Arvores outonais usam o mesh autoral ja existente, com menor retroiluminacao.
+Paleta/material de casas compartilhado, normais menos fortes, estandartes
+vermelhos animados e menor volume do tapete de vegetacao existente.
+
+ESTADO DE QUALIDADE
+Primeira cena jogavel para comparacoes, ainda abaixo do acabamento da imagem
+alvo. A arquitetura continua simples, o canal ainda e retilineo, os materiais
+misturam texturas existentes e formas basicas. Arvores e densidade precisam
+de nova passada artistica. Nao declarar paridade com a referencia.
+
+CRITERIOS PARA VALIDAR E TRANSFERIR AS OUTRAS REGIOES
+1. Personagem legivel ao atravessar sol, sombra e lanternas, em oito direcoes.
+2. Pe firme e oclusao correta, sem atravessar copas/casas visualmente.
+3. Caminhos e acesso a horta livres apesar da densidade vegetal.
+4. Luz quente localizada, sombras frias e profundidade entre patamares.
+5. Vegetacao em grupos com contraste de alturas, sem repeticao uniforme.
+6. Medir tempos de quadro em percursos sustentados antes de fixar um orcamento.
+
+Reutilizar depois: material de personagem, paleta de luz, escala dos props,
+regras de exclusao vegetal e configuracao da camera. Florestas podem aumentar
+copas; cidades privilegiam ruas/fachadas; fazendas precisam de corredores;
+dungeons trocam o sol por luzes locais. Validar primeiro este vilarejo.
+
+VALIDACAO
+tests/reference_village.gd verifica iluminacao dos dois personagens, material
+nativo, isolamento do save, instancias de flores, movimento fisico, orientacao
+fixa, ausencia de tinta noturna duplicada e comparacao F6.
+Capturas reais: vilarejo-referencia-dia.png e vilarejo-referencia-noite.png.
+O video comprime apenas a transicao solar para 10 segundos; caminhada e
+animacoes sao as do jogo. Nao e benchmark de desempenho.
+Aviso conhecido ao encerrar: 7 Texture RIDs, tambem presente na V4.

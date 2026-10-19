@@ -1,0 +1,37 @@
+{
+ "inicio_sala": {
+  "cpu_ms": 1.22,
+  "draw_calls": 444,
+  "gpu_ms": 16.08,
+  "inimigos_medio": 2.0,
+  "pior_quadro_ms": 17.59,
+  "process_ms": 34.93
+ },
+ "jogador": {
+  "dano_recebido": 0,
+  "dashes": 0,
+  "especiais": 0,
+  "esquivados": 0,
+  "golpes": 25,
+  "investidas": 0
+ },
+ "luta_piloto_automatico": {
+  "cpu_ms": 1.03,
+  "draw_calls": 407,
+  "gpu_ms": 15.25,
+  "inimigos_medio": 1.9,
+  "pior_quadro_ms": 17.07,
+  "process_ms": 18.84
+ },
+ "resolucao": "1600x900",
+ "stats": {
+  "curas": 1,
+  "golpes_acertados": 14,
+  "hitstops": 17,
+  "inimigos_mortos": 3,
+  "numeros": 15,
+  "props_quebrados": 5,
+  "salas_limpas": 0,
+  "tremores": 17
+ }
+}

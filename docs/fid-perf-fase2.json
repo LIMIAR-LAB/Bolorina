@@ -1,0 +1,16 @@
+{
+ "efeitos_desligados": {
+  "cpu_ms": 3.01,
+  "draw_calls": 1602,
+  "gpu_ms": 3.87,
+  "process_ms": 12.45
+ },
+ "efeitos_ligados": {
+  "cpu_ms": 3.07,
+  "draw_calls": 1602,
+  "gpu_ms": 3.82,
+  "process_ms": 13.39
+ },
+ "fase": 2.0,
+ "modo": "v7"
+}

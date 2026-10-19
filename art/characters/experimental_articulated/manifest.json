@@ -1,0 +1,210 @@
+{
+  "original": true,
+  "character": "experimental_articulated",
+  "created": "2026-10-19",
+  "method": "Pixel art autoral desenhada por regras em Python/Pillow (source/gerar_pecas.py). Nenhum recorte de sprites existentes; paleta amostrada de original_apprentice.",
+  "paid_services": "nenhum",
+  "texel_world_size": 0.02666666666666667,
+  "parts": {
+    "head_south": {
+      "file": "head_south.png",
+      "size": [
+        30,
+        27
+      ],
+      "sha256": "de6a301454ef448a289add26e362d2cc86cc50a48b30181451e78ed48fe9d459"
+    },
+    "torso_south": {
+      "file": "torso_south.png",
+      "size": [
+        18,
+        16
+      ],
+      "sha256": "4a0655b3b36c2cf38a2e137452cb56ff737840cf0b44ccfea3d770fa78dd00e0"
+    },
+    "head_south-east": {
+      "file": "head_south-east.png",
+      "size": [
+        30,
+        27
+      ],
+      "sha256": "f36c07c04990dab4475bb72a250d3c6468e6b54bf46ee6d0c1da52512e7b73ef"
+    },
+    "torso_south-east": {
+      "file": "torso_south-east.png",
+      "size": [
+        18,
+        16
+      ],
+      "sha256": "2d9bd9b2304334f1a3bf8966217fb8c2ef01f72c9cb50a87708a79415ef34180"
+    },
+    "head_east": {
+      "file": "head_east.png",
+      "size": [
+        30,
+        27
+      ],
+      "sha256": "5913e2539360d731e7ffba370a7d70ac2b793115440f4b5c1e2de9aba9d8e5dc"
+    },
+    "torso_east": {
+      "file": "torso_east.png",
+      "size": [
+        18,
+        16
+      ],
+      "sha256": "acce5014a75566ff942e2397650746f301245b663f19a1cff42878d8f9926d1b"
+    },
+    "head_north-east": {
+      "file": "head_north-east.png",
+      "size": [
+        30,
+        27
+      ],
+      "sha256": "bf6de1d7532b8b6b4cc08c55416b7da3af936e7aa6a8c774e10bcb4f96ac65fe"
+    },
+    "torso_north-east": {
+      "file": "torso_north-east.png",
+      "size": [
+        18,
+        16
+      ],
+      "sha256": "514c004d9ced80c09474c6d5bfbbf1b78edfb80a6db3e26bb5e41fea6b4b2fe1"
+    },
+    "head_north": {
+      "file": "head_north.png",
+      "size": [
+        30,
+        27
+      ],
+      "sha256": "21a416e8373d64a71771678e8b1e75ed6dbf09508c5e288d2e4b5fb3a8ec94a6"
+    },
+    "torso_north": {
+      "file": "torso_north.png",
+      "size": [
+        18,
+        16
+      ],
+      "sha256": "bbfc39503a6fb1a2ac432c149296471bd59ffeb1c9afb49b86844ed6d2184e6d"
+    },
+    "upper_arm": {
+      "file": "upper_arm.png",
+      "size": [
+        7,
+        8
+      ],
+      "sha256": "7fbe1cfe3ad8261ec1018be9d86a71cdef0fc0136164d71ff67e3b2d675e570d"
+    },
+    "upper_arm_short": {
+      "file": "upper_arm_short.png",
+      "size": [
+        7,
+        6
+      ],
+      "sha256": "6293a3d7ba7e897b49130192c326a00a48ccc212867c5dda6774769838dc9a20"
+    },
+    "lower_arm": {
+      "file": "lower_arm.png",
+      "size": [
+        7,
+        7
+      ],
+      "sha256": "9904d8b3b125b6748b4a33665edad37d1cfb393699be775e0cc0eda16d55e15f"
+    },
+    "lower_arm_short": {
+      "file": "lower_arm_short.png",
+      "size": [
+        7,
+        5
+      ],
+      "sha256": "69a854fdedad05ba514a8c2aa9c002a67e6ff49c7d316f44a6008ffb6f8cba87"
+    },
+    "hand": {
+      "file": "hand.png",
+      "size": [
+        6,
+        6
+      ],
+      "sha256": "dec6991f4abf0871b02de139ddef81fd36b3564227d5b0693a36758f38bb657f"
+    },
+    "hand_grip": {
+      "file": "hand_grip.png",
+      "size": [
+        6,
+        6
+      ],
+      "sha256": "4d9b9dd002df7ddeadd23f869aebb76a7979ecc21c376383cb7c57f7ad48a872"
+    },
+    "cap": {
+      "file": "cap.png",
+      "size": [
+        7,
+        6
+      ],
+      "sha256": "9a83fa58b5d0929577e6396c12255c64d98fb867d334217a4f62e5bfbba812b0"
+    },
+    "thigh": {
+      "file": "thigh.png",
+      "size": [
+        7,
+        6
+      ],
+      "sha256": "ba0bf69de14567b8b89eb8d49ed3b9d224329e1ed96ff1a2b3596e346a2efecc"
+    },
+    "thigh_short": {
+      "file": "thigh_short.png",
+      "size": [
+        7,
+        5
+      ],
+      "sha256": "6fc5bfa9344d11eb354efd991c971f7bbe35641b1a848d77dc635b4a8a2f650c"
+    },
+    "shin": {
+      "file": "shin.png",
+      "size": [
+        7,
+        6
+      ],
+      "sha256": "ba0bf69de14567b8b89eb8d49ed3b9d224329e1ed96ff1a2b3596e346a2efecc"
+    },
+    "boot_front": {
+      "file": "boot_front.png",
+      "size": [
+        9,
+        7
+      ],
+      "sha256": "112664d464494ed73519ef1a4319499afc6f2923aabba95f449a2632a60515e8"
+    },
+    "boot_side": {
+      "file": "boot_side.png",
+      "size": [
+        9,
+        7
+      ],
+      "sha256": "c4aa5103249da68eeeaba1009315343e22a8ae5b01fbb146fd043affe49c340e"
+    },
+    "boot_back": {
+      "file": "boot_back.png",
+      "size": [
+        9,
+        7
+      ],
+      "sha256": "0535d0b4e5068f4582d0df04ffe5ddbdcb665844681d51bbdffa41ec50ed4556"
+    },
+    "axe": {
+      "file": "axe.png",
+      "size": [
+        11,
+        21
+      ],
+      "sha256": "05c8444f91515eaf384d47988f00cc058aeb38ecaa830237bb7545d6cc032f2c"
+    },
+    "can": {
+      "file": "can.png",
+      "size": [
+        15,
+        12
+      ],
+      "sha256": "f8e29789ca190e4fedb4137d0e620f5c5bf74c0eb688724f770f709e2d303d8c"
+    }
+  }
+}

@@ -1,0 +1,76 @@
+[
+ {
+  "etapa": "armadura sul (edit-image-pixen)",
+  "data": "2026-10-19T01:46:51",
+  "endpoint": "/edit-image-pixen",
+  "prompt": "Same chibi character, same pose, same face and brown hair visible. Now wearing full level 99 adamantium plate armor: polished silver-blue metallic chestplate, pauldrons, gauntlets, armored greaves and boots, glowing cyan rune lines, small dark blue cape. Keep 1px black outline, crisp pixels, same size and proportions. No wings, no weapon.",
+  "config": {
+   "origem": "original_apprentice/rotations/south.png",
+   "tamanho": [
+    48,
+    48
+   ],
+   "seed": 9901,
+   "no_background": true
+  },
+  "geracoes_antes": 706.8000000000002,
+  "geracoes_depois": 705.8000000000002,
+  "job": "7443cd0e-93e7-435e-a61a-c2a0142f3661"
+ },
+ {
+  "etapa": "8 rotacoes (create-character-v3, referencia)",
+  "data": "2026-10-19T01:49:56",
+  "endpoint": "/create-character-v3",
+  "prompt": "chibi farm boy in level 99 adamantium plate armor, silver-blue metal, glowing cyan runes, dark blue cape, brown hair",
+  "config": {
+   "referencia": "armadura sul (quantizada)",
+   "n_directions": 8,
+   "view": "low top-down",
+   "template_id": "mannequin",
+   "seed": 9902
+  },
+  "character_id": "39d5ea40-d5f8-405f-8ce4-2097c4db6634",
+  "geracoes_antes": 705.8000000000002,
+  "geracoes_depois": 704.8000000000002
+ },
+ {
+  "etapa": "caminhada 8 direcoes (template walking)",
+  "data": "2026-10-19T01:51:37",
+  "endpoint": "/characters/animations",
+  "config": {
+   "mode": "template",
+   "template_animation_id": "walking",
+   "seed": 9903
+  },
+  "character_id": "39d5ea40-d5f8-405f-8ce4-2097c4db6634",
+  "jobs": 8,
+  "geracoes_antes": 704.8000000000002,
+  "geracoes_depois": 696.8000000000002
+ },
+ {
+  "etapa": "asas (create-image-pixflux)",
+  "data": "2026-10-19T01:53:03",
+  "endpoint": "/create-image-pixflux",
+  "prompt": "pair of large spread mechanical angel wings made of polished adamantium metal feathers, silver-blue steel with glowing cyan edges, seen from behind, perfectly symmetric left and right, centered, no character, game sprite",
+  "config": {
+   "tamanho": [
+    64,
+    64
+   ],
+   "no_background": true,
+   "paleta": "armadura sul",
+   "seed": 9904,
+   "outline": "single color black outline",
+   "shading": "medium shading",
+   "detail": "medium detail"
+  },
+  "uso": {
+   "type": "generations",
+   "generations": 1.0
+  },
+  "geracoes_antes": 696.8000000000002,
+  "geracoes_depois": 696.8000000000002,
+  "usd_antes": 0.0,
+  "usd_depois": 0.0
+ }
+]

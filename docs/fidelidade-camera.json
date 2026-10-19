@@ -1,0 +1,95 @@
+{
+    "hora":  16.5,
+    "escala":  0.8864,
+    "desloc_px":  [
+                      37.5,
+                      -25.9
+                  ],
+    "ajuste":  {
+                   "pontos":  {
+                                  "cume do telhado do poco":  {
+                                                                  "referencia":  [
+                                                                                     788,
+                                                                                     549
+                                                                                 ],
+                                                                  "captura_base":  [
+                                                                                       793,
+                                                                                       539
+                                                                                   ],
+                                                                  "residuo_px":  27.6
+                                                              },
+                                  "topo do menir com anel":  {
+                                                                 "referencia":  [
+                                                                                    1048,
+                                                                                    574
+                                                                                ],
+                                                                 "captura_base":  [
+                                                                                      1169,
+                                                                                      513
+                                                                                  ],
+                                                                 "residuo_px":  64.3
+                                                             },
+                                  "lampiao do poste da praca":  {
+                                                                    "referencia":  [
+                                                                                       979,
+                                                                                       393
+                                                                                   ],
+                                                                    "captura_base":  [
+                                                                                         1097,
+                                                                                         378
+                                                                                     ],
+                                                                    "residuo_px":  53.5
+                                                                },
+                                  "canto norte do campo arado":  {
+                                                                     "referencia":  [
+                                                                                        1301,
+                                                                                        484
+                                                                                    ],
+                                                                     "captura_base":  [
+                                                                                          1345,
+                                                                                          495
+                                                                                      ],
+                                                                     "residuo_px":  58.8
+                                                                 },
+                                  "janela acesa da casa esquerda":  {
+                                                                        "referencia":  [
+                                                                                           747,
+                                                                                           271
+                                                                                       ],
+                                                                        "captura_base":  [
+                                                                                             752,
+                                                                                             264
+                                                                                         ],
+                                                                        "residuo_px":  43.6
+                                                                    },
+                                  "janela esquerda da casa direita":  {
+                                                                          "referencia":  [
+                                                                                             1059,
+                                                                                             322
+                                                                                         ],
+                                                                          "captura_base":  [
+                                                                                               1199,
+                                                                                               249
+                                                                                           ],
+                                                                          "residuo_px":  67.2
+                                                                      },
+                                  "janela direita da casa direita":  {
+                                                                         "referencia":  [
+                                                                                            1257,
+                                                                                            366
+                                                                                        ],
+                                                                         "captura_base":  [
+                                                                                              1289,
+                                                                                              315
+                                                                                          ],
+                                                                         "residuo_px":  58.2
+                                                                     }
+                              },
+                   "residuo_medio_px":  53.3,
+                   "residuo_max_px":  67.2
+               },
+    "modo":  "v7",
+    "fase":  5,
+    "sem_lut":  false,
+    "pixel":  false
+}

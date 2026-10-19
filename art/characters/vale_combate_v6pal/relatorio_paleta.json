@@ -1,0 +1,184 @@
+{
+ "paleta_v6_cores": 82,
+ "limiar_dE_corpo": 20.0,
+ "lab_medio_gamelab": [
+  31.2,
+  12.12,
+  15.0
+ ],
+ "lab_medio_v6": [
+  28.35,
+  12.88,
+  17.87
+ ],
+ "folhas": {
+  "dash_east_sheet.png": {
+   "px": 50925,
+   "corpo": 0.9956602847324497,
+   "dE_antes": 5.965624716237338,
+   "dE_depois": 0.0,
+   "dE_transfer_mais_proximo": 5.670299701390912
+  },
+  "dash_north-east_sheet.png": {
+   "px": 44916,
+   "corpo": 1.0,
+   "dE_antes": 5.470980853233447,
+   "dE_depois": 0.0,
+   "dE_transfer_mais_proximo": 4.754330725361143
+  },
+  "dash_north-west_sheet.png": {
+   "px": 44916,
+   "corpo": 1.0,
+   "dE_antes": 5.470980853233447,
+   "dE_depois": 0.0,
+   "dE_transfer_mais_proximo": 4.754330725361143
+  },
+  "dash_south-east_sheet.png": {
+   "px": 51589,
+   "corpo": 1.0,
+   "dE_antes": 6.567132974215053,
+   "dE_depois": 0.0,
+   "dE_transfer_mais_proximo": 6.298379104119478
+  },
+  "dash_south-west_sheet.png": {
+   "px": 51589,
+   "corpo": 1.0,
+   "dE_antes": 6.567132974215052,
+   "dE_depois": 0.0,
+   "dE_transfer_mais_proximo": 6.298379104119479
+  },
+  "dash_west_sheet.png": {
+   "px": 50925,
+   "corpo": 0.9956602847324497,
+   "dE_antes": 5.96562471623734,
+   "dE_depois": 0.0,
+   "dE_transfer_mais_proximo": 5.670299701390912
+  },
+  "hit_east_sheet.png": {
+   "px": 46187,
+   "corpo": 1.0,
+   "dE_antes": 4.804099760477369,
+   "dE_depois": 0.0,
+   "dE_transfer_mais_proximo": 4.962564580017714
+  },
+  "hit_north-east_sheet.png": {
+   "px": 44764,
+   "corpo": 1.0,
+   "dE_antes": 5.30717020196755,
+   "dE_depois": 0.0,
+   "dE_transfer_mais_proximo": 4.630940159013819
+  },
+  "hit_north-west_sheet.png": {
+   "px": 44764,
+   "corpo": 1.0,
+   "dE_antes": 5.307170201967551,
+   "dE_depois": 0.0,
+   "dE_transfer_mais_proximo": 4.630940159013819
+  },
+  "hit_south-east_sheet.png": {
+   "px": 52141,
+   "corpo": 0.9914462706890931,
+   "dE_antes": 5.181280727595658,
+   "dE_depois": 0.0,
+   "dE_transfer_mais_proximo": 4.792442452014706
+  },
+  "hit_south-west_sheet.png": {
+   "px": 52141,
+   "corpo": 0.9914462706890931,
+   "dE_antes": 5.181280727595658,
+   "dE_depois": 0.0,
+   "dE_transfer_mais_proximo": 4.792442452014705
+  },
+  "hit_west_sheet.png": {
+   "px": 46187,
+   "corpo": 1.0,
+   "dE_antes": 4.804099760477369,
+   "dE_depois": 0.0,
+   "dE_transfer_mais_proximo": 4.962564580017714
+  },
+  "slash_combo_east_sheet.png": {
+   "px": 47609,
+   "corpo": 1.0,
+   "dE_antes": 5.160510552457584,
+   "dE_depois": 0.0,
+   "dE_transfer_mais_proximo": 4.676460669017021
+  },
+  "slash_combo_north-east_sheet.png": {
+   "px": 45755,
+   "corpo": 1.0,
+   "dE_antes": 5.597234081215493,
+   "dE_depois": 0.0,
+   "dE_transfer_mais_proximo": 5.162911983169686
+  },
+  "slash_combo_north-west_sheet.png": {
+   "px": 45755,
+   "corpo": 1.0,
+   "dE_antes": 5.597234081215493,
+   "dE_depois": 0.0,
+   "dE_transfer_mais_proximo": 5.162911983169686
+  },
+  "slash_combo_south-east_sheet.png": {
+   "px": 52550,
+   "corpo": 1.0,
+   "dE_antes": 5.066896476921779,
+   "dE_depois": 0.0,
+   "dE_transfer_mais_proximo": 4.7681255856763425
+  },
+  "slash_combo_south-west_sheet.png": {
+   "px": 52550,
+   "corpo": 1.0,
+   "dE_antes": 5.066896476921779,
+   "dE_depois": 0.0,
+   "dE_transfer_mais_proximo": 4.7681255856763425
+  },
+  "slash_combo_west_sheet.png": {
+   "px": 47609,
+   "corpo": 1.0,
+   "dE_antes": 5.160510552457584,
+   "dE_depois": 0.0,
+   "dE_transfer_mais_proximo": 4.676460669017021
+  },
+  "special_east_sheet.png": {
+   "px": 74185,
+   "corpo": 0.6797061400552672,
+   "dE_antes": 5.895496218044842,
+   "dE_depois": 0.0,
+   "dE_transfer_mais_proximo": 6.276408138809534
+  },
+  "special_north-east_sheet.png": {
+   "px": 70002,
+   "corpo": 0.7772635067569498,
+   "dE_antes": 6.900916772322659,
+   "dE_depois": 0.0,
+   "dE_transfer_mais_proximo": 7.264941595305144
+  },
+  "special_north-west_sheet.png": {
+   "px": 70002,
+   "corpo": 0.7772635067569498,
+   "dE_antes": 6.900916772322659,
+   "dE_depois": 0.0,
+   "dE_transfer_mais_proximo": 7.264941595305144
+  },
+  "special_south-east_sheet.png": {
+   "px": 74526,
+   "corpo": 0.8030351823524676,
+   "dE_antes": 6.882159444536902,
+   "dE_depois": 0.0,
+   "dE_transfer_mais_proximo": 7.787454463577735
+  },
+  "special_south-west_sheet.png": {
+   "px": 74526,
+   "corpo": 0.8030351823524676,
+   "dE_antes": 6.882159444536901,
+   "dE_depois": 0.0,
+   "dE_transfer_mais_proximo": 7.787454463577736
+  },
+  "special_west_sheet.png": {
+   "px": 74185,
+   "corpo": 0.6797061400552672,
+   "dE_antes": 5.895496218044842,
+   "dE_depois": 0.0,
+   "dE_transfer_mais_proximo": 6.276408138809534
+  }
+ }
+}

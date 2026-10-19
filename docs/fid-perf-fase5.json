@@ -1,0 +1,10 @@
+{
+ "efeitos_ligados": {
+  "cpu_ms": 2.72,
+  "draw_calls": 1292,
+  "gpu_ms": 9.58,
+  "process_ms": 11.17
+ },
+ "fase": 5.0,
+ "modo": "v6"
+}

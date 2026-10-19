@@ -1,0 +1,97 @@
+{
+ "project_id": 32737,
+ "project_name": "Ilha das Cinzas - Vale combate",
+ "settings": "image.generate: quality standard, pixel_art true (32 cores), transparent_bg true (magenta #FF00FF), three_quarter_top_down, 512x512, referencia = rotacao PixelLab do Vale V6 ampliada x8 em fundo magenta. video.generate: quality standard, 4 s, loopable, three_quarter_top_down, chroma #FF00FF, 960x960 @24fps. Sem spritesheet.generate (recorte local).",
+ "bases": {
+  "se": {
+   "job_id": "52c45ab0-31f3-48f8-a947-7af3e3fdc3ef",
+   "asset_id": 70326,
+   "credits": 1,
+   "direction": "south-east",
+   "prompt": "Pixel art game sprite of the same young chibi hero as the reference image (big head, messy brown hair, green shirt, open brown leather vest, dark grey trousers, brown boots, dark 1px outline, warm cel shading), now holding a short steel sword in his right hand in a ready combat stance, slightly crouched; full body, 3/4 top-down view, facing south-east; keep the exact same face, hair, outfit, colors and chibi proportions."
+  },
+  "e": {
+   "job_id": "bd34b1a6-4da1-4846-848d-f4152d27c32f",
+   "asset_id": 70327,
+   "credits": 1,
+   "direction": "east",
+   "prompt": "Same as the south-east base, side profile facing east (references: Vale V6 east + south-east rotations)."
+  },
+  "ne": {
+   "job_id": "36ec1815-19ed-4865-9b01-d0038dfbf6f6",
+   "asset_id": 70332,
+   "credits": 1,
+   "direction": "north-east",
+   "prompt": "Same as the south-east base, seen from behind at an angle, facing north-east (references: Vale V6 north-east + south-east rotations)."
+  }
+ },
+ "videos": {
+  "slash_combo_se": {
+   "job_id": "e3ce59d9-a6a8-49b0-ad8c-53e484523395",
+   "credits": 4,
+   "prompt": "Fast three-hit sword combo (horizontal slash, backhand slash, overhead downward chop with a short step), brief white arc trails, return to ready stance; stays in place facing south-east."
+  },
+  "dash_se": {
+   "job_id": "a140176e-5053-4252-bbe4-54a406d36378",
+   "credits": 4,
+   "prompt": "Brief crouch, very fast evasive dash toward bottom-right with dust and white speed streaks, skid stop, spring back to ready stance and return to the start position."
+  },
+  "hit_se": {
+   "job_id": "f88529e9-0746-497a-be61-2f514edae59a",
+   "credits": 4,
+   "prompt": "Hit by an unseen blow from the front: head snaps back, recoil with white impact flash, stagger one step, recover; hit a second time and recover again."
+  },
+  "special_se": {
+   "job_id": "740f97f5-1c8c-458f-8bb6-342d921c9ccf",
+   "credits": 4,
+   "prompt": "Special: charge with orange ember aura and glowing orange blade, spin once releasing a full circular orange fire slash ring with ember sparks, strong low finish, return to ready stance."
+  },
+  "slash_combo_e": {
+   "job_id": "852e8665-21f4-42d4-8871-dd86a1d0c6cb",
+   "credits": 4,
+   "prompt": "Same combo prompt, facing east."
+  },
+  "dash_e": {
+   "job_id": "9020c8e0-501c-418e-9f3f-4cfc61f0e6a1",
+   "credits": 4,
+   "prompt": "Same dash prompt, dashing to the right, facing east."
+  },
+  "hit_e": {
+   "job_id": "50219059-6664-4b75-ad1f-c5c059a25271",
+   "credits": 4,
+   "prompt": "Same hit-reaction prompt, facing east."
+  },
+  "special_e": {
+   "job_id": "9f0115a6-7b63-42de-9497-9e3ca3dace25",
+   "credits": 4,
+   "prompt": "Same special prompt, facing east."
+  },
+  "slash_combo_ne": {
+   "job_id": "d450dfaa-6d3f-4c57-9ad2-277e2907c555",
+   "credits": 4,
+   "prompt": "Same combo prompt, seen from behind, facing north-east."
+  },
+  "dash_ne": {
+   "job_id": "0aca277e-95ca-4d7d-9e0d-561405f89834",
+   "credits": 4,
+   "prompt": "Same dash prompt, dashing toward top-right, facing north-east."
+  },
+  "hit_ne": {
+   "job_id": "845b42fc-415a-4cfe-b5a5-f6268e5ef937",
+   "credits": 4,
+   "prompt": "Retry: seen from the back the entire time, never turns around; blow from the top-right, upper body jolts back toward the camera, small white spark on the far side, slides back one small step, steadies; twice."
+  },
+  "special_ne": {
+   "job_id": "b52fce68-a506-49fa-8b26-45c998939c77",
+   "credits": 4,
+   "prompt": "Same special prompt, seen from behind, facing north-east."
+  },
+  "hit_ne_v1_rejeitado": {
+   "job_id": "96ef596f-b559-43b7-ab78-a32e17a103e1",
+   "credits": 4,
+   "prompt": "Same hit-reaction prompt, seen from behind, facing north-east.",
+   "note": "Rejeitado: o personagem se vira de frente para a camera durante o golpe."
+  }
+ },
+ "total_credits": 55
+}

@@ -1,0 +1,78 @@
+{
+ "metodo": "corpo abaixo da cabeca -> paleta do corpo da armadura v99 (quantil de luminancia); cabeca, espada e efeitos preservados",
+ "paleta_armadura": 41,
+ "folhas": {
+  "dash_east_sheet.png": {
+   "armadura_px": 20626
+  },
+  "dash_north-east_sheet.png": {
+   "armadura_px": 24202
+  },
+  "dash_north-west_sheet.png": {
+   "armadura_px": 24202
+  },
+  "dash_south-east_sheet.png": {
+   "armadura_px": 27483
+  },
+  "dash_south-west_sheet.png": {
+   "armadura_px": 27483
+  },
+  "dash_west_sheet.png": {
+   "armadura_px": 20626
+  },
+  "hit_east_sheet.png": {
+   "armadura_px": 23831
+  },
+  "hit_north-east_sheet.png": {
+   "armadura_px": 24738
+  },
+  "hit_north-west_sheet.png": {
+   "armadura_px": 24738
+  },
+  "hit_south-east_sheet.png": {
+   "armadura_px": 26422
+  },
+  "hit_south-west_sheet.png": {
+   "armadura_px": 26422
+  },
+  "hit_west_sheet.png": {
+   "armadura_px": 23831
+  },
+  "slash_combo_east_sheet.png": {
+   "armadura_px": 24051
+  },
+  "slash_combo_north-east_sheet.png": {
+   "armadura_px": 26076
+  },
+  "slash_combo_north-west_sheet.png": {
+   "armadura_px": 26076
+  },
+  "slash_combo_south-east_sheet.png": {
+   "armadura_px": 27502
+  },
+  "slash_combo_south-west_sheet.png": {
+   "armadura_px": 27502
+  },
+  "slash_combo_west_sheet.png": {
+   "armadura_px": 24051
+  },
+  "special_east_sheet.png": {
+   "armadura_px": 33150
+  },
+  "special_north-east_sheet.png": {
+   "armadura_px": 36198
+  },
+  "special_north-west_sheet.png": {
+   "armadura_px": 36198
+  },
+  "special_south-east_sheet.png": {
+   "armadura_px": 36618
+  },
+  "special_south-west_sheet.png": {
+   "armadura_px": 36618
+  },
+  "special_west_sheet.png": {
+   "armadura_px": 33150
+  }
+ }
+}

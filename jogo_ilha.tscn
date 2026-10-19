@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/ilha/jogo_ilha.gd" id="1"]
+
+[node name="JogoIlha" type="Node"]
+script = ExtResource("1")

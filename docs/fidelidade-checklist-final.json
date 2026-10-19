@@ -1,0 +1,432 @@
+{
+ "referencia": "docs/referencia-usuario.png",
+ "captura": "docs/fid-v7-final.png",
+ "avaliador": "agente (avaliacao visual manual, subjetiva) - vila V7 modular",
+ "escala": {
+  "presente": 1,
+  "parcial": 0.5,
+  "ausente": 0
+ },
+ "itens": [
+  {
+   "grupo": "enquadramento",
+   "item": "Vista isometrica ortografica de cima",
+   "estado": "presente",
+   "peso": 3,
+   "nota": ""
+  },
+  {
+   "grupo": "enquadramento",
+   "item": "Vila ocupando a tela inteira, sem vazio nas bordas",
+   "estado": "parcial",
+   "peso": 3,
+   "nota": ""
+  },
+  {
+   "grupo": "enquadramento",
+   "item": "Casa esquerda no terco superior esquerdo",
+   "estado": "presente",
+   "peso": 3,
+   "nota": ""
+  },
+  {
+   "grupo": "enquadramento",
+   "item": "Casa direita no terco superior direito",
+   "estado": "presente",
+   "peso": 3,
+   "nota": ""
+  },
+  {
+   "grupo": "enquadramento",
+   "item": "Poco no centro inferior",
+   "estado": "presente",
+   "peso": 2,
+   "nota": ""
+  },
+  {
+   "grupo": "enquadramento",
+   "item": "Campo arado no lado direito",
+   "estado": "presente",
+   "peso": 2,
+   "nota": ""
+  },
+  {
+   "grupo": "enquadramento",
+   "item": "Rio atravessando a esquerda e a base",
+   "estado": "presente",
+   "peso": 3,
+   "nota": ""
+  },
+  {
+   "grupo": "enquadramento",
+   "item": "Moldura escura de folhagem/rocha nas bordas (vinheta)",
+   "estado": "presente",
+   "peso": 2,
+   "nota": ""
+  },
+  {
+   "grupo": "casas",
+   "item": "Casa esquerda com telhado de ardosia escuro",
+   "estado": "presente",
+   "peso": 2,
+   "nota": ""
+  },
+  {
+   "grupo": "casas",
+   "item": "Casa direita com telhado de ardosia escuro",
+   "estado": "presente",
+   "peso": 2,
+   "nota": ""
+  },
+  {
+   "grupo": "casas",
+   "item": "Janelas quentes acesas nas casas",
+   "estado": "presente",
+   "peso": 2,
+   "nota": ""
+  },
+  {
+   "grupo": "casas",
+   "item": "Estandartes vermelhos com emblema de arvore nas casas",
+   "estado": "parcial",
+   "peso": 2,
+   "nota": ""
+  },
+  {
+   "grupo": "casas",
+   "item": "Chamine com fumaca",
+   "estado": "presente",
+   "peso": 1,
+   "nota": ""
+  },
+  {
+   "grupo": "casas",
+   "item": "Varanda/alpendre de madeira com lanternas",
+   "estado": "parcial",
+   "peso": 1,
+   "nota": ""
+  },
+  {
+   "grupo": "casas",
+   "item": "Muros de pedra/base de pedra nas casas",
+   "estado": "parcial",
+   "peso": 1,
+   "nota": ""
+  },
+  {
+   "grupo": "casas",
+   "item": "Trepadeiras e vasos nas paredes",
+   "estado": "parcial",
+   "peso": 1,
+   "nota": ""
+  },
+  {
+   "grupo": "praca",
+   "item": "Caminhos de pedra/cascalho largos e claros",
+   "estado": "presente",
+   "peso": 3,
+   "nota": ""
+  },
+  {
+   "grupo": "praca",
+   "item": "Praca central pavimentada entre as casas",
+   "estado": "presente",
+   "peso": 3,
+   "nota": ""
+  },
+  {
+   "grupo": "praca",
+   "item": "Poste com lampiao na praca",
+   "estado": "presente",
+   "peso": 2,
+   "nota": ""
+  },
+  {
+   "grupo": "praca",
+   "item": "Varios postes/lanternas acesos ao longo dos caminhos",
+   "estado": "presente",
+   "peso": 2,
+   "nota": ""
+  },
+  {
+   "grupo": "praca",
+   "item": "Menir com anel/runa",
+   "estado": "presente",
+   "peso": 2,
+   "nota": ""
+  },
+  {
+   "grupo": "praca",
+   "item": "Poco coberto com telhado",
+   "estado": "presente",
+   "peso": 2,
+   "nota": ""
+  },
+  {
+   "grupo": "praca",
+   "item": "Carroca com abobora/cargas",
+   "estado": "parcial",
+   "peso": 1,
+   "nota": ""
+  },
+  {
+   "grupo": "praca",
+   "item": "Barris e caixotes",
+   "estado": "presente",
+   "peso": 1,
+   "nota": ""
+  },
+  {
+   "grupo": "praca",
+   "item": "Bancos/mesas",
+   "estado": "presente",
+   "peso": 1,
+   "nota": ""
+  },
+  {
+   "grupo": "npcs",
+   "item": "Personagens/NPCs na praca",
+   "estado": "presente",
+   "peso": 2,
+   "nota": ""
+  },
+  {
+   "grupo": "npcs",
+   "item": "Gato/animal pequeno",
+   "estado": "parcial",
+   "peso": 1,
+   "nota": ""
+  },
+  {
+   "grupo": "npcs",
+   "item": "Corvos pousados",
+   "estado": "parcial",
+   "peso": 1,
+   "nota": ""
+  },
+  {
+   "grupo": "horta",
+   "item": "Horta com fileiras de vegetais coloridos",
+   "estado": "parcial",
+   "peso": 2,
+   "nota": ""
+  },
+  {
+   "grupo": "horta",
+   "item": "Aboboras laranjas",
+   "estado": "parcial",
+   "peso": 2,
+   "nota": ""
+  },
+  {
+   "grupo": "horta",
+   "item": "Cercas de madeira ao redor da horta e campo",
+   "estado": "presente",
+   "peso": 2,
+   "nota": ""
+  },
+  {
+   "grupo": "horta",
+   "item": "Campo arado com sulcos",
+   "estado": "parcial",
+   "peso": 2,
+   "nota": ""
+  },
+  {
+   "grupo": "agua",
+   "item": "Ponte de madeira sobre o rio",
+   "estado": "presente",
+   "peso": 2,
+   "nota": ""
+  },
+  {
+   "grupo": "agua",
+   "item": "Segunda ponte/deck a esquerda",
+   "estado": "presente",
+   "peso": 1,
+   "nota": ""
+  },
+  {
+   "grupo": "agua",
+   "item": "Agua azul-esverdeada com reflexos e vitorias-regias",
+   "estado": "parcial",
+   "peso": 2,
+   "nota": ""
+  },
+  {
+   "grupo": "agua",
+   "item": "Cachoeira no canto superior esquerdo",
+   "estado": "parcial",
+   "peso": 2,
+   "nota": ""
+  },
+  {
+   "grupo": "agua",
+   "item": "Margens de pedra com musgo",
+   "estado": "parcial",
+   "peso": 1,
+   "nota": ""
+  },
+  {
+   "grupo": "vegetacao",
+   "item": "Arvores de outono vermelhas/laranjas",
+   "estado": "parcial",
+   "peso": 2,
+   "nota": ""
+  },
+  {
+   "grupo": "vegetacao",
+   "item": "Arvores grandes de copa escura",
+   "estado": "parcial",
+   "peso": 2,
+   "nota": ""
+  },
+  {
+   "grupo": "vegetacao",
+   "item": "Arbustos densos com flores vermelhas",
+   "estado": "presente",
+   "peso": 2,
+   "nota": ""
+  },
+  {
+   "grupo": "vegetacao",
+   "item": "Flores pequenas espalhadas (amarelas/brancas)",
+   "estado": "presente",
+   "peso": 1,
+   "nota": ""
+  },
+  {
+   "grupo": "vegetacao",
+   "item": "Grama verde-escura saturada",
+   "estado": "parcial",
+   "peso": 2,
+   "nota": ""
+  },
+  {
+   "grupo": "vegetacao",
+   "item": "Arvores secas/galhos sem folhas",
+   "estado": "parcial",
+   "peso": 1,
+   "nota": ""
+  },
+  {
+   "grupo": "vegetacao",
+   "item": "Cogumelos/detalhes de chao",
+   "estado": "parcial",
+   "peso": 1,
+   "nota": ""
+  },
+  {
+   "grupo": "fundo",
+   "item": "Ruinas com arcos de pedra a direita",
+   "estado": "parcial",
+   "peso": 3,
+   "nota": ""
+  },
+  {
+   "grupo": "fundo",
+   "item": "Penhascos com neblina ao fundo",
+   "estado": "parcial",
+   "peso": 3,
+   "nota": ""
+  },
+  {
+   "grupo": "fundo",
+   "item": "Menires/pilares altos no topo",
+   "estado": "presente",
+   "peso": 2,
+   "nota": ""
+  },
+  {
+   "grupo": "fundo",
+   "item": "Braseiro/tocha acesa no topo",
+   "estado": "presente",
+   "peso": 1,
+   "nota": ""
+  },
+  {
+   "grupo": "fundo",
+   "item": "Floresta densa na borda superior",
+   "estado": "parcial",
+   "peso": 2,
+   "nota": ""
+  },
+  {
+   "grupo": "fundo",
+   "item": "Estandarte vermelho a esquerda (perto do rio)",
+   "estado": "presente",
+   "peso": 1,
+   "nota": ""
+  },
+  {
+   "grupo": "luz",
+   "item": "Iluminacao de crepusculo quente (laranja)",
+   "estado": "parcial",
+   "peso": 3,
+   "nota": ""
+  },
+  {
+   "grupo": "luz",
+   "item": "Sombras azuladas/frias nas areas sem luz",
+   "estado": "presente",
+   "peso": 2,
+   "nota": ""
+  },
+  {
+   "grupo": "luz",
+   "item": "Pocas de luz quente em volta das lanternas",
+   "estado": "parcial",
+   "peso": 2,
+   "nota": ""
+  },
+  {
+   "grupo": "luz",
+   "item": "Neblina/atmosfera ao fundo",
+   "estado": "parcial",
+   "peso": 2,
+   "nota": ""
+  },
+  {
+   "grupo": "luz",
+   "item": "Contraste alto entre interiores acesos e exterior",
+   "estado": "parcial",
+   "peso": 1,
+   "nota": ""
+  },
+  {
+   "grupo": "estilo",
+   "item": "Pixel art com contorno escuro e paleta reduzida",
+   "estado": "parcial",
+   "peso": 3,
+   "nota": ""
+  },
+  {
+   "grupo": "estilo",
+   "item": "Textura de pedra/madeira detalhada no chao",
+   "estado": "presente",
+   "peso": 2,
+   "nota": ""
+  },
+  {
+   "grupo": "estilo",
+   "item": "Densidade alta de detalhes (props pequenos por toda a cena)",
+   "estado": "parcial",
+   "peso": 3,
+   "nota": ""
+  },
+  {
+   "grupo": "estilo",
+   "item": "Saturacao rica e quente da paleta",
+   "estado": "parcial",
+   "peso": 2,
+   "nota": ""
+  },
+  {
+   "grupo": "estilo",
+   "item": "Sem terreno inclinado/encosta visivel",
+   "estado": "parcial",
+   "peso": 2,
+   "nota": ""
+  }
+ ]
+}

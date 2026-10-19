@@ -1,0 +1,61 @@
+ILHA DAS CINZAS — APROXIMACAO DA REFERENCIA, V6
+18/10/2026
+
+COMO TESTAR
+Execute Ver-vilarejo.ps1. A cena e reference_village.tscn.
+WASD anda, Shift corre, E planta/colhe/interage, R rega, F corta a arvore,
+C pede companhia a Mira, L inicia o anoitecer. F6 compara luz nos sprites;
+F7 alterna as flores adicionais. H esconde a interface. Roda aproxima/afasta.
+O laboratorio nao le nem grava o save da aventura. main.tscn continua preservado.
+
+PERSONAGENS
+Vale: novo sprite original compacto, cabelo castanho, roupa verde-petroleo,
+contorno escuro. Oito direcoes, oito quadros de caminhada e corrida em cada
+direcao, cinco quadros de cultivo em cada direcao. 176 PNGs, 32 animacoes.
+Mira: nova personagem original com capuz creme e roupa vermelha. Oito direcoes,
+oito quadros de caminhada por direcao. 72 PNGs, 16 animacoes.
+Gato original preto e branco: quatro vistas e repouso sul com oito quadros;
+11 PNGs. Morador da praca reutiliza o personagem original compacto da V4 e
+permanece parado; nao existe uma segunda companhia seguindo o jogador.
+
+Os sprites usam material nativo iluminado do Godot, recorte de transparencia,
+pixels sem filtragem, sombras de contato e preenchimento exclusivo dos atores.
+A escala dos quadros do novo protagonista usa uma altura comum, para evitar
+mudancas artificiais de tamanho ao alternar caminhada, corrida e cultivo.
+Sem mapas normais pintados por quadro: ainda recebem luz como planos 3D.
+
+CENARIO
+- 420 telhas sobrepostas nas duas casas, em tres lotes instanciados.
+- Pedras de fundacao, molduras, trepadeiras e musgo nos telhados.
+- Floreiras, vasos, caixas e pontos de luz ambar nas fachadas.
+- Horta inicialmente cultivada, folhas de legumes, aboboras e espantalho.
+- Margens de pedra, juncos, nenufares e brilhos animados na agua.
+- Capim fino em milhares de instancias, agrupado com clareiras e exclusoes.
+- Arvores outonais, arcos de ruina abertos, pedras com musgo e corvos cenograficos.
+- Poco reposicionado para a frente da praca, com colisao para o personagem.
+- Menos nevoa amarela; contraste entre luz quente localizada e sombras frias.
+
+VALIDACAO
+47 verificacoes em tests/reference_village.gd: assets ativos e animacoes de
+oito direcoes, luz, escala nativa, vegetacao instanciada, agua, movimento fisico,
+orientacao isometrica e isolamento do save. Percurso gravado com fisica real:
+caminhada ate a horta, colher, plantar, regar, corrida de retorno e praca.
+Apenas o anoitecer do video e comprimido para dez segundos.
+Aviso de encerramento ja existente: 7 Texture RIDs. Nao e benchmark sustentado.
+
+FIDELIDADE
+A imagem do usuario e a referencia principal. Nao ha uma medicao objetiva que
+comprove 90% de fidelidade. Esta versao aproxima proporcoes, paleta e inventario
+de elementos. Persistem diferencas visiveis no desenho arquitetonico, relevo,
+formato retilineo do canal, acabamento das copas e texturas pintadas. A cena
+precisa ser aprovada visualmente antes de virar padrao para todos os biomas.
+
+ARTE E PROVENIENCIA
+PixelLab foi usado para sprites e animacoes. Nenhum sprite de outro jogo.
+Vale: a10b4c1a-c96b-47aa-938c-1d5feca1f65a
+Mira: 94a87e92-c7bc-471a-bdcc-6756004f5bf6
+Gato: 837a8345-40f1-472c-8ddc-6bfaacdc9105
+PNG e metadados originais em art/characters/original_vale_v6,
+original_mira_v6 e original_cat_v6. Prompts em PROMPTS_PERSONAGENS_V6.txt.
+Geometria adicional e shaders construidos no projeto. Texturas e modelos
+anteriores mantem as atribuicoes em art/CREDITOS.md.

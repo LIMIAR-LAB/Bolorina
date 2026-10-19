@@ -1,0 +1,121 @@
+{
+ "source": "Gamelab Studio 67660 (run), 67661 (axe_combo), 67663 (hurt_death) - Orc motion v3, conta do usuario",
+ "scale_from_640_crop": 0.11,
+ "cell": 72,
+ "facing": "east (espelhar para oeste)",
+ "anchor_feet_px": [
+  36,
+  67
+ ],
+ "anims": {
+  "run": {
+   "sheet": "orc_run.png",
+   "frames": 11,
+   "source_frames": [
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19
+   ]
+  },
+  "idle": {
+   "sheet": "orc_idle.png",
+   "frames": 6,
+   "source_frames": [
+    0,
+    1,
+    2,
+    3,
+    2,
+    1
+   ]
+  },
+  "windup": {
+   "sheet": "orc_windup.png",
+   "frames": 9,
+   "source_frames": [
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30
+   ]
+  },
+  "strike": {
+   "sheet": "orc_strike.png",
+   "frames": 4,
+   "source_frames": [
+    31,
+    32,
+    33,
+    34
+   ]
+  },
+  "recover": {
+   "sheet": "orc_recover.png",
+   "frames": 10,
+   "source_frames": [
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44
+   ]
+  },
+  "hurt": {
+   "sheet": "orc_hurt.png",
+   "frames": 8,
+   "source_frames": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+   ]
+  },
+  "death": {
+   "sheet": "orc_death.png",
+   "frames": 19,
+   "source_frames": [
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34
+   ]
+  }
+ }
+}

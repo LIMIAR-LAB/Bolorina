@@ -1,0 +1,947 @@
+{
+  "original": true,
+  "directional": true,
+  "source": "PixelLab original generation for Ilha das Cinzas",
+  "character_id": "a10b4c1a-c96b-47aa-938c-1d5feca1f65a",
+  "directions": [
+    "south",
+    "south-west",
+    "west",
+    "north-west",
+    "north",
+    "north-east",
+    "east",
+    "south-east"
+  ],
+  "world_height": 1.72,
+  "anims": {
+    "idle_south": {
+      "files": [
+        "rotations/south.png"
+      ],
+      "fps": 6,
+      "loop": true,
+      "bounds": [
+        7,
+        0,
+        41,
+        48
+      ],
+      "size": [
+        48,
+        48
+      ],
+      "feet": [
+        48
+      ]
+    },
+    "idle_south-east": {
+      "files": [
+        "rotations/south-east.png"
+      ],
+      "fps": 6,
+      "loop": true,
+      "bounds": [
+        10,
+        0,
+        38,
+        48
+      ],
+      "size": [
+        48,
+        48
+      ],
+      "feet": [
+        48
+      ]
+    },
+    "idle_east": {
+      "files": [
+        "rotations/east.png"
+      ],
+      "fps": 6,
+      "loop": true,
+      "bounds": [
+        10,
+        0,
+        38,
+        48
+      ],
+      "size": [
+        48,
+        48
+      ],
+      "feet": [
+        48
+      ]
+    },
+    "idle_north-east": {
+      "files": [
+        "rotations/north-east.png"
+      ],
+      "fps": 6,
+      "loop": true,
+      "bounds": [
+        10,
+        0,
+        38,
+        48
+      ],
+      "size": [
+        48,
+        48
+      ],
+      "feet": [
+        48
+      ]
+    },
+    "idle_north": {
+      "files": [
+        "rotations/north.png"
+      ],
+      "fps": 6,
+      "loop": true,
+      "bounds": [
+        8,
+        0,
+        40,
+        48
+      ],
+      "size": [
+        48,
+        48
+      ],
+      "feet": [
+        48
+      ]
+    },
+    "idle_north-west": {
+      "files": [
+        "rotations/north-west.png"
+      ],
+      "fps": 6,
+      "loop": true,
+      "bounds": [
+        10,
+        0,
+        38,
+        48
+      ],
+      "size": [
+        48,
+        48
+      ],
+      "feet": [
+        48
+      ]
+    },
+    "idle_west": {
+      "files": [
+        "rotations/west.png"
+      ],
+      "fps": 6,
+      "loop": true,
+      "bounds": [
+        10,
+        0,
+        38,
+        48
+      ],
+      "size": [
+        48,
+        48
+      ],
+      "feet": [
+        48
+      ]
+    },
+    "idle_south-west": {
+      "files": [
+        "rotations/south-west.png"
+      ],
+      "fps": 6,
+      "loop": true,
+      "bounds": [
+        10,
+        0,
+        38,
+        48
+      ],
+      "size": [
+        48,
+        48
+      ],
+      "feet": [
+        48
+      ]
+    },
+    "run_north-west": {
+      "files": [
+        "run/north-west/000.png",
+        "run/north-west/001.png",
+        "run/north-west/002.png",
+        "run/north-west/003.png",
+        "run/north-west/004.png",
+        "run/north-west/005.png",
+        "run/north-west/006.png",
+        "run/north-west/007.png"
+      ],
+      "fps": 14,
+      "loop": true,
+      "bounds": [
+        7,
+        0,
+        42,
+        47
+      ],
+      "size": [
+        48,
+        48
+      ],
+      "feet": [
+        43,
+        44,
+        44,
+        44,
+        47,
+        46,
+        44,
+        43
+      ]
+    },
+    "run_north-east": {
+      "files": [
+        "run/north-east/000.png",
+        "run/north-east/001.png",
+        "run/north-east/002.png",
+        "run/north-east/003.png",
+        "run/north-east/004.png",
+        "run/north-east/005.png",
+        "run/north-east/006.png",
+        "run/north-east/007.png"
+      ],
+      "fps": 14,
+      "loop": true,
+      "bounds": [
+        5,
+        0,
+        40,
+        45
+      ],
+      "size": [
+        48,
+        48
+      ],
+      "feet": [
+        45,
+        45,
+        43,
+        43,
+        43,
+        43,
+        43,
+        44
+      ]
+    },
+    "run_south": {
+      "files": [
+        "run/south/000.png",
+        "run/south/001.png",
+        "run/south/002.png",
+        "run/south/003.png",
+        "run/south/004.png",
+        "run/south/005.png",
+        "run/south/006.png",
+        "run/south/007.png"
+      ],
+      "fps": 14,
+      "loop": true,
+      "bounds": [
+        7,
+        0,
+        41,
+        44
+      ],
+      "size": [
+        48,
+        48
+      ],
+      "feet": [
+        44,
+        44,
+        44,
+        43,
+        44,
+        43,
+        43,
+        44
+      ]
+    },
+    "run_east": {
+      "files": [
+        "run/east/000.png",
+        "run/east/001.png",
+        "run/east/002.png",
+        "run/east/003.png",
+        "run/east/004.png",
+        "run/east/005.png",
+        "run/east/006.png",
+        "run/east/007.png"
+      ],
+      "fps": 14,
+      "loop": true,
+      "bounds": [
+        10,
+        0,
+        37,
+        45
+      ],
+      "size": [
+        48,
+        48
+      ],
+      "feet": [
+        45,
+        45,
+        41,
+        44,
+        42,
+        44,
+        44,
+        44
+      ]
+    },
+    "run_north": {
+      "files": [
+        "run/north/000.png",
+        "run/north/001.png",
+        "run/north/002.png",
+        "run/north/003.png",
+        "run/north/004.png",
+        "run/north/005.png",
+        "run/north/006.png",
+        "run/north/007.png"
+      ],
+      "fps": 14,
+      "loop": true,
+      "bounds": [
+        8,
+        0,
+        40,
+        45
+      ],
+      "size": [
+        48,
+        48
+      ],
+      "feet": [
+        45,
+        45,
+        44,
+        44,
+        45,
+        45,
+        43,
+        44
+      ]
+    },
+    "run_west": {
+      "files": [
+        "run/west/000.png",
+        "run/west/001.png",
+        "run/west/002.png",
+        "run/west/003.png",
+        "run/west/004.png",
+        "run/west/005.png",
+        "run/west/006.png",
+        "run/west/007.png"
+      ],
+      "fps": 14,
+      "loop": true,
+      "bounds": [
+        10,
+        0,
+        39,
+        46
+      ],
+      "size": [
+        48,
+        48
+      ],
+      "feet": [
+        44,
+        46,
+        46,
+        44,
+        45,
+        46,
+        44,
+        44
+      ]
+    },
+    "run_south-east": {
+      "files": [
+        "run/south-east/000.png",
+        "run/south-east/001.png",
+        "run/south-east/002.png",
+        "run/south-east/003.png",
+        "run/south-east/004.png",
+        "run/south-east/005.png",
+        "run/south-east/006.png",
+        "run/south-east/007.png"
+      ],
+      "fps": 14,
+      "loop": true,
+      "bounds": [
+        5,
+        0,
+        41,
+        44
+      ],
+      "size": [
+        48,
+        48
+      ],
+      "feet": [
+        42,
+        41,
+        42,
+        42,
+        41,
+        43,
+        44,
+        43
+      ]
+    },
+    "run_south-west": {
+      "files": [
+        "run/south-west/000.png",
+        "run/south-west/001.png",
+        "run/south-west/002.png",
+        "run/south-west/003.png",
+        "run/south-west/004.png",
+        "run/south-west/005.png",
+        "run/south-west/006.png",
+        "run/south-west/007.png"
+      ],
+      "fps": 14,
+      "loop": true,
+      "bounds": [
+        8,
+        0,
+        43,
+        44
+      ],
+      "size": [
+        48,
+        48
+      ],
+      "feet": [
+        42,
+        43,
+        44,
+        42,
+        41,
+        41,
+        42,
+        40
+      ]
+    },
+    "walk_south-west": {
+      "files": [
+        "walk/south-west/000.png",
+        "walk/south-west/001.png",
+        "walk/south-west/002.png",
+        "walk/south-west/003.png",
+        "walk/south-west/004.png",
+        "walk/south-west/005.png",
+        "walk/south-west/006.png",
+        "walk/south-west/007.png"
+      ],
+      "fps": 10,
+      "loop": true,
+      "bounds": [
+        15,
+        2,
+        34,
+        43
+      ],
+      "size": [
+        48,
+        48
+      ],
+      "feet": [
+        42,
+        43,
+        43,
+        42,
+        42,
+        42,
+        42,
+        42
+      ]
+    },
+    "walk_west": {
+      "files": [
+        "walk/west/000.png",
+        "walk/west/001.png",
+        "walk/west/002.png",
+        "walk/west/003.png",
+        "walk/west/004.png",
+        "walk/west/005.png",
+        "walk/west/006.png",
+        "walk/west/007.png"
+      ],
+      "fps": 10,
+      "loop": true,
+      "bounds": [
+        13,
+        2,
+        35,
+        43
+      ],
+      "size": [
+        48,
+        48
+      ],
+      "feet": [
+        43,
+        43,
+        43,
+        43,
+        43,
+        43,
+        43,
+        43
+      ]
+    },
+    "walk_north": {
+      "files": [
+        "walk/north/000.png",
+        "walk/north/001.png",
+        "walk/north/002.png",
+        "walk/north/003.png",
+        "walk/north/004.png",
+        "walk/north/005.png",
+        "walk/north/006.png",
+        "walk/north/007.png"
+      ],
+      "fps": 10,
+      "loop": true,
+      "bounds": [
+        8,
+        0,
+        39,
+        45
+      ],
+      "size": [
+        48,
+        48
+      ],
+      "feet": [
+        45,
+        45,
+        45,
+        45,
+        45,
+        45,
+        45,
+        45
+      ]
+    },
+    "walk_east": {
+      "files": [
+        "walk/east/000.png",
+        "walk/east/001.png",
+        "walk/east/002.png",
+        "walk/east/003.png",
+        "walk/east/004.png",
+        "walk/east/005.png",
+        "walk/east/006.png",
+        "walk/east/007.png"
+      ],
+      "fps": 10,
+      "loop": true,
+      "bounds": [
+        12,
+        0,
+        35,
+        44
+      ],
+      "size": [
+        48,
+        48
+      ],
+      "feet": [
+        44,
+        44,
+        44,
+        44,
+        44,
+        44,
+        44,
+        44
+      ]
+    },
+    "walk_south-east": {
+      "files": [
+        "walk/south-east/000.png",
+        "walk/south-east/001.png",
+        "walk/south-east/002.png",
+        "walk/south-east/003.png",
+        "walk/south-east/004.png",
+        "walk/south-east/005.png",
+        "walk/south-east/006.png",
+        "walk/south-east/007.png"
+      ],
+      "fps": 10,
+      "loop": true,
+      "bounds": [
+        12,
+        1,
+        34,
+        43
+      ],
+      "size": [
+        48,
+        48
+      ],
+      "feet": [
+        43,
+        42,
+        42,
+        42,
+        42,
+        43,
+        43,
+        43
+      ]
+    },
+    "walk_north-east": {
+      "files": [
+        "walk/north-east/000.png",
+        "walk/north-east/001.png",
+        "walk/north-east/002.png",
+        "walk/north-east/003.png",
+        "walk/north-east/004.png",
+        "walk/north-east/005.png",
+        "walk/north-east/006.png",
+        "walk/north-east/007.png"
+      ],
+      "fps": 10,
+      "loop": true,
+      "bounds": [
+        13,
+        1,
+        34,
+        45
+      ],
+      "size": [
+        48,
+        48
+      ],
+      "feet": [
+        44,
+        45,
+        45,
+        45,
+        43,
+        44,
+        43,
+        43
+      ]
+    },
+    "walk_north-west": {
+      "files": [
+        "walk/north-west/000.png",
+        "walk/north-west/001.png",
+        "walk/north-west/002.png",
+        "walk/north-west/003.png",
+        "walk/north-west/004.png",
+        "walk/north-west/005.png",
+        "walk/north-west/006.png",
+        "walk/north-west/007.png"
+      ],
+      "fps": 10,
+      "loop": true,
+      "bounds": [
+        12,
+        0,
+        36,
+        45
+      ],
+      "size": [
+        48,
+        48
+      ],
+      "feet": [
+        43,
+        44,
+        43,
+        43,
+        43,
+        44,
+        45,
+        43
+      ]
+    },
+    "walk_south": {
+      "files": [
+        "walk/south/000.png",
+        "walk/south/001.png",
+        "walk/south/002.png",
+        "walk/south/003.png",
+        "walk/south/004.png",
+        "walk/south/005.png",
+        "walk/south/006.png",
+        "walk/south/007.png"
+      ],
+      "fps": 10,
+      "loop": true,
+      "bounds": [
+        13,
+        2,
+        34,
+        43
+      ],
+      "size": [
+        48,
+        48
+      ],
+      "feet": [
+        43,
+        43,
+        43,
+        42,
+        42,
+        43,
+        43,
+        42
+      ]
+    },
+    "tend_north": {
+      "files": [
+        "tend/north/000.png",
+        "tend/north/001.png",
+        "tend/north/002.png",
+        "tend/north/003.png",
+        "tend/north/004.png"
+      ],
+      "fps": 6,
+      "loop": true,
+      "bounds": [
+        3,
+        0,
+        41,
+        44
+      ],
+      "size": [
+        48,
+        48
+      ],
+      "feet": [
+        42,
+        44,
+        42,
+        42,
+        43
+      ]
+    },
+    "tend_south-west": {
+      "files": [
+        "tend/south-west/000.png",
+        "tend/south-west/001.png",
+        "tend/south-west/002.png",
+        "tend/south-west/003.png",
+        "tend/south-west/004.png"
+      ],
+      "fps": 6,
+      "loop": true,
+      "bounds": [
+        6,
+        0,
+        42,
+        45
+      ],
+      "size": [
+        48,
+        48
+      ],
+      "feet": [
+        41,
+        41,
+        45,
+        41,
+        41
+      ]
+    },
+    "tend_north-east": {
+      "files": [
+        "tend/north-east/000.png",
+        "tend/north-east/001.png",
+        "tend/north-east/002.png",
+        "tend/north-east/003.png",
+        "tend/north-east/004.png"
+      ],
+      "fps": 6,
+      "loop": true,
+      "bounds": [
+        10,
+        0,
+        43,
+        44
+      ],
+      "size": [
+        48,
+        48
+      ],
+      "feet": [
+        42,
+        42,
+        44,
+        43,
+        42
+      ]
+    },
+    "tend_north-west": {
+      "files": [
+        "tend/north-west/000.png",
+        "tend/north-west/001.png",
+        "tend/north-west/002.png",
+        "tend/north-west/003.png",
+        "tend/north-west/004.png"
+      ],
+      "fps": 6,
+      "loop": true,
+      "bounds": [
+        0,
+        0,
+        43,
+        45
+      ],
+      "size": [
+        48,
+        48
+      ],
+      "feet": [
+        43,
+        42,
+        45,
+        43,
+        43
+      ]
+    },
+    "tend_west": {
+      "files": [
+        "tend/west/000.png",
+        "tend/west/001.png",
+        "tend/west/002.png",
+        "tend/west/003.png",
+        "tend/west/004.png"
+      ],
+      "fps": 6,
+      "loop": true,
+      "bounds": [
+        4,
+        0,
+        42,
+        42
+      ],
+      "size": [
+        48,
+        48
+      ],
+      "feet": [
+        42,
+        42,
+        41,
+        42,
+        41
+      ]
+    },
+    "tend_south-east": {
+      "files": [
+        "tend/south-east/000.png",
+        "tend/south-east/001.png",
+        "tend/south-east/002.png",
+        "tend/south-east/003.png",
+        "tend/south-east/004.png"
+      ],
+      "fps": 6,
+      "loop": true,
+      "bounds": [
+        5,
+        0,
+        45,
+        47
+      ],
+      "size": [
+        48,
+        48
+      ],
+      "feet": [
+        39,
+        41,
+        47,
+        41,
+        39
+      ]
+    },
+    "tend_east": {
+      "files": [
+        "tend/east/000.png",
+        "tend/east/001.png",
+        "tend/east/002.png",
+        "tend/east/003.png",
+        "tend/east/004.png"
+      ],
+      "fps": 6,
+      "loop": true,
+      "bounds": [
+        8,
+        0,
+        44,
+        45
+      ],
+      "size": [
+        48,
+        48
+      ],
+      "feet": [
+        45,
+        44,
+        44,
+        42,
+        42
+      ]
+    },
+    "tend_south": {
+      "files": [
+        "tend/south/000.png",
+        "tend/south/001.png",
+        "tend/south/002.png",
+        "tend/south/003.png",
+        "tend/south/004.png"
+      ],
+      "fps": 6,
+      "loop": true,
+      "bounds": [
+        3,
+        0,
+        46,
+        47
+      ],
+      "size": [
+        48,
+        48
+      ],
+      "feet": [
+        43,
+        43,
+        47,
+        42,
+        42
+      ]
+    }
+  }
+}

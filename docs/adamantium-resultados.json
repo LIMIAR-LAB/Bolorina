@@ -1,0 +1,136 @@
+{
+  "aura_luminancia": {
+    "dia": {
+      "com_aura": 0.292189631412243,
+      "sem_aura": 0.288641718819498
+    },
+    "noite": {
+      "com_aura": 0.29610359607963,
+      "sem_aura": 0.278614580618105
+    }
+  },
+  "checks": 127,
+  "desempenho": {
+    "normal": {
+      "draw_calls": 1265.6525,
+      "quadro_ms_medio": 10.8164825,
+      "quadro_ms_p95": 11.8295
+    },
+    "transformado": {
+      "draw_calls": 1272.24625,
+      "quadro_ms_medio": 10.79047,
+      "quadro_ms_p95": 11.875
+    }
+  },
+  "direcoes_articulado": {
+    "asa_mais_baixa_m": -0.00696716899983585,
+    "detalhe": {
+      "east caminhando": {
+        "bater_rad": 0.238219645859938
+      },
+      "east correndo": {
+        "bater_rad": 0.319678644446785
+      },
+      "north caminhando": {
+        "bater_rad": 0.238651527125811
+      },
+      "north correndo": {
+        "bater_rad": 0.319964256275526
+      },
+      "north-east caminhando": {
+        "bater_rad": 0.224554692161131
+      },
+      "north-east correndo": {
+        "bater_rad": 0.319686940554963
+      },
+      "north-west caminhando": {
+        "bater_rad": 0.239923436478836
+      },
+      "north-west correndo": {
+        "bater_rad": 0.319801747576193
+      },
+      "south caminhando": {
+        "bater_rad": 0.17257942705222
+      },
+      "south correndo": {
+        "bater_rad": 0.319747887936505
+      },
+      "south-east caminhando": {
+        "bater_rad": 0.208629534645203
+      },
+      "south-east correndo": {
+        "bater_rad": 0.319892624608339
+      },
+      "south-west caminhando": {
+        "bater_rad": 0.227946787644791
+      },
+      "south-west correndo": {
+        "bater_rad": 0.31982237039102
+      },
+      "west caminhando": {
+        "bater_rad": 0.232514998994772
+      },
+      "west correndo": {
+        "bater_rad": 0.31994897850961
+      }
+    },
+    "erro_asas_px": 0.00013647876039613,
+    "erro_costas_px": 0.0
+  },
+  "direcoes_sprite": {
+    "asa_mais_baixa_m": 0.0263948619831353,
+    "detalhe": {
+      "east caminhando": {
+        "bater_rad": 0.239905174867598
+      },
+      "east correndo": {
+        "bater_rad": 0.319810724791221
+      },
+      "north caminhando": {
+        "bater_rad": 0.239231296469394
+      },
+      "north correndo": {
+        "bater_rad": 0.31985780379552
+      },
+      "north-east caminhando": {
+        "bater_rad": 0.23995863667004
+      },
+      "north-east correndo": {
+        "bater_rad": 0.319883063867025
+      },
+      "north-west caminhando": {
+        "bater_rad": 0.191033277578598
+      },
+      "north-west correndo": {
+        "bater_rad": 0.319925191408673
+      },
+      "south caminhando": {
+        "bater_rad": 0.239634950937596
+      },
+      "south correndo": {
+        "bater_rad": 0.319878026288726
+      },
+      "south-east caminhando": {
+        "bater_rad": 0.230279098733149
+      },
+      "south-east correndo": {
+        "bater_rad": 0.31970243805899
+      },
+      "south-west caminhando": {
+        "bater_rad": 0.239928488667373
+      },
+      "south-west correndo": {
+        "bater_rad": 0.319914898064372
+      },
+      "west caminhando": {
+        "bater_rad": 0.239544148803523
+      },
+      "west correndo": {
+        "bater_rad": 0.319891494820159
+      }
+    },
+    "erro_asas_px": 0.000125827195006423,
+    "erro_costas_px": 0.0
+  },
+  "failures": 0
+}

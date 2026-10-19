@@ -1,0 +1,859 @@
+{
+ "captura": "fid-v7-fase4.png",
+ "composicao_40": 66.5,
+ "cor_luz_30": 67.7,
+ "detalhe_20": 50.3,
+ "avaliacao_usuario_10": "pendente",
+ "total_sem_avaliacao": 63.3,
+ "total_com_avaliacao_neutra_0_5": 62.0,
+ "pontos_ponderados": {
+  "composicao": 26.6,
+  "cor_luz": 20.3,
+  "detalhe": 10.1
+ },
+ "checklist": {
+  "itens": 60,
+  "presente": 23,
+  "parcial": 30,
+  "ausente": 7
+ },
+ "lacunas_checklist": [
+  {
+   "item": "Densidade alta de detalhes (props pequenos por toda a cena)",
+   "estado": "ausente",
+   "ganho_pontos": 1.04
+  },
+  {
+   "item": "Vila ocupando a tela inteira, sem vazio nas bordas",
+   "estado": "parcial",
+   "ganho_pontos": 0.52
+  },
+  {
+   "item": "Caminhos de pedra/cascalho largos e claros",
+   "estado": "parcial",
+   "ganho_pontos": 0.52
+  },
+  {
+   "item": "Praca central pavimentada entre as casas",
+   "estado": "parcial",
+   "ganho_pontos": 0.52
+  },
+  {
+   "item": "Ruinas com arcos de pedra a direita",
+   "estado": "parcial",
+   "ganho_pontos": 0.52
+  },
+  {
+   "item": "Penhascos com neblina ao fundo",
+   "estado": "parcial",
+   "ganho_pontos": 0.52
+  },
+  {
+   "item": "Iluminacao de crepusculo quente (laranja)",
+   "estado": "parcial",
+   "ganho_pontos": 0.52
+  },
+  {
+   "item": "Pixel art com contorno escuro e paleta reduzida",
+   "estado": "parcial",
+   "ganho_pontos": 0.52
+  },
+  {
+   "item": "Estandartes vermelhos com emblema de arvore nas casas",
+   "estado": "parcial",
+   "ganho_pontos": 0.35
+  },
+  {
+   "item": "Barris e caixotes",
+   "estado": "ausente",
+   "ganho_pontos": 0.35
+  },
+  {
+   "item": "Bancos/mesas",
+   "estado": "ausente",
+   "ganho_pontos": 0.35
+  },
+  {
+   "item": "Gato/animal pequeno",
+   "estado": "ausente",
+   "ganho_pontos": 0.35
+  },
+  {
+   "item": "Horta com fileiras de vegetais coloridos",
+   "estado": "parcial",
+   "ganho_pontos": 0.35
+  },
+  {
+   "item": "Aboboras laranjas",
+   "estado": "parcial",
+   "ganho_pontos": 0.35
+  },
+  {
+   "item": "Campo arado com sulcos",
+   "estado": "parcial",
+   "ganho_pontos": 0.35
+  },
+  {
+   "item": "Segunda ponte/deck a esquerda",
+   "estado": "ausente",
+   "ganho_pontos": 0.35
+  },
+  {
+   "item": "Agua azul-esverdeada com reflexos e vitorias-regias",
+   "estado": "parcial",
+   "ganho_pontos": 0.35
+  },
+  {
+   "item": "Cachoeira no canto superior esquerdo",
+   "estado": "parcial",
+   "ganho_pontos": 0.35
+  },
+  {
+   "item": "Arvores de outono vermelhas/laranjas",
+   "estado": "parcial",
+   "ganho_pontos": 0.35
+  },
+  {
+   "item": "Arvores grandes de copa escura",
+   "estado": "parcial",
+   "ganho_pontos": 0.35
+  },
+  {
+   "item": "Flores pequenas espalhadas (amarelas/brancas)",
+   "estado": "ausente",
+   "ganho_pontos": 0.35
+  },
+  {
+   "item": "Grama verde-escura saturada",
+   "estado": "parcial",
+   "ganho_pontos": 0.35
+  },
+  {
+   "item": "Cogumelos/detalhes de chao",
+   "estado": "ausente",
+   "ganho_pontos": 0.35
+  },
+  {
+   "item": "Floresta densa na borda superior",
+   "estado": "parcial",
+   "ganho_pontos": 0.35
+  },
+  {
+   "item": "Pocas de luz quente em volta das lanternas",
+   "estado": "parcial",
+   "ganho_pontos": 0.35
+  },
+  {
+   "item": "Neblina/atmosfera ao fundo",
+   "estado": "parcial",
+   "ganho_pontos": 0.35
+  },
+  {
+   "item": "Textura de pedra/madeira detalhada no chao",
+   "estado": "parcial",
+   "ganho_pontos": 0.35
+  },
+  {
+   "item": "Saturacao rica e quente da paleta",
+   "estado": "parcial",
+   "ganho_pontos": 0.35
+  },
+  {
+   "item": "Sem terreno inclinado/encosta visivel",
+   "estado": "parcial",
+   "ganho_pontos": 0.35
+  },
+  {
+   "item": "Varanda/alpendre de madeira com lanternas",
+   "estado": "parcial",
+   "ganho_pontos": 0.17
+  },
+  {
+   "item": "Muros de pedra/base de pedra nas casas",
+   "estado": "parcial",
+   "ganho_pontos": 0.17
+  },
+  {
+   "item": "Trepadeiras e vasos nas paredes",
+   "estado": "parcial",
+   "ganho_pontos": 0.17
+  },
+  {
+   "item": "Carroca com abobora/cargas",
+   "estado": "parcial",
+   "ganho_pontos": 0.17
+  },
+  {
+   "item": "Corvos pousados",
+   "estado": "parcial",
+   "ganho_pontos": 0.17
+  },
+  {
+   "item": "Margens de pedra com musgo",
+   "estado": "parcial",
+   "ganho_pontos": 0.17
+  },
+  {
+   "item": "Arvores secas/galhos sem folhas",
+   "estado": "parcial",
+   "ganho_pontos": 0.17
+  },
+  {
+   "item": "Contraste alto entre interiores acesos e exterior",
+   "estado": "parcial",
+   "ganho_pontos": 0.17
+  }
+ ],
+ "regioes": [
+  {
+   "linha": 0,
+   "coluna": 0,
+   "delta_e": 8.7,
+   "L_ref": 28.9,
+   "L_cap": 21.5,
+   "hist_L": 0.608,
+   "cor_luz": 0.695,
+   "bordas_ref": 0.265,
+   "bordas_cap": 0.1,
+   "detalhe": 0.378
+  },
+  {
+   "linha": 0,
+   "coluna": 1,
+   "delta_e": 11.4,
+   "L_ref": 20.7,
+   "L_cap": 25.4,
+   "hist_L": 0.754,
+   "cor_luz": 0.735,
+   "bordas_ref": 0.206,
+   "bordas_cap": 0.232,
+   "detalhe": 0.888
+  },
+  {
+   "linha": 0,
+   "coluna": 2,
+   "delta_e": 15.3,
+   "L_ref": 20.5,
+   "L_cap": 31.3,
+   "hist_L": 0.615,
+   "cor_luz": 0.616,
+   "bordas_ref": 0.309,
+   "bordas_cap": 0.214,
+   "detalhe": 0.693
+  },
+  {
+   "linha": 0,
+   "coluna": 3,
+   "delta_e": 10.7,
+   "L_ref": 26.3,
+   "L_cap": 32.1,
+   "hist_L": 0.743,
+   "cor_luz": 0.738,
+   "bordas_ref": 0.28,
+   "bordas_cap": 0.112,
+   "detalhe": 0.398
+  },
+  {
+   "linha": 0,
+   "coluna": 4,
+   "delta_e": 3.4,
+   "L_ref": 27.0,
+   "L_cap": 30.1,
+   "hist_L": 0.824,
+   "cor_luz": 0.869,
+   "bordas_ref": 0.243,
+   "bordas_cap": 0.107,
+   "detalhe": 0.441
+  },
+  {
+   "linha": 0,
+   "coluna": 5,
+   "delta_e": 15.9,
+   "L_ref": 28.8,
+   "L_cap": 32.1,
+   "hist_L": 0.575,
+   "cor_luz": 0.588,
+   "bordas_ref": 0.34,
+   "bordas_cap": 0.142,
+   "detalhe": 0.418
+  },
+  {
+   "linha": 0,
+   "coluna": 6,
+   "delta_e": 22.4,
+   "L_ref": 36.2,
+   "L_cap": 16.5,
+   "hist_L": 0.22,
+   "cor_luz": 0.33,
+   "bordas_ref": 0.125,
+   "bordas_cap": 0.066,
+   "detalhe": 0.528
+  },
+  {
+   "linha": 0,
+   "coluna": 7,
+   "delta_e": 15.8,
+   "L_ref": 31.8,
+   "L_cap": 18.9,
+   "hist_L": 0.493,
+   "cor_luz": 0.548,
+   "bordas_ref": 0.114,
+   "bordas_cap": 0.102,
+   "detalhe": 0.895
+  },
+  {
+   "linha": 1,
+   "coluna": 0,
+   "delta_e": 17.8,
+   "L_ref": 35.9,
+   "L_cap": 28.1,
+   "hist_L": 0.668,
+   "cor_luz": 0.611,
+   "bordas_ref": 0.458,
+   "bordas_cap": 0.185,
+   "detalhe": 0.405
+  },
+  {
+   "linha": 1,
+   "coluna": 1,
+   "delta_e": 3.8,
+   "L_ref": 28.2,
+   "L_cap": 30.6,
+   "hist_L": 0.661,
+   "cor_luz": 0.783,
+   "bordas_ref": 0.414,
+   "bordas_cap": 0.201,
+   "detalhe": 0.485
+  },
+  {
+   "linha": 1,
+   "coluna": 2,
+   "delta_e": 18.9,
+   "L_ref": 22.8,
+   "L_cap": 34.5,
+   "hist_L": 0.574,
+   "cor_luz": 0.551,
+   "bordas_ref": 0.358,
+   "bordas_cap": 0.356,
+   "detalhe": 0.994
+  },
+  {
+   "linha": 1,
+   "coluna": 3,
+   "delta_e": 11.0,
+   "L_ref": 27.0,
+   "L_cap": 28.4,
+   "hist_L": 0.687,
+   "cor_luz": 0.706,
+   "bordas_ref": 0.446,
+   "bordas_cap": 0.216,
+   "detalhe": 0.484
+  },
+  {
+   "linha": 1,
+   "coluna": 4,
+   "delta_e": 12.9,
+   "L_ref": 33.0,
+   "L_cap": 40.3,
+   "hist_L": 0.751,
+   "cor_luz": 0.715,
+   "bordas_ref": 0.496,
+   "bordas_cap": 0.142,
+   "detalhe": 0.286
+  },
+  {
+   "linha": 1,
+   "coluna": 5,
+   "delta_e": 9.8,
+   "L_ref": 24.3,
+   "L_cap": 32.8,
+   "hist_L": 0.603,
+   "cor_luz": 0.679,
+   "bordas_ref": 0.337,
+   "bordas_cap": 0.155,
+   "detalhe": 0.459
+  },
+  {
+   "linha": 1,
+   "coluna": 6,
+   "delta_e": 9.6,
+   "L_ref": 29.6,
+   "L_cap": 22.6,
+   "hist_L": 0.642,
+   "cor_luz": 0.701,
+   "bordas_ref": 0.334,
+   "bordas_cap": 0.216,
+   "detalhe": 0.647
+  },
+  {
+   "linha": 1,
+   "coluna": 7,
+   "delta_e": 11.1,
+   "L_ref": 30.4,
+   "L_cap": 23.2,
+   "hist_L": 0.661,
+   "cor_luz": 0.692,
+   "bordas_ref": 0.102,
+   "bordas_cap": 0.146,
+   "detalhe": 0.699
+  },
+  {
+   "linha": 2,
+   "coluna": 0,
+   "delta_e": 13.0,
+   "L_ref": 28.1,
+   "L_cap": 37.9,
+   "hist_L": 0.577,
+   "cor_luz": 0.626,
+   "bordas_ref": 0.467,
+   "bordas_cap": 0.213,
+   "detalhe": 0.457
+  },
+  {
+   "linha": 2,
+   "coluna": 1,
+   "delta_e": 6.0,
+   "L_ref": 39.0,
+   "L_cap": 39.8,
+   "hist_L": 0.766,
+   "cor_luz": 0.807,
+   "bordas_ref": 0.578,
+   "bordas_cap": 0.342,
+   "detalhe": 0.592
+  },
+  {
+   "linha": 2,
+   "coluna": 2,
+   "delta_e": 8.9,
+   "L_ref": 33.5,
+   "L_cap": 34.2,
+   "hist_L": 0.793,
+   "cor_luz": 0.785,
+   "bordas_ref": 0.476,
+   "bordas_cap": 0.299,
+   "detalhe": 0.627
+  },
+  {
+   "linha": 2,
+   "coluna": 3,
+   "delta_e": 22.2,
+   "L_ref": 37.4,
+   "L_cap": 27.8,
+   "hist_L": 0.534,
+   "cor_luz": 0.489,
+   "bordas_ref": 0.535,
+   "bordas_cap": 0.166,
+   "detalhe": 0.31
+  },
+  {
+   "linha": 2,
+   "coluna": 4,
+   "delta_e": 6.8,
+   "L_ref": 41.9,
+   "L_cap": 36.6,
+   "hist_L": 0.713,
+   "cor_luz": 0.772,
+   "bordas_ref": 0.487,
+   "bordas_cap": 0.204,
+   "detalhe": 0.419
+  },
+  {
+   "linha": 2,
+   "coluna": 5,
+   "delta_e": 9.7,
+   "L_ref": 30.7,
+   "L_cap": 36.7,
+   "hist_L": 0.775,
+   "cor_luz": 0.767,
+   "bordas_ref": 0.41,
+   "bordas_cap": 0.284,
+   "detalhe": 0.693
+  },
+  {
+   "linha": 2,
+   "coluna": 6,
+   "delta_e": 9.0,
+   "L_ref": 27.4,
+   "L_cap": 35.4,
+   "hist_L": 0.709,
+   "cor_luz": 0.742,
+   "bordas_ref": 0.439,
+   "bordas_cap": 0.246,
+   "detalhe": 0.562
+  },
+  {
+   "linha": 2,
+   "coluna": 7,
+   "delta_e": 7.1,
+   "L_ref": 26.6,
+   "L_cap": 21.6,
+   "hist_L": 0.656,
+   "cor_luz": 0.739,
+   "bordas_ref": 0.295,
+   "bordas_cap": 0.127,
+   "detalhe": 0.432
+  },
+  {
+   "linha": 3,
+   "coluna": 0,
+   "delta_e": 11.0,
+   "L_ref": 34.0,
+   "L_cap": 27.6,
+   "hist_L": 0.748,
+   "cor_luz": 0.736,
+   "bordas_ref": 0.386,
+   "bordas_cap": 0.157,
+   "detalhe": 0.406
+  },
+  {
+   "linha": 3,
+   "coluna": 1,
+   "delta_e": 8.2,
+   "L_ref": 28.4,
+   "L_cap": 35.2,
+   "hist_L": 0.605,
+   "cor_luz": 0.7,
+   "bordas_ref": 0.461,
+   "bordas_cap": 0.1,
+   "detalhe": 0.217
+  },
+  {
+   "linha": 3,
+   "coluna": 2,
+   "delta_e": 9.4,
+   "L_ref": 33.9,
+   "L_cap": 42.7,
+   "hist_L": 0.762,
+   "cor_luz": 0.764,
+   "bordas_ref": 0.612,
+   "bordas_cap": 0.505,
+   "detalhe": 0.824
+  },
+  {
+   "linha": 3,
+   "coluna": 3,
+   "delta_e": 8.7,
+   "L_ref": 48.2,
+   "L_cap": 42.3,
+   "hist_L": 0.514,
+   "cor_luz": 0.648,
+   "bordas_ref": 0.55,
+   "bordas_cap": 0.17,
+   "detalhe": 0.309
+  },
+  {
+   "linha": 3,
+   "coluna": 4,
+   "delta_e": 24.2,
+   "L_ref": 41.4,
+   "L_cap": 53.8,
+   "hist_L": 0.578,
+   "cor_luz": 0.486,
+   "bordas_ref": 0.569,
+   "bordas_cap": 0.388,
+   "detalhe": 0.682
+  },
+  {
+   "linha": 3,
+   "coluna": 5,
+   "delta_e": 4.8,
+   "L_ref": 44.6,
+   "L_cap": 44.1,
+   "hist_L": 0.788,
+   "cor_luz": 0.835,
+   "bordas_ref": 0.449,
+   "bordas_cap": 0.379,
+   "detalhe": 0.843
+  },
+  {
+   "linha": 3,
+   "coluna": 6,
+   "delta_e": 17.7,
+   "L_ref": 39.7,
+   "L_cap": 24.6,
+   "hist_L": 0.395,
+   "cor_luz": 0.476,
+   "bordas_ref": 0.292,
+   "bordas_cap": 0.188,
+   "detalhe": 0.643
+  },
+  {
+   "linha": 3,
+   "coluna": 7,
+   "delta_e": 7.9,
+   "L_ref": 27.2,
+   "L_cap": 20.0,
+   "hist_L": 0.727,
+   "cor_luz": 0.765,
+   "bordas_ref": 0.322,
+   "bordas_cap": 0.214,
+   "detalhe": 0.664
+  },
+  {
+   "linha": 4,
+   "coluna": 0,
+   "delta_e": 22.5,
+   "L_ref": 30.3,
+   "L_cap": 13.5,
+   "hist_L": 0.527,
+   "cor_luz": 0.482,
+   "bordas_ref": 0.429,
+   "bordas_cap": 0.065,
+   "detalhe": 0.152
+  },
+  {
+   "linha": 4,
+   "coluna": 1,
+   "delta_e": 15.1,
+   "L_ref": 30.0,
+   "L_cap": 27.1,
+   "hist_L": 0.662,
+   "cor_luz": 0.642,
+   "bordas_ref": 0.315,
+   "bordas_cap": 0.07,
+   "detalhe": 0.223
+  },
+  {
+   "linha": 4,
+   "coluna": 2,
+   "delta_e": 12.5,
+   "L_ref": 34.6,
+   "L_cap": 38.0,
+   "hist_L": 0.653,
+   "cor_luz": 0.67,
+   "bordas_ref": 0.468,
+   "bordas_cap": 0.235,
+   "detalhe": 0.503
+  },
+  {
+   "linha": 4,
+   "coluna": 3,
+   "delta_e": 13.7,
+   "L_ref": 41.0,
+   "L_cap": 50.1,
+   "hist_L": 0.513,
+   "cor_luz": 0.586,
+   "bordas_ref": 0.521,
+   "bordas_cap": 0.173,
+   "detalhe": 0.332
+  },
+  {
+   "linha": 4,
+   "coluna": 4,
+   "delta_e": 6.3,
+   "L_ref": 44.6,
+   "L_cap": 39.3,
+   "hist_L": 0.583,
+   "cor_luz": 0.712,
+   "bordas_ref": 0.572,
+   "bordas_cap": 0.192,
+   "detalhe": 0.336
+  },
+  {
+   "linha": 4,
+   "coluna": 5,
+   "delta_e": 19.1,
+   "L_ref": 29.7,
+   "L_cap": 39.5,
+   "hist_L": 0.656,
+   "cor_luz": 0.59,
+   "bordas_ref": 0.424,
+   "bordas_cap": 0.21,
+   "detalhe": 0.494
+  },
+  {
+   "linha": 4,
+   "coluna": 6,
+   "delta_e": 4.7,
+   "L_ref": 35.1,
+   "L_cap": 31.6,
+   "hist_L": 0.747,
+   "cor_luz": 0.814,
+   "bordas_ref": 0.303,
+   "bordas_cap": 0.085,
+   "detalhe": 0.279
+  },
+  {
+   "linha": 4,
+   "coluna": 7,
+   "delta_e": 7.8,
+   "L_ref": 20.0,
+   "L_cap": 18.0,
+   "hist_L": 0.836,
+   "cor_luz": 0.82,
+   "bordas_ref": 0.266,
+   "bordas_cap": 0.146,
+   "detalhe": 0.55
+  },
+  {
+   "linha": 5,
+   "coluna": 0,
+   "delta_e": 11.0,
+   "L_ref": 11.2,
+   "L_cap": 12.4,
+   "hist_L": 0.772,
+   "cor_luz": 0.749,
+   "bordas_ref": 0.08,
+   "bordas_cap": 0.085,
+   "detalhe": 0.939
+  },
+  {
+   "linha": 5,
+   "coluna": 1,
+   "delta_e": 11.3,
+   "L_ref": 29.5,
+   "L_cap": 19.6,
+   "hist_L": 0.804,
+   "cor_luz": 0.76,
+   "bordas_ref": 0.37,
+   "bordas_cap": 0.207,
+   "detalhe": 0.56
+  },
+  {
+   "linha": 5,
+   "coluna": 2,
+   "delta_e": 16.0,
+   "L_ref": 25.5,
+   "L_cap": 11.3,
+   "hist_L": 0.578,
+   "cor_luz": 0.589,
+   "bordas_ref": 0.388,
+   "bordas_cap": 0.092,
+   "detalhe": 0.238
+  },
+  {
+   "linha": 5,
+   "coluna": 3,
+   "delta_e": 6.4,
+   "L_ref": 27.9,
+   "L_cap": 24.8,
+   "hist_L": 0.581,
+   "cor_luz": 0.71,
+   "bordas_ref": 0.348,
+   "bordas_cap": 0.064,
+   "detalhe": 0.185
+  },
+  {
+   "linha": 5,
+   "coluna": 4,
+   "delta_e": 6.8,
+   "L_ref": 26.5,
+   "L_cap": 21.6,
+   "hist_L": 0.708,
+   "cor_luz": 0.769,
+   "bordas_ref": 0.459,
+   "bordas_cap": 0.13,
+   "detalhe": 0.283
+  },
+  {
+   "linha": 5,
+   "coluna": 5,
+   "delta_e": 21.6,
+   "L_ref": 33.7,
+   "L_cap": 42.2,
+   "hist_L": 0.707,
+   "cor_luz": 0.584,
+   "bordas_ref": 0.439,
+   "bordas_cap": 0.172,
+   "detalhe": 0.393
+  },
+  {
+   "linha": 5,
+   "coluna": 6,
+   "delta_e": 16.6,
+   "L_ref": 26.4,
+   "L_cap": 27.6,
+   "hist_L": 0.745,
+   "cor_luz": 0.665,
+   "bordas_ref": 0.313,
+   "bordas_cap": 0.194,
+   "detalhe": 0.619
+  },
+  {
+   "linha": 5,
+   "coluna": 7,
+   "delta_e": 18.2,
+   "L_ref": 10.6,
+   "L_cap": 17.3,
+   "hist_L": 0.742,
+   "cor_luz": 0.644,
+   "bordas_ref": 0.068,
+   "bordas_cap": 0.251,
+   "detalhe": 0.271
+  }
+ ],
+ "ganho_por_regiao": [
+  {
+   "linha": 4,
+   "coluna": 0,
+   "ganho_pontos": 0.68
+  },
+  {
+   "linha": 0,
+   "coluna": 6,
+   "ganho_pontos": 0.62
+  },
+  {
+   "linha": 2,
+   "coluna": 3,
+   "ganho_pontos": 0.61
+  },
+  {
+   "linha": 5,
+   "coluna": 2,
+   "ganho_pontos": 0.57
+  },
+  {
+   "linha": 4,
+   "coluna": 1,
+   "ganho_pontos": 0.55
+  },
+  {
+   "linha": 4,
+   "coluna": 3,
+   "ganho_pontos": 0.54
+  },
+  {
+   "linha": 5,
+   "coluna": 7,
+   "ganho_pontos": 0.53
+  },
+  {
+   "linha": 5,
+   "coluna": 3,
+   "ganho_pontos": 0.52
+  },
+  {
+   "linha": 3,
+   "coluna": 1,
+   "ganho_pontos": 0.51
+  },
+  {
+   "linha": 3,
+   "coluna": 3,
+   "ganho_pontos": 0.51
+  },
+  {
+   "linha": 5,
+   "coluna": 5,
+   "ganho_pontos": 0.51
+  },
+  {
+   "linha": 0,
+   "coluna": 5,
+   "ganho_pontos": 0.5
+  }
+ ],
+ "parametros": {
+  "grade": [
+   8,
+   6
+  ],
+  "resolucao_analise": [
+   800,
+   450
+  ],
+  "limiar_borda": 0.1,
+  "delta_e_max": 40.0
+ }
+}

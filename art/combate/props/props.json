@@ -1,0 +1,37 @@
+{
+ "prop_caixote_inteiro.png": {
+  "fonte": "65740_cronos_room_v2_room2_crate.png",
+  "tamanho_px": [
+   26,
+   25
+  ]
+ },
+ "prop_caixote_quebrado.png": {
+  "fonte": "65740_cronos_room_v2_room2_crate.png",
+  "tamanho_px": [
+   26,
+   14
+  ]
+ },
+ "prop_urna_inteiro.png": {
+  "fonte": "65741_cronos_room_v2_room2_pottery.png",
+  "tamanho_px": [
+   20,
+   22
+  ]
+ },
+ "prop_urna_quebrado.png": {
+  "fonte": "65741_cronos_room_v2_room2_pottery.png",
+  "tamanho_px": [
+   22,
+   20
+  ]
+ },
+ "prop_rocha_inteiro.png": {
+  "fonte": "65742_cronos_room_v2_room2_rock.png",
+  "tamanho_px": [
+   40,
+   24
+  ]
+ }
+}

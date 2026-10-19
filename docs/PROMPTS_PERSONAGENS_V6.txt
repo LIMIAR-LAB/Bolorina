@@ -1,0 +1,19 @@
+PixelLab, 18/10/2026. Sprites novos, nao edicao da imagem de referencia.
+
+VALE — modo v3, 48px, oito direcoes, low top-down, single color black outline,
+low detail. Prompt:
+VERY SQUAT CHIBI PIXEL SPRITE. Huge round head, head is 50 percent of entire height, body plus legs same height as head. Two heads tall ONLY. Short wide compact tiny farming game character. Brown chestnut short fringe hair, peach round face, two dot eyes, teal shirt, brown short vest shoulder straps, tiny dark trousers, chunky brown boots. Wide head 19 pixels, whole body 35 pixels tall. Very short arms, tiny legs, empty hands. Bold black 1px outline, crisp large pixel clusters, 16 colors, no realistic anatomy. Front standing 3/4 top-down, full body on transparency. No ground or props.
+
+MIRA — modo v3, 48px, oito direcoes, low top-down, single color black outline,
+low detail. Prompt:
+VERY SQUAT CHIBI PIXEL SPRITE. Huge round cream ivory hood framing a warm peach face with chestnut fringe, head is 50 percent of entire height. Two heads tall ONLY, body and tiny legs same height as huge head. Short wide compact tiny farming game herbalist character. Rust red tunic, cream hood and shoulder cape, tiny leather apron and belt, tiny brown boots. Wide hood 20 pixels, whole body 35 pixels tall. Very short arms, tiny legs, empty hands. Bold black 1px outline, crisp large pixel clusters, 16 colors. Full body on transparent background. No realistic anatomy, no ground, no scenery.
+
+GATO — modo standard, quadruped cat, 32px em canvas 48px, quatro direcoes,
+low top-down, single color black outline, basic shading, low detail. Prompt:
+Original small friendly black and white tuxedo village cat, cream muzzle chest paws, large triangular black ears, curled black tail, compact chibi pixel art with dark outline, standing on four legs, transparent background no scenery no props no ground, cozy medieval farming game
+
+ANIMACOES POR TEMPLATE
+Vale: walking-8-frames, running-8-frames, picking-up (nome tend), oito direcoes.
+Mira: walking-8-frames, oito direcoes.
+Gato: idle (nome breathing-idle), direcao south.
+Sem retoque raster: arquivos PNG copiados como fornecidos pelo servico.

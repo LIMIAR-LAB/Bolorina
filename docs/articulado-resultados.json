@@ -1,0 +1,197 @@
+{
+  "checks": 113,
+  "desempenho": {
+    "articulado": {
+      "atualizacao_pecas_us": 272.275,
+      "atualizacoes_por_quadro": 1.0,
+      "draw_calls": 1252.76666666667,
+      "objetos": 1668.08,
+      "primitivas": 1668750.93333333,
+      "quadro_ms_medio": 10.7545866666667,
+      "quadro_ms_p95": 12.078
+    },
+    "instancias_visuais_articulado": 19,
+    "instancias_visuais_sprite": 2,
+    "multidao_40_articulado": {
+      "draw_calls": 1902.6725,
+      "objetos": 2303.9075,
+      "primitivas": 1642049.135,
+      "quadro_ms_medio": 13.10258,
+      "quadro_ms_p95": 16.639
+    },
+    "multidao_40_sprite": {
+      "draw_calls": 1413.245,
+      "objetos": 1826.4325,
+      "primitivas": 1649560.1,
+      "quadro_ms_medio": 12.66383,
+      "quadro_ms_p95": 19.381
+    },
+    "nos_articulado": 40,
+    "nos_sprite_completo": 2,
+    "sprite": {
+      "draw_calls": 1233.09333333333,
+      "objetos": 1648.98833333333,
+      "primitivas": 1666505.09666667,
+      "quadro_ms_medio": 11.47679,
+      "quadro_ms_p95": 13.162
+    }
+  },
+  "direcoes": {
+    "east caminhando": {
+      "deslize_pe_apoio_m_por_quadro": 0.0337422790902632,
+      "pe_apoio_max_m": 0.00290286401286721,
+      "pe_min_m": -0.00358735304325819
+    },
+    "east correndo": {
+      "deslize_pe_apoio_m_por_quadro": 0.0648921653628349,
+      "pe_apoio_max_m": 0.00980458525009453,
+      "pe_min_m": -0.00649537309072912
+    },
+    "north caminhando": {
+      "deslize_pe_apoio_m_por_quadro": 0.0325589514147766,
+      "pe_apoio_max_m": 0.00376906921155751,
+      "pe_min_m": -0.00348518881946802
+    },
+    "north correndo": {
+      "deslize_pe_apoio_m_por_quadro": 0.0599088641241766,
+      "pe_apoio_max_m": 0.00881699775345623,
+      "pe_min_m": -0.00708007882349193
+    },
+    "north-east caminhando": {
+      "deslize_pe_apoio_m_por_quadro": 0.0341803166601393,
+      "pe_apoio_max_m": 0.00484233186580241,
+      "pe_min_m": -0.0034473289269954
+    },
+    "north-east correndo": {
+      "deslize_pe_apoio_m_por_quadro": 0.0548971587648759,
+      "pe_apoio_max_m": 0.00990620185621083,
+      "pe_min_m": -0.0070784545969218
+    },
+    "north-west caminhando": {
+      "deslize_pe_apoio_m_por_quadro": 0.0324962889706647,
+      "pe_apoio_max_m": 0.00317725469358265,
+      "pe_min_m": -0.00335702742449939
+    },
+    "north-west correndo": {
+      "deslize_pe_apoio_m_por_quadro": 0.0518193443616231,
+      "pe_apoio_max_m": 0.00902262167073786,
+      "pe_min_m": -0.00661658099852502
+    },
+    "south caminhando": {
+      "deslize_pe_apoio_m_por_quadro": 0.0318360801579224,
+      "pe_apoio_max_m": 0.00360458088107407,
+      "pe_min_m": -0.0034765200689435
+    },
+    "south correndo": {
+      "deslize_pe_apoio_m_por_quadro": 0.0535951326687441,
+      "pe_apoio_max_m": 0.00658581987954676,
+      "pe_min_m": -0.00684990896843374
+    },
+    "south-east caminhando": {
+      "deslize_pe_apoio_m_por_quadro": 0.0327637924088372,
+      "pe_apoio_max_m": 0.00491552357561886,
+      "pe_min_m": -0.00343594094738364
+    },
+    "south-east correndo": {
+      "deslize_pe_apoio_m_por_quadro": 0.0550935497650733,
+      "pe_apoio_max_m": 0.00639610108919442,
+      "pe_min_m": -0.00664412952028215
+    },
+    "south-west caminhando": {
+      "deslize_pe_apoio_m_por_quadro": 0.031916583025897,
+      "pe_apoio_max_m": 0.00314969685859978,
+      "pe_min_m": -0.00336434575729072
+    },
+    "south-west correndo": {
+      "deslize_pe_apoio_m_por_quadro": 0.0581216812133789,
+      "pe_apoio_max_m": 0.00945337978191674,
+      "pe_min_m": -0.00707466783933342
+    },
+    "west caminhando": {
+      "deslize_pe_apoio_m_por_quadro": 0.032685840373031,
+      "pe_apoio_max_m": 0.00293208239600062,
+      "pe_min_m": -0.00345542281866074
+    },
+    "west correndo": {
+      "deslize_pe_apoio_m_por_quadro": 0.0535152671643748,
+      "pe_apoio_max_m": 0.00750351813621819,
+      "pe_min_m": -0.00695871631614864
+    }
+  },
+  "erro_pivo_px": 0.91504430770874,
+  "estrutura": {
+    "ossos": 17,
+    "pecas": 18,
+    "texturas": 25
+  },
+  "failures": 0,
+  "iluminacao": {
+    "lanterna": {
+      "articulado": {
+        "chao_luminancia": 0.322002555705623,
+        "fator_luz": 1.37862998447396,
+        "luminancia": 0.393966652101425,
+        "luminancia_sem_luz": 0.285766780454692,
+        "pixels": 3636
+      },
+      "sprite": {
+        "chao_luminancia": 0.317523191368311,
+        "fator_luz": 1.34077060010187,
+        "luminancia": 0.304263681740374,
+        "luminancia_sem_luz": 0.226931946238421,
+        "pixels": 4280
+      }
+    },
+    "sol": {
+      "articulado": {
+        "chao_luminancia": 0.466473550698148,
+        "fator_luz": 0.675218674658168,
+        "luminancia": 0.304996521031688,
+        "luminancia_sem_luz": 0.451700363865222,
+        "pixels": 3242
+      },
+      "sprite": {
+        "chao_luminancia": 0.466175689550815,
+        "fator_luz": 0.698289330290427,
+        "luminancia": 0.245876559126411,
+        "luminancia_sem_luz": 0.352112725285588,
+        "pixels": 3792
+      }
+    },
+    "sombra": {
+      "articulado": {
+        "chao_luminancia": 0.168164869412065,
+        "fator_luz": 0.871859289413284,
+        "luminancia": 0.358616734451207,
+        "luminancia_sem_luz": 0.411324096452005,
+        "pixels": 3492
+      },
+      "sprite": {
+        "chao_luminancia": 0.167840280356696,
+        "fator_luz": 0.864657575605741,
+        "luminancia": 0.272118166167523,
+        "luminancia_sem_luz": 0.314712059252923,
+        "pixels": 3599
+      }
+    }
+  },
+  "machado": {
+    "distancia_lamina_eixo_m": 0.53230094909668,
+    "erro_px": 1.05419993400574,
+    "impacto_s": 0.3224
+  },
+  "rega": {
+    "erro_px": 1.22816753387451,
+    "quadros": 101
+  },
+  "velocidade": {
+    "caminhada_60q": [
+      2.69999766349792,
+      2.69999766349792
+    ],
+    "corrida_40q": [
+      3.0040066242218,
+      3.0040066242218
+    ]
+  }
+}

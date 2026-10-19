@@ -1,0 +1,417 @@
+{
+ "source": "Gamelabs Studio (gamelabstudio.co) via MCP, projeto 32737 \"Ilha das Cinzas - Vale combate\"",
+ "date": "2026-10-19",
+ "character": "Vale V6 (referência: original_vale_v6/rotations, PixelLab)",
+ "fps": 12,
+ "frame_count": 49,
+ "animations": {
+  "slash_combo_south-east": {
+   "frames_dir": "slash_combo/south-east/",
+   "sheet": "slash_combo/slash_combo_south-east_sheet.png",
+   "cell": 112,
+   "cols": 8,
+   "frames": 49,
+   "fps": 12,
+   "anchor_feet_px": [
+    55,
+    78
+   ],
+   "scale_from_960": 0.11031,
+   "mirrored_from": null,
+   "gamelab_video_job": "e3ce59d9-a6a8-49b0-ad8c-53e484523395",
+   "gamelab_base_image_job": "52c45ab0-31f3-48f8-a947-7af3e3fdc3ef",
+   "sheet_sha256": "f55a2351cabcd2e99ae26760b2838b03dfb3a5269db34564186773ad2623236b"
+  },
+  "slash_combo_south-west": {
+   "frames_dir": "slash_combo/south-west/",
+   "sheet": "slash_combo/slash_combo_south-west_sheet.png",
+   "cell": 112,
+   "cols": 8,
+   "frames": 49,
+   "fps": 12,
+   "anchor_feet_px": [
+    56,
+    78
+   ],
+   "scale_from_960": 0.11031,
+   "mirrored_from": "slash_combo_south-east",
+   "gamelab_video_job": "e3ce59d9-a6a8-49b0-ad8c-53e484523395",
+   "gamelab_base_image_job": "52c45ab0-31f3-48f8-a947-7af3e3fdc3ef",
+   "sheet_sha256": "933791f802c37be5242c4705c502844c94e12d652c058c0446a8bfbe2dd84452"
+  },
+  "slash_combo_east": {
+   "frames_dir": "slash_combo/east/",
+   "sheet": "slash_combo/slash_combo_east_sheet.png",
+   "cell": 112,
+   "cols": 8,
+   "frames": 49,
+   "fps": 12,
+   "anchor_feet_px": [
+    56,
+    78
+   ],
+   "scale_from_960": 0.1103,
+   "mirrored_from": null,
+   "gamelab_video_job": "852e8665-21f4-42d4-8871-dd86a1d0c6cb",
+   "gamelab_base_image_job": "bd34b1a6-4da1-4846-848d-f4152d27c32f",
+   "sheet_sha256": "6fed2befc14a56e2416ffacdc5eee165c8ac62c66835081db327922eeff23022"
+  },
+  "slash_combo_west": {
+   "frames_dir": "slash_combo/west/",
+   "sheet": "slash_combo/slash_combo_west_sheet.png",
+   "cell": 112,
+   "cols": 8,
+   "frames": 49,
+   "fps": 12,
+   "anchor_feet_px": [
+    55,
+    78
+   ],
+   "scale_from_960": 0.1103,
+   "mirrored_from": "slash_combo_east",
+   "gamelab_video_job": "852e8665-21f4-42d4-8871-dd86a1d0c6cb",
+   "gamelab_base_image_job": "bd34b1a6-4da1-4846-848d-f4152d27c32f",
+   "sheet_sha256": "a2aa35935dd0bf2763a971456f1acb7009fbcf47f60afd80948c8b1255d17b18"
+  },
+  "slash_combo_north-east": {
+   "frames_dir": "slash_combo/north-east/",
+   "sheet": "slash_combo/slash_combo_north-east_sheet.png",
+   "cell": 112,
+   "cols": 8,
+   "frames": 49,
+   "fps": 12,
+   "anchor_feet_px": [
+    57,
+    78
+   ],
+   "scale_from_960": 0.1103,
+   "mirrored_from": null,
+   "gamelab_video_job": "d450dfaa-6d3f-4c57-9ad2-277e2907c555",
+   "gamelab_base_image_job": "36ec1815-19ed-4865-9b01-d0038dfbf6f6",
+   "sheet_sha256": "b58322a5d406c9a92ed37afac8c5c06b1c2f261d14c4fe8984b382e4696085b2"
+  },
+  "slash_combo_north-west": {
+   "frames_dir": "slash_combo/north-west/",
+   "sheet": "slash_combo/slash_combo_north-west_sheet.png",
+   "cell": 112,
+   "cols": 8,
+   "frames": 49,
+   "fps": 12,
+   "anchor_feet_px": [
+    54,
+    78
+   ],
+   "scale_from_960": 0.1103,
+   "mirrored_from": "slash_combo_north-east",
+   "gamelab_video_job": "d450dfaa-6d3f-4c57-9ad2-277e2907c555",
+   "gamelab_base_image_job": "36ec1815-19ed-4865-9b01-d0038dfbf6f6",
+   "sheet_sha256": "34d809072b0a95fcd36a8cd2746dda7acc68e2b199f761113b4c9b5e82da9e7d"
+  },
+  "dash_south-east": {
+   "frames_dir": "dash/south-east/",
+   "sheet": "dash/dash_south-east_sheet.png",
+   "cell": 112,
+   "cols": 8,
+   "frames": 49,
+   "fps": 12,
+   "anchor_feet_px": [
+    55,
+    78
+   ],
+   "scale_from_960": 0.11031,
+   "mirrored_from": null,
+   "gamelab_video_job": "a140176e-5053-4252-bbe4-54a406d36378",
+   "gamelab_base_image_job": "52c45ab0-31f3-48f8-a947-7af3e3fdc3ef",
+   "sheet_sha256": "d35d57f885e9e8e1f58850114a10b32f1ede27f8782909627ab1d6f2455cb188"
+  },
+  "dash_south-west": {
+   "frames_dir": "dash/south-west/",
+   "sheet": "dash/dash_south-west_sheet.png",
+   "cell": 112,
+   "cols": 8,
+   "frames": 49,
+   "fps": 12,
+   "anchor_feet_px": [
+    56,
+    78
+   ],
+   "scale_from_960": 0.11031,
+   "mirrored_from": "dash_south-east",
+   "gamelab_video_job": "a140176e-5053-4252-bbe4-54a406d36378",
+   "gamelab_base_image_job": "52c45ab0-31f3-48f8-a947-7af3e3fdc3ef",
+   "sheet_sha256": "b89413236d17acfd2d60320c9258e6d6a0d8eb1bb700f048dedcd6ca30f0bf9a"
+  },
+  "dash_east": {
+   "frames_dir": "dash/east/",
+   "sheet": "dash/dash_east_sheet.png",
+   "cell": 112,
+   "cols": 8,
+   "frames": 49,
+   "fps": 12,
+   "anchor_feet_px": [
+    56,
+    78
+   ],
+   "scale_from_960": 0.1103,
+   "mirrored_from": null,
+   "gamelab_video_job": "9020c8e0-501c-418e-9f3f-4cfc61f0e6a1",
+   "gamelab_base_image_job": "bd34b1a6-4da1-4846-848d-f4152d27c32f",
+   "sheet_sha256": "38295d1d77120e04a389c7856eb70c033492cdd3272502e242a89edf51656fdd"
+  },
+  "dash_west": {
+   "frames_dir": "dash/west/",
+   "sheet": "dash/dash_west_sheet.png",
+   "cell": 112,
+   "cols": 8,
+   "frames": 49,
+   "fps": 12,
+   "anchor_feet_px": [
+    55,
+    78
+   ],
+   "scale_from_960": 0.1103,
+   "mirrored_from": "dash_east",
+   "gamelab_video_job": "9020c8e0-501c-418e-9f3f-4cfc61f0e6a1",
+   "gamelab_base_image_job": "bd34b1a6-4da1-4846-848d-f4152d27c32f",
+   "sheet_sha256": "049208d87d9259dda5b85dfe6349009eb5ea2a34f510e09bc7f41a41ceae13a8"
+  },
+  "dash_north-east": {
+   "frames_dir": "dash/north-east/",
+   "sheet": "dash/dash_north-east_sheet.png",
+   "cell": 112,
+   "cols": 8,
+   "frames": 49,
+   "fps": 12,
+   "anchor_feet_px": [
+    57,
+    78
+   ],
+   "scale_from_960": 0.1103,
+   "mirrored_from": null,
+   "gamelab_video_job": "0aca277e-95ca-4d7d-9e0d-561405f89834",
+   "gamelab_base_image_job": "36ec1815-19ed-4865-9b01-d0038dfbf6f6",
+   "sheet_sha256": "14a1ce10787a276d8a34d6f4246d8211419dbbc7e80da9e237fdb4f83be8621a"
+  },
+  "dash_north-west": {
+   "frames_dir": "dash/north-west/",
+   "sheet": "dash/dash_north-west_sheet.png",
+   "cell": 112,
+   "cols": 8,
+   "frames": 49,
+   "fps": 12,
+   "anchor_feet_px": [
+    54,
+    78
+   ],
+   "scale_from_960": 0.1103,
+   "mirrored_from": "dash_north-east",
+   "gamelab_video_job": "0aca277e-95ca-4d7d-9e0d-561405f89834",
+   "gamelab_base_image_job": "36ec1815-19ed-4865-9b01-d0038dfbf6f6",
+   "sheet_sha256": "5db291560b6a622bc5281c3f954f3bcc63cd957e873741b498ccb09fda16ef36"
+  },
+  "hit_south-east": {
+   "frames_dir": "hit/south-east/",
+   "sheet": "hit/hit_south-east_sheet.png",
+   "cell": 112,
+   "cols": 8,
+   "frames": 49,
+   "fps": 12,
+   "anchor_feet_px": [
+    55,
+    78
+   ],
+   "scale_from_960": 0.11031,
+   "mirrored_from": null,
+   "gamelab_video_job": "f88529e9-0746-497a-be61-2f514edae59a",
+   "gamelab_base_image_job": "52c45ab0-31f3-48f8-a947-7af3e3fdc3ef",
+   "sheet_sha256": "6011409d2249c1f67b2f2662a69443ff6eb4fc0f39c936b40ba40cbfb1a639cc"
+  },
+  "hit_south-west": {
+   "frames_dir": "hit/south-west/",
+   "sheet": "hit/hit_south-west_sheet.png",
+   "cell": 112,
+   "cols": 8,
+   "frames": 49,
+   "fps": 12,
+   "anchor_feet_px": [
+    56,
+    78
+   ],
+   "scale_from_960": 0.11031,
+   "mirrored_from": "hit_south-east",
+   "gamelab_video_job": "f88529e9-0746-497a-be61-2f514edae59a",
+   "gamelab_base_image_job": "52c45ab0-31f3-48f8-a947-7af3e3fdc3ef",
+   "sheet_sha256": "a5d8da1850ea56cc6fee9f77d5c6ad5144fb5d72801e8a255d2728e355f4130a"
+  },
+  "hit_east": {
+   "frames_dir": "hit/east/",
+   "sheet": "hit/hit_east_sheet.png",
+   "cell": 112,
+   "cols": 8,
+   "frames": 49,
+   "fps": 12,
+   "anchor_feet_px": [
+    56,
+    78
+   ],
+   "scale_from_960": 0.1103,
+   "mirrored_from": null,
+   "gamelab_video_job": "50219059-6664-4b75-ad1f-c5c059a25271",
+   "gamelab_base_image_job": "bd34b1a6-4da1-4846-848d-f4152d27c32f",
+   "sheet_sha256": "0808368cdea68be7d143a64eff849475277ddadeaed61543380c062be1b11fc9"
+  },
+  "hit_west": {
+   "frames_dir": "hit/west/",
+   "sheet": "hit/hit_west_sheet.png",
+   "cell": 112,
+   "cols": 8,
+   "frames": 49,
+   "fps": 12,
+   "anchor_feet_px": [
+    55,
+    78
+   ],
+   "scale_from_960": 0.1103,
+   "mirrored_from": "hit_east",
+   "gamelab_video_job": "50219059-6664-4b75-ad1f-c5c059a25271",
+   "gamelab_base_image_job": "bd34b1a6-4da1-4846-848d-f4152d27c32f",
+   "sheet_sha256": "05546283a3b9e321245c8ccc6f04a759ad6df7fcb35eec4f76570864d3bc6f08"
+  },
+  "hit_north-east": {
+   "frames_dir": "hit/north-east/",
+   "sheet": "hit/hit_north-east_sheet.png",
+   "cell": 112,
+   "cols": 8,
+   "frames": 49,
+   "fps": 12,
+   "anchor_feet_px": [
+    57,
+    78
+   ],
+   "scale_from_960": 0.1103,
+   "mirrored_from": null,
+   "gamelab_video_job": "845b42fc-415a-4cfe-b5a5-f6268e5ef937",
+   "gamelab_base_image_job": "36ec1815-19ed-4865-9b01-d0038dfbf6f6",
+   "sheet_sha256": "1ba81b67df7b29d5dd00101536fc90e33901924b65c1a567b196e64123d1c97f"
+  },
+  "hit_north-west": {
+   "frames_dir": "hit/north-west/",
+   "sheet": "hit/hit_north-west_sheet.png",
+   "cell": 112,
+   "cols": 8,
+   "frames": 49,
+   "fps": 12,
+   "anchor_feet_px": [
+    54,
+    78
+   ],
+   "scale_from_960": 0.1103,
+   "mirrored_from": "hit_north-east",
+   "gamelab_video_job": "845b42fc-415a-4cfe-b5a5-f6268e5ef937",
+   "gamelab_base_image_job": "36ec1815-19ed-4865-9b01-d0038dfbf6f6",
+   "sheet_sha256": "56d265a43b49470fcc68ed27fa5c298134a0b3454ecd4605cc91a17782838d02"
+  },
+  "special_south-east": {
+   "frames_dir": "special/south-east/",
+   "sheet": "special/special_south-east_sheet.png",
+   "cell": 112,
+   "cols": 8,
+   "frames": 49,
+   "fps": 12,
+   "anchor_feet_px": [
+    55,
+    78
+   ],
+   "scale_from_960": 0.11031,
+   "mirrored_from": null,
+   "gamelab_video_job": "740f97f5-1c8c-458f-8bb6-342d921c9ccf",
+   "gamelab_base_image_job": "52c45ab0-31f3-48f8-a947-7af3e3fdc3ef",
+   "sheet_sha256": "b782e6d97363001a0e10f56679210ab41732ea740d552ea08ea06abbc2dec587"
+  },
+  "special_south-west": {
+   "frames_dir": "special/south-west/",
+   "sheet": "special/special_south-west_sheet.png",
+   "cell": 112,
+   "cols": 8,
+   "frames": 49,
+   "fps": 12,
+   "anchor_feet_px": [
+    56,
+    78
+   ],
+   "scale_from_960": 0.11031,
+   "mirrored_from": "special_south-east",
+   "gamelab_video_job": "740f97f5-1c8c-458f-8bb6-342d921c9ccf",
+   "gamelab_base_image_job": "52c45ab0-31f3-48f8-a947-7af3e3fdc3ef",
+   "sheet_sha256": "0d68ebf797dec50e6f94592e52ef0415242e8ec3f73b828f77fa6086dce47d2a"
+  },
+  "special_east": {
+   "frames_dir": "special/east/",
+   "sheet": "special/special_east_sheet.png",
+   "cell": 112,
+   "cols": 8,
+   "frames": 49,
+   "fps": 12,
+   "anchor_feet_px": [
+    56,
+    78
+   ],
+   "scale_from_960": 0.1103,
+   "mirrored_from": null,
+   "gamelab_video_job": "9f0115a6-7b63-42de-9497-9e3ca3dace25",
+   "gamelab_base_image_job": "bd34b1a6-4da1-4846-848d-f4152d27c32f",
+   "sheet_sha256": "e5b295b480e3e87cedb496e2104454bfec11ee012fcd99f3e7efe158d948c42c"
+  },
+  "special_west": {
+   "frames_dir": "special/west/",
+   "sheet": "special/special_west_sheet.png",
+   "cell": 112,
+   "cols": 8,
+   "frames": 49,
+   "fps": 12,
+   "anchor_feet_px": [
+    55,
+    78
+   ],
+   "scale_from_960": 0.1103,
+   "mirrored_from": "special_east",
+   "gamelab_video_job": "9f0115a6-7b63-42de-9497-9e3ca3dace25",
+   "gamelab_base_image_job": "bd34b1a6-4da1-4846-848d-f4152d27c32f",
+   "sheet_sha256": "bfc0c8d11c0bc9f78922311c0d593645addbf413a11b6dd333c64bd290d77fd0"
+  },
+  "special_north-east": {
+   "frames_dir": "special/north-east/",
+   "sheet": "special/special_north-east_sheet.png",
+   "cell": 112,
+   "cols": 8,
+   "frames": 49,
+   "fps": 12,
+   "anchor_feet_px": [
+    57,
+    78
+   ],
+   "scale_from_960": 0.1103,
+   "mirrored_from": null,
+   "gamelab_video_job": "b52fce68-a506-49fa-8b26-45c998939c77",
+   "gamelab_base_image_job": "36ec1815-19ed-4865-9b01-d0038dfbf6f6",
+   "sheet_sha256": "29444bc0cd32cbec65de2429771e5fcb0215b6c118ac94406e67e863fadc4d35"
+  },
+  "special_north-west": {
+   "frames_dir": "special/north-west/",
+   "sheet": "special/special_north-west_sheet.png",
+   "cell": 112,
+   "cols": 8,
+   "frames": 49,
+   "fps": 12,
+   "anchor_feet_px": [
+    54,
+    78
+   ],
+   "scale_from_960": 0.1103,
+   "mirrored_from": "special_north-east",
+   "gamelab_video_job": "b52fce68-a506-49fa-8b26-45c998939c77",
+   "gamelab_base_image_job": "36ec1815-19ed-4865-9b01-d0038dfbf6f6",
+   "sheet_sha256": "6f5bdd483593c66f5d437eeebea1537394fc0cf91b22c5b61a18ee05126c14f9"
+  }
+ }
+}

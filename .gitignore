@@ -1,0 +1,23 @@
+﻿# Godot
+.godot/
+*.translation
+
+# OS / editor
+.DS_Store
+Thumbs.db
+*.tmp
+*.swp
+*~
+
+# Local scratch / backups
+work/
+
+# Secrets
+.env
+.env.*
+*.pem
+**/secrets/
+
+# Large local demo captures (kept on the laptop; source docs/*.md stay)
+docs/*.mp4
+docs/*.avi
