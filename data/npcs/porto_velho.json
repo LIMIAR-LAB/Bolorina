@@ -1,0 +1,407 @@
+{
+ "versao": 1,
+ "area": "porto_velho",
+ "nota": "NPCs de Porto Velho (scripts/economia/npcs_area.gd). pos = fallback (x,z) quando o mapa nao tem o marcador npc_<id>. retrato: art/ui/retratos/<id>.png (128x128) com fallback. dialogo: dialogos/<id>.dialogue (Dialogue Manager) quando existir; senao usa falas.",
+ "npcs": [
+  {
+   "id": "helena",
+   "nome": "Helena",
+   "papel": "ferreira",
+   "loja": "forja",
+   "personagem": "original_guardian",
+   "pos": [
+    -9,
+    -4
+   ],
+   "cor": "ffcfa8",
+   "escala": 1.0,
+   "retrato": "res://art/ui/retratos/helena.png",
+   "dialogo": "res://dialogos/helena.dialogue",
+   "morador_vila": true,
+   "falas": [
+    "A forja está quente. Traz minério e carvão que eu transformo em lingote.",
+    "Lingote mais ouro vira elmo, peito, luva, bota, escudo e espada. Nessa ordem de importância, segundo eu."
+   ]
+  },
+  {
+   "id": "mira",
+   "nome": "Mira",
+   "papel": "herbalista",
+   "loja": "ervas",
+   "personagem": "original_mira_v6",
+   "pos": [
+    -7,
+    2
+   ],
+   "cor": "ffffff",
+   "escala": 1.0,
+   "retrato": "res://art/ui/retratos/mira.png",
+   "dialogo": "res://dialogos/mira.dialogue",
+   "morador_vila": true,
+   "falas": [
+    "Poção de vida, de energia, chá calmante... e antídoto para cogumelo-relógio.",
+    "Se você vir a si mesma amanhã, beba o chá. Não converse com ela."
+   ]
+  },
+  {
+   "id": "caio",
+   "nome": "Caio",
+   "papel": "estalajadeiro",
+   "loja": "estalagem",
+   "personagem": "original_villager",
+   "pos": [
+    -2,
+    6
+   ],
+   "cor": "ffffff",
+   "escala": 1.0,
+   "retrato": "res://art/ui/retratos/caio.png",
+   "dialogo": "res://dialogos/caio.dialogue",
+   "morador_vila": true,
+   "falas": [
+    "Cama quente, sopa de peixe e boatos frescos.",
+    "Ontem um viajante pagou com uma moeda de 3021. Aceitei, claro."
+   ]
+  },
+  {
+   "id": "bruna",
+   "nome": "Bruna",
+   "papel": "guardiã da vila",
+   "loja": "guarda",
+   "personagem": "original_guardian",
+   "pos": [
+    6,
+    -10
+   ],
+   "cor": "b8c8ff",
+   "escala": 1.0,
+   "retrato": "res://art/ui/retratos/bruna.png",
+   "dialogo": "res://dialogos/bruna.dialogue",
+   "morador_vila": false,
+   "falas": [
+    "A guarda sempre precisa de mãos. Quer uma missão?",
+    "Se ver um orc de gravata, não ria. Ele é diplomata."
+   ]
+  },
+  {
+   "id": "marina",
+   "nome": "Capitã Marina",
+   "papel": "capitã do dirigível",
+   "loja": "doca",
+   "personagem": "original_villager",
+   "pos": [
+    12,
+    4
+   ],
+   "cor": "a8e0ff",
+   "escala": 1.0,
+   "retrato": "res://art/ui/retratos/marina.png",
+   "dialogo": "res://dialogos/marina.dialogue",
+   "morador_vila": true,
+   "falas": [
+    "O dirigível sai quando você quiser. Escolha a ilha no mapa.",
+    "Já fomos à ilha futurista três vezes. Voltamos ontem. Partimos amanhã."
+   ]
+  },
+  {
+   "id": "ozorio",
+   "nome": "Arquimago Ozório",
+   "papel": "arquimago",
+   "loja": "torre_ozorio",
+   "personagem": "original_apprentice",
+   "pos": [
+    -12,
+    -10
+   ],
+   "cor": "d8b0ff",
+   "escala": 1.0,
+   "retrato": "res://art/ui/retratos/ozorio.png",
+   "dialogo": "res://dialogos/ozorio.dialogue",
+   "morador_vila": false,
+   "falas": [
+    "Encantamentos! Uma faísca a mais de defesa em qualquer peça do corpo.",
+    "Meu último encanto deu errado. Agora meu chapéu tem opinião."
+   ]
+  },
+  {
+   "id": "bartolomeu",
+   "nome": "Bartolomeu",
+   "papel": "sineiro",
+   "loja": "sino",
+   "personagem": "original_villager",
+   "pos": [
+    0,
+    -14
+   ],
+   "cor": "e0e0e0",
+   "escala": 1.0,
+   "retrato": "res://art/ui/retratos/bartolomeu.png",
+   "dialogo": "res://dialogos/bartolomeu.dialogue",
+   "morador_vila": false,
+   "falas": [
+    "O sino marca as horas. E, às vezes, os anos.",
+    "Toco o sino do amanhecer por um troquinho. Você dorme, o dia vira."
+   ]
+  },
+  {
+   "id": "rosa",
+   "nome": "Rosa",
+   "papel": "jardineira",
+   "loja": "viveiro",
+   "personagem": "original_gardener",
+   "pos": [
+    -14,
+    4
+   ],
+   "cor": "ffffff",
+   "escala": 1.0,
+   "retrato": "res://art/ui/retratos/rosa.png",
+   "dialogo": "res://dialogos/rosa.dialogue",
+   "morador_vila": false,
+   "falas": [
+    "Mudas de macieira e laranjeira para o pomar novo da fazenda.",
+    "Girassol cresce virado para o sol. Aqui ele vira para a doca, não sei por quê."
+   ]
+  },
+  {
+   "id": "armando",
+   "nome": "Sr. Armando",
+   "papel": "mercador da praça",
+   "loja": "mercado",
+   "personagem": "original_guardian",
+   "pos": [
+    2.6,
+    -6.6
+   ],
+   "cor": "ffffff",
+   "escala": 1.0,
+   "retrato": "res://art/ui/retratos/armando.png",
+   "dialogo": "res://dialogos/armando.dialogue",
+   "morador_vila": true,
+   "falas": [
+    "Compro e vendo de tudo! Sementes, corda, sal... e pago bem pelo que você trouxer.",
+    "Metade do preço é justo. A outra metade é saudade."
+   ]
+  },
+  {
+   "id": "otavio",
+   "nome": "Otávio",
+   "papel": "carpinteiro",
+   "loja": "carpintaria",
+   "personagem": "original_villager",
+   "pos": [
+    9,
+    -2
+   ],
+   "cor": "ffe0b0",
+   "escala": 1.0,
+   "retrato": "res://art/ui/retratos/otavio.png",
+   "dialogo": "res://dialogos/otavio.dialogue",
+   "morador_vila": true,
+   "falas": [
+    "Melhoro sua casa e o celeiro. Tábuas também.",
+    "Fiz uma porta que abre para ontem. Não use."
+   ]
+  },
+  {
+   "id": "lurdes",
+   "nome": "Dona Lurdes",
+   "papel": "pescadora",
+   "loja": "pescaria",
+   "personagem": "original_villager",
+   "pos": [
+    10,
+    9
+   ],
+   "cor": "ffffff",
+   "escala": 1.0,
+   "retrato": "res://art/ui/retratos/lurdes.png",
+   "dialogo": "res://dialogos/lurdes.dialogue",
+   "morador_vila": true,
+   "falas": [
+    "Isca de minhoca para o dia a dia, isca brilhante para a truta dourada.",
+    "A truta dourada morde às 16:30. Sempre 16:30."
+   ]
+  },
+  {
+   "id": "cinira",
+   "nome": "Cinira",
+   "papel": "banqueira de cinzas",
+   "loja": "banco",
+   "personagem": "original_gardener",
+   "pos": [
+    4,
+    -2
+   ],
+   "cor": "f0d890",
+   "escala": 1.0,
+   "retrato": "res://art/ui/retratos/cinira.png",
+   "dialogo": "res://dialogos/cinira.dialogue",
+   "morador_vila": false,
+   "falas": [
+    "O Banco das Cinzas guarda seu ouro e paga 1% ao dia.",
+    "Nossa moeda é lastreada em cinza vulcânica. Muito estável. Até a próxima erupção."
+   ]
+  },
+  {
+   "id": "tobias",
+   "nome": "Tobias",
+   "papel": "cartógrafo",
+   "loja": "cartografia",
+   "personagem": "original_apprentice",
+   "pos": [
+    -4,
+    -9
+   ],
+   "cor": "ffffff",
+   "escala": 1.0,
+   "retrato": "res://art/ui/retratos/tobias.png",
+   "dialogo": "res://dialogos/tobias.dialogue",
+   "morador_vila": true,
+   "falas": [
+    "Mapas novos liberam a viagem para outras áreas.",
+    "Desenhei o mapa da ilha futurista antes de ela existir."
+   ]
+  },
+  {
+   "id": "severino",
+   "nome": "Severino",
+   "papel": "alfaiate",
+   "loja": "alfaiataria",
+   "personagem": "original_apprentice",
+   "pos": [
+    -10,
+    8
+   ],
+   "cor": "c0ffc0",
+   "escala": 1.0,
+   "retrato": "res://art/ui/retratos/severino.png",
+   "dialogo": "res://dialogos/severino.dialogue",
+   "morador_vila": false,
+   "falas": [
+    "Chapéus, lenços, capas. Roupa boa não muda a defesa, muda o humor.",
+    "Costurei uma capa que esvoaça sem vento. É só ansiedade."
+   ]
+  },
+  {
+   "id": "gaspar",
+   "nome": "Seu Gaspar",
+   "papel": "minerador aposentado",
+   "loja": "mina_velha",
+   "personagem": "original_guardian",
+   "pos": [
+    -16,
+    -6
+   ],
+   "cor": "c8b8a8",
+   "escala": 1.0,
+   "retrato": "res://art/ui/retratos/gaspar.png",
+   "dialogo": "res://dialogos/gaspar.dialogue",
+   "morador_vila": false,
+   "falas": [
+    "Picareta, lanterna e carvão. E conselhos de graça.",
+    "Nas Minas da Cinza, minério de prata só sai com picareta de ferro."
+   ]
+  },
+  {
+   "id": "nina",
+   "nome": "Nina",
+   "papel": "criança mensageira",
+   "loja": "mensageria",
+   "personagem": "original_cat_v6",
+   "pos": [
+    3,
+    3
+   ],
+   "cor": "ffffff",
+   "escala": 1.0,
+   "retrato": "res://art/ui/retratos/nina.png",
+   "dialogo": "res://dialogos/nina.dialogue",
+   "morador_vila": true,
+   "falas": [
+    "Tenho uma carta para entregar! Me ajuda?",
+    "Se a carta chegar antes de ser escrita, ainda vale."
+   ]
+  },
+  {
+   "id": "frei_ze",
+   "nome": "Frei Zé",
+   "papel": "bibliotecário",
+   "loja": "biblioteca",
+   "personagem": "original_guardian",
+   "pos": [
+    -6,
+    -16
+   ],
+   "cor": "ffffff",
+   "escala": 1.0,
+   "retrato": "res://art/ui/retratos/frei_ze.png",
+   "dialogo": "res://dialogos/frei_ze.dialogue",
+   "morador_vila": true,
+   "falas": [
+    "O códex guarda a história da ilha. Uma página por vez.",
+    "A primeira página fala de você. Ainda não terminei de ler."
+   ]
+  },
+  {
+   "id": "tempora",
+   "nome": "Madame Tempora",
+   "papel": "comerciante de relíquias do tempo",
+   "loja": "reliquias",
+   "personagem": "original_mira_v6",
+   "pos": [
+    14,
+    -6
+   ],
+   "cor": "ffb0e0",
+   "escala": 1.0,
+   "retrato": "res://art/ui/retratos/tempora.png",
+   "dialogo": "res://dialogos/tempora.dialogue",
+   "morador_vila": false,
+   "falas": [
+    "Relíquias de todos os tempos. Pague em ouro de qualquer século.",
+    "Este relógio parou às 16:30. Ele sabe de algo."
+   ]
+  },
+  {
+   "id": "kiko",
+   "nome": "Kiko",
+   "papel": "domador",
+   "loja": "domador",
+   "personagem": "original_apprentice",
+   "pos": [
+    15,
+    2
+   ],
+   "cor": "ffd0a0",
+   "escala": 1.0,
+   "retrato": "res://art/ui/retratos/kiko.png",
+   "dialogo": "res://dialogos/kiko.dialogue",
+   "morador_vila": false,
+   "falas": [
+    "Pets, petiscos e um apito de montaria experimental.",
+    "O gato-cavalo ainda não aceita sela. Nem opinião."
+   ]
+  },
+  {
+   "id": "fagulha",
+   "nome": "Fagulha",
+   "papel": "dragão da doca",
+   "loja": "dragao",
+   "personagem": "original_cat_v6",
+   "pos": [
+    17,
+    7
+   ],
+   "cor": "ff7a50",
+   "escala": 1.7,
+   "retrato": "res://art/ui/retratos/fagulha.png",
+   "dialogo": "res://dialogos/fagulha.dialogue",
+   "morador_vila": false,
+   "falas": [
+    "Rrrr... peixe? Peixe é bom. Ouro também. Mas peixe.",
+    "Já fui maior. Ou serei. Tempo é confuso para dragões."
+   ]
+  }
+ ]
+}

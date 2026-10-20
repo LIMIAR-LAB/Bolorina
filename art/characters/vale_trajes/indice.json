@@ -286,6 +286,72 @@
   "adam_grevas": {
    "vila": "camadas/adam_grevas/vila.png",
    "combate": "camadas/adam_grevas/combate/"
+  },
+  "peito_cobre": {
+   "vila": "camadas/peito_cobre/vila.png",
+   "combate": "camadas/peito_cobre/combate/",
+   "fonte": "forja_cor"
+  },
+  "botas_cobre": {
+   "vila": "camadas/botas_cobre/vila.png",
+   "combate": "camadas/botas_cobre/combate/",
+   "fonte": "forja_cor"
+  },
+  "luvas_cobre": {
+   "vila": "camadas/luvas_cobre/vila.png",
+   "combate": "camadas/luvas_cobre/combate/",
+   "fonte": "forja_cor"
+  },
+  "peito_ferro": {
+   "vila": "camadas/peito_ferro/vila.png",
+   "combate": "camadas/peito_ferro/combate/",
+   "fonte": "forja_cor"
+  },
+  "botas_ferro": {
+   "vila": "camadas/botas_ferro/vila.png",
+   "combate": "camadas/botas_ferro/combate/",
+   "fonte": "forja_cor"
+  },
+  "luvas_ferro": {
+   "vila": "camadas/luvas_ferro/vila.png",
+   "combate": "camadas/luvas_ferro/combate/",
+   "fonte": "forja_cor"
+  },
+  "peito_prata": {
+   "vila": "camadas/peito_prata/vila.png",
+   "combate": "camadas/peito_prata/combate/",
+   "fonte": "forja_cor"
+  },
+  "botas_prata": {
+   "vila": "camadas/botas_prata/vila.png",
+   "combate": "camadas/botas_prata/combate/",
+   "fonte": "forja_cor"
+  },
+  "luvas_prata": {
+   "vila": "camadas/luvas_prata/vila.png",
+   "combate": "camadas/luvas_prata/combate/",
+   "fonte": "forja_cor"
+  },
+  "capacete_cobre": {
+   "vila": "camadas/capacete_cobre/vila.png",
+   "combate": "camadas/capacete_cobre/combate/",
+   "apagar_vila": "camadas/capacete_cobre/vila_apagar.png",
+   "apagar_combate": "camadas/capacete_cobre/combate_apagar/",
+   "fonte": "forja_cor (elmo_ferro do PixelLab recolorido)"
+  },
+  "capacete_ferro": {
+   "vila": "camadas/capacete_ferro/vila.png",
+   "combate": "camadas/capacete_ferro/combate/",
+   "apagar_vila": "camadas/capacete_ferro/vila_apagar.png",
+   "apagar_combate": "camadas/capacete_ferro/combate_apagar/",
+   "fonte": "forja_cor (elmo_ferro do PixelLab recolorido)"
+  },
+  "capacete_prata": {
+   "vila": "camadas/capacete_prata/vila.png",
+   "combate": "camadas/capacete_prata/combate/",
+   "apagar_vila": "camadas/capacete_prata/vila_apagar.png",
+   "apagar_combate": "camadas/capacete_prata/combate_apagar/",
+   "fonte": "forja_cor (elmo_ferro do PixelLab recolorido)"
   }
  }
 }

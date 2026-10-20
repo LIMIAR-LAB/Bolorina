@@ -1,0 +1,45 @@
+{
+ "id": "forja",
+ "nome": "Forja da Helena",
+ "npc": "helena",
+ "compra": [
+  {
+   "item": "carvao",
+   "preco": 6,
+   "estoque": 30,
+   "qtd": 1
+  },
+  {
+   "item": "picareta",
+   "preco": 120,
+   "estoque": 2,
+   "qtd": 1
+  },
+  {
+   "item": "picareta_ferro",
+   "preco": 250,
+   "estoque": 1,
+   "qtd": 1
+  }
+ ],
+ "vende_categorias": [
+  "minerio",
+  "lingote"
+ ],
+ "taxa_venda": 0.5,
+ "servicos": [
+  {
+   "id": "fundir",
+   "nome": "Fundir minério (fornalha)",
+   "preco": 0,
+   "desc": "Minério + carvão viram lingote."
+  },
+  {
+   "id": "forjar",
+   "nome": "Forjar equipamento",
+   "preco": 0,
+   "desc": "Lingotes + ouro viram peças."
+  }
+ ],
+ "forja": true
+}

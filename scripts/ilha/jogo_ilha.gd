@@ -141,7 +141,7 @@ func _trocar(area: String, spawn: String, com_fade: bool) -> void:
 		_:
 			# areas novas do registro (data/areas.json): cena generica
 			if Registro.disponivel(area):
-				atual = load(String(Registro.info(area).cena)).instantiate()
+				atual = load(Registro.cena(area)).instantiate()
 				if "estado" in atual:
 					atual.estado = estado
 				if "gerenciador" in atual:
@@ -154,6 +154,7 @@ func _trocar(area: String, spawn: String, com_fade: bool) -> void:
 				push_error("Area desconhecida ou sem cena: " + area)
 	vestir_atual()
 	_colocar_pedra()
+	_colocar_minerios()
 	await get_tree().process_frame
 	var tw2 := create_tween()
 	tw2.tween_property(fade, "color:a", 0.0, FADE * (1.5 if not com_fade else 1.0))
@@ -255,6 +256,15 @@ func _colocar_pedra() -> void:
 	atual.add_child(pedra)
 	pedra.global_position = (j as Node3D).global_position + Vector3(1.6, -0.4, 0.8)
 	pedra.montar(self, j)
+
+## nos de minerio da area (data/minerios.json ou marcadores minerio_* da cena)
+func _colocar_minerios() -> void:
+	var j = _jogador_atual()
+	if atual == null or not (j is Node3D):
+		return
+	var m = load("res://scripts/economia/minerios_area.gd").new()
+	atual.add_child(m)
+	m.montar(self, atual, nome, j)
 
 func _jogador_atual():
 	if atual == null:

@@ -36,10 +36,15 @@ static func existe(id: String) -> bool:
 
 ## a cena da area existe no projeto (pode teleportar)?
 static func disponivel(id: String) -> bool:
+	return cena(id) != ""
+
+## cena que o jogo carrega: a oficial (ex. mapa da Bolorina) ou, se ainda nao existe, a "cena_provisoria"
+static func cena(id: String) -> String:
 	var a := info(id)
-	if a.is_empty() or a.get("cena") == null:
-		return false
-	return ResourceLoader.exists(String(a.cena))
+	for k in ["cena", "cena_provisoria"]:
+		if a.get(k) != null and ResourceLoader.exists(String(a.get(k))):
+			return String(a.get(k))
+	return ""
 
 static func nome(id: String) -> String:
 	return String(info(id).get("nome", id.capitalize()))

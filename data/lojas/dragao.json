@@ -1,0 +1,18 @@
+{
+ "id": "dragao",
+ "nome": "Ninho do Fagulha",
+ "npc": "fagulha",
+ "compra": [],
+ "vende_categorias": [
+  "peixe"
+ ],
+ "taxa_venda": 0.5,
+ "servicos": [
+  {
+   "id": "presente_dragao",
+   "nome": "Dar um peixe ao dragão",
+   "preco": 0,
+   "desc": "Uma vez por dia. Às vezes ele retribui."
+  }
+ ]
+}

@@ -53,6 +53,9 @@ var amizade := {}
 var conversou := {}
 ## {"possui": [ids], "equipado": {slot: id}}
 var equipamento := {}
+## economia (scripts/economia/): estoque das lojas por dia e estado geral (cofre, encantos, missoes, codex...)
+var lojas := {}
+var extras := {}
 
 func _init() -> void:
 	if OS.get_environment("ILHA_SAVE") != "":
@@ -72,6 +75,8 @@ func reiniciar() -> void:
 	amizade = {}
 	conversou = {}
 	equipamento = Equip.novo()
+	lojas = {}
+	extras = {}
 	solo = {}
 	removidos = {}
 	arvores = {}
@@ -227,7 +232,7 @@ func comprar(item: String) -> String:
 # ---------------------------------------------------------------- arquivo
 func dados() -> Dictionary:
 	return {"versao": VERSAO, "dia": dia, "ouro": ouro, "regador": regador, "itens": itens, "solo": solo,
-		"removidos": removidos.keys(), "arvores": arvores, "slot": slot, "energia": energia, "animais": animais, "amizade": amizade, "conversou": conversou, "equipamento": equipamento}
+		"removidos": removidos.keys(), "arvores": arvores, "slot": slot, "energia": energia, "animais": animais, "amizade": amizade, "conversou": conversou, "equipamento": equipamento, "lojas": lojas, "extras": extras}
 
 func salvar() -> bool:
 	if not gravar or arquivo == "user://island_v1.json":
@@ -270,6 +275,9 @@ func carregar() -> bool:
 	conversou = d.get("conversou", {}) if d.get("conversou", {}) is Dictionary else {}
 	# saves antigos nao tem "equipamento": recebem o inicial
 	equipamento = Equip.normalizar(d.get("equipamento", null))
+	# saves antigos nao tem lojas/extras (economia): comecam vazios
+	lojas = d.get("lojas", {}) if d.get("lojas", {}) is Dictionary else {}
+	extras = d.get("extras", {}) if d.get("extras", {}) is Dictionary else {}
 	var an = d.get("animais", {})
 	animais = _animais_novos()
 	if an is Dictionary:

@@ -12,6 +12,8 @@ var npcs
 var estado
 var gerenciador
 var jogo := true
+## false: sem os moradores antigos (Porto Velho provisorio usa scripts/economia/npcs_area.gd)
+var moradores := true
 var saidas: Array = []
 var saidas_novas  # saidas_area.gd (portoes largos); quando existe, o laco antigo de raio fica desligado
 ## spawns: da_fazenda (leste do caminho sul), da_arena (oeste da saida leste), padrao
@@ -38,9 +40,10 @@ func _ready() -> void:
 	if estado == null:
 		estado = load("res://scripts/ilha/fazenda_estado.gd").new()
 		estado.carregar()
-	npcs = Npcs.new()
-	add_child(npcs)
-	npcs.montar(self)
+	if moradores:
+		npcs = Npcs.new()
+		add_child(npcs)
+		npcs.montar(self)
 	# horizonte vivo: ceu por clima do dia + ilhas que derivam + aurora 3D (K / Shift+K / U; HORIZONTE=0 desliga)
 	horizonte = Horizonte.new()
 	add_child(horizonte)

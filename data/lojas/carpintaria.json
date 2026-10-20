@@ -1,0 +1,31 @@
+{
+ "id": "carpintaria",
+ "nome": "Carpintaria do Otávio",
+ "npc": "otavio",
+ "compra": [
+  {
+   "item": "tabuas",
+   "preco": 20,
+   "estoque": 20,
+   "qtd": 1
+  }
+ ],
+ "vende_categorias": [
+  "material"
+ ],
+ "taxa_venda": 0.5,
+ "servicos": [
+  {
+   "id": "melhorar_casa",
+   "nome": "Melhorar a casa (nível +1)",
+   "preco": 500,
+   "desc": "Mais espaço e uma cama melhor."
+  },
+  {
+   "id": "melhorar_celeiro",
+   "nome": "Ampliar o celeiro",
+   "preco": 400,
+   "desc": "Mais animais na fazenda."
+  }
+ ]
+}

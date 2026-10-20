@@ -1,0 +1,36 @@
+{
+ "id": "reliquias",
+ "nome": "Relíquias de Madame Tempora",
+ "npc": "tempora",
+ "compra": [
+  {
+   "item": "relogio_parado",
+   "preco": 600,
+   "estoque": 1,
+   "qtd": 1
+  },
+  {
+   "item": "moeda_futuro",
+   "preco": 450,
+   "estoque": 1,
+   "qtd": 1
+  },
+  {
+   "item": "fossil_dragao",
+   "preco": 800,
+   "estoque": 1,
+   "qtd": 1
+  },
+  {
+   "item": "ampulheta_rachada",
+   "preco": 350,
+   "estoque": 1,
+   "qtd": 1
+  }
+ ],
+ "vende_categorias": [
+  "reliquia"
+ ],
+ "taxa_venda": 0.7,
+ "servicos": []
+}

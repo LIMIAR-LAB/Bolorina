@@ -1,0 +1,43 @@
+{
+ "id": "ervas",
+ "nome": "Ervas da Mira",
+ "npc": "mira",
+ "compra": [
+  {
+   "item": "pocao_vida",
+   "preco": 40,
+   "estoque": 10,
+   "qtd": 1
+  },
+  {
+   "item": "pocao_energia",
+   "preco": 35,
+   "estoque": 10,
+   "qtd": 1
+  },
+  {
+   "item": "cha_calmante",
+   "preco": 20,
+   "estoque": 8,
+   "qtd": 1
+  },
+  {
+   "item": "antidoto",
+   "preco": 30,
+   "estoque": 5,
+   "qtd": 1
+  }
+ ],
+ "vende_categorias": [
+  "colheita"
+ ],
+ "taxa_venda": 0.5,
+ "servicos": [
+  {
+   "id": "ler_folhas",
+   "nome": "Ler folhas de chá",
+   "preco": 10,
+   "desc": "Um boato sobre amanhã."
+  }
+ ]
+}

@@ -160,8 +160,8 @@ for a, b in trilhas:
 f_nome = fonte(19 * K); f_pequena = fonte(13 * K, False)
 saida = {}
 for a in areas:
-    cena = a.get('cena')
-    disp = cena is not None and os.path.exists(os.path.join(R, cena.replace('res://', '')))
+    disp = any(a.get(k) is not None and os.path.exists(os.path.join(R, a[k].replace('res://', '')))
+               for k in ('cena', 'cena_provisoria'))
     cx, cy = a['mapa']; rx, ry = a['raio']
     cx_, cy_ = cx * K, cy * K
     # selo circular

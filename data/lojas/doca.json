@@ -1,0 +1,16 @@
+{
+ "id": "doca",
+ "nome": "Doca do Dirigível",
+ "npc": "marina",
+ "compra": [],
+ "vende_categorias": [],
+ "taxa_venda": 0.5,
+ "servicos": [
+  {
+   "id": "viajar",
+   "nome": "Viajar no dirigível (mapa-múndi)",
+   "preco": 20,
+   "desc": "Abre o mapa de viagem."
+  }
+ ]
+}

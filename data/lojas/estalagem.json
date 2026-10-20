@@ -1,0 +1,43 @@
+{
+ "id": "estalagem",
+ "nome": "Estalagem do Caio",
+ "npc": "caio",
+ "compra": [
+  {
+   "item": "sopa_peixe",
+   "preco": 30,
+   "estoque": 6,
+   "qtd": 1
+  },
+  {
+   "item": "pao_cinzas",
+   "preco": 12,
+   "estoque": 12,
+   "qtd": 1
+  },
+  {
+   "item": "torta_abobora",
+   "preco": 60,
+   "estoque": 3,
+   "qtd": 1
+  }
+ ],
+ "vende_categorias": [
+  "peixe"
+ ],
+ "taxa_venda": 0.5,
+ "servicos": [
+  {
+   "id": "descansar",
+   "nome": "Dormir na estalagem (energia cheia)",
+   "preco": 40,
+   "desc": "Recupera toda a energia."
+  },
+  {
+   "id": "boato",
+   "nome": "Pagar uma rodada (boato)",
+   "preco": 15,
+   "desc": "Ouve um boato."
+  }
+ ]
+}

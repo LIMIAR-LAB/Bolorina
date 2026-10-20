@@ -4,12 +4,13 @@ extends RefCounted
 ## recebem o equipamento inicial (nada quebra). Visual: scripts/ilha/equipamento_visual.gd compoe as
 ## CAMADAS de cada peca (art/characters/vale_trajes/) sobre a arte base da Vale.
 ## Detalhes: docs/EQUIPAMENTO.md
-const SLOTS := ["cabeca", "corpo", "pernas", "acessorio"]
-const NOME_SLOT := {"cabeca": "Cabeça", "corpo": "Corpo", "pernas": "Pernas", "acessorio": "Acessório"}
+## maos/pes/escudo/arma: conjuntos da forja (noite 20/10). Escudo e espada nao aparecem fora do combate.
+const SLOTS := ["cabeca", "corpo", "pernas", "acessorio", "maos", "pes", "escudo", "arma"]
+const NOME_SLOT := {"cabeca": "Cabeça", "corpo": "Corpo", "pernas": "Pernas", "acessorio": "Acessório", "maos": "Mãos", "pes": "Pés", "escudo": "Escudo", "arma": "Arma"}
 ## ordem de desenho das camadas (menor = mais embaixo)
-const Z_SLOT := {"pernas": 1, "corpo": 2, "acessorio": 3, "cabeca": 4}
+const Z_SLOT := {"pernas": 1, "pes": 2, "corpo": 3, "maos": 4, "acessorio": 5, "cabeca": 6, "escudo": 7, "arma": 8}
 ## padrao de cada slot ao tirar a peca (corpo e pernas nunca ficam vazios: volta a roupa de aprendiz)
-const PADRAO := {"cabeca": "", "corpo": "roupa_aprendiz", "pernas": "calca_lida", "acessorio": ""}
+const PADRAO := {"cabeca": "", "corpo": "roupa_aprendiz", "pernas": "calca_lida", "acessorio": "", "maos": "", "pes": "", "escudo": "", "arma": ""}
 ## camadas: ids em art/characters/vale_trajes/indice.json (vazio = arte base). Capacetes e armaduras de
 ## couro/malha vem da arte do PixelLab (tools/vale_pecas_pixellab.py); o resto e recolor por codigo.
 const ITENS := {
@@ -41,6 +42,43 @@ const ITENS := {
 		"desc": "Elmo redondo de ferro, com aba rebitada e proteção de nariz."},
 	"elmo_adamantium": {"nome": "Elmo de adamantium", "slot": "cabeca", "defesa": 4, "camadas": ["elmo_adamantium"],
 		"desc": "Metal prateado-azulado com uma runa ciano na testa e uma crista curta."},
+	# ---- conjuntos da forja (data/forja/itens.json; camadas por cor em tools/vale_conjuntos.py)
+	"capacete_cobre": {"nome": "Capacete de cobre", "slot": "cabeca", "defesa": 2, "ataque": 0, "camadas": ["capacete_cobre"], "forja": true, "nivel": 1,
+		"desc": "Capacete forjado na forja da Helena."},
+	"peito_cobre": {"nome": "Peitoral de cobre", "slot": "corpo", "defesa": 3, "ataque": 0, "camadas": ["peito_cobre"], "forja": true, "nivel": 1,
+		"desc": "Peitoral forjado. Pesa, mas protege."},
+	"luvas_cobre": {"nome": "Luvas de cobre", "slot": "maos", "defesa": 1, "ataque": 0, "camadas": ["luvas_cobre"], "forja": true, "nivel": 1,
+		"desc": "Luvas com placas nos dedos."},
+	"botas_cobre": {"nome": "Botas de cobre", "slot": "pes", "defesa": 1, "ataque": 0, "camadas": ["botas_cobre"], "forja": true, "nivel": 1,
+		"desc": "Botas com biqueira de metal."},
+	"escudo_cobre": {"nome": "Escudo de cobre", "slot": "escudo", "defesa": 2, "ataque": 0, "camadas": [], "forja": true, "nivel": 1,
+		"desc": "Escudo redondo (só aparece no combate)."},
+	"espada_cobre": {"nome": "Espada de cobre", "slot": "arma", "defesa": 0, "ataque": 3, "camadas": [], "forja": true, "nivel": 1,
+		"desc": "Espada forjada (só aparece no combate)."},
+	"capacete_ferro": {"nome": "Capacete de ferro", "slot": "cabeca", "defesa": 4, "ataque": 0, "camadas": ["capacete_ferro"], "forja": true, "nivel": 2,
+		"desc": "Capacete forjado na forja da Helena."},
+	"peito_ferro": {"nome": "Peitoral de ferro", "slot": "corpo", "defesa": 6, "ataque": 0, "camadas": ["peito_ferro"], "forja": true, "nivel": 2,
+		"desc": "Peitoral forjado. Pesa, mas protege."},
+	"luvas_ferro": {"nome": "Luvas de ferro", "slot": "maos", "defesa": 2, "ataque": 0, "camadas": ["luvas_ferro"], "forja": true, "nivel": 2,
+		"desc": "Luvas com placas nos dedos."},
+	"botas_ferro": {"nome": "Botas de ferro", "slot": "pes", "defesa": 2, "ataque": 0, "camadas": ["botas_ferro"], "forja": true, "nivel": 2,
+		"desc": "Botas com biqueira de metal."},
+	"escudo_ferro": {"nome": "Escudo de ferro", "slot": "escudo", "defesa": 4, "ataque": 0, "camadas": [], "forja": true, "nivel": 2,
+		"desc": "Escudo redondo (só aparece no combate)."},
+	"espada_ferro": {"nome": "Espada de ferro", "slot": "arma", "defesa": 0, "ataque": 6, "camadas": [], "forja": true, "nivel": 2,
+		"desc": "Espada forjada (só aparece no combate)."},
+	"capacete_prata": {"nome": "Capacete de prata de túmulo", "slot": "cabeca", "defesa": 6, "ataque": 0, "camadas": ["capacete_prata"], "forja": true, "nivel": 3,
+		"desc": "Capacete forjado na forja da Helena."},
+	"peito_prata": {"nome": "Peitoral de prata de túmulo", "slot": "corpo", "defesa": 9, "ataque": 0, "camadas": ["peito_prata"], "forja": true, "nivel": 3,
+		"desc": "Peitoral forjado. Pesa, mas protege."},
+	"luvas_prata": {"nome": "Luvas de prata de túmulo", "slot": "maos", "defesa": 3, "ataque": 0, "camadas": ["luvas_prata"], "forja": true, "nivel": 3,
+		"desc": "Luvas com placas nos dedos."},
+	"botas_prata": {"nome": "Botas de prata de túmulo", "slot": "pes", "defesa": 3, "ataque": 0, "camadas": ["botas_prata"], "forja": true, "nivel": 3,
+		"desc": "Botas com biqueira de metal."},
+	"escudo_prata": {"nome": "Escudo de prata de túmulo", "slot": "escudo", "defesa": 6, "ataque": 0, "camadas": [], "forja": true, "nivel": 3,
+		"desc": "Escudo redondo (só aparece no combate)."},
+	"espada_prata": {"nome": "Espada de prata de túmulo", "slot": "arma", "defesa": 0, "ataque": 9, "camadas": [], "forja": true, "nivel": 3,
+		"desc": "Espada forjada (só aparece no combate)."},
 	"amuleto_brasa": {"nome": "Amuleto de brasa", "slot": "acessorio", "defesa": 1, "camadas": [],
 		"desc": "Uma brasa que nunca apaga. Ainda sem visual no corpo (arte futura)."},
 }
@@ -58,6 +96,14 @@ static func normalizar(d) -> Dictionary:
 	var eq := novo()
 	if not d is Dictionary:
 		return eq
+	# encantos do Arquimago (economia): {id_da_peca: bonus}
+	if d.get("encantos", null) is Dictionary:
+		var enc := {}
+		for k in d.encantos:
+			if ITENS.has(String(k)):
+				enc[String(k)] = int(d.encantos[k])
+		if not enc.is_empty():
+			eq["encantos"] = enc
 	var possui = d.get("possui", null)
 	if possui is Array:
 		var lista: Array = []
@@ -116,10 +162,20 @@ static func ganhar(eq: Dictionary, id: String) -> bool:
 
 static func defesa(eq: Dictionary) -> int:
 	var t := 0
+	var enc: Dictionary = eq.get("encantos", {})
 	for s in SLOTS:
 		var id := equipado(eq, s)
 		if id != "":
-			t += int(ITENS[id].get("defesa", 0))
+			t += int(ITENS[id].get("defesa", 0)) + int(enc.get(id, 0))
+	return t
+
+## ataque somado (espadas da forja)
+static func ataque(eq: Dictionary) -> int:
+	var t := 0
+	for s in SLOTS:
+		var id := equipado(eq, s)
+		if id != "":
+			t += int(ITENS[id].get("ataque", 0))
 	return t
 
 ## defesa se a peca fosse vestida (para comparar na tela)

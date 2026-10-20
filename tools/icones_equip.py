@@ -113,6 +113,43 @@ ic = {
     'elmo_adamantium': elmo_adam(),
     'amuleto_brasa': amuleto(),
 }
+# ---- conjuntos da forja (data/forja/materiais.json): mesmas formas, cor do metal
+import json as _json
+def _tons(c):
+    c = tuple(c)
+    esc = tuple(int(v * 0.55) for v in c); cla = tuple(min(255, int(v + (255 - v) * 0.5)) for v in c)
+    return esc, c, cla
+def luvas(esc, med, cla):
+    m = {}
+    ret(m, 3, 4, 7, 12, med); ret(m, 9, 4, 13, 12, med); ret(m, 3, 4, 7, 5, cla); ret(m, 9, 4, 13, 5, cla)
+    ret(m, 3, 11, 7, 12, esc); ret(m, 9, 11, 13, 12, esc); px(m, 2, 8, med); px(m, 14, 8, med)
+    return m
+def botas(esc, med, cla):
+    m = {}
+    ret(m, 3, 3, 6, 11, med); ret(m, 9, 3, 12, 11, med); ret(m, 2, 11, 7, 13, esc); ret(m, 9, 11, 14, 13, esc)
+    ret(m, 3, 3, 6, 4, cla); ret(m, 9, 3, 12, 4, cla)
+    return m
+def escudo(esc, med, cla):
+    m = {}
+    for y in range(2, 14):
+        meia = [5, 6, 6, 6, 6, 6, 5, 5, 4, 3, 2, 1][y - 2]
+        ret(m, 8 - meia, y, 7 + meia, y, med)
+    ret(m, 7, 3, 8, 12, esc); ret(m, 3, 7, 12, 8, esc); ret(m, 4, 3, 5, 5, cla)
+    return m
+def espada(esc, med, cla):
+    m = {}
+    for i in range(9):
+        px(m, 4 + i, 11 - i, cla); px(m, 5 + i, 11 - i, med)
+    ret(m, 2, 11, 6, 12, (110, 70, 40)); ret(m, 3, 10, 4, 13, esc); px(m, 2, 13, (110, 70, 40)); px(m, 1, 14, (80, 50, 30))
+    return m
+for _m in _json.load(open(os.path.join(raiz, 'data', 'forja', 'materiais.json'), encoding='utf-8'))['materiais']:
+    e, md, c = _tons(_m['cor'])
+    ic['capacete_' + _m['id']] = elmo(e, md, c, 'nasal')
+    ic['peito_' + _m['id']] = camisa(e, md, c)
+    ic['luvas_' + _m['id']] = luvas(e, md, c)
+    ic['botas_' + _m['id']] = botas(e, md, c)
+    ic['escudo_' + _m['id']] = escudo(e, md, c)
+    ic['espada_' + _m['id']] = espada(e, md, c)
 prev = Image.new('RGBA', (len(ic) * 72, 72), (201, 164, 106, 255))
 for i, (n, m) in enumerate(ic.items()):
     o = salvar(n, m)

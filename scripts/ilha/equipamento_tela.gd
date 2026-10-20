@@ -8,8 +8,8 @@ const Visual = preload("res://scripts/ilha/equipamento_visual.gd")
 const PASTA_ICONES := "res://art/ui/icones_equip/"
 const DIRS := ["south", "south-west", "west", "north-west", "north", "north-east", "east", "south-east"]
 const NOME_DIR := {"south": "sul", "south-west": "sudoeste", "west": "oeste", "north-west": "noroeste", "north": "norte", "north-east": "nordeste", "east": "leste", "south-east": "sudeste"}
-const COLS := 6
-const CAIXA := 66
+const COLS := 8
+const CAIXA := 52
 const BEGE := Color("f1e2bd")
 var g          # gerenciador (jogo_ilha.gd) ou qualquer no com .estado e vestir_atual()
 var estado
@@ -186,19 +186,21 @@ func _construir() -> void:
 	_rotulo(pn, Vector2(384, 74), 15, Color("cbb48a"), "VESTINDO")
 	for i in Equip.SLOTS.size():
 		var s: String = Equip.SLOTS[i]
-		var y := 100 + i * 110
+		# 8 slots: 2 colunas x 4 linhas (conjuntos da forja: maos, pes, escudo, arma)
+		var y := 100 + (i % 4) * 110
+		var x0 := 384 + (i / 4) * 168
 		var cx := Panel.new()
-		cx.position = Vector2(384, y)
-		cx.size = Vector2(80, 80)
+		cx.position = Vector2(x0, y)
+		cx.size = Vector2(64, 64)
 		cx.mouse_filter = Control.MOUSE_FILTER_STOP
 		cx.gui_input.connect(_clique_slot.bind(s))
 		cx.tooltip_text = "Clique: tirar"
 		pn.add_child(cx)
 		slot_caixas[s] = cx
-		slot_icones[s] = _icone_rect(cx, Vector2(8, 8), 64)
-		_rotulo(pn, Vector2(476, y + 6), 13, Color("cbb48a"), String(Equip.NOME_SLOT[s]).to_upper())
-		var nm := _rotulo(pn, Vector2(476, y + 24), 16, BEGE)
-		nm.size = Vector2(236, 48)
+		slot_icones[s] = _icone_rect(cx, Vector2(6, 6), 52)
+		_rotulo(pn, Vector2(x0, y + 66), 12, Color("cbb48a"), String(Equip.NOME_SLOT[s]).to_upper())
+		var nm := _rotulo(pn, Vector2(x0 + 70, y + 2), 13, BEGE)
+		nm.size = Vector2(94, 64)
 		nm.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
 		slot_nomes[s] = nm
 	# ---- mochila
@@ -213,7 +215,7 @@ func _construir() -> void:
 		p.mouse_entered.connect(_sobre.bind(i))
 		pn.add_child(p)
 		grade.append(p)
-		grade_icones.append(_icone_rect(p, Vector2(9, 9), 48))
+		grade_icones.append(_icone_rect(p, Vector2(6, 6), 40))
 		var m := Panel.new()
 		m.position = Vector2(CAIXA - 20, 3)
 		m.size = Vector2(17, 17)

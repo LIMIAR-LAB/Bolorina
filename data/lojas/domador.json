@@ -1,0 +1,35 @@
+{
+ "id": "domador",
+ "nome": "Estábulo do Kiko",
+ "npc": "kiko",
+ "compra": [
+  {
+   "item": "racao_pet",
+   "preco": 15,
+   "estoque": 20,
+   "qtd": 1
+  },
+  {
+   "item": "coleira",
+   "preco": 80,
+   "estoque": 2,
+   "qtd": 1
+  },
+  {
+   "item": "apito_montaria",
+   "preco": 500,
+   "estoque": 1,
+   "qtd": 1
+  }
+ ],
+ "vende_categorias": [],
+ "taxa_venda": 0.5,
+ "servicos": [
+  {
+   "id": "adotar_pet",
+   "nome": "Adotar um pet (gato da doca)",
+   "preco": 200,
+   "desc": "Ele segue a Vale pela fazenda (visual futuro)."
+  }
+ ]
+}

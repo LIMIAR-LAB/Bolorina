@@ -1,0 +1,46 @@
+{
+ "versao": 1,
+ "provisorio": true,
+ "nota": "Provisório (3 metais) até chegar o da Bolorina (docs/FORJA_E_ITENS.md).",
+ "materiais": [
+  {
+   "id": "cobre",
+   "nome": "Cobre",
+   "nivel": 1,
+   "minerio": "minerio_cobre",
+   "lingote": "lingote_cobre",
+   "origem": "Minas da Cinza (níveis rasos) / pedreira da fazenda",
+   "cor": [
+    178,
+    94,
+    46
+   ]
+  },
+  {
+   "id": "ferro",
+   "nome": "Ferro",
+   "nivel": 2,
+   "minerio": "minerio_ferro",
+   "lingote": "lingote_ferro",
+   "origem": "Minas da Cinza / Vila dos Orcs",
+   "cor": [
+    118,
+    126,
+    140
+   ]
+  },
+  {
+   "id": "prata",
+   "nome": "Prata de túmulo",
+   "nivel": 3,
+   "minerio": "minerio_prata",
+   "lingote": "lingote_prata",
+   "origem": "Cidade Fantasma (túmulos)",
+   "cor": [
+    168,
+    180,
+    204
+   ]
+  }
+ ]
+}

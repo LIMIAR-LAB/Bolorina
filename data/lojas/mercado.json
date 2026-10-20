@@ -1,0 +1,63 @@
+{
+ "id": "mercado",
+ "nome": "Mercado da Praça",
+ "npc": "armando",
+ "compra": [
+  {
+   "item": "semente_nabo",
+   "preco": 20,
+   "estoque": 30,
+   "qtd": 1
+  },
+  {
+   "item": "semente_couve",
+   "preco": 40,
+   "estoque": 20,
+   "qtd": 1
+  },
+  {
+   "item": "semente_abobora",
+   "preco": 80,
+   "estoque": 10,
+   "qtd": 1
+  },
+  {
+   "item": "racao",
+   "preco": 30,
+   "estoque": 10,
+   "qtd": 5
+  },
+  {
+   "item": "corda",
+   "preco": 10,
+   "estoque": 10,
+   "qtd": 1
+  },
+  {
+   "item": "tocha",
+   "preco": 8,
+   "estoque": 10,
+   "qtd": 1
+  },
+  {
+   "item": "sal",
+   "preco": 5,
+   "estoque": 20,
+   "qtd": 1
+  }
+ ],
+ "vende_categorias": [
+  "colheita",
+  "peixe",
+  "material",
+  "minerio",
+  "lingote",
+  "pocao",
+  "comida",
+  "reliquia",
+  "roupa",
+  "pesca"
+ ],
+ "taxa_venda": 0.5,
+ "servicos": []
+}
