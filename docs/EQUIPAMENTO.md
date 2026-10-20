@@ -194,3 +194,10 @@ Testes ajustados para a base nova (não para esconder falha): `combate_testes` m
 `equipamento_testes` ignora diferenças em pixels transparentes (o import do Godot preenche o RGB invisível).
 Resultado: equipamento 79/79, combate 53/54 (a falha antiga do `.import`), consistência 4/4, fidelity 23/23,
 fazenda_extras 27/27.
+
+## Conjuntos da forja e slots novos (noite de 20/10/2026)
+Slots: cabeça, corpo, pernas, acessório, **mãos, pés, escudo, arma** (tela com 8 caixas em 2 colunas). Conjuntos de
+cobre, ferro e prata de túmulo (capacete, peitoral, luvas, botas, escudo, espada) feitos na forja de Porto Velho
+(`scripts/economia/forja.gd`, `data/forja/`). Camadas só por cor: `tools/vale_conjuntos.py`. Escudo e espada não
+aparecem fora do combate. Encantos do Arquimago somam +1 de defesa na peça (`equipamento.encantos`). Ver
+`docs/NOITE_RELATORIO.md`.

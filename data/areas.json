@@ -149,7 +149,8 @@
    "mundo": null,
    "bioma": "orc",
    "desc": "A ilhota dos orcs, a leste, depois da arena.",
-   "adaptador": "res://scripts/mundo/area_mapa_novo.gd"
+   "adaptador": "res://scripts/mundo/area_mapa_novo.gd",
+   "requer": "mapa_vila_orcs"
   },
   {
    "id": "cidade_fantasma",
@@ -168,7 +169,8 @@
    "mundo": null,
    "bioma": "fantasma",
    "desc": "Ruas vazias na névoa do oeste. Prata de túmulo.",
-   "adaptador": "res://scripts/mundo/area_mapa_novo.gd"
+   "adaptador": "res://scripts/mundo/area_mapa_novo.gd",
+   "requer": "mapa_cidade_fantasma"
   },
   {
    "id": "minas_cinza",
@@ -187,7 +189,8 @@
    "mundo": null,
    "bioma": "montanha",
    "desc": "A dungeon de mineração (em produção).",
-   "adaptador": "res://scripts/mundo/area_mapa_novo.gd"
+   "adaptador": "res://scripts/mundo/area_mapa_novo.gd",
+   "requer": "mapa_minas"
   },
   {
    "id": "ilha_futurista",
@@ -206,7 +209,8 @@
    "mundo": null,
    "bioma": "ceu",
    "desc": "Uma ilha flutuante de outro tempo. Liga temporal.",
-   "adaptador": "res://scripts/mundo/area_mapa_novo.gd"
+   "adaptador": "res://scripts/mundo/area_mapa_novo.gd",
+   "requer": "bussola_temporal"
   },
   {
    "id": "teste_mapa_novo",

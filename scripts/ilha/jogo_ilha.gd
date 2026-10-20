@@ -295,6 +295,12 @@ func abrir_viagem() -> void:
 func viajar(id: String) -> bool:
 	if ocupado or id == nome or not Registro.disponivel(id):
 		return false
+	# mapas da cartografa (Tobias) liberam a viagem para areas distantes ("requer" no registro)
+	var req := String(Registro.info(id).get("requer", ""))
+	if req != "" and estado and estado.qtd(req) <= 0:
+		if mapa_info:
+			mapa_info.text = "Para viajar até %s, compre o mapa com o Tobias, em Porto Velho." % Registro.nome(id)
+		return false
 	if mapa_camada.visible:
 		alternar_mapa()
 	ir(id, Registro.chegada(id))

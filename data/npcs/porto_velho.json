@@ -188,7 +188,7 @@
    "nome": "Otávio",
    "papel": "carpinteiro",
    "loja": "carpintaria",
-   "personagem": "original_villager",
+   "personagem": "original_guardian",
    "pos": [
     9,
     -2
@@ -248,7 +248,7 @@
    "nome": "Tobias",
    "papel": "cartógrafo",
    "loja": "cartografia",
-   "personagem": "original_apprentice",
+   "personagem": "original_gardener",
    "pos": [
     -4,
     -9
@@ -308,7 +308,7 @@
    "nome": "Nina",
    "papel": "criança mensageira",
    "loja": "mensageria",
-   "personagem": "original_cat_v6",
+   "personagem": "original_apprentice",
    "pos": [
     3,
     3
