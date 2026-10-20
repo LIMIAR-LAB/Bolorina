@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=18
+type="Resource"
+uid="uid://b4hd8ragbe7to"
+path="res://.godot/imported/fabricadora.dialogue-04613e02e4aa07095ec0827deeaa582b.tres"
+
+[deps]
+
+source_file="res://dialogos/fabricadora.dialogue"
+dest_files=["res://.godot/imported/fabricadora.dialogue-04613e02e4aa07095ec0827deeaa582b.tres"]
+
+[params]
+
+defaults=true

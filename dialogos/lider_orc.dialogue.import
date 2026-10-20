@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=18
+type="Resource"
+uid="uid://bwtvfnloh0321"
+path="res://.godot/imported/lider_orc.dialogue-21d6551023f54c687686f4cb6a4c1160.tres"
+
+[deps]
+
+source_file="res://dialogos/lider_orc.dialogue"
+dest_files=["res://.godot/imported/lider_orc.dialogue-21d6551023f54c687686f4cb6a4c1160.tres"]
+
+[params]
+
+defaults=true

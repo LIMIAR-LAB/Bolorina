@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=18
+type="Resource"
+uid="uid://ex0kd82d5gl6"
+path="res://.godot/imported/abertura.dialogue-8874702b169ce3fadd393cda83d79633.tres"
+
+[deps]
+
+source_file="res://dialogos/tutorial/abertura.dialogue"
+dest_files=["res://.godot/imported/abertura.dialogue-8874702b169ce3fadd393cda83d79633.tres"]
+
+[params]
+
+defaults=true

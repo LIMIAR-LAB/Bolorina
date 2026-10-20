@@ -1,0 +1,1493 @@
+{
+ "versao": 1,
+ "status": "PROPOSTA (não é canon) - masmorra procedural com 3 temas",
+ "notas": "minerios: [material, andar_min, andar_max, qtd_base] (ids de data/forja/materiais.json). inimigos_por_andar: [de, ate, {tipo: qtd}]. loot/bau: [id, chance, min, max] (ids de materiais.json/itens.json). estilos: [ate_andar, estilo].",
+ "temas": {
+  "minas_da_cinza": {
+   "nome": "Minas da Cinza",
+   "subtitulo": "túneis de brasa do Clã Brasa-Velha",
+   "inimigo_tema": "Orcs",
+   "andares": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    20
+   ],
+   "andar_chefe": 20,
+   "origem_padrao": "porto_velho",
+   "kit": "KayKit Dungeon Remastered + Kenney Mini Dungeon/Train/Survival + Poly Haven rock_wall_10/rocky_trail",
+   "estilos": [
+    [
+     5,
+     "galerias"
+    ],
+    [
+     12,
+     "cavernas"
+    ],
+    [
+     99,
+     "coracao"
+    ]
+   ],
+   "paleta": {
+    "fundo": "0c0806",
+    "ambiente": "8a705c",
+    "ambiente_energia": 0.55,
+    "neblina": "6a5040",
+    "neblina_densidade": 0.2,
+    "luz": "ff9a40",
+    "cristal": "ff6a1a",
+    "leitura": "ffd9b0"
+   },
+   "minerios": [
+    [
+     "minerio_cobre",
+     1,
+     5,
+     5
+    ],
+    [
+     "minerio_ferro",
+     6,
+     12,
+     6
+    ],
+    [
+     "carvao",
+     1,
+     12,
+     3
+    ],
+    [
+     "minerio_ferro_brasa",
+     8,
+     12,
+     3
+    ],
+    [
+     "minerio_adamantium",
+     20,
+     20,
+     6
+    ]
+   ],
+   "inimigos_por_andar": [
+    [
+     1,
+     2,
+     {
+      "orc_grunt": 2
+     }
+    ],
+    [
+     3,
+     5,
+     {
+      "orc_grunt": 3,
+      "orc_arqueiro": 1
+     }
+    ],
+    [
+     6,
+     8,
+     {
+      "orc_grunt": 3,
+      "orc_arqueiro": 2,
+      "orc_xama": 1
+     }
+    ],
+    [
+     9,
+     12,
+     {
+      "orc_grunt": 3,
+      "orc_arqueiro": 2,
+      "orc_xama": 1,
+      "orc_bruto": 1
+     }
+    ],
+    [
+     20,
+     20,
+     {
+      "orc_grunt": 2,
+      "orc_xama": 1
+     }
+    ]
+   ],
+   "chefe": "chefe_orc_brasa_viva",
+   "bau": [
+    [
+     "lingote_cobre",
+     0.6,
+     1,
+     2
+    ],
+    [
+     "lingote_ferro",
+     0.4,
+     1,
+     2
+    ],
+    [
+     "carvao",
+     0.8,
+     2,
+     4
+    ],
+    [
+     "couro",
+     0.5,
+     1,
+     3
+    ],
+    [
+     "essencia_raiz_brasa",
+     0.25,
+     1,
+     1
+    ],
+    [
+     "minerio_ferro_brasa",
+     0.2,
+     1,
+     2
+    ],
+    [
+     "lingote_aco_porto",
+     0.1,
+     1,
+     1
+    ]
+   ],
+   "baus_por_andar": [
+    1,
+    2
+   ],
+   "bau_chefe": [
+    [
+     "minerio_ferro_brasa",
+     1.0,
+     4,
+     6
+    ],
+    [
+     "lingote_aco_porto",
+     1.0,
+     3,
+     4
+    ],
+    [
+     "essencia_raiz_brasa",
+     1.0,
+     2,
+     3
+    ],
+    [
+     "minerio_adamantium",
+     0.5,
+     1,
+     2
+    ]
+   ]
+  },
+  "criptas_de_cinzalta": {
+   "nome": "Criptas de Cinzalta",
+   "subtitulo": "cisternas e criptas sob o Campo das Cinzas",
+   "inimigo_tema": "Zumbis e fantasmas",
+   "andares": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "andar_chefe": 6,
+   "origem_padrao": "cidade_fantasma",
+   "kit": "KayKit Dungeon Remastered (colunas, velas, baús) + Kenney Mini Dungeon + Poly Haven castle_brick_01/mossy_cobblestone",
+   "estilos": [
+    [
+     5,
+     "criptas"
+    ],
+    [
+     99,
+     "nave"
+    ]
+   ],
+   "paleta": {
+    "fundo": "06080c",
+    "ambiente": "5a6a8c",
+    "ambiente_energia": 0.6,
+    "neblina": "3a5a5a",
+    "neblina_densidade": 0.26,
+    "luz": "ffd8a0",
+    "cristal": "8ad8ff",
+    "leitura": "c8d8ff"
+   },
+   "minerios": [
+    [
+     "minerio_prata_tumular",
+     1,
+     6,
+     4
+    ]
+   ],
+   "inimigos_por_andar": [
+    [
+     1,
+     1,
+     {
+      "zumbi": 2,
+      "esqueleto_lacaio": 2
+     }
+    ],
+    [
+     2,
+     2,
+     {
+      "zumbi": 2,
+      "esqueleto_guerreiro": 2,
+      "fantasma": 1
+     }
+    ],
+    [
+     3,
+     3,
+     {
+      "zumbi": 2,
+      "esqueleto_guerreiro": 1,
+      "esqueleto_besteiro": 1,
+      "fantasma": 2
+     }
+    ],
+    [
+     4,
+     4,
+     {
+      "zumbi_gordo": 1,
+      "esqueleto_guerreiro": 2,
+      "esqueleto_besteiro": 1,
+      "fantasma": 1,
+      "caveira_espectral": 2
+     }
+    ],
+    [
+     5,
+     5,
+     {
+      "zumbi_gordo": 2,
+      "esqueleto_guerreiro": 2,
+      "esqueleto_besteiro": 1,
+      "esqueleto_mago": 1,
+      "caveira_espectral": 2
+     }
+    ],
+    [
+     6,
+     6,
+     {
+      "fantasma": 2
+     }
+    ]
+   ],
+   "chefe": "sineiro_afogado",
+   "bau": [
+    [
+     "minerio_prata_tumular",
+     0.7,
+     1,
+     3
+    ],
+    [
+     "presa_vampirica",
+     0.3,
+     1,
+     1
+    ],
+    [
+     "pelo_de_lua",
+     0.4,
+     1,
+     2
+    ],
+    [
+     "essencia_orvalho_lunar",
+     0.35,
+     1,
+     1
+    ],
+    [
+     "pedra",
+     0.6,
+     2,
+     4
+    ],
+    [
+     "lingote_prata_tumular",
+     0.1,
+     1,
+     1
+    ]
+   ],
+   "baus_por_andar": [
+    1,
+    2
+   ],
+   "bau_chefe": [
+    [
+     "lingote_prata_tumular",
+     1.0,
+     3,
+     4
+    ],
+    [
+     "presa_vampirica",
+     1.0,
+     2,
+     3
+    ],
+    [
+     "essencia_orvalho_lunar",
+     1.0,
+     2,
+     3
+    ],
+    [
+     "colar_prata_lunar",
+     0.15,
+     1,
+     1
+    ]
+   ]
+  },
+  "fenda_cronal": {
+   "nome": "Fenda Cronal",
+   "subtitulo": "onde o tempo racha sob a Estação Depois-de-Ontem",
+   "inimigo_tema": "Anomalias temporais",
+   "andares": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "andar_chefe": 6,
+   "origem_padrao": "estacao_depois_de_ontem",
+   "kit": "Quaternius Sci-Fi Modular/Essentials + Kenney Space Station + Poly Haven metal_plate_02",
+   "estilos": [
+    [
+     5,
+     "fenda"
+    ],
+    [
+     99,
+     "anel"
+    ]
+   ],
+   "paleta": {
+    "fundo": "07040e",
+    "ambiente": "6a5aa0",
+    "ambiente_energia": 0.62,
+    "neblina": "5a3a8a",
+    "neblina_densidade": 0.22,
+    "luz": "5ae8ff",
+    "cristal": "ff4af0",
+    "leitura": "d0d8ff"
+   },
+   "minerios": [
+    [
+     "minerio_cronostio",
+     1,
+     6,
+     4
+    ],
+    [
+     "chip_anomalia",
+     1,
+     6,
+     2
+    ],
+    [
+     "carvao",
+     1,
+     3,
+     2
+    ],
+    [
+     "cristal_celeste_bruto",
+     4,
+     6,
+     2
+    ],
+    [
+     "minerio_adamantium",
+     6,
+     6,
+     2
+    ]
+   ],
+   "inimigos_por_andar": [
+    [
+     1,
+     1,
+     {
+      "sentinela_cronal": 2,
+      "olho_relogio": 2
+     }
+    ],
+    [
+     2,
+     2,
+     {
+      "sentinela_cronal": 2,
+      "drone_cronal": 2,
+      "olho_relogio": 1
+     }
+    ],
+    [
+     3,
+     3,
+     {
+      "sentinela_cronal": 2,
+      "drone_cronal": 1,
+      "duplicata": 1,
+      "olho_relogio": 2
+     }
+    ],
+    [
+     4,
+     4,
+     {
+      "drone_cronal": 2,
+      "duplicata": 2,
+      "olho_relogio": 2,
+      "colosso_cronal": 1
+     }
+    ],
+    [
+     5,
+     5,
+     {
+      "sentinela_cronal": 2,
+      "drone_cronal": 2,
+      "duplicata": 2,
+      "colosso_cronal": 1,
+      "olho_relogio": 2
+     }
+    ],
+    [
+     6,
+     6,
+     {
+      "olho_relogio": 2
+     }
+    ]
+   ],
+   "chefe": "o_paradoxo",
+   "bau": [
+    [
+     "minerio_cronostio",
+     0.6,
+     1,
+     2
+    ],
+    [
+     "chip_anomalia",
+     0.6,
+     1,
+     2
+    ],
+    [
+     "engrenagem_quantica",
+     0.3,
+     1,
+     1
+    ],
+    [
+     "po_de_segundo",
+     0.4,
+     1,
+     2
+    ],
+    [
+     "areia_de_ontem",
+     0.35,
+     1,
+     1
+    ],
+    [
+     "eco_de_amanha",
+     0.2,
+     1,
+     1
+    ],
+    [
+     "lingote_cronostio",
+     0.08,
+     1,
+     1
+    ]
+   ],
+   "baus_por_andar": [
+    1,
+    2
+   ],
+   "bau_chefe": [
+    [
+     "lingote_cronostio",
+     1.0,
+     2,
+     3
+    ],
+    [
+     "eco_de_amanha",
+     1.0,
+     2,
+     3
+    ],
+    [
+     "engrenagem_quantica",
+     1.0,
+     2,
+     3
+    ],
+    [
+     "lingote_liga_paradoxal",
+     0.35,
+     1,
+     1
+    ]
+   ]
+  }
+ },
+ "inimigos": {
+  "orc_grunt": {
+   "nome": "Orc Brasa-Velha (grunt)",
+   "modelo": "dungeon_quaternius/orc.glb",
+   "licenca": "Quaternius (poly.pizza) - CC0 1.0 (Ultimate Monsters: Orc)",
+   "escala": 0.6,
+   "hp": 60,
+   "dano": 12,
+   "velocidade": 3.1,
+   "anims": {
+    "idle": "Idle",
+    "run": "Run",
+    "ataque": "Weapon",
+    "hit": "HitReact",
+    "morte": "Death"
+   },
+   "loot": [
+    [
+     "couro",
+     1.0,
+     1,
+     1
+    ],
+    [
+     "carvao",
+     0.4,
+     1,
+     2
+    ]
+   ],
+   "ataque": "corpo",
+   "alcance": 2.2,
+   "raio_golpe": 1.45,
+   "preparo": 0.8,
+   "postura": 22
+  },
+  "orc_arqueiro": {
+   "nome": "Orc Besteiro",
+   "modelo": "dungeon_quaternius/orc.glb",
+   "licenca": "Quaternius (poly.pizza) - CC0 1.0 + besta KayKit Skeletons (CC0)",
+   "escala": 0.56,
+   "hp": 40,
+   "dano": 10,
+   "velocidade": 2.8,
+   "anims": {
+    "idle": "Idle",
+    "run": "Run",
+    "ataque": "Punch",
+    "hit": "HitReact",
+    "morte": "Death"
+   },
+   "loot": [
+    [
+     "couro",
+     1.0,
+     1,
+     2
+    ],
+    [
+     "minerio_cobre",
+     0.35,
+     1,
+     2
+    ]
+   ],
+   "ataque": "distancia",
+   "alcance": 7.5,
+   "alcance_min": 3.5,
+   "raio_golpe": 1.1,
+   "preparo": 0.95,
+   "postura": 14,
+   "tinta": "c8b090",
+   "arma": {
+    "modelo": "kaykit_skeletons/Skeleton_Crossbow.gltf",
+    "osso": "LowerArm.R",
+    "escala": 1.6,
+    "pos": [
+     0,
+     0.35,
+     0
+    ],
+    "rot": [
+     0,
+     90,
+     0
+    ]
+   },
+   "esconder": [
+    "Orc_Weapon"
+   ],
+   "projetil": "flecha"
+  },
+  "orc_xama": {
+   "nome": "Orc Xamã da Brasa",
+   "modelo": "dungeon_quaternius/orc.glb",
+   "licenca": "Quaternius (poly.pizza) - CC0 1.0 + cajado KayKit Skeletons (CC0)",
+   "escala": 0.58,
+   "hp": 50,
+   "dano": 16,
+   "velocidade": 2.6,
+   "anims": {
+    "idle": "Idle",
+    "run": "Run",
+    "ataque": "Punch",
+    "hit": "HitReact",
+    "morte": "Death"
+   },
+   "loot": [
+    [
+     "essencia_raiz_brasa",
+     1.0,
+     1,
+     1
+    ],
+    [
+     "carvao",
+     0.5,
+     1,
+     2
+    ]
+   ],
+   "ataque": "distancia",
+   "alcance": 6.5,
+   "alcance_min": 3.0,
+   "raio_golpe": 1.9,
+   "preparo": 1.15,
+   "postura": 16,
+   "tinta": "b080e0",
+   "arma": {
+    "modelo": "kaykit_skeletons/Skeleton_Staff.gltf",
+    "osso": "LowerArm.R",
+    "escala": 1.5,
+    "pos": [
+     0,
+     0.35,
+     0
+    ],
+    "rot": [
+     0,
+     0,
+     0
+    ]
+   },
+   "esconder": [
+    "Orc_Weapon"
+   ],
+   "projetil": "fogo",
+   "cura_aliados": 10
+  },
+  "orc_bruto": {
+   "nome": "Orc Bruto",
+   "modelo": "dungeon_quaternius/orc.glb",
+   "licenca": "Quaternius (poly.pizza) - CC0 1.0",
+   "escala": 0.82,
+   "hp": 130,
+   "dano": 22,
+   "velocidade": 2.4,
+   "anims": {
+    "idle": "Idle",
+    "run": "Run",
+    "ataque": "Weapon",
+    "hit": "HitReact",
+    "morte": "Death"
+   },
+   "loot": [
+    [
+     "minerio_ferro",
+     1.0,
+     1,
+     2
+    ],
+    [
+     "couro",
+     0.6,
+     1,
+     2
+    ],
+    [
+     "minerio_ferro_brasa",
+     0.25,
+     1,
+     1
+    ]
+   ],
+   "ataque": "corpo",
+   "alcance": 2.5,
+   "raio_golpe": 1.8,
+   "preparo": 0.95,
+   "postura": 40,
+   "porte": 1.3,
+   "tinta": "ff9a80",
+   "bruto": true
+  },
+  "chefe_orc_brasa_viva": {
+   "nome": "Chefe Orc Brasa-Viva",
+   "modelo": "dungeon_quaternius/orc.glb",
+   "licenca": "Quaternius (poly.pizza) - CC0 1.0",
+   "escala": 1.2,
+   "hp": 560,
+   "dano": 26,
+   "velocidade": 2.7,
+   "anims": {
+    "idle": "Idle",
+    "run": "Run",
+    "ataque": "Weapon",
+    "hit": "HitReact",
+    "morte": "Death"
+   },
+   "loot": [
+    [
+     "minerio_ferro_brasa",
+     1.0,
+     3,
+     5
+    ],
+    [
+     "lingote_aco_porto",
+     1.0,
+     2,
+     3
+    ],
+    [
+     "essencia_raiz_brasa",
+     1.0,
+     2,
+     2
+    ],
+    [
+     "minerio_adamantium",
+     0.35,
+     1,
+     1
+    ]
+   ],
+   "ataque": "corpo",
+   "alcance": 3.0,
+   "raio_golpe": 2.1,
+   "preparo": 0.9,
+   "postura": 90,
+   "porte": 2.0,
+   "tinta": "ff7a4a",
+   "brilho": "ff5a1a",
+   "chefe": true,
+   "comportamento": "chefe_orc",
+   "raio_area": 3.4,
+   "invoca": [
+    "orc_grunt",
+    "orc_grunt",
+    "orc_xama"
+   ]
+  },
+  "zumbi": {
+   "nome": "Zumbi de Cinzalta",
+   "modelo": "dungeon_quaternius/zombie.glb",
+   "licenca": "Quaternius (poly.pizza) - CC0 1.0 (Zombie)",
+   "escala": 1.45,
+   "hp": 70,
+   "dano": 12,
+   "velocidade": 1.9,
+   "anims": {
+    "idle": "Idle",
+    "run": "Walk",
+    "ataque": "Punch",
+    "hit": "HitReact",
+    "morte": "Death"
+   },
+   "loot": [
+    [
+     "pelo_de_lua",
+     0.3,
+     1,
+     1
+    ],
+    [
+     "pedra",
+     1.0,
+     1,
+     2
+    ]
+   ],
+   "ataque": "corpo",
+   "alcance": 1.9,
+   "raio_golpe": 1.3,
+   "preparo": 0.9,
+   "postura": 30
+  },
+  "zumbi_gordo": {
+   "nome": "Zumbi Inchado",
+   "modelo": "dungeon_quaternius/zombie_chubby.glb",
+   "licenca": "Quaternius (poly.pizza) - CC0 1.0 (Zombie Chubby)",
+   "escala": 1.2,
+   "hp": 120,
+   "dano": 18,
+   "velocidade": 1.6,
+   "anims": {
+    "idle": "Idle",
+    "run": "Walk",
+    "ataque": "Punch",
+    "hit": "HitReact",
+    "morte": "Death"
+   },
+   "loot": [
+    [
+     "pelo_de_lua",
+     0.5,
+     1,
+     2
+    ],
+    [
+     "pedra",
+     1.0,
+     2,
+     3
+    ]
+   ],
+   "ataque": "area",
+   "alcance": 2.0,
+   "raio_golpe": 2.0,
+   "preparo": 1.1,
+   "postura": 50,
+   "porte": 1.25
+  },
+  "esqueleto_lacaio": {
+   "nome": "Esqueleto Lacaio",
+   "modelo": "kaykit_skeletons/Skeleton_Minion.glb",
+   "licenca": "KayKit Character Pack: Skeletons (Kay Lousberg) - CC0 1.0",
+   "escala": 0.8,
+   "hp": 38,
+   "dano": 10,
+   "velocidade": 3.0,
+   "anims": {
+    "idle": "Idle_Combat",
+    "run": "Walking_D_Skeletons",
+    "ataque": "1H_Melee_Attack_Chop",
+    "hit": "Hit_A",
+    "morte": "Death_C_Skeletons",
+    "surgir": "Spawn_Ground_Skeletons"
+   },
+   "loot": [
+    [
+     "pedra",
+     1.0,
+     1,
+     1
+    ],
+    [
+     "minerio_prata_tumular",
+     0.2,
+     1,
+     1
+    ]
+   ],
+   "ataque": "corpo",
+   "alcance": 2.0,
+   "raio_golpe": 1.3,
+   "preparo": 0.75,
+   "postura": 14,
+   "arma": {
+    "modelo": "kaykit_skeletons/Skeleton_Axe.gltf",
+    "osso": "handslot.r",
+    "escala": 1.0,
+    "pos": [
+     0,
+     0,
+     0
+    ],
+    "rot": [
+     0,
+     0,
+     0
+    ]
+   }
+  },
+  "esqueleto_guerreiro": {
+   "nome": "Esqueleto Guerreiro",
+   "modelo": "kaykit_skeletons/Skeleton_Warrior.glb",
+   "licenca": "KayKit Character Pack: Skeletons (Kay Lousberg) - CC0 1.0",
+   "escala": 0.74,
+   "hp": 55,
+   "dano": 14,
+   "velocidade": 3.0,
+   "anims": {
+    "idle": "Idle_Combat",
+    "run": "Running_A",
+    "ataque": "1H_Melee_Attack_Chop",
+    "hit": "Hit_A",
+    "morte": "Death_C_Skeletons",
+    "surgir": "Spawn_Ground_Skeletons"
+   },
+   "loot": [
+    [
+     "minerio_prata_tumular",
+     0.4,
+     1,
+     2
+    ],
+    [
+     "pedra",
+     1.0,
+     1,
+     1
+    ]
+   ],
+   "ataque": "corpo",
+   "alcance": 2.2,
+   "raio_golpe": 1.45,
+   "preparo": 0.8,
+   "postura": 24,
+   "arma": {
+    "modelo": "kaykit_skeletons/Skeleton_Blade.gltf",
+    "osso": "handslot.r",
+    "escala": 1.0,
+    "pos": [
+     0,
+     0,
+     0
+    ],
+    "rot": [
+     0,
+     0,
+     0
+    ]
+   },
+   "arma2": {
+    "modelo": "kaykit_skeletons/Skeleton_Shield_Small_A.gltf",
+    "osso": "handslot.l",
+    "escala": 1.0,
+    "pos": [
+     0,
+     0,
+     0
+    ],
+    "rot": [
+     0,
+     0,
+     0
+    ]
+   }
+  },
+  "esqueleto_besteiro": {
+   "nome": "Esqueleto Besteiro",
+   "modelo": "kaykit_skeletons/Skeleton_Rogue.glb",
+   "licenca": "KayKit Character Pack: Skeletons (Kay Lousberg) - CC0 1.0",
+   "escala": 0.76,
+   "hp": 35,
+   "dano": 10,
+   "velocidade": 2.9,
+   "anims": {
+    "idle": "2H_Ranged_Aiming",
+    "run": "Running_A",
+    "ataque": "2H_Ranged_Shoot",
+    "hit": "Hit_A",
+    "morte": "Death_C_Skeletons",
+    "surgir": "Spawn_Ground_Skeletons"
+   },
+   "loot": [
+    [
+     "minerio_prata_tumular",
+     0.3,
+     1,
+     1
+    ],
+    [
+     "pedra",
+     1.0,
+     1,
+     1
+    ]
+   ],
+   "ataque": "distancia",
+   "alcance": 8.0,
+   "alcance_min": 4.0,
+   "raio_golpe": 1.1,
+   "preparo": 1.0,
+   "postura": 12,
+   "arma": {
+    "modelo": "kaykit_skeletons/Skeleton_Crossbow.gltf",
+    "osso": "handslot.r",
+    "escala": 1.0,
+    "pos": [
+     0,
+     0,
+     0
+    ],
+    "rot": [
+     0,
+     0,
+     0
+    ]
+   },
+   "projetil": "flecha"
+  },
+  "esqueleto_mago": {
+   "nome": "Esqueleto Mago",
+   "modelo": "kaykit_skeletons/Skeleton_Mage.glb",
+   "licenca": "KayKit Character Pack: Skeletons (Kay Lousberg) - CC0 1.0",
+   "escala": 0.72,
+   "hp": 45,
+   "dano": 15,
+   "velocidade": 2.6,
+   "anims": {
+    "idle": "Idle_Combat",
+    "run": "Running_A",
+    "ataque": "Spellcast_Shoot",
+    "hit": "Hit_A",
+    "morte": "Death_C_Skeletons",
+    "surgir": "Spawn_Ground_Skeletons"
+   },
+   "loot": [
+    [
+     "essencia_orvalho_lunar",
+     0.5,
+     1,
+     1
+    ],
+    [
+     "minerio_prata_tumular",
+     0.4,
+     1,
+     2
+    ]
+   ],
+   "ataque": "distancia",
+   "alcance": 7.0,
+   "alcance_min": 3.5,
+   "raio_golpe": 1.8,
+   "preparo": 1.2,
+   "postura": 16,
+   "arma": {
+    "modelo": "kaykit_skeletons/Skeleton_Staff.gltf",
+    "osso": "handslot.r",
+    "escala": 1.0,
+    "pos": [
+     0,
+     0,
+     0
+    ],
+    "rot": [
+     0,
+     0,
+     0
+    ]
+   },
+   "projetil": "alma"
+  },
+  "fantasma": {
+   "nome": "Fantasma Afogado",
+   "modelo": "dungeon_quaternius/ghost.glb",
+   "licenca": "Quaternius (poly.pizza) - CC0 1.0 (Ultimate Monsters: Ghost)",
+   "escala": 0.5,
+   "hp": 32,
+   "dano": 10,
+   "velocidade": 3.4,
+   "anims": {
+    "idle": "Flying_Idle",
+    "run": "Fast_Flying",
+    "ataque": "Punch",
+    "hit": "HitReact",
+    "morte": "Death"
+   },
+   "loot": [
+    [
+     "essencia_orvalho_lunar",
+     1.0,
+     1,
+     1
+    ]
+   ],
+   "ataque": "corpo",
+   "alcance": 1.9,
+   "raio_golpe": 1.3,
+   "preparo": 0.75,
+   "postura": 10,
+   "comportamento": "fantasma",
+   "voo": 0.5,
+   "fantasma_cor": "8ad8ff"
+  },
+  "caveira_espectral": {
+   "nome": "Caveira Espectral",
+   "modelo": "dungeon_quaternius/ghost_skull.glb",
+   "licenca": "Quaternius (poly.pizza) - CC0 1.0 (Ultimate Monsters: Ghost Skull)",
+   "escala": 0.42,
+   "hp": 26,
+   "dano": 8,
+   "velocidade": 3.8,
+   "anims": {
+    "idle": "Flying_Idle",
+    "run": "Fast_Flying",
+    "ataque": "Punch",
+    "hit": "HitReact",
+    "morte": "Death"
+   },
+   "loot": [
+    [
+     "essencia_orvalho_lunar",
+     0.6,
+     1,
+     1
+    ],
+    [
+     "minerio_prata_tumular",
+     0.3,
+     1,
+     1
+    ]
+   ],
+   "ataque": "corpo",
+   "alcance": 1.8,
+   "raio_golpe": 1.2,
+   "preparo": 0.65,
+   "postura": 8,
+   "comportamento": "fantasma",
+   "voo": 0.7,
+   "fantasma_cor": "b0ffd8",
+   "piscar": 2.8
+  },
+  "sineiro_afogado": {
+   "nome": "O Sineiro Afogado",
+   "modelo": "dungeon_quaternius/ghost.glb",
+   "licenca": "Quaternius (poly.pizza) - CC0 1.0 (Ghost, escala de chefe)",
+   "escala": 1.05,
+   "hp": 500,
+   "dano": 24,
+   "velocidade": 2.6,
+   "anims": {
+    "idle": "Flying_Idle",
+    "run": "Fast_Flying",
+    "ataque": "Punch",
+    "hit": "HitReact",
+    "morte": "Death"
+   },
+   "loot": [
+    [
+     "lingote_prata_tumular",
+     1.0,
+     2,
+     3
+    ],
+    [
+     "presa_vampirica",
+     1.0,
+     2,
+     3
+    ],
+    [
+     "essencia_orvalho_lunar",
+     1.0,
+     2,
+     2
+    ],
+    [
+     "minerio_prata_tumular",
+     1.0,
+     3,
+     5
+    ]
+   ],
+   "ataque": "corpo",
+   "alcance": 2.8,
+   "raio_golpe": 2.0,
+   "preparo": 0.9,
+   "postura": 80,
+   "porte": 1.9,
+   "chefe": true,
+   "comportamento": "chefe_sineiro",
+   "voo": 0.6,
+   "fantasma_cor": "5ae0d0",
+   "raio_area": 4.2,
+   "piscar": 6.0,
+   "invoca": [
+    "fantasma",
+    "fantasma",
+    "zumbi"
+   ]
+  },
+  "sentinela_cronal": {
+   "nome": "Sentinela Cronal",
+   "modelo": "dungeon_quaternius/robot_enemy.glb",
+   "licenca": "Quaternius (poly.pizza) - CC0 1.0 (Robot Enemy)",
+   "escala": 2.2,
+   "hp": 60,
+   "dano": 13,
+   "velocidade": 3.0,
+   "anims": {
+    "idle": "Idle",
+    "run": "Run",
+    "ataque": "Attack",
+    "hit": "",
+    "morte": "Death"
+   },
+   "loot": [
+    [
+     "chip_anomalia",
+     1.0,
+     1,
+     1
+    ],
+    [
+     "engrenagem_quantica",
+     0.15,
+     1,
+     1
+    ]
+   ],
+   "ataque": "corpo",
+   "alcance": 2.0,
+   "raio_golpe": 1.4,
+   "preparo": 0.75,
+   "postura": 22,
+   "tinta": "b0c8ff"
+  },
+  "drone_cronal": {
+   "nome": "Drone Cronal",
+   "modelo": "dungeon_quaternius/robot_flying.glb",
+   "licenca": "Quaternius (poly.pizza) - CC0 1.0 (Robot Enemy Flying)",
+   "escala": 1.6,
+   "hp": 30,
+   "dano": 9,
+   "velocidade": 3.3,
+   "anims": {
+    "idle": "Idle",
+    "run": "Run",
+    "ataque": "Shoot",
+    "hit": "",
+    "morte": "Dead"
+   },
+   "loot": [
+    [
+     "po_de_segundo",
+     1.0,
+     1,
+     1
+    ],
+    [
+     "chip_anomalia",
+     0.3,
+     1,
+     1
+    ]
+   ],
+   "ataque": "distancia",
+   "alcance": 7.0,
+   "alcance_min": 3.5,
+   "raio_golpe": 1.1,
+   "preparo": 0.85,
+   "postura": 10,
+   "voo": 1.1,
+   "projetil": "laser",
+   "comportamento": "flutua"
+  },
+  "olho_relogio": {
+   "nome": "Olho-Relógio",
+   "modelo": "quaternius_scifi_essentials/Enemy_EyeDrone.gltf",
+   "licenca": "Quaternius Sci-Fi Essentials Kit - CC0 1.0 (Enemy EyeDrone) + mostrador procedural",
+   "escala": 0.7,
+   "hp": 22,
+   "dano": 8,
+   "velocidade": 2.8,
+   "anims": {
+    "idle": "Idle",
+    "run": "Idle",
+    "ataque": "Attack",
+    "hit": "Hit",
+    "morte": "BackFlip"
+   },
+   "loot": [
+    [
+     "areia_de_ontem",
+     1.0,
+     1,
+     1
+    ],
+    [
+     "po_de_segundo",
+     0.4,
+     1,
+     1
+    ]
+   ],
+   "ataque": "distancia",
+   "alcance": 7.5,
+   "alcance_min": 4.0,
+   "raio_golpe": 1.3,
+   "preparo": 1.0,
+   "postura": 8,
+   "voo": 1.4,
+   "projetil": "relogio",
+   "comportamento": "olho",
+   "efeito": "lentidao"
+  },
+  "duplicata": {
+   "nome": "Duplicata",
+   "modelo": "dungeon_quaternius/robot_humanoide.glb",
+   "licenca": "Quaternius (poly.pizza) - CC0 1.0 (Animated Robot)",
+   "escala": 0.42,
+   "hp": 55,
+   "dano": 14,
+   "velocidade": 3.4,
+   "anims": {
+    "idle": "Robot_Idle",
+    "run": "Robot_Running",
+    "ataque": "Robot_Punch",
+    "hit": "Robot_No",
+    "morte": "Robot_Death"
+   },
+   "loot": [
+    [
+     "eco_de_amanha",
+     1.0,
+     1,
+     1
+    ],
+    [
+     "chip_anomalia",
+     0.5,
+     1,
+     2
+    ]
+   ],
+   "ataque": "corpo",
+   "alcance": 2.0,
+   "raio_golpe": 1.4,
+   "preparo": 0.7,
+   "postura": 18,
+   "comportamento": "duplicata",
+   "tinta": "90f0ff",
+   "rebobinar": 1
+  },
+  "colosso_cronal": {
+   "nome": "Colosso Cronal",
+   "modelo": "dungeon_quaternius/robot_legs_gun.glb",
+   "licenca": "Quaternius (poly.pizza) - CC0 1.0 (Robot Enemy Legs Gun)",
+   "escala": 2.0,
+   "hp": 140,
+   "dano": 24,
+   "velocidade": 2.3,
+   "anims": {
+    "idle": "Idle",
+    "run": "Run",
+    "ataque": "Shoot",
+    "hit": "",
+    "morte": "Death"
+   },
+   "loot": [
+    [
+     "engrenagem_quantica",
+     1.0,
+     1,
+     2
+    ],
+    [
+     "minerio_cronostio",
+     0.5,
+     1,
+     2
+    ]
+   ],
+   "ataque": "area",
+   "alcance": 2.4,
+   "raio_golpe": 2.2,
+   "preparo": 1.05,
+   "postura": 45,
+   "porte": 1.3,
+   "tinta": "ffb0f0",
+   "bruto": true
+  },
+  "o_paradoxo": {
+   "nome": "O Paradoxo",
+   "modelo": "",
+   "licenca": "eco da própria Vale (sprites do jogador_combate.gd, tingidos)",
+   "escala": 1.0,
+   "hp": 520,
+   "dano": 22,
+   "velocidade": 3.4,
+   "anims": {},
+   "loot": [
+    [
+     "lingote_cronostio",
+     1.0,
+     2,
+     3
+    ],
+    [
+     "eco_de_amanha",
+     1.0,
+     2,
+     2
+    ],
+    [
+     "engrenagem_quantica",
+     1.0,
+     2,
+     2
+    ],
+    [
+     "lingote_liga_paradoxal",
+     0.3,
+     1,
+     1
+    ]
+   ],
+   "ataque": "corpo",
+   "alcance": 2.4,
+   "raio_golpe": 1.7,
+   "preparo": 0.7,
+   "postura": 70,
+   "porte": 1.0,
+   "chefe": true,
+   "comportamento": "chefe_paradoxo",
+   "raio_area": 3.6,
+   "rebobinar": 1,
+   "invoca": [
+    "duplicata",
+    "duplicata"
+   ]
+  }
+ }
+}

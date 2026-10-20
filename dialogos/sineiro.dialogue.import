@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=18
+type="Resource"
+uid="uid://d3p0o5akxk3ee"
+path="res://.godot/imported/sineiro.dialogue-ff2725b5489e9e98e5f1492165ecf0fa.tres"
+
+[deps]
+
+source_file="res://dialogos/sineiro.dialogue"
+dest_files=["res://.godot/imported/sineiro.dialogue-ff2725b5489e9e98e5f1492165ecf0fa.tres"]
+
+[params]
+
+defaults=true

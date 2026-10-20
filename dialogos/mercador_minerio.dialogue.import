@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=18
+type="Resource"
+uid="uid://cnylv82skxa03"
+path="res://.godot/imported/mercador_minerio.dialogue-4ecd5f44f0d9fe5b45430c933b1fcd24.tres"
+
+[deps]
+
+source_file="res://dialogos/mercador_minerio.dialogue"
+dest_files=["res://.godot/imported/mercador_minerio.dialogue-4ecd5f44f0d9fe5b45430c933b1fcd24.tres"]
+
+[params]
+
+defaults=true

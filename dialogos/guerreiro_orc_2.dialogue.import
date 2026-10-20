@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=18
+type="Resource"
+uid="uid://d1limjmhgh4do"
+path="res://.godot/imported/guerreiro_orc_2.dialogue-8ab3be4abf74e8eaecf5c26d07e971e2.tres"
+
+[deps]
+
+source_file="res://dialogos/guerreiro_orc_2.dialogue"
+dest_files=["res://.godot/imported/guerreiro_orc_2.dialogue-8ab3be4abf74e8eaecf5c26d07e971e2.tres"]
+
+[params]
+
+defaults=true

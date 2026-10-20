@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=18
+type="Resource"
+uid="uid://de5r6it0pruyn"
+path="res://.godot/imported/estalajadeira.dialogue-c3a98c33b55f1056e47cf28437edb123.tres"
+
+[deps]
+
+source_file="res://dialogos/estalajadeira.dialogue"
+dest_files=["res://.godot/imported/estalajadeira.dialogue-c3a98c33b55f1056e47cf28437edb123.tres"]
+
+[params]
+
+defaults=true

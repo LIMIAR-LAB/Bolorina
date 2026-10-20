@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=18
+type="Resource"
+uid="uid://5pgrw4gvqqtj"
+path="res://.godot/imported/mercador_reliquias.dialogue-2bc67de6eb126a474a17a199c2a3c622.tres"
+
+[deps]
+
+source_file="res://dialogos/mercador_reliquias.dialogue"
+dest_files=["res://.godot/imported/mercador_reliquias.dialogue-2bc67de6eb126a474a17a199c2a3c622.tres"]
+
+[params]
+
+defaults=true

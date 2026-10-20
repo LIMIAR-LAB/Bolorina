@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=18
+type="Resource"
+uid="uid://cd44hje3tsxsd"
+path="res://.godot/imported/minerador_aposentado.dialogue-8bb07fd5b336ff33750348d1f94c5c87.tres"
+
+[deps]
+
+source_file="res://dialogos/minerador_aposentado.dialogue"
+dest_files=["res://.godot/imported/minerador_aposentado.dialogue-8bb07fd5b336ff33750348d1f94c5c87.tres"]
+
+[params]
+
+defaults=true

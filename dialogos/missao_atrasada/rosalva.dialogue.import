@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=18
+type="Resource"
+uid="uid://oivj5yjfvpgt"
+path="res://.godot/imported/rosalva.dialogue-98ea3f675fb6936220d3b32deebbdbee.tres"
+
+[deps]
+
+source_file="res://dialogos/missao_atrasada/rosalva.dialogue"
+dest_files=["res://.godot/imported/rosalva.dialogue-98ea3f675fb6936220d3b32deebbdbee.tres"]
+
+[params]
+
+defaults=true

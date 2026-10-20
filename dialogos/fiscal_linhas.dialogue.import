@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=18
+type="Resource"
+uid="uid://dv22rnnoglvyo"
+path="res://.godot/imported/fiscal_linhas.dialogue-47b9e08b0ad5691960bd0ac9bcf0d82a.tres"
+
+[deps]
+
+source_file="res://dialogos/fiscal_linhas.dialogue"
+dest_files=["res://.godot/imported/fiscal_linhas.dialogue-47b9e08b0ad5691960bd0ac9bcf0d82a.tres"]
+
+[params]
+
+defaults=true

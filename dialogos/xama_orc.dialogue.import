@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=18
+type="Resource"
+uid="uid://huwsprjke621"
+path="res://.godot/imported/xama_orc.dialogue-5107cb484df1c5c14669f62476014690.tres"
+
+[deps]
+
+source_file="res://dialogos/xama_orc.dialogue"
+dest_files=["res://.godot/imported/xama_orc.dialogue-5107cb484df1c5c14669f62476014690.tres"]
+
+[params]
+
+defaults=true

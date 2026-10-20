@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=18
+type="Resource"
+uid="uid://vjh4tdg4eee3"
+path="res://.godot/imported/drone_zelador.dialogue-0e3421e29fc8a2aa0b0f165f833155b7.tres"
+
+[deps]
+
+source_file="res://dialogos/drone_zelador.dialogue"
+dest_files=["res://.godot/imported/drone_zelador.dialogue-0e3421e29fc8a2aa0b0f165f833155b7.tres"]
+
+[params]
+
+defaults=true

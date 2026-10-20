@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=18
+type="Resource"
+uid="uid://bhhg1qlpbisy7"
+path="res://.godot/imported/fazenda.dialogue-ee4eda96666f26dcf64a902fbfe06d17.tres"
+
+[deps]
+
+source_file="res://dialogos/missao_atrasada/fazenda.dialogue"
+dest_files=["res://.godot/imported/fazenda.dialogue-ee4eda96666f26dcf64a902fbfe06d17.tres"]
+
+[params]
+
+defaults=true

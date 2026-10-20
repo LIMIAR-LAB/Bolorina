@@ -1,0 +1,24 @@
+# Gaspar Bigorna, ferreiro da Ferraria do Porto (Porto Velho).
+~ start
+if tem("ferreiro_conheceu")
+	=> de_novo
+Gaspar Bigorna: Afasta da forja, que essa brasa tem opinião própria!
+Gaspar Bigorna: Hm. Mãos de quem nunca segurou martelo. Mas tem calo de enxada. Já é um começo.
+- Você faz ferramentas melhores?
+	Gaspar Bigorna: Faço tudo melhor. Enxada, machado, regador de cobre. Me traz minério e moeda e eu te devolvo milagre.
+	$> marcar("ferreiro_ofereceu_ferramentas")
+- Você sabe trabalhar adamantium?
+	Gaspar Bigorna: [#serio] Falar desse metal em voz alta já dá azar.
+	Gaspar Bigorna: Meu avô forjava adamantium pros Arquimagos. Morreu dizendo que o metal sussurrava horários.
+	Gaspar Bigorna: Se achar um veio na fazenda, não toca com a mão. Me chama.
+	$> marcar("ferreiro_falou_adamantium")
+	$> confiar("ferreiro", 1)
+Gaspar Bigorna: E outra coisa. Se uma espada sua começar a falar, a culpa não é minha. É da cinza.
+$> marcar("ferreiro_conheceu")
+=> END
+
+~ de_novo
+% Gaspar Bigorna: Traz ferro, que eu faço mágica. Traz cobre, que eu faço quase mágica.
+% Gaspar Bigorna: A forja anda cantando de madrugada. Eu finjo que não ouço.
+% Gaspar Bigorna: Cuidado com orc de machado. Aquele aço é ruim, mas eles batem com vontade.
+=> END

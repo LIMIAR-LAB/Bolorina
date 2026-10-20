@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=18
+type="Resource"
+uid="uid://dh7rfue3myl3y"
+path="res://.godot/imported/ferreiro.dialogue-b6585dde3cb66aac00f0ca4592d936bc.tres"
+
+[deps]
+
+source_file="res://dialogos/reacoes/ferreiro.dialogue"
+dest_files=["res://.godot/imported/ferreiro.dialogue-b6585dde3cb66aac00f0ca4592d936bc.tres"]
+
+[params]
+
+defaults=true

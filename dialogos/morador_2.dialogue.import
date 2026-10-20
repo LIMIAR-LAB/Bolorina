@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=18
+type="Resource"
+uid="uid://b8tbrp0xttoau"
+path="res://.godot/imported/morador_2.dialogue-89e2d3ed1748b6410af483a2330aa9cd.tres"
+
+[deps]
+
+source_file="res://dialogos/morador_2.dialogue"
+dest_files=["res://.godot/imported/morador_2.dialogue-89e2d3ed1748b6410af483a2330aa9cd.tres"]
+
+[params]
+
+defaults=true

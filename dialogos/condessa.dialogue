@@ -1,0 +1,25 @@
+# Condessa Ofelia de Cinzalta, vampira do Mercado Noturno de Reliquias (Cidade Fantasma).
+~ start
+if tem("condessa_conheceu")
+	=> de_novo
+Condessa Ofélia de Cinzalta: Uma visita viva. Que delícia. No sentido social da palavra, querida, relaxe.
+Condessa Ofélia de Cinzalta: Bem-vinda a Cinzalta, a antiga capital do Reino do Céu. Hoje só abrimos depois que o sol vai dormir.
+- O que vocês vendem aqui?
+	Condessa Ofélia de Cinzalta: Relíquias. Um bule que sempre tem chá de ontem. Um espelho que mostra quem você seria se tivesse ficado em casa.
+	Condessa Ofélia de Cinzalta: E fragmentos do Coração do Tempo, para clientes muito, muito especiais.
+	$> marcar("condessa_falou_fragmentos")
+- Você estava aqui quando o reino caiu?
+	Condessa Ofélia de Cinzalta: Eu estava dançando. A orquestra parou no meio da valsa e o tempo parou junto.
+	Condessa Ofélia de Cinzalta: Desde então ninguém aqui envelhece. Nem a orquestra, nem o meu tédio.
+	$> confiar("condessa", 1)
+Condessa Ofélia de Cinzalta: Aceito pagamento em moedas, segredos ou anos de vida. Os anos são os mais procurados.
+Vale: Acho que vou ficar com as moedas.
+Condessa Ofélia de Cinzalta: Todos dizem isso na primeira noite. Volte quando a lua estiver cheia, querida.
+$> marcar("condessa_conheceu")
+=> END
+
+~ de_novo
+% Condessa Ofélia de Cinzalta: Chegou mercadoria nova. Uma sombra engarrafada. Ainda está um pouco brava.
+% Condessa Ofélia de Cinzalta: Seu pescoço continua lindo. Digo isso como colecionadora de arte.
+% Condessa Ofélia de Cinzalta: Os espectros da avenida principal estão ensaiando a valsa de novo. Faz trezentos anos que erram o mesmo passo.
+=> END

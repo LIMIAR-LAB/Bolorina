@@ -1,0 +1,11 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://scripts/minas_da_cinza/minas_da_cinza.gd" id="1"]
+[ext_resource type="Script" path="res://scripts/dialogos/interacao_npcs.gd" id="2"]
+
+[node name="MinasDaCinza" type="Node3D"]
+script = ExtResource("1")
+andar = 20
+
+[node name="Dialogos" type="Node" parent="."]
+script = ExtResource("2")

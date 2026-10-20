@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=18
+type="Resource"
+uid="uid://do3vkb084lspr"
+path="res://.godot/imported/minas.dialogue-e471cb8f0e50429c2e6d6f5975d88645.tres"
+
+[deps]
+
+source_file="res://dialogos/missao_atrasada/minas.dialogue"
+dest_files=["res://.godot/imported/minas.dialogue-e471cb8f0e50429c2e6d6f5975d88645.tres"]
+
+[params]
+
+defaults=true

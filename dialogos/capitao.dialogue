@@ -1,0 +1,24 @@
+# Capitao Bartolomeu Nuvem, do dirigivel mercante Andorinha (doca de Porto Velho).
+~ start
+if tem("capitao_conheceu")
+	=> de_novo
+Capitão Bartolomeu Nuvem: Ôôô, terra firme! Ou quase firme. Essa ilha balança quando o vento sopra do abismo.
+Capitão Bartolomeu Nuvem: Bartolomeu Nuvem, capitão da Andorinha. O último dirigível que ainda faz a rota até Porto Velho.
+- Por que ninguém mais vem pra cá?
+	Capitão Bartolomeu Nuvem: Medo, pedágio de dragão e falta de motivo. Ninguém cruza o céu pra comprar cinza.
+	Capitão Bartolomeu Nuvem: Mas se você me der colheita boa, eu levo pras ilhas de cima. E aí o motivo aparece sozinho.
+	$> marcar("capitao_rota_explicada")
+- Você compraria minhas colheitas?
+	Capitão Bartolomeu Nuvem: Compro tudo que não tente fugir do porão. Já tive um carregamento de batata que tentou.
+	Capitão Bartolomeu Nuvem: Me traz dez caixas e eu abro uma rota nova pra você. Palavra de capitão.
+	$> pedir_missao("capitao_dez_caixas")
+	$> confiar("capitao", 1)
+Capitão Bartolomeu Nuvem: Quando o comércio voltar, Porto Velho volta a ser porto. E eu volto a ser rico. Nessa ordem, se possível.
+$> marcar("capitao_conheceu")
+=> END
+
+~ de_novo
+% Capitão Bartolomeu Nuvem: Os ventos de leste estão bons hoje. Ótimo pra navegar, péssimo pra chapéu.
+% Capitão Bartolomeu Nuvem: Vi uma ilha que não estava ali ontem. Anotei no mapa como "talvez".
+% Capitão Bartolomeu Nuvem: Se encontrar o dragão do âmbar, diz que eu mandei lembranças. E que a dívida está quase paga.
+=> END

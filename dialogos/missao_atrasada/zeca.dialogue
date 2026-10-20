@@ -1,0 +1,33 @@
+# Missão "Atrasada desde amanhã" (PROPOSTA): Zeca Sem-Volta no Bate-Estaca. O momento sincero do fantasma.
+
+~ no_bate_estaca
+Zeca Sem-Volta: Três e quinze. Três e quinze. Três e... ah. Gente. Gente viva.
+Zeca Sem-Volta: Cuidado com o Bate-Estaca. Ele repete os mesmos três segundos desde a Queda. Eu repito junto. A gente se faz companhia.
+Vale: Tem uma peça presa ali dentro. Uma catraca.
+Zeca Sem-Volta: Caiu do teto ontem. Ou amanhã. Fazendo tique-taque. Travou tudo.
+Zeca Sem-Volta: As travas só cedem se apanharem duas vezes no mesmo lugar. O mecanismo lembra do primeiro golpe e empurra de volta.
+Zeca Sem-Volta: Uma pessoa sozinha não bate duas vezes e sai a tempo. Precisava ser duas pessoas. Ou uma pessoa e uma lembrança.
+- Eu tenho um eco.
+	Zeca Sem-Volta: Então você é duas pessoas. Que inveja. Eu sou meia.
+- E se eu não conseguir?
+	Zeca Sem-Volta: Aí você tenta de novo. É a única coisa que este lugar ensina direito.
+Zeca Sem-Volta: Bate na trava quando ela subir. Sai antes de descer. Deixa o eco terminar.
+$> marcar("zeca_viu_vale_no_bate_estaca")
+=> END
+
+~ sexta_feira
+O Bate-Estaca para lá no alto. Pela primeira vez em trinta e dois anos, ele não desce.
+Zeca Sem-Volta: Parou.
+Zeca Sem-Volta: Escuta. Não é mais "três e quinze". É "três e dezesseis".
+Zeca Sem-Volta: [#serio] Eu estava preso naquela quinta-feira. Agora é um minuto depois. Parece pouco. Não é.
+Vale: Zeca... tem alguém lá em cima que ainda pensa em você.
+Zeca Sem-Volta: O Tião. Toda semana eu ouço o elevador parar no andar 3. Ele nunca desce.
+Zeca Sem-Volta: Diz pra ele que não foi culpa dele subir cedo. Eu fiquei porque quis terminar o veio. Teimosia minha.
+Zeca Sem-Volta: E diz que eu ainda devo uma marmita. Ele vai entender.
+- Eu digo. Prometo.
+	Zeca Sem-Volta: Obrigado. Agora vai, antes que o tempo lembre de você também.
+- Por que você não diz você mesmo?
+	Zeca Sem-Volta: Porque ele para no andar 3. E eu não subo. Fantasma tem medo de altura, sabia? Toda vez que olho pra cima, eu lembro.
+	Zeca Sem-Volta: Leva o recado. Por favor.
+$> marcar("zeca_pediu_recado")
+=> END

@@ -1,0 +1,33 @@
+# Dona Rosalva: rotina e memória da cidade (PROPOSTA).
+
+~ manha
+% Dona Rosalva: Fogão aceso às cinco, pão às seis, reclamação às sete. Chegou na hora do pão. Sorte sua.
+% Dona Rosalva: Não fala alto, o quarto 3 ainda está dormindo. Problema de vento.
+=> END
+
+~ tarde
+% Dona Rosalva: Sal de nuvem subiu de preço de novo. Daqui a pouco eu tempero com saudade, que é de graça.
+% Dona Rosalva: O capitão quer pagar a conta com um mapa. Mapa não enche barriga. Bom, enche a dele de ideia.
+=> END
+
+~ noite
+% Dona Rosalva: Limpo a lanterna toda noite. E ponho um prato a mais naquela mesa ali. Não pergunta.
+% Dona Rosalva: Se ouvir um uivo, é o vento. O vento do quarto 3. Ele paga em dia, isso é o que importa.
+=> END
+
+~ arma_nova
+Dona Rosalva: Que facão é esse fazendo barulho duas vezes? Na minha mesa ninguém corta pão com eco, ouviu? Corta uma vez só, como gente.
+$> marcar("reacao_estalajadeira_arma_vista")
+=> END
+
+~ voltou_expedicao
+Dona Rosalva: Você voltou da mina! Senta. Senta já. Prato de volta é por conta da casa.
+Dona Rosalva: [#serio] Toda vez que alguém volta, eu acendo uma vela a mais. Hoje acendi uma pra você.
+$> marcar("reacao_estalajadeira_voltou")
+=> END
+
+~ pos_missao
+% Dona Rosalva: Viu como a lanterna está clara? Vidro novo. Dá pra ver a luz lá da doca. Lá do céu, eu espero.
+% Dona Rosalva: A mesa reservada agora tem um bilhete. "Pra quando a Lia voltar." E outro embaixo. "E pra Vale, quando voltar também."
+% Dona Rosalva: Quem volta de mina come primeiro. Regra nova da casa. O Gaspar já tentou dizer que tinha voltado de uma mina. Era a adega.
+=> END

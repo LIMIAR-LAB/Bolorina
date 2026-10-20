@@ -1,0 +1,12 @@
+# Missão "Atrasada desde amanhã" (PROPOSTA): Gaspar assiste ao teste do eco na Arena das Cinzas.
+
+~ fim_teste
+Gaspar Bigorna: Eu vim ver. Não conta pra ninguém que eu fechei a ferraria no meio da tarde.
+if tem("atrasada_eco_rapido")
+	Gaspar Bigorna: Rápido, hein? Bate, repete, e você já está do outro lado. Parece briga de três pessoas e você ganhando de duas.
+elif tem("atrasada_eco_pesado")
+	Gaspar Bigorna: Pesado. O eco caiu como bigorna. Aquilo quebrou guarda de orc de palha e vai quebrar de orc de verdade.
+else
+	Gaspar Bigorna: O eco está repetindo direitinho. Ainda dá pra deixar mais rápido ou mais pesado, se você me trouxer lascas.
+Gaspar Bigorna: Agora sim. Peça entregue, arma testada. Vai na doca ver o guindaste andar. Eu quero ouvir daqui.
+=> END

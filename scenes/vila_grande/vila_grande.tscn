@@ -1,0 +1,22 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://scripts/vila_grande/mapa_cc0.gd" id="1"]
+[ext_resource type="Script" path="res://scripts/dialogos/interacao_npcs.gd" id="2"]
+[ext_resource type="Script" path="res://scripts/dungeon/entrada_masmorra.gd" id="3"]
+[ext_resource type="Script" path="res://scripts/mundo/ponto_viagem.gd" id="4"]
+
+[node name="VilaGrande" type="Node3D"]
+script = ExtResource("1")
+layout = "res://scripts/vila_grande/vila_grande_layout.json"
+
+[node name="Dialogos" type="Node" parent="."]
+script = ExtResource("2")
+
+[node name="EntradaMasmorra" type="Node3D" parent="."]
+script = ExtResource("3")
+area_id = "porto_velho"
+entrada_id = "elevador_minas"
+
+[node name="PontoViagem" type="Node3D" parent="."]
+script = ExtResource("4")
+area_id = "porto_velho"

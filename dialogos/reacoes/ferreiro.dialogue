@@ -1,0 +1,27 @@
+# Gaspar Bigorna: rotina e memória da cidade (PROPOSTA). Escolhido por data/missoes/dialogos_moradores.json.
+
+~ manha
+% Gaspar Bigorna: Antes do café eu não atendo. Depois do café eu atendo mal. Volta às dez.
+% Gaspar Bigorna: Estou acendendo a forja. Ela pega no terceiro sopro. Sempre no terceiro. Tradição de família.
+=> END
+
+~ tarde
+% Gaspar Bigorna: Traz ferro, que eu faço mágica. Traz cobre, que eu faço quase mágica.
+% Gaspar Bigorna: Prazo é prazo. Se eu digo sexta, é sexta. De qual linha do tempo, aí já não garanto.
+=> END
+
+~ noite
+% Gaspar Bigorna: À noite eu só polo o martelo do meu avô. Ele brilha diferente quando ninguém está olhando.
+% Gaspar Bigorna: O Tião vem sentar aqui na porta toda noite. A gente discute o rangido do elevador. Há vinte anos.
+=> END
+
+~ pos_missao
+if tem("tiao_recebeu_recado") and not tem("reacao_ferreiro_divida_zeca")
+	Gaspar Bigorna: [#serio] O Tião me contou do Zeca. Ele morreu me devendo três lingotes.
+	Gaspar Bigorna: Risquei do caderno. Primeira dívida que eu perdoo em trinta e um anos. Não espalha.
+	$> marcar("reacao_ferreiro_divida_zeca")
+	=> END
+% Gaspar Bigorna: Viu minha conta emoldurada? "Arquivo, amanhã." Os clientes adoram. Dois já pediram multa igual.
+% Gaspar Bigorna: Abri um caderno de encomendas futuras. Por enquanto só tem uma. Minha. Pra mim mesmo.
+% Gaspar Bigorna: Seu eco está repetindo direito? Se ele começar a repetir conversa, me avisa.
+=> END

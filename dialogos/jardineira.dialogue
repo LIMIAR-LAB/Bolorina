@@ -1,0 +1,23 @@
+# Dona Iolanda, horticultora de trança prateada (Celeiro das Sementes, Porto Velho).
+~ start
+if tem("jardineira_conheceu")
+	=> de_novo
+Dona Iolanda: Pisa devagar, menina. Esse chão de tábua tem mais semente enfiada nas frestas do que prego.
+Dona Iolanda: Você é a moça que vai cuidar da fazenda do alto? Faz tempo que aquela terra não vê mão de gente.
+- Sou eu. Não entendo quase nada de plantar.
+	Dona Iolanda: Melhor assim. Quem acha que sabe briga com a terra. Quem não sabe, escuta.
+	$> confiar("jardineira", 1)
+- Vim ganhar dinheiro com as colheitas e reabrir o comércio.
+	Dona Iolanda: Ambição é adubo também, só não exagera na dose.
+Dona Iolanda: Leva este punhado de nabo-cinzento. Nasce até em pedra, se você conversar com ele de manhã.
+Vale: Conversar... com o nabo?
+Dona Iolanda: Elogia. Nabo é vaidoso. Mas nunca, jamais, conte pra ele sobre a sopa.
+$> marcar("jardineira_conheceu")
+$> marcar("ganhou_sementes_nabo")
+=> END
+
+~ de_novo
+% Dona Iolanda: Já elogiou seus nabos hoje? Eles percebem quando você esquece.
+% Dona Iolanda: Semente boa chega no fim da estação. Volta quando o vento virar pro norte.
+% Dona Iolanda: Antes da Queda, a gente plantava nas nuvens. Hoje eu planto onde dá, e dá muito.
+=> END

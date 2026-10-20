@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=18
+type="Resource"
+uid="uid://cu6llkx06yhxo"
+path="res://.godot/imported/mira.dialogue-eb842d8a41c827027c7f19d085ea3de6.tres"
+
+[deps]
+
+source_file="res://dialogos/reacoes/mira.dialogue"
+dest_files=["res://.godot/imported/mira.dialogue-eb842d8a41c827027c7f19d085ea3de6.tres"]
+
+[params]
+
+defaults=true

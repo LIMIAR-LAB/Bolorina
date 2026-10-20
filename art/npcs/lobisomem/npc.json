@@ -1,0 +1,22 @@
+{
+ "id": "lobisomem",
+ "canvas": [
+  48,
+  54
+ ],
+ "altura_px": 52,
+ "pixel_size": 0.035833,
+ "fps": 2.0,
+ "fantasma": false,
+ "vistas": {
+  "frente": [
+   "frente_0.png",
+   "frente_1.png"
+  ],
+  "costas": [
+   "costas_0.png",
+   "costas_1.png"
+  ]
+ },
+ "pe_px": 53
+}

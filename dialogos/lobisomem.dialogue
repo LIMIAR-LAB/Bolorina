@@ -1,0 +1,24 @@
+# Tobias do Ermo, lobisomem eremita da Ilha Selvagem. Amaldicoado pela cinza.
+~ start
+if tem("lobisomem_conheceu")
+	=> de_novo
+Tobias do Ermo: Não chega mais perto. Hoje a fenda do céu está aberta e eu não confio nas minhas mãos.
+Vale: Você está ferido? Posso ajudar.
+Tobias do Ermo: Ferido, não. Amaldiçoado. A cinza entrou na minha linhagem no dia da Queda. Quando o tempo racha, eu viro bicho.
+- Existe cura?
+	Tobias do Ermo: A herbalista do porto acha que sim. Eu acho que esperança é uma fera mais perigosa que eu.
+	Tobias do Ermo: Mas... se você levar este pelo pra ela, talvez. Talvez.
+	$> marcar("lobisomem_pelo_para_mira")
+	$> confiar("lobisomem", 1)
+- Eu não tenho medo de você.
+	Tobias do Ermo: Devia ter. Mas obrigado. Faz anos que alguém não me olha sem segurar uma tocha.
+	$> confiar("lobisomem", 2)
+Tobias do Ermo: Vai antes da lua subir. E se ouvir uivo, não responde. Às vezes sou eu. Às vezes é coisa pior.
+$> marcar("lobisomem_conheceu")
+=> END
+
+~ de_novo
+% Tobias do Ermo: A floresta anda inquieta. As fendas estão abrindo mais cedo.
+% Tobias do Ermo: Trouxe um pouco de carne seca. Pra mim, não pra fera. A fera não tem educação.
+% Tobias do Ermo: Lua fina hoje. Pode ficar um pouco.
+=> END

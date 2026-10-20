@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=18
+type="Resource"
+uid="uid://c335ug8odn165"
+path="res://.godot/imported/gato.dialogue-da7308f8cb4169bb94abb79d4ded28f7.tres"
+
+[deps]
+
+source_file="res://dialogos/gato.dialogue"
+dest_files=["res://.godot/imported/gato.dialogue-da7308f8cb4169bb94abb79d4ded28f7.tres"]
+
+[params]
+
+defaults=true

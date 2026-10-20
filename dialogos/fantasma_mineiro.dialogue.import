@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=18
+type="Resource"
+uid="uid://dkytd23vvgsi8"
+path="res://.godot/imported/fantasma_mineiro.dialogue-0795a27a2aa06b88f35cb98e6e5ca4a5.tres"
+
+[deps]
+
+source_file="res://dialogos/fantasma_mineiro.dialogue"
+dest_files=["res://.godot/imported/fantasma_mineiro.dialogue-0795a27a2aa06b88f35cb98e6e5ca4a5.tres"]
+
+[params]
+
+defaults=true

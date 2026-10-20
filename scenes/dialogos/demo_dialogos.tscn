@@ -1,0 +1,46 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://scripts/dialogos/demo_dialogos.gd" id="1_demo"]
+
+[node name="DemoDialogos" type="Node3D"]
+script = ExtResource("1_demo")
+
+[node name="Marcadores" type="Node3D" parent="."]
+
+[node name="mira" type="Marker3D" parent="Marcadores"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.5, 0, -2.0)
+
+[node name="jardineira" type="Marker3D" parent="Marcadores"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.0, 0, 2.5)
+
+[node name="guardia" type="Marker3D" parent="Marcadores"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.5, 0, -2.5)
+
+[node name="sineiro" type="Marker3D" parent="Marcadores"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0, 0, -6.0)
+
+[node name="ferreiro" type="Marker3D" parent="Marcadores"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.0, 0, 2.5)
+
+[node name="estalajadeira" type="Marker3D" parent="Marcadores"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.5, 0, -5.0)
+
+[node name="arquimago" type="Marker3D" parent="Marcadores"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.8, 0, -5.2)
+
+[node name="capitao" type="Marker3D" parent="Marcadores"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.0, 0, 6.5)
+
+[node name="lider_orc" type="Marker3D" parent="Marcadores"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 19, 0, 2)
+
+[node name="condessa" type="Marker3D" parent="Marcadores"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -19, 0, 2)
+
+[node name="lobisomem" type="Marker3D" parent="Marcadores"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -19)
+
+[node name="dragao" type="Marker3D" parent="Marcadores"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 19)
+
+[node name="Moradores" type="Node3D" parent="."]

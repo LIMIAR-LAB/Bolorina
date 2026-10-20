@@ -1,0 +1,26 @@
+# Grusha Dente-de-Ferro, lider do Cla Brasa-Velha (Vila dos Orcs). Desconfiada, respeita guerreiros.
+~ start
+if tem("lider_orc_conheceu")
+	=> de_novo
+Grusha Dente-de-Ferro: Humana. Na minha vila. Andando como se o chão fosse dela.
+Grusha Dente-de-Ferro: Dois dos meus guerreiros dizem que você derrubou eles na estrada. Fala. Por que eu não devo te jogar do penhasco?
+- Eles atacaram primeiro. Eu só me defendi.
+	Grusha Dente-de-Ferro: Hm. E ainda assim não acabou com eles. Fraqueza ou honra?
+	Vale: Honra. Eu quero conversar, não enterrar ninguém.
+	Grusha Dente-de-Ferro: Honra. Faz tempo que ninguém de pele rosada usa essa palavra perto de mim.
+	$> confiar("lider_orc", 2)
+- Porque eu sou mais útil viva. Tenho comida e rotas de comércio.
+	Grusha Dente-de-Ferro: Comida. Meu povo está preso nesta ilha desde a Queda. A gente veio de uma linha do tempo onde vencemos a guerra.
+	Grusha Dente-de-Ferro: Ganhamos tudo e perdemos o caminho de casa. Vitória é um prato que esfria rápido.
+	$> marcar("lider_orc_contou_origem")
+	$> confiar("lider_orc", 1)
+Grusha Dente-de-Ferro: Escuta bem. O Clã Brasa-Velha não confia em palavras. Confia em cicatriz.
+Grusha Dente-de-Ferro: Volta quando tiver lutado ao lado de um dos meus. Aí a gente conversa sentada.
+$> marcar("lider_orc_conheceu")
+=> END
+
+~ de_novo
+% Grusha Dente-de-Ferro: Ainda viva, humana? Bom. Morto não serve nem de aliado.
+% Grusha Dente-de-Ferro: Meus guerreiros apostam que você não dura uma estação. Eu apostei contra eles.
+% Grusha Dente-de-Ferro: Na minha linha do tempo, orc plantava trigo. Aqui só sobrou a guerra.
+=> END

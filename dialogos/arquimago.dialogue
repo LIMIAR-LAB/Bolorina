@@ -1,0 +1,26 @@
+# Ozorio Pendulo, o Arquimago velho da Torre Torta (Porto Velho). Experimentos absurdos com portais.
+~ start
+if tem("arquimago_conheceu")
+	=> de_novo
+Ozório Pêndulo: Não pisa no círculo! Não pisa no... tá, pisou. Tudo bem. Provavelmente tudo bem.
+Ozório Pêndulo: Você acabou de existir em quatro lugares por meio segundo. Um deles era uma panela.
+Vale: Eu... o quê?
+Ozório Pêndulo: Esquece. Ou lembra. Em algumas linhas do tempo você já esqueceu, então tecnicamente tanto faz.
+- Você é um dos Arquimagos do Relógio?
+	Ozório Pêndulo: Fui. Sou. Serei, numa terça. A gente quebrou o Coração do Tempo, sabe? Foi um acidente. Um acidente muito bem planejado.
+	Ozório Pêndulo: Agora tem uma porção de versões minhas por aí. Uma delas virou poeta. A pior de todas.
+	$> marcar("arquimago_confessou")
+	$> confiar("arquimago", 1)
+- O que tem dentro desse portal?
+	Ozório Pêndulo: Uma Ilha das Cinzas onde as galinhas governam. Eleitas democraticamente, o que é o mais assustador.
+	Ozório Pêndulo: Quer visitar? Brincadeira. Ainda não. A volta custa um dedo. Às vezes de outra pessoa.
+	$> marcar("arquimago_portal_galinhas")
+Ozório Pêndulo: Traz adamantium pra mim um dia. Com ele eu conserto o Coração. Ou explodo o porto. Uma das duas, com certeza.
+$> marcar("arquimago_conheceu")
+=> END
+
+~ de_novo
+% Ozório Pêndulo: Você de novo! Ou é a outra você? Pisca duas vezes se for a outra.
+% Ozório Pêndulo: Hoje eu inventei o ontem. Ficou meio torto, mas funciona.
+% Ozório Pêndulo: Não come nada que sair desse portal. Principalmente se ele pedir com educação.
+=> END

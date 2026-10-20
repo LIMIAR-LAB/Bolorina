@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=18
+type="Resource"
+uid="uid://brlnpi0e4d75l"
+path="res://.godot/imported/vagoneta_falante.dialogue-d77dd8ef2eafc53d69da95c1a3cbb5e7.tres"
+
+[deps]
+
+source_file="res://dialogos/vagoneta_falante.dialogue"
+dest_files=["res://.godot/imported/vagoneta_falante.dialogue-d77dd8ef2eafc53d69da95c1a3cbb5e7.tres"]
+
+[params]
+
+defaults=true

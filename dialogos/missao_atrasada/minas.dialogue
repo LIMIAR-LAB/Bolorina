@@ -1,0 +1,16 @@
+# Missão "Atrasada desde amanhã" (PROPOSTA): bifurcação do andar 2 das Minas da Cinza.
+
+~ placa_bifurcacao
+Uma placa torta. "TRILHO, seguro. GALERIA DESABADA, não. Assinado, Tião." Embaixo, outra letra. "Tem cobre. Assinado, Zeca."
+- Seguir o trilho
+	Vale: Seguro e curto. O Gaspar está esperando.
+	$> marcar("atrasada_caminho_seguro")
+- Arriscar a Galeria Desabada
+	Vale: Cobre extra e lascas de eco. E morcegos. Bom, ninguém é perfeito.
+	$> marcar("atrasada_caminho_arriscado")
+=> END
+
+~ vagoneta_bifurcacao
+Dona Vagoneta: Pelo trilho eu te levo, querida. Pela galeria, nem amarrada. Eu tenho rodas, não tenho asas.
+Dona Vagoneta: Mas se for, traz cobre. Faz tempo que ninguém me enche direito.
+=> placa_bifurcacao

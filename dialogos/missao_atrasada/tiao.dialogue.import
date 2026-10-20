@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=18
+type="Resource"
+uid="uid://dxjekcp4chb8b"
+path="res://.godot/imported/tiao.dialogue-0a70fd154a15f050f7d01e5ed7215c98.tres"
+
+[deps]
+
+source_file="res://dialogos/missao_atrasada/tiao.dialogue"
+dest_files=["res://.godot/imported/tiao.dialogue-0a70fd154a15f050f7d01e5ed7215c98.tres"]
+
+[params]
+
+defaults=true

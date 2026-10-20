@@ -1,0 +1,22 @@
+# Seu Tião Lamparina, mineiro aposentado que cuida do elevador da cisterna. Ensina os andares e as picaretas. PROPOSTA.
+~ start
+if tem("minerador_aposentado_conheceu")
+	=> de_novo
+Seu Tião Lamparina: Ô, menina! Desceu pelo meu elevador e nem pagou o pedágio. Brincadeira. O pedágio é ouvir minhas histórias.
+Seu Tião Lamparina: Isso aqui são as Minas da Cinza. Do andar 1 ao 5 é cobre; do 6 ao 12, ferro. Carvão tem em tudo que é canto.
+- Que picareta eu preciso?
+	Seu Tião Lamparina: Pro cobre, qualquer uma serve. Pro ferro, já tem que ser picareta de cobre, no mínimo. Gaspar forja na Ferraria do Porto.
+	Seu Tião Lamparina: Bate na pedra brilhante, não na parede. A parede bate de volta.
+	$> marcar("minerador_aposentado_ensinou")
+	$> confiar("minerador_aposentado", 1)
+- E lá embaixo de tudo?
+	Seu Tião Lamparina: Depois do 12 a escada some. Dizem que no 20 tem o Coração Soterrado, onde a pedra sussurra horário. Eu nunca desci. Eu gosto dos meus horários.
+Seu Tião Lamparina: Siga o trilho da vagoneta, que ele sempre leva pra escada. E acende a lamparina: aqui embaixo o escuro tem dente.
+$> marcar("minerador_aposentado_conheceu")
+=> END
+
+~ de_novo
+% Seu Tião Lamparina: Quarenta anos de mina e só perdi um dedo. E foi pra um caranguejo, lá no porto.
+% Seu Tião Lamparina: Se ouvir um assobio no andar 4, é o Zeca. Coitado. Morreu devendo três lingotes pro Gaspar.
+% Seu Tião Lamparina: O elevador range, mas aguenta. Eu também.
+=> END

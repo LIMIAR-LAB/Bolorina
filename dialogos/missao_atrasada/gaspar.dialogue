@@ -1,0 +1,113 @@
+# Missão "Atrasada desde amanhã" (PROPOSTA, não é canon): falas do Gaspar Bigorna.
+# Escolhido por scripts/missoes/gerenciador_missoes.gd -> dialogo_para("ferreiro") enquanto a etapa estiver ativa.
+
+~ conta_impossivel
+Gaspar Bigorna: Brida! Volta aqui! Isso é um absurdo!
+Vale: O que aconteceu?
+Gaspar Bigorna: Uma multa. Pra mim. Gaspar Bigorna. Trinta e um anos de ferraria e eu nunca atrasei um prego.
+Gaspar Bigorna: Lê isso. Em voz alta, que eu quero sofrer direito.
+Vale: "Repartição de Prazos e Vencimentos. Multa por atraso na entrega da Catraca-Mestra nº 3 do guindaste da doca."
+Vale: "Defeito: catraca rachada no terceiro dente." Gaspar... isso aqui tem data de amanhã.
+Gaspar Bigorna: Eu sei que tem data de amanhã! Não é isso que me ofende!
+Gaspar Bigorna: Olha os juros. Dois por cento ao dia. Ao DIA. Sobre um dia que nem começou.
+- O tempo está quebrado e você está bravo com os juros?
+	Gaspar Bigorna: O tempo quebra toda semana nesta ilha. Juros abusivos são uma escolha.
+	$> confiar("ferreiro", 1)
+- E se a conta estiver certa? E se o guindaste quebrar mesmo?
+	Gaspar Bigorna: [#serio] Aí é pior. Aí eu atrasei de verdade. Só que ainda não.
+Gaspar Bigorna: Faz um favor. Vai até a doca e olha a catraca do guindaste. Terceiro dente.
+Gaspar Bigorna: Se não tiver rachadura nenhuma, eu rasgo isso aqui e janto em paz.
+$> marcar("ferreiro_conheceu")
+$> marcar("atrasada_conta_lida")
+=> END
+
+~ lembrete_guindaste
+% Gaspar Bigorna: Terceiro dente da catraca. Vai lá, olha e volta. Eu fico aqui recalculando os juros.
+% Gaspar Bigorna: Se a rachadura não existir, eu processo a Repartição. Se existir, eu processo também, por princípio.
+% Gaspar Bigorna: Ainda está aqui? O guindaste fica na doca. A doca fica onde termina o chão.
+=> END
+
+~ reforco
+if tem("atrasada_gaspar_explicou_minas")
+	Gaspar Bigorna: Põe o facão na bigorna e abre a forja. Têmpera em cinza. Eu não vou pedir de novo. Vou, mas não quero.
+	=> END
+Gaspar Bigorna: E então?
+Vale: Rachou na minha frente. Primeiro dente, depois o segundo. O terceiro está indo.
+Gaspar Bigorna: Então a conta é verdadeira. Que humilhação. Atrasado desde amanhã.
+if tem("atrasada_pista_mira")
+	Gaspar Bigorna: E a Mira já cheirou o papel, aposto. Aquela ali fareja um mistério antes de eu terminar de reclamar.
+Gaspar Bigorna: Catraca daquele tamanho pede bronze que aguenta repetir o mesmo movimento mil vezes. Esse bronze não tem no porto.
+Gaspar Bigorna: Tem nas Minas da Cinza. Andar 4. Onde o Bate-Estaca velho ficou batendo desde a Queda.
+Gaspar Bigorna: E você vai descer com isso aí? Esse facão cortava nabo. Mal.
+Gaspar Bigorna: Põe o facão na bigorna. Primeiro reforço é por minha conta. Mandar gente pra mina com facão cego dá multa também.
+Gaspar Bigorna: Vou temperar a lâmina na água da cisterna, com uma pitada de cinza. A cinza é tempo moído. A lâmina aprende a repetir.
+$> marcar("atrasada_gaspar_explicou_minas")
+=> END
+
+~ reforco_pronto
+Gaspar Bigorna: Pronto. Bate aí no poste. O golpe pesado, o terceiro do combo.
+Vale: Ele bateu de novo? Sozinho? Depois que eu já tinha saído?
+Gaspar Bigorna: Isso é o eco. A lâmina lembra do golpe e repete no mesmo lugar, um instante depois.
+Gaspar Bigorna: Dá o golpe e sai da frente. O eco termina o serviço. É quase uma ajudante. Que não cobra juros.
+Gaspar Bigorna: Se trouxer material sobrando da mina, eu deixo esse eco mais rápido ou mais pesado. Você escolhe.
+Gaspar Bigorna: A entrada da mina é a cisterna aqui atrás. Fala com o Tião no elevador. E leva comida, se der.
+=> END
+
+~ entrega
+if not tem("atrasada_peca_recuperada")
+	Gaspar Bigorna: Sem catraca, sem conversa. Andar 4, Bate-Estaca. O Tião te desce.
+	=> END
+Gaspar Bigorna: Você voltou! Inteira! E com... deixa eu ver isso.
+Gaspar Bigorna: [#serio] Essa marca é minha. Minha bigorna, meu martelo, meu jeito de bater o terceiro dente.
+Gaspar Bigorna: "Feita amanhã." Eu fiz isso. Eu VOU fazer isso. E caiu lá embaixo antes de eu acordar.
+- Então você não atrasou. Você adiantou.
+	Gaspar Bigorna: Adiantei. Gostei. Vou mandar isso pra Repartição em letra grande.
+	$> confiar("ferreiro", 1)
+- O trabalho é bom. Dá pra ver.
+	Gaspar Bigorna: É bom porque é meu. Mas obrigado. Faz tempo que ninguém fala do meu trabalho sem reclamar do preço.
+	$> confiar("ferreiro", 1)
+Gaspar Bigorna: Só falta o acabamento. Me dá os três cobres que você guardou pra peça. Esses você não vende, nem pensar.
+$> marcar("atrasada_peca_entregue")
+=> escolher_eco
+
+~ escolher_eco
+Gaspar Bigorna: Agora, o que sobrou da mina é seu. Com três lascas de eco e dois cobres eu mexo no eco do facão.
+Gaspar Bigorna: Rápido repete mais cedo, mais leve, e emenda na esquiva. Pesado demora, mas bate como você e quebra guarda de orc.
+if tem("atrasada_pode_pagar_eco")
+	- Eco rápido.
+		Gaspar Bigorna: Escolha de quem não para quieta. Combina com você.
+		$> marcar("atrasada_eco_rapido")
+	- Eco pesado.
+		Gaspar Bigorna: Escolha de quem arma a armadilha e vai tomar um chá. Respeito.
+		$> marcar("atrasada_eco_pesado")
+	- Ainda não. Quero pensar.
+		Gaspar Bigorna: Pensa. A bigorna espera. Eu não, mas a bigorna sim.
+		=> END
+else
+	Gaspar Bigorna: Hm. Gastou o excedente, né? Eu vi aquela bota nova.
+	Gaspar Bigorna: Faz assim, eu faço fiado. Mas se a Repartição perguntar, você nunca esteve aqui.
+	$> marcar("atrasada_eco_fiado")
+	- Eco rápido, fiado.
+		Gaspar Bigorna: Anotado no caderno. A lápis. Lápis do futuro, que apaga sozinho.
+		$> marcar("atrasada_eco_rapido")
+	- Eco pesado, fiado.
+		Gaspar Bigorna: Anotado. Se você não pagar, eu cobro de uma versão sua de outra linha do tempo.
+		$> marcar("atrasada_eco_pesado")
+Gaspar Bigorna: Agora vai pra Arena das Cinzas e testa. Eco que ninguém testou é só barulho.
+=> END
+
+~ arquivar
+Gaspar Bigorna: Ouvi daqui. O guindaste rangeu bonito. Rangido de coisa funcionando.
+Vale: A Rosalva recebeu o vidro da lanterna. E apareceu uma encomenda pra Estação Depois-de-Ontem.
+Gaspar Bigorna: Depois-de-Ontem. Claro. Por que não. Amanhã já não bastava.
+Gaspar Bigorna: Agora, a conta. Eu podia rasgar. Mas não. Vou emoldurar. Arquivo... amanhã.
+Gaspar Bigorna: Se a Repartição vier cobrar, eu mostro a peça entregue antes de feita. Quero ver calcular juros sobre isso.
+- E a peça? Você ainda vai ter que fazer ela amanhã.
+	Gaspar Bigorna: Vou. E no prazo. Pela primeira vez na vida eu sei exatamente como vai ficar.
+- Você não ficou nem um pouco assustado com o tempo quebrado?
+	Gaspar Bigorna: [#serio] Fiquei. Meu avô dizia que o metal sussurrava horários. Hoje eu entendi o que ele ouvia.
+	Gaspar Bigorna: Mas medo não paga multa. Trabalho paga.
+	$> confiar("ferreiro", 1)
+Gaspar Bigorna: Se alguém do futuro está mandando pacote pra cá, alguém daqui vai ter que levar pra lá. O Capitão já está olhando o mapa.
+$> marcar("atrasada_conta_arquivada")
+=> END

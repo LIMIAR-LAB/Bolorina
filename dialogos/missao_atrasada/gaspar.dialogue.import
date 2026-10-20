@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=18
+type="Resource"
+uid="uid://cfd6cm3lniwqj"
+path="res://.godot/imported/gaspar.dialogue-5844628648c1c60c2e02d62b83590e58.tres"
+
+[deps]
+
+source_file="res://dialogos/missao_atrasada/gaspar.dialogue"
+dest_files=["res://.godot/imported/gaspar.dialogue-5844628648c1c60c2e02d62b83590e58.tres"]
+
+[params]
+
+defaults=true

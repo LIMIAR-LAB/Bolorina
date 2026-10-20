@@ -1,0 +1,17 @@
+# Missão "Atrasada desde amanhã" (PROPOSTA): escolha opcional de provisão no cesto da varanda da fazenda.
+
+~ provisao
+Vale: Mina, Bate-Estaca, lodo que endurece. Melhor levar alguma coisa.
+No cesto da varanda tem nabo-cinzento maduro, a lata de óleo de lampião e a garrafa de chá que a Mira deu.
+- Nabo-cinzento assado (cura 35 de vida, uma vez)
+	Vale: Desculpa, nabo. Você estava lindo. Isso é um elogio, não uma despedida.
+	$> marcar("atrasada_provisao_nabo")
+- Óleo de lampião (os morcegos não apagam sua luz)
+	Vale: Se o escuro lá embaixo tem dente, eu levo mais luz.
+	$> marcar("atrasada_provisao_lampiao")
+- Chá de raiz-de-brasa (o primeiro eco de cada sala bate mais forte)
+	Vale: Amargo como despedida. Mas resolve.
+	$> marcar("atrasada_provisao_cha")
+- Nada. Vou leve.
+	Vale: Leve e rápida. Se der fome, eu culpo o tempo.
+=> END

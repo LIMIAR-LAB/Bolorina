@@ -1,0 +1,43 @@
+# Missão "Atrasada desde amanhã" (PROPOSTA): a pista opcional da Mira (ferrugem de amanhã).
+
+~ pista
+if tem("atrasada_pista_confirmada")
+	=> depois
+if tem("atrasada_amostra_raspada")
+	=> amostra
+if tem("atrasada_pista_mira")
+	Mira: Raspou a ferrugem do guindaste? Não? Vai, vai. Terceiro dente. A ciência espera, mas fica emburrada.
+	=> END
+Mira: Que papel é esse que você está segurando como se ele mordesse?
+Vale: Uma multa pro Gaspar. De amanhã.
+Mira: De amanhã? Me dá aqui. Não, não lê. Cheira.
+Vale: Cheira... a chuva?
+Mira: Chuva que ainda não caiu. A tinta tem cinza misturada. Cinza de amanhã. Eu nunca tinha visto uma amostra disso.
+Mira: Faz uma coisa pra mim? Raspa um pouco da ferrugem do guindaste. Se ela tiver esse mesmo cheiro, a rachadura não está chegando. Está voltando.
+- Voltando de onde?
+	Mira: Do dia em que já quebrou. É uma teoria. Teoria é palpite que tomou banho.
+- Pode deixar. Eu raspo.
+	Mira: Usa a ponta do facão. E não lambe. Eu sei que dá vontade.
+$> marcar("atrasada_pista_mira")
+=> END
+
+~ raspar
+Vale raspa a ferrugem do terceiro dente. O pó sobe e cheira, sem dúvida nenhuma, a chuva que ainda não caiu.
+Vale: A Mira vai adorar isso. Ou vai ficar insuportável. Provavelmente as duas coisas.
+$> marcar("atrasada_amostra_raspada")
+=> END
+
+~ amostra
+Mira: Você raspou! Raspou mesmo! Me dá, me dá.
+Mira: Chuva que não caiu. Igualzinho à tinta. Eu sabia. Eu SABIA.
+Mira: A rachadura do guindaste não é desgaste. É lembrança. O guindaste está lembrando de um dia que ainda não viveu.
+Mira: [#serio] Sabe o que isso quer dizer? A cinza não é só tempo moído. Também é tempo que ainda vai acontecer. Dá pra estudar. Dá pra cuidar.
+Mira: Toma. Essência de raiz-de-brasa. Pagamento de pesquisadora pra assistente de campo. Não se acostuma.
+$> confiar("mira", 1)
+$> marcar("atrasada_pista_confirmada")
+=> END
+
+~ depois
+% Mira: Rotulei a amostra. "Amanhã, nº 1." Quero o nº 2 de outra ilha. Sem pressa. Com um pouco de pressa.
+% Mira: Ainda cheira a chuva. Abro o frasco de vez em quando só pra conferir. Pesquisa séria.
+=> END

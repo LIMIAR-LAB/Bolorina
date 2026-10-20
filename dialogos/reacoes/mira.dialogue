@@ -1,0 +1,40 @@
+# Mira: rotina e memória da cidade (PROPOSTA).
+
+~ manha
+% Mira: Bom dia! Peneirando cinza pros canteiros. A fina é pra hortelã. A grossa é pra quem me irrita.
+% Mira: De manhã as ervas ainda estão meio ontem. Melhor colher depois das nove.
+=> END
+
+~ tarde
+% Mira: Chá de raiz-de-brasa pra dor, de musgo-sereno pra calma, e o do pote azul pra ninguém.
+% Mira: A Dona Iolanda mandou alecrim pelo Pipo. Chegou ofendido. Alecrim é sensível.
+=> END
+
+~ noite
+% Mira: Deixo a janela entreaberta e anoto o que o vento conta. Ontem ele contou uma receita de bolo. Não testei.
+% Mira: Shh, estou ouvindo a cinza cair. Cada grão faz um barulhinho diferente. Esse foi uma quarta-feira.
+=> END
+
+~ arma_nova
+Mira: Espera. Chega perto. Seu facão está cheirando a cinza fresca.
+Mira: O Gaspar temperou ele na cisterna, né? Com cinza. Agora ele lembra dos golpes. Que lindo. Que perigoso. Que lindo.
+$> marcar("reacao_mira_arma_vista")
+=> END
+
+~ voltou_expedicao
+Mira: Você desceu nas minas! Tem pó de andar 4 no seu ombro. Me dá um pouquinho? Só um pouquinho. Pra ciência.
+$> marcar("reacao_mira_voltou")
+=> END
+
+~ pista_reconhecida
+Mira: Sabe o que eu fiz com a sua amostra de ferrugem? Pus na janela. De noite ela brilha um pouquinho antes de chover.
+Mira: [#serio] Você foi lá e raspou só porque eu pedi. Ninguém faz isso. Obrigada por levar minha pista a sério.
+Mira: Quero amostras de todas as ilhas. Se a cinza de amanhã existe, a de depois de amanhã também. Eu vou fazer um mapa do tempo.
+$> marcar("reacao_mira_pista_reconhecida")
+=> END
+
+~ pos_missao
+% Mira: Meu frasco "Amanhã, nº 1" está na prateleira de cima. Do lado do pote azul, que está com ciúmes.
+% Mira: Ouviu o guindaste? Rangido de coisa funcionando tem outra nota. Mais aguda. Mais feliz.
+% Mira: Se for pra Estação Depois-de-Ontem, traz terra de lá. E me conta se o futuro tem boas ervas.
+=> END

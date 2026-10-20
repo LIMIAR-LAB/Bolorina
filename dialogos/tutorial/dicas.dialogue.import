@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=18
+type="Resource"
+uid="uid://dxn8e86pm7kgj"
+path="res://.godot/imported/dicas.dialogue-855f2824ceb8335f6b78bd00bf6b2eac.tres"
+
+[deps]
+
+source_file="res://dialogos/tutorial/dicas.dialogue"
+dest_files=["res://.godot/imported/dicas.dialogue-855f2824ceb8335f6b78bd00bf6b2eac.tres"]
+
+[params]
+
+defaults=true

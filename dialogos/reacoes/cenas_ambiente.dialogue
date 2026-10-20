@@ -1,0 +1,78 @@
+# Cenas de ambiente entre moradores de Porto Velho (PROPOSTA). Dados em data/missoes/cenas_ambiente.json.
+# "*_disfarce" = o assunto muda quando a Vale chega perto.
+
+~ brida_entrega_envelope
+Brida Ferrolho: Correspondência oficial, Gaspar. Assina aqui. E aqui. E aqui, que essa é a via de amanhã.
+Gaspar Bigorna: Carimbo vermelho? Eu não devo nada pra ninguém! Eu nunca atrasei um prego!
+Brida Ferrolho: Então você vai adorar ler. Boa sorte. Eu vou estar bem longe.
+=> END
+
+~ penumbra
+Brida Ferrolho: Rosalva, pelo Contrato de Penumbra, depois das dez só podem ficar doze lanternas acesas na cidade.
+Dona Rosalva: E a minha é a décima terceira. Faz trinta e dois anos que é a décima terceira.
+Brida Ferrolho: A Condessa de Cinzalta assinou com sangue. Literalmente. Cláusula 4, "luz em excesso dá enxaqueca em vampiro".
+Dona Rosalva: Então a Condessa compra um chapéu. Minha lanterna não apaga.
+=> END
+
+~ penumbra_disfarce
+Brida Ferrolho: ...então, como eu dizia, o caldo de hoje estava ótimo. Bem salgado.
+Dona Rosalva: Salgadíssimo. Boa noite, Vale. Não estávamos falando de lanterna nenhuma.
+=> END
+
+~ jucas_em_dobro
+Brida Ferrolho: Capitão, a folha de pagamento da doca diz "Juca" duas vezes.
+Capitão Bartolomeu Nuvem: Porque tem dois Jucas. Um apareceu depois da Queda. Ou antes. Os dois juram que são o original.
+Brida Ferrolho: E você paga os dois?
+Capitão Bartolomeu Nuvem: Se eu pagar um só, o outro processa. E ganha, porque é a mesma pessoa. Já perdi essa causa duas vezes. Uma pra cada.
+=> END
+
+~ jucas_em_dobro_disfarce
+Capitão Bartolomeu Nuvem: ...e é por isso que dirigível não tem freio. Ah, Vale! Assunto de capitão, nada de dinheiro.
+=> END
+
+~ entrega_da_pipo
+Pipo: Dona Mira! Encomenda da Dona Iolanda! Alecrim, hortelã e um bilhete.
+Mira: Obrigada, Pipo. O que diz o bilhete?
+Pipo: "O alecrim está ofendido porque você chamou ele de tempero. Pede desculpa." Pede desculpa pro alecrim, Dona Mira.
+Mira: Desculpa, alecrim. Você é um remédio. Pronto. Toma uma bala pela entrega, Pipo.
+=> END
+
+~ quarto_tres
+Seu Lauro: Rosalva, que uivo foi esse?
+Dona Rosalva: Vento.
+Seu Lauro: Vento uiva assim? Com vogal?
+Dona Rosalva: O vento do quarto 3 uiva. Está escrito na porta. "PROBLEMA DE VENTO. NÃO ABRIR EM LUA CHEIA." Hóspede antigo. Paga adiantado, deixa gorjeta e às vezes um osso.
+Seu Lauro: O Tobias do Ermo não estava aqui ontem?
+Dona Rosalva: Toma seu chá, Lauro.
+=> END
+
+~ quarto_tres_disfarce
+Dona Rosalva: Venta muito nessa época, né, Vale? Muito. Principalmente no quarto 3. Nada pra ver. Vai dormir.
+=> END
+
+~ recibo_do_dragao
+Capitão Bartolomeu Nuvem: Gaspar, você faz um cofre que caiba numa escama de dragão?
+Gaspar Bigorna: Pra quê?
+Capitão Bartolomeu Nuvem: O Ambarion agora cobra taxa de emissão de recibo. Paguei o pedágio em queijo, e o recibo em outro queijo. Quero guardar os recibos antes que ele cobre a armazenagem.
+Gaspar Bigorna: Dragão é pior que a Repartição de Prazos.
+Capitão Bartolomeu Nuvem: Não fala isso alto. Ele pode querer abrir uma.
+=> END
+
+~ gaspar_tiao_rangido
+Seu Tião Lamparina: É a polia, Gaspar.
+Gaspar Bigorna: Não é a polia. Eu fiz a polia. É o cabo.
+Seu Tião Lamparina: O cabo é meu e está perfeito. Range em fá. Sempre rangeu em fá.
+Gaspar Bigorna: Então por que ontem rangeu em sol?
+Seu Tião Lamparina: Porque ontem alguém subiu do andar 4. Elevador também fica emocionado.
+=> END
+
+~ gaspar_tiao_rangido_disfarce
+Gaspar Bigorna: ...polia. Boa noite, Vale. Estávamos discutindo engenharia. Muito séria.
+=> END
+
+~ gaspar_tiao_zeca
+Seu Tião Lamparina: Gaspar, aqueles três lingotes que o Zeca te devia...
+Gaspar Bigorna: Risquei.
+Seu Tião Lamparina: Riscou? Você? Você cobrou juros do próprio irmão no casamento dele.
+Gaspar Bigorna: [#serio] Riscou e pronto. Leva a marmita pra ele amanhã. Eu mando um pão.
+=> END

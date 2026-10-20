@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=18
+type="Resource"
+uid="uid://cflq06fs162iq"
+path="res://.godot/imported/condessa.dialogue-8461a02491f010cffd4e102aeeaf79fd.tres"
+
+[deps]
+
+source_file="res://dialogos/condessa.dialogue"
+dest_files=["res://.godot/imported/condessa.dialogue-8461a02491f010cffd4e102aeeaf79fd.tres"]
+
+[params]
+
+defaults=true

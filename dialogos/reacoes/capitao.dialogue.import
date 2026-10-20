@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=18
+type="Resource"
+uid="uid://bqhx66f5nrcwj"
+path="res://.godot/imported/capitao.dialogue-4fcac0349cd45516d740ca25acc7a790.tres"
+
+[deps]
+
+source_file="res://dialogos/reacoes/capitao.dialogue"
+dest_files=["res://.godot/imported/capitao.dialogue-4fcac0349cd45516d740ca25acc7a790.tres"]
+
+[params]
+
+defaults=true
