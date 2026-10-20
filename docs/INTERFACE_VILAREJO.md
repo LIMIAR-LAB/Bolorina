@@ -30,3 +30,6 @@ O Godot ainda emite avisos de UIDs herdados (resolve pelo caminho) e de recursos
 Execute `Jogar-interface.ps1`. O iniciador usa `ilha_interface_preview.json`, copiando o save principal apenas na primeira execução. O progresso real não é alterado. I abre o inventário na última aba; B abre Tudo; Tab alterna abas; E abre um baú próximo. A pasta está preparada para abrir `jogo_ilha.tscn` no editor também.
 
 Backups dos arquivos anteriores: `work/backups/interface-atual/` (locais, não versionados).
+
+## Viagens temporariamente livres
+A pedido do usuário, viagens_livres=true em data/areas.json dispensa mapas e visitas anteriores em todos os destinos com cena. Para restaurar a progressão, mudar para false. A Ilha da Maré continua em breve enquanto não possuir cena. O jogo precisa ser reaberto para carregar essa configuração.

@@ -79,7 +79,7 @@ func _run() -> void:
 	check(jogo.mapa_camada.visible and jogo.mapa_botoes.get_child_count() == ids.size(), "mapa (M) com um ponto por area (%d)" % jogo.mapa_botoes.get_child_count())
 	var b_futuro = jogo.mapa_botoes.get_node_or_null("Area_estacao_depois_de_ontem")
 	check(b_futuro != null and (b_futuro.disabled or Registro.disponivel("estacao_depois_de_ontem")), "area sem cena aparece desligada (em breve)")
-	check(not jogo.viajar("estacao_depois_de_ontem") or Registro.disponivel("estacao_depois_de_ontem"), "viajar para area sem cena e recusado")
+	check(Registro.disponivel("estacao_depois_de_ontem") or not jogo.viajar("estacao_depois_de_ontem"), "viajar para area sem cena e recusado")
 	# integracao 20/10: Ilha da Mare do Tempo (Claude, d0914dd), segunda ilha, em breve (sem cena ainda)
 	var info_mare: Dictionary = Registro.info("ilha_mare")
 	check(not info_mare.is_empty() and String(info_mare.get("ilha", "")) == "ilha_mare_do_tempo" and String(info_mare.get("requer", "")) == "tabua_das_mares", "ilha_mare no registro: segunda ilha, requer a Tabua das Mares")
@@ -97,8 +97,7 @@ func _run() -> void:
 	# integracao 20/10: areas com "requer" pedem os mapas do cartografo; o teste ja os da (save de teste)
 	check(Registro.bloqueio("vila_orcs", jogo.estado) == "", "viagens livres: dispensa mapa do cartografo")
 	check(Registro.bloqueio("criptas_de_cinzalta", jogo.estado) == "", "viagens livres: dispensa visita previa a Cidade Fantasma")
-	for it in ["mapa_vila_orcs", "mapa_cidade_fantasma", "mapa_minas", "bussola_temporal"]:
-		jogo.estado.somar(it, 1)
+	# Percorre os destinos sem conceder mapas: valida o modo de viagens livres.
 	# entra e sai de cada area disponivel
 	var anterior := "fazenda"
 	for id in disp:
