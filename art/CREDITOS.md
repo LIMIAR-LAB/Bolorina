@@ -114,3 +114,25 @@ Assets **já existentes** na conta Gamelab do Thiago (projeto 30457), baixados a
 | `vfx/fx_corte_crescente.png` | 64195 | Andarilho chibi base (quadro 12, só a onda de corte) |
 
 As animações do Vale (`art/characters/vale_combate_gamelab/`) só são lidas, sem nenhuma alteração.
+
+## Horizonte vivo (19/10) — `art/environment/`
+- `horizonte_base.png` (ilhas distantes + mar de nuvens) e `ilha_flutuante_1..3.png`: **originais, gerados por código**
+  (`tools/horizonte_camadas.py`, PIL), na paleta da Vila/Fazenda (grama, folhas de outono low-poly, rocha lilás). Sem geração paga.
+- `curva_inversa.png`: medição da curva de cor da cena (`tests/horizonte_calibrar.gd`), não é arte.
+- Céu, nuvens, chuva, estrelas e aurora 3D: shaders procedurais em `scripts/ilha/horizonte_vivo.gd` (originais).
+- As placas "épicas" geradas para conceito (vale dourado, tempestade, alvorada, aurora) **não entraram no jogo**
+  (paisagens de outro lugar; o usuário pediu o mesmo lugar com só o clima mudando).
+
+## Equipamento da Vale (PixelLab, 19/10/2026)
+
+Capuz de couro, elmo de ferro, elmo de adamantium, couraça do caçador e cota de malha do guarda: gerados com
+PixelLab (`/edit-image-pixen`, assinatura do usuário) em cima das rotações de `original_vale_v6`. 26 gerações
+(saldo antes: 695,8 da assinatura; US$ 0). Imagens originais e registro (prompt, seed, job) em `work/pixellab_equip/`.
+As camadas do jogo (`art/characters/vale_trajes/camadas/`) são recorte, espelho e carimbo por código
+(`tools/vale_pecas_pixellab.py`), com pequenas correções descritas em `docs/EQUIPAMENTO.md`.
+
+## Vale única (Gamelab, 20/10/2026)
+
+`art/characters/vale_unica/`: Vale sem espada parada, correndo e agindo, gerada com Gamelabs Studio (projeto 32737)
+a partir das bases do combate (`vale_combate_gamelab/fonte`), com os créditos da conta do usuário (41 créditos,
+autorizados). Quadros recortados por código (`tools/vale_unica_quadros.py`); jobs em `work/vale_unica/jobs.json`.

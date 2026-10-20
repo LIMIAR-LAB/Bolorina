@@ -1,6 +1,6 @@
 extends Node
 ## Barra de ferramentas (estilo Stardew) + cursor de celula + uso das ferramentas.
-## 1-9 / roda do mouse: escolhe o slot | LMB ou J: usa no alvo (celula a frente ou sob o mouse, alcance 1)
+## 1-9 e 0 / roda do mouse: escolhe o slot (0 = vara de pesca) | LMB ou J: usa no alvo (celula a frente ou sob o mouse, alcance 1)
 const SLOTS := [
 	{"id": "enxada", "nome": "Enxada", "cor": Color("b0b6ba")},
 	{"id": "picareta", "nome": "Picareta", "cor": Color("9aa3b5")},
@@ -11,6 +11,7 @@ const SLOTS := [
 	{"id": "semente_couve", "nome": "Sementes de couve", "cor": Color("7fb04a")},
 	{"id": "semente_abobora", "nome": "Sementes de abobora", "cor": Color("e39a2e")},
 	{"id": "mao", "nome": "Mao (colher)", "cor": Color("e6c9a0")},
+	{"id": "vara", "nome": "Vara de pesca", "cor": Color("a0763c")},
 ]
 var g
 var camada: CanvasLayer
@@ -25,13 +26,18 @@ var mouse_t := -10.0
 var mouse_pos := Vector2.ZERO
 var t := 0.0
 var cd := 0.0
+var energia_fundo: ColorRect
+var energia_barra: ColorRect
+var energia_label: Label
+var dia_label: Label
+const ENERGIA_W := 220.0
 
 func montar(game) -> void:
 	g = game
 	camada = CanvasLayer.new()
 	camada.layer = 30
 	add_child(camada)
-	var w := 9 * 66 + 8 * 6
+	var w := SLOTS.size() * 66 + (SLOTS.size() - 1) * 6
 	var x0 := (1600 - w) / 2
 	var fundo := Panel.new()
 	fundo.position = Vector2(x0 - 10, 900 - 63 - 90)
@@ -52,7 +58,7 @@ func montar(game) -> void:
 		ic.mouse_filter = Control.MOUSE_FILTER_IGNORE
 		p.add_child(ic)
 		var n: Label = Label.new()
-		n.text = str(i + 1)
+		n.text = str((i + 1) % 10)
 		n.position = Vector2(4, 0)
 		n.add_theme_font_size_override("font_size", 12)
 		n.add_theme_color_override("font_color", Color("f1e2bd"))
@@ -95,7 +101,51 @@ func montar(game) -> void:
 	fill.material_override = fm
 	fill.name = "Preenchimento"
 	cursor.add_child(fill)
+	_painel_energia()
 	atualizar()
+
+## painel de dia + energia (canto superior esquerdo, abaixo do titulo)
+func _painel_energia() -> void:
+	var p := Panel.new()
+	p.position = Vector2(16, 84)
+	p.size = Vector2(ENERGIA_W + 24, 64)
+	p.add_theme_stylebox_override("panel", _estilo(Color(0.16, 0.1, 0.06, 0.85), Color("6b4a2a"), 3))
+	p.mouse_filter = Control.MOUSE_FILTER_IGNORE
+	camada.add_child(p)
+	dia_label = Label.new()
+	dia_label.position = Vector2(12, 4)
+	dia_label.add_theme_font_size_override("font_size", 17)
+	dia_label.add_theme_color_override("font_color", Color("f6e7c1"))
+	p.add_child(dia_label)
+	energia_fundo = ColorRect.new()
+	energia_fundo.position = Vector2(12, 32)
+	energia_fundo.size = Vector2(ENERGIA_W, 18)
+	energia_fundo.color = Color("2b1a10")
+	p.add_child(energia_fundo)
+	energia_barra = ColorRect.new()
+	energia_barra.position = Vector2(14, 34)
+	energia_barra.size = Vector2(ENERGIA_W - 4, 14)
+	p.add_child(energia_barra)
+	energia_label = Label.new()
+	energia_label.position = Vector2(12, 31)
+	energia_label.size = Vector2(ENERGIA_W, 18)
+	energia_label.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
+	energia_label.add_theme_font_size_override("font_size", 12)
+	energia_label.add_theme_color_override("font_color", Color.WHITE)
+	energia_label.add_theme_color_override("font_shadow_color", Color.BLACK)
+	energia_label.add_theme_constant_override("shadow_offset_x", 1)
+	energia_label.add_theme_constant_override("shadow_offset_y", 1)
+	p.add_child(energia_label)
+
+func _atualizar_energia() -> void:
+	if energia_barra == null:
+		return
+	var e = g.estado
+	var f := clampf(float(e.energia) / float(e.ENERGIA_MAX), 0.0, 1.0)
+	energia_barra.size.x = (ENERGIA_W - 4) * f
+	energia_barra.color = Color("5fbf4a") if f > 0.5 else (Color("e3b23c") if f > 0.2 else Color("d8452f"))
+	energia_label.text = "ENERGIA %d/%d%s" % [e.energia, e.ENERGIA_MAX, "  (durma: F9)" if f <= 0.2 else ""]
+	dia_label.text = "DIA %d   ·   Ouro %d" % [e.dia, e.ouro]
 
 func _barra(pos: Vector3, size: Vector3) -> void:
 	var m: MeshInstance3D = MeshInstance3D.new()
@@ -143,14 +193,18 @@ func atualizar() -> void:
 			contagens[i].text = str(e.qtd(id))
 		elif id == "regador":
 			contagens[i].text = "%d" % e.regador
+		elif id == "vara":
+			contagens[i].text = ""
 		else:
 			contagens[i].text = ""
 	nome_label.text = String(SLOTS[e.slot].nome)
 	inv_label.text = linha_inventario()
+	_atualizar_energia()
 
 func linha_inventario() -> String:
 	var e = g.estado
-	return "Dia %d   Ouro %d\nMadeira %d  Pedra %d  Fibra %d\nNabo %d  Couve %d  Abobora %d\nRegador %d/%d" % [e.dia, e.ouro, e.qtd("madeira"), e.qtd("pedra"), e.qtd("fibra"), e.qtd("nabo"), e.qtd("couve"), e.qtd("abobora"), e.regador, e.REGADOR_MAX]
+	var peixes: int = e.qtd("peixe_carpa") + e.qtd("peixe_tilapia") + e.qtd("peixe_dourado")
+	return "Dia %d   Ouro %d\nMadeira %d  Pedra %d  Fibra %d\nNabo %d  Couve %d  Abobora %d\nOvos %d  Peixes %d  Racao %d\nRegador %d/%d" % [e.dia, e.ouro, e.qtd("madeira"), e.qtd("pedra"), e.qtd("fibra"), e.qtd("nabo"), e.qtd("couve"), e.qtd("abobora"), e.qtd("ovo"), peixes, e.qtd("racao"), e.regador, e.REGADOR_MAX]
 
 func linha_hud() -> String:
 	return "FAZENDA | Dia %d" % g.estado.dia
@@ -180,6 +234,9 @@ func entrada(event: InputEvent) -> bool:
 		var k: int = event.physical_keycode
 		if k >= KEY_1 and k <= KEY_9:
 			selecionar(k - KEY_1)
+			return true
+		if k == KEY_0 and SLOTS.size() >= 10:
+			selecionar(9)
 			return true
 	return false
 
@@ -277,6 +334,8 @@ func pode_usar(id: String, c: Vector2i) -> bool:
 			return agua(c) or (g.solo.tem(c) and g.estado.regador > 0)
 		"mao":
 			return g.solo.maduro(c)
+		"vara":
+			return (g.pesca and g.pesca.ativa()) or g.vila.altura(float(c.x), float(c.y)) < -0.3
 	if id.begins_with("semente_"):
 		return g.solo.tem(c) and g.solo.vazio(c) and g.estado.qtd(id) > 0
 	return false
@@ -294,7 +353,14 @@ func usar() -> void:
 		g.facing = dir.normalized()
 		var d2: Vector3 = dir.rotated(Vector3.UP, -g.CAMERA_YAW)
 		g.sprite.set_direction(Vector2(d2.x, d2.z))
-	if g.solo.maduro(c) and (id == "mao" or id == "foice" or id.begins_with("semente_")):
+	var custo_ok := true
+	if id != "vara" and g.estado.CUSTO.has(id) and pode_usar(id, c) and not (g.solo.maduro(c) and id == "foice") and not (id == "regador" and agua(c)):
+		custo_ok = g.estado.gastar(id)
+	if not custo_ok:
+		msg = "Cansada demais. Durma (F9) para recuperar a energia."
+	elif id == "vara":
+		msg = g.pesca.lancar(c) if g.pesca else ""
+	elif g.solo.maduro(c) and (id == "mao" or id == "foice" or id.begins_with("semente_")):
 		msg = g.solo.colher(c)
 	elif id == "enxada":
 		if aravel(c):

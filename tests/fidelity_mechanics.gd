@@ -39,7 +39,7 @@ func vale_checks(game) -> void:
 	var s = game.sprite
 	var cam: Camera3D = game.fidelity_camera
 	var tela_h: float = game.get_viewport().get_visible_rect().size.y
-	check(s.role == "original_vale_v6" and s.get_script().resource_path.ends_with("vale_fidelidade.gd"), "Protagonista e a Vale V6 (%s, %s)" % [s.role, s.get_script().resource_path.get_file()])
+	check(s.role == "vale_unica" and s.get_script().resource_path.ends_with("vale_fidelidade.gd"), "Protagonista e a Vale unica (%s, %s)" % [s.role, s.get_script().resource_path.get_file()])
 	var mesmo_corpo := true
 	for d in s.DIRECTIONS:
 		for i in s.sprite_frames.get_frame_count("walk_"+d):

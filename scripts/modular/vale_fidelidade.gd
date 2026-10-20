@@ -7,11 +7,15 @@ extends "res://scripts/actor_visual.gd"
 ##    Com pixel_size unico, parar/andar/agir mudava a altura em tela (48 -> 41 px = -15%).
 ## Correcao: andar usa os quadros de run (mesmo corpo, fps menor) e cada familia de animacao
 ## e normalizada pela altura de referencia do corpo em pe (idle 48 px, demais 45 px).
-const ALTURA_REF := {"idle": 48.0, "walk": 45.0, "run": 45.0, "tend": 45.0}
+## Vale unica (20/10/2026): a arte da vila/fazenda/masmorra agora e o desenho do combate (Gamelab, sem espada),
+## art/characters/vale_unica/ (tools/vale_unica_quadros.py). Ali parada, correndo e agindo ja tem a mesma
+## altura (45 px); para voltar a V6: PASTA = "original_vale_v6" e idle 48.
+const PASTA := "vale_unica"
+const ALTURA_REF := {"idle": 45.0, "walk": 45.0, "run": 45.0, "tend": 45.0}
 const FPS_ANDAR := 9.0
 
 func preparar(altura_mundo: float) -> void:
-	setup("original_vale_v6")
+	setup(PASTA)
 	manifest.world_height = altura_mundo
 	for d: String in DIRECTIONS:
 		var run := "run_" + d

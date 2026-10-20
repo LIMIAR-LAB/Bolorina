@@ -9,6 +9,12 @@ const FazendaUI = preload("res://scripts/ilha/fazenda_ui.gd")
 const Detritos = preload("res://scripts/ilha/fazenda_detritos.gd")
 const Solo = preload("res://scripts/ilha/fazenda_solo.gd")
 const Galinheiro = preload("res://scripts/ilha/fazenda_galinheiro.gd")
+const Pesca = preload("res://scripts/ilha/fazenda_pesca.gd")
+const Horizonte = preload("res://scripts/ilha/horizonte_vivo.gd")
+const Caminhos = preload("res://scripts/ilha/caminhos_ilha.gd")  # portoes largos + trilhas
+var horizonte
+const Oclusao = preload("res://scripts/ilha/oclusao_casas.gd")
+var oclusao
 
 ## definido pelo gerenciador (jogo_ilha.gd) antes de entrar na arvore
 var estado
@@ -19,7 +25,9 @@ var ui
 var detritos
 var solo
 var galinheiro
+var pesca
 var saidas: Array = []
+var saidas_novas  # saidas_area.gd; quando existe, o laco antigo de raio fica desligado
 var _fade: ColorRect
 
 func layout_arquivo() -> String:
@@ -89,8 +97,20 @@ func _ready() -> void:
 	galinheiro = Galinheiro.new()
 	add_child(galinheiro)
 	galinheiro.montar(self)
+	pesca = Pesca.new()
+	add_child(pesca)
+	pesca.montar(self)
+	# horizonte vivo: ceu por clima do dia + ilhas que derivam + aurora 3D (K / Shift+K / U; HORIZONTE=0 desliga)
+	horizonte = Horizonte.new()
+	add_child(horizonte)
+	horizonte.montar(self)
+	# telhados das casas desbotam quando a Vale esta sob/atras delas (OCLUSAO=0 desliga)
+	oclusao = Oclusao.new()
+	add_child(oclusao)
+	oclusao.montar(self)
 	_saidas()
-	message.text = "Fazenda | 1-9 ou roda: ferramenta | LMB/J: usar | E: casa/caixa | F9: dormir | F5: salvar"
+	saidas_novas = Caminhos.fazenda(self)
+	message.text = "Fazenda | 1-9,0: ferramenta | LMB/J: usar | E: casa/caixa/galinhas | F9: dormir | M: mapa"
 	hud.text = ui.linha_hud()
 
 func _extras() -> void:
@@ -150,7 +170,9 @@ func _process(delta: float) -> void:
 		solo.cada_quadro()
 	if galinheiro:
 		galinheiro.cada_quadro(delta)
-	if gerenciador and not gerenciador.ocupado and (interiores == null or interiores.ativo < 0):
+	if pesca:
+		pesca.cada_quadro(delta)
+	if saidas_novas == null and gerenciador and not gerenciador.ocupado and (interiores == null or interiores.ativo < 0):
 		for s in saidas:
 			var p: Vector3 = s.pos
 			if Vector2(player.position.x - p.x, player.position.z - p.z).length() < float(s.raio):
@@ -168,9 +190,12 @@ func _unhandled_key_input(event: InputEvent) -> void:
 	# 1-9 / O / P / -/= ficam com a barra de ferramentas (nao efeitos de fidelidade)
 	if k == KEY_TAB or k == KEY_O or k == KEY_P or k == KEY_MINUS or k == KEY_EQUAL or k == KEY_KP_SUBTRACT or k == KEY_KP_ADD:
 		return
-	if k >= KEY_1 and k <= KEY_9:
+	if k >= KEY_0 and k <= KEY_9:
 		return
 	if k == KEY_E and interiores and interiores.tecla_e():
+		return
+	if k == KEY_E and galinheiro and galinheiro.tecla_e():
+		ui.atualizar()
 		return
 	if k == KEY_E:
 		_caixa()
@@ -197,7 +222,7 @@ func _caixa() -> void:
 		return
 	var g: int = estado.vender_colheita()
 	estado.salvar()
-	message.text = ("Enviado! +%d ouro (total %d)." % [g, estado.ouro]) if g > 0 else "Nada para enviar. Colha nabo, couve ou abobora."
+	message.text = ("Enviado! +%d ouro (total %d)." % [g, estado.ouro]) if g > 0 else "Nada para enviar. Colha, pesque ou junte ovos."
 	hud.text = ui.linha_hud()
 
 func _dormir() -> void:
@@ -210,8 +235,11 @@ func _dormir() -> void:
 	estado.novo_dia()
 	estado.salvar()
 	solo.aplicar()
+	if galinheiro:
+		galinheiro.aplicar()
 	ui.atualizar()
-	message.text = ("Voce dormiu. " if na_cama else "") + "Dia %d. A terra regada cresceu; tudo secou." % estado.dia
+	var ovos: int = int(estado.animais.ovos)
+	message.text = ("Voce dormiu. " if na_cama else "") + "Dia %d. Energia cheia. A terra regada cresceu; tudo secou." % estado.dia + (" %d ovo(s) no galinheiro!" % ovos if ovos > 0 else "")
 	hud.text = ui.linha_hud()
 
 ## chamado pelo gerenciador ao voltar para a fazenda

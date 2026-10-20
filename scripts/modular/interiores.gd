@@ -228,6 +228,8 @@ func cada_quadro(delta: float, env: Environment) -> void:
 		var perto := casa_proxima() >= 0
 		if perto and not _dica:
 			game.message.text = "E: entrar na casa"
+		elif _dica and not perto and game.message.text == "E: entrar na casa":
+			game.message.text = ""
 		_dica = perto
 
 # ---------------------------------------------------------------- construcao

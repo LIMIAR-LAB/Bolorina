@@ -361,15 +361,15 @@ func run() -> void:
 			if f.ends_with(".import"):
 				imports += 1
 	check(imports == 0, "Pasta vale_combate_gamelab nao recebeu .import (folhas carregadas em tempo de execucao)")
-	# ---------- escala: idle/corrida V6 x quadros Gamelab (sem "salto" de tamanho ao atacar)
+	# ---------- escala: idle/corrida (PASTA_BASE: Vale unica) x quadros Gamelab (sem "salto" de tamanho ao atacar)
 	var alturas_esc := {}
 	var pior_esc := 1.0
 	var pior_corrida := 1.0
 	for d: String in j.dados.direcoes:
-		var idle_h := altura_png("res://art/characters/original_vale_v6/" + String(j.base_manifest.anims["idle_" + d].files[0]), Rect2i(0, 0, 48, 48))
+		var idle_h := altura_png(j.PASTA_BASE + String(j.base_manifest.anims["idle_" + d].files[0]), Rect2i(0, 0, 48, 48))
 		var run_hs := []
 		for f in j.base_manifest.anims["run_" + d].files:
-			run_hs.append(altura_png("res://art/characters/original_vale_v6/" + String(f), Rect2i(0, 0, 48, 48)))
+			run_hs.append(altura_png(j.PASTA_BASE + String(f), Rect2i(0, 0, 48, 48)))
 		var run_h: float = run_hs.max()  # corpo em pe no pico da passada
 		var golpe_h := altura_png("res://art/characters/vale_combate_gamelab/slash_combo/slash_combo_%s_sheet.png" % d, Rect2i(0, 0, 112, 112))
 		var hs := [idle_h * j.get_script().PX_IDLE, run_h * j.get_script().PX_BASE, golpe_h * j.get_script().PX_COMBATE]

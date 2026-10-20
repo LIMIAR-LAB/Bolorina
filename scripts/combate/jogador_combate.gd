@@ -26,14 +26,15 @@ static func pasta_golpes() -> String:
 	if paleta_v6 and FileAccess.file_exists(PASTA_COMBATE_V6 + "README.md"):
 		return PASTA_COMBATE_V6
 	return PASTA_COMBATE
-const PASTA_BASE := "res://art/characters/original_vale_v6/"
+## parada/corrida: Vale unica (mesmo desenho dos golpes, sem espada; idle com 45 px como o resto)
+const PASTA_BASE := "res://art/characters/vale_unica/"
 const MOVS := ["slash_combo", "dash", "hit", "special"]
 # Escala medida (tests/combate_testes.gd confere): corpo em pe = 45 px nas animacoes V6 (run) e
 # nos quadros Gamelab de 112 px (44-46 px no quadro 0); o idle (rotations/) desenha o mesmo
 # corpo com 48 px. Mesma altura em tela (ALTURA_CORPO) em idle, corrida e golpes.
 const ALTURA_CORPO := 1.72 / 48.0 * 45.0
 const PX_BASE := ALTURA_CORPO / 45.0
-const PX_IDLE := ALTURA_CORPO / 48.0
+const PX_IDLE := ALTURA_CORPO / 45.0
 const PX_COMBATE := ALTURA_CORPO / 45.0
 
 # ---- ajustes de sensacao (segundos, metros, m/s) ----
@@ -64,6 +65,8 @@ var hp := 100
 var iframes_dano := 0.75
 var ferido_duracao := 0.32
 var multiplicador_dano := 1.0
+## defesa das pecas vestidas (scripts/ilha/equipamento.gd): reduz cada dano recebido (minimo 1)
+var defesa_equip := 0
 # ---- forma Adamantium (G) e Raio de Adamantium (segurar Q/RMB transformado)
 var energia_max := 100.0
 var energia := 100.0                 # barra ADAMANTIUM: enche com acertos; cheia = pode transformar
@@ -469,6 +472,8 @@ func receber_dano(dano: int, de: Vector3) -> bool:
 		if estado == "dash":
 			stats.esquivados += 1
 		return false
+	if defesa_equip > 0:
+		dano = maxi(1, dano - defesa_equip)
 	hp = maxi(0, hp - dano)
 	stats.dano_recebido += dano
 	invulneravel_ate = relogio + iframes_dano
@@ -524,12 +529,20 @@ func _virar(dir: Vector3) -> void:
 	if absf(s.x) > 0.15:
 		lado = 1 if s.x > 0 else -1
 
+## Norte/Sul nao tem folha propria (arte em 6 direcoes). Fora do combo usa a diagonal do
+## ultimo lado (histerese em `lado`). No combo para N/S os golpes alternam as diagonais
+## (golpe 1 lado atual, golpe 2 lado oposto, golpe 3 lado atual): o corte varre
+## da direita para a esquerda e le como golpe frontal. Desligar: n_s_alterna = false.
+static var n_s_alterna := true
 func dir6() -> String:
+	var l := lado
+	if n_s_alterna and estado == "ataque" and (dir8 == "north" or dir8 == "south") and combo_i % 2 == 1:
+		l = -lado
 	match dir8:
 		"north":
-			return "north-east" if lado > 0 else "north-west"
+			return "north-east" if l > 0 else "north-west"
 		"south":
-			return "south-east" if lado > 0 else "south-west"
+			return "south-east" if l > 0 else "south-west"
 	return dir8
 
 func _tocar_base(mov: String) -> void:

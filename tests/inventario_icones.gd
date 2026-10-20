@@ -38,8 +38,8 @@ func _run() -> void:
 				if t != null:
 					com_textura += 1
 					tamanhos[str(t.get_size())] = true
-	check(ids.size() == 9, "9 slots com icone (%s)" % str(ids))
-	check(com_textura == 9, "todos com PNG pixel-art (%d/9)" % com_textura)
+	check(ids.size() == 10, "10 slots com icone (%s)" % str(ids))
+	check(com_textura == 10, "todos com PNG pixel-art (%d/10)" % com_textura)
 	check(tamanhos.size() == 1 and tamanhos.has(str(Vector2(16, 16))), "tamanho consistente 16x16 %s" % str(tamanhos.keys()))
 	await create_timer(1.0).timeout
 	ui.selecionar(4)

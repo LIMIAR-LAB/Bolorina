@@ -59,7 +59,7 @@ func run() -> void:
 		dentro += em_pal
 		n += c.size()
 	check(n > 0 and float(dentro) / n > 0.85, "Cores dos golpes na paleta V6: %.0f%%" % (100.0 * dentro / maxf(1, n)))
-	check(absf(j.PX_COMBATE * 45.0 - j.PX_IDLE * 48.0) < 0.001, "Mesma altura do corpo idle (48 px) x golpe (45 px)")
+	check(absf(j.PX_COMBATE * 45.0 - j.PX_IDLE * 45.0) < 0.001, "Mesma altura do corpo idle (45 px, Vale unica) x golpe (45 px)")
 	print("RESULTADO: %d/%d verificacoes" % [checks-failures, checks])
 	vila_vale.free()
 	arena.queue_free()
