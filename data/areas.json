@@ -1,6 +1,6 @@
 {
- "versao": 1,
- "nota": "Registro unico de areas (scripts/mundo/registro_areas.gd). Area nova = uma entrada aqui; cena null ou arquivo ausente = 'em breve' no mapa. mapa = ponto no mapa-mundi pintado (1200x800); raio = elipse da area no mapa; mundo = limites x0,z0,x1,z1 da cena (marcador 'voce esta aqui').",
+ "versao": 3,
+ "nota": "Registro unico de areas (scripts/mundo/registro_areas.gd). Formato do Claude (id, nome, cena, chegada, mapa [x,y] no mapa pintado 1200x800, raio, mundo, bioma, desc, adaptador, requer) + campos da Bolorina (categoria, regiao, arte, pontos_de_entrada, entradas_de_masmorra, ponto_de_viagem, tema, ligada_a, requer_visita). Tudo o que existe hoje fica na primeira ilha flutuante (ilha: primeira_ilha). Area sem cena = 'em breve'.",
  "areas": [
   {
    "id": "fazenda",
@@ -23,7 +23,24 @@
     23
    ],
    "bioma": "campo",
-   "desc": "A casa da Vale, plantio, galinheiro e lago."
+   "desc": "A casa da Vale, plantio, galinheiro e lago.",
+   "categoria": "fazenda",
+   "ilha": "primeira_ilha",
+   "regiao": "Ilha das Cinzas",
+   "arte": "res://art/ui/telas/fazenda_do_alto.png",
+   "pontos_de_entrada": [
+    {
+     "id": "inicio",
+     "spawn": "inicio",
+     "descricao": "Frente da casa"
+    },
+    {
+     "id": "da_vila",
+     "spawn": "da_vila",
+     "descricao": "Vindo da vila"
+    }
+   ],
+   "id_antigo": "fazenda_do_alto"
   },
   {
    "id": "fazenda_grande",
@@ -46,7 +63,18 @@
     32
    ],
    "bioma": "campo",
-   "desc": "Variante ampliada: pomar, celeiro, pasto e caminho até Porto Velho."
+   "desc": "Variante ampliada: pomar, celeiro, pasto e caminho até Porto Velho.",
+   "categoria": "fazenda",
+   "ilha": "primeira_ilha",
+   "regiao": "Ilha das Cinzas",
+   "arte": "res://art/ui/telas/fazenda_do_alto.png",
+   "pontos_de_entrada": [
+    {
+     "id": "inicio",
+     "spawn": "inicio",
+     "descricao": "Frente da casa"
+    }
+   ]
   },
   {
    "id": "vila",
@@ -69,7 +97,29 @@
     29
    ],
    "bioma": "vila",
-   "desc": "A praça, a loja do Sr. Armando e as ruínas do norte."
+   "desc": "A praça, a loja do Sr. Armando e as ruínas do norte.",
+   "categoria": "vila",
+   "ilha": "primeira_ilha",
+   "regiao": "Ilha das Cinzas",
+   "arte": "res://art/ui/telas/vila_da_ilha.png",
+   "pontos_de_entrada": [
+    {
+     "id": "padrao",
+     "spawn": "padrao",
+     "descricao": "Praça"
+    },
+    {
+     "id": "da_fazenda",
+     "spawn": "da_fazenda",
+     "descricao": "Vindo da fazenda"
+    },
+    {
+     "id": "da_arena",
+     "spawn": "da_arena",
+     "descricao": "Vindo da arena"
+    }
+   ],
+   "id_antigo": "vila_da_ilha"
   },
   {
    "id": "arena",
@@ -92,7 +142,19 @@
     9
    ],
    "bioma": "arena",
-   "desc": "Salas de combate contra os orcs."
+   "desc": "Salas de combate contra os orcs.",
+   "categoria": "arena",
+   "ilha": "primeira_ilha",
+   "regiao": "Ilha das Cinzas",
+   "arte": "res://art/ui/telas/arena_das_cinzas.png",
+   "pontos_de_entrada": [
+    {
+     "id": "inicio",
+     "spawn": "inicio",
+     "descricao": "Centro da primeira sala"
+    }
+   ],
+   "id_antigo": "arena_das_cinzas"
   },
   {
    "id": "masmorra",
@@ -110,14 +172,25 @@
    ],
    "mundo": null,
    "bioma": "montanha",
-   "desc": "Andares gerados sob as montanhas."
+   "desc": "Andares gerados sob as montanhas.",
+   "categoria": "masmorra_prototipo",
+   "ilha": "primeira_ilha",
+   "regiao": "Ilha das Cinzas",
+   "pontos_de_entrada": [
+    {
+     "id": "inicio",
+     "spawn": "inicio",
+     "descricao": "Primeiro andar do protótipo"
+    }
+   ]
   },
   {
    "id": "porto_velho",
    "nome": "Porto Velho",
-   "cena": "res://scenes/vila_grande.tscn",
+   "cena": "res://scenes/vila_grande/vila_grande.tscn",
    "tipo": "mapa_novo",
-   "chegada": "padrao",
+   "categoria": "cidade",
+   "chegada": "viagem",
    "mapa": [
     820,
     600
@@ -128,16 +201,79 @@
    ],
    "mundo": null,
    "bioma": "porto",
-   "desc": "A cidade-porto: docas do dirigível, mercado, forja e 20 moradores com lojas e serviços.",
+   "desc": "A cidade-porto: Ferraria do Porto (Gaspar Bigorna), docas do dirigível, mercado e 20 moradores com lojas e serviços.",
+   "adaptador": "res://scripts/mundo/area_mapa_novo.gd",
+   "ilha": "primeira_ilha",
+   "regiao": "Ilha das Cinzas",
+   "arte": "res://art/ui/telas/porto_velho.png",
+   "descricao": "Vila grande do porto: praça, Ferraria do Porto, doca do dirigível.",
+   "pontos_de_entrada": [
+    {
+     "id": "chegada",
+     "pos": [
+      0,
+      14
+     ],
+     "descricao": "Ponto de chegada padrão (marcador spawn_jogador)"
+    },
+    {
+     "id": "doca",
+     "pos": [
+      50,
+      0
+     ],
+     "descricao": "Doca do dirigível (marcador spawn_doca)"
+    },
+    {
+     "id": "elevador_minas",
+     "pos": [
+      -28.2,
+      -14.5
+     ],
+     "descricao": "Volta da masmorra: Elevador do Tião"
+    },
+    {
+     "id": "viagem",
+     "pos": [
+      44.2,
+      0.0
+     ],
+     "descricao": "Chegada pelo mapa-múndi (frente do ponto de viagem)"
+    }
+   ],
+   "entradas_de_masmorra": [
+    {
+     "id": "elevador_minas",
+     "area": "minas_da_cinza",
+     "ponto": "andar_1",
+     "tipo": "elevador",
+     "pos": [
+      -31.0,
+      -14.5
+     ],
+     "ang": 90,
+     "rotulo": "Elevador do Tião\nMinas da Cinza ↓"
+    }
+   ],
+   "ponto_de_viagem": {
+    "tipo": "dirigivel",
+    "pos": [
+     47.0,
+     0.0
+    ],
+    "ang": -90,
+    "rotulo": "Doca do Dirigível\nMapa-múndi"
+   },
    "cena_provisoria": "res://scenes/porto_velho_provisorio.tscn",
-   "adaptador": "res://scripts/mundo/area_mapa_novo.gd"
+   "roster": "res://data/npcs/porto_velho.json"
   },
   {
    "id": "vila_orcs",
    "nome": "Vila dos Orcs",
-   "cena": "res://scenes/vila_orcs.tscn",
+   "cena": "res://scenes/vila_orcs/vila_orcs.tscn",
    "tipo": "mapa_novo",
-   "chegada": "inicio",
+   "categoria": "cidade",
+   "chegada": "viagem",
    "mapa": [
     1075,
     250
@@ -148,16 +284,78 @@
    ],
    "mundo": null,
    "bioma": "orc",
-   "desc": "A ilhota dos orcs, a leste, depois da arena.",
+   "desc": "Paliçada do Clã Brasa-Velha; a boca de mina do Veio das Cinzas leva aos Túneis de Brasa.",
    "adaptador": "res://scripts/mundo/area_mapa_novo.gd",
+   "ilha": "primeira_ilha",
+   "regiao": "Ilha das Cinzas",
+   "arte": "res://art/ui/telas/vila_orcs.png",
+   "descricao": "Paliçada do Clã Brasa-Velha; a boca de mina do Veio das Cinzas leva aos Túneis de Brasa.",
+   "pontos_de_entrada": [
+    {
+     "id": "chegada",
+     "pos": [
+      0,
+      38
+     ],
+     "descricao": "Ponto de chegada padrão (marcador spawn_jogador)"
+    },
+    {
+     "id": "portao_leste",
+     "pos": [
+      38,
+      1
+     ],
+     "descricao": "Portão leste (marcador spawn_portao_leste)"
+    },
+    {
+     "id": "boca_da_caverna",
+     "pos": [
+      -24.02,
+      12.98
+     ],
+     "descricao": "Volta da masmorra: Boca do Veio das Cinzas"
+    },
+    {
+     "id": "viagem",
+     "pos": [
+      1.32,
+      36.24
+     ],
+     "descricao": "Chegada pelo mapa-múndi (frente do ponto de viagem)"
+    }
+   ],
+   "entradas_de_masmorra": [
+    {
+     "id": "boca_da_caverna",
+     "area": "minas_da_cinza",
+     "ponto": "tuneis_de_brasa",
+     "tipo": "caverna",
+     "pos": [
+      -26.0,
+      11.0
+     ],
+     "ang": 45,
+     "rotulo": "Boca do Veio das Cinzas\nTúneis de Brasa ↓"
+    }
+   ],
+   "ponto_de_viagem": {
+    "tipo": "totem",
+    "pos": [
+     3.0,
+     34.0
+    ],
+    "ang": -36.87,
+    "rotulo": "Totem de Viagem\nMapa-múndi"
+   },
    "requer": "mapa_vila_orcs"
   },
   {
    "id": "cidade_fantasma",
    "nome": "Cidade Fantasma",
-   "cena": "res://scenes/cidade_fantasma.tscn",
+   "cena": "res://scenes/cidade_fantasma/cidade_fantasma.tscn",
    "tipo": "mapa_novo",
-   "chegada": "inicio",
+   "categoria": "cidade",
+   "chegada": "viagem",
    "mapa": [
     215,
     300
@@ -168,36 +366,70 @@
    ],
    "mundo": null,
    "bioma": "fantasma",
-   "desc": "Ruas vazias na névoa do oeste. Prata de túmulo.",
+   "desc": "Ruínas noturnas da antiga capital; o cemitério esconde o portão das criptas.",
    "adaptador": "res://scripts/mundo/area_mapa_novo.gd",
+   "ilha": "primeira_ilha",
+   "regiao": "Cinzalta (antiga capital)",
+   "arte": "res://art/ui/telas/cidade_fantasma.png",
+   "descricao": "Ruínas noturnas da antiga capital; o cemitério esconde o portão das criptas.",
+   "pontos_de_entrada": [
+    {
+     "id": "chegada",
+     "pos": [
+      0,
+      26
+     ],
+     "descricao": "Ponto de chegada padrão (marcador spawn_jogador)"
+    },
+    {
+     "id": "portao_da_cripta",
+     "pos": [
+      36.98,
+      -29.02
+     ],
+     "descricao": "Volta da masmorra: Portão da Cripta"
+    },
+    {
+     "id": "viagem",
+     "pos": [
+      -0.68,
+      21.74
+     ],
+     "descricao": "Chegada pelo mapa-múndi (frente do ponto de viagem)"
+    }
+   ],
+   "entradas_de_masmorra": [
+    {
+     "id": "portao_da_cripta",
+     "area": "criptas_de_cinzalta",
+     "ponto": "andar_1",
+     "tipo": "portao",
+     "pos": [
+      35.0,
+      -31.0
+     ],
+     "ang": 45,
+     "rotulo": "Portão da Cripta\nCriptas de Cinzalta ↓"
+    }
+   ],
+   "ponto_de_viagem": {
+    "tipo": "totem",
+    "pos": [
+     1.0,
+     19.5
+    ],
+    "ang": -36.87,
+    "rotulo": "Lanterna dos Caminhos\nMapa-múndi"
+   },
    "requer": "mapa_cidade_fantasma"
   },
   {
-   "id": "minas_cinza",
-   "nome": "Minas da Cinza",
-   "cena": "res://scenes/minas_da_cinza.tscn",
-   "tipo": "masmorra",
-   "chegada": "inicio",
-   "mapa": [
-    395,
-    150
-   ],
-   "raio": [
-    68,
-    50
-   ],
-   "mundo": null,
-   "bioma": "montanha",
-   "desc": "A dungeon de mineração (em produção).",
-   "adaptador": "res://scripts/mundo/area_mapa_novo.gd",
-   "requer": "mapa_minas"
-  },
-  {
-   "id": "ilha_futurista",
-   "nome": "Ilha Futurista",
-   "cena": "res://scenes/ilha_futurista.tscn",
+   "id": "estacao_depois_de_ontem",
+   "nome": "Estação Depois-de-Ontem",
+   "cena": "res://scenes/ilha_futurista/ilha_futurista.tscn",
    "tipo": "mapa_novo",
-   "chegada": "inicio",
+   "categoria": "cidade",
+   "chegada": "viagem",
    "mapa": [
     1040,
     690
@@ -208,9 +440,183 @@
    ],
    "mundo": null,
    "bioma": "ceu",
-   "desc": "Uma ilha flutuante de outro tempo. Liga temporal.",
+   "desc": "Estação futurista que caiu do amanhã; na zona de extração o tempo racha.",
    "adaptador": "res://scripts/mundo/area_mapa_novo.gd",
-   "requer": "bussola_temporal"
+   "ilha": "primeira_ilha",
+   "regiao": "Estação caída do futuro (borda leste da primeira ilha)",
+   "arte": "res://art/ui/telas/estacao_depois_de_ontem.png",
+   "descricao": "Estação futurista que caiu do amanhã; na zona de extração o tempo racha.",
+   "pontos_de_entrada": [
+    {
+     "id": "chegada",
+     "pos": [
+      0,
+      34
+     ],
+     "descricao": "Ponto de chegada padrão (marcador spawn_jogador)"
+    },
+    {
+     "id": "doca",
+     "pos": [
+      46,
+      0
+     ],
+     "descricao": "Doca (marcador spawn_doca)"
+    },
+    {
+     "id": "fenda_temporal",
+     "pos": [
+      -35.02,
+      7.98
+     ],
+     "descricao": "Volta da masmorra: Fenda Temporal"
+    },
+    {
+     "id": "viagem",
+     "pos": [
+      38.2,
+      -1.0
+     ],
+     "descricao": "Chegada pelo mapa-múndi (frente do ponto de viagem)"
+    }
+   ],
+   "entradas_de_masmorra": [
+    {
+     "id": "fenda_temporal",
+     "area": "fenda_cronal",
+     "ponto": "andar_1",
+     "tipo": "fenda",
+     "pos": [
+      -37.0,
+      6.0
+     ],
+     "ang": 45,
+     "rotulo": "Fenda Temporal\nFenda Cronal ↓"
+    }
+   ],
+   "ponto_de_viagem": {
+    "tipo": "dirigivel",
+    "pos": [
+     41.0,
+     -1.0
+    ],
+    "ang": -90,
+    "rotulo": "Plataforma de Dirigível\nMapa-múndi"
+   },
+   "requer": "bussola_temporal",
+   "id_antigo": "ilha_futurista"
+  },
+  {
+   "id": "minas_da_cinza",
+   "nome": "Minas da Cinza",
+   "cena": "res://scenes/dungeon/minas_da_cinza.tscn",
+   "tipo": "masmorra",
+   "categoria": "masmorra",
+   "chegada": "andar_1",
+   "mapa": [
+    395,
+    150
+   ],
+   "raio": [
+    68,
+    50
+   ],
+   "mundo": null,
+   "bioma": "montanha",
+   "desc": "Masmorra dos orcs: galerias de cobre (1-5), cavernas de ferro e Túneis de Brasa (6-12) e o Coração Soterrado (20, chefe).",
+   "ilha": "primeira_ilha",
+   "tema": "minas_da_cinza",
+   "regiao": "Porto Velho / Vila dos Orcs (subsolo)",
+   "arte": "res://art/ui/telas/minas_da_cinza.png",
+   "descricao": "Masmorra dos orcs: galerias de cobre (1-5), cavernas de ferro e Túneis de Brasa (6-12) e o Coração Soterrado (20, chefe).",
+   "pontos_de_entrada": [
+    {
+     "id": "andar_1",
+     "andar": 1,
+     "descricao": "Fundo do Elevador do Tião (vindo de Porto Velho)"
+    },
+    {
+     "id": "tuneis_de_brasa",
+     "andar": 8,
+     "descricao": "Túneis de Brasa (vindo da boca de mina da Vila dos Orcs)"
+    }
+   ],
+   "ligada_a": [
+    "porto_velho",
+    "vila_orcs"
+   ],
+   "requer": "mapa_minas",
+   "id_antigo": "minas_cinza"
+  },
+  {
+   "id": "criptas_de_cinzalta",
+   "nome": "Criptas de Cinzalta",
+   "cena": "res://scenes/dungeon/criptas_de_cinzalta.tscn",
+   "tipo": "masmorra",
+   "categoria": "masmorra",
+   "chegada": "andar_1",
+   "mapa": [
+    150,
+    430
+   ],
+   "raio": [
+    60,
+    44
+   ],
+   "mundo": null,
+   "bioma": "fantasma",
+   "desc": "Criptas de zumbis, esqueletos e fantasmas; prata tumular; chefe no andar 6: o Sineiro Afogado.",
+   "ilha": "primeira_ilha",
+   "tema": "criptas_de_cinzalta",
+   "regiao": "Cidade Fantasma (subsolo)",
+   "arte": "res://art/ui/telas/criptas_de_cinzalta.png",
+   "descricao": "Criptas de zumbis, esqueletos e fantasmas; prata tumular; chefe no andar 6: o Sineiro Afogado.",
+   "pontos_de_entrada": [
+    {
+     "id": "andar_1",
+     "andar": 1,
+     "descricao": "Escadaria sob o portão do cemitério"
+    }
+   ],
+   "ligada_a": [
+    "cidade_fantasma"
+   ],
+   "requer_visita": "cidade_fantasma"
+  },
+  {
+   "id": "fenda_cronal",
+   "nome": "Fenda Cronal",
+   "cena": "res://scenes/dungeon/fenda_cronal.tscn",
+   "tipo": "masmorra",
+   "categoria": "masmorra",
+   "chegada": "andar_1",
+   "mapa": [
+    1080,
+    500
+   ],
+   "raio": [
+    58,
+    42
+   ],
+   "mundo": null,
+   "bioma": "ceu",
+   "desc": "Ilhas de tempo partido com anomalias (robôs, drones, duplicatas, olhos-relógio); cronóstio; chefe no andar 6: O Paradoxo.",
+   "ilha": "primeira_ilha",
+   "tema": "fenda_cronal",
+   "regiao": "Estação Depois-de-Ontem (subsolo)",
+   "arte": "res://art/ui/telas/fenda_cronal.png",
+   "descricao": "Ilhas de tempo partido com anomalias (robôs, drones, duplicatas, olhos-relógio); cronóstio; chefe no andar 6: O Paradoxo.",
+   "pontos_de_entrada": [
+    {
+     "id": "andar_1",
+     "andar": 1,
+     "descricao": "Do outro lado da Fenda Temporal"
+    }
+   ],
+   "ligada_a": [
+    "estacao_depois_de_ontem"
+   ],
+   "requer_visita": "estacao_depois_de_ontem"
   },
   {
    "id": "teste_mapa_novo",
@@ -231,7 +637,74 @@
    "desc": "Fixture de teste do adaptador (oculto do mapa).",
    "oculto": true,
    "adaptador": "res://scripts/mundo/area_mapa_novo.gd",
-   "roster": "res://data/npcs/porto_velho.json"
+   "roster": "res://data/npcs/porto_velho_provisorio.json",
+   "categoria": "teste"
+  }
+ ],
+ "fora_do_mapa": [
+  {
+   "cena": "res://main.tscn",
+   "motivo": "laboratório visual V4 (island.gd); cena principal do projeto, não editada aqui"
+  },
+  {
+   "cena": "res://reference_village.tscn",
+   "motivo": "laboratório de referência visual (sem save)"
+  },
+  {
+   "cena": "res://fidelity_village.tscn",
+   "motivo": "cena de fidelidade; a versão jogável é o Vilarejo do Alto (scripts/ilha/vila_jogo.tscn)"
+  },
+  {
+   "cena": "res://articulated_comparison.tscn",
+   "motivo": "comparação de personagem articulado (laboratório)"
+  },
+  {
+   "cena": "res://scenes/minas_da_cinza/minas_da_cinza.tscn",
+   "motivo": "Minas versão fixa (anterior); substituída pela masmorra procedural scenes/dungeon/minas_da_cinza.tscn; sem saída para Porto Velho"
+  },
+  {
+   "cena": "res://scenes/minas_da_cinza/minas_da_cinza_andar_01.tscn",
+   "motivo": "idem (andar fixo 1)"
+  },
+  {
+   "cena": "res://scenes/minas_da_cinza/minas_da_cinza_andar_04.tscn",
+   "motivo": "idem (andar fixo 4)"
+  },
+  {
+   "cena": "res://scenes/minas_da_cinza/minas_da_cinza_andar_09.tscn",
+   "motivo": "idem (andar fixo 9)"
+  },
+  {
+   "cena": "res://scenes/minas_da_cinza/minas_da_cinza_andar_20.tscn",
+   "motivo": "idem (andar fixo 20)"
+  },
+  {
+   "cena": "res://scenes/dialogos/demo_dialogos.tscn",
+   "motivo": "demo do sistema de diálogo"
+  },
+  {
+   "cena": "res://scenes/ui/caixa_dialogo.tscn",
+   "motivo": "componente de UI"
+  },
+  {
+   "cena": "res://scenes/ui/forja_ui.tscn",
+   "motivo": "UI da forja (outro trabalho em andamento; abre por cima do jogo, não é área)"
+  },
+  {
+   "cena": "res://scenes/prototipos/eco/arena_eco.tscn",
+   "motivo": "protótipo do eco temporal (outro trabalho em andamento; laboratório)"
+  },
+  {
+   "cena": "res://jogo_ilha.tscn",
+   "motivo": "gerenciador do jogo (fazenda, vila, arena e todas as áreas do registro); não é área"
+  },
+  {
+   "cena": "res://scenes/porto_velho_provisorio.tscn",
+   "motivo": "Porto Velho provisório do Claude (cena_provisoria de porto_velho), usado só se o mapa real faltar"
+  },
+  {
+   "cena": "nao_usado/hub_mapa_das_ilhas/",
+   "motivo": "hub 'Mapa das Ilhas' da Bolorina, guardado sem uso (.gdignore); o mapa oficial é o mapa-múndi pintado"
   }
  ]
 }

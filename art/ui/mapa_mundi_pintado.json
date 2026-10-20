@@ -108,7 +108,7 @@
    52
   ],
   "mundo": null,
-  "estado": "em_breve"
+  "estado": "jogavel"
  },
  "cidade_fantasma": {
   "nome": "Cidade Fantasma",
@@ -121,9 +121,22 @@
    62
   ],
   "mundo": null,
-  "estado": "em_breve"
+  "estado": "jogavel"
  },
- "minas_cinza": {
+ "estacao_depois_de_ontem": {
+  "nome": "Estação Depois-de-Ontem",
+  "centro": [
+   1040,
+   690
+  ],
+  "raio": [
+   72,
+   50
+  ],
+  "mundo": null,
+  "estado": "jogavel"
+ },
+ "minas_da_cinza": {
   "nome": "Minas da Cinza",
   "centro": [
    395,
@@ -134,19 +147,32 @@
    50
   ],
   "mundo": null,
-  "estado": "em_breve"
+  "estado": "jogavel"
  },
- "ilha_futurista": {
-  "nome": "Ilha Futurista",
+ "criptas_de_cinzalta": {
+  "nome": "Criptas de Cinzalta",
   "centro": [
-   1040,
-   690
+   150,
+   430
   ],
   "raio": [
-   72,
-   50
+   60,
+   44
   ],
   "mundo": null,
-  "estado": "em_breve"
+  "estado": "jogavel"
+ },
+ "fenda_cronal": {
+  "nome": "Fenda Cronal",
+  "centro": [
+   1080,
+   500
+  ],
+  "raio": [
+   58,
+   42
+  ],
+  "mundo": null,
+  "estado": "jogavel"
  }
 }

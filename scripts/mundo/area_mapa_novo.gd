@@ -22,8 +22,14 @@ var camera: Camera3D
 var cam_size := 18.0
 var area_npcs
 var message: Label
+## integracao 20/10: os mapas da Bolorina ja trazem a propria jogadora (mapa.jogador, CharacterBody3D com a capsula).
+## O adaptador ADOTA esse corpo (as entradas de masmorra, pontos de viagem e conversas usam mapa.jogador) e so troca
+## o visual pela Vale, desliga o movimento/camera do mapa e controla com o mesmo WASD/camera do jogo.
+var adotado := false
+var dialogos: Node = null
+var ultimo_seguro := Vector3.ZERO
 
-func carregar(cena: String, id: String) -> void:
+func carregar(cena: String, id: String, spawn := "") -> void:
 	area_id = id
 	mapa = load(cena).instantiate()
 	add_child(mapa)
@@ -31,10 +37,18 @@ func carregar(cena: String, id: String) -> void:
 	var inicio := Vector3.ZERO
 	if cap is Node3D:
 		inicio = (cap as Node3D).global_position
-		cap.queue_free()
-	_montar_vale(inicio)
+	var corpo = mapa.get("jogador")
+	if corpo is CharacterBody3D:
+		_adotar(corpo, cap)
+	else:
+		if cap is Node3D:
+			cap.queue_free()
+		_montar_vale(inicio)
+	_nascer_no_ponto(spawn)
 	_montar_camera()
-	var roster := String(load("res://scripts/mundo/registro_areas.gd").info(id).get("roster", "res://data/npcs/%s.json" % id))
+	dialogos = _achar_dialogos()
+	var Reg = load("res://scripts/mundo/registro_areas.gd")
+	var roster := String(Reg.info(id).get("roster", "res://data/npcs/%s.json" % id))
 	if FileAccess.file_exists(roster):
 		area_npcs = NpcsArea.new()
 		add_child(area_npcs)
@@ -44,8 +58,53 @@ func carregar(cena: String, id: String) -> void:
 	message = Label.new()
 	message.position = Vector2(24, 862)
 	message.add_theme_font_size_override("font_size", 14)
-	message.text = "%s | WASD andar · Shift correr · E conversar · M mapa" % id.capitalize()
+	message.text = "%s | WASD andar · Shift correr · E conversar · M mapa-múndi · T na pedra: viajar" % Reg.nome(id)
 	camada.add_child(message)
+
+## usa a jogadora do proprio mapa (mapas CC0 da Bolorina): tira a capsula, poe a Vale, desliga o controle do mapa
+func _adotar(corpo: CharacterBody3D, cap) -> void:
+	adotado = true
+	player = corpo
+	if cap is Node3D:
+		(cap as Node3D).queue_free()
+	mapa.set_physics_process(false)
+	if "demo_mode" in mapa:
+		mapa.demo_mode = false
+	sprite = ValeFidelidade.new()
+	sprite.preparar(1.72)
+	player.add_child(sprite)
+	sprite.play(sprite.animation_for("idle"))
+	ultimo_seguro = player.global_position
+
+## ponto de chegada do registro (pontos_de_entrada[spawn].pos = [x, z]); sem pos fica no spawn do proprio mapa
+func _nascer_no_ponto(spawn: String) -> void:
+	if spawn == "" or player == null:
+		return
+	var p: Dictionary = load("res://scripts/mundo/registro_areas.gd").ponto(area_id, spawn)
+	if not p.has("pos"):
+		return
+	var x := float(p.pos[0])
+	var z := float(p.pos[1])
+	var y: float = mapa._y(x, z) if mapa.has_method("_y") else player.global_position.y
+	player.global_position = Vector3(x, y + 0.3, z)
+	player.velocity = Vector3.ZERO
+	ultimo_seguro = player.global_position
+
+func _achar_dialogos() -> Node:
+	for n in mapa.find_children("*", "Node", true, false):
+		if n.has_signal("conversa_encerrada") and n.has_method("tecla_e"):
+			return n
+	return null
+
+## mapa travado (menu da entrada de masmorra, conversa do Dialogue Manager, balcao)
+func travado() -> bool:
+	if area_npcs != null and area_npcs.aberto():
+		return true
+	if mapa != null and mapa.get("demo_mode") == true:
+		return true
+	if dialogos != null and dialogos.get("conversando") == true:
+		return true
+	return false
 
 func _montar_vale(p: Vector3) -> void:
 	player = CharacterBody3D.new()
@@ -85,7 +144,7 @@ func nascer(_spawn: String) -> void:
 func _physics_process(delta: float) -> void:
 	if player == null:
 		return
-	var parado: bool = area_npcs != null and area_npcs.aberto()
+	var parado: bool = travado()
 	var input := Vector2.ZERO
 	if not parado:
 		input = Vector2(float(Input.is_physical_key_pressed(KEY_D)) - float(Input.is_physical_key_pressed(KEY_A)),
@@ -101,10 +160,21 @@ func _physics_process(delta: float) -> void:
 		sprite.set_direction(input)
 		sprite.set_motion(h.length() > 0.1, correndo, false, false)
 	_seguir(clampf(delta * 6.0, 0.0, 1.0))
+	# caiu do mapa: volta ao ultimo lugar seguro
+	if player.is_on_floor():
+		ultimo_seguro = player.global_position
+	elif player.global_position.y < -20.0:
+		player.global_position = ultimo_seguro + Vector3(0, 0.5, 0)
+		player.velocity = Vector3.ZERO
 
 func _process(delta: float) -> void:
 	if area_npcs:
 		area_npcs.cada_quadro(delta)
+
+## balcao aberto: as teclas sao dele antes de qualquer outro no do mapa (E/Esc/setas)
+func _input(event: InputEvent) -> void:
+	if area_npcs and area_npcs.aberto() and area_npcs.entrada(event):
+		get_viewport().set_input_as_handled()
 
 func _unhandled_key_input(event: InputEvent) -> void:
 	if area_npcs and area_npcs.entrada(event):

@@ -46,7 +46,7 @@ var paleta: Dictionary = {}
 
 func _ready() -> void:
 	var t0 := Time.get_ticks_msec()
-	preload("res://scripts/mundo/viagem.gd").garantir_viajante(get_tree())   # tecla M (mapa das ilhas)
+	# integracao 20/10: a tecla M e o mapa-mundi sao do jogo_ilha.gd (o hub antigo ficou em nao_usado/)
 	if OS.get_environment("DUNGEON_TEMA") != "":
 		tema = OS.get_environment("DUNGEON_TEMA")
 	var andar_env := OS.get_environment("DUNGEON_ANDAR")
@@ -1085,6 +1085,11 @@ func descer(novo: int) -> void:
 	trocou_de_andar.emit(andar, novo)
 	var caminho := scene_file_path if scene_file_path != "" else Registro.cena(tema)
 	if modo_teste:
+		return
+	# dentro do jogo (jogo_ilha.gd) a masmorra e uma area filha: recarrega so ela, sem trocar a cena inteira
+	var g: Node = Registro.gerenciador(get_tree())
+	if g != null and g.has_method("recarregar"):
+		g.recarregar("andar_%d" % novo)
 		return
 	get_tree().call_deferred("change_scene_to_file", caminho)
 

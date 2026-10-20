@@ -20,6 +20,18 @@ def fonte(tam, negrito=True):
               ['C:/Windows/Fonts/georgia.ttf', 'C:/Windows/Fonts/times.ttf']):
         if os.path.exists(f):
             return ImageFont.truetype(f, tam)
+    # Linux (box da integracao): Gelasio tem as metricas da Georgia; DejaVu Serif de reserva
+    gel = '/usr/share/fonts/truetype/sand-box/google/Gelasio/Gelasio-VariableFont_wght.ttf'
+    if os.path.exists(gel):
+        ft = ImageFont.truetype(gel, tam)
+        try:
+            ft.set_variation_by_name('Bold' if negrito else 'Regular')
+        except Exception:
+            pass
+        return ft
+    for f in ['/usr/share/fonts/truetype/dejavu/DejaVuSerif-Bold.ttf' if negrito else '/usr/share/fonts/truetype/dejavu/DejaVuSerif.ttf']:
+        if os.path.exists(f):
+            return ImageFont.truetype(f, tam)
     return ImageFont.load_default()
 
 
@@ -142,11 +154,14 @@ for _ in range(120):
 
 # ---------------------------------------------------------------- trilhas entre areas
 pos = {a['id']: a['mapa'] for a in areas}
-trilhas = [('fazenda', 'vila'), ('vila', 'arena'), ('vila', 'masmorra'), ('vila', 'porto_velho'), ('masmorra', 'minas_cinza'),
-           ('fazenda', 'cidade_fantasma'), ('arena', 'vila_orcs'), ('porto_velho', 'ilha_futurista')]
+# integracao 20/10: ids unificados (minas_da_cinza, estacao_depois_de_ontem) + criptas e fenda da Bolorina
+trilhas = [('fazenda', 'vila'), ('vila', 'arena'), ('vila', 'masmorra'), ('vila', 'porto_velho'), ('masmorra', 'minas_da_cinza'),
+           ('fazenda', 'cidade_fantasma'), ('arena', 'vila_orcs'), ('porto_velho', 'estacao_depois_de_ontem'),
+           ('cidade_fantasma', 'criptas_de_cinzalta'), ('estacao_depois_de_ontem', 'fenda_cronal')]
+trilhas = [t for t in trilhas if t[0] in pos and t[1] in pos]
 for a, b in trilhas:
     (x0, y0), (x1, y1) = pos[a], pos[b]
-    mar = a in ('arena', 'porto_velho') and b in ('vila_orcs', 'ilha_futurista')
+    mar = a in ('arena', 'porto_velho') and b in ('vila_orcs', 'estacao_depois_de_ontem')
     pts = []
     for i in range(41):
         t_ = i / 40

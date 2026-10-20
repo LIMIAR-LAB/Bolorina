@@ -39,6 +39,7 @@ var ocupado := false
 var fade: ColorRect
 
 func _ready() -> void:
+	add_to_group("jogo_ilha")  # integracao 20/10: Registro.viajar() acha o gerenciador por este grupo
 	estado = Estado.new()
 	estado.carregar()
 	var camada := CanvasLayer.new()
@@ -106,7 +107,14 @@ func _trocar(area: String, spawn: String, com_fade: bool) -> void:
 		await get_tree().process_frame
 		await get_tree().process_frame
 	Engine.time_scale = 1.0
+	var de := nome
 	nome = area
+	# integracao 20/10: sessao de masmorra, saque da masmorra para a mochila e areas visitadas (liberacao do mapa)
+	if Registro.existe(area):
+		if Registro.eh_masmorra(de) and not Registro.eh_masmorra(area):
+			_trazer_saque_da_masmorra()
+		Registro.preparar_viagem(de, area, spawn)
+		Registro.marcar_visita(estado, area)
 	match area:
 		"fazenda":
 			atual = load(FAZENDA).instantiate()
@@ -147,7 +155,7 @@ func _trocar(area: String, spawn: String, com_fade: bool) -> void:
 				atual.estado = estado
 				atual.gerenciador = self
 				add_child(atual)
-				atual.carregar(Registro.cena(area), area)
+				atual.carregar(Registro.cena(area), area, spawn)
 			elif Registro.disponivel(area):
 				atual = load(Registro.cena(area)).instantiate()
 				if "estado" in atual:
@@ -296,10 +304,11 @@ func viajar(id: String) -> bool:
 	if ocupado or id == nome or not Registro.disponivel(id):
 		return false
 	# mapas da cartografa (Tobias) liberam a viagem para areas distantes ("requer" no registro)
-	var req := String(Registro.info(id).get("requer", ""))
-	if req != "" and estado and estado.qtd(req) <= 0:
+	# integracao 20/10: requer (item) + requer_visita (regra das masmorras da Bolorina) em Registro.bloqueio()
+	var motivo := Registro.bloqueio(id, estado)
+	if motivo != "":
 		if mapa_info:
-			mapa_info.text = "Para viajar até %s, compre o mapa com o Tobias, em Porto Velho." % Registro.nome(id)
+			mapa_info.text = motivo
 		return false
 	if mapa_camada.visible:
 		alternar_mapa()
@@ -378,3 +387,26 @@ func _tecla_mapa(event: InputEventKey) -> bool:
 			return false
 	_info_mapa()
 	return true
+
+# ---------------------------------------------------------------- integracao 20/10
+## recarrega a area atual (masmorra descendo de andar, ou volta ao mesmo mapa por outro ponto)
+func recarregar(spawn := "") -> void:
+	if ocupado or nome == "":
+		return
+	ocupado = true
+	_trocar(nome, spawn if spawn != "" else Registro.chegada(nome), true)
+
+## o que a Vale juntou na masmorra (sessao) vai para a mochila do save ao voltar para a superficie
+func _trazer_saque_da_masmorra() -> void:
+	var Sessao = load("res://scripts/dungeon/sessao_masmorra.gd")
+	var itens: Dictionary = Sessao.inventario.get("itens", {})
+	for id in itens.keys():
+		var q := int(itens[id])
+		if q <= 0:
+			continue
+		if String(id) == "ouro":
+			estado.ouro += q
+		else:
+			estado.somar(String(id), q)
+	Sessao.inventario = {"itens": {}}
+	estado.salvar()

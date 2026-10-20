@@ -1,10 +1,10 @@
 extends Node3D
 ## Ponto físico de viagem numa área (PROPOSTA): doca de dirigível ou totem. Mostra o rótulo e
-## "[E] Mapa das Ilhas" perto da jogadora e abre o mapa (scripts/mundo/viajante.gd).
+## "[E] Viajar" perto da jogadora e abre o mapa-mundi pintado do jogo no modo viagem (jogo_ilha.gd -> abrir_viagem).
+## Integracao 20/10: antes abria o hub "Mapa das Ilhas" (guardado sem uso em nao_usado/hub_mapa_das_ilhas/).
 ## Posição/tipo/rótulo vêm de data/areas.json (ponto_de_viagem da área); as exportações servem
 ## para áreas sem pos no registro (gerenciador da ilha põe o totem por código).
 const Registro = preload("res://scripts/mundo/registro_areas.gd")
-const Viagem = preload("res://scripts/mundo/viagem.gd")
 
 signal abriu_mapa
 
@@ -28,7 +28,6 @@ var _t := 0.0
 
 func _ready() -> void:
 	add_to_group("ponto_viagem")
-	Viagem.garantir_viajante(get_tree())
 	call_deferred("_montar")
 
 func _montar() -> void:
@@ -57,7 +56,7 @@ func _montar() -> void:
 	else:
 		_totem()
 	var h := 8.4 if t == "dirigivel" else 5.6
-	rotulo = _label(String(dados.get("rotulo", "Mapa das Ilhas")), Vector3(0, h, 0), Color("ffe6b0"), 0.013)
+	rotulo = _label(String(dados.get("rotulo", "Mapa-múndi")), Vector3(0, h, 0), Color("ffe6b0"), 0.013)
 	prompt = _label("[E] Viajar", Vector3(0, h - 1.5, 0), Color("fff6c8"), 0.011)
 	prompt.visible = false
 	pronto = true
@@ -292,6 +291,11 @@ func _unhandled_input(event: InputEvent) -> void:
 		get_viewport().set_input_as_handled()
 		abrir_mapa()
 
-func abrir_mapa() -> Control:
+func abrir_mapa():
 	abriu_mapa.emit()
-	return Viagem.garantir_viajante(get_tree()).abrir_mapa()
+	var g: Node = Registro.gerenciador(get_tree())
+	if g != null and g.has_method("abrir_viagem"):
+		g.abrir_viagem()
+		return g
+	push_warning("ponto_viagem: jogo sem gerenciador (jogo_ilha); abra pelo jogo_ilha.tscn")
+	return null
