@@ -5,6 +5,8 @@ extends RefCounted
 const ARQUIVO := "user://ilha_fazenda_v1.json"
 ## pecas e o que a Vale veste (scripts/ilha/equipamento.gd); chave nova "equipamento" no mesmo save
 const Equip = preload("res://scripts/ilha/equipamento.gd")
+## inventario central + baus (scripts/ilha/inventario.gd); chave nova "baus" no mesmo save
+const Inv = preload("res://scripts/ilha/inventario.gd")
 const VERSAO := 1
 ## dias regados ate a colheita (estagios 0..3)
 const CULTURAS := {
@@ -56,6 +58,8 @@ var equipamento := {}
 ## economia (scripts/economia/): estoque das lojas por dia e estado geral (cofre, encantos, missoes, codex...)
 var lojas := {}
 var extras := {}
+## baus da Vale: [{"id", "area", "pos": [x,y,z], "rot", "fixo", "slots": [36 x {} ou {"id", "q"}]}]
+var baus := []
 
 func _init() -> void:
 	if OS.get_environment("ILHA_SAVE") != "":
@@ -77,6 +81,7 @@ func reiniciar() -> void:
 	equipamento = Equip.novo()
 	lojas = {}
 	extras = {}
+	baus = []
 	solo = {}
 	removidos = {}
 	arvores = {}
@@ -232,7 +237,7 @@ func comprar(item: String) -> String:
 # ---------------------------------------------------------------- arquivo
 func dados() -> Dictionary:
 	return {"versao": VERSAO, "dia": dia, "ouro": ouro, "regador": regador, "itens": itens, "solo": solo,
-		"removidos": removidos.keys(), "arvores": arvores, "slot": slot, "energia": energia, "animais": animais, "amizade": amizade, "conversou": conversou, "equipamento": equipamento, "lojas": lojas, "extras": extras}
+		"removidos": removidos.keys(), "arvores": arvores, "slot": slot, "energia": energia, "animais": animais, "amizade": amizade, "conversou": conversou, "equipamento": equipamento, "lojas": lojas, "extras": extras, "baus": baus}
 
 func salvar() -> bool:
 	if not gravar or arquivo == "user://island_v1.json":
@@ -278,6 +283,8 @@ func carregar() -> bool:
 	# saves antigos nao tem lojas/extras (economia): comecam vazios
 	lojas = d.get("lojas", {}) if d.get("lojas", {}) is Dictionary else {}
 	extras = d.get("extras", {}) if d.get("extras", {}) is Dictionary else {}
+	# saves antigos nao tem "baus": nenhum bau (o da casa nasce vazio na 1a vez que abrir)
+	baus = Inv.normalizar_baus(d.get("baus", []))
 	var an = d.get("animais", {})
 	animais = _animais_novos()
 	if an is Dictionary:

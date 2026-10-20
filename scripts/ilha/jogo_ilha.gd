@@ -1,12 +1,19 @@
 extends Node
 ## Gerenciador das 3 areas: Fazenda <-> Vila <-> Arena. Fade + spawns.
-## Debug: F7 masmorra | F10 vila | F11 arena | F12 fazenda | M mapa | I equipamento. Save: user://ilha_fazenda_v1.json.
+## Debug: F7 masmorra | F10 vila | F11 arena | F12 fazenda | M mapa | I inventario (ultima aba; 1a vez: Equipamento) | B mochila.
+## Save: user://ilha_fazenda_v1.json.
 const Estado = preload("res://scripts/ilha/fazenda_estado.gd")
 ## equipamento (I): tela + paper-doll da Vale nas 4 areas (docs/EQUIPAMENTO.md)
 const Equip = preload("res://scripts/ilha/equipamento.gd")
 const EquipVisual = preload("res://scripts/ilha/equipamento_visual.gd")
 const EquipTela = preload("res://scripts/ilha/equipamento_tela.gd")
 var equip_tela
+## inventario (I/B): abas por categoria + aba Equipamento (a tela acima, embutida) + Fabricar; tambem a tela do bau
+const InvTela = preload("res://scripts/ilha/inventario_tela.gd")
+const Inv = preload("res://scripts/ilha/inventario.gd")
+var inventario_tela
+## baus da area atual (fazenda/fazenda grande): scripts/ilha/baus_mundo.gd
+var baus_mundo
 const FAZENDA := "res://scripts/ilha/fazenda.tscn"
 const VILA := "res://scripts/ilha/vila_jogo.tscn"
 const ARENA := "res://combat_arena.tscn"
@@ -51,9 +58,11 @@ func _ready() -> void:
 	fade.mouse_filter = Control.MOUSE_FILTER_IGNORE
 	camada.add_child(fade)
 	_montar_mapa()
-	equip_tela = EquipTela.new()
-	add_child(equip_tela)
-	equip_tela.montar(self)
+	# a tela de equipamento agora vive dentro da aba Equipamento do inventario (mesma API em equip_tela)
+	inventario_tela = InvTela.new()
+	add_child(inventario_tela)
+	inventario_tela.montar(self)
+	equip_tela = inventario_tela.equip
 	DisplayServer.window_set_title("Ilha das Cinzas | Fazenda, Vila e Combate")
 	var area: String = OS.get_environment("ILHA_AREA")
 	var spawn: String = OS.get_environment("ILHA_SPAWN")
@@ -62,8 +71,13 @@ func _ready() -> void:
 func _unhandled_key_input(event: InputEvent) -> void:
 	if not event is InputEventKey or not event.pressed or event.echo or ocupado:
 		return
-	if event.physical_keycode == KEY_I and equip_tela and not (mapa_camada and mapa_camada.visible):
-		equip_tela.abrir()
+	if event.physical_keycode == KEY_I and inventario_tela and not (mapa_camada and mapa_camada.visible):
+		inventario_tela.abrir()
+		get_viewport().set_input_as_handled()
+		return
+	# B: mochila (aba Tudo). Na arena o B continua sendo "voltar" (arena_saida.gd)
+	if event.physical_keycode == KEY_B and inventario_tela and nome != "arena" and not (mapa_camada and mapa_camada.visible):
+		inventario_tela.abrir("tudo")
 		get_viewport().set_input_as_handled()
 		return
 	if mapa_camada and mapa_camada.visible and _tecla_mapa(event):
@@ -178,6 +192,7 @@ func _trocar(area: String, spawn: String, com_fade: bool) -> void:
 	vestir_atual()
 	_colocar_pedra()
 	_colocar_minerios()
+	_colocar_baus()
 	await get_tree().process_frame
 	var tw2 := create_tween()
 	tw2.tween_property(fade, "color:a", 0.0, FADE * (1.5 if not com_fade else 1.0))
@@ -288,6 +303,16 @@ func _colocar_minerios() -> void:
 	var m = load("res://scripts/economia/minerios_area.gd").new()
 	atual.add_child(m)
 	m.montar(self, atual, nome, j)
+
+## baus da Vale nesta area (so nas areas de Inv.AREAS_BAU; a casa dela fica na fazenda)
+func _colocar_baus() -> void:
+	baus_mundo = null
+	var j = _jogador_atual()
+	if atual == null or not (j is Node3D) or not Inv.AREAS_BAU.has(nome):
+		return
+	baus_mundo = load("res://scripts/ilha/baus_mundo.gd").new()
+	atual.add_child(baus_mundo)
+	baus_mundo.montar(self, atual, nome, j)
 
 func _jogador_atual():
 	if atual == null:
