@@ -1,15 +1,17 @@
 extends CanvasLayer
+signal fechada
 ## Tela de equipamento (I): previa grande da Vale ao vivo, slots, mochila de pecas, defesa.
 ## Pausa o jogo enquanto aberta (get_tree().paused); esta camada roda em PROCESS_MODE_ALWAYS.
 ## Teclado: setas/WASD escolhem | Enter/F veste ou tira | X tira a peca do slot | Q/E giram a previa |
 ## Espaco anda/para | I/Esc fecha. Mouse: clique na peca veste/tira, clique no slot tira.
+const UI = preload("res://scripts/ui/tema_vilarejo.gd")
 const Equip = preload("res://scripts/ilha/equipamento.gd")
 const Visual = preload("res://scripts/ilha/equipamento_visual.gd")
 const PASTA_ICONES := "res://art/ui/icones_equip/"
 const DIRS := ["south", "south-west", "west", "north-west", "north", "north-east", "east", "south-east"]
 const NOME_DIR := {"south": "sul", "south-west": "sudoeste", "west": "oeste", "north-west": "noroeste", "north": "norte", "north-east": "nordeste", "east": "leste", "south-east": "sudeste"}
 const COLS := 8
-const CAIXA := 52
+const CAIXA := 64
 const BEGE := Color("f1e2bd")
 var g          # gerenciador (jogo_ilha.gd) ou qualquer no com .estado e vestir_atual()
 var estado
@@ -37,6 +39,33 @@ var info_desc: Label
 var dica: Label
 var selo: Label
 static var _icones := {}
+var embutida := false
+var hospedeiro: Control
+var _pausa_antes := false
+
+## Para a aba do inventario: o chamador controla pausa e visibilidade do menu.
+## Retorna o Control filho, sem abrir a aba automaticamente nem gravar o estado.
+func montar_embutido(gerenciador, host: Control, est = null) -> Control:
+	embutida = true
+	hospedeiro = host
+	montar(gerenciador, est)
+	raiz.reparent(host)
+	raiz.set_anchors_preset(Control.PRESET_TOP_LEFT)
+	raiz.size = Vector2(1600, 900)
+	host.resized.connect(_ajustar_aba)
+	_ajustar_aba()
+	return raiz
+
+func _ajustar_aba() -> void:
+	if not is_instance_valid(hospedeiro) or not is_instance_valid(raiz):
+		return
+	var fator := minf(hospedeiro.size.x / 1600.0, hospedeiro.size.y / 900.0)
+	raiz.scale = Vector2.ONE * maxf(0.01, fator)
+	raiz.position = (hospedeiro.size - Vector2(1600,900) * raiz.scale) * 0.5
+
+func _exit_tree() -> void:
+	if embutida and is_instance_valid(raiz):
+		raiz.queue_free()
 
 func montar(gerenciador, est = null) -> void:
 	g = gerenciador
@@ -44,7 +73,8 @@ func montar(gerenciador, est = null) -> void:
 	layer = 70
 	process_mode = Node.PROCESS_MODE_ALWAYS
 	name = "TelaEquipamento"
-	_selo()
+	if not embutida:
+		_selo()
 	_construir()
 	raiz.visible = false
 
@@ -120,131 +150,99 @@ func _construir() -> void:
 	raiz = Control.new()
 	raiz.set_anchors_preset(Control.PRESET_FULL_RECT)
 	raiz.mouse_filter = Control.MOUSE_FILTER_STOP
+	raiz.theme = UI.tema()
 	add_child(raiz)
 	var fundo := ColorRect.new()
-	fundo.color = Color(0.02, 0.015, 0.03, 0.62)
 	fundo.set_anchors_preset(Control.PRESET_FULL_RECT)
-	fundo.mouse_filter = Control.MOUSE_FILTER_IGNORE
+	fundo.mouse_filter=Control.MOUSE_FILTER_IGNORE
+	UI.aplicar_fundo(fundo)
 	raiz.add_child(fundo)
 	var pn := Panel.new()
-	pn.position = Vector2(190, 92)
-	pn.size = Vector2(1220, 690)
-	pn.add_theme_stylebox_override("panel", _estilo(Color(0.16, 0.1, 0.06, 0.96), Color("6b4a2a"), 4, 6))
-	pn.mouse_filter = Control.MOUSE_FILTER_IGNORE
+	pn.position=Vector2(86,115);pn.size=Vector2(1428,680)
+	pn.add_theme_stylebox_override("panel",UI.caixa("moldura"))
+	pn.mouse_filter=Control.MOUSE_FILTER_IGNORE
 	raiz.add_child(pn)
-	var faixa := Panel.new()
-	faixa.position = Vector2(8, 8)
-	faixa.size = Vector2(1204, 50)
-	faixa.add_theme_stylebox_override("panel", _estilo(Color(0.24, 0.15, 0.08, 1.0), Color("8a6238"), 2, 4))
-	faixa.mouse_filter = Control.MOUSE_FILTER_IGNORE
-	pn.add_child(faixa)
-	var titulo := _rotulo(pn, Vector2(26, 13), 28, Color("e6d4a6"), "EQUIPAMENTO")
-	var fonte := SystemFont.new()
-	fonte.font_names = PackedStringArray(["Georgia"])
-	titulo.add_theme_font_override("font", fonte)
-	defesa_label = _rotulo(pn, Vector2(860, 18), 20, Color("f6e7c1"))
-	defesa_label.size = Vector2(330, 30)
-	defesa_label.horizontal_alignment = HORIZONTAL_ALIGNMENT_RIGHT
-	# ---- previa
-	var pv := Panel.new()
-	pv.position = Vector2(24, 74)
-	pv.size = Vector2(336, 470)
-	pv.add_theme_stylebox_override("panel", _estilo(Color("2b1c12"), Color("7a5230"), 3, 4))
-	pv.mouse_filter = Control.MOUSE_FILTER_IGNORE
+	UI.cabecalho(raiz,"EQUIPAMENTO",Vector2(106,74),Vector2(480,80),UI.textura("mochila.svg"))
+	var defesa := Panel.new()
+	defesa.position=Vector2(1224,82);defesa.size=Vector2(270,68)
+	defesa.add_theme_stylebox_override("panel",UI.caixa("madeira"))
+	raiz.add_child(defesa)
+	defesa_label=UI.rotulo(defesa,"",Vector2(18,22),20,true)
+	defesa_label.size=Vector2(234,32)
+	defesa_label.horizontal_alignment=HORIZONTAL_ALIGNMENT_CENTER
+	var pv:=Panel.new()
+	pv.position=Vector2(24,54);pv.size=Vector2(360,564)
+	pv.add_theme_stylebox_override("panel",UI.caixa("painel"))
 	pn.add_child(pv)
-	var chao := Previa.new()
-	chao.position = Vector2(8, 8)
-	chao.size = Vector2(320, 400)
-	chao.mouse_filter = Control.MOUSE_FILTER_IGNORE
-	pv.add_child(chao)
-	previa = TextureRect.new()
-	previa.position = Vector2(16, 60)
-	previa.size = Vector2(304, 304)
-	previa.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
-	previa.stretch_mode = TextureRect.STRETCH_KEEP_ASPECT_CENTERED
-	previa.texture_filter = CanvasItem.TEXTURE_FILTER_NEAREST
-	previa.mouse_filter = Control.MOUSE_FILTER_IGNORE
+	var fundo_previa:=TextureRect.new()
+	fundo_previa.position=Vector2(10,10);fundo_previa.size=Vector2(340,466)
+	fundo_previa.texture=UI.textura("clareira.png")
+	fundo_previa.expand_mode=TextureRect.EXPAND_IGNORE_SIZE
+	fundo_previa.stretch_mode=TextureRect.STRETCH_KEEP_ASPECT_COVERED
+	fundo_previa.mouse_filter=Control.MOUSE_FILTER_IGNORE
+	pv.add_child(fundo_previa)
+	previa=TextureRect.new()
+	previa.position=Vector2(20,132);previa.size=Vector2(320,320)
+	previa.expand_mode=TextureRect.EXPAND_IGNORE_SIZE
+	previa.stretch_mode=TextureRect.STRETCH_KEEP_ASPECT_CENTERED
+	previa.texture_filter=CanvasItem.TEXTURE_FILTER_NEAREST
+	previa.mouse_filter=Control.MOUSE_FILTER_IGNORE
 	pv.add_child(previa)
-	_rotulo(pv, Vector2(16, 14), 15, Color("cbb48a"), "VALE")
-	previa_dir = _rotulo(pv, Vector2(12, 416), 14, BEGE)
-	previa_dir.size = Vector2(312, 44)
-	previa_dir.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
-	for lado in [-1, 1]:
-		var b := Button.new()
-		b.text = "◀" if lado < 0 else "▶"
-		b.position = Vector2(14 if lado < 0 else 280, 196)
-		b.size = Vector2(42, 42)
-		b.focus_mode = Control.FOCUS_NONE
-		b.add_theme_stylebox_override("normal", _estilo(Color("c9a46a"), Color("7a5230"), 2))
-		b.add_theme_stylebox_override("hover", _estilo(Color("e8cf98"), Color("fff1b8"), 2))
-		b.add_theme_stylebox_override("pressed", _estilo(Color("e8cf98"), Color("fff1b8"), 3))
-		b.add_theme_color_override("font_color", Color("3a2412"))
-		b.add_theme_color_override("font_hover_color", Color("3a2412"))
-		b.pressed.connect(girar.bind(lado))
-		pv.add_child(b)
-	# ---- slots
-	_rotulo(pn, Vector2(384, 74), 15, Color("cbb48a"), "VESTINDO")
+	var tag:=Panel.new();tag.position=Vector2(10,10);tag.size=Vector2(116,42)
+	tag.add_theme_stylebox_override("panel",UI.caixa("botao",8));pv.add_child(tag)
+	UI.rotulo(tag,"VALE",Vector2(15,9),20,true)
+	previa_dir=UI.rotulo(pv,"",Vector2(12,493),16)
+	previa_dir.size=Vector2(336,56);previa_dir.horizontal_alignment=HORIZONTAL_ALIGNMENT_CENTER
+	for lado in [-1,1]:
+		var button:=Button.new();button.text="◀" if lado<0 else "▶"
+		button.position=Vector2(16 if lado<0 else 298,260);button.size=Vector2(46,50)
+		button.add_theme_stylebox_override("normal",UI.caixa("botao_ativo",8))
+		button.add_theme_color_override("font_color",Color("322319"))
+		button.focus_mode=Control.FOCUS_NONE
+		button.pressed.connect(girar.bind(lado));pv.add_child(button)
+	UI.rotulo(pn,"VESTINDO",Vector2(410,60),20,true)
 	for i in Equip.SLOTS.size():
-		var s: String = Equip.SLOTS[i]
-		# 8 slots: 2 colunas x 4 linhas (conjuntos da forja: maos, pes, escudo, arma)
-		var y := 100 + (i % 4) * 110
-		var x0 := 384 + (i / 4) * 168
-		var cx := Panel.new()
-		cx.position = Vector2(x0, y)
-		cx.size = Vector2(64, 64)
-		cx.mouse_filter = Control.MOUSE_FILTER_STOP
-		cx.gui_input.connect(_clique_slot.bind(s))
-		cx.tooltip_text = "Clique: tirar"
-		pn.add_child(cx)
-		slot_caixas[s] = cx
-		slot_icones[s] = _icone_rect(cx, Vector2(6, 6), 52)
-		_rotulo(pn, Vector2(x0, y + 66), 12, Color("cbb48a"), String(Equip.NOME_SLOT[s]).to_upper())
-		var nm := _rotulo(pn, Vector2(x0 + 70, y + 2), 13, BEGE)
-		nm.size = Vector2(94, 64)
-		nm.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
-		slot_nomes[s] = nm
-	# ---- mochila
-	_rotulo(pn, Vector2(724, 74), 15, Color("cbb48a"), "MOCHILA DE ROUPAS")
-	var itens := _lista()
-	for i in itens.size():
-		var p := Panel.new()
-		p.position = Vector2(724 + (i % COLS) * (CAIXA + 8), 100 + (i / COLS) * (CAIXA + 8))
-		p.size = Vector2(CAIXA, CAIXA)
-		p.mouse_filter = Control.MOUSE_FILTER_STOP
-		p.gui_input.connect(_clique_item.bind(i))
-		p.mouse_entered.connect(_sobre.bind(i))
-		pn.add_child(p)
-		grade.append(p)
-		grade_icones.append(_icone_rect(p, Vector2(6, 6), 40))
-		var m := Panel.new()
-		m.position = Vector2(CAIXA - 20, 3)
-		m.size = Vector2(17, 17)
-		m.add_theme_stylebox_override("panel", _estilo(Color("5fbf4a"), Color("1f3a14"), 2, 8))
-		m.mouse_filter = Control.MOUSE_FILTER_IGNORE
-		var ml := _rotulo(m, Vector2(0, -2), 12, Color.WHITE, "E")
-		ml.size = Vector2(17, 17)
-		ml.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
-		p.add_child(m)
-		grade_marcas.append(m)
-	# ---- informacoes
-	var inf := Panel.new()
-	inf.position = Vector2(724, 340)
-	inf.size = Vector2(470, 204)
-	inf.add_theme_stylebox_override("panel", _estilo(Color("2b1c12"), Color("7a5230"), 3, 4))
-	inf.mouse_filter = Control.MOUSE_FILTER_IGNORE
-	pn.add_child(inf)
-	info_nome = _rotulo(inf, Vector2(16, 12), 20, Color("f6e7c1"))
-	info_slot = _rotulo(inf, Vector2(16, 44), 14, Color("cbb48a"))
-	info_slot.size = Vector2(440, 22)
-	info_desc = _rotulo(inf, Vector2(16, 76), 15, BEGE)
-	info_desc.size = Vector2(440, 120)
-	info_desc.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
-	dica = _rotulo(pn, Vector2(24, 566), 14, Color("cbb48a"),
-		"Setas/WASD: escolher   ·   Enter/F ou clique: vestir/tirar   ·   X: tirar do slot   ·   Q/E ou ◀ ▶: girar   ·   Espaço: andar/parar   ·   I/Esc: fechar")
-	var nota := _rotulo(pn, Vector2(24, 600), 13, Color("9c8662"),
-		"A roupa aparece na fazenda, na vila, na masmorra e no combate. Na forma Adamantium (G) a armadura da transformação cobre tudo; ao sair, volta o que está vestido.\nCapuz, elmos, couraça e cota de malha: arte do PixelLab.")
-	nota.size = Vector2(1170, 60)
-	nota.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
+		var slot:String=Equip.SLOTS[i]
+		var y:=100+(i%4)*118
+		var x:=410+(i/4)*184
+		var card:=Panel.new();card.position=Vector2(x,y);card.size=Vector2(72,72)
+		card.mouse_filter=Control.MOUSE_FILTER_STOP
+		card.gui_input.connect(_clique_slot.bind(slot));card.tooltip_text="Clique para retirar"
+		card.add_theme_stylebox_override("panel",UI.caixa("slot",6))
+		pn.add_child(card);slot_caixas[slot]=card
+		slot_icones[slot]=_icone_rect(card,Vector2(8,8),56)
+		UI.rotulo(pn,String(Equip.NOME_SLOT[slot]).to_upper(),Vector2(x,y+78),14)
+		var name:=UI.rotulo(pn,"",Vector2(x+80,y+5),16)
+		name.size=Vector2(96,68);name.autowrap_mode=TextServer.AUTOWRAP_WORD_SMART
+		slot_nomes[slot]=name
+	UI.rotulo(pn,"MOCHILA DE ROUPAS",Vector2(786,60),20,true)
+	var items:=_lista()
+	for i in items.size():
+		var card:=Panel.new()
+		card.position=Vector2(786+(i%COLS)*74,100+(i/COLS)*74)
+		card.size=Vector2(CAIXA,CAIXA)
+		card.mouse_filter=Control.MOUSE_FILTER_STOP
+		card.gui_input.connect(_clique_item.bind(i));card.mouse_entered.connect(_sobre.bind(i))
+		card.add_theme_stylebox_override("panel",UI.caixa("slot",5))
+		pn.add_child(card);grade.append(card)
+		grade_icones.append(_icone_rect(card,Vector2(8,8),48))
+		var mark:=Panel.new();mark.position=Vector2(47,-4);mark.size=Vector2(22,22)
+		var badge:=StyleBoxFlat.new();badge.bg_color=Color("6ca34a");badge.set_corner_radius_all(11)
+		badge.border_color=Color("d8ecad");badge.set_border_width_all(2)
+		mark.add_theme_stylebox_override("panel",badge);mark.mouse_filter=Control.MOUSE_FILTER_IGNORE
+		var arrow:=UI.rotulo(mark,"↑",Vector2(4,0),18,true);arrow.mouse_filter=Control.MOUSE_FILTER_IGNORE
+		card.add_child(mark);grade_marcas.append(mark)
+	var inf:=Panel.new();inf.position=Vector2(786,350);inf.size=Vector2(612,268)
+	inf.add_theme_stylebox_override("panel",UI.caixa("painel",18));pn.add_child(inf)
+	info_nome=UI.rotulo(inf,"",Vector2(22,22),27,true)
+	info_nome.size=Vector2(564,40)
+	info_nome.text_overrun_behavior=TextServer.OVERRUN_TRIM_ELLIPSIS
+	info_slot=UI.rotulo(inf,"",Vector2(22,76),18)
+	info_slot.size=Vector2(568,50);info_slot.autowrap_mode=TextServer.AUTOWRAP_WORD_SMART
+	info_desc=UI.rotulo(inf,"",Vector2(22,139),19)
+	info_desc.size=Vector2(562,106);info_desc.autowrap_mode=TextServer.AUTOWRAP_WORD_SMART
+	dica=UI.rotulo(pn,"Escolha uma peça para comparar os atributos.",Vector2(410,636),16)
+	UI.rodape(raiz,Vector2(104,798),[["W A S D","Escolher"],["Enter / F","Equipar"],["X","Retirar"],["Q / E","Girar"],["Espaço","Animar"],["Esc","Fechar"]],1392)
 
 func _lista() -> Array:
 	var out: Array = []
@@ -269,7 +267,9 @@ func abrir() -> void:
 	aberta = true
 	mudou = false
 	raiz.visible = true
-	get_tree().paused = true
+	if not embutida:
+		_pausa_antes = get_tree().paused
+		get_tree().paused = true
 	sel = clampi(sel, 0, maxi(0, possui_lista().size() - 1))
 	t_ms = Time.get_ticks_msec()
 	atualizar()
@@ -279,9 +279,11 @@ func fechar() -> void:
 		return
 	aberta = false
 	raiz.visible = false
-	get_tree().paused = false
+	if not embutida:
+		get_tree().paused = _pausa_antes
 	if mudou and estado.has_method("salvar"):
 		estado.salvar()
+	fechada.emit()
 
 func alternar() -> void:
 	if aberta:
@@ -332,7 +334,7 @@ func _sobre(i: int) -> void:
 		atualizar()
 
 func _input(event: InputEvent) -> void:
-	if not aberta:
+	if not aberta or not raiz.is_visible_in_tree():
 		return
 	if event is InputEventKey and event.pressed:
 		var k: int = event.physical_keycode
@@ -376,7 +378,7 @@ func _input(event: InputEvent) -> void:
 func _carregar_previa() -> void:
 	var cam: Array = Equip.camadas(estado.equipamento)
 	var d: String = DIRS[dir_i]
-	quadros = Visual.quadros_previa(cam, ("run_" if andando else "idle_") + d)
+	quadros = Visual.quadros_previa(cam, ("run_" if andando else "idle_") + d, estado.extras.get("aparencia", {}))
 	q_i = q_i % maxi(1, quadros.size())
 	previa.texture = quadros[q_i] if not quadros.is_empty() else null
 	previa_dir.text = "Olhando para o %s · %s\nQ/E girar · Espaço %s" % [NOME_DIR[d], "andando" if andando else "parada", "parar" if andando else "andar"]
@@ -391,7 +393,7 @@ func atualizar() -> void:
 		slot_icones[s].texture = icone(id) if id != "" else null
 		slot_nomes[s].text = (String(Equip.ITENS[id].nome) + ("\nDEF +%d" % int(Equip.ITENS[id].defesa) if int(Equip.ITENS[id].defesa) > 0 else "")) if id != "" else "— vazio —"
 		var destaque: bool = lista.size() > 0 and sel < lista.size() and String(Equip.ITENS[lista[sel]].slot) == s
-		slot_caixas[s].add_theme_stylebox_override("panel", _estilo(Color("e8cf98") if destaque else Color("c9a46a"), Color("fff1b8") if destaque else Color("7a5230"), 4 if destaque else 2))
+		slot_caixas[s].add_theme_stylebox_override("panel", UI.caixa("slot_selecionado" if destaque else "slot",6))
 	for i in grade.size():
 		var tem := i < lista.size()
 		grade[i].visible = tem
@@ -402,7 +404,7 @@ func atualizar() -> void:
 		var vest := Equip.esta_equipado(eq, id)
 		grade_marcas[i].visible = vest
 		var e_sel := i == sel
-		grade[i].add_theme_stylebox_override("panel", _estilo(Color("e8cf98") if e_sel else (Color("d8b77c") if vest else Color("c9a46a")), Color("fff1b8") if e_sel else (Color("5fbf4a") if vest else Color("7a5230")), 4 if e_sel else (3 if vest else 2)))
+		grade[i].add_theme_stylebox_override("panel", UI.caixa("slot_selecionado" if e_sel else ("slot_vestido" if vest else "slot"),5))
 		grade[i].tooltip_text = String(Equip.ITENS[id].nome)
 	if sel < lista.size():
 		var id: String = lista[sel]

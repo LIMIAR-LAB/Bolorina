@@ -2,6 +2,7 @@ extends Node
 ## Gerenciador das 3 areas: Fazenda <-> Vila <-> Arena. Fade + spawns.
 ## Debug: F7 masmorra | F10 vila | F11 arena | F12 fazenda | M mapa | I inventario (ultima aba; 1a vez: Equipamento) | B mochila.
 ## Save: user://ilha_fazenda_v1.json.
+const UI = preload("res://scripts/ui/tema_vilarejo.gd")
 const Estado = preload("res://scripts/ilha/fazenda_estado.gd")
 ## equipamento (I): tela + paper-doll da Vale nas 4 areas (docs/EQUIPAMENTO.md)
 const Equip = preload("res://scripts/ilha/equipamento.gd")
@@ -223,10 +224,16 @@ func _montar_mapa() -> void:
 	mapa_camada.visible = false
 	add_child(mapa_camada)
 	var fundo := ColorRect.new()
-	fundo.color = Color(0, 0, 0, 0.6)
+	UI.aplicar_fundo(fundo)
 	fundo.set_anchors_preset(Control.PRESET_FULL_RECT)
 	fundo.mouse_filter = Control.MOUSE_FILTER_IGNORE
 	mapa_camada.add_child(fundo)
+	var moldura := Panel.new()
+	moldura.position=Vector2(176,28)
+	moldura.size=Vector2(1248,842)
+	moldura.mouse_filter=Control.MOUSE_FILTER_IGNORE
+	moldura.add_theme_stylebox_override("panel",UI.caixa("moldura"))
+	mapa_camada.add_child(moldura)
 	mapa_img = TextureRect.new()
 	mapa_img.position = Vector2(200, 50)
 	mapa_img.size = Vector2(1200, 800)
@@ -234,6 +241,7 @@ func _montar_mapa() -> void:
 	mapa_img.stretch_mode = TextureRect.STRETCH_KEEP_ASPECT_CENTERED
 	mapa_img.mouse_filter = Control.MOUSE_FILTER_IGNORE
 	mapa_camada.add_child(mapa_img)
+	UI.cabecalho(mapa_camada,"MAPA-MÚNDI",Vector2(200,8),Vector2(404,70))
 	mapa_marca = Label.new()
 	mapa_marca.text = "◆ Você está aqui"
 	mapa_marca.add_theme_font_size_override("font_size", 20)
@@ -354,7 +362,8 @@ func _montar_botoes() -> void:
 		mapa_botoes.mouse_filter = Control.MOUSE_FILTER_IGNORE
 		mapa_camada.add_child(mapa_botoes)
 		mapa_info = Label.new()
-		mapa_info.position = Vector2(210, 18)
+		mapa_info.position = Vector2(224, 810)
+		mapa_info.add_theme_font_override("font", UI.fonte())
 		mapa_info.add_theme_font_size_override("font_size", 16)
 		mapa_info.add_theme_color_override("font_color", Color("f1e2bd"))
 		mapa_info.add_theme_color_override("font_outline_color", Color.BLACK)

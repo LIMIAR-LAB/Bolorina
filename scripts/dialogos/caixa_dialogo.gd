@@ -9,6 +9,7 @@ extends CanvasLayer
 signal encerrado(npc_id: String)
 signal linha_mostrada(personagem: String, texto: String)
 
+const UI = preload("res://scripts/ui/tema_vilarejo.gd")
 const Registro = preload("res://scripts/dialogos/npcs_registro.gd")
 const Estado = preload("res://scripts/dialogos/estado_dialogos.gd")
 const FONTE := "res://art/ui/dialogos/fontes/PixelifySans.ttf"
@@ -187,21 +188,11 @@ func _on_escolha(resp) -> void:
 	proxima(resp.next_id)
 
 # ------------------------------------------------------------------ visual
-func _estilo(fundo: Color, borda: Color, largura := 4, margem := 14) -> StyleBoxFlat:
-	var s := StyleBoxFlat.new()
-	s.bg_color = fundo
-	s.border_color = borda
-	s.set_border_width_all(largura)
-	s.set_corner_radius_all(0)
-	s.anti_aliasing = false
-	s.set_content_margin_all(margem)
-	s.shadow_color = Color(0, 0, 0, 0.55)
-	s.shadow_size = 0
-	s.shadow_offset = Vector2(6, 6)
-	return s
+func _estilo(_fundo: Color, _borda: Color, largura := 4, margem := 14) -> StyleBox:
+	return UI.caixa("moldura" if largura>=4 else "botao",margem)
 
 func _montar() -> void:
-	_fonte = Registro.fonte()
+	_fonte = UI.fonte()
 	var tema := Theme.new()
 	tema.default_font = _fonte
 	tema.default_font_size = 28
@@ -230,8 +221,6 @@ func _montar() -> void:
 	painel = PanelContainer.new()
 	painel.name = "Painel"
 	var estilo := _estilo(COR_FUNDO.lerp(Color.BLACK, 0.1), COR_BORDA, 5, 18)
-	estilo.bg_color.a = 1.0
-	estilo.shadow_size = 1
 	painel.add_theme_stylebox_override("panel", estilo)
 	painel.anchor_left = 0.0
 	painel.anchor_right = 1.0
@@ -270,10 +259,11 @@ func _montar() -> void:
 	cab.add_theme_constant_override("separation", 16)
 	col.add_child(cab)
 	nome = Label.new()
-	nome.add_theme_font_size_override("font_size", 32)
+	nome.add_theme_font_override("font",UI.fonte(true))
+	nome.add_theme_font_size_override("font_size", 28)
 	nome.add_theme_color_override("font_color", COR_NOME)
 	nome.add_theme_color_override("font_outline_color", Color("2b1a0c"))
-	nome.add_theme_constant_override("outline_size", 6)
+	nome.add_theme_constant_override("outline_size", 2)
 	cab.add_child(nome)
 	titulo = Label.new()
 	titulo.add_theme_font_size_override("font_size", 20)
@@ -297,7 +287,7 @@ func _montar() -> void:
 	texto.seconds_per_step = segundos_por_letra
 	texto.skip_action = &""
 	texto.add_theme_font_override("normal_font", _fonte)
-	texto.add_theme_font_size_override("normal_font_size", 28)
+	texto.add_theme_font_size_override("normal_font_size", 24)
 	texto.add_theme_color_override("default_color", COR_TEXTO)
 	texto.mouse_filter = Control.MOUSE_FILTER_IGNORE
 	col.add_child(texto)

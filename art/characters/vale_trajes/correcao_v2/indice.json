@@ -1,0 +1,72 @@
+{
+  "versao": 2,
+  "base_id": "vale_unica_gamelab_v1",
+  "camadas": {
+    "capuz_couro": {
+      "vila": "correcao_v2/capuz_couro/vila.png",
+      "apagar_vila": "correcao_v2/capuz_couro/vila_apagar.png",
+      "combate": "correcao_v2/capuz_couro/combate/",
+      "apagar_combate": "correcao_v2/capuz_couro/combate_apagar/"
+    },
+    "elmo_ferro": {
+      "vila": "correcao_v2/elmo_ferro/vila.png",
+      "apagar_vila": "correcao_v2/elmo_ferro/vila_apagar.png",
+      "combate": "correcao_v2/elmo_ferro/combate/",
+      "apagar_combate": "correcao_v2/elmo_ferro/combate_apagar/"
+    },
+    "elmo_adamantium": {
+      "vila": "correcao_v2/elmo_adamantium/vila.png",
+      "apagar_vila": "correcao_v2/elmo_adamantium/vila_apagar.png",
+      "combate": "correcao_v2/elmo_adamantium/combate/",
+      "apagar_combate": "correcao_v2/elmo_adamantium/combate_apagar/"
+    },
+    "capacete_cobre": {
+      "vila": "correcao_v2/capacete_cobre/vila.png",
+      "apagar_vila": "correcao_v2/capacete_cobre/vila_apagar.png",
+      "combate": "correcao_v2/capacete_cobre/combate/",
+      "apagar_combate": "correcao_v2/capacete_cobre/combate_apagar/"
+    },
+    "capacete_ferro": {
+      "vila": "correcao_v2/capacete_ferro/vila.png",
+      "apagar_vila": "correcao_v2/capacete_ferro/vila_apagar.png",
+      "combate": "correcao_v2/capacete_ferro/combate/",
+      "apagar_combate": "correcao_v2/capacete_ferro/combate_apagar/"
+    },
+    "capacete_prata": {
+      "vila": "correcao_v2/capacete_prata/vila.png",
+      "apagar_vila": "correcao_v2/capacete_prata/vila_apagar.png",
+      "combate": "correcao_v2/capacete_prata/combate/",
+      "apagar_combate": "correcao_v2/capacete_prata/combate_apagar/"
+    },
+    "couro_cacador": {
+      "vila": "correcao_v2/couro_cacador/vila.png",
+      "apagar_vila": "correcao_v2/couro_cacador/vila_apagar.png",
+      "combate": "correcao_v2/couro_cacador/combate/",
+      "apagar_combate": "correcao_v2/couro_cacador/combate_apagar/"
+    },
+    "malha_guarda": {
+      "vila": "correcao_v2/malha_guarda/vila.png",
+      "apagar_vila": "correcao_v2/malha_guarda/vila_apagar.png",
+      "combate": "correcao_v2/malha_guarda/combate/",
+      "apagar_combate": "correcao_v2/malha_guarda/combate_apagar/"
+    },
+    "peito_cobre": {
+      "vila": "correcao_v2/peito_cobre/vila.png",
+      "apagar_vila": "correcao_v2/peito_cobre/vila_apagar.png",
+      "combate": "correcao_v2/peito_cobre/combate/",
+      "apagar_combate": "correcao_v2/peito_cobre/combate_apagar/"
+    },
+    "peito_ferro": {
+      "vila": "correcao_v2/peito_ferro/vila.png",
+      "apagar_vila": "correcao_v2/peito_ferro/vila_apagar.png",
+      "combate": "correcao_v2/peito_ferro/combate/",
+      "apagar_combate": "correcao_v2/peito_ferro/combate_apagar/"
+    },
+    "peito_prata": {
+      "vila": "correcao_v2/peito_prata/vila.png",
+      "apagar_vila": "correcao_v2/peito_prata/vila_apagar.png",
+      "combate": "correcao_v2/peito_prata/combate/",
+      "apagar_combate": "correcao_v2/peito_prata/combate_apagar/"
+    }
+  }
+}

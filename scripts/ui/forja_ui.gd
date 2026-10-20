@@ -17,11 +17,12 @@ signal forjado(receita_id: String, item_id: String)
 signal equipado(slot: String, item_id: String)
 signal eco_escolhido(variacao_id: String)
 
+const UI = preload("res://scripts/ui/tema_vilarejo.gd")
 const Modelo = preload("res://scripts/ui/forja_modelo.gd")
 const Estado = preload("res://scripts/dialogos/estado_dialogos.gd")
 const Gerenciador = preload("res://scripts/missoes/gerenciador_missoes.gd")
 const FONTE := "res://art/ui/dialogos/fontes/PixelifySans.ttf"
-const COR_FUNDO := Color("1b1410")
+const COR_FUNDO := Color("292830")
 const COR_BORDA := Color("c9a25a")
 const COR_BORDA_ESCURA := Color("5a3d22")
 const COR_TEXTO := Color("f1e2bd")
@@ -57,7 +58,7 @@ var botoes_eco: Array = []
 
 func _ready() -> void:
 	set_anchors_preset(Control.PRESET_FULL_RECT)
-	_fonte = load(FONTE) if ResourceLoader.exists(FONTE) else ThemeDB.fallback_font
+	_fonte = UI.fonte()
 	theme = _tema()
 	_montar()
 	if modelo == null and demo_se_sozinha and get_parent() == get_tree().root:
@@ -85,43 +86,11 @@ func fechar() -> void:
 	fechada.emit()
 
 # ------------------------------------------------------------------ montagem
-func _estilo(fundo: Color, borda: Color, largura := 4, margem := 14) -> StyleBoxFlat:
-	var s := StyleBoxFlat.new()
-	s.bg_color = fundo
-	s.border_color = borda
-	s.set_border_width_all(largura)
-	s.set_corner_radius_all(0)
-	s.set_content_margin_all(margem)
-	s.shadow_color = Color(0, 0, 0, 0.55)
-	s.shadow_size = 6
-	s.shadow_offset = Vector2(4, 4)
-	return s
+func _estilo(_fundo: Color, _borda: Color, largura := 4, margem := 14) -> StyleBox:
+	return UI.caixa("moldura" if largura>=4 else "painel",margem)
 
 func _tema() -> Theme:
-	var t := Theme.new()
-	t.default_font = _fonte
-	t.default_font_size = 24
-	var b_normal := _estilo(Color("2a1f17"), COR_BORDA_ESCURA, 3, 8)
-	var b_foco := _estilo(Color("4a3220"), COR_BORDA, 3, 8)
-	var b_off := _estilo(Color("1f1915"), Color("3a2c22"), 3, 8)
-	for s in [b_normal, b_foco, b_off]:
-		s.shadow_size = 0
-	t.set_stylebox("normal", "Button", b_normal)
-	t.set_stylebox("hover", "Button", b_foco)
-	t.set_stylebox("pressed", "Button", b_foco)
-	t.set_stylebox("focus", "Button", b_foco)
-	t.set_stylebox("disabled", "Button", b_off)
-	t.set_stylebox("hover_pressed", "Button", b_foco)
-	t.set_color("font_color", "Button", COR_TEXTO)
-	t.set_color("font_hover_color", "Button", COR_NOME)
-	t.set_color("font_focus_color", "Button", COR_NOME)
-	t.set_color("font_pressed_color", "Button", COR_NOME)
-	t.set_color("font_hover_pressed_color", "Button", COR_NOME)
-	t.set_color("font_disabled_color", "Button", Color("6d6050"))
-	t.set_font_size("font_size", "Button", 22)
-	t.set_color("font_color", "Label", COR_TEXTO)
-	t.set_font_size("font_size", "Label", 22)
-	return t
+	return UI.tema()
 
 func _label(texto: String, tam := 22, cor := COR_TEXTO) -> Label:
 	var l := Label.new()
@@ -132,7 +101,7 @@ func _label(texto: String, tam := 22, cor := COR_TEXTO) -> Label:
 
 func _montar() -> void:
 	var fundo := ColorRect.new()
-	fundo.color = Color(0.03, 0.02, 0.02, 0.72)
+	UI.aplicar_fundo(fundo)
 	fundo.set_anchors_preset(Control.PRESET_FULL_RECT)
 	fundo.mouse_filter = Control.MOUSE_FILTER_STOP
 	add_child(fundo)
@@ -151,9 +120,10 @@ func _montar() -> void:
 	var tit := VBoxContainer.new()
 	tit.add_theme_constant_override("separation", 0)
 	cab.add_child(tit)
-	var l_tit := _label("Ferraria do Porto", 36, COR_NOME)
+	var l_tit := _label("Ferraria do Porto", 30, COR_NOME)
 	l_tit.add_theme_color_override("font_outline_color", Color("2b1a0c"))
-	l_tit.add_theme_constant_override("outline_size", 6)
+	l_tit.add_theme_constant_override("outline_size", 2)
+	l_tit.add_theme_stylebox_override("normal",UI.caixa("madeira",12))
 	tit.add_child(l_tit)
 	lbl_subtitulo = _label("", 18, COR_TITULO)
 	tit.add_child(lbl_subtitulo)

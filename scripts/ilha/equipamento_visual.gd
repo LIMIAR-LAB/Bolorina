@@ -10,6 +10,7 @@ extends RefCounted
 ## mascara do mesmo tamanho; onde ela e opaca o pixel da base fica transparente antes da peca ser desenhada
 ## (ex. cabelo que sobrava para fora do elmo).
 const PASTA := "res://art/characters/vale_trajes/"
+const Aparencia = preload("res://scripts/avatar/aparencia.gd")
 static var _indice := {}
 static var _imgs := {}
 static var _vila := {}
@@ -22,6 +23,14 @@ static func indice() -> Dictionary:
 		var txt := FileAccess.get_file_as_string(PASTA + "indice.json")
 		var d = JSON.parse_string(txt) if txt != "" else null
 		_indice = d if d is Dictionary else {"vila": {"quadros": []}, "camadas": {}}
+		# Patch derivado: fontes anteriores continuam intactas para auditoria/regressao.
+		var correcao := PASTA + "correcao_v2/indice.json"
+		if OS.get_environment("EQUIP_LEGADO") != "1" and FileAccess.file_exists(correcao):
+			var patch = JSON.parse_string(FileAccess.get_file_as_string(correcao))
+			if patch is Dictionary and patch.get("base_id", "") == Aparencia.BASE_ID:
+				for id in patch.get("camadas", {}):
+					if _indice.camadas.has(id):
+						_indice.camadas[id].merge(patch.camadas[id], true)
 	return _indice
 
 static func existe(camada: String) -> bool:
@@ -72,19 +81,19 @@ static func _validas(camadas: Array) -> Array:
 	return out
 
 ## um quadro da Vale da vila/fazenda/masmorra (arquivo relativo a original_vale_v6/, ex. "run/east/003.png")
-static func quadro_vila(camadas: Array, arquivo: String) -> Texture2D:
+static func quadro_vila(camadas: Array, arquivo: String, perfil: Dictionary = {}) -> Texture2D:
 	var ix: Dictionary = indice().vila
 	var base_dir: String = String(ix.get("base", "res://art/characters/original_vale_v6/"))
 	var cs := _validas(camadas)
 	var i: int = (ix.quadros as Array).find(arquivo)
-	if cs.is_empty() or i < 0:
+	if (cs.is_empty() and Aparencia.chave(perfil).is_empty()) or i < 0:
 		return load(base_dir + arquivo)
-	var chave := ",".join(cs) + "|" + arquivo
+	var chave := ",".join(cs) + "|" + arquivo + "|" + Aparencia.chave(perfil)
 	if _vila.has(chave):
 		return _vila[chave]
 	var cel: int = int(ix.get("celula", 48))
 	var col: int = int(ix.get("colunas", 16))
-	var img: Image = imagem(base_dir + arquivo).duplicate()
+	var img: Image = Aparencia.compor(imagem(base_dir + arquivo),base_dir + arquivo,perfil)
 	var r := Rect2i((i % col) * cel, (i / col) * cel, cel, cel)
 	for c in cs:
 		var info: Dictionary = indice().camadas[c]
@@ -97,13 +106,13 @@ static func quadro_vila(camadas: Array, arquivo: String) -> Texture2D:
 	return tex
 
 ## uma folha de golpes (ex. "slash_combo/slash_combo_east_sheet.png"), 8 colunas x 112 px
-static func folha_combate(camadas: Array, folha: String, base_tex: Texture2D = null) -> Texture2D:
+static func folha_combate(camadas: Array, folha: String, base_tex: Texture2D = null, perfil: Dictionary = {}) -> Texture2D:
 	var ic: Dictionary = indice().get("combate", {})
 	var base_dir: String = String(ic.get("base", "res://art/characters/vale_combate_v6pal/"))
 	var cs := _validas(camadas)
-	if cs.is_empty():
+	if cs.is_empty() and Aparencia.chave(perfil).is_empty():
 		return base_tex
-	var chave := ",".join(cs) + "|" + folha
+	var chave := ",".join(cs) + "|" + folha + "|" + Aparencia.chave(perfil)
 	if _folhas.has(chave):
 		return _folhas[chave]
 	# base: o PNG da folha no disco (o mesmo que Folhas carregou); senao a imagem da textura
@@ -114,6 +123,7 @@ static func folha_combate(camadas: Array, folha: String, base_tex: Texture2D = n
 		img = base_tex.get_image().duplicate()
 	if img.get_format() != Image.FORMAT_RGBA8:
 		img.convert(Image.FORMAT_RGBA8)
+	img = Aparencia.compor(img,base_dir + folha,perfil)
 	var nome := folha.get_file()
 	for c in cs:
 		var info: Dictionary = indice().camadas[c]
@@ -149,7 +159,7 @@ static func _arquivo_vila(tex: Texture2D) -> String:
 
 ## Vale da vila/fazenda/masmorra (ValeFidelidade) e idle/corrida do combate: troca cada quadro que
 ## veio de original_vale_v6 pelo quadro composto. Outros quadros (a_*, x_*) ficam como estao.
-static func vestir_sprite(sprite: AnimatedSprite3D, camadas: Array) -> int:
+static func vestir_sprite(sprite: AnimatedSprite3D, camadas: Array, perfil: Dictionary = {}) -> int:
 	if sprite == null or sprite.sprite_frames == null:
 		return 0
 	var frames := sprite.sprite_frames
@@ -163,23 +173,26 @@ static func vestir_sprite(sprite: AnimatedSprite3D, camadas: Array) -> int:
 			var arq := _arquivo_vila(lista[i])
 			if arq == "":
 				continue
-			var t := quadro_vila(camadas, arq)
+			var t := quadro_vila(camadas, arq,perfil)
 			if frames.get_frame_texture(anim, i) != t:
 				frames.set_frame(anim, i, t, frames.get_frame_duration(anim, i))
 				n += 1
 	sprite.set_meta("eq_camadas", camadas.duplicate())
+	sprite.set_meta("avatar_perfil", Aparencia.normalizar(perfil))
 	return n
 
 ## Vale do combate (jogador_combate.gd): idle/corrida + golpes c_<mov>_<dir>
-static func vestir_combate(jogador, camadas: Array) -> int:
+static func vestir_combate(jogador, camadas: Array, perfil: Dictionary = {}, animacoes: Array = []) -> int:
 	if jogador == null or jogador.get("sprite") == null:
 		return 0
 	var sprite: AnimatedSprite3D = jogador.sprite
-	var n := vestir_sprite(sprite, camadas)
+	var n := vestir_sprite(sprite, camadas,perfil)
 	var frames := sprite.sprite_frames
 	var base: Dictionary = sprite.get_meta("eq_base")
 	for anim: String in base:
 		if not anim.begins_with("c_") or not frames.has_animation(anim):
+			continue
+		if not animacoes.is_empty() and not animacoes.has(anim):
 			continue
 		var lista: Array = base[anim]
 		if lista.is_empty() or not lista[0] is AtlasTexture:
@@ -189,7 +202,7 @@ static func vestir_combate(jogador, camadas: Array) -> int:
 		var mov := partes.substr(0, partes.length() - dir.length() - 1)
 		var folha := "%s/%s_%s_sheet.png" % [mov, mov, dir]
 		var base_atlas: Texture2D = (lista[0] as AtlasTexture).atlas
-		var atlas := folha_combate(camadas, folha, base_atlas)
+		var atlas := folha_combate(camadas, folha, base_atlas,perfil)
 		for i in mini(lista.size(), frames.get_frame_count(anim)):
 			var orig: AtlasTexture = lista[i]
 			if atlas == base_atlas:
@@ -202,8 +215,14 @@ static func vestir_combate(jogador, camadas: Array) -> int:
 			n += 1
 	return n
 
+## Descarta apenas previews personalizados. Sprites em uso mantem suas referencias.
+static func limpar_cache_personalizado() -> void:
+	for cache in [_vila,_folhas]:
+		for key in cache.keys():
+			if String(key).contains(Aparencia.BASE_ID): cache.erase(key)
+
 ## quadros compostos de uma animacao da vila (previa da tela de equipamento)
-static func quadros_previa(camadas: Array, anim: String) -> Array[Texture2D]:
+static func quadros_previa(camadas: Array, anim: String, perfil: Dictionary = {}) -> Array[Texture2D]:
 	var out: Array[Texture2D] = []
 	if _manifest.is_empty():
 		var m = JSON.parse_string(FileAccess.get_file_as_string(String(indice().vila.get("base", "res://art/characters/original_vale_v6/")) + "manifest.json"))
@@ -212,5 +231,5 @@ static func quadros_previa(camadas: Array, anim: String) -> Array[Texture2D]:
 	if not man.anims.has(anim):
 		return out
 	for f in man.anims[anim].files:
-		out.append(quadro_vila(camadas, String(f)))
+		out.append(quadro_vila(camadas, String(f), perfil))
 	return out
