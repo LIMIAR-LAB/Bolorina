@@ -213,6 +213,26 @@
    "requer": "bussola_temporal"
   },
   {
+   "id": "ilha_mare",
+   "nome": "Ilha da Maré do Tempo",
+   "cena": "res://scenes/ilha_mare_do_tempo.tscn",
+   "tipo": "mapa_novo",
+   "chegada": "inicio",
+   "mapa": [
+    1085,
+    105
+   ],
+   "raio": [
+    80,
+    52
+   ],
+   "mundo": null,
+   "bioma": "mare",
+   "desc": "O mar fica em cima. A maré traz coisas de outras eras.",
+   "adaptador": "res://scripts/mundo/area_mapa_novo.gd",
+   "requer": "tabua_das_mares"
+  },
+  {
    "id": "teste_mapa_novo",
    "nome": "(teste) mapa novo",
    "cena": "res://tests/fixtures/mapa_novo_teste.tscn",

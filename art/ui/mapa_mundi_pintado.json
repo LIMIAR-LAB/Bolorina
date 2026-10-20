@@ -148,5 +148,18 @@
   ],
   "mundo": null,
   "estado": "em_breve"
+ },
+ "ilha_mare": {
+  "nome": "Ilha da Maré do Tempo",
+  "centro": [
+   1085,
+   105
+  ],
+  "raio": [
+   80,
+   52
+  ],
+  "mundo": null,
+  "estado": "em_breve"
  }
 }

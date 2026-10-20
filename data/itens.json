@@ -367,6 +367,84 @@
    "cat": "missao",
    "preco": 0,
    "desc": "A Nina pediu para levar ao Capitão Marina."
+  },
+  "achado_estranho": {
+   "nome": "Achado estranho",
+   "cat": "reliquia",
+   "preco": 20,
+   "desc": "Algo que a maré trouxe. A Professora Éon sabe o que é."
+  },
+  "sucata": {
+   "nome": "Sucata de outra era",
+   "cat": "material",
+   "preco": 6,
+   "desc": ""
+  },
+  "sardinha_nuvem": {
+   "nome": "Sardinha-nuvem",
+   "cat": "peixe",
+   "preco": 45,
+   "desc": "Pescada no ar, na maré alta."
+  },
+  "linguado_pipa": {
+   "nome": "Linguado-pipa",
+   "cat": "peixe",
+   "preco": 80,
+   "desc": "Plana melhor do que nada."
+  },
+  "enguia_raio": {
+   "nome": "Enguia-raio",
+   "cat": "peixe",
+   "preco": 160,
+   "desc": "Dá choque até frita."
+  },
+  "oleo_farol": {
+   "nome": "Óleo de farol",
+   "cat": "material",
+   "preco": 15,
+   "desc": ""
+  },
+  "areia_parada": {
+   "nome": "Areia parada",
+   "cat": "lingote",
+   "preco": 120,
+   "desc": "Do Eclipse da Ampulheta. Não cai."
+  },
+  "vidro_tempo": {
+   "nome": "Vidro-do-tempo",
+   "cat": "lingote",
+   "preco": 180,
+   "desc": "Da Tempestade de Vidro. Reflete o que vai acontecer."
+  },
+  "minerio_bronze_mare": {
+   "nome": "Bronze das marés (minério)",
+   "cat": "minerio",
+   "preco": 40,
+   "desc": ""
+  },
+  "lingote_bronze_mare": {
+   "nome": "Lingote de bronze das marés",
+   "cat": "lingote",
+   "preco": 190,
+   "desc": ""
+  },
+  "tabua_das_mares": {
+   "nome": "Tábua das Marés",
+   "cat": "mapa",
+   "preco": 220,
+   "desc": "Libera a viagem para a Ilha da Maré do Tempo."
+  },
+  "isca_aerea": {
+   "nome": "Isca aérea",
+   "cat": "pesca",
+   "preco": 18,
+   "desc": "Para pescar no céu."
+  },
+  "sopa_nuvem": {
+   "nome": "Sopa de sardinha-nuvem",
+   "cat": "comida",
+   "preco": 55,
+   "desc": "+50 de energia. Leve."
   }
  }
 }

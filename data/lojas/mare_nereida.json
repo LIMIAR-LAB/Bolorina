@@ -1,0 +1,32 @@
+{
+ "id": "mare_nereida",
+ "nome": "Cais da Dona Nereida",
+ "npc": "dona_nereida",
+ "compra": [
+  {
+   "item": "isca_aerea",
+   "preco": 18,
+   "estoque": 20,
+   "qtd": 1
+  }
+ ],
+ "vende_categorias": [
+  "peixe"
+ ],
+ "taxa_venda": 0.5,
+ "servicos": [
+  {
+   "id": "missao",
+   "nome": "Pedir trabalho da maré",
+   "preco": 0,
+   "desc": ""
+  },
+  {
+   "id": "entregar_missao",
+   "nome": "Entregar trabalho",
+   "preco": 0,
+   "desc": ""
+  }
+ ],
+ "ilha": "ilha_mare"
+}

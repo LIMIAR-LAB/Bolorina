@@ -1,0 +1,23 @@
+{
+ "id": "mare_banco",
+ "nome": "Banco do Contador",
+ "npc": "polvo_contador",
+ "compra": [],
+ "vende_categorias": [],
+ "taxa_venda": 0.5,
+ "servicos": [
+  {
+   "id": "depositar",
+   "nome": "Depositar 100 ouro",
+   "preco": 0,
+   "desc": ""
+  },
+  {
+   "id": "sacar",
+   "nome": "Sacar tudo",
+   "preco": 0,
+   "desc": ""
+  }
+ ],
+ "ilha": "ilha_mare"
+}

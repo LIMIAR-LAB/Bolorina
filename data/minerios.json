@@ -2,12 +2,44 @@
  "versao": 1,
  "nota": "Nos de minerio por area (scripts/economia/minerios_area.gd). Se a cena tiver marcadores minerio_<metal>[_n], eles valem no lugar desta lista. Metais: data/forja/materiais.json.",
  "areas": {
-  "fazenda": ["cobre", "cobre", "ferro"],
-  "masmorra": ["cobre", "ferro", "ferro", "prata"],
-  "porto_velho": ["cobre"],
-  "minas_cinza": ["cobre", "ferro", "ferro", "prata"],
-  "cidade_fantasma": ["prata", "prata", "ferro"],
-  "vila_orcs": ["ferro", "ferro", "cobre"],
-  "ilha_futurista": ["prata"]
+  "fazenda": [
+   "cobre",
+   "cobre",
+   "ferro"
+  ],
+  "masmorra": [
+   "cobre",
+   "ferro",
+   "ferro",
+   "prata"
+  ],
+  "porto_velho": [
+   "cobre"
+  ],
+  "minas_cinza": [
+   "cobre",
+   "ferro",
+   "ferro",
+   "prata"
+  ],
+  "cidade_fantasma": [
+   "prata",
+   "prata",
+   "ferro"
+  ],
+  "vila_orcs": [
+   "ferro",
+   "ferro",
+   "cobre"
+  ],
+  "ilha_futurista": [
+   "prata"
+  ],
+  "ilha_mare": [
+   "bronze_mare",
+   "bronze_mare",
+   "bronze_mare",
+   "ferro"
+  ]
  }
 }

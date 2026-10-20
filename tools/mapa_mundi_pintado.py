@@ -49,7 +49,8 @@ alt = alt + (n - 0.5) * 0.55
 ilha = alt > 0.08
 orcs = (elipse(1075, 255, 92, 70) + (n - 0.5) * 0.5) > 0.05       # ilhota dos orcs
 futuro = (elipse(1040, 680, 92, 52) + (n - 0.5) * 0.35) > 0.12    # ilha flutuante
-terra = ilha | orcs
+mare_ilha = (elipse(1085, 112, 88, 46) + (n - 0.5) * 0.45) > 0.1   # Ilha da Mare do Tempo (nordeste)
+terra = ilha | orcs | mare_ilha
 
 # ---------------------------------------------------------------- mar
 img = np.zeros((H, W, 3), float)
@@ -98,6 +99,8 @@ for i in range(14):
     r = random.uniform(10, 22) * K
     d.ellipse([cx - r * 1.6, cy - r, cx + r * 1.6, cy + r], fill=(255, 255, 255, 46))
 
+for i in range(5):
+    d.ellipse([(1000 - i * 3) * K, (62 + i * 6) * K, (1170 + i * 3) * K, (92 + i * 6) * K], outline=(170, 230, 245, 150), width=2 * K)
 # ---------------------------------------------------------------- relevo: montanhas, florestas, rio
 def montanha(cx, cy, s):
     cx *= K; cy *= K; s *= K
@@ -168,7 +171,7 @@ for a in areas:
     rr = 17 * K
     d.ellipse([cx_ - rr - 3 * K, cy_ - rr - 3 * K, cx_ + rr + 3 * K, cy_ + rr + 3 * K], fill=(40, 28, 20, 220))
     cor = {'campo': (122, 168, 84), 'vila': (206, 160, 98), 'arena': (192, 98, 72), 'montanha': (140, 132, 126),
-           'porto': (82, 140, 186), 'orc': (120, 150, 70), 'fantasma': (170, 176, 200), 'ceu': (90, 220, 250)}.get(a.get('bioma'), (200, 180, 120))
+           'porto': (82, 140, 186), 'orc': (120, 150, 70), 'fantasma': (170, 176, 200), 'ceu': (90, 220, 250), 'mare': (70, 200, 214)}.get(a.get('bioma'), (200, 180, 120))
     if not disp:
         cor = tuple(int(c * 0.55 + 70) for c in cor)
     d.ellipse([cx_ - rr, cy_ - rr, cx_ + rr, cy_ + rr], fill=cor + (255,), outline=(250, 236, 200), width=2 * K)
@@ -188,6 +191,9 @@ for a in areas:
         d.ellipse([cx_ - 7 * K, cy_ - 9 * K, cx_ + 7 * K, cy_ + 5 * K], fill=(246, 248, 255))
         d.ellipse([cx_ - 4 * K, cy_ - 4 * K, cx_ - 1 * K, cy_ - 1 * K], fill=(40, 40, 60))
         d.ellipse([cx_ + 1 * K, cy_ - 4 * K, cx_ + 4 * K, cy_ - 1 * K], fill=(40, 40, 60))
+    elif b == 'mare':
+        for k_ in range(3):
+            d.arc([cx_ - 10 * K, cy_ - 8 * K + k_ * 5 * K, cx_ + 10 * K, cy_ + k_ * 5 * K], 200, 340, fill=(240, 252, 255), width=2 * K)
     elif b == 'ceu':
         d.polygon([(cx_, cy_ - 10 * K), (cx_ + 8 * K, cy_), (cx_, cy_ + 10 * K), (cx_ - 8 * K, cy_)], fill=(220, 252, 255))
     # faixa com o nome
