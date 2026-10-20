@@ -1,6 +1,6 @@
 {
  "versao": 3,
- "nota": "Registro unico de areas (scripts/mundo/registro_areas.gd). Formato do Claude (id, nome, cena, chegada, mapa [x,y] no mapa pintado 1200x800, raio, mundo, bioma, desc, adaptador, requer) + campos da Bolorina (categoria, regiao, arte, pontos_de_entrada, entradas_de_masmorra, ponto_de_viagem, tema, ligada_a, requer_visita). Tudo o que existe hoje fica na primeira ilha flutuante (ilha: primeira_ilha). Area sem cena = 'em breve'.",
+ "nota": "Registro unico de areas (scripts/mundo/registro_areas.gd). Formato do Claude (id, nome, cena, chegada, mapa [x,y] no mapa pintado 1200x800, raio, mundo, bioma, desc, adaptador, requer) + campos da Bolorina (categoria, regiao, arte, pontos_de_entrada, entradas_de_masmorra, ponto_de_viagem, tema, ligada_a, requer_visita). Tudo o que existia até a integração de 20/10 fica na primeira ilha flutuante (ilha: primeira_ilha); a Ilha da Maré do Tempo (ilha_mare, do Claude) é a segunda ilha (ilha: ilha_mare_do_tempo), em breve. Area sem cena = 'em breve'.",
  "areas": [
   {
    "id": "fazenda",
@@ -617,6 +617,42 @@
     "estacao_depois_de_ontem"
    ],
    "requer_visita": "estacao_depois_de_ontem"
+  },
+  {
+   "id": "ilha_mare",
+   "nome": "Ilha da Maré do Tempo",
+   "cena": "res://scenes/ilha_mare_do_tempo.tscn",
+   "tipo": "mapa_novo",
+   "chegada": "viagem",
+   "mapa": [
+    1085,
+    105
+   ],
+   "raio": [
+    80,
+    52
+   ],
+   "mundo": null,
+   "bioma": "mare",
+   "desc": "O mar fica em cima. A maré traz coisas de outras eras.",
+   "adaptador": "res://scripts/mundo/area_mapa_novo.gd",
+   "requer": "tabua_das_mares",
+   "categoria": "ilha_nova",
+   "estado": "em_breve",
+   "ilha": "ilha_mare_do_tempo",
+   "regiao": "Ilha da Maré do Tempo (segunda ilha flutuante, a nordeste da primeira; o mar fica em cima)",
+   "descricao": "O mar fica em cima. A maré traz coisas de outras eras.",
+   "pontos_de_entrada": [
+    {
+     "id": "viagem",
+     "pos": [
+      0,
+      0
+     ],
+     "descricao": "PROPOSTA: chegada pelo dirigível no Cais do Céu (posição real vem com a cena; ver docs/PROMPT_ILHA_MARE.md)"
+    }
+   ],
+   "nota": "Em breve: a cena res://scenes/ilha_mare_do_tempo.tscn ainda não existe (prompt em docs/PROMPT_ILHA_MARE.md). Não é parte da primeira ilha. Libera com a Tábua das Marés (cartografia do Tobias, Porto Velho)."
   },
   {
    "id": "teste_mapa_novo",

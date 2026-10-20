@@ -1,0 +1,19 @@
+{
+ "id": "mare_eon",
+ "nome": "Gabinete da Professora Éon",
+ "npc": "professora_eon",
+ "compra": [],
+ "vende_categorias": [
+  "reliquia"
+ ],
+ "taxa_venda": 0.8,
+ "servicos": [
+  {
+   "id": "ler_codex",
+   "nome": "Ouvir sobre as eras",
+   "preco": 0,
+   "desc": ""
+  }
+ ],
+ "ilha": "ilha_mare"
+}

@@ -1,0 +1,196 @@
+{
+ "versao": 1,
+ "area": "ilha_mare",
+ "nota": "Eventos da Ilha da Maré do Tempo. O código de eventos (a fazer) lê este arquivo; nada aqui roda sozinho ainda.",
+ "mare": {
+  "fases": [
+   "baixa",
+   "enchente",
+   "alta",
+   "vazante"
+  ],
+  "horas_por_fase": 6,
+  "inicio": "baixa"
+ },
+ "eventos": [
+  {
+   "id": "mare_dos_achados",
+   "nome": "Maré dos Achados",
+   "gatilho": {
+    "fase_mare": "baixa"
+   },
+   "duracao": "fase",
+   "efeitos": [
+    {
+     "tipo": "nos_coleta",
+     "marcadores": "achado_*",
+     "quantidade": 6,
+     "itens": [
+      {
+       "id": "sucata",
+       "peso": 60
+      },
+      {
+       "id": "achado_estranho",
+       "peso": 35
+      },
+      {
+       "id": "relogio_parado",
+       "peso": 5
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "pesca_no_ceu",
+   "nome": "Pesca no Céu",
+   "gatilho": {
+    "fase_mare": "alta"
+   },
+   "duracao": "fase",
+   "efeitos": [
+    {
+     "tipo": "pesca",
+     "local": "cais_do_ceu",
+     "isca": "isca_aerea",
+     "peixes": [
+      {
+       "id": "sardinha_nuvem",
+       "chance": 60
+      },
+      {
+       "id": "linguado_pipa",
+       "chance": 30
+      },
+      {
+       "id": "enguia_raio",
+       "chance": 10
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "feira_das_eras",
+   "nome": "Feira das Eras",
+   "gatilho": {
+    "a_cada_dias": 7,
+    "dia_inicial": 3
+   },
+   "duracao": "dia",
+   "efeitos": [
+    {
+     "tipo": "npc_aparece",
+     "npc": "tatu_dourado"
+    },
+    {
+     "tipo": "bancas",
+     "marcadores": "banca_feira_*",
+     "quantidade": 3
+    }
+   ]
+  },
+  {
+   "id": "eclipse_ampulheta",
+   "nome": "Eclipse da Ampulheta",
+   "gatilho": {
+    "chance_por_dia": 0.1
+   },
+   "duracao_segundos": 120,
+   "efeitos": [
+    {
+     "tipo": "congela_npcs"
+    },
+    {
+     "tipo": "quebra_cabeca",
+     "id": "relogios_da_praca",
+     "marcadores": "relogio_*"
+    },
+    {
+     "tipo": "recompensa",
+     "item": "areia_parada",
+     "qtd": 1
+    }
+   ]
+  },
+  {
+   "id": "chuva_engrenagens",
+   "nome": "Chuva de Engrenagens",
+   "gatilho": {
+    "depois_de": "tempestade"
+   },
+   "duracao": "dia",
+   "efeitos": [
+    {
+     "tipo": "minerio_dobrado",
+     "local": "recife_engrenagens"
+    }
+   ]
+  },
+  {
+   "id": "eu_do_futuro",
+   "nome": "Visita do Eu do Futuro",
+   "gatilho": {
+    "dia_minimo": 15,
+    "uma_vez": true
+   },
+   "duracao": "missao",
+   "efeitos": [
+    {
+     "tipo": "missao",
+     "id": "nao_compre_o_patinho",
+     "recompensa": {
+      "item": "capa_viagem",
+      "nota": "Capa do Futuro (cosmético) quando existir"
+     }
+    }
+   ]
+  },
+  {
+   "id": "tempestade_vidro",
+   "nome": "Tempestade de Vidro",
+   "gatilho": {
+    "chance_por_dia": 0.08,
+    "dia_minimo": 5
+   },
+   "duracao": "combate",
+   "efeitos": [
+    {
+     "tipo": "combate",
+     "inimigos": [
+      {
+       "id": "elemental_vidro",
+       "qtd": 6
+      }
+     ],
+     "marcadores": "spawn_vidro_*"
+    },
+    {
+     "tipo": "recompensa",
+     "item": "vidro_tempo",
+     "qtd": 2
+    }
+   ]
+  },
+  {
+   "id": "festival_farol",
+   "nome": "Festival do Farol Invertido",
+   "gatilho": {
+    "fim_de_estacao": true
+   },
+   "duracao": "dia",
+   "efeitos": [
+    {
+     "tipo": "npc_acao",
+     "npc": "lumi",
+     "acao": "acender_farol"
+    },
+    {
+     "tipo": "bau",
+     "marcador": "bau_festival"
+    }
+   ]
+  }
+ ]
+}

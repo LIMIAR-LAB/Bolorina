@@ -53,6 +53,15 @@ Helena (ferreira), Caio, Armando, Nina e Marina são moradores originais da Vila
 - PROPOSTA: o cartógrafo Tobias tem o mesmo nome do Tobias do Ermo (lobisomem) e do Tobias guia da Vila. Falta decidir se são a mesma pessoa ou trocar o nome.
 - PROPOSTA: Fagulha é filhote do Ambarion.
 
+## Ilha da Maré do Tempo (commit d0914dd do Claude, integrado em 20/10)
+
+A Ilha da Maré do Tempo (`ilha_mare`) é a **segunda ilha flutuante**, a nordeste da primeira, e está "em breve": ainda não tem cena (`docs/PROMPT_ILHA_MARE.md`). Tudo o que existia antes continua na primeira ilha. Os 8 moradores do Claude ficam em `data/npcs/ilha_mare.json`, sem mudança, e não colidem com nenhum nome do elenco: Dona Nereida, Zezinho Sucata, Professora Éon, Bento-de-Outra-Linha, O Relojoeiro, Lumi, Tatu Dourado e o Contador (polvo).
+
+Como os conflitos foram resolvidos:
+- **Quem vende a Tábua das Marés:** o texto do Claude diz "o Tobias, cartógrafo de Porto Velho". No elenco unificado esse papel já é do Tobias da `cartografia` (`data/npcs/porto_velho.json`). A Tábua entrou na loja `cartografia` (220 moedas), que é ligada por id e não pelo nome. A dúvida antiga continua de pé: PROPOSTA, falta decidir se esse Tobias é o Tobias do Ermo ou o Tobias guia da Vila, ou se ele troca de nome. Se trocar, a loja e a Tábua continuam funcionando.
+- **Quem leva a Vale até a ilha:** o texto do Claude fala da "Capitã Marina" com o dirigível. No elenco unificado a Marina ficou na Vila original e o dirigível é do Capitão Bartolomeu Nuvem (doca de Porto Velho). Por isso `docs/ILHA_MARE_DO_TEMPO.md` agora diz Capitão Nuvem, com uma nota sobre o nome original. A intenção do Claude se mantém: com a Tábua, o capitão do dirigível leva a Vale até o Cais do Céu.
+- **Carta para entregar (`data/itens.json`):** fica a versão unificada, em que o Pipo pede para levar a carta ao Capitão Nuvem. Os itens novos da ilha do Claude entraram todos (peixes, sucata, achado estranho, bronze das marés, Tábua das Marés, isca aérea e sopa).
+
 ## Arte que falta
 
 Retratos de `lurdes`, `otavio`, `cinira`, `tobias`, `severino`, `frei_ze`, `tempora`, `kiko` e `fagulha` em `art/ui/retratos/`. Sem eles o balcão usa o quadro de frente do próprio sprite, ampliado. O Fagulha ainda usa um ator provisório, sem sprite de dragão filhote.
