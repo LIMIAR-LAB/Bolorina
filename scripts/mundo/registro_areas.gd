@@ -128,6 +128,9 @@ static func origem_de(masmorra_id: String, ponto_id := "") -> Dictionary:
 # ------------------------------------------------------------------ regras de liberacao (mapa-mundi)
 ## "" = pode viajar; senao, o motivo. requer = item (mapas do cartografo); requer_visita = area ja visitada.
 static func bloqueio(id: String, estado) -> String:
+	# Temporario para validar as regioes; false no JSON restaura a progressao.
+	if bool(dados().get("viagens_livres", false)):
+		return ""
 	var a := info(id)
 	var req := String(a.get("requer", ""))
 	if req != "" and estado != null and estado.has_method("qtd") and estado.qtd(req) <= 0:

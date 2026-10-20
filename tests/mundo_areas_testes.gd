@@ -95,8 +95,8 @@ func _run() -> void:
 	jogo.alternar_mapa()
 	await fr(2)
 	# integracao 20/10: areas com "requer" pedem os mapas do cartografo; o teste ja os da (save de teste)
-	check(not jogo.viajar("vila_orcs") and jogo.mapa_info.text.contains("cartógrafo"), "sem o mapa do cartografo a viagem e recusada com aviso")
-	check(not jogo.viajar("criptas_de_cinzalta"), "criptas fechadas antes de visitar a Cidade Fantasma (requer_visita)")
+	check(Registro.bloqueio("vila_orcs", jogo.estado) == "", "viagens livres: dispensa mapa do cartografo")
+	check(Registro.bloqueio("criptas_de_cinzalta", jogo.estado) == "", "viagens livres: dispensa visita previa a Cidade Fantasma")
 	for it in ["mapa_vila_orcs", "mapa_cidade_fantasma", "mapa_minas", "bussola_temporal"]:
 		jogo.estado.somar(it, 1)
 	# entra e sai de cada area disponivel

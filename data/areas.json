@@ -1,5 +1,6 @@
 {
  "versao": 3,
+ "viagens_livres": true,
  "nota": "Registro unico de areas (scripts/mundo/registro_areas.gd). Formato do Claude (id, nome, cena, chegada, mapa [x,y] no mapa pintado 1200x800, raio, mundo, bioma, desc, adaptador, requer) + campos da Bolorina (categoria, regiao, arte, pontos_de_entrada, entradas_de_masmorra, ponto_de_viagem, tema, ligada_a, requer_visita). Tudo o que existia até a integração de 20/10 fica na primeira ilha flutuante (ilha: primeira_ilha); a Ilha da Maré do Tempo (ilha_mare, do Claude) é a segunda ilha (ilha: ilha_mare_do_tempo), em breve. Area sem cena = 'em breve'.",
  "areas": [
   {
