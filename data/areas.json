@@ -2,23 +2,206 @@
  "versao": 1,
  "nota": "Registro unico de areas (scripts/mundo/registro_areas.gd). Area nova = uma entrada aqui; cena null ou arquivo ausente = 'em breve' no mapa. mapa = ponto no mapa-mundi pintado (1200x800); raio = elipse da area no mapa; mundo = limites x0,z0,x1,z1 da cena (marcador 'voce esta aqui').",
  "areas": [
-  {"id": "fazenda", "nome": "Fazenda", "cena": "res://scripts/ilha/fazenda.tscn", "tipo": "fazenda", "chegada": "inicio",
-   "mapa": [360, 610], "raio": [112, 80], "mundo": [-27, -23, 46, 23], "bioma": "campo", "desc": "A casa da Vale, plantio, galinheiro e lago."},
-  {"id": "vila", "nome": "Vila (praça)", "cena": "res://scripts/ilha/vila_jogo.tscn", "tipo": "vila", "chegada": "padrao",
-   "mapa": [620, 440], "raio": [104, 76], "mundo": [-43, -41, 31, 29], "bioma": "vila", "desc": "A praça, a loja do Sr. Armando e as ruínas do norte."},
-  {"id": "arena", "nome": "Arena das Cinzas", "cena": "res://combat_arena.tscn", "tipo": "arena", "chegada": "inicio",
-   "mapa": [905, 430], "raio": [78, 56], "mundo": [-11, -9, 11, 9], "bioma": "arena", "desc": "Salas de combate contra os orcs."},
-  {"id": "masmorra", "nome": "Masmorra (protótipo)", "cena": "res://dungeon_teste.tscn", "tipo": "masmorra", "chegada": "inicio",
-   "mapa": [585, 110], "raio": [80, 58], "mundo": null, "bioma": "montanha", "desc": "Andares gerados sob as montanhas."},
-  {"id": "porto_velho", "nome": "Porto Velho", "cena": "res://scenes/vila_grande.tscn", "tipo": "mapa_novo", "chegada": "inicio",
-   "mapa": [820, 600], "raio": [88, 62], "mundo": null, "bioma": "porto", "desc": "A cidade-porto: docas do dirigível, mercado e a forja."},
-  {"id": "vila_orcs", "nome": "Vila dos Orcs", "cena": "res://scenes/vila_orcs.tscn", "tipo": "mapa_novo", "chegada": "inicio",
-   "mapa": [1075, 250], "raio": [70, 52], "mundo": null, "bioma": "orc", "desc": "A ilhota dos orcs, a leste, depois da arena."},
-  {"id": "cidade_fantasma", "nome": "Cidade Fantasma", "cena": "res://scenes/cidade_fantasma.tscn", "tipo": "mapa_novo", "chegada": "inicio",
-   "mapa": [215, 300], "raio": [86, 62], "mundo": null, "bioma": "fantasma", "desc": "Ruas vazias na névoa do oeste. Prata de túmulo."},
-  {"id": "minas_cinza", "nome": "Minas da Cinza", "cena": "res://scenes/minas_da_cinza.tscn", "tipo": "masmorra", "chegada": "inicio",
-   "mapa": [395, 150], "raio": [68, 50], "mundo": null, "bioma": "montanha", "desc": "A dungeon de mineração (em produção)."},
-  {"id": "ilha_futurista", "nome": "Ilha Futurista", "cena": "res://scenes/ilha_futurista.tscn", "tipo": "mapa_novo", "chegada": "inicio",
-   "mapa": [1040, 690], "raio": [72, 50], "mundo": null, "bioma": "ceu", "desc": "Uma ilha flutuante de outro tempo. Liga temporal."}
+  {
+   "id": "fazenda",
+   "nome": "Fazenda",
+   "cena": "res://scripts/ilha/fazenda.tscn",
+   "tipo": "fazenda",
+   "chegada": "inicio",
+   "mapa": [
+    360,
+    610
+   ],
+   "raio": [
+    112,
+    80
+   ],
+   "mundo": [
+    -27,
+    -23,
+    46,
+    23
+   ],
+   "bioma": "campo",
+   "desc": "A casa da Vale, plantio, galinheiro e lago."
+  },
+  {
+   "id": "fazenda_grande",
+   "nome": "Fazenda grande",
+   "cena": "res://scripts/ilha/fazenda_grande.tscn",
+   "tipo": "fazenda",
+   "chegada": "inicio",
+   "mapa": [
+    470,
+    700
+   ],
+   "raio": [
+    90,
+    60
+   ],
+   "mundo": [
+    -40,
+    -34,
+    50,
+    32
+   ],
+   "bioma": "campo",
+   "desc": "Variante ampliada: pomar, celeiro, pasto e caminho até Porto Velho."
+  },
+  {
+   "id": "vila",
+   "nome": "Vila (praça)",
+   "cena": "res://scripts/ilha/vila_jogo.tscn",
+   "tipo": "vila",
+   "chegada": "padrao",
+   "mapa": [
+    620,
+    440
+   ],
+   "raio": [
+    104,
+    76
+   ],
+   "mundo": [
+    -43,
+    -41,
+    31,
+    29
+   ],
+   "bioma": "vila",
+   "desc": "A praça, a loja do Sr. Armando e as ruínas do norte."
+  },
+  {
+   "id": "arena",
+   "nome": "Arena das Cinzas",
+   "cena": "res://combat_arena.tscn",
+   "tipo": "arena",
+   "chegada": "inicio",
+   "mapa": [
+    905,
+    430
+   ],
+   "raio": [
+    78,
+    56
+   ],
+   "mundo": [
+    -11,
+    -9,
+    11,
+    9
+   ],
+   "bioma": "arena",
+   "desc": "Salas de combate contra os orcs."
+  },
+  {
+   "id": "masmorra",
+   "nome": "Masmorra (protótipo)",
+   "cena": "res://dungeon_teste.tscn",
+   "tipo": "masmorra",
+   "chegada": "inicio",
+   "mapa": [
+    585,
+    110
+   ],
+   "raio": [
+    80,
+    58
+   ],
+   "mundo": null,
+   "bioma": "montanha",
+   "desc": "Andares gerados sob as montanhas."
+  },
+  {
+   "id": "porto_velho",
+   "nome": "Porto Velho",
+   "cena": "res://scenes/vila_grande.tscn",
+   "tipo": "mapa_novo",
+   "chegada": "padrao",
+   "mapa": [
+    820,
+    600
+   ],
+   "raio": [
+    88,
+    62
+   ],
+   "mundo": null,
+   "bioma": "porto",
+   "desc": "A cidade-porto: docas do dirigível, mercado, forja e 20 moradores com lojas e serviços.",
+   "cena_provisoria": "res://scenes/porto_velho_provisorio.tscn"
+  },
+  {
+   "id": "vila_orcs",
+   "nome": "Vila dos Orcs",
+   "cena": "res://scenes/vila_orcs.tscn",
+   "tipo": "mapa_novo",
+   "chegada": "inicio",
+   "mapa": [
+    1075,
+    250
+   ],
+   "raio": [
+    70,
+    52
+   ],
+   "mundo": null,
+   "bioma": "orc",
+   "desc": "A ilhota dos orcs, a leste, depois da arena."
+  },
+  {
+   "id": "cidade_fantasma",
+   "nome": "Cidade Fantasma",
+   "cena": "res://scenes/cidade_fantasma.tscn",
+   "tipo": "mapa_novo",
+   "chegada": "inicio",
+   "mapa": [
+    215,
+    300
+   ],
+   "raio": [
+    86,
+    62
+   ],
+   "mundo": null,
+   "bioma": "fantasma",
+   "desc": "Ruas vazias na névoa do oeste. Prata de túmulo."
+  },
+  {
+   "id": "minas_cinza",
+   "nome": "Minas da Cinza",
+   "cena": "res://scenes/minas_da_cinza.tscn",
+   "tipo": "masmorra",
+   "chegada": "inicio",
+   "mapa": [
+    395,
+    150
+   ],
+   "raio": [
+    68,
+    50
+   ],
+   "mundo": null,
+   "bioma": "montanha",
+   "desc": "A dungeon de mineração (em produção)."
+  },
+  {
+   "id": "ilha_futurista",
+   "nome": "Ilha Futurista",
+   "cena": "res://scenes/ilha_futurista.tscn",
+   "tipo": "mapa_novo",
+   "chegada": "inicio",
+   "mapa": [
+    1040,
+    690
+   ],
+   "raio": [
+    72,
+    50
+   ],
+   "mundo": null,
+   "bioma": "ceu",
+   "desc": "Uma ilha flutuante de outro tempo. Liga temporal."
+  }
  ]
 }
