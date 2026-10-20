@@ -129,7 +129,8 @@
    "mundo": null,
    "bioma": "porto",
    "desc": "A cidade-porto: docas do dirigível, mercado, forja e 20 moradores com lojas e serviços.",
-   "cena_provisoria": "res://scenes/porto_velho_provisorio.tscn"
+   "cena_provisoria": "res://scenes/porto_velho_provisorio.tscn",
+   "adaptador": "res://scripts/mundo/area_mapa_novo.gd"
   },
   {
    "id": "vila_orcs",
@@ -147,7 +148,8 @@
    ],
    "mundo": null,
    "bioma": "orc",
-   "desc": "A ilhota dos orcs, a leste, depois da arena."
+   "desc": "A ilhota dos orcs, a leste, depois da arena.",
+   "adaptador": "res://scripts/mundo/area_mapa_novo.gd"
   },
   {
    "id": "cidade_fantasma",
@@ -165,7 +167,8 @@
    ],
    "mundo": null,
    "bioma": "fantasma",
-   "desc": "Ruas vazias na névoa do oeste. Prata de túmulo."
+   "desc": "Ruas vazias na névoa do oeste. Prata de túmulo.",
+   "adaptador": "res://scripts/mundo/area_mapa_novo.gd"
   },
   {
    "id": "minas_cinza",
@@ -183,7 +186,8 @@
    ],
    "mundo": null,
    "bioma": "montanha",
-   "desc": "A dungeon de mineração (em produção)."
+   "desc": "A dungeon de mineração (em produção).",
+   "adaptador": "res://scripts/mundo/area_mapa_novo.gd"
   },
   {
    "id": "ilha_futurista",
@@ -201,7 +205,29 @@
    ],
    "mundo": null,
    "bioma": "ceu",
-   "desc": "Uma ilha flutuante de outro tempo. Liga temporal."
+   "desc": "Uma ilha flutuante de outro tempo. Liga temporal.",
+   "adaptador": "res://scripts/mundo/area_mapa_novo.gd"
+  },
+  {
+   "id": "teste_mapa_novo",
+   "nome": "(teste) mapa novo",
+   "cena": "res://tests/fixtures/mapa_novo_teste.tscn",
+   "tipo": "teste",
+   "chegada": "inicio",
+   "mapa": [
+    60,
+    760
+   ],
+   "raio": [
+    10,
+    10
+   ],
+   "mundo": null,
+   "bioma": "vila",
+   "desc": "Fixture de teste do adaptador (oculto do mapa).",
+   "oculto": true,
+   "adaptador": "res://scripts/mundo/area_mapa_novo.gd",
+   "roster": "res://data/npcs/porto_velho.json"
   }
  ]
 }

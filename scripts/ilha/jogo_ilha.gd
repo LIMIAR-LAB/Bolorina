@@ -140,7 +140,15 @@ func _trocar(area: String, spawn: String, com_fade: bool) -> void:
 			add_child(atual)
 		_:
 			# areas novas do registro (data/areas.json): cena generica
-			if Registro.disponivel(area):
+			var info_a: Dictionary = Registro.info(area)
+			if Registro.disponivel(area) and info_a.has("adaptador") and Registro.cena(area) == String(info_a.get("cena", "")):
+				# mapa novo (Bolorina): adaptador poe a Vale, o controle e a camera do jogo no mapa
+				atual = load(String(info_a.adaptador)).new()
+				atual.estado = estado
+				atual.gerenciador = self
+				add_child(atual)
+				atual.carregar(Registro.cena(area), area)
+			elif Registro.disponivel(area):
 				atual = load(Registro.cena(area)).instantiate()
 				if "estado" in atual:
 					atual.estado = estado

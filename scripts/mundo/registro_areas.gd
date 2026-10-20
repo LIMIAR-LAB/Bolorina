@@ -15,9 +15,13 @@ static func dados() -> Dictionary:
 static func recarregar() -> void:
 	_dados = {}
 
-## lista de areas na ordem do JSON
-static func lista() -> Array:
-	return dados().get("areas", [])
+## lista de areas na ordem do JSON ("oculto": true = so para testes, fora do mapa)
+static func lista(incluir_ocultos := false) -> Array:
+	var out: Array = []
+	for a in dados().get("areas", []):
+		if incluir_ocultos or not bool(a.get("oculto", false)):
+			out.append(a)
+	return out
 
 static func ids() -> Array:
 	var out: Array = []
@@ -26,7 +30,7 @@ static func ids() -> Array:
 	return out
 
 static func info(id: String) -> Dictionary:
-	for a in lista():
+	for a in lista(true):
 		if String(a.id) == id:
 			return a
 	return {}

@@ -131,10 +131,10 @@ func _ui() -> void:
 	painel.add_child(retrato)
 	nome_l = _label(Vector2(160, 10), 20, Color("ffd98a"))
 	texto_l = _label(Vector2(160, 44), 17, Color("f6ecd2"))
-	texto_l.size = Vector2(920, 90)
+	texto_l.size = Vector2(920, 56)
 	texto_l.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
-	lista_l = _label(Vector2(160, 120), 15, Color("f1e2bd"))
-	lista_l.size = Vector2(920, 180)
+	lista_l = _label(Vector2(160, 104), 15, Color("f1e2bd"))
+	lista_l.size = Vector2(920, 186)
 	dica_l = _label(Vector2(160, 302), 13, Color("c9b48a"))
 
 func _label(p: Vector2, tam: int, cor: Color) -> Label:
@@ -199,6 +199,13 @@ func falar(i: int) -> void:
 	if aviso != "":
 		ultima_msg = aviso
 	e.salvar()
+	# Dialogue Manager (entrega da Bolorina): se o addon estiver ativo e houver dialogos/<id>.dialogue, usa o balao dele;
+	# o balcao da loja abre depois com E. Sem addon/arquivo: falas do roster.
+	var dm = g.get_tree().root.get_node_or_null("DialogueManager") if g.is_inside_tree() else null
+	var dlg := String(d.get("dialogo", ""))
+	if dm and dlg != "" and ResourceLoader.exists(dlg) and dm.has_method("show_dialogue_balloon"):
+		dm.show_dialogue_balloon(load(dlg), "start")
+		fala_i = maxi(0, (d.falas as Array).size() - 1)
 	painel.visible = true
 	retrato.texture = _retrato(d)
 	_mostrar()
@@ -282,8 +289,8 @@ func _listar() -> void:
 	nome_l.text = "%s    Ouro: %d    %s" % [String(Loja.dados(lid).get("nome", lid)), e.ouro, "  ".join(titulo)]
 	texto_l.text = ultima_msg if ultima_msg != "" else String(d.falas[0])
 	var linhas: Array = []
-	var ini := clampi(sel - 4, 0, maxi(0, opcoes.size() - 8))
-	for i in range(ini, mini(opcoes.size(), ini + 8)):
+	var ini := clampi(sel - 3, 0, maxi(0, opcoes.size() - 7))
+	for i in range(ini, mini(opcoes.size(), ini + 7)):
 		linhas.append("%s %d  %s" % ["▶" if i == sel else " ", i + 1, String(opcoes[i].texto)])
 	lista_l.text = "\n".join(linhas) if not linhas.is_empty() else "(nada nesta aba)"
 	dica_l.text = "Tab: aba   ↑↓: escolher   Enter/1-9: fazer   E/Esc: sair"

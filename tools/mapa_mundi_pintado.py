@@ -12,7 +12,7 @@ K = 2                      # desenha em 2x e reduz (bordas suaves)
 W, H = 1200 * K, 800 * K
 random.seed(20261020)
 np.random.seed(20261020)
-areas = json.load(open(os.path.join(R, 'data/areas.json'), encoding='utf-8'))['areas']
+areas = [a for a in json.load(open(os.path.join(R, 'data/areas.json'), encoding='utf-8'))['areas'] if not a.get('oculto')]
 
 
 def fonte(tam, negrito=True):
