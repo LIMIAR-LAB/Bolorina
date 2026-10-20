@@ -3,14 +3,24 @@ extends RefCounted
 ## junto com a imagem): centro/raio de cada area no mapa + limites (x,z) do mundo da cena.
 ## O marcador fica dentro da elipse da area, na posicao proporcional do jogador (norte = -z = cima).
 const JSON_MAPA := "res://art/ui/mapa_mundi.json"
+## mapa pintado (tools/mapa_mundi_pintado.py, a partir de data/areas.json): usado quando a imagem dele e a escolhida
+const JSON_PINTADO := "res://art/ui/mapa_mundi_pintado.json"
 const NOMES := {"fazenda": "Fazenda", "vila": "Vila", "arena": "Arena dos Orcs", "masmorra": "Masmorra (protótipo)"}
+const Registro = preload("res://scripts/mundo/registro_areas.gd")
 static var _dados = null
+static var arquivo := JSON_MAPA
+
+## troca o JSON de posicoes (o jogo chama ao escolher a imagem do mapa)
+static func usar(caminho: String) -> void:
+	if caminho != arquivo:
+		arquivo = caminho
+		_dados = null
 
 static func dados() -> Dictionary:
 	if _dados == null:
 		_dados = {}
-		var g := ProjectSettings.globalize_path(JSON_MAPA)
-		var txt := FileAccess.get_file_as_string(g) if FileAccess.file_exists(g) else FileAccess.get_file_as_string(JSON_MAPA)
+		var g := ProjectSettings.globalize_path(arquivo)
+		var txt := FileAccess.get_file_as_string(g) if FileAccess.file_exists(g) else FileAccess.get_file_as_string(arquivo)
 		var j = JSON.parse_string(txt) if txt != "" else null
 		if j is Dictionary:
 			_dados = j
@@ -38,4 +48,6 @@ static func ponto(area: String, no_area: Node, padrao: Vector2) -> Vector2:
 	return c + Vector2(o.x * float(r.raio[0]), o.y * float(r.raio[1])) * 0.78
 
 static func nome(area: String) -> String:
+	if Registro.existe(area):
+		return Registro.nome(area)
 	return String(NOMES.get(area, area.capitalize()))

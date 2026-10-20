@@ -1,0 +1,134 @@
+{
+ "fazenda": {
+  "nome": "Fazenda",
+  "centro": [
+   360,
+   610
+  ],
+  "raio": [
+   112,
+   80
+  ],
+  "mundo": [
+   -27,
+   -23,
+   46,
+   23
+  ],
+  "estado": "jogavel"
+ },
+ "vila": {
+  "nome": "Vila (praça)",
+  "centro": [
+   620,
+   440
+  ],
+  "raio": [
+   104,
+   76
+  ],
+  "mundo": [
+   -43,
+   -41,
+   31,
+   29
+  ],
+  "estado": "jogavel"
+ },
+ "arena": {
+  "nome": "Arena das Cinzas",
+  "centro": [
+   905,
+   430
+  ],
+  "raio": [
+   78,
+   56
+  ],
+  "mundo": [
+   -11,
+   -9,
+   11,
+   9
+  ],
+  "estado": "jogavel"
+ },
+ "masmorra": {
+  "nome": "Masmorra (protótipo)",
+  "centro": [
+   585,
+   110
+  ],
+  "raio": [
+   80,
+   58
+  ],
+  "mundo": null,
+  "estado": "jogavel"
+ },
+ "porto_velho": {
+  "nome": "Porto Velho",
+  "centro": [
+   820,
+   600
+  ],
+  "raio": [
+   88,
+   62
+  ],
+  "mundo": null,
+  "estado": "em_breve"
+ },
+ "vila_orcs": {
+  "nome": "Vila dos Orcs",
+  "centro": [
+   1075,
+   250
+  ],
+  "raio": [
+   70,
+   52
+  ],
+  "mundo": null,
+  "estado": "em_breve"
+ },
+ "cidade_fantasma": {
+  "nome": "Cidade Fantasma",
+  "centro": [
+   215,
+   300
+  ],
+  "raio": [
+   86,
+   62
+  ],
+  "mundo": null,
+  "estado": "em_breve"
+ },
+ "minas_cinza": {
+  "nome": "Minas da Cinza",
+  "centro": [
+   395,
+   150
+  ],
+  "raio": [
+   68,
+   50
+  ],
+  "mundo": null,
+  "estado": "em_breve"
+ },
+ "ilha_futurista": {
+  "nome": "Ilha Futurista",
+  "centro": [
+   1040,
+   690
+  ],
+  "raio": [
+   72,
+   50
+  ],
+  "mundo": null,
+  "estado": "em_breve"
+ }
+}
