@@ -1,0 +1,24 @@
+{
+ "id": "mare_bento",
+ "nome": "Mesa do Bento-de-Outra-Linha",
+ "npc": "marujo_bento2",
+ "compra": [
+  {
+   "item": "sopa_nuvem",
+   "preco": 55,
+   "estoque": 5,
+   "qtd": 1
+  }
+ ],
+ "vende_categorias": [],
+ "taxa_venda": 0.5,
+ "servicos": [
+  {
+   "id": "boato",
+   "nome": "Pagar uma caneca (boato de 1700)",
+   "preco": 15,
+   "desc": ""
+  }
+ ],
+ "ilha": "ilha_mare"
+}

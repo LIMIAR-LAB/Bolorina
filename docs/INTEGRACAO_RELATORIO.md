@@ -1,6 +1,6 @@
 # Integração de 20/10/2026: noite do Claude + pacotes da Bolorina
 
-Branch `integracao-2026-10-20`, criada a partir de `noite-2026-10-20` (dbe82fe). Tudo foi feito no box. Nada foi enviado com push e não há remoto. Não foram tocados `main.tscn`, `reference_village`, o save real, os arquivos-fonte originais nem o CronosMemories. Os testes usam saves próprios de teste.
+Branch `integracao-2026-10-20`, criada a partir de `noite-2026-10-20` (dbe82fe). Tudo foi feito no box. Depois a branch foi enviada ao GitHub (só ela, sem `--force`) e virou o PR #2 para a `main`, sem merge. Não foram tocados `main.tscn`, `reference_village`, o save real, os arquivos-fonte originais nem o CronosMemories. Os testes usam saves próprios de teste.
 
 ## Commits
 
@@ -16,7 +16,8 @@ Branch `integracao-2026-10-20`, criada a partir de `noite-2026-10-20` (dbe82fe).
 | d177ea7 | Integracao 7: `tests/mapa_novo_reais_testes.gd`, o adaptador da Vale nos 4 mapas reais. |
 | 3cf0470 | Integracao 8: ligações de baixo risco (missão e tutorial por grupo, `dialogo_para`, cores dos pontos de viagem) e o script de capturas. |
 | 0c19aef | Integracao 9: capturas `docs/integracao-2026-10-20-*.png`. |
-| (este) | Integracao 10: este relatório. |
+| a29dc92 | Integracao 10: este relatório. |
+| (merge) | Integracao 11: merge do d0914dd do Claude (Ilha da Maré do Tempo), ver a seção abaixo. |
 
 ## Decisões aplicadas
 
@@ -65,6 +66,23 @@ Helena, Caio, Armando, Nina e Marina continuam na Vila original (`scripts/ilha/m
 
 No jogo, o E num morador da Bolorina abre o diálogo dele, com o rosto. No fim da conversa abre o balcão da loja. A entrega de cartas agora é de Pipo para o Capitão Nuvem.
 
+## Integracao 11: Ilha da Maré do Tempo (d0914dd do Claude)
+
+O Claude fez o commit `d0914dd` às 12:13 (horário de Brasília), na `noite-2026-10-20`, depois do `dbe82fe`. Ele foi trazido por merge e agora o PR #2 contém tudo o que está no PR #1. Os arquivos do nosso lado e do lado do Claude foram guardados antes da resolução, no box em `/workspace/merge/backup_mare_1546/`.
+
+Conflitos e como foram resolvidos:
+- **`data/areas.json`** (entrou sem conflito de texto, mas foi ajustado). Agora são 13 áreas visíveis: as 12 da primeira ilha e a `ilha_mare`. A `ilha_mare` é a **segunda ilha flutuante** (`"ilha": "ilha_mare_do_tempo"`), e não faz parte da primeira. Ela fica no canto nordeste do mapa pintado, onde o Claude desenhou uma ilha separada. Recebeu `categoria: ilha_nova`, `estado: em_breve`, `chegada: viagem` e um ponto de entrada `viagem` marcado como PROPOSTA. Os campos do Claude foram mantidos (`cena: res://scenes/ilha_mare_do_tempo.tscn`, `bioma: mare`, `requer: tabua_das_mares`, `adaptador`). A nota do registro agora diz que tudo o que existia até 20/10 fica na primeira ilha e que a Maré é a segunda.
+- **`scripts/mundo/registro_areas.gd`.** O `validar()` aceita uma área com `"estado": "em_breve"` sem cena, como o próprio registro já dizia ("área sem cena = em breve"). Não houve outra mudança.
+- **`data/minerios.json`.** Ficaram os ids unificados (`minas_da_cinza`, `estacao_depois_de_ontem`, `prata_tumular`) e entrou a `ilha_mare` do Claude (bronze das marés ×3 e ferro). O `minerio_bronze_mare` existe como item, mas ainda não é um metal da forja da Bolorina (`data/forja/materiais.json`).
+- **`data/itens.json`.** Ficou a "Carta para entregar" unificada (Pipo para o Capitão Nuvem) e entraram os 13 itens novos do Claude.
+- **`art/ui/mapa_mundi_pintado.json` e `.png`.** Foram refeitos com `tools/mapa_mundi_pintado.py`, que junta as mudanças dos dois lados (ilha da Maré e ícone `mare` do Claude, ids unificados e trilhas das masmorras). Só o nordeste muda, e a Maré aparece "em breve". A rosa dos ventos foi para o sudoeste, porque cobria a ilha nova.
+- **Elenco (Tobias e Capitã Marina).** Ver `docs/ELENCO_UNIFICADO.md`, seção "Ilha da Maré do Tempo". A Tábua das Marés é vendida na `cartografia` do Tobias, e quem pilota o dirigível é o Capitão Nuvem, no lugar da Capitã Marina. O nome do Tobias continua PROPOSTA.
+- **Sem mudança:** `data/npcs/ilha_mare.json` (8 moradores), `data/eventos/ilha_mare.json`, as 8 lojas `mare_*`, a Tábua na `cartografia` e o `docs/PROMPT_ILHA_MARE.md`.
+
+Teste novo em `mundo_areas`: confere que a `ilha_mare` está no registro como segunda ilha e pede a Tábua, que todas as outras áreas continuam na primeira ilha, que o botão aparece no mapa (desligado enquanto não houver cena) e que a viagem é recusada sem travar o jogo. A ida e volta de verdade só vai dar para testar quando a cena existir.
+
+Resultados dos testes depois do merge: as mesmas suítes da tabela abaixo foram rodadas de novo, e todas passam com os mesmos números. `mundo_areas` subiu de 37/37 para 42/42 com as 5 checagens novas da Maré. As exceções continuam as conhecidas: combate 53/54 e fazenda_terra 19/20. O eco passa 68/68 com `--fixed-fps 60`. O `vila_travamento` deu 13/14 na primeira rodada (a sonda ficou presa em 37 células com a máquina carregada) e 14/14 quando rodou de novo sozinho. Nenhum arquivo da vila mudou neste merge.
+
 ## Testes
 
 Todos rodaram headless, um processo Godot por vez com `flock /workspace/.godot.lock`, e todos usam save de teste.
@@ -88,7 +106,7 @@ Todos rodaram headless, um processo Godot por vez com `flock /workspace/.godot.l
 | vila_npcs | 17/17 |
 | vila_oclusao | 19/19 |
 | vila_travamento | 14/14 |
-| mundo_areas (12 áreas, ida e volta) | 37/37 |
+| mundo_areas (12 áreas + ilha_mare em breve, ida e volta) | 42/42 (37/37 antes da Maré) |
 | economia | 50/50 |
 | fazenda_grande | 11/11 |
 | mapa_novo (fixture do Claude) | 15/15 |
@@ -143,6 +161,7 @@ Arquivos `docs/integracao-2026-10-20-*.png`:
 - **Equipamento.** Só as 18 peças de cobre, ferro e prata são equipáveis (`equipamento.gd`). As outras 69 peças forjadas vão para a mochila como itens, sem atributos de equipamento.
 - **Forjas.** Só a Ferraria do Porto tem balcão. A Forja do Clã Brasa-Velha (`ferreiro_orc`, Vila dos Orcs) e a Forja Quântica (`fabricadora`, Estação) têm receitas nos dados, mas não têm loja no jogo.
 - **Masmorras.** O estado da sessão (profundidade, chefes derrotados) é estático no `Sessao` e não vai para o save.
+- **Ilha da Maré do Tempo.** Os dados, os 8 moradores, as lojas e os eventos estão prontos, mas a cena `scenes/ilha_mare_do_tempo.tscn` ainda não existe (o prompt para montar a vila está em `docs/PROMPT_ILHA_MARE.md`). Também faltam o ponto de viagem real e o bronze das marés como metal da forja.
 - **Lore marcada PROPOSTA.** As falas novas de balcão, o nome repetido do Tobias e o Fagulha como filhote do Ambarion.
 
 ## Arte que falta

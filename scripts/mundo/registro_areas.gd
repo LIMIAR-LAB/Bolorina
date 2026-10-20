@@ -215,7 +215,8 @@ static func validar() -> Array:
 			continue
 		if not a.has("pontos_de_entrada"):
 			erros.append("%s sem campo pontos_de_entrada" % id)
-		if cena(id) == "":
+		# "estado": "em_breve" = area planejada sem cena ainda (ex.: ilha_mare); aparece desligada no mapa
+		if cena(id) == "" and String(a.get("estado", "")) != "em_breve":
 			erros.append("%s: cena não existe %s" % [id, a.get("cena", "")])
 		if a.has("arte") and not FileAccess.file_exists(String(a.get("arte", ""))):
 			erros.append("%s: arte não existe %s" % [id, a.get("arte", "")])

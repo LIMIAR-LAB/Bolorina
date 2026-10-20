@@ -1,0 +1,26 @@
+{
+ "id": "mare_sucata",
+ "nome": "Ferro-Velho do Zezinho",
+ "npc": "zezinho_sucata",
+ "compra": [
+  {
+   "item": "sucata",
+   "preco": 10,
+   "estoque": 20,
+   "qtd": 1
+  },
+  {
+   "item": "oleo_farol",
+   "preco": 15,
+   "estoque": 10,
+   "qtd": 1
+  }
+ ],
+ "vende_categorias": [
+  "material",
+  "reliquia"
+ ],
+ "taxa_venda": 0.6,
+ "servicos": [],
+ "ilha": "ilha_mare"
+}

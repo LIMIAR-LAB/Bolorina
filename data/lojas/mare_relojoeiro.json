@@ -1,0 +1,25 @@
+{
+ "id": "mare_relojoeiro",
+ "nome": "Oficina do Relojoeiro",
+ "npc": "relojoeiro",
+ "compra": [
+  {
+   "item": "areia_parada",
+   "preco": 150,
+   "estoque": 1,
+   "qtd": 1
+  },
+  {
+   "item": "bussola_temporal",
+   "preco": 380,
+   "estoque": 1,
+   "qtd": 1
+  }
+ ],
+ "vende_categorias": [
+  "lingote"
+ ],
+ "taxa_venda": 0.5,
+ "servicos": [],
+ "ilha": "ilha_mare"
+}

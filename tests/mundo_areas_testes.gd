@@ -80,6 +80,18 @@ func _run() -> void:
 	var b_futuro = jogo.mapa_botoes.get_node_or_null("Area_estacao_depois_de_ontem")
 	check(b_futuro != null and (b_futuro.disabled or Registro.disponivel("estacao_depois_de_ontem")), "area sem cena aparece desligada (em breve)")
 	check(not jogo.viajar("estacao_depois_de_ontem") or Registro.disponivel("estacao_depois_de_ontem"), "viajar para area sem cena e recusado")
+	# integracao 20/10: Ilha da Mare do Tempo (Claude, d0914dd), segunda ilha, em breve (sem cena ainda)
+	var info_mare: Dictionary = Registro.info("ilha_mare")
+	check(not info_mare.is_empty() and String(info_mare.get("ilha", "")) == "ilha_mare_do_tempo" and String(info_mare.get("requer", "")) == "tabua_das_mares", "ilha_mare no registro: segunda ilha, requer a Tabua das Mares")
+	var primeira := true
+	for a in Registro.lista():
+		if String(a.id) != "ilha_mare":
+			primeira = primeira and String(a.get("ilha", "")) == "primeira_ilha"
+	check(primeira, "todas as outras areas continuam na primeira ilha")
+	var b_mare = jogo.mapa_botoes.get_node_or_null("Area_ilha_mare")
+	check(b_mare != null and (b_mare.disabled or Registro.disponivel("ilha_mare")), "ilha_mare aparece no mapa (em breve enquanto nao tiver cena)")
+	check(Registro.disponivel("ilha_mare") or not jogo.viajar("ilha_mare"), "viajar para a ilha_mare sem cena e recusado, sem travar")
+	check(await esperar_area("fazenda"), "depois da recusa continua na fazenda")
 	jogo.alternar_mapa()
 	await fr(2)
 	# integracao 20/10: areas com "requer" pedem os mapas do cartografo; o teste ja os da (save de teste)
