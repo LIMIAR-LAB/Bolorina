@@ -1,4 +1,8 @@
 extends Node
+
+## integracao 20/10: o jogo (jogo_ilha, interacao_npcs) acha este no pelo grupo, se ele existir na arvore
+func _enter_tree() -> void:
+	add_to_group("gerenciador_missoes")
 ## Gerenciador de missões (PROPOSTA). Máquina de estados independente, sem depender de cena.
 ## Lê data/missoes/*.json, escuta as marcas de scripts/dialogos/estado_dialogos.gd e recebe eventos do jogo.
 ##

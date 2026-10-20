@@ -1,4 +1,8 @@
 extends Node
+
+## integracao 20/10: o jogo (jogo_ilha, interacao_npcs) acha este no pelo grupo, se ele existir na arvore
+func _enter_tree() -> void:
+	add_to_group("tutorial")
 ## Executor do tutorial (PROPOSTA). Independente de cena: lê data/tutorial/tutorial.json,
 ## escuta as marcas de estado_dialogos.gd e recebe eventos do jogo por notificar().
 ## Cada passo: espera o "gatilho", mostra a "dica", espera a "conclusao". Tudo pode ser pulado.

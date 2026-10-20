@@ -43,7 +43,7 @@ func _montar() -> void:
 	if not dados.has("pos"):
 		push_warning("ponto_viagem: %s sem ponto_de_viagem em data/areas.json" % area_id)
 		return
-	var cores := {"vila_orcs": "ff8a3a", "cidade_fantasma": "9fd8ff", "estacao_depois_de_ontem": "7af4ff", "fazenda_do_alto": "c8f08a", "arena_das_cinzas": "ff9a7a"}
+	var cores := {"vila_orcs": "ff8a3a", "cidade_fantasma": "9fd8ff", "estacao_depois_de_ontem": "7af4ff", "fazenda_do_alto": "c8f08a", "arena_das_cinzas": "ff9a7a", "fazenda": "c8f08a", "arena": "ff9a7a", "porto_velho": "ffcf7a"}
 	acento = Color(String(cores.get(area_id, "ffcf7a")))
 	var x := float(dados.pos[0])
 	var z := float(dados.pos[1])

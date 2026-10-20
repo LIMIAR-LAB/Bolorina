@@ -95,6 +95,16 @@ func _unhandled_key_input(event: InputEvent) -> void:
 
 func conversar(npc, cue := "") -> bool:
 	var recurso: Resource = npc.carregar_dialogo()
+	# integracao 20/10: missao/tutorial podem trocar o dialogo (dialogo_para); sem gerenciador na arvore nada muda
+	if cue == "":
+		for grupo in ["gerenciador_missoes", "tutorial"]:
+			var gm = get_tree().get_first_node_in_group(grupo)
+			if gm != null and gm.has_method("dialogo_para"):
+				var d: Dictionary = gm.dialogo_para(String(npc.npc_id))
+				if not d.is_empty() and ResourceLoader.exists(String(d.get("arquivo", ""))):
+					recurso = load(String(d.arquivo))
+					cue = String(d.get("cue", ""))
+					break
 	if recurso == null:
 		push_warning("Dialogo nao encontrado para '%s': %s" % [npc.npc_id, npc.caminho_dialogo()])
 		return false

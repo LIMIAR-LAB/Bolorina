@@ -115,6 +115,13 @@ func _trocar(area: String, spawn: String, com_fade: bool) -> void:
 			_trazer_saque_da_masmorra()
 		Registro.preparar_viagem(de, area, spawn)
 		Registro.marcar_visita(estado, area)
+		# integracao 20/10: avisa a missao (se o GerenciadorMissoes estiver na arvore); a missao usa os ids antigos
+		var gm = get_tree().get_first_node_in_group("gerenciador_missoes")
+		if gm != null:
+			gm.chegou_area(area)
+			var antigo := String(Registro.info(area).get("id_antigo", ""))
+			if antigo != "":
+				gm.chegou_area(antigo)
 	match area:
 		"fazenda":
 			atual = load(FAZENDA).instantiate()
