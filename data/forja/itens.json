@@ -1,246 +1,1039 @@
 {
  "versao": 1,
- "provisorio": true,
+ "status": "PROPOSTA (não é canon)",
+ "formula": {
+  "multiplicador_dano": "1 + ataque/25",
+  "dano_recebido": "dano * 100 / (100 + defesa_total)"
+ },
+ "conjuntos": {
+  "conjunto_cobre": {
+   "nome": "Conjunto de Cobre",
+   "tier": 1,
+   "bonus_3_pecas": "+5 de vida máxima",
+   "bonus_5_pecas": "+5% de dano de ferramentas na mina"
+  },
+  "conjunto_ferro": {
+   "nome": "Conjunto de Ferro",
+   "tier": 2,
+   "bonus_3_pecas": "+10 de vida máxima",
+   "bonus_5_pecas": "Postura: o primeiro golpe recebido por sala causa -30%"
+  },
+  "conjunto_aco": {
+   "nome": "Conjunto do Porto",
+   "tier": 3,
+   "bonus_3_pecas": "+15 de vida máxima",
+   "bonus_5_pecas": "Dash 10% mais longo"
+  },
+  "conjunto_brasa": {
+   "nome": "Conjunto Brasa-Velha",
+   "tier": 4,
+   "bonus_3_pecas": "+20 de vida máxima",
+   "bonus_5_pecas": "Fúria do clã: +10% de dano com vida abaixo de 40%"
+  },
+  "conjunto_prata": {
+   "nome": "Conjunto Tumular",
+   "tier": 5,
+   "bonus_3_pecas": "Imune a dreno de vida vampírico",
+   "bonus_5_pecas": "+15% de dano contra amaldiçoados (soma com a arma)"
+  },
+  "conjunto_celeste": {
+   "nome": "Conjunto Celeste",
+   "tier": 6,
+   "bonus_3_pecas": "+10% de velocidade",
+   "bonus_5_pecas": "Queda suave: não toma dano ao cair de plataformas"
+  },
+  "conjunto_cronostio": {
+   "nome": "Conjunto Cronal",
+   "tier": 7,
+   "bonus_3_pecas": "Dash deixa um eco que bloqueia 1 projétil",
+   "bonus_5_pecas": "-15% na recarga do especial"
+  },
+  "conjunto_adamantium": {
+   "nome": "Conjunto de Adamantium",
+   "tier": 8,
+   "bonus_3_pecas": "Forma Adamantium dura +5 s",
+   "bonus_5_pecas": "+20% de dano do Raio de Adamantium"
+  },
+  "conjunto_paradoxal": {
+   "nome": "Conjunto Paradoxal",
+   "tier": 9,
+   "bonus_3_pecas": "Uma segunda chance por mapa (volta 3 s no tempo)",
+   "bonus_5_pecas": "+10% em todos os atributos"
+  }
+ },
  "itens": [
   {
-   "id": "capacete_cobre",
-   "nome": "Capacete de cobre",
-   "nivel": 1,
-   "slot": "cabeca",
-   "stats": {
-    "defesa": 2,
-    "ataque": 0
-   },
-   "material": "cobre",
-   "camadas": [
-    "capacete_cobre"
-   ]
+   "id": "espada_cobre",
+   "nome": "Espada de Cobre",
+   "tipo": "arma",
+   "categoria": "espada",
+   "tier": 1,
+   "ataque": 5,
+   "velocidade": 1.0,
+   "especial": "",
+   "multiplicador_dano": 1.2,
+   "valor_ouro": 80,
+   "arte_pixellab": null
   },
   {
-   "id": "peito_cobre",
-   "nome": "Peitoral de cobre",
-   "nivel": 1,
-   "slot": "corpo",
-   "stats": {
-    "defesa": 3,
-    "ataque": 0
-   },
-   "material": "cobre",
-   "camadas": [
-    "peito_cobre"
-   ]
+   "id": "elmo_cobre",
+   "nome": "Elmo de Cobre",
+   "tipo": "armadura",
+   "categoria": "elmo",
+   "tier": 1,
+   "defesa": 2,
+   "conjunto": "conjunto_cobre",
+   "valor_ouro": 48,
+   "arte_pixellab": null
+  },
+  {
+   "id": "peitoral_cobre",
+   "nome": "Peitoral de Cobre",
+   "tipo": "armadura",
+   "categoria": "peitoral",
+   "tier": 1,
+   "defesa": 4,
+   "conjunto": "conjunto_cobre",
+   "valor_ouro": 96,
+   "arte_pixellab": null
   },
   {
    "id": "luvas_cobre",
-   "nome": "Luvas de cobre",
-   "nivel": 1,
-   "slot": "maos",
-   "stats": {
-    "defesa": 1,
-    "ataque": 0
-   },
-   "material": "cobre",
-   "camadas": [
-    "luvas_cobre"
-   ]
+   "nome": "Luvas de Cobre",
+   "tipo": "armadura",
+   "categoria": "luvas",
+   "tier": 1,
+   "defesa": 1,
+   "conjunto": "conjunto_cobre",
+   "valor_ouro": 42,
+   "arte_pixellab": null
   },
   {
    "id": "botas_cobre",
-   "nome": "Botas de cobre",
-   "nivel": 1,
-   "slot": "pes",
-   "stats": {
-    "defesa": 1,
-    "ataque": 0
-   },
-   "material": "cobre",
-   "camadas": [
-    "botas_cobre"
-   ]
+   "nome": "Botas de Cobre",
+   "tipo": "armadura",
+   "categoria": "botas",
+   "tier": 1,
+   "defesa": 1,
+   "conjunto": "conjunto_cobre",
+   "valor_ouro": 42,
+   "arte_pixellab": null
   },
   {
    "id": "escudo_cobre",
-   "nome": "Escudo de cobre",
-   "nivel": 1,
-   "slot": "escudo",
-   "stats": {
-    "defesa": 2,
-    "ataque": 0
-   },
-   "material": "cobre",
-   "camadas": []
-  },
-  {
-   "id": "espada_cobre",
-   "nome": "Espada de cobre",
-   "nivel": 1,
-   "slot": "arma",
-   "stats": {
-    "defesa": 0,
-    "ataque": 3
-   },
-   "material": "cobre",
-   "camadas": []
-  },
-  {
-   "id": "capacete_ferro",
-   "nome": "Capacete de ferro",
-   "nivel": 2,
-   "slot": "cabeca",
-   "stats": {
-    "defesa": 4,
-    "ataque": 0
-   },
-   "material": "ferro",
-   "camadas": [
-    "capacete_ferro"
-   ]
-  },
-  {
-   "id": "peito_ferro",
-   "nome": "Peitoral de ferro",
-   "nivel": 2,
-   "slot": "corpo",
-   "stats": {
-    "defesa": 6,
-    "ataque": 0
-   },
-   "material": "ferro",
-   "camadas": [
-    "peito_ferro"
-   ]
-  },
-  {
-   "id": "luvas_ferro",
-   "nome": "Luvas de ferro",
-   "nivel": 2,
-   "slot": "maos",
-   "stats": {
-    "defesa": 2,
-    "ataque": 0
-   },
-   "material": "ferro",
-   "camadas": [
-    "luvas_ferro"
-   ]
-  },
-  {
-   "id": "botas_ferro",
-   "nome": "Botas de ferro",
-   "nivel": 2,
-   "slot": "pes",
-   "stats": {
-    "defesa": 2,
-    "ataque": 0
-   },
-   "material": "ferro",
-   "camadas": [
-    "botas_ferro"
-   ]
-  },
-  {
-   "id": "escudo_ferro",
-   "nome": "Escudo de ferro",
-   "nivel": 2,
-   "slot": "escudo",
-   "stats": {
-    "defesa": 4,
-    "ataque": 0
-   },
-   "material": "ferro",
-   "camadas": []
+   "nome": "Escudo de Cobre",
+   "tipo": "armadura",
+   "categoria": "escudo",
+   "tier": 1,
+   "defesa": 2,
+   "conjunto": "conjunto_cobre",
+   "valor_ouro": 60,
+   "arte_pixellab": null
   },
   {
    "id": "espada_ferro",
-   "nome": "Espada de ferro",
-   "nivel": 2,
-   "slot": "arma",
-   "stats": {
-    "defesa": 0,
-    "ataque": 6
-   },
-   "material": "ferro",
-   "camadas": []
+   "nome": "Espada de Ferro",
+   "tipo": "arma",
+   "categoria": "espada",
+   "tier": 2,
+   "ataque": 9,
+   "velocidade": 1.0,
+   "especial": "",
+   "multiplicador_dano": 1.36,
+   "valor_ouro": 180,
+   "arte_pixellab": null
   },
   {
-   "id": "capacete_prata",
-   "nome": "Capacete de prata de túmulo",
-   "nivel": 3,
-   "slot": "cabeca",
-   "stats": {
-    "defesa": 6,
-    "ataque": 0
-   },
-   "material": "prata",
-   "camadas": [
-    "capacete_prata"
-   ]
+   "id": "elmo_ferro",
+   "nome": "Elmo de Ferro",
+   "tipo": "armadura",
+   "categoria": "elmo",
+   "tier": 2,
+   "defesa": 3,
+   "conjunto": "conjunto_ferro",
+   "valor_ouro": 108,
+   "arte_pixellab": null
   },
   {
-   "id": "peito_prata",
-   "nome": "Peitoral de prata de túmulo",
-   "nivel": 3,
-   "slot": "corpo",
-   "stats": {
-    "defesa": 9,
-    "ataque": 0
-   },
-   "material": "prata",
-   "camadas": [
-    "peito_prata"
-   ]
+   "id": "peitoral_ferro",
+   "nome": "Peitoral de Ferro",
+   "tipo": "armadura",
+   "categoria": "peitoral",
+   "tier": 2,
+   "defesa": 6,
+   "conjunto": "conjunto_ferro",
+   "valor_ouro": 216,
+   "arte_pixellab": null
   },
   {
-   "id": "luvas_prata",
-   "nome": "Luvas de prata de túmulo",
-   "nivel": 3,
-   "slot": "maos",
-   "stats": {
-    "defesa": 3,
-    "ataque": 0
-   },
-   "material": "prata",
-   "camadas": [
-    "luvas_prata"
-   ]
+   "id": "luvas_ferro",
+   "nome": "Luvas de Ferro",
+   "tipo": "armadura",
+   "categoria": "luvas",
+   "tier": 2,
+   "defesa": 2,
+   "conjunto": "conjunto_ferro",
+   "valor_ouro": 94,
+   "arte_pixellab": null
   },
   {
-   "id": "botas_prata",
-   "nome": "Botas de prata de túmulo",
-   "nivel": 3,
-   "slot": "pes",
-   "stats": {
-    "defesa": 3,
-    "ataque": 0
-   },
-   "material": "prata",
-   "camadas": [
-    "botas_prata"
-   ]
+   "id": "botas_ferro",
+   "nome": "Botas de Ferro",
+   "tipo": "armadura",
+   "categoria": "botas",
+   "tier": 2,
+   "defesa": 2,
+   "conjunto": "conjunto_ferro",
+   "valor_ouro": 94,
+   "arte_pixellab": null
   },
   {
-   "id": "escudo_prata",
-   "nome": "Escudo de prata de túmulo",
-   "nivel": 3,
-   "slot": "escudo",
-   "stats": {
-    "defesa": 6,
-    "ataque": 0
-   },
-   "material": "prata",
-   "camadas": []
+   "id": "escudo_ferro",
+   "nome": "Escudo de Ferro",
+   "tipo": "armadura",
+   "categoria": "escudo",
+   "tier": 2,
+   "defesa": 4,
+   "conjunto": "conjunto_ferro",
+   "valor_ouro": 135,
+   "arte_pixellab": null
+  },
+  {
+   "id": "espada_aco",
+   "nome": "Espada de Aço do Porto",
+   "tipo": "arma",
+   "categoria": "espada",
+   "tier": 3,
+   "ataque": 14,
+   "velocidade": 1.0,
+   "especial": "Aço temperado: +5% de dano no 3º golpe do combo.",
+   "multiplicador_dano": 1.56,
+   "valor_ouro": 360,
+   "arte_pixellab": null
+  },
+  {
+   "id": "elmo_aco",
+   "nome": "Elmo de Aço do Porto",
+   "tipo": "armadura",
+   "categoria": "elmo",
+   "tier": 3,
+   "defesa": 4,
+   "conjunto": "conjunto_aco",
+   "valor_ouro": 216,
+   "arte_pixellab": null
+  },
+  {
+   "id": "peitoral_aco",
+   "nome": "Peitoral de Aço do Porto",
+   "tipo": "armadura",
+   "categoria": "peitoral",
+   "tier": 3,
+   "defesa": 10,
+   "conjunto": "conjunto_aco",
+   "valor_ouro": 432,
+   "arte_pixellab": null
+  },
+  {
+   "id": "luvas_aco",
+   "nome": "Luvas de Aço do Porto",
+   "tipo": "armadura",
+   "categoria": "luvas",
+   "tier": 3,
+   "defesa": 3,
+   "conjunto": "conjunto_aco",
+   "valor_ouro": 188,
+   "arte_pixellab": null
+  },
+  {
+   "id": "botas_aco",
+   "nome": "Botas de Aço do Porto",
+   "tipo": "armadura",
+   "categoria": "botas",
+   "tier": 3,
+   "defesa": 4,
+   "conjunto": "conjunto_aco",
+   "valor_ouro": 188,
+   "arte_pixellab": null
+  },
+  {
+   "id": "escudo_aco",
+   "nome": "Escudo de Aço do Porto",
+   "tipo": "armadura",
+   "categoria": "escudo",
+   "tier": 3,
+   "defesa": 7,
+   "conjunto": "conjunto_aco",
+   "valor_ouro": 270,
+   "arte_pixellab": null
+  },
+  {
+   "id": "espada_brasa",
+   "nome": "Lâmina Ferro-Brasa",
+   "tipo": "arma",
+   "categoria": "espada",
+   "tier": 4,
+   "ataque": 20,
+   "velocidade": 1.0,
+   "especial": "Brasa: golpes pesados empurram 20% mais.",
+   "multiplicador_dano": 1.8,
+   "valor_ouro": 640,
+   "arte_pixellab": null
+  },
+  {
+   "id": "elmo_brasa",
+   "nome": "Elmo Ferro-Brasa",
+   "tipo": "armadura",
+   "categoria": "elmo",
+   "tier": 4,
+   "defesa": 6,
+   "conjunto": "conjunto_brasa",
+   "valor_ouro": 384,
+   "arte_pixellab": null
+  },
+  {
+   "id": "peitoral_brasa",
+   "nome": "Peitoral Ferro-Brasa",
+   "tipo": "armadura",
+   "categoria": "peitoral",
+   "tier": 4,
+   "defesa": 14,
+   "conjunto": "conjunto_brasa",
+   "valor_ouro": 768,
+   "arte_pixellab": null
+  },
+  {
+   "id": "luvas_brasa",
+   "nome": "Luvas Ferro-Brasa",
+   "tipo": "armadura",
+   "categoria": "luvas",
+   "tier": 4,
+   "defesa": 5,
+   "conjunto": "conjunto_brasa",
+   "valor_ouro": 336,
+   "arte_pixellab": null
+  },
+  {
+   "id": "botas_brasa",
+   "nome": "Botas Ferro-Brasa",
+   "tipo": "armadura",
+   "categoria": "botas",
+   "tier": 4,
+   "defesa": 5,
+   "conjunto": "conjunto_brasa",
+   "valor_ouro": 336,
+   "arte_pixellab": null
+  },
+  {
+   "id": "escudo_brasa",
+   "nome": "Escudo Ferro-Brasa",
+   "tipo": "armadura",
+   "categoria": "escudo",
+   "tier": 4,
+   "defesa": 10,
+   "conjunto": "conjunto_brasa",
+   "valor_ouro": 480,
+   "arte_pixellab": null
   },
   {
    "id": "espada_prata",
-   "nome": "Espada de prata de túmulo",
-   "nivel": 3,
-   "slot": "arma",
-   "stats": {
-    "defesa": 0,
-    "ataque": 9
-   },
-   "material": "prata",
-   "camadas": []
+   "nome": "Espada de Prata Tumular",
+   "tipo": "arma",
+   "categoria": "espada",
+   "tier": 5,
+   "ataque": 26,
+   "velocidade": 1.0,
+   "especial": "+50% de dano contra vampiros, lobisomens e espectros.",
+   "multiplicador_dano": 2.04,
+   "valor_ouro": 1040,
+   "arte_pixellab": null
+  },
+  {
+   "id": "elmo_prata",
+   "nome": "Elmo de Prata Tumular",
+   "tipo": "armadura",
+   "categoria": "elmo",
+   "tier": 5,
+   "defesa": 8,
+   "conjunto": "conjunto_prata",
+   "valor_ouro": 624,
+   "arte_pixellab": null
+  },
+  {
+   "id": "peitoral_prata",
+   "nome": "Peitoral de Prata Tumular",
+   "tipo": "armadura",
+   "categoria": "peitoral",
+   "tier": 5,
+   "defesa": 18,
+   "conjunto": "conjunto_prata",
+   "valor_ouro": 1248,
+   "arte_pixellab": null
+  },
+  {
+   "id": "luvas_prata",
+   "nome": "Luvas de Prata Tumular",
+   "tipo": "armadura",
+   "categoria": "luvas",
+   "tier": 5,
+   "defesa": 6,
+   "conjunto": "conjunto_prata",
+   "valor_ouro": 546,
+   "arte_pixellab": null
+  },
+  {
+   "id": "botas_prata",
+   "nome": "Botas de Prata Tumular",
+   "tipo": "armadura",
+   "categoria": "botas",
+   "tier": 5,
+   "defesa": 7,
+   "conjunto": "conjunto_prata",
+   "valor_ouro": 546,
+   "arte_pixellab": null
+  },
+  {
+   "id": "escudo_prata",
+   "nome": "Escudo de Prata Tumular",
+   "tipo": "armadura",
+   "categoria": "escudo",
+   "tier": 5,
+   "defesa": 13,
+   "conjunto": "conjunto_prata",
+   "valor_ouro": 780,
+   "arte_pixellab": null
+  },
+  {
+   "id": "espada_celeste",
+   "nome": "Espada Celeste",
+   "tipo": "arma",
+   "categoria": "espada",
+   "tier": 6,
+   "ataque": 32,
+   "velocidade": 1.05,
+   "especial": "Leve: +8% de velocidade de movimento.",
+   "multiplicador_dano": 2.28,
+   "valor_ouro": 1600,
+   "arte_pixellab": null
+  },
+  {
+   "id": "elmo_celeste",
+   "nome": "Elmo Celeste",
+   "tipo": "armadura",
+   "categoria": "elmo",
+   "tier": 6,
+   "defesa": 10,
+   "conjunto": "conjunto_celeste",
+   "valor_ouro": 960,
+   "arte_pixellab": null
+  },
+  {
+   "id": "peitoral_celeste",
+   "nome": "Peitoral Celeste",
+   "tipo": "armadura",
+   "categoria": "peitoral",
+   "tier": 6,
+   "defesa": 23,
+   "conjunto": "conjunto_celeste",
+   "valor_ouro": 1920,
+   "arte_pixellab": null
+  },
+  {
+   "id": "luvas_celeste",
+   "nome": "Luvas Celeste",
+   "tipo": "armadura",
+   "categoria": "luvas",
+   "tier": 6,
+   "defesa": 8,
+   "conjunto": "conjunto_celeste",
+   "valor_ouro": 840,
+   "arte_pixellab": null
+  },
+  {
+   "id": "botas_celeste",
+   "nome": "Botas Celeste",
+   "tipo": "armadura",
+   "categoria": "botas",
+   "tier": 6,
+   "defesa": 9,
+   "conjunto": "conjunto_celeste",
+   "valor_ouro": 840,
+   "arte_pixellab": null
+  },
+  {
+   "id": "escudo_celeste",
+   "nome": "Escudo Celeste",
+   "tipo": "armadura",
+   "categoria": "escudo",
+   "tier": 6,
+   "defesa": 16,
+   "conjunto": "conjunto_celeste",
+   "valor_ouro": 1200,
+   "arte_pixellab": null
+  },
+  {
+   "id": "espada_cronostio",
+   "nome": "Lâmina de Cronóstio",
+   "tipo": "arma",
+   "categoria": "espada",
+   "tier": 7,
+   "ataque": 40,
+   "velocidade": 1.05,
+   "especial": "Eco: 10% de chance de o golpe repetir 0,3 s depois.",
+   "multiplicador_dano": 2.6,
+   "valor_ouro": 2600,
+   "arte_pixellab": null
+  },
+  {
+   "id": "elmo_cronostio",
+   "nome": "Elmo de Cronóstio",
+   "tipo": "armadura",
+   "categoria": "elmo",
+   "tier": 7,
+   "defesa": 12,
+   "conjunto": "conjunto_cronostio",
+   "valor_ouro": 1560,
+   "arte_pixellab": null
+  },
+  {
+   "id": "peitoral_cronostio",
+   "nome": "Peitoral de Cronóstio",
+   "tipo": "armadura",
+   "categoria": "peitoral",
+   "tier": 7,
+   "defesa": 29,
+   "conjunto": "conjunto_cronostio",
+   "valor_ouro": 3120,
+   "arte_pixellab": null
+  },
+  {
+   "id": "luvas_cronostio",
+   "nome": "Luvas de Cronóstio",
+   "tipo": "armadura",
+   "categoria": "luvas",
+   "tier": 7,
+   "defesa": 10,
+   "conjunto": "conjunto_cronostio",
+   "valor_ouro": 1364,
+   "arte_pixellab": null
+  },
+  {
+   "id": "botas_cronostio",
+   "nome": "Botas de Cronóstio",
+   "tipo": "armadura",
+   "categoria": "botas",
+   "tier": 7,
+   "defesa": 11,
+   "conjunto": "conjunto_cronostio",
+   "valor_ouro": 1364,
+   "arte_pixellab": null
+  },
+  {
+   "id": "escudo_cronostio",
+   "nome": "Escudo de Cronóstio",
+   "tipo": "armadura",
+   "categoria": "escudo",
+   "tier": 7,
+   "defesa": 20,
+   "conjunto": "conjunto_cronostio",
+   "valor_ouro": 1950,
+   "arte_pixellab": null
+  },
+  {
+   "id": "espada_adamantium",
+   "nome": "Espada de Adamantium",
+   "tipo": "arma",
+   "categoria": "espada",
+   "tier": 8,
+   "ataque": 50,
+   "velocidade": 1.0,
+   "especial": "Enche a barra ADAMANTIUM 25% mais rápido.",
+   "multiplicador_dano": 3.0,
+   "valor_ouro": 4000,
+   "arte_pixellab": null
+  },
+  {
+   "id": "elmo_adamantium",
+   "nome": "Elmo de Adamantium",
+   "tipo": "armadura",
+   "categoria": "elmo",
+   "tier": 8,
+   "defesa": 15,
+   "conjunto": "conjunto_adamantium",
+   "valor_ouro": 2400,
+   "arte_pixellab": null
+  },
+  {
+   "id": "peitoral_adamantium",
+   "nome": "Peitoral de Adamantium",
+   "tipo": "armadura",
+   "categoria": "peitoral",
+   "tier": 8,
+   "defesa": 35,
+   "conjunto": "conjunto_adamantium",
+   "valor_ouro": 4800,
+   "arte_pixellab": null
+  },
+  {
+   "id": "luvas_adamantium",
+   "nome": "Luvas de Adamantium",
+   "tipo": "armadura",
+   "categoria": "luvas",
+   "tier": 8,
+   "defesa": 12,
+   "conjunto": "conjunto_adamantium",
+   "valor_ouro": 2100,
+   "arte_pixellab": null
+  },
+  {
+   "id": "botas_adamantium",
+   "nome": "Botas de Adamantium",
+   "tipo": "armadura",
+   "categoria": "botas",
+   "tier": 8,
+   "defesa": 13,
+   "conjunto": "conjunto_adamantium",
+   "valor_ouro": 2100,
+   "arte_pixellab": null
+  },
+  {
+   "id": "escudo_adamantium",
+   "nome": "Escudo de Adamantium",
+   "tipo": "armadura",
+   "categoria": "escudo",
+   "tier": 8,
+   "defesa": 25,
+   "conjunto": "conjunto_adamantium",
+   "valor_ouro": 3000,
+   "arte_pixellab": null
+  },
+  {
+   "id": "espada_paradoxal",
+   "nome": "Espada Paradoxal",
+   "tipo": "arma",
+   "categoria": "espada",
+   "tier": 9,
+   "ataque": 62,
+   "velocidade": 1.0,
+   "especial": "Paradoxo: o primeiro golpe fatal recebido a cada 3 min volta 2 s no tempo (vida restaurada ao valor de 2 s antes).",
+   "multiplicador_dano": 3.48,
+   "valor_ouro": 6400,
+   "arte_pixellab": null
+  },
+  {
+   "id": "elmo_paradoxal",
+   "nome": "Elmo Paradoxal",
+   "tipo": "armadura",
+   "categoria": "elmo",
+   "tier": 9,
+   "defesa": 18,
+   "conjunto": "conjunto_paradoxal",
+   "valor_ouro": 3840,
+   "arte_pixellab": null
+  },
+  {
+   "id": "peitoral_paradoxal",
+   "nome": "Peitoral Paradoxal",
+   "tipo": "armadura",
+   "categoria": "peitoral",
+   "tier": 9,
+   "defesa": 43,
+   "conjunto": "conjunto_paradoxal",
+   "valor_ouro": 7680,
+   "arte_pixellab": null
+  },
+  {
+   "id": "luvas_paradoxal",
+   "nome": "Luvas Paradoxal",
+   "tipo": "armadura",
+   "categoria": "luvas",
+   "tier": 9,
+   "defesa": 15,
+   "conjunto": "conjunto_paradoxal",
+   "valor_ouro": 3360,
+   "arte_pixellab": null
+  },
+  {
+   "id": "botas_paradoxal",
+   "nome": "Botas Paradoxal",
+   "tipo": "armadura",
+   "categoria": "botas",
+   "tier": 9,
+   "defesa": 16,
+   "conjunto": "conjunto_paradoxal",
+   "valor_ouro": 3360,
+   "arte_pixellab": null
+  },
+  {
+   "id": "escudo_paradoxal",
+   "nome": "Escudo Paradoxal",
+   "tipo": "armadura",
+   "categoria": "escudo",
+   "tier": 9,
+   "defesa": 30,
+   "conjunto": "conjunto_paradoxal",
+   "valor_ouro": 4800,
+   "arte_pixellab": null
+  },
+  {
+   "id": "adaga_cobre",
+   "nome": "Adaga de Cobre",
+   "tipo": "arma",
+   "categoria": "adaga",
+   "tier": 1,
+   "ataque": 4,
+   "velocidade": 1.25,
+   "especial": "Golpes rápidos: combo 25% mais veloz, alcance curto.",
+   "multiplicador_dano": 1.16,
+   "valor_ouro": 60,
+   "arte_pixellab": null
+  },
+  {
+   "id": "lanca_ferro",
+   "nome": "Lança de Ferro",
+   "tipo": "arma",
+   "categoria": "lanca",
+   "tier": 2,
+   "ataque": 10,
+   "velocidade": 0.9,
+   "especial": "Alcance +40%, arco estreito.",
+   "multiplicador_dano": 1.4,
+   "valor_ouro": 160,
+   "arte_pixellab": null
+  },
+  {
+   "id": "machado_guerra_brasa",
+   "nome": "Machado de Guerra Brasa-Velha",
+   "tipo": "arma",
+   "categoria": "machado",
+   "tier": 4,
+   "ataque": 24,
+   "velocidade": 0.8,
+   "especial": "Golpe pesado quebra postura de orc em 1 acerto.",
+   "multiplicador_dano": 1.96,
+   "valor_ouro": 720,
+   "arte_pixellab": null
+  },
+  {
+   "id": "martelo_torto",
+   "nome": "Martelo Martelo-Torto",
+   "tipo": "arma",
+   "categoria": "martelo",
+   "tier": 4,
+   "ataque": 27,
+   "velocidade": 0.7,
+   "especial": "Assinatura do Krag. Atordoa 0,6 s.",
+   "multiplicador_dano": 2.08,
+   "valor_ouro": 800,
+   "arte_pixellab": null
+  },
+  {
+   "id": "besta_prata",
+   "nome": "Besta de Prata",
+   "tipo": "arma",
+   "categoria": "besta",
+   "tier": 5,
+   "ataque": 18,
+   "velocidade": 1.0,
+   "especial": "Arma à distância; virotes de prata (+50% contra amaldiçoados).",
+   "multiplicador_dano": 1.72,
+   "valor_ouro": 1120,
+   "arte_pixellab": null
+  },
+  {
+   "id": "lanca_celeste",
+   "nome": "Lança Celeste",
+   "tipo": "arma",
+   "categoria": "lanca",
+   "tier": 6,
+   "ataque": 34,
+   "velocidade": 0.95,
+   "especial": "Investida atravessa inimigos.",
+   "multiplicador_dano": 2.36,
+   "valor_ouro": 1640,
+   "arte_pixellab": null
+  },
+  {
+   "id": "pistola_ontem",
+   "nome": "Pistola de Ontem",
+   "tipo": "arma",
+   "categoria": "pistola",
+   "tier": 7,
+   "ataque": 30,
+   "velocidade": 1.1,
+   "especial": "Dispara um projétil que acerta 0,5 s antes de você apertar. Não pergunte.",
+   "multiplicador_dano": 2.2,
+   "valor_ouro": 2800,
+   "arte_pixellab": null
+  },
+  {
+   "id": "martelo_paradoxal",
+   "nome": "Martelo Paradoxal",
+   "tipo": "arma",
+   "categoria": "martelo",
+   "tier": 9,
+   "ataque": 70,
+   "velocidade": 0.7,
+   "especial": "Cada golpe acontece duas vezes, em dois instantes.",
+   "multiplicador_dano": 3.8,
+   "valor_ouro": 7200,
+   "arte_pixellab": null
+  },
+  {
+   "id": "anel_cobre",
+   "nome": "Anel de Cobre",
+   "tipo": "acessorio",
+   "categoria": "acessorio",
+   "tier": 1,
+   "efeito": "+3 de defesa",
+   "valor_ouro": 100,
+   "arte_pixellab": null
+  },
+  {
+   "id": "amuleto_raiz_brasa",
+   "nome": "Amuleto de Raiz-de-Brasa",
+   "tipo": "acessorio",
+   "categoria": "acessorio",
+   "tier": 2,
+   "efeito": "Resistência a fogo +20%",
+   "valor_ouro": 300,
+   "arte_pixellab": null
+  },
+  {
+   "id": "presa_do_cla",
+   "nome": "Colar Presa-do-Clã",
+   "tipo": "acessorio",
+   "categoria": "acessorio",
+   "tier": 4,
+   "efeito": "+6% de dano; os orcs te cumprimentam",
+   "valor_ouro": 600,
+   "arte_pixellab": null
+  },
+  {
+   "id": "colar_prata_lunar",
+   "nome": "Colar de Prata Lunar",
+   "tipo": "acessorio",
+   "categoria": "acessorio",
+   "tier": 5,
+   "efeito": "Imune à maldição da lua; +10% contra amaldiçoados",
+   "valor_ouro": 1200,
+   "arte_pixellab": null
+  },
+  {
+   "id": "anel_ambar",
+   "nome": "Anel de Âmbar Dracônico",
+   "tipo": "acessorio",
+   "categoria": "acessorio",
+   "tier": 6,
+   "efeito": "Resistência a fogo +40%; Ambarion cobra metade do pedágio",
+   "valor_ouro": 1800,
+   "arte_pixellab": null
+  },
+  {
+   "id": "relogio_bolso_cronal",
+   "nome": "Relógio de Bolso Cronal",
+   "tipo": "acessorio",
+   "categoria": "acessorio",
+   "tier": 7,
+   "efeito": "-20% na recarga do dash",
+   "valor_ouro": 3000,
+   "arte_pixellab": null
+  },
+  {
+   "id": "brinco_eco",
+   "nome": "Brinco de Eco",
+   "tipo": "acessorio",
+   "categoria": "acessorio",
+   "tier": 7,
+   "efeito": "+10% de chance de crítico",
+   "valor_ouro": 3000,
+   "arte_pixellab": null
+  },
+  {
+   "id": "coracao_engrenagem",
+   "nome": "Coração-Engrenagem",
+   "tipo": "acessorio",
+   "categoria": "acessorio",
+   "tier": 9,
+   "efeito": "+25 de vida máxima e regeneração lenta",
+   "valor_ouro": 8000,
+   "arte_pixellab": null
+  },
+  {
+   "id": "picareta_cobre",
+   "nome": "Picareta de Cobre",
+   "tipo": "ferramenta",
+   "categoria": "picareta",
+   "tier": 1,
+   "nivel_mineracao": 1,
+   "efeito": "Minera materiais com picareta mínima até 1. Golpes na mina: 3.",
+   "valor_ouro": 40,
+   "arte_pixellab": null
+  },
+  {
+   "id": "picareta_ferro",
+   "nome": "Picareta de Ferro",
+   "tipo": "ferramenta",
+   "categoria": "picareta",
+   "tier": 2,
+   "nivel_mineracao": 2,
+   "efeito": "Minera materiais com picareta mínima até 2. Golpes na mina: 4.",
+   "valor_ouro": 90,
+   "arte_pixellab": null
+  },
+  {
+   "id": "picareta_aco",
+   "nome": "Picareta de Aço",
+   "tipo": "ferramenta",
+   "categoria": "picareta",
+   "tier": 3,
+   "nivel_mineracao": 3,
+   "efeito": "Minera materiais com picareta mínima até 3. Golpes na mina: 5.",
+   "valor_ouro": 180,
+   "arte_pixellab": null
+  },
+  {
+   "id": "picareta_brasa",
+   "nome": "Picareta Ferro-Brasa",
+   "tipo": "ferramenta",
+   "categoria": "picareta",
+   "tier": 4,
+   "nivel_mineracao": 4,
+   "efeito": "Minera materiais com picareta mínima até 4. Golpes na mina: 6.",
+   "valor_ouro": 320,
+   "arte_pixellab": null
+  },
+  {
+   "id": "picareta_prata",
+   "nome": "Picareta de Prata",
+   "tipo": "ferramenta",
+   "categoria": "picareta",
+   "tier": 5,
+   "nivel_mineracao": 5,
+   "efeito": "Minera materiais com picareta mínima até 5. Golpes na mina: 7.",
+   "valor_ouro": 520,
+   "arte_pixellab": null
+  },
+  {
+   "id": "picareta_celeste",
+   "nome": "Picareta Celeste",
+   "tipo": "ferramenta",
+   "categoria": "picareta",
+   "tier": 6,
+   "nivel_mineracao": 6,
+   "efeito": "Minera materiais com picareta mínima até 6. Golpes na mina: 8.",
+   "valor_ouro": 800,
+   "arte_pixellab": null
+  },
+  {
+   "id": "picareta_cronostio",
+   "nome": "Picareta de Cronóstio",
+   "tipo": "ferramenta",
+   "categoria": "picareta",
+   "tier": 7,
+   "nivel_mineracao": 7,
+   "efeito": "Minera materiais com picareta mínima até 7. Golpes na mina: 9.",
+   "valor_ouro": 1300,
+   "arte_pixellab": null
+  },
+  {
+   "id": "machado_cobre",
+   "nome": "Machado de Cobre",
+   "tipo": "ferramenta",
+   "categoria": "machado",
+   "tier": 1,
+   "efeito": "Área 1x3: corta tocos e troncos maiores.",
+   "valor_ouro": 40,
+   "arte_pixellab": null
+  },
+  {
+   "id": "machado_ferro",
+   "nome": "Machado de Ferro",
+   "tipo": "ferramenta",
+   "categoria": "machado",
+   "tier": 2,
+   "efeito": "Área 3x3: corta tocos e troncos maiores.",
+   "valor_ouro": 90,
+   "arte_pixellab": null
+  },
+  {
+   "id": "machado_aco",
+   "nome": "Machado de Aço",
+   "tipo": "ferramenta",
+   "categoria": "machado",
+   "tier": 3,
+   "efeito": "Área 5x5: corta tocos e troncos maiores.",
+   "valor_ouro": 180,
+   "arte_pixellab": null
+  },
+  {
+   "id": "machado_brasa",
+   "nome": "Machado Ferro-Brasa",
+   "tipo": "ferramenta",
+   "categoria": "machado",
+   "tier": 4,
+   "efeito": "Área 5x5 + 1 tronco grande: corta tocos e troncos maiores.",
+   "valor_ouro": 320,
+   "arte_pixellab": null
+  },
+  {
+   "id": "enxada_cobre",
+   "nome": "Enxada de Cobre",
+   "tipo": "ferramenta",
+   "categoria": "enxada",
+   "tier": 1,
+   "efeito": "Área 1x3: ara mais canteiros por golpe.",
+   "valor_ouro": 40,
+   "arte_pixellab": null
+  },
+  {
+   "id": "enxada_ferro",
+   "nome": "Enxada de Ferro",
+   "tipo": "ferramenta",
+   "categoria": "enxada",
+   "tier": 2,
+   "efeito": "Área 3x3: ara mais canteiros por golpe.",
+   "valor_ouro": 90,
+   "arte_pixellab": null
+  },
+  {
+   "id": "enxada_aco",
+   "nome": "Enxada de Aço",
+   "tipo": "ferramenta",
+   "categoria": "enxada",
+   "tier": 3,
+   "efeito": "Área 5x5: ara mais canteiros por golpe.",
+   "valor_ouro": 180,
+   "arte_pixellab": null
+  },
+  {
+   "id": "regador_cobre",
+   "nome": "Regador de Cobre",
+   "tipo": "ferramenta",
+   "categoria": "regador",
+   "tier": 1,
+   "efeito": "Área 1x3: rega mais canteiros.",
+   "valor_ouro": 40,
+   "arte_pixellab": null
+  },
+  {
+   "id": "regador_ferro",
+   "nome": "Regador de Ferro",
+   "tipo": "ferramenta",
+   "categoria": "regador",
+   "tier": 2,
+   "efeito": "Área 3x3: rega mais canteiros.",
+   "valor_ouro": 90,
+   "arte_pixellab": null
+  },
+  {
+   "id": "regador_aco",
+   "nome": "Regador de Aço",
+   "tipo": "ferramenta",
+   "categoria": "regador",
+   "tier": 3,
+   "efeito": "Área 5x5: rega mais canteiros.",
+   "valor_ouro": 180,
+   "arte_pixellab": null
   }
  ]
 }

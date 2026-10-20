@@ -1,0 +1,408 @@
+{
+ "versao": 1,
+ "provisorio": true,
+ "receitas": [
+  {
+   "id": "forjar_capacete_cobre",
+   "nome": "Capacete de cobre",
+   "tipo": "forjar",
+   "nivel": 1,
+   "materiais": [
+    {
+     "id": "lingote_cobre",
+     "qtd": 3
+    }
+   ],
+   "ouro": 90,
+   "nivel_forja": 1,
+   "stats": {
+    "defesa": 2,
+    "ataque": 0
+   },
+   "resultado": "capacete_cobre"
+  },
+  {
+   "id": "forjar_peito_cobre",
+   "nome": "Peitoral de cobre",
+   "tipo": "forjar",
+   "nivel": 1,
+   "materiais": [
+    {
+     "id": "lingote_cobre",
+     "qtd": 5
+    }
+   ],
+   "ouro": 150,
+   "nivel_forja": 1,
+   "stats": {
+    "defesa": 3,
+    "ataque": 0
+   },
+   "resultado": "peito_cobre"
+  },
+  {
+   "id": "forjar_luvas_cobre",
+   "nome": "Luvas de cobre",
+   "tipo": "forjar",
+   "nivel": 1,
+   "materiais": [
+    {
+     "id": "lingote_cobre",
+     "qtd": 2
+    }
+   ],
+   "ouro": 60,
+   "nivel_forja": 1,
+   "stats": {
+    "defesa": 1,
+    "ataque": 0
+   },
+   "resultado": "luvas_cobre"
+  },
+  {
+   "id": "forjar_botas_cobre",
+   "nome": "Botas de cobre",
+   "tipo": "forjar",
+   "nivel": 1,
+   "materiais": [
+    {
+     "id": "lingote_cobre",
+     "qtd": 2
+    }
+   ],
+   "ouro": 60,
+   "nivel_forja": 1,
+   "stats": {
+    "defesa": 1,
+    "ataque": 0
+   },
+   "resultado": "botas_cobre"
+  },
+  {
+   "id": "forjar_escudo_cobre",
+   "nome": "Escudo de cobre",
+   "tipo": "forjar",
+   "nivel": 1,
+   "materiais": [
+    {
+     "id": "lingote_cobre",
+     "qtd": 4
+    }
+   ],
+   "ouro": 120,
+   "nivel_forja": 1,
+   "stats": {
+    "defesa": 2,
+    "ataque": 0
+   },
+   "resultado": "escudo_cobre"
+  },
+  {
+   "id": "forjar_espada_cobre",
+   "nome": "Espada de cobre",
+   "tipo": "forjar",
+   "nivel": 1,
+   "materiais": [
+    {
+     "id": "lingote_cobre",
+     "qtd": 3
+    }
+   ],
+   "ouro": 90,
+   "nivel_forja": 1,
+   "stats": {
+    "defesa": 0,
+    "ataque": 3
+   },
+   "resultado": "espada_cobre"
+  },
+  {
+   "id": "fundir_cobre",
+   "nome": "Lingote de cobre",
+   "tipo": "fundir",
+   "nivel": 1,
+   "materiais": [
+    {
+     "id": "minerio_cobre",
+     "qtd": 3
+    },
+    {
+     "id": "carvao",
+     "qtd": 1
+    }
+   ],
+   "ouro": 5,
+   "nivel_forja": 1,
+   "stats": {},
+   "resultado": "lingote_cobre"
+  },
+  {
+   "id": "forjar_capacete_ferro",
+   "nome": "Capacete de ferro",
+   "tipo": "forjar",
+   "nivel": 2,
+   "materiais": [
+    {
+     "id": "lingote_ferro",
+     "qtd": 3
+    }
+   ],
+   "ouro": 180,
+   "nivel_forja": 2,
+   "stats": {
+    "defesa": 4,
+    "ataque": 0
+   },
+   "resultado": "capacete_ferro"
+  },
+  {
+   "id": "forjar_peito_ferro",
+   "nome": "Peitoral de ferro",
+   "tipo": "forjar",
+   "nivel": 2,
+   "materiais": [
+    {
+     "id": "lingote_ferro",
+     "qtd": 5
+    }
+   ],
+   "ouro": 300,
+   "nivel_forja": 2,
+   "stats": {
+    "defesa": 6,
+    "ataque": 0
+   },
+   "resultado": "peito_ferro"
+  },
+  {
+   "id": "forjar_luvas_ferro",
+   "nome": "Luvas de ferro",
+   "tipo": "forjar",
+   "nivel": 2,
+   "materiais": [
+    {
+     "id": "lingote_ferro",
+     "qtd": 2
+    }
+   ],
+   "ouro": 120,
+   "nivel_forja": 2,
+   "stats": {
+    "defesa": 2,
+    "ataque": 0
+   },
+   "resultado": "luvas_ferro"
+  },
+  {
+   "id": "forjar_botas_ferro",
+   "nome": "Botas de ferro",
+   "tipo": "forjar",
+   "nivel": 2,
+   "materiais": [
+    {
+     "id": "lingote_ferro",
+     "qtd": 2
+    }
+   ],
+   "ouro": 120,
+   "nivel_forja": 2,
+   "stats": {
+    "defesa": 2,
+    "ataque": 0
+   },
+   "resultado": "botas_ferro"
+  },
+  {
+   "id": "forjar_escudo_ferro",
+   "nome": "Escudo de ferro",
+   "tipo": "forjar",
+   "nivel": 2,
+   "materiais": [
+    {
+     "id": "lingote_ferro",
+     "qtd": 4
+    }
+   ],
+   "ouro": 240,
+   "nivel_forja": 2,
+   "stats": {
+    "defesa": 4,
+    "ataque": 0
+   },
+   "resultado": "escudo_ferro"
+  },
+  {
+   "id": "forjar_espada_ferro",
+   "nome": "Espada de ferro",
+   "tipo": "forjar",
+   "nivel": 2,
+   "materiais": [
+    {
+     "id": "lingote_ferro",
+     "qtd": 3
+    }
+   ],
+   "ouro": 180,
+   "nivel_forja": 2,
+   "stats": {
+    "defesa": 0,
+    "ataque": 6
+   },
+   "resultado": "espada_ferro"
+  },
+  {
+   "id": "fundir_ferro",
+   "nome": "Lingote de ferro",
+   "tipo": "fundir",
+   "nivel": 2,
+   "materiais": [
+    {
+     "id": "minerio_ferro",
+     "qtd": 3
+    },
+    {
+     "id": "carvao",
+     "qtd": 1
+    }
+   ],
+   "ouro": 10,
+   "nivel_forja": 2,
+   "stats": {},
+   "resultado": "lingote_ferro"
+  },
+  {
+   "id": "forjar_capacete_prata",
+   "nome": "Capacete de prata de túmulo",
+   "tipo": "forjar",
+   "nivel": 3,
+   "materiais": [
+    {
+     "id": "lingote_prata",
+     "qtd": 3
+    }
+   ],
+   "ouro": 270,
+   "nivel_forja": 3,
+   "stats": {
+    "defesa": 6,
+    "ataque": 0
+   },
+   "resultado": "capacete_prata"
+  },
+  {
+   "id": "forjar_peito_prata",
+   "nome": "Peitoral de prata de túmulo",
+   "tipo": "forjar",
+   "nivel": 3,
+   "materiais": [
+    {
+     "id": "lingote_prata",
+     "qtd": 5
+    }
+   ],
+   "ouro": 450,
+   "nivel_forja": 3,
+   "stats": {
+    "defesa": 9,
+    "ataque": 0
+   },
+   "resultado": "peito_prata"
+  },
+  {
+   "id": "forjar_luvas_prata",
+   "nome": "Luvas de prata de túmulo",
+   "tipo": "forjar",
+   "nivel": 3,
+   "materiais": [
+    {
+     "id": "lingote_prata",
+     "qtd": 2
+    }
+   ],
+   "ouro": 180,
+   "nivel_forja": 3,
+   "stats": {
+    "defesa": 3,
+    "ataque": 0
+   },
+   "resultado": "luvas_prata"
+  },
+  {
+   "id": "forjar_botas_prata",
+   "nome": "Botas de prata de túmulo",
+   "tipo": "forjar",
+   "nivel": 3,
+   "materiais": [
+    {
+     "id": "lingote_prata",
+     "qtd": 2
+    }
+   ],
+   "ouro": 180,
+   "nivel_forja": 3,
+   "stats": {
+    "defesa": 3,
+    "ataque": 0
+   },
+   "resultado": "botas_prata"
+  },
+  {
+   "id": "forjar_escudo_prata",
+   "nome": "Escudo de prata de túmulo",
+   "tipo": "forjar",
+   "nivel": 3,
+   "materiais": [
+    {
+     "id": "lingote_prata",
+     "qtd": 4
+    }
+   ],
+   "ouro": 360,
+   "nivel_forja": 3,
+   "stats": {
+    "defesa": 6,
+    "ataque": 0
+   },
+   "resultado": "escudo_prata"
+  },
+  {
+   "id": "forjar_espada_prata",
+   "nome": "Espada de prata de túmulo",
+   "tipo": "forjar",
+   "nivel": 3,
+   "materiais": [
+    {
+     "id": "lingote_prata",
+     "qtd": 3
+    }
+   ],
+   "ouro": 270,
+   "nivel_forja": 3,
+   "stats": {
+    "defesa": 0,
+    "ataque": 9
+   },
+   "resultado": "espada_prata"
+  },
+  {
+   "id": "fundir_prata",
+   "nome": "Lingote de prata de túmulo",
+   "tipo": "fundir",
+   "nivel": 3,
+   "materiais": [
+    {
+     "id": "minerio_prata",
+     "qtd": 3
+    },
+    {
+     "id": "carvao",
+     "qtd": 1
+    }
+   ],
+   "ouro": 15,
+   "nivel_forja": 3,
+   "stats": {},
+   "resultado": "lingote_prata"
+  }
+ ]
+}

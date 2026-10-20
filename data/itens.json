@@ -360,13 +360,13 @@
    "nome": "Insígnia da guarda",
    "cat": "reliquia",
    "preco": 100,
-   "desc": "Prova de serviço à Guardiã Bruna."
+   "desc": "Prova de serviço à guardiã Brida Ferrolho."
   },
   "carta_entrega": {
    "nome": "Carta para entregar",
    "cat": "missao",
    "preco": 0,
-   "desc": "A Nina pediu para levar ao Capitão Marina."
+   "desc": "O Pipo pediu para levar ao Capitão Nuvem."
   }
  }
 }

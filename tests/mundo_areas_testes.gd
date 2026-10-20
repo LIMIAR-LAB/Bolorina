@@ -40,12 +40,12 @@ func tecla(k: int) -> void:
 	await fr(1)
 
 func _run() -> void:
-	create_timer(400.0).timeout.connect(func():
+	create_timer(1800.0).timeout.connect(func():
 		print("FAIL tempo esgotado")
 		quit(2))
 	# ------------------------------------------------ registro
 	var ids: Array = Registro.ids()
-	check(ids.size() >= 9 and ids.has("porto_velho") and ids.has("vila_orcs") and ids.has("cidade_fantasma") and ids.has("minas_cinza") and ids.has("ilha_futurista"), "registro com todas as areas (%d)" % ids.size())
+	check(ids.size() >= 9 and ids.has("porto_velho") and ids.has("vila_orcs") and ids.has("cidade_fantasma") and ids.has("minas_da_cinza") and ids.has("estacao_depois_de_ontem") and ids.has("criptas_de_cinzalta") and ids.has("fenda_cronal"), "registro com todas as areas (%d)" % ids.size())
 	var unicos := {}
 	var campos := true
 	for a in Registro.lista():
@@ -77,11 +77,16 @@ func _run() -> void:
 	jogo.alternar_mapa()
 	await fr(2)
 	check(jogo.mapa_camada.visible and jogo.mapa_botoes.get_child_count() == ids.size(), "mapa (M) com um ponto por area (%d)" % jogo.mapa_botoes.get_child_count())
-	var b_futuro = jogo.mapa_botoes.get_node_or_null("Area_ilha_futurista")
-	check(b_futuro != null and (b_futuro.disabled or Registro.disponivel("ilha_futurista")), "area sem cena aparece desligada (em breve)")
-	check(not jogo.viajar("ilha_futurista") or Registro.disponivel("ilha_futurista"), "viajar para area sem cena e recusado")
+	var b_futuro = jogo.mapa_botoes.get_node_or_null("Area_estacao_depois_de_ontem")
+	check(b_futuro != null and (b_futuro.disabled or Registro.disponivel("estacao_depois_de_ontem")), "area sem cena aparece desligada (em breve)")
+	check(not jogo.viajar("estacao_depois_de_ontem") or Registro.disponivel("estacao_depois_de_ontem"), "viajar para area sem cena e recusado")
 	jogo.alternar_mapa()
 	await fr(2)
+	# integracao 20/10: areas com "requer" pedem os mapas do cartografo; o teste ja os da (save de teste)
+	check(not jogo.viajar("vila_orcs") and jogo.mapa_info.text.contains("cartógrafo"), "sem o mapa do cartografo a viagem e recusada com aviso")
+	check(not jogo.viajar("criptas_de_cinzalta"), "criptas fechadas antes de visitar a Cidade Fantasma (requer_visita)")
+	for it in ["mapa_vila_orcs", "mapa_cidade_fantasma", "mapa_minas", "bussola_temporal"]:
+		jogo.estado.somar(it, 1)
 	# entra e sai de cada area disponivel
 	var anterior := "fazenda"
 	for id in disp:

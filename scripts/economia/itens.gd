@@ -3,7 +3,8 @@ extends RefCounted
 ## Icone: art/ui/icones/<id>.png (arte da Bolorina) -> icones antigos (equipamento/fazenda) -> quadrado da cor da categoria.
 const ARQUIVO := "res://data/itens.json"
 const Equip = preload("res://scripts/ilha/equipamento.gd")
-const PASTAS_ICONE := ["res://art/ui/icones/", "res://art/ui/icones_equip/", "res://art/ui/icones_fazenda/"]
+## integracao 20/10: 16x16 em art/ui/icones (catalogo); os 32x32 da forja da Bolorina ficam em art/ui/icones_forja
+const PASTAS_ICONE := ["res://art/ui/icones/", "res://art/ui/icones_equip/", "res://art/ui/icones_fazenda/", "res://art/ui/icones_forja/"]
 const COR_CAT := {"semente": Color("7fb04a"), "colheita": Color("e39a2e"), "peixe": Color("5fa8d8"), "material": Color("a08060"),
 	"pesca": Color("4a7ab0"), "pocao": Color("c060c0"), "comida": Color("e0b060"), "minerio": Color("8a7a70"), "lingote": Color("c8b8a0"),
 	"ferramenta": Color("707070"), "mapa": Color("e8d8a0"), "roupa": Color("d06070"), "reliquia": Color("b0f0ff"), "pet": Color("f0a060"),
@@ -18,7 +19,7 @@ static func catalogo() -> Dictionary:
 	return _cat
 
 static func existe(id: String) -> bool:
-	return catalogo().has(id) or Equip.ITENS.has(id)
+	return catalogo().has(id) or Equip.ITENS.has(id) or forja_info().has(id)
 
 static func info(id: String) -> Dictionary:
 	if catalogo().has(id):
@@ -26,7 +27,24 @@ static func info(id: String) -> Dictionary:
 	if Equip.ITENS.has(id):
 		var e: Dictionary = Equip.ITENS[id]
 		return {"nome": e.nome, "cat": "equip", "preco": int(e.get("preco", 50 + 40 * int(e.get("defesa", 0)) + 40 * int(e.get("ataque", 0)))), "desc": e.get("desc", "")}
+	if forja_info().has(id):
+		return forja_info()[id]
 	return {"nome": id.capitalize(), "cat": "material", "preco": 1, "desc": ""}
+
+## integracao 20/10: nomes/precos dos materiais e pecas da forja da Bolorina (data/forja) que nao estao no catalogo
+static var _forja := {}
+static func forja_info() -> Dictionary:
+	if _forja.is_empty():
+		var cats := {"minerio": "minerio", "lingote": "lingote", "liga": "lingote", "arma": "equip", "armadura": "equip", "ferramenta": "ferramenta", "acessorio": "equip"}
+		for arq in ["res://data/forja/materiais.json", "res://data/forja/itens.json"]:
+			var d = JSON.parse_string(FileAccess.get_file_as_string(arq))
+			if not d is Dictionary:
+				continue
+			for k in ["materiais", "itens"]:
+				for it in d.get(k, []):
+					_forja[String(it.id)] = {"nome": String(it.get("nome", it.id)), "cat": String(cats.get(String(it.get("tipo", "")), "material")),
+						"preco": int(it.get("valor_ouro", 1)), "desc": String(it.get("especial", it.get("nota", "")))}
+	return _forja
 
 static func nome(id: String) -> String:
 	return String(info(id).nome)

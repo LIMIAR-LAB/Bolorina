@@ -1,7 +1,7 @@
 {
  "id": "forja",
- "nome": "Forja da Helena",
- "npc": "helena",
+ "nome": "Ferraria do Porto (Gaspar Bigorna)",
+ "npc": "ferreiro",
  "compra": [
   {
    "item": "carvao",
@@ -19,6 +19,18 @@
    "item": "picareta_ferro",
    "preco": 250,
    "estoque": 1,
+   "qtd": 1
+  },
+  {
+   "item": "madeira",
+   "preco": 4,
+   "estoque": 40,
+   "qtd": 1
+  },
+  {
+   "item": "couro",
+   "preco": 12,
+   "estoque": 20,
    "qtd": 1
   }
  ],
@@ -41,5 +53,7 @@
    "desc": "Lingotes + ouro viram peças."
   }
  ],
- "forja": true
+ "forja": true,
+ "forja_id": "ferraria_porto",
+ "nota_integracao": "20/10: a forja da economia usa os dados da Bolorina (data/forja); so as receitas da Ferraria do Porto aparecem neste balcao."
 }

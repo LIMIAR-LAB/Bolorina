@@ -6,7 +6,7 @@ extends Node3D
 const Itens = preload("res://scripts/economia/itens.gd")
 const DADOS := "res://data/minerios.json"
 const RAIO := 1.6
-const COR := {"cobre": Color("b8622e"), "ferro": Color("7c8494"), "prata": Color("c8d4ec")}
+const COR := {"cobre": Color("b8622e"), "ferro": Color("7c8494"), "prata": Color("c8d4ec"), "prata_tumular": Color("c8d4ec")}
 var g                      # gerenciador (jogo_ilha)
 var area_id := ""
 var nos: Array = []        # {no, metal, chave, rotulo}
@@ -111,8 +111,8 @@ func minerar(i: int) -> String:
 	if e == null or i < 0 or i >= nos.size() or not disponivel(i):
 		return ""
 	var metal := String(nos[i].metal)
-	if metal == "prata" and e.qtd("picareta_ferro") <= 0:
-		ultima = "A prata de túmulo só sai com a picareta de ferro (Helena / Seu Gaspar)."
+	if metal in ["prata", "prata_tumular"] and e.qtd("picareta_ferro") <= 0:
+		ultima = "A prata de túmulo só sai com a picareta de ferro (Gaspar Bigorna, na Ferraria do Porto, ou Seu Tião)."
 		return ultima
 	var qtd := 1 + int((int(e.dia) + i) % 2 == 0)
 	e.somar("minerio_" + metal, qtd)

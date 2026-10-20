@@ -16,7 +16,7 @@ const BOATOS := [
 ]
 const DICAS_MINA := [
 	"Cobre sai na pedreira e nas minas rasas. Ferro, mais fundo. Prata de túmulo, só na Cidade Fantasma.",
-	"Leve carvão: sem carvão a Helena não funde nada.",
+	"Leve carvão: sem carvão o Gaspar Bigorna não funde nada.",
 	"Três minérios e um carvão fazem um lingote. Matemática de mineiro.",
 	"Picareta de ferro quebra minério de prata. A comum só arranha.",
 ]
@@ -150,10 +150,10 @@ static func executar(estado, g, loja: String, sid: String) -> String:
 			return DICAS_MINA[(int(estado.dia) + _contar(ex, "dicas")) % DICAS_MINA.size()]
 		"pegar_entrega":
 			if ex.has("entrega"):
-				return "Você já tem uma carta para a %s." % String(ex.entrega.nome)
-			ex["entrega"] = {"para": "marina", "nome": "Capitã Marina", "entregue": false}
+				return "Você já tem uma carta para %s." % String(ex.entrega.nome)
+			ex["entrega"] = {"para": "capitao", "nome": "o Capitão Nuvem", "entregue": false}
 			Itens.dar(estado, "carta_entrega", 1)
-			return "Leve esta carta para a Capitã Marina, na doca. Depois volte aqui!"
+			return "Leve esta carta para o Capitão Nuvem, na doca do dirigível. Depois volte aqui!"
 		"concluir_entrega":
 			if not ex.has("entrega"):
 				return "Sem entrega no momento."
@@ -206,5 +206,5 @@ static func ao_falar(estado, npc_id: String) -> String:
 	if ex.has("entrega") and String(ex.entrega.para) == npc_id and not bool(ex.entrega.entregue):
 		Itens.tirar(estado, "carta_entrega", 1)
 		ex.entrega["entregue"] = true
-		return "Você entregou a carta da Nina."
+		return "Você entregou a carta do Pipo."
 	return ""
