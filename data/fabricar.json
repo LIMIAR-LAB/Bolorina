@@ -1,0 +1,13 @@
+{
+ "versao": 1,
+ "nota": "Receitas da aba Fabricar do inventario (scripts/ilha/inventario.gd). Balanço: a fazenda tem ~85 de madeira no total (30 galhos x1, 9 tocos x3, 7 árvores x4) e ela não volta a crescer; a forja também pede madeira. Por isso o baú custa 25 de madeira, e não 50.",
+ "receitas": {
+  "bau": {
+   "nome": "Baú de madeira",
+   "resultado": "bau",
+   "qtd": 1,
+   "ingredientes": {"madeira": 25},
+   "desc": "36 espaços para guardar itens. Coloque na fazenda ou dentro de casa; recolha de volta quando estiver vazio."
+  }
+ }
+}
