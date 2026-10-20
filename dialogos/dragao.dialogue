@@ -1,0 +1,23 @@
+# Ambarion, dragao negociador, guardiao da Rota do Ambar (rota aerea entre as ilhas).
+~ start
+if tem("dragao_conheceu")
+	=> de_novo
+Ambarion: Pequena criatura sem asas. Você está na minha rota.
+Ambarion: Esta é a Rota do Âmbar. Há mil anos eu cobro pedágio de quem voa por aqui. Antes era ouro. Hoje aceito também queijo.
+- Quanto custa passar?
+	Ambarion: Para você? Uma história que eu nunca ouvi. Ou três rodas de queijo curado.
+	Ambarion: Dragões são muito ricos e muito entediados. É uma combinação perigosa.
+	$> marcar("dragao_pedagio_conhecido")
+- E se eu me recusar a pagar?
+	Ambarion: Então eu como seu dirigível. Nada pessoal. É contabilidade.
+	Ambarion: Mas gosto da coragem. Coragem é o tempero que falta na maioria dos viajantes.
+	$> confiar("dragao", 1)
+Ambarion: Ah, uma coisa. Existe uma versão de mim em outra linha do tempo que virou vegetariano. Se encontrar com ele, não diga que nos parecemos.
+$> marcar("dragao_conheceu")
+=> END
+
+~ de_novo
+% Ambarion: Voltou com o pedágio? Ou com uma desculpa criativa? Aceito as duas, se forem boas.
+% Ambarion: O capitão da Andorinha ainda me deve uma pena. Eu sei que ele usou para pagar uma sopa.
+% Ambarion: Quando o Coração do Tempo for consertado, eu finalmente vou poder tirar férias. Mil anos de turno é muito.
+=> END

@@ -1,0 +1,22 @@
+{
+ "id": "banco",
+ "nome": "Banco das Cinzas",
+ "npc": "cinira",
+ "compra": [],
+ "vende_categorias": [],
+ "taxa_venda": 0.5,
+ "servicos": [
+  {
+   "id": "depositar",
+   "nome": "Depositar 100 ouro no cofre",
+   "preco": 0,
+   "desc": "Rende 1% ao dia."
+  },
+  {
+   "id": "sacar",
+   "nome": "Sacar tudo do cofre",
+   "preco": 0,
+   "desc": ""
+  }
+ ]
+}

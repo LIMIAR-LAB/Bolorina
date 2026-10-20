@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=18
+type="Resource"
+uid="uid://dc1m2ll4wx5uv"
+path="res://.godot/imported/arena.dialogue-d826fd6e93d31e98d06411f006b88a2c.tres"
+
+[deps]
+
+source_file="res://dialogos/missao_atrasada/arena.dialogue"
+dest_files=["res://.godot/imported/arena.dialogue-d826fd6e93d31e98d06411f006b88a2c.tres"]
+
+[params]
+
+defaults=true

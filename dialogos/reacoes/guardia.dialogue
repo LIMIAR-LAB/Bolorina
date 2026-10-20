@@ -1,0 +1,40 @@
+# Brida Ferrolho: rotina e memória da cidade (PROPOSTA).
+
+~ manha
+% Brida Ferrolho: Revisando o mural. Pedido novo da Dona Cecília, a couve dela está ameaçando a vizinha. Formalmente.
+% Brida Ferrolho: Bom dia. Isso foi um cumprimento. Estou praticando.
+=> END
+
+~ tarde
+% Brida Ferrolho: Patrulha no cais. Os ratos de cinza estão organizados. Têm até um líder. Ele usa chapéu.
+% Brida Ferrolho: Conferi a folha de pagamento do porto. Dois Jucas, um salário cada. O regulamento não proíbe. Eu queria que proibisse.
+=> END
+
+~ noite
+% Brida Ferrolho: Portões fechando. Conto as lanternas acesas. Pelo Contrato de Penumbra, não podem passar de doze. Hoje são treze. Sempre a da Rosalva.
+% Brida Ferrolho: De noite eu ouço tudo. O sino, o vento, o quarto 3 da Estalagem. Principalmente o quarto 3.
+=> END
+
+~ arma_nova
+Brida Ferrolho: Esse facão bate duas vezes. Tem licença pra golpe repetido? Formulário 12-R.
+Brida Ferrolho: Isso foi uma piada. O formulário 12-R não existe. Ainda. Não me dá ideia.
+$> marcar("reacao_guardia_arma_vista")
+=> END
+
+~ voltou_expedicao
+Brida Ferrolho: Voltou das minas. Anotado. Primeira expedição, retorno com vida, sem ocorrências. Gosto de relatório sem ocorrências.
+Brida Ferrolho: Vou parar de te chamar de "a forasteira". Agora você é "a forasteira que volta". É uma promoção.
+$> marcar("reacao_guardia_voltou")
+=> END
+
+~ guindaste_usado
+Brida Ferrolho: O beco do armazém abriu. Sabe o que tinha atrás das caixas? Os ratos de cinza. E o líder deles. De chapéu.
+Brida Ferrolho: O chapéu era do Capitão. A gaivota tinha deixado lá. O caso está encerrado. Que dia.
+$> marcar("reacao_guardia_guindaste_usado")
+=> END
+
+~ pos_missao
+% Brida Ferrolho: Carimbo novo. "RECEBIDO ANTES DE ENVIADO." Tive que criar. A Repartição mandou outra carta. Para depois de amanhã.
+% Brida Ferrolho: Formulário 7-B atualizado. Agora tem um campo "data em que isso vai ter acontecido". Ninguém sabe preencher. Nem eu.
+% Brida Ferrolho: Por que o relógio da Repartição nunca atrasa? Porque ele já chegou antes. Essa foi boa. Essa foi boa, admite.
+=> END

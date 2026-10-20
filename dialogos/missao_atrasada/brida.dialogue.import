@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=18
+type="Resource"
+uid="uid://bsbdc3062gmxs"
+path="res://.godot/imported/brida.dialogue-0faaf42cbc284e2fbfe518441d2862f8.tres"
+
+[deps]
+
+source_file="res://dialogos/missao_atrasada/brida.dialogue"
+dest_files=["res://.godot/imported/brida.dialogue-0faaf42cbc284e2fbfe518441d2862f8.tres"]
+
+[params]
+
+defaults=true

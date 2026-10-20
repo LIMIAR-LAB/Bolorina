@@ -1,0 +1,246 @@
+{
+ "versao": 1,
+ "provisorio": true,
+ "itens": [
+  {
+   "id": "capacete_cobre",
+   "nome": "Capacete de cobre",
+   "nivel": 1,
+   "slot": "cabeca",
+   "stats": {
+    "defesa": 2,
+    "ataque": 0
+   },
+   "material": "cobre",
+   "camadas": [
+    "capacete_cobre"
+   ]
+  },
+  {
+   "id": "peito_cobre",
+   "nome": "Peitoral de cobre",
+   "nivel": 1,
+   "slot": "corpo",
+   "stats": {
+    "defesa": 3,
+    "ataque": 0
+   },
+   "material": "cobre",
+   "camadas": [
+    "peito_cobre"
+   ]
+  },
+  {
+   "id": "luvas_cobre",
+   "nome": "Luvas de cobre",
+   "nivel": 1,
+   "slot": "maos",
+   "stats": {
+    "defesa": 1,
+    "ataque": 0
+   },
+   "material": "cobre",
+   "camadas": [
+    "luvas_cobre"
+   ]
+  },
+  {
+   "id": "botas_cobre",
+   "nome": "Botas de cobre",
+   "nivel": 1,
+   "slot": "pes",
+   "stats": {
+    "defesa": 1,
+    "ataque": 0
+   },
+   "material": "cobre",
+   "camadas": [
+    "botas_cobre"
+   ]
+  },
+  {
+   "id": "escudo_cobre",
+   "nome": "Escudo de cobre",
+   "nivel": 1,
+   "slot": "escudo",
+   "stats": {
+    "defesa": 2,
+    "ataque": 0
+   },
+   "material": "cobre",
+   "camadas": []
+  },
+  {
+   "id": "espada_cobre",
+   "nome": "Espada de cobre",
+   "nivel": 1,
+   "slot": "arma",
+   "stats": {
+    "defesa": 0,
+    "ataque": 3
+   },
+   "material": "cobre",
+   "camadas": []
+  },
+  {
+   "id": "capacete_ferro",
+   "nome": "Capacete de ferro",
+   "nivel": 2,
+   "slot": "cabeca",
+   "stats": {
+    "defesa": 4,
+    "ataque": 0
+   },
+   "material": "ferro",
+   "camadas": [
+    "capacete_ferro"
+   ]
+  },
+  {
+   "id": "peito_ferro",
+   "nome": "Peitoral de ferro",
+   "nivel": 2,
+   "slot": "corpo",
+   "stats": {
+    "defesa": 6,
+    "ataque": 0
+   },
+   "material": "ferro",
+   "camadas": [
+    "peito_ferro"
+   ]
+  },
+  {
+   "id": "luvas_ferro",
+   "nome": "Luvas de ferro",
+   "nivel": 2,
+   "slot": "maos",
+   "stats": {
+    "defesa": 2,
+    "ataque": 0
+   },
+   "material": "ferro",
+   "camadas": [
+    "luvas_ferro"
+   ]
+  },
+  {
+   "id": "botas_ferro",
+   "nome": "Botas de ferro",
+   "nivel": 2,
+   "slot": "pes",
+   "stats": {
+    "defesa": 2,
+    "ataque": 0
+   },
+   "material": "ferro",
+   "camadas": [
+    "botas_ferro"
+   ]
+  },
+  {
+   "id": "escudo_ferro",
+   "nome": "Escudo de ferro",
+   "nivel": 2,
+   "slot": "escudo",
+   "stats": {
+    "defesa": 4,
+    "ataque": 0
+   },
+   "material": "ferro",
+   "camadas": []
+  },
+  {
+   "id": "espada_ferro",
+   "nome": "Espada de ferro",
+   "nivel": 2,
+   "slot": "arma",
+   "stats": {
+    "defesa": 0,
+    "ataque": 6
+   },
+   "material": "ferro",
+   "camadas": []
+  },
+  {
+   "id": "capacete_prata",
+   "nome": "Capacete de prata de túmulo",
+   "nivel": 3,
+   "slot": "cabeca",
+   "stats": {
+    "defesa": 6,
+    "ataque": 0
+   },
+   "material": "prata",
+   "camadas": [
+    "capacete_prata"
+   ]
+  },
+  {
+   "id": "peito_prata",
+   "nome": "Peitoral de prata de túmulo",
+   "nivel": 3,
+   "slot": "corpo",
+   "stats": {
+    "defesa": 9,
+    "ataque": 0
+   },
+   "material": "prata",
+   "camadas": [
+    "peito_prata"
+   ]
+  },
+  {
+   "id": "luvas_prata",
+   "nome": "Luvas de prata de túmulo",
+   "nivel": 3,
+   "slot": "maos",
+   "stats": {
+    "defesa": 3,
+    "ataque": 0
+   },
+   "material": "prata",
+   "camadas": [
+    "luvas_prata"
+   ]
+  },
+  {
+   "id": "botas_prata",
+   "nome": "Botas de prata de túmulo",
+   "nivel": 3,
+   "slot": "pes",
+   "stats": {
+    "defesa": 3,
+    "ataque": 0
+   },
+   "material": "prata",
+   "camadas": [
+    "botas_prata"
+   ]
+  },
+  {
+   "id": "escudo_prata",
+   "nome": "Escudo de prata de túmulo",
+   "nivel": 3,
+   "slot": "escudo",
+   "stats": {
+    "defesa": 6,
+    "ataque": 0
+   },
+   "material": "prata",
+   "camadas": []
+  },
+  {
+   "id": "espada_prata",
+   "nome": "Espada de prata de túmulo",
+   "nivel": 3,
+   "slot": "arma",
+   "stats": {
+    "defesa": 0,
+    "ataque": 9
+   },
+   "material": "prata",
+   "camadas": []
+  }
+ ]
+}

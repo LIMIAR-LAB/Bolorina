@@ -1,0 +1,315 @@
+{
+ "versao": 1,
+ "nota": "Moradores da Ilha das Cinzas. 'ativo': aparece hoje na vila (vila_npcs.gd). 'agenda' e 'casa' sao o plano da vila maior (docs/VILA_MAIOR.md); horas em formato 24h.",
+ "moradores": [
+  {
+   "id": "armando",
+   "nome": "Sr. Armando",
+   "papel": "lojista de sementes",
+   "distrito": "lojas",
+   "casa": "Armazem Armando",
+   "personagem": "original_guardian",
+   "ativo": true,
+   "pos": [
+    2.6,
+    -6.6
+   ],
+   "loja": true,
+   "agenda": [
+    {
+     "h": 8,
+     "lugar": "armazem"
+    },
+    {
+     "h": 18,
+     "lugar": "taverna"
+    },
+    {
+     "h": 21,
+     "lugar": "casa"
+    }
+   ],
+   "falas": [
+    "Bom dia! Sementes frescas, racao para galinhas... e compro tudo que voce colher.",
+    "Dizem que a Truta dourada so morde de vez em quando. Paciencia!"
+   ]
+  },
+  {
+   "id": "lurdes",
+   "nome": "Dona Lurdes",
+   "papel": "moradora, ex-pescadora",
+   "distrito": "residencial",
+   "casa": "Casa do Poco",
+   "personagem": "original_villager",
+   "ativo": true,
+   "pos": [
+    -1.4,
+    -2.6
+   ],
+   "agenda": [
+    {
+     "h": 7,
+     "lugar": "poco"
+    },
+    {
+     "h": 12,
+     "lugar": "praca"
+    },
+    {
+     "h": 19,
+     "lugar": "casa"
+    }
+   ],
+   "falas": [
+    "Ah, a menina da fazenda! Seu avo cuidava daquelas galinhas como se fossem netas.",
+    "Um carinho por dia e racao no cocho: galinha feliz bota mais ovo.",
+    "No lago da fazenda, espere o '!' e puxe na hora. Nem antes, nem depois."
+   ]
+  },
+  {
+   "id": "tobias",
+   "nome": "Tobias",
+   "papel": "guia das trilhas",
+   "distrito": "borda das ruinas",
+   "casa": "Cabana do Guia",
+   "personagem": "original_gardener",
+   "ativo": true,
+   "pos": [
+    -7.6,
+    -15.6
+   ],
+   "agenda": [
+    {
+     "h": 6,
+     "lugar": "trilha das ruinas"
+    },
+    {
+     "h": 17,
+     "lugar": "praca"
+    },
+    {
+     "h": 22,
+     "lugar": "casa"
+    }
+   ],
+   "falas": [
+    "Ao norte, entre os pilares, ficam as ruinas antigas. A beira do abismo e traicoeira: siga as pedras.",
+    "Entre os pilares das ruinas, ao norte, ha uma escada para salas que mudam de lugar: a masmorra. A placa 'Ruinas >' a leste leva a arena dos orcs.",
+    "Ao sul fica a sua fazenda. Mais longe, na floresta, vive o lenhador Bento; e no penhasco, a eremita Iara."
+   ]
+  },
+  {
+   "id": "mira",
+   "nome": "Mira",
+   "papel": "jardineira (ja na vila)",
+   "distrito": "praca",
+   "casa": "Casa da Horta",
+   "personagem": "original_mira_v6",
+   "ativo": false,
+   "agenda": [
+    {
+     "h": 7,
+     "lugar": "canteiros"
+    },
+    {
+     "h": 13,
+     "lugar": "praca"
+    },
+    {
+     "h": 20,
+     "lugar": "casa"
+    }
+   ],
+   "falas": [
+    "Cada muda precisa de espaco e agua."
+   ]
+  },
+  {
+   "id": "caio",
+   "nome": "Caio",
+   "papel": "taverneiro",
+   "distrito": "praca",
+   "casa": "Taverna da Brasa",
+   "personagem": "original_villager",
+   "ativo": false,
+   "agenda": [
+    {
+     "h": 10,
+     "lugar": "taverna"
+    },
+    {
+     "h": 2,
+     "lugar": "casa"
+    }
+   ],
+   "falas": [
+    "Sopa de abobora hoje! Traga abobora e eu faco duas."
+   ]
+  },
+  {
+   "id": "helena",
+   "nome": "Helena",
+   "papel": "ferreira",
+   "distrito": "lojas",
+   "casa": "Forja",
+   "personagem": "original_guardian",
+   "ativo": false,
+   "agenda": [
+    {
+     "h": 8,
+     "lugar": "forja"
+    },
+    {
+     "h": 19,
+     "lugar": "taverna"
+    },
+    {
+     "h": 22,
+     "lugar": "casa"
+    }
+   ],
+   "falas": [
+    "Traga minerio das masmorras e eu melhoro sua enxada."
+   ]
+  },
+  {
+   "id": "nina",
+   "nome": "Nina",
+   "papel": "crianca curiosa",
+   "distrito": "residencial",
+   "casa": "Casa do Poco",
+   "personagem": "original_apprentice",
+   "ativo": false,
+   "agenda": [
+    {
+     "h": 9,
+     "lugar": "escola"
+    },
+    {
+     "h": 14,
+     "lugar": "rio"
+    },
+    {
+     "h": 19,
+     "lugar": "casa"
+    }
+   ],
+   "falas": [
+    "Voce ja viu um orc de perto? Eu vi um... de longe."
+   ]
+  },
+  {
+   "id": "padre_ze",
+   "nome": "Frei Ze",
+   "papel": "guardiao do templo",
+   "distrito": "templo / borda das ruinas",
+   "casa": "Templo das Cinzas",
+   "personagem": "original_gardener",
+   "ativo": false,
+   "agenda": [
+    {
+     "h": 6,
+     "lugar": "templo"
+    },
+    {
+     "h": 18,
+     "lugar": "praca"
+    },
+    {
+     "h": 21,
+     "lugar": "templo"
+    }
+   ],
+   "falas": [
+    "As cinzas desta ilha guardam memorias. Algumas acordam a noite."
+   ]
+  },
+  {
+   "id": "marina",
+   "nome": "Marina",
+   "papel": "barqueira do porto",
+   "distrito": "porto / rio",
+   "casa": "Casa do Cais",
+   "personagem": "original_villager",
+   "ativo": false,
+   "agenda": [
+    {
+     "h": 5,
+     "lugar": "cais"
+    },
+    {
+     "h": 15,
+     "lugar": "mercado"
+    },
+    {
+     "h": 20,
+     "lugar": "casa"
+    }
+   ],
+   "falas": [
+    "Quando a ponte norte ficar pronta, levo voce ate as ilhas pequenas."
+   ]
+  },
+  {
+   "id": "otavio",
+   "nome": "Otavio",
+   "papel": "carpinteiro",
+   "distrito": "residencial",
+   "casa": "Oficina",
+   "personagem": "original_guardian",
+   "ativo": false,
+   "agenda": [
+    {
+     "h": 8,
+     "lugar": "oficina"
+    },
+    {
+     "h": 18,
+     "lugar": "taverna"
+    },
+    {
+     "h": 22,
+     "lugar": "casa"
+    }
+   ],
+   "falas": [
+    "Com madeira suficiente, faco um celeiro novo pra sua fazenda."
+   ]
+  }
+ ],
+ "remotos": [
+  {
+   "id": "bento",
+   "nome": "Bento",
+   "papel": "lenhador",
+   "lugar": "Cabana da Floresta",
+   "regiao": "floresta a oeste da fazenda",
+   "caminho": "trilha da fazenda (oeste do lago)",
+   "falas": [
+    "Arvore velha tem que cair para a nova crescer."
+   ]
+  },
+  {
+   "id": "iara",
+   "nome": "Iara",
+   "papel": "eremita",
+   "lugar": "Ermida do Penhasco",
+   "regiao": "penhascos a nordeste das ruinas",
+   "caminho": "escadaria das ruinas",
+   "falas": [
+    "O vento do penhasco conta o que acontece la embaixo."
+   ]
+  },
+  {
+   "id": "joaquim",
+   "nome": "Seu Joaquim",
+   "papel": "pescador aposentado",
+   "lugar": "Casa do Lago",
+   "regiao": "lago grande ao sul da vila",
+   "caminho": "rio, passando a ponte",
+   "falas": [
+    "O segredo da pesca e nao ter pressa."
+   ]
+  }
+ ]
+}

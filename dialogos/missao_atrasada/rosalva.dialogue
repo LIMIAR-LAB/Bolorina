@@ -1,0 +1,21 @@
+# Missão "Atrasada desde amanhã" (PROPOSTA): Dona Rosalva recebe o vidro da lanterna que esperava há três anos.
+# A filha Lia é PROPOSTA de lore.
+
+~ vidro
+Dona Rosalva: Isso é... a caixa? A caixa do vidro? Da Andorinha?
+Dona Rosalva: Três anos. Três anos eu digo pro Bartolomeu que não espero nada de ninguém.
+Vale: E esperava.
+Dona Rosalva: Todo dia. [#serio] A lanterna estava rachando, menina. Devagarinho, igual o seu guindaste. Eu remendava com cera e dizia que era charme.
+Dona Rosalva: Ela não apagou nenhuma vez desde a Queda. A Lia, minha filha, embarcou de navegadora num dirigível naquela semana.
+Dona Rosalva: Enquanto essa luz estiver acesa, quem saiu sabe o caminho de volta.
+- Ela vai ver essa luz, Dona Rosalva.
+	Dona Rosalva: Vai. Mais clara agora. Obrigada.
+	$> confiar("estalajadeira", 1)
+- A senhora nunca pensou em ir atrás dela?
+	Dona Rosalva: Todo dia também. Mas se eu saio, quem acende? Um dia. Um dia eu pego aquela Andorinha.
+	$> marcar("rosalva_pensou_em_viajar")
+Dona Rosalva: Pronto, chega. Agora senta. Quem volta de mina come primeiro, e de graça. Regra da casa desde hoje.
+$> comer("Prato de Volta")
+$> marcar("estalajadeira_conheceu")
+$> marcar("atrasada_vidro_entregue")
+=> END

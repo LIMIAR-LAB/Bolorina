@@ -1,0 +1,18 @@
+{
+ "id": "morador_1",
+ "canvas": [
+  48,
+  48
+ ],
+ "altura_px": 42,
+ "pixel_size": 0.035833,
+ "fps": 2.0,
+ "fantasma": false,
+ "vistas": {
+  "frente": [
+   "frente_0.png",
+   "frente_1.png"
+  ]
+ },
+ "pe_px": 47
+}

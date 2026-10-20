@@ -1,0 +1,26 @@
+# Mestra Ione Têmpera, fabricadora-chefe da Forja Quântica (Estação Depois-de-Ontem). PROPOSTA.
+# Tataraneta de Gaspar Bigorna, nascida daqui a uns trezentos anos. Forja o último nível (Liga Paradoxal).
+~ start
+if tem("fabricadora_conheceu")
+	=> de_novo
+Mestra Ione Têmpera: Não encosta na bigorna. Ela está esfriando ontem e esquentando amanhã ao mesmo tempo.
+Mestra Ione Têmpera: Você tem cara de quem veio do Porto Velho. Cheiro de cinza e de pão de ontem. Ontem de verdade.
+Vale: Você conhece o Porto Velho?
+Mestra Ione Têmpera: Conheço a lenda. Gaspar Bigorna, o ferreiro que martelava com raiva e acertava por teimosia. Meu tataravô. Ou vai ser. A gramática do tempo aqui é complicada.
+- Você forja o quê, exatamente?
+	Mestra Ione Têmpera: O que o seu tataravô não conseguiria nem sonhar. Cronóstio, o metal que guarda segundos. E, se você me trouxer adamantium, a Liga Paradoxal.
+	Mestra Ione Têmpera: Uma espada de Liga Paradoxal corta hoje e cicatriza amanhã. Do inimigo, claro. A sua continua cortada.
+	$> marcar("fabricadora_falou_liga")
+- Pode melhorar a minha forja lá no porto?
+	Mestra Ione Têmpera: Posso te vender uma Bigorna Cronal. Leva pro Gaspar. Ele vai xingar, depois vai chorar, depois vai forjar adamantium.
+	$> marcar("fabricadora_bigorna_cronal")
+	$> confiar("fabricadora", 1)
+Mestra Ione Têmpera: Traz minério do Veio da Fenda e eu ligo o fabricador. Ele faz um barulho de trovão de trás pra frente. É normal.
+$> marcar("fabricadora_conheceu")
+=> END
+
+~ de_novo
+% Mestra Ione Têmpera: Lingote de cronóstio esfria em menos tempo do que levou pra esquentar. Não pensa muito nisso.
+% Mestra Ione Têmpera: Diz pro meu tataravô que a receita do ensopado dele sobreviveu trezentos anos. Infelizmente.
+% Mestra Ione Têmpera: O fabricador entrou em greve de novo. Exige folga no dia de ontem.
+=> END

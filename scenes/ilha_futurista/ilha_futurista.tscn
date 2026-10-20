@@ -1,0 +1,22 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://scripts/ilha_futurista/ilha_futurista.gd" id="1"]
+[ext_resource type="Script" path="res://scripts/dialogos/interacao_npcs.gd" id="2"]
+[ext_resource type="Script" path="res://scripts/dungeon/entrada_masmorra.gd" id="3"]
+[ext_resource type="Script" path="res://scripts/mundo/ponto_viagem.gd" id="4"]
+
+[node name="IlhaFuturista" type="Node3D"]
+script = ExtResource("1")
+layout = "res://scripts/ilha_futurista/ilha_futurista_layout.json"
+
+[node name="Dialogos" type="Node" parent="."]
+script = ExtResource("2")
+
+[node name="EntradaMasmorra" type="Node3D" parent="."]
+script = ExtResource("3")
+area_id = "estacao_depois_de_ontem"
+entrada_id = "fenda_temporal"
+
+[node name="PontoViagem" type="Node3D" parent="."]
+script = ExtResource("4")
+area_id = "estacao_depois_de_ontem"

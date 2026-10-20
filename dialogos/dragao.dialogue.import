@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=18
+type="Resource"
+uid="uid://dandw5ebkekwf"
+path="res://.godot/imported/dragao.dialogue-a042680e7b6922ce988c3d77df62a53b.tres"
+
+[deps]
+
+source_file="res://dialogos/dragao.dialogue"
+dest_files=["res://.godot/imported/dragao.dialogue-a042680e7b6922ce988c3d77df62a53b.tres"]
+
+[params]
+
+defaults=true

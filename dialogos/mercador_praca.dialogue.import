@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=18
+type="Resource"
+uid="uid://ck7qsexqcex0x"
+path="res://.godot/imported/mercador_praca.dialogue-76f84d1f6192247231d2beab3b2a821d.tres"
+
+[deps]
+
+source_file="res://dialogos/mercador_praca.dialogue"
+dest_files=["res://.godot/imported/mercador_praca.dialogue-76f84d1f6192247231d2beab3b2a821d.tres"]
+
+[params]
+
+defaults=true

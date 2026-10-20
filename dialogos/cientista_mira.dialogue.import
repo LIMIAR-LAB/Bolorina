@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=18
+type="Resource"
+uid="uid://1ifmbtpwr76y"
+path="res://.godot/imported/cientista_mira.dialogue-abcc4b8724afaf0b248ac9634f0dde29.tres"
+
+[deps]
+
+source_file="res://dialogos/cientista_mira.dialogue"
+dest_files=["res://.godot/imported/cientista_mira.dialogue-abcc4b8724afaf0b248ac9634f0dde29.tres"]
+
+[params]
+
+defaults=true

@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=18
+type="Resource"
+uid="uid://cpeqsykq8qtml"
+path="res://.godot/imported/guardia.dialogue-bd2f115cf6941595c1618d8f26f28fa7.tres"
+
+[deps]
+
+source_file="res://dialogos/reacoes/guardia.dialogue"
+dest_files=["res://.godot/imported/guardia.dialogue-bd2f115cf6941595c1618d8f26f28fa7.tres"]
+
+[params]
+
+defaults=true

@@ -1,0 +1,22 @@
+# Bento Picareta-Quântica, minerador do Veio da Fenda (cronóstio). Gancho para data/forja/materiais.json. PROPOSTA.
+~ start
+if tem("minerador_fenda_conheceu")
+	=> de_novo
+Bento Picareta-Quântica: Opa! Pisa no amarelo. O roxo é de ontem e o ciano é de amanhã. O cinza... o cinza ninguém sabe.
+Bento Picareta-Quântica: Isso aqui é o Veio da Fenda. Daqui sai o cronóstio, o metal que guarda segundos. Cada pedrinha tem um tique-taque dentro.
+- Como eu minero cronóstio?
+	Bento Picareta-Quântica: Com picareta de cristal celeste, no mínimo. Com picareta de ferro, o minério só ri de você. Eu já vi. É humilhante.
+	Bento Picareta-Quântica: E bate rápido. Veio de cronóstio volta pro tempo dele se você demorar.
+	$> marcar("minerador_fenda_ensinou")
+	$> confiar("minerador_fenda", 1)
+- Isso é seguro?
+	Bento Picareta-Quântica: Seguríssimo. Perdi só uma terça-feira inteira. Ninguém sentiu falta, era terça.
+Bento Picareta-Quântica: Leva o minério pra Mestra Ione. Ela transforma em lingote antes que ele se arrependa.
+$> marcar("minerador_fenda_conheceu")
+=> END
+
+~ de_novo
+% Bento Picareta-Quântica: O veio leste abriu hoje cedo. Ou vai abrir. Corre que dá tempo.
+% Bento Picareta-Quântica: Achei um fóssil de robô ali embaixo. De um robô que ainda não foi fabricado.
+% Bento Picareta-Quântica: Cronóstio na mão por muito tempo dá soluço temporal. Você soluça antes de beber água.
+=> END

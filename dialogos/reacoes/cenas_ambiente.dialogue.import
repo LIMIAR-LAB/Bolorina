@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=18
+type="Resource"
+uid="uid://d36rli2a22lw1"
+path="res://.godot/imported/cenas_ambiente.dialogue-0eafda368cc0d5f29cdef634eff2e579.tres"
+
+[deps]
+
+source_file="res://dialogos/reacoes/cenas_ambiente.dialogue"
+dest_files=["res://.godot/imported/cenas_ambiente.dialogue-0eafda368cc0d5f29cdef634eff2e579.tres"]
+
+[params]
+
+defaults=true

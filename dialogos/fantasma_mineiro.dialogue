@@ -1,0 +1,22 @@
+# Zeca Sem-Volta, mineiro fantasma perdido nas galerias desde a noite da Queda. Gancho do Coração Soterrado. PROPOSTA.
+~ start
+if tem("fantasma_mineiro_conheceu")
+	=> de_novo
+Zeca Sem-Volta: Uuuh... ah, desculpa. É costume. Faz tanto tempo que eu só falo "uuuh".
+Zeca Sem-Volta: Eu cavava no andar 4 na noite em que a cinza caiu. Tropecei num veio que tava fazendo tique-taque... e o tempo me esqueceu aqui.
+- Posso te ajudar a sair?
+	Zeca Sem-Volta: Pode. Lá no fundo, no Coração Soterrado, tem adamantium que lembra de tudo. Se alguém forjar uma coisa com ele, talvez o tempo lembre de mim também.
+	Zeca Sem-Volta: Mas a porta de lá só abre pra quem tiver a Bigorna Cronal. Fala com o Gaspar. E com a moça do futuro.
+	$> marcar("fantasma_mineiro_pediu_ajuda")
+	$> confiar("fantasma_mineiro", 1)
+- Você não tem medo?
+	Zeca Sem-Volta: De quê? Já tô morto. O que me dá medo é lodo de cinza. Ele gruda até em fantasma.
+Zeca Sem-Volta: Toma cuidado com os morcegos do andar 6 pra baixo. Eles roubam a luz da lamparina.
+$> marcar("fantasma_mineiro_conheceu")
+=> END
+
+~ de_novo
+% Zeca Sem-Volta: Hoje é que dia? Não fala! Eu gosto de achar que ainda é aquela quinta-feira.
+% Zeca Sem-Volta: Deixei uma picareta no beco do fundo. Se achar o baú, é seu. Fantasma não carrega peso.
+% Zeca Sem-Volta: Escuta... ouviu? "Três e quinze." A pedra lá de baixo não para de dizer as horas.
+=> END

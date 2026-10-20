@@ -1,0 +1,40 @@
+# Missão "Atrasada desde amanhã" (PROPOSTA): Capitão Bartolomeu Nuvem e o guindaste da doca.
+
+~ guindaste_rachando
+Capitão Bartolomeu Nuvem: Não encosta nesse guindaste! Ele está de mau humor desde... desde agora, na verdade.
+Vale: A conta do Gaspar diz que a catraca racha no terceiro dente.
+Capitão Bartolomeu Nuvem: Que conta? Que dente? Esse guindaste está perfeito. Sempre esteve. Olha só.
+*Crec.* O primeiro dente da catraca trinca. Depois o segundo. Uma fumacinha de cinza sobe do terceiro.
+Capitão Bartolomeu Nuvem: Isso foi o vento.
+Vale: O vento não faz "crec", capitão.
+Capitão Bartolomeu Nuvem: Vento de abismo faz tudo. Uma vez fez meu chapéu dar três voltas na ilha e voltar com uma gaivota dentro.
+Capitão Bartolomeu Nuvem: [#serio] Tá bom. Se essa catraca quebrar, a Andorinha não descarrega. Tem três anos de carga presa no porão. Encomenda de gente que espera.
+- Por que a carga está presa há três anos?
+	Capitão Bartolomeu Nuvem: Porque o guindaste vive quase quebrando. E eu vivo quase consertando. É um equilíbrio delicado.
+- O que tem no porão?
+	Capitão Bartolomeu Nuvem: Correspondência, sementes, um vidro de lanterna pra Rosalva e uma caixa que faz tique-taque. Essa eu evito.
+	$> marcar("capitao_falou_porao")
+Capitão Bartolomeu Nuvem: Diz pro Gaspar que eu pago a peça. Assim que eu receber dos dois Jucas. Ou pagar os dois Jucas. Já não sei quem deve pra quem.
+$> marcar("capitao_conheceu")
+$> marcar("atrasada_defeito_visto")
+=> END
+
+~ guindaste_conserto
+if not tem("atrasada_arena_testada")
+	Capitão Bartolomeu Nuvem: O Gaspar disse que você precisa testar o tal do eco antes. Vai lá, eu espero. Sou ótimo em esperar. Três anos de prática.
+	=> END
+Capitão Bartolomeu Nuvem: Catraca-Mestra nº 3, encaixada. Feita amanhã, instalada hoje. Se alguém perguntar, foi planejamento.
+Capitão Bartolomeu Nuvem: Juca! Juca! Os dois! Pras cordas!
+*O guindaste gira. O gancho desce, pega a primeira caixa e sobe sem ranger.*
+Capitão Bartolomeu Nuvem: Ela anda. ELA ANDA! Rosalva, seu vidro! Brida, o beco do armazém está livre! Alguém avisa a gaivota!
+Capitão Bartolomeu Nuvem: Espera. Que pacote é esse em cima da última caixa? Isso não estava no meu manifesto.
+Vale: "Destino, Estação Depois-de-Ontem. Postado daqui a trezentos anos."
+Capitão Bartolomeu Nuvem: [#serio] Uns dias atrás eu anotei uma ilha como "talvez" no mapa. Acho que o talvez acabou de mandar correspondência.
+- Você consegue chegar lá?
+	Capitão Bartolomeu Nuvem: Com o porão vazio e o guindaste andando? Consigo chegar em qualquer lugar. Menos no prazo.
+	$> confiar("capitao", 1)
+- Isso pode ser perigoso.
+	Capitão Bartolomeu Nuvem: Tudo que vale a viagem é. Inclusive a sopa da Rosalva, dependendo do dia.
+Capitão Bartolomeu Nuvem: Leva a caixa frágil pra Rosalva primeiro. Ela espera esse vidro há mais tempo do que eu espero qualquer coisa.
+$> marcar("atrasada_guindaste_ligado")
+=> END

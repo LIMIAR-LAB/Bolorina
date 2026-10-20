@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=18
+type="Resource"
+uid="uid://b151ikb468awh"
+path="res://.godot/imported/lobisomem.dialogue-ec3d2476cb0c2dee2dea83105b78eb42.tres"
+
+[deps]
+
+source_file="res://dialogos/lobisomem.dialogue"
+dest_files=["res://.godot/imported/lobisomem.dialogue-ec3d2476cb0c2dee2dea83105b78eb42.tres"]
+
+[params]
+
+defaults=true

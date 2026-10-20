@@ -1,0 +1,26 @@
+# Mestre Anselmo, sineiro da Torre do Sino (Porto Velho). Guarda segredos do passado.
+~ start
+if tem("sineiro_conheceu")
+	=> de_novo
+Mestre Anselmo: Shh. Escuta. O sino ainda está tremendo da última badalada.
+Mestre Anselmo: Eu toquei ele há trinta e dois anos.
+Vale: Trinta e dois anos? E ainda está tremendo?
+Mestre Anselmo: Sinos do Reino do Céu não badalam para os vivos, menina. Badalam para as horas. E algumas horas nunca acabaram de passar.
+- O que aconteceu no dia da Queda?
+	Mestre Anselmo: Os Arquimagos do Relógio tentaram dar corda no mundo. O Coração do Tempo não gostou.
+	Mestre Anselmo: Rachou como ovo. E choveu cinza feita de dias inteiros. Eu ainda sinto o gosto de uma terça-feira que não era minha.
+	$> marcar("sineiro_contou_queda")
+	$> confiar("sineiro", 1)
+- Posso tocar o sino?
+	Mestre Anselmo: Pode. Se quiser acordar algo que dorme debaixo do porto desde antes do seu avô nascer.
+	Mestre Anselmo: Não? Sábia escolha. Gosto de você.
+	$> confiar("sineiro", 1)
+Mestre Anselmo: Volta outro dia. Tenho histórias que só conto quando a cinza cai devagar.
+$> marcar("sineiro_conheceu")
+=> END
+
+~ de_novo
+% Mestre Anselmo: Hoje o sino tremeu duas vezes. Uma pra ontem, outra pra um amanhã que talvez não venha.
+% Mestre Anselmo: Antes da Queda, essas ilhas eram costuradas por pontes de luz. Eu vi. Juro pelos meus joelhos.
+% Mestre Anselmo: Shh. Escuta.
+=> END

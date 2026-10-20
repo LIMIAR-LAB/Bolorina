@@ -1,0 +1,22 @@
+{
+ "id": "mensageria",
+ "nome": "Recados da Nina",
+ "npc": "nina",
+ "compra": [],
+ "vende_categorias": [],
+ "taxa_venda": 0.5,
+ "servicos": [
+  {
+   "id": "pegar_entrega",
+   "nome": "Pegar uma entrega",
+   "preco": 0,
+   "desc": "Leva uma carta e ganha ouro."
+  },
+  {
+   "id": "concluir_entrega",
+   "nome": "Avisar que entregou",
+   "preco": 0,
+   "desc": ""
+  }
+ ]
+}

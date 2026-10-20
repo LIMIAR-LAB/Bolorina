@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=18
+type="Resource"
+uid="uid://b6rb206dqu7ul"
+path="res://.godot/imported/crianca_praca.dialogue-860c63949746471319675ac61f49047d.tres"
+
+[deps]
+
+source_file="res://dialogos/crianca_praca.dialogue"
+dest_files=["res://.godot/imported/crianca_praca.dialogue-860c63949746471319675ac61f49047d.tres"]
+
+[params]
+
+defaults=true

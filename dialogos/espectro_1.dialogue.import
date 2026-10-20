@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=18
+type="Resource"
+uid="uid://djr7kt2fmnk0o"
+path="res://.godot/imported/espectro_1.dialogue-b8c7e639d5bd6521c7a580f3b8e6b556.tres"
+
+[deps]
+
+source_file="res://dialogos/espectro_1.dialogue"
+dest_files=["res://.godot/imported/espectro_1.dialogue-b8c7e639d5bd6521c7a580f3b8e6b556.tres"]
+
+[params]
+
+defaults=true

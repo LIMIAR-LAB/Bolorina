@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=18
+type="Resource"
+uid="uid://ds0770ag08hp8"
+path="res://.godot/imported/vampiro_menor_1.dialogue-b7135ae02c0cb7cd1dfae761e58b73f0.tres"
+
+[deps]
+
+source_file="res://dialogos/vampiro_menor_1.dialogue"
+dest_files=["res://.godot/imported/vampiro_menor_1.dialogue-b7135ae02c0cb7cd1dfae761e58b73f0.tres"]
+
+[params]
+
+defaults=true

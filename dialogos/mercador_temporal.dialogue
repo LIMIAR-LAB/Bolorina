@@ -1,0 +1,23 @@
+# Zé Antes-Depois, mercador do tempo na Praça dos Segundos. PROPOSTA.
+~ start
+if tem("mercador_temporal_conheceu")
+	=> de_novo
+Zé Antes-Depois: Freguesa! Você chegou na hora certa. Ou na hora errada certa. A gente aceita as duas.
+Zé Antes-Depois: Aqui eu vendo lembrança do futuro e compro antiguidade. Essa sua enxada, por exemplo. No meu século isso é peça de museu.
+Vale: Quanto custa alguma coisa aqui?
+Zé Antes-Depois: Depende. Em ouro, caro. Em segundos, baratinho. Dez minutos da sua vida e eu te dou um guarda-chuva que abre antes da chuva.
+- Eu pago em ouro, obrigada.
+	Zé Antes-Depois: Conservadora. Respeito. O ouro é a única moeda que vale a mesma coisa em todas as linhas do tempo. Menos naquela das galinhas.
+	$> confiar("mercador_temporal", 1)
+- Que tipo de coisa do futuro você tem?
+	Zé Antes-Depois: Uma torradeira que torra o pão de ontem, um mapa de ilhas que ainda não caíram e um bilhete de loteria premiado. Do sorteio de 2387.
+	$> marcar("mercador_temporal_catalogo")
+Zé Antes-Depois: Volta amanhã. Ou volta ontem, se conseguir. Ontem eu estava com desconto.
+$> marcar("mercador_temporal_conheceu")
+=> END
+
+~ de_novo
+% Zé Antes-Depois: Chegou mercadoria nova! Ela chega semana passada.
+% Zé Antes-Depois: Promoção do dia: compre um segundo, leve dois. O segundo segundo é usado.
+% Zé Antes-Depois: Não aceito devolução. Tecnicamente você ainda não comprou.
+=> END

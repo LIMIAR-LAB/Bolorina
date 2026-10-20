@@ -1,0 +1,7 @@
+# Agente Vera Bis, fiscal das Linhas do Tempo. Multa quem existe duas vezes. PROPOSTA.
+~ start
+Agente Vera Bis: Documento, por favor. Os dois. Um seu e um da sua versão de ontem.
+Agente Vera Bis: Esta estação tem tolerância zero pra existência em duplicata. Já multei três Ozórios esta semana. Nenhum deles pagou. Todos disseram que o outro ia pagar.
+Agente Vera Bis: Pode circular. Mas se cruzar com você mesma, não cumprimenta. Gera papelada.
+$> marcar("fiscal_linhas_conheceu")
+=> END

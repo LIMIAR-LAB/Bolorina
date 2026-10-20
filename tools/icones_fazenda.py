@@ -65,9 +65,13 @@ ic['semente_abobora'] = m
 m = novo(); ret(m, 4, 8, 11, 13, 'h'); ret(m, 4, 12, 11, 13, 'H')
 for i, x in enumerate([4, 6, 8, 10]): ret(m, x, 3 + (1 if i in (0, 3) else 0), x+1, 7, 'h')
 ret(m, 12, 7, 13, 9, 'h'); ret(m, 4, 14, 11, 15, 'b'); ic['mao'] = m
-ordem = ['enxada', 'picareta', 'machado', 'foice', 'regador', 'semente_nabo', 'semente_couve', 'semente_abobora', 'mao']
+m = novo(); linha(m, (2, 14), (12, 2), 'w'); linha(m, (3, 14), (13, 2), 'W'); ret(m, 3, 11, 5, 12, 'd'); px(m, 4, 13, 's')
+for p in [(13, 3), (14, 4), (14, 5), (14, 6), (14, 7), (14, 8), (14, 9)]: px(m, *p, 'S')
+px(m, 13, 10, 's'); px(m, 12, 10, 's'); px(m, 12, 9, 's'); ret(m, 13, 12, 14, 13, 'r'); px(m, 13, 11, 'n')
+ic['vara'] = m
+ordem = ['enxada', 'picareta', 'machado', 'foice', 'regador', 'semente_nabo', 'semente_couve', 'semente_abobora', 'mao', 'vara']
 ims = [salvar(n, ic[n]) for n in ordem]
-prev = Image.new('RGBA', (9*72+8, 80), (60, 40, 24, 255))
+prev = Image.new('RGBA', (len(ordem)*72+8, 80), (60, 40, 24, 255))
 for i, im in enumerate(ims):
     prev.paste((201, 164, 106, 255), (4+i*72, 8, 4+i*72+64, 72))
     big = im.resize((48, 48), Image.NEAREST); prev.paste(big, (4+i*72+8, 16), big)

@@ -1,0 +1,40 @@
+{
+ "id": "cartografia",
+ "nome": "Cartografia do Tobias",
+ "npc": "tobias",
+ "compra": [
+  {
+   "item": "mapa_minas",
+   "preco": 120,
+   "estoque": 1,
+   "qtd": 1
+  },
+  {
+   "item": "mapa_cidade_fantasma",
+   "preco": 150,
+   "estoque": 1,
+   "qtd": 1
+  },
+  {
+   "item": "mapa_vila_orcs",
+   "preco": 150,
+   "estoque": 1,
+   "qtd": 1
+  },
+  {
+   "item": "bussola_temporal",
+   "preco": 400,
+   "estoque": 1,
+   "qtd": 1
+  },
+  {
+   "item": "tabua_das_mares",
+   "preco": 220,
+   "estoque": 1,
+   "qtd": 1
+  }
+ ],
+ "vende_categorias": [],
+ "taxa_venda": 0.5,
+ "servicos": []
+}

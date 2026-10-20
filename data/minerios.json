@@ -1,0 +1,45 @@
+{
+ "versao": 1,
+ "nota": "Nos de minerio por area (scripts/economia/minerios_area.gd). Se a cena tiver marcadores minerio_<metal>[_n], eles valem no lugar desta lista. Metais: data/forja/materiais.json. Integracao 20/10: prata = prata_tumular (materiais da Bolorina); ids de area do registro unico.",
+ "areas": {
+  "fazenda": [
+   "cobre",
+   "cobre",
+   "ferro"
+  ],
+  "masmorra": [
+   "cobre",
+   "ferro",
+   "ferro",
+   "prata_tumular"
+  ],
+  "porto_velho": [
+   "cobre"
+  ],
+  "minas_da_cinza": [
+   "cobre",
+   "ferro",
+   "ferro",
+   "prata_tumular"
+  ],
+  "cidade_fantasma": [
+   "prata_tumular",
+   "prata_tumular",
+   "ferro"
+  ],
+  "vila_orcs": [
+   "ferro",
+   "ferro",
+   "cobre"
+  ],
+  "estacao_depois_de_ontem": [
+   "prata_tumular"
+  ],
+  "ilha_mare": [
+   "bronze_mare",
+   "bronze_mare",
+   "bronze_mare",
+   "ferro"
+  ]
+ }
+}

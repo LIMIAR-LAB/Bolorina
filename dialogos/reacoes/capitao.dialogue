@@ -1,0 +1,33 @@
+# Capitão Bartolomeu Nuvem: rotina e memória da cidade (PROPOSTA).
+
+~ manha
+% Capitão Bartolomeu Nuvem: De manhã eu inspeciono o balão e grito com as gaivotas. Elas gritam de volta. É uma relação.
+% Capitão Bartolomeu Nuvem: Vento de leste. Ótimo pra navegar. Pena que o porão está cheio e o guindaste está de birra.
+=> END
+
+~ tarde
+% Capitão Bartolomeu Nuvem: Estou aqui discutindo com o guindaste. Ele está ganhando.
+% Capitão Bartolomeu Nuvem: Paguei os dois Jucas de novo. Um deles é do futuro, o outro é do passado. Os dois cobram no presente.
+=> END
+
+~ noite
+% Capitão Bartolomeu Nuvem: De noite eu fico na Estalagem pagando a conta com coisas estranhas. Hoje foi uma bússola que aponta pra quinta-feira.
+% Capitão Bartolomeu Nuvem: Estou contando história pra Rosalva me dar sobremesa. Ela já ouviu todas. Ela finge que não.
+=> END
+
+~ arma_nova
+Capitão Bartolomeu Nuvem: Esse facão bateu duas vezes naquela caixa ou eu bebi demais? Não responde. As duas coisas são possíveis.
+$> marcar("reacao_capitao_arma_vista")
+=> END
+
+~ guindaste_usado
+Capitão Bartolomeu Nuvem: Olha ela trabalhando! Três caixas por minuto. A Andorinha está até mais alta no ar, de tão leve.
+Capitão Bartolomeu Nuvem: Os dois Jucas estão operando o guindaste juntos. Pela primeira vez, pagar em dobro está valendo a pena.
+$> marcar("reacao_capitao_guindaste_usado")
+=> END
+
+~ pos_missao
+% Capitão Bartolomeu Nuvem: Paguei o pedágio do Ambarion. Aí ele cobrou o recibo do pedágio. Aí eu pedi recibo do recibo. Estamos em negociação.
+% Capitão Bartolomeu Nuvem: Risquei o "talvez" do mapa e escrevi "Estação Depois-de-Ontem". Ficou feio. Ficou certo.
+% Capitão Bartolomeu Nuvem: Com o guindaste andando, a Andorinha sai na próxima lua. Se você vier junto, eu deixo você segurar o leme. Por um minuto. Supervisionada.
+=> END

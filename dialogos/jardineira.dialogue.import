@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=18
+type="Resource"
+uid="uid://c1oh3ms4r803l"
+path="res://.godot/imported/jardineira.dialogue-9d02a3692b3fd98b8fd99753608e2c3b.tres"
+
+[deps]
+
+source_file="res://dialogos/jardineira.dialogue"
+dest_files=["res://.godot/imported/jardineira.dialogue-9d02a3692b3fd98b8fd99753608e2c3b.tres"]
+
+[params]
+
+defaults=true

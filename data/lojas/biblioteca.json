@@ -1,0 +1,16 @@
+{
+ "id": "biblioteca",
+ "nome": "Biblioteca do Frei Zé",
+ "npc": "frei_ze",
+ "compra": [],
+ "vende_categorias": [],
+ "taxa_venda": 0.5,
+ "servicos": [
+  {
+   "id": "ler_codex",
+   "nome": "Ler uma página do códex",
+   "preco": 0,
+   "desc": "Lore da ilha, uma página por vez."
+  }
+ ]
+}

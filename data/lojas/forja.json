@@ -1,0 +1,59 @@
+{
+ "id": "forja",
+ "nome": "Ferraria do Porto (Gaspar Bigorna)",
+ "npc": "ferreiro",
+ "compra": [
+  {
+   "item": "carvao",
+   "preco": 6,
+   "estoque": 30,
+   "qtd": 1
+  },
+  {
+   "item": "picareta",
+   "preco": 120,
+   "estoque": 2,
+   "qtd": 1
+  },
+  {
+   "item": "picareta_ferro",
+   "preco": 250,
+   "estoque": 1,
+   "qtd": 1
+  },
+  {
+   "item": "madeira",
+   "preco": 4,
+   "estoque": 40,
+   "qtd": 1
+  },
+  {
+   "item": "couro",
+   "preco": 12,
+   "estoque": 20,
+   "qtd": 1
+  }
+ ],
+ "vende_categorias": [
+  "minerio",
+  "lingote"
+ ],
+ "taxa_venda": 0.5,
+ "servicos": [
+  {
+   "id": "fundir",
+   "nome": "Fundir minério (fornalha)",
+   "preco": 0,
+   "desc": "Minério + carvão viram lingote."
+  },
+  {
+   "id": "forjar",
+   "nome": "Forjar equipamento",
+   "preco": 0,
+   "desc": "Lingotes + ouro viram peças."
+  }
+ ],
+ "forja": true,
+ "forja_id": "ferraria_porto",
+ "nota_integracao": "20/10: a forja da economia usa os dados da Bolorina (data/forja); so as receitas da Ferraria do Porto aparecem neste balcao."
+}

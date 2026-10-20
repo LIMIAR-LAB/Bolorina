@@ -1,0 +1,1481 @@
+{
+ "versao": 1,
+ "status": "PROPOSTA (não é canon)",
+ "forjas": {
+  "ferraria_porto": {
+   "nome": "Ferraria do Porto",
+   "ferreiro": "ferreiro",
+   "ferreiro_nome": "Gaspar Bigorna",
+   "regiao": "Porto Velho",
+   "niveis": [
+    {
+     "nivel": 1,
+     "nome": "Forja de barro",
+     "custo_ouro": 0,
+     "materiais": {},
+     "libera_tier": [
+      1
+     ]
+    },
+    {
+     "nivel": 2,
+     "nome": "Fornalha de tijolo",
+     "custo_ouro": 400,
+     "materiais": {
+      "pedra": 40,
+      "lingote_cobre": 10
+     },
+     "libera_tier": [
+      2
+     ]
+    },
+    {
+     "nivel": 3,
+     "nome": "Tanque de têmpera do porto",
+     "custo_ouro": 1200,
+     "materiais": {
+      "lingote_ferro": 15,
+      "madeira": 30
+     },
+     "libera_tier": [
+      3
+     ]
+    },
+    {
+     "nivel": 4,
+     "nome": "Fole de Ferro-Brasa",
+     "custo_ouro": 3000,
+     "materiais": {
+      "lingote_ferro_brasa": 8,
+      "couro": 10
+     },
+     "libera_tier": [
+      5,
+      6
+     ],
+     "nota": "Krag Martelo-Torto faz o fole; troca entre ilhas."
+    },
+    {
+     "nivel": 5,
+     "nome": "Bigorna Cronal",
+     "custo_ouro": 9000,
+     "materiais": {
+      "lingote_cronostio": 6,
+      "engrenagem_quantica": 2
+     },
+     "libera_tier": [
+      8
+     ],
+     "nota": "Comprada da Mestra Ione. Abre o Coração Soterrado e o adamantium."
+    }
+   ]
+  },
+  "forja_cla": {
+   "nome": "Forja do Clã Brasa-Velha",
+   "ferreiro": "ferreiro_orc",
+   "ferreiro_nome": "Krag Martelo-Torto",
+   "regiao": "Vila dos Orcs",
+   "niveis": [
+    {
+     "nivel": 1,
+     "nome": "Bigorna de basalto",
+     "custo_ouro": 0,
+     "materiais": {},
+     "libera_tier": [
+      4
+     ],
+     "requisito": "Confiança do clã (Grusha Dente-de-Ferro)"
+    },
+    {
+     "nivel": 2,
+     "nome": "Poço de lava domado",
+     "custo_ouro": 2500,
+     "materiais": {
+      "lingote_ferro_brasa": 12,
+      "pedra": 60
+     },
+     "libera_tier": [
+      4
+     ],
+     "nota": "Libera reforja +3 em equipamento orc."
+    }
+   ]
+  },
+  "forja_quantica": {
+   "nome": "Forja Quântica (Fabricador)",
+   "ferreiro": "fabricadora",
+   "ferreiro_nome": "Mestra Ione Têmpera",
+   "regiao": "Estação Depois-de-Ontem",
+   "niveis": [
+    {
+     "nivel": 1,
+     "nome": "Fabricador ligado",
+     "custo_ouro": 0,
+     "materiais": {},
+     "libera_tier": [
+      7
+     ]
+    },
+    {
+     "nivel": 2,
+     "nome": "Núcleo paradoxal",
+     "custo_ouro": 15000,
+     "materiais": {
+      "lingote_adamantium": 4,
+      "chip_anomalia": 10
+     },
+     "libera_tier": [
+      9
+     ]
+    }
+   ]
+  }
+ },
+ "fundicao": [
+  {
+   "id": "fundir_cobre",
+   "resultado": "lingote_cobre",
+   "quantidade": 1,
+   "materiais": {
+    "minerio_cobre": 3,
+    "carvao": 1
+   },
+   "ouro": 5,
+   "forja": "ferraria_porto",
+   "nivel_forja": 1,
+   "ferreiro": "ferreiro",
+   "etapa": "fundicao"
+  },
+  {
+   "id": "fundir_ferro",
+   "resultado": "lingote_ferro",
+   "quantidade": 1,
+   "materiais": {
+    "minerio_ferro": 3,
+    "carvao": 1
+   },
+   "ouro": 10,
+   "forja": "ferraria_porto",
+   "nivel_forja": 2,
+   "ferreiro": "ferreiro",
+   "etapa": "fundicao"
+  },
+  {
+   "id": "ligar_aco_porto",
+   "resultado": "lingote_aco_porto",
+   "quantidade": 1,
+   "materiais": {
+    "lingote_ferro": 2,
+    "carvao": 2
+   },
+   "ouro": 25,
+   "forja": "ferraria_porto",
+   "nivel_forja": 3,
+   "ferreiro": "ferreiro",
+   "etapa": "fundicao"
+  },
+  {
+   "id": "fundir_ferro_brasa",
+   "resultado": "lingote_ferro_brasa",
+   "quantidade": 1,
+   "materiais": {
+    "minerio_ferro_brasa": 3,
+    "carvao": 1
+   },
+   "ouro": 30,
+   "forja": "forja_cla",
+   "nivel_forja": 1,
+   "ferreiro": "ferreiro_orc",
+   "etapa": "fundicao"
+  },
+  {
+   "id": "fundir_prata_tumular",
+   "resultado": "lingote_prata_tumular",
+   "quantidade": 1,
+   "materiais": {
+    "minerio_prata_tumular": 3,
+    "carvao": 1,
+    "essencia_orvalho_lunar": 1
+   },
+   "ouro": 45,
+   "forja": "ferraria_porto",
+   "nivel_forja": 4,
+   "ferreiro": "ferreiro",
+   "etapa": "fundicao"
+  },
+  {
+   "id": "lapidar_cristal_celeste",
+   "resultado": "cristal_celeste",
+   "quantidade": 1,
+   "materiais": {
+    "cristal_celeste_bruto": 2
+   },
+   "ouro": 50,
+   "forja": "ferraria_porto",
+   "nivel_forja": 4,
+   "ferreiro": "ferreiro",
+   "etapa": "fundicao"
+  },
+  {
+   "id": "fundir_cronostio",
+   "resultado": "lingote_cronostio",
+   "quantidade": 1,
+   "materiais": {
+    "minerio_cronostio": 3,
+    "chip_anomalia": 1
+   },
+   "ouro": 120,
+   "forja": "forja_quantica",
+   "nivel_forja": 1,
+   "ferreiro": "fabricadora",
+   "etapa": "fundicao"
+  },
+  {
+   "id": "fundir_adamantium",
+   "resultado": "lingote_adamantium",
+   "quantidade": 1,
+   "materiais": {
+    "minerio_adamantium": 3,
+    "carvao": 2,
+    "po_de_segundo": 1
+   },
+   "ouro": 200,
+   "forja": "ferraria_porto",
+   "nivel_forja": 5,
+   "ferreiro": "ferreiro",
+   "etapa": "fundicao"
+  },
+  {
+   "id": "ligar_liga_paradoxal",
+   "resultado": "lingote_liga_paradoxal",
+   "quantidade": 1,
+   "materiais": {
+    "lingote_adamantium": 1,
+    "lingote_cronostio": 2,
+    "eco_de_amanha": 1
+   },
+   "ouro": 500,
+   "forja": "forja_quantica",
+   "nivel_forja": 2,
+   "ferreiro": "fabricadora",
+   "etapa": "fundicao"
+  }
+ ],
+ "receitas": [
+  {
+   "id": "forjar_espada_cobre",
+   "resultado": "espada_cobre",
+   "quantidade": 1,
+   "materiais": {
+    "lingote_cobre": 3,
+    "madeira": 2
+   },
+   "ouro": 40,
+   "forja": "ferraria_porto",
+   "nivel_forja": 1,
+   "ferreiro": "ferreiro"
+  },
+  {
+   "id": "forjar_elmo_cobre",
+   "resultado": "elmo_cobre",
+   "quantidade": 1,
+   "materiais": {
+    "lingote_cobre": 2,
+    "madeira": 1
+   },
+   "ouro": 32,
+   "forja": "ferraria_porto",
+   "nivel_forja": 1,
+   "ferreiro": "ferreiro"
+  },
+  {
+   "id": "forjar_peitoral_cobre",
+   "resultado": "peitoral_cobre",
+   "quantidade": 1,
+   "materiais": {
+    "lingote_cobre": 5,
+    "madeira": 2
+   },
+   "ouro": 64,
+   "forja": "ferraria_porto",
+   "nivel_forja": 1,
+   "ferreiro": "ferreiro"
+  },
+  {
+   "id": "forjar_luvas_cobre",
+   "resultado": "luvas_cobre",
+   "quantidade": 1,
+   "materiais": {
+    "lingote_cobre": 2,
+    "madeira": 1
+   },
+   "ouro": 28,
+   "forja": "ferraria_porto",
+   "nivel_forja": 1,
+   "ferreiro": "ferreiro"
+  },
+  {
+   "id": "forjar_botas_cobre",
+   "resultado": "botas_cobre",
+   "quantidade": 1,
+   "materiais": {
+    "lingote_cobre": 2,
+    "madeira": 1
+   },
+   "ouro": 28,
+   "forja": "ferraria_porto",
+   "nivel_forja": 1,
+   "ferreiro": "ferreiro"
+  },
+  {
+   "id": "forjar_escudo_cobre",
+   "resultado": "escudo_cobre",
+   "quantidade": 1,
+   "materiais": {
+    "lingote_cobre": 3,
+    "madeira": 4
+   },
+   "ouro": 40,
+   "forja": "ferraria_porto",
+   "nivel_forja": 1,
+   "ferreiro": "ferreiro"
+  },
+  {
+   "id": "forjar_espada_ferro",
+   "resultado": "espada_ferro",
+   "quantidade": 1,
+   "materiais": {
+    "lingote_ferro": 3,
+    "couro": 1
+   },
+   "ouro": 90,
+   "forja": "ferraria_porto",
+   "nivel_forja": 2,
+   "ferreiro": "ferreiro"
+  },
+  {
+   "id": "forjar_elmo_ferro",
+   "resultado": "elmo_ferro",
+   "quantidade": 1,
+   "materiais": {
+    "lingote_ferro": 2,
+    "couro": 1
+   },
+   "ouro": 72,
+   "forja": "ferraria_porto",
+   "nivel_forja": 2,
+   "ferreiro": "ferreiro"
+  },
+  {
+   "id": "forjar_peitoral_ferro",
+   "resultado": "peitoral_ferro",
+   "quantidade": 1,
+   "materiais": {
+    "lingote_ferro": 5,
+    "couro": 2
+   },
+   "ouro": 144,
+   "forja": "ferraria_porto",
+   "nivel_forja": 2,
+   "ferreiro": "ferreiro"
+  },
+  {
+   "id": "forjar_luvas_ferro",
+   "resultado": "luvas_ferro",
+   "quantidade": 1,
+   "materiais": {
+    "lingote_ferro": 2,
+    "couro": 2
+   },
+   "ouro": 62,
+   "forja": "ferraria_porto",
+   "nivel_forja": 2,
+   "ferreiro": "ferreiro"
+  },
+  {
+   "id": "forjar_botas_ferro",
+   "resultado": "botas_ferro",
+   "quantidade": 1,
+   "materiais": {
+    "lingote_ferro": 2,
+    "couro": 2
+   },
+   "ouro": 62,
+   "forja": "ferraria_porto",
+   "nivel_forja": 2,
+   "ferreiro": "ferreiro"
+  },
+  {
+   "id": "forjar_escudo_ferro",
+   "resultado": "escudo_ferro",
+   "quantidade": 1,
+   "materiais": {
+    "lingote_ferro": 3,
+    "madeira": 4
+   },
+   "ouro": 90,
+   "forja": "ferraria_porto",
+   "nivel_forja": 2,
+   "ferreiro": "ferreiro"
+  },
+  {
+   "id": "forjar_espada_aco",
+   "resultado": "espada_aco",
+   "quantidade": 1,
+   "materiais": {
+    "lingote_aco_porto": 3,
+    "couro": 1
+   },
+   "ouro": 180,
+   "forja": "ferraria_porto",
+   "nivel_forja": 3,
+   "ferreiro": "ferreiro"
+  },
+  {
+   "id": "forjar_elmo_aco",
+   "resultado": "elmo_aco",
+   "quantidade": 1,
+   "materiais": {
+    "lingote_aco_porto": 2,
+    "couro": 1
+   },
+   "ouro": 144,
+   "forja": "ferraria_porto",
+   "nivel_forja": 3,
+   "ferreiro": "ferreiro"
+  },
+  {
+   "id": "forjar_peitoral_aco",
+   "resultado": "peitoral_aco",
+   "quantidade": 1,
+   "materiais": {
+    "lingote_aco_porto": 5,
+    "couro": 2
+   },
+   "ouro": 288,
+   "forja": "ferraria_porto",
+   "nivel_forja": 3,
+   "ferreiro": "ferreiro"
+  },
+  {
+   "id": "forjar_luvas_aco",
+   "resultado": "luvas_aco",
+   "quantidade": 1,
+   "materiais": {
+    "lingote_aco_porto": 2,
+    "couro": 2
+   },
+   "ouro": 125,
+   "forja": "ferraria_porto",
+   "nivel_forja": 3,
+   "ferreiro": "ferreiro"
+  },
+  {
+   "id": "forjar_botas_aco",
+   "resultado": "botas_aco",
+   "quantidade": 1,
+   "materiais": {
+    "lingote_aco_porto": 2,
+    "couro": 2
+   },
+   "ouro": 125,
+   "forja": "ferraria_porto",
+   "nivel_forja": 3,
+   "ferreiro": "ferreiro"
+  },
+  {
+   "id": "forjar_escudo_aco",
+   "resultado": "escudo_aco",
+   "quantidade": 1,
+   "materiais": {
+    "lingote_aco_porto": 3,
+    "madeira": 4
+   },
+   "ouro": 180,
+   "forja": "ferraria_porto",
+   "nivel_forja": 3,
+   "ferreiro": "ferreiro"
+  },
+  {
+   "id": "forjar_espada_brasa",
+   "resultado": "espada_brasa",
+   "quantidade": 1,
+   "materiais": {
+    "lingote_ferro_brasa": 3,
+    "couro": 1
+   },
+   "ouro": 320,
+   "forja": "forja_cla",
+   "nivel_forja": 1,
+   "ferreiro": "ferreiro_orc"
+  },
+  {
+   "id": "forjar_elmo_brasa",
+   "resultado": "elmo_brasa",
+   "quantidade": 1,
+   "materiais": {
+    "lingote_ferro_brasa": 2,
+    "couro": 1
+   },
+   "ouro": 256,
+   "forja": "forja_cla",
+   "nivel_forja": 1,
+   "ferreiro": "ferreiro_orc"
+  },
+  {
+   "id": "forjar_peitoral_brasa",
+   "resultado": "peitoral_brasa",
+   "quantidade": 1,
+   "materiais": {
+    "lingote_ferro_brasa": 5,
+    "couro": 2
+   },
+   "ouro": 512,
+   "forja": "forja_cla",
+   "nivel_forja": 1,
+   "ferreiro": "ferreiro_orc"
+  },
+  {
+   "id": "forjar_luvas_brasa",
+   "resultado": "luvas_brasa",
+   "quantidade": 1,
+   "materiais": {
+    "lingote_ferro_brasa": 2,
+    "couro": 2
+   },
+   "ouro": 224,
+   "forja": "forja_cla",
+   "nivel_forja": 1,
+   "ferreiro": "ferreiro_orc"
+  },
+  {
+   "id": "forjar_botas_brasa",
+   "resultado": "botas_brasa",
+   "quantidade": 1,
+   "materiais": {
+    "lingote_ferro_brasa": 2,
+    "couro": 2
+   },
+   "ouro": 224,
+   "forja": "forja_cla",
+   "nivel_forja": 1,
+   "ferreiro": "ferreiro_orc"
+  },
+  {
+   "id": "forjar_escudo_brasa",
+   "resultado": "escudo_brasa",
+   "quantidade": 1,
+   "materiais": {
+    "lingote_ferro_brasa": 3,
+    "madeira": 4
+   },
+   "ouro": 320,
+   "forja": "forja_cla",
+   "nivel_forja": 1,
+   "ferreiro": "ferreiro_orc"
+  },
+  {
+   "id": "forjar_espada_prata",
+   "resultado": "espada_prata",
+   "quantidade": 1,
+   "materiais": {
+    "lingote_prata_tumular": 3,
+    "presa_vampirica": 1
+   },
+   "ouro": 520,
+   "forja": "ferraria_porto",
+   "nivel_forja": 4,
+   "ferreiro": "ferreiro"
+  },
+  {
+   "id": "forjar_elmo_prata",
+   "resultado": "elmo_prata",
+   "quantidade": 1,
+   "materiais": {
+    "lingote_prata_tumular": 2,
+    "presa_vampirica": 1
+   },
+   "ouro": 416,
+   "forja": "ferraria_porto",
+   "nivel_forja": 4,
+   "ferreiro": "ferreiro"
+  },
+  {
+   "id": "forjar_peitoral_prata",
+   "resultado": "peitoral_prata",
+   "quantidade": 1,
+   "materiais": {
+    "lingote_prata_tumular": 5,
+    "presa_vampirica": 2
+   },
+   "ouro": 832,
+   "forja": "ferraria_porto",
+   "nivel_forja": 4,
+   "ferreiro": "ferreiro"
+  },
+  {
+   "id": "forjar_luvas_prata",
+   "resultado": "luvas_prata",
+   "quantidade": 1,
+   "materiais": {
+    "lingote_prata_tumular": 2,
+    "presa_vampirica": 1,
+    "couro": 1
+   },
+   "ouro": 364,
+   "forja": "ferraria_porto",
+   "nivel_forja": 4,
+   "ferreiro": "ferreiro"
+  },
+  {
+   "id": "forjar_botas_prata",
+   "resultado": "botas_prata",
+   "quantidade": 1,
+   "materiais": {
+    "lingote_prata_tumular": 2,
+    "presa_vampirica": 1,
+    "couro": 1
+   },
+   "ouro": 364,
+   "forja": "ferraria_porto",
+   "nivel_forja": 4,
+   "ferreiro": "ferreiro"
+  },
+  {
+   "id": "forjar_escudo_prata",
+   "resultado": "escudo_prata",
+   "quantidade": 1,
+   "materiais": {
+    "lingote_prata_tumular": 3,
+    "madeira": 4
+   },
+   "ouro": 520,
+   "forja": "ferraria_porto",
+   "nivel_forja": 4,
+   "ferreiro": "ferreiro"
+  },
+  {
+   "id": "forjar_espada_celeste",
+   "resultado": "espada_celeste",
+   "quantidade": 1,
+   "materiais": {
+    "cristal_celeste": 3,
+    "escama_ambar": 1
+   },
+   "ouro": 800,
+   "forja": "ferraria_porto",
+   "nivel_forja": 4,
+   "ferreiro": "ferreiro"
+  },
+  {
+   "id": "forjar_elmo_celeste",
+   "resultado": "elmo_celeste",
+   "quantidade": 1,
+   "materiais": {
+    "cristal_celeste": 2,
+    "escama_ambar": 1
+   },
+   "ouro": 640,
+   "forja": "ferraria_porto",
+   "nivel_forja": 4,
+   "ferreiro": "ferreiro"
+  },
+  {
+   "id": "forjar_peitoral_celeste",
+   "resultado": "peitoral_celeste",
+   "quantidade": 1,
+   "materiais": {
+    "cristal_celeste": 5,
+    "escama_ambar": 2
+   },
+   "ouro": 1280,
+   "forja": "ferraria_porto",
+   "nivel_forja": 4,
+   "ferreiro": "ferreiro"
+  },
+  {
+   "id": "forjar_luvas_celeste",
+   "resultado": "luvas_celeste",
+   "quantidade": 1,
+   "materiais": {
+    "cristal_celeste": 2,
+    "escama_ambar": 1,
+    "couro": 1
+   },
+   "ouro": 560,
+   "forja": "ferraria_porto",
+   "nivel_forja": 4,
+   "ferreiro": "ferreiro"
+  },
+  {
+   "id": "forjar_botas_celeste",
+   "resultado": "botas_celeste",
+   "quantidade": 1,
+   "materiais": {
+    "cristal_celeste": 2,
+    "escama_ambar": 1,
+    "couro": 1
+   },
+   "ouro": 560,
+   "forja": "ferraria_porto",
+   "nivel_forja": 4,
+   "ferreiro": "ferreiro"
+  },
+  {
+   "id": "forjar_escudo_celeste",
+   "resultado": "escudo_celeste",
+   "quantidade": 1,
+   "materiais": {
+    "cristal_celeste": 3,
+    "madeira": 4
+   },
+   "ouro": 800,
+   "forja": "ferraria_porto",
+   "nivel_forja": 4,
+   "ferreiro": "ferreiro"
+  },
+  {
+   "id": "forjar_espada_cronostio",
+   "resultado": "espada_cronostio",
+   "quantidade": 1,
+   "materiais": {
+    "lingote_cronostio": 3,
+    "engrenagem_quantica": 1
+   },
+   "ouro": 1300,
+   "forja": "forja_quantica",
+   "nivel_forja": 1,
+   "ferreiro": "fabricadora"
+  },
+  {
+   "id": "forjar_elmo_cronostio",
+   "resultado": "elmo_cronostio",
+   "quantidade": 1,
+   "materiais": {
+    "lingote_cronostio": 2,
+    "engrenagem_quantica": 1
+   },
+   "ouro": 1040,
+   "forja": "forja_quantica",
+   "nivel_forja": 1,
+   "ferreiro": "fabricadora"
+  },
+  {
+   "id": "forjar_peitoral_cronostio",
+   "resultado": "peitoral_cronostio",
+   "quantidade": 1,
+   "materiais": {
+    "lingote_cronostio": 5,
+    "engrenagem_quantica": 2
+   },
+   "ouro": 2080,
+   "forja": "forja_quantica",
+   "nivel_forja": 1,
+   "ferreiro": "fabricadora"
+  },
+  {
+   "id": "forjar_luvas_cronostio",
+   "resultado": "luvas_cronostio",
+   "quantidade": 1,
+   "materiais": {
+    "lingote_cronostio": 2,
+    "engrenagem_quantica": 1,
+    "couro": 1
+   },
+   "ouro": 909,
+   "forja": "forja_quantica",
+   "nivel_forja": 1,
+   "ferreiro": "fabricadora"
+  },
+  {
+   "id": "forjar_botas_cronostio",
+   "resultado": "botas_cronostio",
+   "quantidade": 1,
+   "materiais": {
+    "lingote_cronostio": 2,
+    "engrenagem_quantica": 1,
+    "couro": 1
+   },
+   "ouro": 909,
+   "forja": "forja_quantica",
+   "nivel_forja": 1,
+   "ferreiro": "fabricadora"
+  },
+  {
+   "id": "forjar_escudo_cronostio",
+   "resultado": "escudo_cronostio",
+   "quantidade": 1,
+   "materiais": {
+    "lingote_cronostio": 3,
+    "madeira": 4
+   },
+   "ouro": 1300,
+   "forja": "forja_quantica",
+   "nivel_forja": 1,
+   "ferreiro": "fabricadora"
+  },
+  {
+   "id": "forjar_espada_adamantium",
+   "resultado": "espada_adamantium",
+   "quantidade": 1,
+   "materiais": {
+    "lingote_adamantium": 3,
+    "eco_de_amanha": 1
+   },
+   "ouro": 2000,
+   "forja": "ferraria_porto",
+   "nivel_forja": 5,
+   "ferreiro": "ferreiro"
+  },
+  {
+   "id": "forjar_elmo_adamantium",
+   "resultado": "elmo_adamantium",
+   "quantidade": 1,
+   "materiais": {
+    "lingote_adamantium": 2,
+    "eco_de_amanha": 1
+   },
+   "ouro": 1600,
+   "forja": "ferraria_porto",
+   "nivel_forja": 5,
+   "ferreiro": "ferreiro"
+  },
+  {
+   "id": "forjar_peitoral_adamantium",
+   "resultado": "peitoral_adamantium",
+   "quantidade": 1,
+   "materiais": {
+    "lingote_adamantium": 5,
+    "eco_de_amanha": 2
+   },
+   "ouro": 3200,
+   "forja": "ferraria_porto",
+   "nivel_forja": 5,
+   "ferreiro": "ferreiro"
+  },
+  {
+   "id": "forjar_luvas_adamantium",
+   "resultado": "luvas_adamantium",
+   "quantidade": 1,
+   "materiais": {
+    "lingote_adamantium": 2,
+    "eco_de_amanha": 1,
+    "couro": 1
+   },
+   "ouro": 1400,
+   "forja": "ferraria_porto",
+   "nivel_forja": 5,
+   "ferreiro": "ferreiro"
+  },
+  {
+   "id": "forjar_botas_adamantium",
+   "resultado": "botas_adamantium",
+   "quantidade": 1,
+   "materiais": {
+    "lingote_adamantium": 2,
+    "eco_de_amanha": 1,
+    "couro": 1
+   },
+   "ouro": 1400,
+   "forja": "ferraria_porto",
+   "nivel_forja": 5,
+   "ferreiro": "ferreiro"
+  },
+  {
+   "id": "forjar_escudo_adamantium",
+   "resultado": "escudo_adamantium",
+   "quantidade": 1,
+   "materiais": {
+    "lingote_adamantium": 3,
+    "madeira": 4
+   },
+   "ouro": 2000,
+   "forja": "ferraria_porto",
+   "nivel_forja": 5,
+   "ferreiro": "ferreiro"
+  },
+  {
+   "id": "forjar_espada_paradoxal",
+   "resultado": "espada_paradoxal",
+   "quantidade": 1,
+   "materiais": {
+    "lingote_liga_paradoxal": 3,
+    "chip_anomalia": 1
+   },
+   "ouro": 3200,
+   "forja": "forja_quantica",
+   "nivel_forja": 2,
+   "ferreiro": "fabricadora"
+  },
+  {
+   "id": "forjar_elmo_paradoxal",
+   "resultado": "elmo_paradoxal",
+   "quantidade": 1,
+   "materiais": {
+    "lingote_liga_paradoxal": 2,
+    "chip_anomalia": 1
+   },
+   "ouro": 2560,
+   "forja": "forja_quantica",
+   "nivel_forja": 2,
+   "ferreiro": "fabricadora"
+  },
+  {
+   "id": "forjar_peitoral_paradoxal",
+   "resultado": "peitoral_paradoxal",
+   "quantidade": 1,
+   "materiais": {
+    "lingote_liga_paradoxal": 5,
+    "chip_anomalia": 2
+   },
+   "ouro": 5120,
+   "forja": "forja_quantica",
+   "nivel_forja": 2,
+   "ferreiro": "fabricadora"
+  },
+  {
+   "id": "forjar_luvas_paradoxal",
+   "resultado": "luvas_paradoxal",
+   "quantidade": 1,
+   "materiais": {
+    "lingote_liga_paradoxal": 2,
+    "chip_anomalia": 1,
+    "couro": 1
+   },
+   "ouro": 2240,
+   "forja": "forja_quantica",
+   "nivel_forja": 2,
+   "ferreiro": "fabricadora"
+  },
+  {
+   "id": "forjar_botas_paradoxal",
+   "resultado": "botas_paradoxal",
+   "quantidade": 1,
+   "materiais": {
+    "lingote_liga_paradoxal": 2,
+    "chip_anomalia": 1,
+    "couro": 1
+   },
+   "ouro": 2240,
+   "forja": "forja_quantica",
+   "nivel_forja": 2,
+   "ferreiro": "fabricadora"
+  },
+  {
+   "id": "forjar_escudo_paradoxal",
+   "resultado": "escudo_paradoxal",
+   "quantidade": 1,
+   "materiais": {
+    "lingote_liga_paradoxal": 3,
+    "madeira": 4
+   },
+   "ouro": 3200,
+   "forja": "forja_quantica",
+   "nivel_forja": 2,
+   "ferreiro": "fabricadora"
+  },
+  {
+   "id": "forjar_adaga_cobre",
+   "resultado": "adaga_cobre",
+   "quantidade": 1,
+   "materiais": {
+    "lingote_cobre": 2,
+    "couro": 1
+   },
+   "ouro": 30,
+   "forja": "ferraria_porto",
+   "nivel_forja": 1,
+   "ferreiro": "ferreiro"
+  },
+  {
+   "id": "forjar_lanca_ferro",
+   "resultado": "lanca_ferro",
+   "quantidade": 1,
+   "materiais": {
+    "lingote_ferro": 3,
+    "madeira": 3
+   },
+   "ouro": 80,
+   "forja": "ferraria_porto",
+   "nivel_forja": 2,
+   "ferreiro": "ferreiro"
+  },
+  {
+   "id": "forjar_machado_guerra_brasa",
+   "resultado": "machado_guerra_brasa",
+   "quantidade": 1,
+   "materiais": {
+    "lingote_ferro_brasa": 4,
+    "madeira": 2,
+    "couro": 1
+   },
+   "ouro": 360,
+   "forja": "forja_cla",
+   "nivel_forja": 1,
+   "ferreiro": "ferreiro_orc"
+  },
+  {
+   "id": "forjar_martelo_torto",
+   "resultado": "martelo_torto",
+   "quantidade": 1,
+   "materiais": {
+    "lingote_ferro_brasa": 5,
+    "pedra": 10
+   },
+   "ouro": 400,
+   "forja": "forja_cla",
+   "nivel_forja": 1,
+   "ferreiro": "ferreiro_orc"
+  },
+  {
+   "id": "forjar_besta_prata",
+   "resultado": "besta_prata",
+   "quantidade": 1,
+   "materiais": {
+    "lingote_prata_tumular": 3,
+    "madeira": 4,
+    "fibra": 6
+   },
+   "ouro": 560,
+   "forja": "ferraria_porto",
+   "nivel_forja": 4,
+   "ferreiro": "ferreiro"
+  },
+  {
+   "id": "forjar_lanca_celeste",
+   "resultado": "lanca_celeste",
+   "quantidade": 1,
+   "materiais": {
+    "cristal_celeste": 3,
+    "lingote_aco_porto": 2
+   },
+   "ouro": 820,
+   "forja": "ferraria_porto",
+   "nivel_forja": 4,
+   "ferreiro": "ferreiro"
+  },
+  {
+   "id": "forjar_pistola_ontem",
+   "resultado": "pistola_ontem",
+   "quantidade": 1,
+   "materiais": {
+    "lingote_cronostio": 2,
+    "chip_anomalia": 2,
+    "engrenagem_quantica": 1
+   },
+   "ouro": 1400,
+   "forja": "forja_quantica",
+   "nivel_forja": 1,
+   "ferreiro": "fabricadora"
+  },
+  {
+   "id": "forjar_martelo_paradoxal",
+   "resultado": "martelo_paradoxal",
+   "quantidade": 1,
+   "materiais": {
+    "lingote_liga_paradoxal": 4,
+    "chip_anomalia": 3
+   },
+   "ouro": 3600,
+   "forja": "forja_quantica",
+   "nivel_forja": 2,
+   "ferreiro": "fabricadora"
+  },
+  {
+   "id": "forjar_anel_cobre",
+   "resultado": "anel_cobre",
+   "quantidade": 1,
+   "materiais": {
+    "lingote_cobre": 1
+   },
+   "ouro": 50,
+   "forja": "ferraria_porto",
+   "nivel_forja": 1,
+   "ferreiro": "ferreiro"
+  },
+  {
+   "id": "forjar_amuleto_raiz_brasa",
+   "resultado": "amuleto_raiz_brasa",
+   "quantidade": 1,
+   "materiais": {
+    "lingote_ferro": 1,
+    "essencia_raiz_brasa": 1
+   },
+   "ouro": 150,
+   "forja": "ferraria_porto",
+   "nivel_forja": 2,
+   "ferreiro": "ferreiro"
+  },
+  {
+   "id": "forjar_presa_do_cla",
+   "resultado": "presa_do_cla",
+   "quantidade": 1,
+   "materiais": {
+    "lingote_ferro_brasa": 1,
+    "couro": 2
+   },
+   "ouro": 300,
+   "forja": "forja_cla",
+   "nivel_forja": 1,
+   "ferreiro": "ferreiro_orc"
+  },
+  {
+   "id": "forjar_colar_prata_lunar",
+   "resultado": "colar_prata_lunar",
+   "quantidade": 1,
+   "materiais": {
+    "lingote_prata_tumular": 1,
+    "pelo_de_lua": 1,
+    "essencia_orvalho_lunar": 1
+   },
+   "ouro": 600,
+   "forja": "ferraria_porto",
+   "nivel_forja": 4,
+   "ferreiro": "ferreiro"
+  },
+  {
+   "id": "forjar_anel_ambar",
+   "resultado": "anel_ambar",
+   "quantidade": 1,
+   "materiais": {
+    "cristal_celeste": 1,
+    "escama_ambar": 2
+   },
+   "ouro": 900,
+   "forja": "ferraria_porto",
+   "nivel_forja": 4,
+   "ferreiro": "ferreiro"
+  },
+  {
+   "id": "forjar_relogio_bolso_cronal",
+   "resultado": "relogio_bolso_cronal",
+   "quantidade": 1,
+   "materiais": {
+    "lingote_cronostio": 1,
+    "engrenagem_quantica": 1
+   },
+   "ouro": 1500,
+   "forja": "forja_quantica",
+   "nivel_forja": 1,
+   "ferreiro": "fabricadora"
+  },
+  {
+   "id": "forjar_brinco_eco",
+   "resultado": "brinco_eco",
+   "quantidade": 1,
+   "materiais": {
+    "lingote_cronostio": 1,
+    "eco_de_amanha": 1
+   },
+   "ouro": 1500,
+   "forja": "forja_quantica",
+   "nivel_forja": 1,
+   "ferreiro": "fabricadora"
+  },
+  {
+   "id": "forjar_coracao_engrenagem",
+   "resultado": "coracao_engrenagem",
+   "quantidade": 1,
+   "materiais": {
+    "lingote_liga_paradoxal": 1,
+    "areia_de_ontem": 2
+   },
+   "ouro": 4000,
+   "forja": "forja_quantica",
+   "nivel_forja": 2,
+   "ferreiro": "fabricadora"
+  },
+  {
+   "id": "forjar_picareta_cobre",
+   "resultado": "picareta_cobre",
+   "quantidade": 1,
+   "materiais": {
+    "lingote_cobre": 2,
+    "madeira": 2
+   },
+   "ouro": 20,
+   "forja": "ferraria_porto",
+   "nivel_forja": 1,
+   "ferreiro": "ferreiro"
+  },
+  {
+   "id": "forjar_picareta_ferro",
+   "resultado": "picareta_ferro",
+   "quantidade": 1,
+   "materiais": {
+    "lingote_ferro": 2,
+    "madeira": 2
+   },
+   "ouro": 45,
+   "forja": "ferraria_porto",
+   "nivel_forja": 2,
+   "ferreiro": "ferreiro"
+  },
+  {
+   "id": "forjar_picareta_aco",
+   "resultado": "picareta_aco",
+   "quantidade": 1,
+   "materiais": {
+    "lingote_aco_porto": 2,
+    "madeira": 2
+   },
+   "ouro": 90,
+   "forja": "ferraria_porto",
+   "nivel_forja": 3,
+   "ferreiro": "ferreiro"
+  },
+  {
+   "id": "forjar_picareta_brasa",
+   "resultado": "picareta_brasa",
+   "quantidade": 1,
+   "materiais": {
+    "lingote_ferro_brasa": 2,
+    "madeira": 2
+   },
+   "ouro": 160,
+   "forja": "forja_cla",
+   "nivel_forja": 1,
+   "ferreiro": "ferreiro_orc"
+  },
+  {
+   "id": "forjar_picareta_prata",
+   "resultado": "picareta_prata",
+   "quantidade": 1,
+   "materiais": {
+    "lingote_prata_tumular": 2,
+    "madeira": 2
+   },
+   "ouro": 260,
+   "forja": "ferraria_porto",
+   "nivel_forja": 4,
+   "ferreiro": "ferreiro"
+  },
+  {
+   "id": "forjar_picareta_celeste",
+   "resultado": "picareta_celeste",
+   "quantidade": 1,
+   "materiais": {
+    "cristal_celeste": 2,
+    "madeira": 2
+   },
+   "ouro": 400,
+   "forja": "ferraria_porto",
+   "nivel_forja": 4,
+   "ferreiro": "ferreiro"
+  },
+  {
+   "id": "forjar_picareta_cronostio",
+   "resultado": "picareta_cronostio",
+   "quantidade": 1,
+   "materiais": {
+    "lingote_cronostio": 2,
+    "madeira": 2
+   },
+   "ouro": 650,
+   "forja": "forja_quantica",
+   "nivel_forja": 1,
+   "ferreiro": "fabricadora"
+  },
+  {
+   "id": "forjar_machado_cobre",
+   "resultado": "machado_cobre",
+   "quantidade": 1,
+   "materiais": {
+    "lingote_cobre": 2,
+    "madeira": 1
+   },
+   "ouro": 20,
+   "forja": "ferraria_porto",
+   "nivel_forja": 1,
+   "ferreiro": "ferreiro"
+  },
+  {
+   "id": "forjar_machado_ferro",
+   "resultado": "machado_ferro",
+   "quantidade": 1,
+   "materiais": {
+    "lingote_ferro": 2,
+    "madeira": 1
+   },
+   "ouro": 45,
+   "forja": "ferraria_porto",
+   "nivel_forja": 2,
+   "ferreiro": "ferreiro"
+  },
+  {
+   "id": "forjar_machado_aco",
+   "resultado": "machado_aco",
+   "quantidade": 1,
+   "materiais": {
+    "lingote_aco_porto": 2,
+    "madeira": 1
+   },
+   "ouro": 90,
+   "forja": "ferraria_porto",
+   "nivel_forja": 3,
+   "ferreiro": "ferreiro"
+  },
+  {
+   "id": "forjar_machado_brasa",
+   "resultado": "machado_brasa",
+   "quantidade": 1,
+   "materiais": {
+    "lingote_ferro_brasa": 2,
+    "madeira": 1
+   },
+   "ouro": 160,
+   "forja": "forja_cla",
+   "nivel_forja": 1,
+   "ferreiro": "ferreiro_orc"
+  },
+  {
+   "id": "forjar_enxada_cobre",
+   "resultado": "enxada_cobre",
+   "quantidade": 1,
+   "materiais": {
+    "lingote_cobre": 2,
+    "madeira": 1
+   },
+   "ouro": 20,
+   "forja": "ferraria_porto",
+   "nivel_forja": 1,
+   "ferreiro": "ferreiro"
+  },
+  {
+   "id": "forjar_enxada_ferro",
+   "resultado": "enxada_ferro",
+   "quantidade": 1,
+   "materiais": {
+    "lingote_ferro": 2,
+    "madeira": 1
+   },
+   "ouro": 45,
+   "forja": "ferraria_porto",
+   "nivel_forja": 2,
+   "ferreiro": "ferreiro"
+  },
+  {
+   "id": "forjar_enxada_aco",
+   "resultado": "enxada_aco",
+   "quantidade": 1,
+   "materiais": {
+    "lingote_aco_porto": 2,
+    "madeira": 1
+   },
+   "ouro": 90,
+   "forja": "ferraria_porto",
+   "nivel_forja": 3,
+   "ferreiro": "ferreiro"
+  },
+  {
+   "id": "forjar_regador_cobre",
+   "resultado": "regador_cobre",
+   "quantidade": 1,
+   "materiais": {
+    "lingote_cobre": 3,
+    "madeira": 1
+   },
+   "ouro": 20,
+   "forja": "ferraria_porto",
+   "nivel_forja": 1,
+   "ferreiro": "ferreiro"
+  },
+  {
+   "id": "forjar_regador_ferro",
+   "resultado": "regador_ferro",
+   "quantidade": 1,
+   "materiais": {
+    "lingote_ferro": 3,
+    "madeira": 1
+   },
+   "ouro": 45,
+   "forja": "ferraria_porto",
+   "nivel_forja": 2,
+   "ferreiro": "ferreiro"
+  },
+  {
+   "id": "forjar_regador_aco",
+   "resultado": "regador_aco",
+   "quantidade": 1,
+   "materiais": {
+    "lingote_aco_porto": 3,
+    "madeira": 1
+   },
+   "ouro": 90,
+   "forja": "ferraria_porto",
+   "nivel_forja": 3,
+   "ferreiro": "ferreiro"
+  }
+ ],
+ "reforja": {
+  "niveis": [
+   {
+    "nivel": 1,
+    "bonus_atributo": 0.1,
+    "lingotes_do_tier": 1,
+    "ouro_fracao": 0.2
+   },
+   {
+    "nivel": 2,
+    "bonus_atributo": 0.2,
+    "lingotes_do_tier": 2,
+    "ouro_fracao": 0.4
+   },
+   {
+    "nivel": 3,
+    "bonus_atributo": 0.35,
+    "lingotes_do_tier": 3,
+    "ouro_fracao": 0.7,
+    "extra": {
+     "po_de_segundo": 1
+    }
+   }
+  ],
+  "regra": "Reforja na mesma forja que fez o item (ou superior). +3 em itens orc só na Forja do Clã nível 2."
+ },
+ "encantamento": {
+  "regra": "1 encanto por item. Trocar o encanto destrói o anterior. Mira encanta na Botica; Ozório na Torre Torta; a Dra. Mira de Depois aplica os dois tipos no Laboratório, com efeito x1,5.",
+  "ouro_por_tier": 40,
+  "essencias": [
+   "essencia_raiz_brasa",
+   "essencia_orvalho_lunar",
+   "essencia_musgo_sereno",
+   "po_de_segundo",
+   "areia_de_ontem",
+   "eco_de_amanha"
+  ]
+ },
+ "mvp": {
+  "descricao": "Primeira fatia: só Porto Velho + Minas da Cinza (andares 1-12) + Gaspar Bigorna (forja nível 1-3).",
+  "materiais": [
+   "minerio_cobre",
+   "minerio_ferro",
+   "carvao",
+   "lingote_cobre",
+   "lingote_ferro",
+   "lingote_aco_porto",
+   "madeira",
+   "couro"
+  ],
+  "receitas": [
+   "fundir_cobre",
+   "fundir_ferro",
+   "ligar_aco_porto",
+   "forjar_espada_cobre",
+   "forjar_espada_ferro",
+   "forjar_espada_aco",
+   "forjar_picareta_cobre",
+   "forjar_picareta_ferro",
+   "forjar_peitoral_cobre",
+   "forjar_peitoral_ferro",
+   "forjar_escudo_ferro",
+   "forjar_anel_cobre"
+  ],
+  "mecanicas": [
+   "fundir",
+   "forjar",
+   "reforja +1",
+   "subir forja para nível 2 e 3"
+  ]
+ }
+}

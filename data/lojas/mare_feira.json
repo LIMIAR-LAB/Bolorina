@@ -1,0 +1,31 @@
+{
+ "id": "mare_feira",
+ "nome": "Banca do Tatu Dourado",
+ "npc": "tatu_dourado",
+ "compra": [
+  {
+   "item": "relogio_parado",
+   "preco": 540,
+   "estoque": 1,
+   "qtd": 1
+  },
+  {
+   "item": "moeda_futuro",
+   "preco": 400,
+   "estoque": 1,
+   "qtd": 1
+  },
+  {
+   "item": "vidro_tempo",
+   "preco": 220,
+   "estoque": 2,
+   "qtd": 1
+  }
+ ],
+ "vende_categorias": [
+  "reliquia"
+ ],
+ "taxa_venda": 0.7,
+ "servicos": [],
+ "ilha": "ilha_mare"
+}

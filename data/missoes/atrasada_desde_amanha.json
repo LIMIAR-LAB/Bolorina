@@ -1,0 +1,922 @@
+{
+	"versao": 1,
+	"status": "PROPOSTA — não é canon. Missão escrita a partir do plano aprovado pelo Thiago (núcleo: explorar o tempo quebrado e trazer coisas que mudam Porto Velho).",
+	"id": "atrasada_desde_amanha",
+	"titulo": "Atrasada desde amanhã",
+	"resumo": "Gaspar Bigorna recebe uma multa por atrasar uma peça que ele ainda não fez. O documento descreve um defeito no guindaste da doca, que começa a acontecer de verdade. Vale desce às Minas da Cinza, aprende o eco temporal, recupera a peça (feita pelo próprio Gaspar, amanhã) e volta para uma cidade que reage.",
+	"duracao_estimada_min": [
+		30,
+		45
+	],
+	"marca_ativa": "missao_atrasada_ativa",
+	"marca_concluida": "missao_atrasada_concluida",
+	"participantes": [
+		"ferreiro",
+		"capitao",
+		"minerador_aposentado"
+	],
+	"participantes_opcionais": [
+		"mira",
+		"estalajadeira",
+		"guardia",
+		"fantasma_mineiro",
+		"jardineira"
+	],
+	"inicio": {
+		"condicoes": [
+			{
+				"tipo": "qualquer",
+				"de": [
+					{
+						"tipo": "marca",
+						"marca": "tutorial_basico_concluido"
+					},
+					{
+						"tipo": "marca",
+						"marca": "tutorial_pulado"
+					}
+				]
+			}
+		],
+		"texto_tela": "Nova missão: Atrasada desde amanhã"
+	},
+	"itens": {
+		"conta_impossivel": {
+			"nome": "Conta Impossível",
+			"tipo": "documento",
+			"descricao": "Multa da Repartição de Prazos e Vencimentos por atraso na entrega da Catraca-Mestra nº 3. Data de emissão: amanhã. Juros: hoje."
+		},
+		"amostra_ferrugem": {
+			"nome": "Amostra de Ferrugem",
+			"tipo": "missao",
+			"descricao": "Ferrugem raspada do guindaste. Cheira a chuva que ainda não caiu."
+		},
+		"catraca_mestra": {
+			"nome": "Catraca-Mestra nº 3",
+			"tipo": "missao",
+			"descricao": "Peça do guindaste com a marca de Gaspar Bigorna. Gravado na borda: 'feita amanhã'."
+		},
+		"caixa_vidro_lanterna": {
+			"nome": "Caixa frágil: vidro de lanterna",
+			"tipo": "missao",
+			"descricao": "Destinatária: Dona Rosalva, Estalagem da Lanterna. Presa no porão da Andorinha há três anos."
+		},
+		"encomenda_estacao": {
+			"nome": "Encomenda para a Estação Depois-de-Ontem",
+			"tipo": "missao",
+			"descricao": "Pacote lacrado. Remetente: em branco. Destino: Estação Depois-de-Ontem. Postado: daqui a trezentos anos."
+		},
+		"facao_fazenda": {
+			"nome": "Facão da Fazenda",
+			"tipo": "arma",
+			"descricao": "Arma inicial da Vale (PROPOSTA de nome; trocar pelo id real do combate)."
+		},
+		"facao_fazenda_eco": {
+			"nome": "Facão da Fazenda (temperado em cinza)",
+			"tipo": "arma",
+			"descricao": "O golpe pesado deixa um eco que repete o golpe no mesmo lugar 0,6 s depois."
+		},
+		"lasca_de_eco": {
+			"nome": "Lasca de Eco",
+			"tipo": "material",
+			"descricao": "Pedrinha que repete o som de quando foi quebrada. Cai do Bate-Estaca e da Galeria Desabada."
+		}
+	},
+	"reservas": {
+		"descricao": "Itens obrigatórios ficam em itens_missao e NUNCA entram no excedente gastável. 'reservar' separa a quantidade obrigatória de um material comum: o que passar disso vira excedente.",
+		"reservar": {
+			"minerio_cobre": 3
+		},
+		"motivo": "Gaspar precisa de 3 Minérios de Cobre para o acabamento da Catraca-Mestra. O resto do cobre que a Vale trouxer é dela para gastar."
+	},
+	"custos": {
+		"reforco_inicial": {
+			"minerio_cobre": 0,
+			"ouro": 0,
+			"nota": "Grátis: Gaspar paga do bolso porque 'mandar gente pra mina com facão cego dá multa também'."
+		},
+		"eco_rapido": {
+			"lasca_de_eco": 3,
+			"minerio_cobre": 2
+		},
+		"eco_pesado": {
+			"lasca_de_eco": 3,
+			"minerio_cobre": 2
+		}
+	},
+	"variacoes_eco": {
+		"eco_base": {
+			"nome": "Eco",
+			"atraso_s": 0.6,
+			"dano_relativo": 0.6,
+			"raio_m": 1.6,
+			"descricao": "O golpe pesado (3º do combo) deixa um eco que repete o golpe no mesmo lugar 0,6 s depois."
+		},
+		"eco_rapido": {
+			"nome": "Eco rápido",
+			"atraso_s": 0.35,
+			"dano_relativo": 0.45,
+			"raio_m": 1.6,
+			"extra": "acerto do eco reduz a recarga do dash em 0,1 s",
+			"descricao": "Repete mais cedo e mais leve. Bom para emendar combo e esquiva."
+		},
+		"eco_pesado": {
+			"nome": "Eco pesado",
+			"atraso_s": 0.9,
+			"dano_relativo": 1.0,
+			"raio_m": 2.2,
+			"extra": "quebra postura (conta como golpe pesado)",
+			"descricao": "Demora mais, bate como o golpe original e quebra a guarda. Bom para armar armadilha e sair."
+		}
+	},
+	"etapas": [
+		{
+			"id": "conta_impossivel",
+			"titulo": "Uma conta de amanhã",
+			"objetivo": "Fale com Gaspar Bigorna na Ferraria do Porto.",
+			"dica": "A Brida acabou de entregar um envelope com carimbo vermelho.",
+			"local": "porto_velho/FerrariaDoPorto",
+			"condicoes": [
+				{
+					"tipo": "marca",
+					"marca": "atrasada_conta_lida"
+				}
+			],
+			"dialogos": {
+				"ferreiro": {
+					"arquivo": "res://dialogos/missao_atrasada/gaspar.dialogue",
+					"cue": "conta_impossivel"
+				},
+				"guardia": {
+					"arquivo": "res://dialogos/missao_atrasada/brida.dialogue",
+					"cue": "entregou_conta"
+				}
+			},
+			"ao_iniciar": {
+				"cena_ambiente": "brida_entrega_envelope"
+			},
+			"ao_concluir": {
+				"dar_itens_missao": {
+					"conta_impossivel": 1
+				}
+			}
+		},
+		{
+			"id": "ver_guindaste",
+			"titulo": "O defeito que ainda não aconteceu",
+			"objetivo": "Vá até o guindaste da doca e confira o defeito descrito na conta.",
+			"dica": "A conta fala de uma 'catraca rachada no terceiro dente'. Olhe o guindaste de perto (E).",
+			"local": "porto_velho/doca/guindaste",
+			"condicoes": [
+				{
+					"tipo": "marca",
+					"marca": "atrasada_defeito_visto"
+				}
+			],
+			"dialogos": {
+				"capitao": {
+					"arquivo": "res://dialogos/missao_atrasada/capitao.dialogue",
+					"cue": "guindaste_rachando"
+				},
+				"ferreiro": {
+					"arquivo": "res://dialogos/missao_atrasada/gaspar.dialogue",
+					"cue": "lembrete_guindaste"
+				}
+			},
+			"interacoes": {
+				"guindaste_doca": {
+					"arquivo": "res://dialogos/missao_atrasada/capitao.dialogue",
+					"cue": "guindaste_rachando",
+					"npc": "capitao"
+				}
+			},
+			"ao_concluir": {
+				"mudancas_mundo": [
+					"guindaste_rachado"
+				]
+			}
+		},
+		{
+			"id": "reforco_arma",
+			"titulo": "Facão cego dá multa também",
+			"objetivo": "Volte à Ferraria e faça o primeiro reforço do Facão da Fazenda na bigorna.",
+			"dica": "Abra a forja (E na bigorna), escolha 'Têmpera em cinza' e confirme.",
+			"local": "porto_velho/FerrariaDoPorto",
+			"condicoes": [
+				{
+					"tipo": "marca",
+					"marca": "atrasada_gaspar_explicou_minas"
+				},
+				{
+					"tipo": "evento",
+					"evento": "forja_reforco_feito",
+					"alvo": "facao_fazenda",
+					"quantidade": 1
+				}
+			],
+			"dialogos": {
+				"ferreiro": {
+					"arquivo": "res://dialogos/missao_atrasada/gaspar.dialogue",
+					"cue": "reforco"
+				},
+				"minerador_aposentado": {
+					"arquivo": "res://dialogos/missao_atrasada/tiao.dialogue",
+					"cue": "na_ferraria"
+				}
+			},
+			"ao_concluir": {
+				"trocar_arma": {
+					"de": "facao_fazenda",
+					"para": "facao_fazenda_eco"
+				},
+				"marcas": [
+					"eco_desbloqueado",
+					"atrasada_arma_reforcada"
+				],
+				"variacao_eco": "eco_base",
+				"dialogo_pos": {
+					"npc": "ferreiro",
+					"arquivo": "res://dialogos/missao_atrasada/gaspar.dialogue",
+					"cue": "reforco_pronto"
+				}
+			}
+		},
+		{
+			"id": "provisao_fazenda",
+			"titulo": "Barriga cheia volta de ruína",
+			"opcional": true,
+			"objetivo": "(Opcional) Passe na fazenda e escolha uma provisão para a mina.",
+			"dica": "Uma escolha só. Dá para ir direto para a cisterna atrás da Ferraria se preferir.",
+			"local": "fazenda",
+			"condicoes": [
+				{
+					"tipo": "qualquer",
+					"de": [
+						{
+							"tipo": "marca",
+							"marca": "atrasada_provisao_nabo"
+						},
+						{
+							"tipo": "marca",
+							"marca": "atrasada_provisao_lampiao"
+						},
+						{
+							"tipo": "marca",
+							"marca": "atrasada_provisao_cha"
+						}
+					]
+				}
+			],
+			"pular_quando": [
+				{
+					"tipo": "evento",
+					"evento": "chegou_area",
+					"alvo": "minas_andar_1",
+					"quantidade": 1
+				}
+			],
+			"interacoes": {
+				"cesto_provisoes": {
+					"arquivo": "res://dialogos/missao_atrasada/fazenda.dialogue",
+					"cue": "provisao",
+					"npc": ""
+				}
+			},
+			"escolhas": [
+				{
+					"marca": "atrasada_provisao_nabo",
+					"efeito": {
+						"provisao": "nabo_assado",
+						"descricao": "Nabo-Cinzento Assado: cura 35 de vida uma vez dentro da mina."
+					}
+				},
+				{
+					"marca": "atrasada_provisao_lampiao",
+					"efeito": {
+						"provisao": "oleo_de_lampiao",
+						"descricao": "Óleo de lampião: os morcegos da Galeria Desabada não apagam sua luz."
+					}
+				},
+				{
+					"marca": "atrasada_provisao_cha",
+					"efeito": {
+						"provisao": "cha_raiz_brasa",
+						"descricao": "Garrafa de chá de raiz-de-brasa: o primeiro eco de cada sala dá +20% de dano."
+					}
+				}
+			]
+		},
+		{
+			"id": "minas_entrada",
+			"titulo": "O lodo que endurece",
+			"objetivo": "Desça pelo Elevador do Tião e vença os Lodos Casca-Grossa usando o eco.",
+			"dica": "O lodo endurece logo depois de apanhar e amolece um instante depois. Dê o golpe pesado e saia: o eco acerta na hora certa.",
+			"local": "minas_da_cinza/andar_01",
+			"condicoes": [
+				{
+					"tipo": "evento",
+					"evento": "chegou_area",
+					"alvo": "minas_andar_1",
+					"quantidade": 1
+				},
+				{
+					"tipo": "evento",
+					"evento": "eco_acertou",
+					"alvo": "lodo_casca_grossa",
+					"quantidade": 1
+				},
+				{
+					"tipo": "evento",
+					"evento": "inimigo_derrotado",
+					"alvo": "lodo_casca_grossa",
+					"quantidade": 3
+				}
+			],
+			"progresso_tela": {
+				"evento": "inimigo_derrotado",
+				"alvo": "lodo_casca_grossa",
+				"texto": "Lodos: {n}/{total}"
+			},
+			"dialogos": {
+				"minerador_aposentado": {
+					"arquivo": "res://dialogos/missao_atrasada/tiao.dialogue",
+					"cue": "elevador"
+				}
+			},
+			"encontro": {
+				"id": "entrada_lodos",
+				"inimigos": [
+					{
+						"tipo": "lodo_casca_grossa",
+						"quantidade": 3,
+						"marcador": "inimigo_lodo_de_cinza_*"
+					}
+				],
+				"regras": {
+					"lodo_casca_grossa": {
+						"vida": 40,
+						"endurece_apos_golpe_s": 0.25,
+						"duracao_casca_s": 0.45,
+						"dano_na_casca": 0.0,
+						"nota": "O eco base (0,6 s) cai exatamente quando a casca amolece."
+					}
+				},
+				"falha_segura": "Se a Vale apanhar 3 vezes sem usar o eco, Seu Tião grita a dica de novo (cue tiao/dica_eco)."
+			},
+			"ao_concluir": {
+				"dar_materiais": {
+					"minerio_cobre": 5,
+					"carvao": 1
+				},
+				"marcas": [
+					"atrasada_eco_aprendido"
+				]
+			}
+		},
+		{
+			"id": "bifurcacao",
+			"titulo": "Trilho ou desabamento",
+			"objetivo": "No andar 2, siga o trilho até o andar 4, ou arrisque a Galeria Desabada por material extra.",
+			"dica": "A galeria tem morcegos que roubam luz e dois veios de cobre. O trilho é seguro e mais curto.",
+			"local": "minas_da_cinza/andar_02",
+			"condicoes": [
+				{
+					"tipo": "evento",
+					"evento": "chegou_area",
+					"alvo": "minas_andar_4",
+					"quantidade": 1
+				}
+			],
+			"dialogos": {
+				"vagoneta_falante": {
+					"arquivo": "res://dialogos/missao_atrasada/minas.dialogue",
+					"cue": "vagoneta_bifurcacao"
+				}
+			},
+			"interacoes": {
+				"placa_bifurcacao": {
+					"arquivo": "res://dialogos/missao_atrasada/minas.dialogue",
+					"cue": "placa_bifurcacao",
+					"npc": ""
+				}
+			},
+			"escolhas": [
+				{
+					"marca": "atrasada_caminho_seguro",
+					"efeito": {
+						"descricao": "Trilho da vagoneta: sem inimigos extras."
+					}
+				},
+				{
+					"marca": "atrasada_caminho_arriscado",
+					"efeito": {
+						"descricao": "Galeria Desabada: 6 morcegos, 2 veios de cobre e um baú."
+					}
+				}
+			]
+		},
+		{
+			"id": "bate_estaca",
+			"titulo": "Os mesmos três segundos",
+			"objetivo": "O Bate-Estaca repete os mesmos 3 segundos. Use o eco para acertar as 3 travas enquanto você esquiva.",
+			"dica": "Você não alcança a trava e sai a tempo. Dê o golpe pesado na trava, esquive para fora: o eco acerta por você.",
+			"local": "minas_da_cinza/andar_04",
+			"condicoes": [
+				{
+					"tipo": "evento",
+					"evento": "trava_acertada_eco",
+					"alvo": "bate_estaca",
+					"quantidade": 3
+				},
+				{
+					"tipo": "evento",
+					"evento": "item_coletado",
+					"alvo": "catraca_mestra",
+					"quantidade": 1
+				}
+			],
+			"progresso_tela": {
+				"evento": "trava_acertada_eco",
+				"alvo": "bate_estaca",
+				"texto": "Travas: {n}/{total}"
+			},
+			"dialogos": {
+				"fantasma_mineiro": {
+					"arquivo": "res://dialogos/missao_atrasada/zeca.dialogue",
+					"cue": "no_bate_estaca"
+				}
+			},
+			"mecanismo": {
+				"id": "bate_estaca",
+				"ciclo_s": 3.0,
+				"fases": [
+					{
+						"nome": "sobe",
+						"inicio_s": 0.0,
+						"fim_s": 1.2,
+						"trava_exposta": true
+					},
+					{
+						"nome": "aviso",
+						"inicio_s": 1.2,
+						"fim_s": 2.0,
+						"trava_exposta": true,
+						"telegrafo": "anel vermelho no chão"
+					},
+					{
+						"nome": "desce",
+						"inicio_s": 2.0,
+						"fim_s": 2.3,
+						"dano": 30,
+						"area_m": 2.4
+					},
+					{
+						"nome": "preso",
+						"inicio_s": 2.3,
+						"fim_s": 3.0,
+						"trava_exposta": false
+					}
+				],
+				"regra": "A trava só quebra com golpe de eco (o golpe direto é empurrado de volta: 'o mecanismo lembra'). O jogo chama notificar('trava_acertada_eco','bate_estaca') a cada trava e coletar_item('catraca_mestra') quando a peça cai. As 3 Lascas de Eco são entregues pelo gerenciador ao concluir a etapa (o jogo não soma por conta própria).",
+				"onda": {
+					"apos_trava": 2,
+					"inimigos": [
+						{
+							"tipo": "lodo_casca_grossa",
+							"quantidade": 2
+						}
+					]
+				}
+			},
+			"ao_concluir": {
+				"dar_materiais": {
+					"lasca_de_eco": 3
+				},
+				"marcas": [
+					"atrasada_peca_recuperada"
+				],
+				"dialogo_pos": {
+					"npc": "fantasma_mineiro",
+					"arquivo": "res://dialogos/missao_atrasada/zeca.dialogue",
+					"cue": "sexta_feira"
+				}
+			}
+		},
+		{
+			"id": "voltar_ao_porto",
+			"titulo": "Voltar inteira",
+			"objetivo": "Volte a Porto Velho com a Catraca-Mestra.",
+			"dica": "O elevador do andar 1 sobe direto para a cisterna atrás da Ferraria.",
+			"local": "porto_velho",
+			"condicoes": [
+				{
+					"tipo": "evento",
+					"evento": "chegou_area",
+					"alvo": "porto_velho",
+					"quantidade": 1
+				}
+			],
+			"dialogos": {
+				"minerador_aposentado": {
+					"arquivo": "res://dialogos/missao_atrasada/tiao.dialogue",
+					"cue": "volta"
+				}
+			},
+			"ao_concluir": {
+				"marcas": [
+					"primeira_expedicao_voltou"
+				]
+			}
+		},
+		{
+			"id": "entregar_peca",
+			"titulo": "Pontualidade é tudo",
+			"objetivo": "Entregue a Catraca-Mestra ao Gaspar.",
+			"dica": "Os 3 Minérios de Cobre reservados vão junto, para o acabamento.",
+			"local": "porto_velho/FerrariaDoPorto",
+			"condicoes": [
+				{
+					"tipo": "item_missao",
+					"item": "catraca_mestra"
+				},
+				{
+					"tipo": "marca",
+					"marca": "atrasada_peca_entregue"
+				}
+			],
+			"dialogos": {
+				"ferreiro": {
+					"arquivo": "res://dialogos/missao_atrasada/gaspar.dialogue",
+					"cue": "entrega"
+				}
+			},
+			"ao_concluir": {
+				"consumir_itens_missao": {
+					"catraca_mestra": 1
+				},
+				"consumir_reservas": {
+					"minerio_cobre": 3
+				}
+			}
+		},
+		{
+			"id": "escolher_eco",
+			"titulo": "Rápido ou pesado",
+			"objetivo": "Use o excedente na forja: escolha Eco rápido ou Eco pesado.",
+			"dica": "Custa 3 Lascas de Eco e 2 Minérios de Cobre do seu excedente. Compare os dois na forja antes de confirmar.",
+			"local": "porto_velho/FerrariaDoPorto",
+			"condicoes": [
+				{
+					"tipo": "qualquer",
+					"de": [
+						{
+							"tipo": "marca",
+							"marca": "atrasada_eco_rapido"
+						},
+						{
+							"tipo": "marca",
+							"marca": "atrasada_eco_pesado"
+						}
+					]
+				}
+			],
+			"dialogos": {
+				"ferreiro": {
+					"arquivo": "res://dialogos/missao_atrasada/gaspar.dialogue",
+					"cue": "escolher_eco"
+				}
+			},
+			"marca_pode_pagar": {
+				"marca": "atrasada_pode_pagar_eco",
+				"custo": "eco_rapido"
+			},
+			"escolhas": [
+				{
+					"marca": "atrasada_eco_rapido",
+					"efeito": {
+						"variacao_eco": "eco_rapido",
+						"gastar_excedente": "eco_rapido"
+					}
+				},
+				{
+					"marca": "atrasada_eco_pesado",
+					"efeito": {
+						"variacao_eco": "eco_pesado",
+						"gastar_excedente": "eco_pesado"
+					}
+				}
+			],
+			"rede_seguranca": "Se o excedente não cobre o custo (gastou em outra coisa), Gaspar oferece fiado: marca atrasada_eco_fiado e a escolha acontece sem gastar. A missão nunca trava.",
+			"marca_fiado": "atrasada_eco_fiado"
+		},
+		{
+			"id": "testar_arena",
+			"titulo": "Prova na Arena",
+			"objetivo": "Teste o eco novo na Arena das Cinzas: acerte 3 inimigos com o eco.",
+			"dica": "Abra o mapa (M) e teleporte para a Arena das Cinzas.",
+			"local": "arena_das_cinzas",
+			"condicoes": [
+				{
+					"tipo": "evento",
+					"evento": "chegou_area",
+					"alvo": "arena_das_cinzas",
+					"quantidade": 1
+				},
+				{
+					"tipo": "evento",
+					"evento": "eco_acertou",
+					"alvo": "*",
+					"quantidade": 3
+				}
+			],
+			"progresso_tela": {
+				"evento": "eco_acertou",
+				"alvo": "*",
+				"texto": "Acertos de eco: {n}/{total}"
+			},
+			"ao_concluir": {
+				"marcas": [
+					"atrasada_arena_testada"
+				],
+				"dialogo_pos": {
+					"npc": "ferreiro",
+					"arquivo": "res://dialogos/missao_atrasada/arena.dialogue",
+					"cue": "fim_teste"
+				}
+			}
+		},
+		{
+			"id": "religar_guindaste",
+			"titulo": "O guindaste anda",
+			"objetivo": "Volte à doca: o Capitão Nuvem vai religar o guindaste.",
+			"local": "porto_velho/doca",
+			"condicoes": [
+				{
+					"tipo": "marca",
+					"marca": "atrasada_guindaste_ligado"
+				}
+			],
+			"dialogos": {
+				"capitao": {
+					"arquivo": "res://dialogos/missao_atrasada/capitao.dialogue",
+					"cue": "guindaste_conserto"
+				}
+			},
+			"ao_concluir": {
+				"mudancas_mundo": [
+					"guindaste_funcionando",
+					"carga_movida",
+					"passagem_armazem_aberta",
+					"encomenda_estacao_apareceu"
+				],
+				"dar_itens_missao": {
+					"caixa_vidro_lanterna": 1,
+					"encomenda_estacao": 1
+				}
+			}
+		},
+		{
+			"id": "entregar_vidro",
+			"titulo": "Três anos no porão",
+			"objetivo": "Leve a caixa frágil para Dona Rosalva, na Estalagem da Lanterna.",
+			"dica": "Endereço escrito à mão: 'pra Rosalva, que espera'.",
+			"local": "porto_velho/EstalagemDaLanterna",
+			"condicoes": [
+				{
+					"tipo": "marca",
+					"marca": "atrasada_vidro_entregue"
+				}
+			],
+			"dialogos": {
+				"estalajadeira": {
+					"arquivo": "res://dialogos/missao_atrasada/rosalva.dialogue",
+					"cue": "vidro"
+				}
+			},
+			"ao_concluir": {
+				"consumir_itens_missao": {
+					"caixa_vidro_lanterna": 1
+				},
+				"mudancas_mundo": [
+					"lanterna_vidro_novo"
+				]
+			}
+		},
+		{
+			"id": "arquivar_conta",
+			"titulo": "Arquivada em 'amanhã'",
+			"objetivo": "Conte ao Gaspar como ficou o guindaste.",
+			"local": "porto_velho/FerrariaDoPorto",
+			"condicoes": [
+				{
+					"tipo": "marca",
+					"marca": "atrasada_conta_arquivada"
+				}
+			],
+			"dialogos": {
+				"ferreiro": {
+					"arquivo": "res://dialogos/missao_atrasada/gaspar.dialogue",
+					"cue": "arquivar"
+				}
+			},
+			"ao_concluir": {
+				"consumir_itens_missao": {
+					"conta_impossivel": 1
+				},
+				"mudancas_mundo": [
+					"conta_emoldurada"
+				],
+				"marcas": [
+					"gancho_estacao_depois_de_ontem"
+				]
+			}
+		}
+	],
+	"opcionais": [
+		{
+			"id": "pista_da_mira",
+			"titulo": "Ferrugem fresca",
+			"de_etapa": "ver_guindaste",
+			"ate_etapa": "arquivar_conta",
+			"objetivo": "(Opcional) Mostre a conta à Mira, raspe ferrugem do guindaste e leve a amostra para ela.",
+			"condicoes": [
+				{
+					"tipo": "marca",
+					"marca": "atrasada_pista_mira"
+				},
+				{
+					"tipo": "marca",
+					"marca": "atrasada_amostra_raspada"
+				},
+				{
+					"tipo": "marca",
+					"marca": "atrasada_pista_confirmada"
+				}
+			],
+			"dialogos": {
+				"mira": {
+					"arquivo": "res://dialogos/missao_atrasada/mira.dialogue",
+					"cue": "pista"
+				}
+			},
+			"interacoes": {
+				"guindaste_doca": {
+					"arquivo": "res://dialogos/missao_atrasada/mira.dialogue",
+					"cue": "raspar",
+					"quando": "atrasada_pista_mira",
+					"nao_quando": "atrasada_amostra_raspada",
+					"npc": ""
+				}
+			},
+			"efeitos_marca": {
+				"atrasada_amostra_raspada": {
+					"dar_itens_missao": {
+						"amostra_ferrugem": 1
+					}
+				},
+				"atrasada_pista_confirmada": {
+					"consumir_itens_missao": {
+						"amostra_ferrugem": 1
+					}
+				}
+			},
+			"ao_concluir": {
+				"dar_materiais": {
+					"essencia_raiz_brasa": 1
+				},
+				"marcas": [
+					"mira_amostra_amanha"
+				]
+			}
+		},
+		{
+			"id": "galeria_desabada",
+			"titulo": "Material extra",
+			"de_etapa": "bifurcacao",
+			"ate_etapa": "bate_estaca",
+			"objetivo": "(Opcional) Atravesse a Galeria Desabada.",
+			"condicoes": [
+				{
+					"tipo": "marca",
+					"marca": "atrasada_caminho_arriscado"
+				},
+				{
+					"tipo": "evento",
+					"evento": "inimigo_derrotado",
+					"alvo": "morcego",
+					"quantidade": 6
+				},
+				{
+					"tipo": "evento",
+					"evento": "bau_aberto",
+					"alvo": "bau_galeria_desabada",
+					"quantidade": 1
+				}
+			],
+			"ao_concluir": {
+				"dar_materiais": {
+					"minerio_cobre": 4,
+					"lasca_de_eco": 3,
+					"carvao": 2
+				},
+				"marcas": [
+					"atrasada_galeria_vencida"
+				]
+			}
+		},
+		{
+			"id": "recado_do_zeca",
+			"titulo": "Recado de uma quinta-feira",
+			"de_etapa": "bate_estaca",
+			"ate_etapa": "arquivar_conta",
+			"objetivo": "(Opcional) Leve o recado do Zeca para o Seu Tião.",
+			"condicoes": [
+				{
+					"tipo": "marca",
+					"marca": "zeca_pediu_recado"
+				},
+				{
+					"tipo": "marca",
+					"marca": "tiao_recebeu_recado"
+				}
+			],
+			"dialogos": {
+				"minerador_aposentado": {
+					"arquivo": "res://dialogos/missao_atrasada/tiao.dialogue",
+					"cue": "recado"
+				}
+			},
+			"ao_concluir": {
+				"mudancas_mundo": [
+					"lamparina_andar_4"
+				],
+				"marcas": [
+					"tiao_desce_de_novo"
+				]
+			},
+			"persistente": true
+		}
+	],
+	"recompensas_finais": {
+		"ouro": 120,
+		"excedente": {
+			"lingote_cobre": 2
+		},
+		"confianca": {
+			"ferreiro": 2,
+			"capitao": 2,
+			"minerador_aposentado": 1,
+			"estalajadeira": 1
+		},
+		"desbloqueia": [
+			"forja_variacoes_eco",
+			"rota_estacao_depois_de_ontem"
+		],
+		"marcas": [
+			"missao_atrasada_concluida"
+		]
+	},
+	"mudancas_mundo": {
+		"guindaste_rachado": {
+			"descricao": "Catraca do guindaste com rachadura no 3º dente; range a cada 9 s e solta um pouco de cinza.",
+			"alvo": "Doca/Guindaste",
+			"tipo": "estado_visual"
+		},
+		"guindaste_funcionando": {
+			"descricao": "O braço do guindaste gira e o gancho sobe e desce em ciclo.",
+			"alvo": "Doca/Guindaste",
+			"tipo": "animacao"
+		},
+		"carga_movida": {
+			"descricao": "As caixas paradas na doca vão para o porão da Andorinha e para o Armazém da Doca.",
+			"alvo": "Doca/CaixasParadas",
+			"tipo": "mover_props"
+		},
+		"passagem_armazem_aberta": {
+			"descricao": "As caixas que bloqueavam o beco entre a doca e o Armazém da Doca somem; o beco vira caminho.",
+			"alvo": "ArmazemDaDoca/BecoBloqueado",
+			"tipo": "remover_colisao"
+		},
+		"encomenda_estacao_apareceu": {
+			"descricao": "Um pacote lacrado com destino 'Estação Depois-de-Ontem' fica em cima da última caixa, brilhando de leve.",
+			"alvo": "Doca/EncomendaEstacao",
+			"tipo": "mostrar"
+		},
+		"lanterna_vidro_novo": {
+			"descricao": "A lanterna da Estalagem ganha vidro novo e uma luz mais clara (energia +20%).",
+			"alvo": "EstalagemDaLanterna/Lanterna",
+			"tipo": "estado_visual"
+		},
+		"conta_emoldurada": {
+			"descricao": "A Conta Impossível aparece emoldurada na parede da Ferraria, com uma etiqueta: 'ARQUIVO: AMANHÃ'.",
+			"alvo": "FerrariaDoPorto/Parede",
+			"tipo": "mostrar"
+		},
+		"lamparina_andar_4": {
+			"descricao": "Uma lamparina acesa fica pendurada perto do Bate-Estaca, no andar 4.",
+			"alvo": "minas_da_cinza/andar_04/LamparinaZeca",
+			"tipo": "mostrar"
+		}
+	},
+	"nota_coleta": "Itens de missão (tipo 'missao' ou 'documento' em 'itens') que o jogo coletar via coletar_item() vão para itens_missao; o resto vai para materiais, e a parte reservada (reservas.reservar) nunca entra no excedente."
+}

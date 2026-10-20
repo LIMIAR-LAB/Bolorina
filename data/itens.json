@@ -1,0 +1,450 @@
+{
+ "versao": 1,
+ "nota": "Catálogo de itens (scripts/economia/itens.gd). Ícone: art/ui/icones/<id>.png (fallback: ícones antigos ou um quadrado com a cor da categoria). Equipamentos vêm de scripts/ilha/equipamento.gd (cat equip).",
+ "itens": {
+  "semente_nabo": {
+   "nome": "Sementes de nabo",
+   "cat": "semente",
+   "preco": 20,
+   "desc": ""
+  },
+  "semente_couve": {
+   "nome": "Sementes de couve",
+   "cat": "semente",
+   "preco": 40,
+   "desc": ""
+  },
+  "semente_abobora": {
+   "nome": "Sementes de abóbora",
+   "cat": "semente",
+   "preco": 80,
+   "desc": ""
+  },
+  "semente_girassol": {
+   "nome": "Sementes de girassol",
+   "cat": "semente",
+   "preco": 30,
+   "desc": ""
+  },
+  "racao": {
+   "nome": "Ração de galinha",
+   "cat": "semente",
+   "preco": 6,
+   "desc": ""
+  },
+  "muda_macieira": {
+   "nome": "Muda de macieira",
+   "cat": "semente",
+   "preco": 150,
+   "desc": ""
+  },
+  "muda_laranjeira": {
+   "nome": "Muda de laranjeira",
+   "cat": "semente",
+   "preco": 180,
+   "desc": ""
+  },
+  "nabo": {
+   "nome": "Nabo",
+   "cat": "colheita",
+   "preco": 35,
+   "desc": ""
+  },
+  "couve": {
+   "nome": "Couve",
+   "cat": "colheita",
+   "preco": 60,
+   "desc": ""
+  },
+  "abobora": {
+   "nome": "Abóbora",
+   "cat": "colheita",
+   "preco": 120,
+   "desc": ""
+  },
+  "ovo": {
+   "nome": "Ovo",
+   "cat": "colheita",
+   "preco": 25,
+   "desc": ""
+  },
+  "maca": {
+   "nome": "Maçã",
+   "cat": "colheita",
+   "preco": 40,
+   "desc": ""
+  },
+  "laranja": {
+   "nome": "Laranja",
+   "cat": "colheita",
+   "preco": 45,
+   "desc": ""
+  },
+  "peixe_carpa": {
+   "nome": "Carpa",
+   "cat": "peixe",
+   "preco": 30,
+   "desc": ""
+  },
+  "peixe_tilapia": {
+   "nome": "Tilápia",
+   "cat": "peixe",
+   "preco": 50,
+   "desc": ""
+  },
+  "peixe_dourado": {
+   "nome": "Truta dourada",
+   "cat": "peixe",
+   "preco": 140,
+   "desc": ""
+  },
+  "madeira": {
+   "nome": "Madeira",
+   "cat": "material",
+   "preco": 5,
+   "desc": ""
+  },
+  "pedra": {
+   "nome": "Pedra",
+   "cat": "material",
+   "preco": 4,
+   "desc": ""
+  },
+  "fibra": {
+   "nome": "Fibra",
+   "cat": "material",
+   "preco": 3,
+   "desc": ""
+  },
+  "tabuas": {
+   "nome": "Tábuas",
+   "cat": "material",
+   "preco": 20,
+   "desc": ""
+  },
+  "corda": {
+   "nome": "Corda",
+   "cat": "material",
+   "preco": 10,
+   "desc": ""
+  },
+  "tocha": {
+   "nome": "Tocha",
+   "cat": "material",
+   "preco": 8,
+   "desc": ""
+  },
+  "sal": {
+   "nome": "Sal das cinzas",
+   "cat": "material",
+   "preco": 5,
+   "desc": ""
+  },
+  "isca_minhoca": {
+   "nome": "Isca de minhoca",
+   "cat": "pesca",
+   "preco": 5,
+   "desc": "O peixe morde mais rápido."
+  },
+  "isca_brilhante": {
+   "nome": "Isca brilhante",
+   "cat": "pesca",
+   "preco": 25,
+   "desc": "Atrai a truta dourada."
+  },
+  "vara_reforcada": {
+   "nome": "Vara reforçada",
+   "cat": "pesca",
+   "preco": 300,
+   "desc": "Para os peixes que puxam de volta."
+  },
+  "pocao_vida": {
+   "nome": "Poção de vida",
+   "cat": "pocao",
+   "preco": 40,
+   "desc": "Recupera 30 de vida no combate."
+  },
+  "pocao_energia": {
+   "nome": "Poção de energia",
+   "cat": "pocao",
+   "preco": 35,
+   "desc": "Recupera 40 de energia."
+  },
+  "cha_calmante": {
+   "nome": "Chá calmante",
+   "cat": "pocao",
+   "preco": 20,
+   "desc": "Faz bem para quem viu o próprio futuro."
+  },
+  "antidoto": {
+   "nome": "Antídoto",
+   "cat": "pocao",
+   "preco": 30,
+   "desc": "Contra veneno de cogumelo-relógio."
+  },
+  "sopa_peixe": {
+   "nome": "Sopa de peixe",
+   "cat": "comida",
+   "preco": 30,
+   "desc": "+30 de energia."
+  },
+  "pao_cinzas": {
+   "nome": "Pão de cinzas",
+   "cat": "comida",
+   "preco": 12,
+   "desc": "+10 de energia. Crocante."
+  },
+  "torta_abobora": {
+   "nome": "Torta de abóbora",
+   "cat": "comida",
+   "preco": 60,
+   "desc": "+60 de energia."
+  },
+  "minerio_cobre": {
+   "nome": "Minério de cobre",
+   "cat": "minerio",
+   "preco": 8,
+   "desc": ""
+  },
+  "minerio_ferro": {
+   "nome": "Minério de ferro",
+   "cat": "minerio",
+   "preco": 14,
+   "desc": ""
+  },
+  "minerio_prata": {
+   "nome": "Prata de túmulo (minério)",
+   "cat": "minerio",
+   "preco": 28,
+   "desc": ""
+  },
+  "carvao": {
+   "nome": "Carvão",
+   "cat": "minerio",
+   "preco": 6,
+   "desc": ""
+  },
+  "lingote_cobre": {
+   "nome": "Lingote de cobre",
+   "cat": "lingote",
+   "preco": 40,
+   "desc": ""
+  },
+  "lingote_ferro": {
+   "nome": "Lingote de ferro",
+   "cat": "lingote",
+   "preco": 70,
+   "desc": ""
+  },
+  "lingote_prata": {
+   "nome": "Lingote de prata de túmulo",
+   "cat": "lingote",
+   "preco": 140,
+   "desc": ""
+  },
+  "picareta": {
+   "nome": "Picareta",
+   "cat": "ferramenta",
+   "preco": 120,
+   "desc": "Quebra pedra e minério."
+  },
+  "picareta_ferro": {
+   "nome": "Picareta de ferro",
+   "cat": "ferramenta",
+   "preco": 250,
+   "desc": "Quebra minério de prata."
+  },
+  "lanterna_mina": {
+   "nome": "Lanterna de mina",
+   "cat": "ferramenta",
+   "preco": 90,
+   "desc": "Dica do Gaspar: sem luz, sem lucro."
+  },
+  "mapa_minas": {
+   "nome": "Mapa das Minas da Cinza",
+   "cat": "mapa",
+   "preco": 120,
+   "desc": "Libera a viagem para as Minas."
+  },
+  "mapa_cidade_fantasma": {
+   "nome": "Mapa da Cidade Fantasma",
+   "cat": "mapa",
+   "preco": 150,
+   "desc": "Libera a viagem para a Cidade Fantasma."
+  },
+  "mapa_vila_orcs": {
+   "nome": "Mapa da Vila dos Orcs",
+   "cat": "mapa",
+   "preco": 150,
+   "desc": "Libera a viagem para a Vila dos Orcs."
+  },
+  "bussola_temporal": {
+   "nome": "Bússola temporal",
+   "cat": "mapa",
+   "preco": 400,
+   "desc": "Aponta para onde você vai estar."
+  },
+  "chapeu_palha": {
+   "nome": "Chapéu de palha",
+   "cat": "roupa",
+   "preco": 60,
+   "desc": "Cosmético."
+  },
+  "lenco_vermelho": {
+   "nome": "Lenço vermelho",
+   "cat": "roupa",
+   "preco": 45,
+   "desc": "Cosmético."
+  },
+  "capa_viagem": {
+   "nome": "Capa de viagem",
+   "cat": "roupa",
+   "preco": 200,
+   "desc": "Cosmético. Esvoaça no dirigível."
+  },
+  "tinta_anil": {
+   "nome": "Tinta de anil",
+   "cat": "roupa",
+   "preco": 30,
+   "desc": "Tinge roupas de azul."
+  },
+  "relogio_parado": {
+   "nome": "Relógio parado",
+   "cat": "reliquia",
+   "preco": 600,
+   "desc": "Marca sempre 16:30. Em algum universo, está certo."
+  },
+  "moeda_futuro": {
+   "nome": "Moeda do futuro",
+   "cat": "reliquia",
+   "preco": 450,
+   "desc": "Cunhada em 3021. O troco é em 1985."
+  },
+  "fossil_dragao": {
+   "nome": "Fóssil de dragão",
+   "cat": "reliquia",
+   "preco": 800,
+   "desc": "O dragão da doca jura que é de um primo."
+  },
+  "ampulheta_rachada": {
+   "nome": "Ampulheta rachada",
+   "cat": "reliquia",
+   "preco": 350,
+   "desc": "A areia cai para cima às terças."
+  },
+  "racao_pet": {
+   "nome": "Petisco de pet",
+   "cat": "pet",
+   "preco": 15,
+   "desc": "Agrada qualquer bicho, menos o dragão."
+  },
+  "coleira": {
+   "nome": "Coleira de couro",
+   "cat": "pet",
+   "preco": 80,
+   "desc": ""
+  },
+  "apito_montaria": {
+   "nome": "Apito de montaria",
+   "cat": "pet",
+   "preco": 500,
+   "desc": "Chama o gato-cavalo (ainda em treinamento)."
+  },
+  "escama_dragao": {
+   "nome": "Escama de dragão",
+   "cat": "reliquia",
+   "preco": 300,
+   "desc": "Presente do Fagulha. Ainda morna."
+  },
+  "insignia_guarda": {
+   "nome": "Insígnia da guarda",
+   "cat": "reliquia",
+   "preco": 100,
+   "desc": "Prova de serviço à guardiã Brida Ferrolho."
+  },
+  "carta_entrega": {
+   "nome": "Carta para entregar",
+   "cat": "missao",
+   "preco": 0,
+   "desc": "O Pipo pediu para levar ao Capitão Nuvem."
+  },
+  "achado_estranho": {
+   "nome": "Achado estranho",
+   "cat": "reliquia",
+   "preco": 20,
+   "desc": "Algo que a maré trouxe. A Professora Éon sabe o que é."
+  },
+  "sucata": {
+   "nome": "Sucata de outra era",
+   "cat": "material",
+   "preco": 6,
+   "desc": ""
+  },
+  "sardinha_nuvem": {
+   "nome": "Sardinha-nuvem",
+   "cat": "peixe",
+   "preco": 45,
+   "desc": "Pescada no ar, na maré alta."
+  },
+  "linguado_pipa": {
+   "nome": "Linguado-pipa",
+   "cat": "peixe",
+   "preco": 80,
+   "desc": "Plana melhor do que nada."
+  },
+  "enguia_raio": {
+   "nome": "Enguia-raio",
+   "cat": "peixe",
+   "preco": 160,
+   "desc": "Dá choque até frita."
+  },
+  "oleo_farol": {
+   "nome": "Óleo de farol",
+   "cat": "material",
+   "preco": 15,
+   "desc": ""
+  },
+  "areia_parada": {
+   "nome": "Areia parada",
+   "cat": "lingote",
+   "preco": 120,
+   "desc": "Do Eclipse da Ampulheta. Não cai."
+  },
+  "vidro_tempo": {
+   "nome": "Vidro-do-tempo",
+   "cat": "lingote",
+   "preco": 180,
+   "desc": "Da Tempestade de Vidro. Reflete o que vai acontecer."
+  },
+  "minerio_bronze_mare": {
+   "nome": "Bronze das marés (minério)",
+   "cat": "minerio",
+   "preco": 40,
+   "desc": ""
+  },
+  "lingote_bronze_mare": {
+   "nome": "Lingote de bronze das marés",
+   "cat": "lingote",
+   "preco": 190,
+   "desc": ""
+  },
+  "tabua_das_mares": {
+   "nome": "Tábua das Marés",
+   "cat": "mapa",
+   "preco": 220,
+   "desc": "Libera a viagem para a Ilha da Maré do Tempo."
+  },
+  "isca_aerea": {
+   "nome": "Isca aérea",
+   "cat": "pesca",
+   "preco": 18,
+   "desc": "Para pescar no céu."
+  },
+  "sopa_nuvem": {
+   "nome": "Sopa de sardinha-nuvem",
+   "cat": "comida",
+   "preco": 55,
+   "desc": "+50 de energia. Leve."
+  }
+ }
+}

@@ -1,0 +1,25 @@
+# Brida Ferrolho, guardiã do Posto da Guarda (Porto Velho). Cuida do mural de pedidos.
+~ start
+if tem("guardia_conheceu")
+	=> de_novo
+Brida Ferrolho: Alto. Nome e motivo da visita.
+Vale: Vale. Vim morar na fazenda do alto e reabrir as rotas de comércio.
+Brida Ferrolho: Rotas. Claro. E eu vim aqui pra virar bailarina.
+Brida Ferrolho: Desde a Queda, tudo que voa até Porto Velho quer roubar adamantium, pedir pedágio ou comer alguém. Às vezes as três coisas.
+- Posso ajudar com alguma coisa?
+	Brida Ferrolho: Pode. O mural ali tem pedidos dos moradores. Comece pequeno. Ratos de cinza no armazém do cais.
+	Brida Ferrolho: Volte viva e talvez eu pare de te chamar de "a forasteira".
+	$> pedir_missao("guardia_ratos_do_cais")
+	$> confiar("guardia", 1)
+- Você sempre recebe as pessoas assim?
+	Brida Ferrolho: Só as que ainda estão vivas no fim da conversa.
+	Brida Ferrolho: Isso foi uma piada. Acho. Faz tempo que eu não conto uma.
+Brida Ferrolho: Os portões fecham ao anoitecer. Depois disso, quem bate é problema seu.
+$> marcar("guardia_conheceu")
+=> END
+
+~ de_novo
+% Brida Ferrolho: O mural tem pedido novo. Lê antes de reclamar que não tem o que fazer.
+% Brida Ferrolho: Viu algo estranho voando do lado leste? Me avisa. Não sai correndo atrás.
+% Brida Ferrolho: Você ainda está viva. Estou levemente impressionada.
+=> END

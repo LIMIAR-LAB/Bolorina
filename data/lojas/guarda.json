@@ -1,0 +1,22 @@
+{
+ "id": "guarda",
+ "nome": "Posto da Guardiã",
+ "npc": "bruna",
+ "compra": [],
+ "vende_categorias": [],
+ "taxa_venda": 0.5,
+ "servicos": [
+  {
+   "id": "missao",
+   "nome": "Pedir missão",
+   "preco": 0,
+   "desc": "Missões da guarda: traga minério, peixe ou monstros vencidos."
+  },
+  {
+   "id": "entregar_missao",
+   "nome": "Entregar missão",
+   "preco": 0,
+   "desc": "Recebe a recompensa."
+  }
+ ]
+}

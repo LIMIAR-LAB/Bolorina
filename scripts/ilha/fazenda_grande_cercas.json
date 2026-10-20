@@ -1,0 +1,99 @@
+{
+ "nota": "Cercas da fazenda (mesmo sistema da vila: scripts/modular/cercas.gd, docs/CERCAS.md).",
+ "cercas": [
+  {
+   "nome": "galinheiro",
+   "pontos": [
+    [
+     9.5,
+     -13.5
+    ],
+    [
+     9.5,
+     -21.5
+    ],
+    [
+     20.5,
+     -21.5
+    ],
+    [
+     20.5,
+     -13.5
+    ],
+    [
+     9.5,
+     -13.5
+    ]
+   ],
+   "fechada": false,
+   "portoes": [
+    32
+   ]
+  },
+  {
+   "nome": "horta_casa",
+   "pontos": [
+    [
+     -4.5,
+     -9.5
+    ],
+    [
+     1.5,
+     -9.5
+    ],
+    [
+     1.5,
+     -4.5
+    ]
+   ],
+   "fechada": false,
+   "portoes": []
+  },
+  {
+   "nome": "pasto_animais",
+   "pontos": [
+    [
+     8.5,
+     23.5
+    ],
+    [
+     2.5,
+     23.5
+    ],
+    [
+     2.5,
+     31.5
+    ],
+    [
+     18.5,
+     31.5
+    ],
+    [
+     18.5,
+     23.5
+    ],
+    [
+     12.5,
+     23.5
+    ]
+   ],
+   "fechada": false,
+   "portoes": []
+  },
+  {
+   "nome": "pomar",
+   "pontos": [
+    [
+     -39.5,
+     -22.5
+    ],
+    [
+     -26.5,
+     -22.5
+    ]
+   ],
+   "fechada": false,
+   "portoes": []
+  }
+ ]
+}

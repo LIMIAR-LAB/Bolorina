@@ -1,0 +1,22 @@
+# Dona Vagoneta, a vagoneta falante que roda nos trilhos entre os andares. Gancho para um futuro "atalho de vagoneta". PROPOSTA.
+~ start
+if tem("vagoneta_falante_conheceu")
+	=> de_novo
+Dona Vagoneta: Toc-toc-toc! Cuidado com o pé, meu bem, eu não tenho freio. Nem pé.
+Dona Vagoneta: Eu rodo esses trilhos desde antes do Tião ter bigode. O trilho sempre vai da escada de cima até o poço de baixo.
+- Você pode levar meu minério?
+	Dona Vagoneta: Posso! Enche minha caçamba que eu levo pra Ferraria do Porto. Só não põe carvão molhado, que me dá azia.
+	Dona Vagoneta: Quando consertarem os trilhos de baixo, eu te levo direto pro andar que você quiser. Um dia.
+	$> marcar("vagoneta_falante_carrega")
+	$> confiar("vagoneta_falante", 1)
+- Vagoneta fala?
+	Dona Vagoneta: Fala, canta e reclama. Os mineiros conversavam tanto comigo que eu aprendi.
+Dona Vagoneta: Agora vai, que eu tenho horário. Toc-toc!
+$> marcar("vagoneta_falante_conheceu")
+=> END
+
+~ de_novo
+% Dona Vagoneta: Toc-toc! Ainda não consertaram o trilho de baixo. Burocracia de mina.
+% Dona Vagoneta: Uma vez eu desci até o andar 12 sozinha. Voltei com uma roda a menos e uma história a mais.
+% Dona Vagoneta: Se ver um morcego, grita. Eu não tenho olhos, mas tenho buzina. Fon-fon!
+=> END

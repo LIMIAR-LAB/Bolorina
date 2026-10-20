@@ -1,0 +1,30 @@
+{
+ "id": "pescaria",
+ "nome": "Iscas da Lurdes",
+ "npc": "lurdes",
+ "compra": [
+  {
+   "item": "isca_minhoca",
+   "preco": 5,
+   "estoque": 30,
+   "qtd": 1
+  },
+  {
+   "item": "isca_brilhante",
+   "preco": 25,
+   "estoque": 6,
+   "qtd": 1
+  },
+  {
+   "item": "vara_reforcada",
+   "preco": 300,
+   "estoque": 1,
+   "qtd": 1
+  }
+ ],
+ "vende_categorias": [
+  "peixe"
+ ],
+ "taxa_venda": 0.5,
+ "servicos": []
+}

@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=18
+type="Resource"
+uid="uid://bpd8sij53dwfi"
+path="res://.godot/imported/ferreiro_orc.dialogue-e5b0c425f14e90910178ed0e7eaba81e.tres"
+
+[deps]
+
+source_file="res://dialogos/ferreiro_orc.dialogue"
+dest_files=["res://.godot/imported/ferreiro_orc.dialogue-e5b0c425f14e90910178ed0e7eaba81e.tres"]
+
+[params]
+
+defaults=true

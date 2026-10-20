@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=18
+type="Resource"
+uid="uid://i7aj4ykw1av3"
+path="res://.godot/imported/robo_lobisomem.dialogue-8b80424c506eb552777f0888e7e15f09.tres"
+
+[deps]
+
+source_file="res://dialogos/robo_lobisomem.dialogue"
+dest_files=["res://.godot/imported/robo_lobisomem.dialogue-8b80424c506eb552777f0888e7e15f09.tres"]
+
+[params]
+
+defaults=true

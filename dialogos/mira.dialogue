@@ -1,0 +1,25 @@
+# Mira, herbalista da Botica da Mira (Porto Velho). Companheira da Vale.
+~ start
+if tem("mira_conheceu")
+	=> de_novo
+Mira: Ah, finalmente alguém que não chegou tossindo cinza! Bem-vinda à Botica.
+Mira: Cuidado com o pote azul. Ele não morde, mas guarda rancor.
+Vale: Você mora sozinha aqui no meio de tanto frasco?
+Mira: Sozinha com as plantas, o que é melhor que muita companhia. A cinza que cai no porto mata qualquer jardim... menos o meu. Ela deixa as ervas mais fortes.
+- Por que a cinza ajuda as plantas?
+	Mira: Dizem que é o tempo moído. Cada grão guarda um pedacinho de um dia que nunca terminou.
+	Mira: Planta não entende de calendário. Ela só cresce, feliz, com três primaveras dentro da raiz.
+	$> confiar("mira", 1)
+- Preciso de algo pra dor nas costas. A viagem foi longa.
+	Mira: Chá de raiz-de-brasa. Amargo como despedida, mas resolve.
+	Mira: Esse é por conta da casa. O próximo você paga em colheita.
+	$> marcar("mira_cha_gratis")
+Mira: Se for plantar na fazenda velha, traz as primeiras folhas pra mim. Remédio bom começa na terra.
+$> marcar("mira_conheceu")
+=> END
+
+~ de_novo
+% Mira: Voltou inteira? Ótimo. Gente inteira é minha cliente favorita.
+% Mira: Não toca no pote azul. Ele ainda lembra de você.
+% Mira: Chuva de cinza hoje à noite. Tampa os canteiros e deixa a janela entreaberta pro vento contar as novidades.
+=> END

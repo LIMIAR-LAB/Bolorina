@@ -1,0 +1,167 @@
+{
+ "versao": 1,
+ "area": "ilha_mare",
+ "nota": "Moradores da Ilha da Maré do Tempo (docs/ILHA_MARE_DO_TEMPO.md). Posição final = marcador npc_<id> no mapa.",
+ "npcs": [
+  {
+   "id": "dona_nereida",
+   "nome": "Dona Nereida",
+   "papel": "chefe da vila, pescadora de céu",
+   "loja": "mare_nereida",
+   "personagem": "original_villager",
+   "pos": [
+    0,
+    -2
+   ],
+   "cor": "a8e8ff",
+   "escala": 1.0,
+   "retrato": "res://art/ui/retratos/dona_nereida.png",
+   "dialogo": "res://dialogos/dona_nereida.dialogue",
+   "morador_vila": false,
+   "falas": [
+    "Bem-vinda à Contracorrente! Aqui a gente pesca olhando para cima.",
+    "Quando a maré baixa, a praia vira um museu. Quando sobe, vira um aquário."
+   ]
+  },
+  {
+   "id": "zezinho_sucata",
+   "nome": "Zezinho Sucata",
+   "papel": "sucateiro",
+   "loja": "mare_sucata",
+   "personagem": "original_apprentice",
+   "pos": [
+    6,
+    4
+   ],
+   "cor": "e0c080",
+   "escala": 1.0,
+   "retrato": "res://art/ui/retratos/zezinho_sucata.png",
+   "dialogo": "res://dialogos/zezinho_sucata.dialogue",
+   "morador_vila": false,
+   "falas": [
+    "Compro tudo que a maré trouxe! Até aquela geladeira que fala.",
+    "Sucata de 1987 vale mais na vazante. Não me pergunte por quê."
+   ]
+  },
+  {
+   "id": "professora_eon",
+   "nome": "Professora Éon",
+   "papel": "arqueóloga do tempo",
+   "loja": "mare_eon",
+   "personagem": "original_mira_v6",
+   "pos": [
+    -6,
+    3
+   ],
+   "cor": "d0b0ff",
+   "escala": 1.0,
+   "retrato": "res://art/ui/retratos/professora_eon.png",
+   "dialogo": "res://dialogos/professora_eon.dialogue",
+   "morador_vila": false,
+   "falas": [
+    "Traga os achados estranhos. Eu digo de que século e de que universo são.",
+    "Este garfo é do ano 3000. Ainda está quente."
+   ]
+  },
+  {
+   "id": "marujo_bento2",
+   "nome": "Bento-de-Outra-Linha",
+   "papel": "marinheiro de 1700",
+   "loja": "mare_bento",
+   "personagem": "original_guardian",
+   "pos": [
+    3,
+    8
+   ],
+   "cor": "c0a080",
+   "escala": 1.0,
+   "retrato": "res://art/ui/retratos/marujo_bento2.png",
+   "dialogo": "res://dialogos/marujo_bento2.dialogue",
+   "morador_vila": false,
+   "falas": [
+    "Arr! Sou o Bento. Não esse Bento. O outro.",
+    "Em 1700 a gente pescava no mar de baixo. Que época estranha."
+   ]
+  },
+  {
+   "id": "relojoeiro",
+   "nome": "O Relojoeiro",
+   "papel": "guardião da Gruta da Ampulheta",
+   "loja": "mare_relojoeiro",
+   "personagem": "original_gardener",
+   "pos": [
+    -10,
+    -8
+   ],
+   "cor": "f0e0a0",
+   "escala": 1.0,
+   "retrato": "res://art/ui/retratos/relojoeiro.png",
+   "dialogo": "res://dialogos/relojoeiro.dialogue",
+   "morador_vila": false,
+   "falas": [
+    "Tic. Tac. Você chegou cedo. Ou tarde. Depende de quando você é.",
+    "Durante o eclipse, o tempo para. Só eu e você andamos."
+   ]
+  },
+  {
+   "id": "lumi",
+   "nome": "Lumi",
+   "papel": "faroleira",
+   "loja": "mare_farol",
+   "personagem": "original_mira_v6",
+   "pos": [
+    0,
+    12
+   ],
+   "cor": "fff0a0",
+   "escala": 1.0,
+   "retrato": "res://art/ui/retratos/lumi.png",
+   "dialogo": "res://dialogos/lumi.dialogue",
+   "morador_vila": false,
+   "falas": [
+    "O farol aponta para baixo para os barcos de cima acharem o chão.",
+    "No festival, a luz sobe e mostra o tesouro da estação."
+   ]
+  },
+  {
+   "id": "tatu_dourado",
+   "nome": "Tatu Dourado",
+   "papel": "mercador de outra era",
+   "loja": "mare_feira",
+   "personagem": "original_cat_v6",
+   "pos": [
+    8,
+    -6
+   ],
+   "cor": "ffd060",
+   "escala": 1.2,
+   "retrato": "res://art/ui/retratos/tatu_dourado.png",
+   "dialogo": "res://dialogos/tatu_dourado.dialogue",
+   "morador_vila": false,
+   "falas": [
+    "Feira das Eras! Só hoje, só aqui, só nesta linha do tempo!",
+    "Aceito ouro, moeda do futuro e promessas bem formuladas."
+   ]
+  },
+  {
+   "id": "polvo_contador",
+   "nome": "Contador",
+   "papel": "polvo contabilista",
+   "loja": "mare_banco",
+   "personagem": "original_cat_v6",
+   "pos": [
+    -4,
+    -5
+   ],
+   "cor": "c080ff",
+   "escala": 1.1,
+   "retrato": "res://art/ui/retratos/polvo_contador.png",
+   "dialogo": "res://dialogos/polvo_contador.dialogue",
+   "morador_vila": false,
+   "falas": [
+    "Oito braços, oito livros-caixa. Seu ouro rende 1% ao dia.",
+    "Moedas de qualquer século. O câmbio é em tentáculos."
+   ]
+  }
+ ]
+}

@@ -1,0 +1,37 @@
+{
+ "id": "mina_velha",
+ "nome": "Barraca do Gaspar",
+ "npc": "gaspar",
+ "compra": [
+  {
+   "item": "picareta",
+   "preco": 120,
+   "estoque": 2,
+   "qtd": 1
+  },
+  {
+   "item": "lanterna_mina",
+   "preco": 90,
+   "estoque": 2,
+   "qtd": 1
+  },
+  {
+   "item": "carvao",
+   "preco": 7,
+   "estoque": 20,
+   "qtd": 1
+  }
+ ],
+ "vende_categorias": [
+  "minerio"
+ ],
+ "taxa_venda": 0.5,
+ "servicos": [
+  {
+   "id": "dica_mina",
+   "nome": "Ouvir uma dica das minas",
+   "preco": 0,
+   "desc": ""
+  }
+ ]
+}

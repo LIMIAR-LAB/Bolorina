@@ -1,0 +1,40 @@
+{
+  "versao": 1,
+  "status": "PROPOSTA (não é canon). Dados extras só para a interface da forja (scenes/ui/forja_ui.tscn).",
+  "forja_padrao": "ferraria_porto",
+  "niveis_iniciais": {"ferraria_porto": 1},
+  "itens_extra": [
+    {"id": "facao_fazenda", "nome": "Facão da Fazenda", "tipo": "arma", "categoria": "facao", "tier": 0, "ataque": 3, "velocidade": 1.1, "multiplicador_dano": 1.12, "especial": "Arma inicial da Vale. Cego, mas honesto."},
+    {"id": "facao_fazenda_eco", "nome": "Facão da Fazenda (temperado em cinza)", "tipo": "arma", "categoria": "facao", "tier": 1, "ataque": 4, "velocidade": 1.1, "multiplicador_dano": 1.16, "especial": "O golpe pesado deixa um eco que repete o golpe no mesmo lugar."}
+  ],
+  "materiais_extra": [
+    {"id": "lasca_de_eco", "nome": "Lasca de Eco", "tipo": "auxiliar", "tier": 1, "onde": ["minas_da_cinza"], "andares": [4, 4], "nota": "Cai do Bate-Estaca e da Galeria Desabada (andar 4)."},
+    {"id": "ouro", "nome": "Ouro", "tipo": "moeda", "tier": 0, "nota": "Venda o excedente na doca ou complete missões."}
+  ],
+  "reforco_missao": {
+    "id": "temperar_facao_cinza",
+    "nome": "Têmpera em cinza",
+    "missao": "atrasada_desde_amanha",
+    "etapa": "reforco_arma",
+    "alvo": "facao_fazenda",
+    "resultado": "facao_fazenda_eco",
+    "evento": "forja_reforco_feito",
+    "texto": "Gaspar paga do bolso: 'mandar gente pra mina com facão cego dá multa também'."
+  },
+  "eco": {
+    "missao": "atrasada_desde_amanha",
+    "etapa": "escolher_eco",
+    "marcas": {"eco_rapido": "atrasada_eco_rapido", "eco_pesado": "atrasada_eco_pesado"},
+    "desbloqueio_pos_missao": "desbloqueado_forja_variacoes_eco"
+  },
+  "slots": {
+    "arma": ["espada", "adaga", "lanca", "machado_guerra", "martelo", "besta", "pistola", "facao"],
+    "elmo": ["elmo"], "peitoral": ["peitoral"], "luvas": ["luvas"], "botas": ["botas"], "escudo": ["escudo"],
+    "acessorio": ["acessorio"],
+    "picareta": ["picareta"], "machado": ["machado"], "enxada": ["enxada"], "regador": ["regador"]
+  },
+  "cores_metal": {
+    "cobre": "ffffff", "ferro": "b9c0c8", "aco": "9fb4d6", "brasa": "ff8a5a", "prata": "e8eef5",
+    "celeste": "8fe3ff", "cronostio": "c79bff", "adamantium": "9dffb8", "paradoxal": "ff9be6", "porto": "9fb4d6"
+  }
+}

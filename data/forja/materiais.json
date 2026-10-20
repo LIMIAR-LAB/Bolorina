@@ -1,0 +1,480 @@
+{
+ "versao": 1,
+ "status": "PROPOSTA (não é canon)",
+ "locais": {
+  "minas_da_cinza": {
+   "nome": "Minas da Cinza",
+   "regiao": "Porto Velho (subsolo)",
+   "cena": "",
+   "descricao": "Dungeon sob Porto Velho. Entrada pela antiga cisterna atrás da Ferraria do Porto. Andares 1-5 cobre, 6-12 ferro, carvão em todos."
+  },
+  "coracao_soterrado": {
+   "nome": "Coração Soterrado",
+   "regiao": "Fundo das Minas da Cinza (andar 20+)",
+   "cena": "",
+   "descricao": "Onde a cinza é mais antiga. Veios de adamantium que 'sussurram horários'. Só abre depois da Bigorna Cronal."
+  },
+  "veio_das_cinzas": {
+   "nome": "Veio das Cinzas",
+   "regiao": "Vila dos Orcs",
+   "cena": "res://scenes/vila_orcs/vila_orcs.tscn",
+   "descricao": "Boca de mina do Clã Brasa-Velha, perto da Forja da Xamã. Ferro-brasa nasce perto da lava."
+  },
+  "criptas_de_cinzalta": {
+   "nome": "Criptas de Cinzalta",
+   "regiao": "Cidade Fantasma",
+   "cena": "res://scenes/cidade_fantasma/cidade_fantasma.tscn",
+   "descricao": "Cisternas e criptas sob o Campo das Cinzas. A prata dos túmulos foi benzida na noite da Queda."
+  },
+  "rochedos_da_rota": {
+   "nome": "Rochedos da Rota do Âmbar",
+   "regiao": "Rota Aérea (dirigível)",
+   "cena": "",
+   "descricao": "Pedras flutuantes no caminho do dirigível Andorinha. Ambarion cobra pedágio de quem minera ali."
+  },
+  "veio_da_fenda": {
+   "nome": "Veio da Fenda",
+   "regiao": "Estação Depois-de-Ontem",
+   "cena": "res://scenes/ilha_futurista/ilha_futurista.tscn",
+   "descricao": "Zona de extração da ilha caída do futuro. Cronóstio brota onde o tempo racha."
+  },
+  "fazenda": {
+   "nome": "Fazenda da Vale",
+   "regiao": "Ilha das Cinzas",
+   "cena": "",
+   "descricao": "Depois de tempestade de cinza, às vezes aparece um veio na fazenda (dica do Gaspar: 'não toca com a mão')."
+  }
+ },
+ "materiais": [
+  {
+   "id": "minerio_cobre",
+   "nome": "Minério de Cobre",
+   "tipo": "minerio",
+   "tier": 1,
+   "valor_ouro": 4,
+   "onde": [
+    "minas_da_cinza"
+   ],
+   "picareta_minima": 0,
+   "andares": [
+    1,
+    5
+   ]
+  },
+  {
+   "id": "minerio_ferro",
+   "nome": "Minério de Ferro",
+   "tipo": "minerio",
+   "tier": 2,
+   "valor_ouro": 8,
+   "onde": [
+    "minas_da_cinza"
+   ],
+   "picareta_minima": 1,
+   "andares": [
+    6,
+    12
+   ]
+  },
+  {
+   "id": "carvao",
+   "nome": "Carvão",
+   "tipo": "auxiliar",
+   "tier": 1,
+   "valor_ouro": 3,
+   "onde": [
+    "minas_da_cinza",
+    "veio_das_cinzas"
+   ],
+   "picareta_minima": 0,
+   "andares": [
+    1,
+    20
+   ],
+   "nota": "Também sai de troncos queimados na fazenda."
+  },
+  {
+   "id": "minerio_ferro_brasa",
+   "nome": "Minério de Ferro-Brasa",
+   "tipo": "minerio",
+   "tier": 4,
+   "valor_ouro": 22,
+   "onde": [
+    "veio_das_cinzas"
+   ],
+   "picareta_minima": 3
+  },
+  {
+   "id": "minerio_prata_tumular",
+   "nome": "Prata Tumular Bruta",
+   "tipo": "minerio",
+   "tier": 5,
+   "valor_ouro": 35,
+   "onde": [
+    "criptas_de_cinzalta"
+   ],
+   "picareta_minima": 4,
+   "nota": "Boa contra vampiros e lobisomens."
+  },
+  {
+   "id": "cristal_celeste_bruto",
+   "nome": "Cristal Celeste Bruto",
+   "tipo": "minerio",
+   "tier": 6,
+   "valor_ouro": 55,
+   "onde": [
+    "rochedos_da_rota"
+   ],
+   "picareta_minima": 5,
+   "nota": "Cresce em pedras flutuantes; Ambarion cobra 1 em cada 5 como pedágio."
+  },
+  {
+   "id": "minerio_cronostio",
+   "nome": "Minério de Cronóstio",
+   "tipo": "minerio",
+   "tier": 7,
+   "valor_ouro": 90,
+   "onde": [
+    "veio_da_fenda"
+   ],
+   "picareta_minima": 6,
+   "nota": "Metal que guarda segundos. Some se ficar mais de 1 dia fora do baú de estase."
+  },
+  {
+   "id": "minerio_adamantium",
+   "nome": "Veio de Adamantium",
+   "tipo": "minerio",
+   "tier": 8,
+   "valor_ouro": 160,
+   "onde": [
+    "coracao_soterrado",
+    "fazenda"
+   ],
+   "picareta_minima": 7,
+   "nota": "Canon: o avô de Gaspar forjava adamantium para os Arquimagos do Relógio."
+  },
+  {
+   "id": "lingote_cobre",
+   "nome": "Lingote de Cobre",
+   "tipo": "lingote",
+   "tier": 1,
+   "valor_ouro": 16
+  },
+  {
+   "id": "lingote_ferro",
+   "nome": "Lingote de Ferro",
+   "tipo": "lingote",
+   "tier": 2,
+   "valor_ouro": 30
+  },
+  {
+   "id": "lingote_aco_porto",
+   "nome": "Lingote de Aço do Porto",
+   "tipo": "liga",
+   "tier": 3,
+   "valor_ouro": 70,
+   "nota": "Ferro + carvão, temperado na água do porto."
+  },
+  {
+   "id": "lingote_ferro_brasa",
+   "nome": "Lingote de Ferro-Brasa",
+   "tipo": "lingote",
+   "tier": 4,
+   "valor_ouro": 80,
+   "nota": "Só a forja do clã (lava) funde."
+  },
+  {
+   "id": "lingote_prata_tumular",
+   "nome": "Lingote de Prata Tumular",
+   "tipo": "lingote",
+   "tier": 5,
+   "valor_ouro": 125
+  },
+  {
+   "id": "cristal_celeste",
+   "nome": "Cristal Celeste Lapidado",
+   "tipo": "lingote",
+   "tier": 6,
+   "valor_ouro": 130
+  },
+  {
+   "id": "lingote_cronostio",
+   "nome": "Lingote de Cronóstio",
+   "tipo": "lingote",
+   "tier": 7,
+   "valor_ouro": 300
+  },
+  {
+   "id": "lingote_adamantium",
+   "nome": "Lingote de Adamantium",
+   "tipo": "lingote",
+   "tier": 8,
+   "valor_ouro": 520
+  },
+  {
+   "id": "lingote_liga_paradoxal",
+   "nome": "Lingote de Liga Paradoxal",
+   "tipo": "liga",
+   "tier": 9,
+   "valor_ouro": 1300,
+   "nota": "Adamantium + cronóstio. Existe em dois instantes ao mesmo tempo."
+  },
+  {
+   "id": "madeira",
+   "nome": "Madeira",
+   "tipo": "auxiliar",
+   "tier": 0,
+   "valor_ouro": 2,
+   "nota": "Item já existente na fazenda."
+  },
+  {
+   "id": "pedra",
+   "nome": "Pedra",
+   "tipo": "auxiliar",
+   "tier": 0,
+   "valor_ouro": 1,
+   "nota": "Item já existente na fazenda."
+  },
+  {
+   "id": "fibra",
+   "nome": "Fibra",
+   "tipo": "auxiliar",
+   "tier": 0,
+   "valor_ouro": 2,
+   "nota": "Item já existente na fazenda."
+  },
+  {
+   "id": "couro",
+   "nome": "Couro Curtido",
+   "tipo": "auxiliar",
+   "tier": 1,
+   "valor_ouro": 12,
+   "onde": [
+    "veio_das_cinzas"
+   ],
+   "nota": "Caçadora Orc troca por legumes."
+  },
+  {
+   "id": "presa_vampirica",
+   "nome": "Presa Vampírica",
+   "tipo": "drop",
+   "tier": 5,
+   "valor_ouro": 45,
+   "onde": [
+    "criptas_de_cinzalta"
+   ],
+   "nota": "Cai de Vampiro Menor."
+  },
+  {
+   "id": "pelo_de_lua",
+   "nome": "Pelo de Lua",
+   "tipo": "drop",
+   "tier": 5,
+   "valor_ouro": 50,
+   "nota": "Presente do Tobias do Ermo (missão), nunca de combate."
+  },
+  {
+   "id": "escama_ambar",
+   "nome": "Escama de Âmbar",
+   "tipo": "drop",
+   "tier": 6,
+   "valor_ouro": 90,
+   "onde": [
+    "rochedos_da_rota"
+   ],
+   "nota": "Ambarion dá uma por pedágio pago 3 vezes."
+  },
+  {
+   "id": "chip_anomalia",
+   "nome": "Chip de Anomalia",
+   "tipo": "drop",
+   "tier": 7,
+   "valor_ouro": 70,
+   "onde": [
+    "veio_da_fenda"
+   ],
+   "nota": "Cai de drones com defeito temporal."
+  },
+  {
+   "id": "engrenagem_quantica",
+   "nome": "Engrenagem Quântica",
+   "tipo": "auxiliar",
+   "tier": 7,
+   "valor_ouro": 110,
+   "onde": [
+    "veio_da_fenda"
+   ],
+   "nota": "Vendida por Zé Antes-Depois."
+  },
+  {
+   "id": "essencia_raiz_brasa",
+   "nome": "Essência de Raiz-de-Brasa",
+   "tipo": "essencia",
+   "tier": 0,
+   "valor_ouro": 60,
+   "nota": "Feita por Mira (Botica). Golpes queimam (+6% dano ao longo de 2 s).",
+   "fornecedor": "mira",
+   "efeito": "Golpes queimam (+6% dano ao longo de 2 s)."
+  },
+  {
+   "id": "essencia_orvalho_lunar",
+   "nome": "Essência de Orvalho-Lunar",
+   "tipo": "essencia",
+   "tier": 0,
+   "valor_ouro": 60,
+   "nota": "Feita por Mira (Botica). +25% de dano contra amaldiçoados (vampiros, lobisomens, espectros).",
+   "fornecedor": "mira",
+   "efeito": "+25% de dano contra amaldiçoados (vampiros, lobisomens, espectros)."
+  },
+  {
+   "id": "essencia_musgo_sereno",
+   "nome": "Essência de Musgo-Sereno",
+   "tipo": "essencia",
+   "tier": 0,
+   "valor_ouro": 60,
+   "nota": "Feita por Mira (Botica). Regenera 1 de vida a cada 4 s fora de combate.",
+   "fornecedor": "mira",
+   "efeito": "Regenera 1 de vida a cada 4 s fora de combate."
+  },
+  {
+   "id": "po_de_segundo",
+   "nome": "Pó de Segundo",
+   "tipo": "essencia",
+   "tier": 0,
+   "valor_ouro": 60,
+   "nota": "Feita por Ozório (Torre Torta). -12% na recarga do dash.",
+   "fornecedor": "arquimago",
+   "efeito": "-12% na recarga do dash."
+  },
+  {
+   "id": "areia_de_ontem",
+   "nome": "Areia de Ontem",
+   "tipo": "essencia",
+   "tier": 0,
+   "valor_ouro": 60,
+   "nota": "Feita por Ozório (Torre Torta). Cura 1 de vida a cada 5 acertos.",
+   "fornecedor": "arquimago",
+   "efeito": "Cura 1 de vida a cada 5 acertos."
+  },
+  {
+   "id": "eco_de_amanha",
+   "nome": "Eco de Amanhã",
+   "tipo": "essencia",
+   "tier": 0,
+   "valor_ouro": 60,
+   "nota": "Feita por Ozório (Torre Torta). +8% de chance de crítico (dano x1,5).",
+   "fornecedor": "arquimago",
+   "efeito": "+8% de chance de crítico (dano x1,5)."
+  }
+ ],
+ "nos_de_minerio": {
+  "veio_da_fenda": [
+   {
+    "id": "veio_cronostio_1",
+    "material": "minerio_cronostio",
+    "pos": [
+     -30,
+     -6
+    ],
+    "quantidade": [
+     2,
+     4
+    ],
+    "renasce_dias": 2
+   },
+   {
+    "id": "veio_cronostio_2",
+    "material": "minerio_cronostio",
+    "pos": [
+     -36,
+     2
+    ],
+    "quantidade": [
+     2,
+     4
+    ],
+    "renasce_dias": 2
+   },
+   {
+    "id": "veio_cronostio_3",
+    "material": "minerio_cronostio",
+    "pos": [
+     -27,
+     8
+    ],
+    "quantidade": [
+     2,
+     4
+    ],
+    "renasce_dias": 2
+   },
+   {
+    "id": "veio_cronostio_4",
+    "material": "minerio_cronostio",
+    "pos": [
+     -40,
+     -10
+    ],
+    "quantidade": [
+     3,
+     5
+    ],
+    "renasce_dias": 3
+   },
+   {
+    "id": "veio_chip_1",
+    "material": "chip_anomalia",
+    "pos": [
+     -22,
+     -14
+    ],
+    "quantidade": [
+     1,
+     2
+    ],
+    "renasce_dias": 1
+   },
+   {
+    "id": "veio_carvao_1",
+    "material": "carvao",
+    "pos": [
+     -33,
+     12
+    ],
+    "quantidade": [
+     3,
+     6
+    ],
+    "renasce_dias": 1
+   },
+   {
+    "id": "veio_cristal_1",
+    "material": "cristal_celeste_bruto",
+    "pos": [
+     -44,
+     -2
+    ],
+    "quantidade": [
+     1,
+     2
+    ],
+    "renasce_dias": 4,
+    "nota": "Pedaço da Rota do Âmbar que caiu aqui."
+   },
+   {
+    "id": "veio_adamantium_1",
+    "material": "minerio_adamantium",
+    "pos": [
+     14.5,
+     -35.5
+    ],
+    "quantidade": [
+     1,
+     1
+    ],
+    "renasce_dias": 7,
+    "nota": "Na zona de anomalia; só com picareta de cronóstio."
+   }
+  ]
+ }
+}

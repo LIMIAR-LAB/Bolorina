@@ -1,0 +1,100 @@
+{
+	"versao": 1,
+	"status": "PROPOSTA — não é canon. Tutorial curto, ensinado fazendo. Cada passo tem gatilho, dica na tela e condição de conclusão. Tudo pode ser pulado (opção no primeiro diálogo, tecla de pular passo ou pular_tudo()).",
+	"marca_pulado": "tutorial_pulado",
+	"marca_concluido": "tutorial_concluido",
+	"teclas_padrao": {"mover": "WASD / setas", "conversar": "E", "atacar": "J / clique esquerdo", "esquivar": "Espaço / Shift", "especial": "K / clique direito", "mapa": "M", "salvar": "F5", "pular_dica": "Tab segurado"},
+	"passos": [
+		{
+			"id": "abertura",
+			"titulo": "Chegada a Porto Velho",
+			"gatilho": {"tipo": "evento", "evento": "jogo_iniciado"},
+			"dica": "",
+			"dialogo": {"arquivo": "res://dialogos/tutorial/abertura.dialogue", "cue": "chegada", "npc": "capitao"},
+			"conclusao": [{"tipo": "marca", "marca": "tut_abertura_vista"}]
+		},
+		{
+			"id": "mover",
+			"titulo": "Andar",
+			"gatilho": {"tipo": "imediato"},
+			"dica": "WASD ou setas para andar. Vá até a faixa na praça.",
+			"conclusao": [{"tipo": "evento", "evento": "perto_de", "alvo": "crianca_praca", "quantidade": 1}]
+		},
+		{
+			"id": "conversar",
+			"titulo": "Conversar",
+			"gatilho": {"tipo": "imediato"},
+			"dica": "Aperte E perto do Pipo para conversar.",
+			"dialogo": {"arquivo": "res://dialogos/tutorial/abertura.dialogue", "cue": "pipo", "npc": "crianca_praca", "ao_apertar_e": true},
+			"conclusao": [{"tipo": "marca", "marca": "tut_conversou"}]
+		},
+		{
+			"id": "atacar",
+			"titulo": "Atacar",
+			"gatilho": {"tipo": "imediato"},
+			"dica": "J ou clique esquerdo para golpear o Sir Palha. Três golpes seguidos: o terceiro é pesado.",
+			"conclusao": [
+				{"tipo": "evento", "evento": "golpe_acertou", "alvo": "sir_palha", "quantidade": 3},
+				{"tipo": "evento", "evento": "golpe_pesado", "alvo": "sir_palha", "quantidade": 1}
+			],
+			"dialogo_ao_concluir": {"arquivo": "res://dialogos/tutorial/abertura.dialogue", "cue": "palha_respeito", "npc": "crianca_praca"}
+		},
+		{
+			"id": "esquivar",
+			"titulo": "Esquivar",
+			"gatilho": {"tipo": "imediato"},
+			"dica": "Quando o Sir Palha girar (anel vermelho no chão), aperte Espaço ou Shift para esquivar através dele.",
+			"conclusao": [{"tipo": "evento", "evento": "esquivou", "alvo": "sir_palha", "quantidade": 1}],
+			"dialogo_ao_concluir": {"arquivo": "res://dialogos/tutorial/abertura.dialogue", "cue": "fim_basico", "npc": "crianca_praca"},
+			"marcas_ao_concluir": ["tutorial_basico_concluido"]
+		},
+		{
+			"id": "forja",
+			"titulo": "A forja",
+			"gatilho": {"tipo": "qualquer", "de": [
+				{"tipo": "marca", "marca": "atrasada_gaspar_explicou_minas"},
+				{"tipo": "evento", "evento": "forja_aberta"}
+			]},
+			"dica": "Na bigorna (E), escolha a receita à esquerda, compare à direita (verde = melhor) e confirme.",
+			"dialogo": {"arquivo": "res://dialogos/tutorial/dicas.dialogue", "cue": "forja", "npc": "ferreiro", "ao_abrir_forja": true},
+			"conclusao": [{"tipo": "qualquer", "de": [
+				{"tipo": "evento", "evento": "forja_reforco_feito"},
+				{"tipo": "evento", "evento": "forja_item_feito"}
+			]}]
+		},
+		{
+			"id": "eco",
+			"titulo": "O eco temporal",
+			"gatilho": {"tipo": "marca", "marca": "eco_desbloqueado"},
+			"dica": "Golpe pesado (3º do combo) deixa um eco. Bata e saia: ele repete o golpe no mesmo lugar um instante depois.",
+			"dialogo": {"arquivo": "res://dialogos/tutorial/dicas.dialogue", "cue": "eco", "npc": "ferreiro"},
+			"conclusao": [{"tipo": "evento", "evento": "eco_acertou", "quantidade": 1}]
+		},
+		{
+			"id": "salvar",
+			"titulo": "Salvar",
+			"gatilho": {"tipo": "qualquer", "de": [
+				{"tipo": "evento", "evento": "perto_de", "alvo": "elevador_tiao"},
+				{"tipo": "evento", "evento": "chegou_area", "alvo": "minas_andar_1"}
+			]},
+			"dica": "F5 salva. Dormir na Estalagem da Lanterna também salva.",
+			"dialogo": {"arquivo": "res://dialogos/tutorial/dicas.dialogue", "cue": "salvar", "npc": "minerador_aposentado"},
+			"conclusao": [{"tipo": "evento", "evento": "jogo_salvo"}]
+		},
+		{
+			"id": "mapa",
+			"titulo": "Mapa e teleporte",
+			"gatilho": {"tipo": "qualquer", "de": [
+				{"tipo": "marca", "marca": "atrasada_eco_rapido"},
+				{"tipo": "marca", "marca": "atrasada_eco_pesado"},
+				{"tipo": "evento", "evento": "mapa_liberado"}
+			]},
+			"dica": "M abre o mapa-múndi. Escolha a Arena das Cinzas e confirme para teleportar.",
+			"dialogo": {"arquivo": "res://dialogos/tutorial/dicas.dialogue", "cue": "mapa", "npc": "capitao"},
+			"conclusao": [
+				{"tipo": "evento", "evento": "mapa_aberto"},
+				{"tipo": "evento", "evento": "teleportou"}
+			]
+		}
+	]
+}

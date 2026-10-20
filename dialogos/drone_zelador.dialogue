@@ -1,0 +1,7 @@
+# Z-12, drone zelador que varre paradoxos para baixo do tapete. PROPOSTA.
+~ start
+Z-12: Bip. Paradoxo detectado. Ah, não, é só você. Pode passar.
+Z-12: Meu trabalho é varrer paradoxos pra debaixo do tapete. O tapete já está do tamanho de uma colina.
+Z-12: Se encontrar um segundo solto no chão, não pega. Ele morde. Me chama que eu recolho. Bip.
+$> marcar("drone_zelador_conheceu")
+=> END

@@ -1,0 +1,390 @@
+{
+ "versao": 2,
+ "area": "porto_velho",
+ "moradores_do_mapa": true,
+ "nota": "Integracao 20/10 (PROPOSTA): elenco da Bolorina (scripts/dialogos/npcs_registro.gd) com as 20 lojas e servicos do Claude. Quem tem 'morador' e o NPC do proprio mapa (rosto, corpo e dialogo da Bolorina); E conversa pelo Dialogue Manager e, ao fim da conversa, abre o balcao da loja. Quem nao tem 'morador' e morador novo do Claude, desenhado pelo adaptador na 'pos' (x,z) livre mais proxima. Tabela: docs/ELENCO_UNIFICADO.md. Roster provisorio original: data/npcs/porto_velho_provisorio.json.",
+ "npcs": [
+  {
+   "id": "ferreiro",
+   "morador": "ferreiro",
+   "nome": "Gaspar Bigorna",
+   "papel": "ferreiro · Ferraria do Porto",
+   "loja": "forja",
+   "retrato": "res://art/ui/retratos/ferreiro.png",
+   "dialogo": "res://dialogos/ferreiro.dialogue",
+   "falas": [
+    "Bigorna quente, conversa curta. Minério e carvão viram lingote; lingote e ouro viram peça.",
+    "Se a peça sair torta, a culpa é do martelo. O martelo é meu, mas a culpa é dele."
+   ],
+   "pos": [
+    -9,
+    -4
+   ],
+   "papel_do_claude": "Helena (ferreira)",
+   "origem": "elenco da Bolorina"
+  },
+  {
+   "id": "mira",
+   "morador": "mira",
+   "nome": "Mira",
+   "papel": "herbalista · Botica da Mira",
+   "loja": "ervas",
+   "retrato": "res://art/ui/retratos/mira.png",
+   "dialogo": "res://dialogos/mira.dialogue",
+   "falas": [
+    "Poção de vida, de energia, chá calmante... e antídoto para cogumelo-relógio.",
+    "Se você vir a si mesma amanhã, beba o chá. Não converse com ela."
+   ],
+   "pos": [
+    -7,
+    2
+   ],
+   "papel_do_claude": "Mira (herbalista)",
+   "origem": "elenco da Bolorina"
+  },
+  {
+   "id": "estalajadeira",
+   "morador": "estalajadeira",
+   "nome": "Dona Rosalva",
+   "papel": "estalajadeira · Estalagem da Lanterna",
+   "loja": "estalagem",
+   "retrato": "res://art/ui/retratos/estalajadeira.png",
+   "dialogo": "res://dialogos/estalajadeira.dialogue",
+   "falas": [
+    "Cama quente, sopa de peixe e boatos frescos. Os boatos são de graça; a sopa, não.",
+    "Ontem um viajante pagou com uma moeda de 3021. Aceitei, claro."
+   ],
+   "pos": [
+    -2,
+    6
+   ],
+   "papel_do_claude": "Caio (estalajadeiro)",
+   "origem": "elenco da Bolorina"
+  },
+  {
+   "id": "guardia",
+   "morador": "guardia",
+   "nome": "Brida Ferrolho",
+   "papel": "guardiã · Posto da Guarda",
+   "loja": "guarda",
+   "retrato": "res://art/ui/retratos/guardia.png",
+   "dialogo": "res://dialogos/guardia.dialogue",
+   "falas": [
+    "O mural de pedidos não se lê sozinho. Quer uma missão?",
+    "Se vir um orc de gravata, não ria. Ele é diplomata."
+   ],
+   "pos": [
+    6,
+    -10
+   ],
+   "papel_do_claude": "Bruna (guardiã da vila)",
+   "origem": "elenco da Bolorina"
+  },
+  {
+   "id": "capitao",
+   "morador": "capitao",
+   "nome": "Capitão Bartolomeu Nuvem",
+   "papel": "capitão do dirigível Andorinha",
+   "loja": "doca",
+   "retrato": "res://art/ui/retratos/capitao.png",
+   "dialogo": "res://dialogos/capitao.dialogue",
+   "falas": [
+    "A Andorinha sai quando você quiser. Escolha o destino no mapa.",
+    "Já fomos à Estação três vezes. Voltamos ontem. Partimos amanhã."
+   ],
+   "pos": [
+    12,
+    4
+   ],
+   "papel_do_claude": "Capitã Marina (capitã do dirigível)",
+   "origem": "elenco da Bolorina"
+  },
+  {
+   "id": "arquimago",
+   "morador": "arquimago",
+   "nome": "Ozório Pêndulo",
+   "papel": "arquimago · Torre Torta",
+   "loja": "torre_ozorio",
+   "retrato": "res://art/ui/retratos/arquimago.png",
+   "dialogo": "res://dialogos/arquimago.dialogue",
+   "falas": [
+    "Encantamentos! Uma faísca a mais de defesa em qualquer peça do corpo.",
+    "Meu último encanto deu errado. Agora meu chapéu tem opinião."
+   ],
+   "pos": [
+    -12,
+    -10
+   ],
+   "papel_do_claude": "Arquimago Ozório (arquimago)",
+   "origem": "elenco da Bolorina"
+  },
+  {
+   "id": "sineiro",
+   "morador": "sineiro",
+   "nome": "Mestre Anselmo",
+   "papel": "sineiro · Torre do Sino",
+   "loja": "sino",
+   "retrato": "res://art/ui/retratos/sineiro.png",
+   "dialogo": "res://dialogos/sineiro.dialogue",
+   "falas": [
+    "O sino marca as horas. E, às vezes, os anos.",
+    "Toco o sino do amanhecer por um troquinho. Você dorme, o dia vira."
+   ],
+   "pos": [
+    0,
+    -14
+   ],
+   "papel_do_claude": "Bartolomeu (sineiro)",
+   "origem": "elenco da Bolorina"
+  },
+  {
+   "id": "jardineira",
+   "morador": "jardineira",
+   "nome": "Dona Iolanda",
+   "papel": "horticultora · Celeiro das Sementes",
+   "loja": "viveiro",
+   "retrato": "res://art/ui/retratos/jardineira.png",
+   "dialogo": "res://dialogos/jardineira.dialogue",
+   "falas": [
+    "Mudas de macieira e laranjeira para o pomar novo da fazenda.",
+    "Girassol cresce virado para o sol. Aqui ele vira para a doca, não sei por quê."
+   ],
+   "pos": [
+    -14,
+    4
+   ],
+   "papel_do_claude": "Rosa (jardineira)",
+   "origem": "elenco da Bolorina"
+  },
+  {
+   "id": "mercador_praca",
+   "morador": "mercador_praca",
+   "nome": "Mercador da Praça",
+   "papel": "mercador · barracas da praça",
+   "loja": "mercado",
+   "retrato": "res://art/ui/retratos/mercador_praca.png",
+   "dialogo": "res://dialogos/mercador_praca.dialogue",
+   "falas": [
+    "Compro e vendo de tudo! Sementes, corda, sal... e pago bem pelo que você trouxer.",
+    "Metade do preço é justo. A outra metade é saudade."
+   ],
+   "pos": [
+    2.6,
+    -6.6
+   ],
+   "papel_do_claude": "Sr. Armando (mercador da praça)",
+   "origem": "elenco da Bolorina"
+  },
+  {
+   "id": "minerador_aposentado",
+   "morador": "minerador_aposentado",
+   "nome": "Seu Tião Lamparina",
+   "papel": "mineiro aposentado · Elevador do Tião",
+   "loja": "mina_velha",
+   "retrato": "res://art/ui/retratos/minerador_aposentado.png",
+   "dialogo": "res://dialogos/minerador_aposentado.dialogue",
+   "falas": [
+    "Picareta, lanterna e carvão. E conselho de graça, que é o que sobra a um mineiro aposentado.",
+    "Nas Minas da Cinza, prata tumular só sai com picareta de ferro."
+   ],
+   "pos": [
+    -25.5,
+    -12.0
+   ],
+   "papel_do_claude": "Seu Gaspar (minerador aposentado)",
+   "origem": "elenco da Bolorina"
+  },
+  {
+   "id": "crianca_praca",
+   "morador": "crianca_praca",
+   "nome": "Pipo",
+   "papel": "mensageiro da praça",
+   "loja": "mensageria",
+   "retrato": "res://art/ui/retratos/crianca_praca.png",
+   "dialogo": "res://dialogos/crianca_praca.dialogue",
+   "falas": [
+    "Tenho uma carta para entregar! Me ajuda?",
+    "Se a carta chegar antes de ser escrita, ainda vale."
+   ],
+   "pos": [
+    3,
+    3
+   ],
+   "papel_do_claude": "Nina (criança mensageira)",
+   "origem": "elenco da Bolorina"
+  },
+  {
+   "id": "otavio",
+   "nome": "Otávio",
+   "papel": "carpinteiro",
+   "loja": "carpintaria",
+   "personagem": "original_guardian",
+   "pos": [
+    -6,
+    12.5
+   ],
+   "cor": "ffe0b0",
+   "escala": 1.0,
+   "retrato": "res://art/ui/retratos/otavio.png",
+   "falas": [
+    "Melhoro sua casa e o celeiro. Tábuas também.",
+    "Fiz uma porta que abre para ontem. Não use."
+   ],
+   "origem": "morador novo do Claude (PROPOSTA)"
+  },
+  {
+   "id": "lurdes",
+   "nome": "Dona Lurdes",
+   "papel": "pescadora",
+   "loja": "pescaria",
+   "personagem": "original_villager",
+   "pos": [
+    26,
+    10
+   ],
+   "cor": "ffffff",
+   "escala": 1.0,
+   "retrato": "res://art/ui/retratos/lurdes.png",
+   "falas": [
+    "Isca de minhoca para o dia a dia, isca brilhante para a truta dourada.",
+    "A truta dourada morde às 16:30. Sempre 16:30."
+   ],
+   "origem": "morador novo do Claude (PROPOSTA)"
+  },
+  {
+   "id": "cinira",
+   "nome": "Cinira",
+   "papel": "banqueira de cinzas",
+   "loja": "banco",
+   "personagem": "original_gardener",
+   "pos": [
+    22,
+    9
+   ],
+   "cor": "f0d890",
+   "escala": 1.0,
+   "retrato": "res://art/ui/retratos/cinira.png",
+   "falas": [
+    "O Banco das Cinzas guarda seu ouro e paga 1% ao dia.",
+    "Nossa moeda é lastreada em cinza vulcânica. Muito estável. Até a próxima erupção."
+   ],
+   "origem": "morador novo do Claude (PROPOSTA)"
+  },
+  {
+   "id": "tobias",
+   "nome": "Tobias",
+   "papel": "cartógrafo",
+   "loja": "cartografia",
+   "personagem": "original_gardener",
+   "pos": [
+    26,
+    2
+   ],
+   "cor": "ffffff",
+   "escala": 1.0,
+   "retrato": "res://art/ui/retratos/tobias.png",
+   "falas": [
+    "Mapas novos liberam a viagem para outras partes da ilha.",
+    "Desenhei o mapa da Estação antes de ela cair. Ou depois. Depende de quem pergunta."
+   ],
+   "origem": "morador novo do Claude (PROPOSTA)",
+   "nota": "Mesmo nome do Tobias do Ermo (lobisomem) do elenco da Bolorina e do Tobias guia de trilhas da Vila original. PROPOSTA: decidir se são a mesma pessoa."
+  },
+  {
+   "id": "severino",
+   "nome": "Severino",
+   "papel": "alfaiate",
+   "loja": "alfaiataria",
+   "personagem": "original_apprentice",
+   "pos": [
+    -8,
+    25
+   ],
+   "cor": "c0ffc0",
+   "escala": 1.0,
+   "retrato": "res://art/ui/retratos/severino.png",
+   "falas": [
+    "Chapéus, lenços, capas. Roupa boa não muda a defesa, muda o humor.",
+    "Costurei uma capa que esvoaça sem vento. É só ansiedade."
+   ],
+   "origem": "morador novo do Claude (PROPOSTA)"
+  },
+  {
+   "id": "frei_ze",
+   "nome": "Frei Zé",
+   "papel": "bibliotecário",
+   "loja": "biblioteca",
+   "personagem": "original_guardian",
+   "pos": [
+    -24,
+    8
+   ],
+   "cor": "ffffff",
+   "escala": 1.0,
+   "retrato": "res://art/ui/retratos/frei_ze.png",
+   "falas": [
+    "O códex guarda a história da ilha. Uma página por vez.",
+    "A primeira página fala de você. Ainda não terminei de ler."
+   ],
+   "origem": "morador novo do Claude (PROPOSTA)"
+  },
+  {
+   "id": "tempora",
+   "nome": "Madame Tempora",
+   "papel": "comerciante de relíquias do tempo",
+   "loja": "reliquias",
+   "personagem": "original_mira_v6",
+   "pos": [
+    24,
+    -24
+   ],
+   "cor": "ffb0e0",
+   "escala": 1.0,
+   "retrato": "res://art/ui/retratos/tempora.png",
+   "falas": [
+    "Relíquias de todos os tempos. Pague em ouro de qualquer século.",
+    "Este relógio parou às 16:30. Ele sabe de algo."
+   ],
+   "origem": "morador novo do Claude (PROPOSTA)"
+  },
+  {
+   "id": "kiko",
+   "nome": "Kiko",
+   "papel": "domador",
+   "loja": "domador",
+   "personagem": "original_apprentice",
+   "pos": [
+    -26,
+    24
+   ],
+   "cor": "ffd0a0",
+   "escala": 1.0,
+   "retrato": "res://art/ui/retratos/kiko.png",
+   "falas": [
+    "Pets, petiscos e um apito de montaria experimental.",
+    "O gato-cavalo ainda não aceita sela. Nem opinião."
+   ],
+   "origem": "morador novo do Claude (PROPOSTA)"
+  },
+  {
+   "id": "fagulha",
+   "nome": "Fagulha",
+   "papel": "dragão da doca",
+   "loja": "dragao",
+   "personagem": "original_cat_v6",
+   "pos": [
+    52,
+    5
+   ],
+   "cor": "ff7a50",
+   "escala": 1.7,
+   "retrato": "res://art/ui/retratos/fagulha.png",
+   "falas": [
+    "Rrrr... peixe? Peixe é bom. Ouro também. Mas peixe.",
+    "Já fui maior. Ou serei. Tempo é confuso para dragões."
+   ],
+   "origem": "morador novo do Claude (PROPOSTA)",
+   "nota": "PROPOSTA: filhote do Ambarion (dragão guardião da Rota do Âmbar, que fica na entrada da doca)."
+  }
+ ]
+}

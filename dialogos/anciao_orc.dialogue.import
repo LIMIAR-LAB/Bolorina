@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=18
+type="Resource"
+uid="uid://cbym12l7kngxs"
+path="res://.godot/imported/anciao_orc.dialogue-2e513f23c69f6edcead766e8585e4c2c.tres"
+
+[deps]
+
+source_file="res://dialogos/anciao_orc.dialogue"
+dest_files=["res://.godot/imported/anciao_orc.dialogue-2e513f23c69f6edcead766e8585e4c2c.tres"]
+
+[params]
+
+defaults=true

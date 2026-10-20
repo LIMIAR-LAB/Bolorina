@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=18
+type="Resource"
+uid="uid://mjrun4v56dsk"
+path="res://.godot/imported/minerador_fenda.dialogue-6e737db0bd0276fb501235624a915dfc.tres"
+
+[deps]
+
+source_file="res://dialogos/minerador_fenda.dialogue"
+dest_files=["res://.godot/imported/minerador_fenda.dialogue-6e737db0bd0276fb501235624a915dfc.tres"]
+
+[params]
+
+defaults=true

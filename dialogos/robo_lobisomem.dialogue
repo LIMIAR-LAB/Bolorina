@@ -1,0 +1,25 @@
+# L-0B0, robô de carga quadrúpede que tem certeza de que é um lobisomem. PROPOSTA.
+~ start
+if tem("robo_lobisomem_conheceu")
+	=> de_novo
+L-0B0: AUUU... erro de áudio. Repetindo. AUUUUUU.
+L-0B0: Humana detectada. Aviso: estou em fase de lua cheia. Minhas garras são pinças hidráulicas de alta periculosidade.
+Vale: Você é... um robô de carga?
+L-0B0: Negativo. Sou um lobisomem. Fui mordido por um holograma de lobo no turno da noite. Desde então sinto vontade de uivar e de carregar caixas.
+- Robôs não viram lobisomens.
+	L-0B0: Robôs também não sentem saudade de uma floresta que nunca viram. E mesmo assim aqui estou eu. Calculando árvores.
+	L-0B0: Se você conhecer um lobisomem de verdade, diga que eu quero aprender. Tenho dúvidas sobre o pelo. Eu tenho só parafuso.
+	$> marcar("robo_lobisomem_quer_tobias")
+	$> confiar("robo_lobisomem", 1)
+- Que lindo uivo.
+	L-0B0: Obrigado. Ensaio toda noite com o holograma da lua. Ela não responde. Igual a lua de verdade, me disseram.
+	$> confiar("robo_lobisomem", 2)
+L-0B0: Agora, com licença. Preciso carregar estas caixas de forma selvagem e ameaçadora.
+$> marcar("robo_lobisomem_conheceu")
+=> END
+
+~ de_novo
+% L-0B0: AUUU. Bateria em 40 por cento. A fera interior também.
+% L-0B0: Hoje enterrei um parafuso no jardim. Instinto.
+% L-0B0: Prata me dá alergia. Ou curto-circuito. Ainda estou investigando qual.
+=> END

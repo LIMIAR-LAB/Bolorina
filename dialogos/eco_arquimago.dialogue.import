@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=18
+type="Resource"
+uid="uid://cktsx0bdyp0x1"
+path="res://.godot/imported/eco_arquimago.dialogue-1bfaab6d2459fb489dd35b06ab62c325.tres"
+
+[deps]
+
+source_file="res://dialogos/eco_arquimago.dialogue"
+dest_files=["res://.godot/imported/eco_arquimago.dialogue-1bfaab6d2459fb489dd35b06ab62c325.tres"]
+
+[params]
+
+defaults=true

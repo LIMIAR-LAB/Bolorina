@@ -1,0 +1,12 @@
+# Missão "Atrasada desde amanhã" (PROPOSTA): Brida Ferrolho entrega a conta.
+
+~ entregou_conta
+Brida Ferrolho: Não me olha assim. Eu só entrego. Carimbo vermelho é da Repartição de Prazos, não meu.
+Brida Ferrolho: A Repartição fica em lugar nenhum e abre às terças que não existem. Mesmo assim, o carimbo é válido. Eu conferi no regulamento.
+- O regulamento prevê multa de amanhã?
+	Brida Ferrolho: Artigo 7-B, parágrafo único. "Prazos vencidos fora de ordem serão cobrados na ordem em que chegarem." Eu odeio o 7-B.
+	$> marcar("brida_citou_7b")
+- Você acha isso normal?
+	Brida Ferrolho: Desde a Queda, normal é o que tem carimbo.
+Brida Ferrolho: Vai falar com o Gaspar antes que ele derreta a bigorna de raiva.
+=> END

@@ -1,0 +1,30 @@
+# Seu Tião Lamparina: rotina e memória da cidade (PROPOSTA). Mora em Porto Velho e opera o elevador da cisterna.
+
+~ manha
+% Seu Tião Lamparina: Engraxando o cabo do elevador. Ele range em fá. Quando range em sol, eu me preocupo.
+% Seu Tião Lamparina: De manhã eu levo os mineiros novos até o andar 3. Do 3 pra baixo, eles vão sozinhos. Eu volto.
+=> END
+
+~ tarde
+% Seu Tião Lamparina: Quarenta anos de mina e só perdi um dedo. E foi pra um caranguejo, lá no porto.
+% Seu Tião Lamparina: Se ouvir um assobio lá de baixo, não responde. Ou responde. Eu nunca soube o certo.
+=> END
+
+~ noite
+% Seu Tião Lamparina: Sento na porta da Ferraria com o Gaspar e a gente discute o rangido do elevador. Ele diz que é a polia. É o tempo.
+% Seu Tião Lamparina: Boa noite, menina. Apaga a lamparina antes de dormir. Ou não. Eu nunca apago a minha.
+=> END
+
+~ arma_nova
+Seu Tião Lamparina: Esse facão repete o golpe? No meu tempo, quem repetia era o eco do túnel. E ele só repetia palavrão.
+$> marcar("reacao_tiao_arma_vista")
+=> END
+
+~ pos_missao
+if tem("tiao_recebeu_recado")
+	% Seu Tião Lamparina: Pendurei uma lamparina no andar 4. Quando eu desço, o assobio muda. Agora é a música da marmita.
+	% Seu Tião Lamparina: Pintei o nome do elevador. "Elevador Tião e Zeca." O Gaspar diz que a tinta está torta. A tinta está ótima.
+	=> END
+% Seu Tião Lamparina: Você subiu com a catraca e eu nem acreditei. Do andar 4! Faz tempo que ninguém volta de lá com alguma coisa.
+% Seu Tião Lamparina: O elevador range, mas aguenta. Eu também.
+=> END

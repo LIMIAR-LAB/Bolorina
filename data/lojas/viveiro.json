@@ -1,0 +1,36 @@
+{
+ "id": "viveiro",
+ "nome": "Viveiro da Rosa",
+ "npc": "rosa",
+ "compra": [
+  {
+   "item": "semente_girassol",
+   "preco": 30,
+   "estoque": 10,
+   "qtd": 1
+  },
+  {
+   "item": "muda_macieira",
+   "preco": 150,
+   "estoque": 3,
+   "qtd": 1
+  },
+  {
+   "item": "muda_laranjeira",
+   "preco": 180,
+   "estoque": 3,
+   "qtd": 1
+  },
+  {
+   "item": "semente_nabo",
+   "preco": 20,
+   "estoque": 20,
+   "qtd": 1
+  }
+ ],
+ "vende_categorias": [
+  "colheita"
+ ],
+ "taxa_venda": 0.5,
+ "servicos": []
+}

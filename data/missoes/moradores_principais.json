@@ -1,0 +1,337 @@
+{
+	"versao": 1,
+	"status": "PROPOSTA — não é canon. Seis moradores principais de Porto Velho com desejo, contradição, rotina, relação, situação e mudança. Lido por scripts/missoes/seletor_dialogos.gd.",
+	"periodos": [
+		"manha",
+		"tarde",
+		"noite"
+	],
+	"marca_pos_missao": "missao_atrasada_concluida",
+	"regra_selecao": "1) etapa ativa da missão; 2) objetivo opcional ativo (só se o morador já foi conhecido); 3) se ainda não conheceu (<id>_conheceu), usa o diálogo original dialogos/<id>.dialogue; 4) primeira reação da lista cujas marcas batem; 5) pos_missao se a missão acabou; 6) cue do período; 7) original.",
+	"moradores": {
+		"ferreiro": {
+			"nome": "Gaspar Bigorna",
+			"na_missao": true,
+			"desejo": "Nunca atrasar. Ser lembrado como o ferreiro mais pontual do arquipélago, à altura do avô que forjava para os Arquimagos.",
+			"contradicao": "Tem pavor de metal que 'sussurra horários', mas vive em função do relógio. Fica mais ofendido com os juros da multa do que com o tempo quebrado.",
+			"relacao": {
+				"com": "minerador_aposentado",
+				"descricao": "Amigo e rival do Seu Tião há vinte anos. Discutem toda noite se o rangido do elevador é a polia (dele) ou o cabo (do Tião). O Zeca morreu devendo três lingotes ao Gaspar."
+			},
+			"situacao": "A Conta Impossível. A Vale traz de volta a catraca feita por ele mesmo, amanhã.",
+			"mudanca": "Emoldura a conta ('Arquivo, amanhã'), abre um caderno de encomendas futuras, libera as variações de eco e, se o recado do Zeca chegar ao Tião, perdoa a primeira dívida em 31 anos.",
+			"rotina": {
+				"manha": {
+					"local": "FerrariaDoPorto/forja",
+					"atividade": "acende a forja (pega no terceiro sopro) e não atende antes do café",
+					"cue": "manha"
+				},
+				"tarde": {
+					"local": "FerrariaDoPorto/bigorna",
+					"atividade": "martela e atende",
+					"cue": "tarde"
+				},
+				"noite": {
+					"local": "FerrariaDoPorto/porta",
+					"atividade": "sentado na porta polindo o martelo do avô, discutindo com o Tião",
+					"cue": "noite"
+				},
+				"pos_missao": {
+					"local": "FerrariaDoPorto/bigorna",
+					"atividade": "conta emoldurada na parede; anota encomendas futuras",
+					"cue": "pos_missao"
+				}
+			},
+			"reacoes": []
+		},
+		"mira": {
+			"nome": "Mira",
+			"na_missao": "opcional (pista da ferrugem)",
+			"desejo": "Provar que a cinza é remédio e não maldição, e entender o que ela é de verdade.",
+			"contradicao": "É a pessoa mais curiosa do porto e nunca sai de Porto Velho. Manda os outros buscarem amostras e morre de inveja de quem vai.",
+			"relacao": {
+				"com": "jardineira",
+				"descricao": "Recebe ervas da Dona Iolanda pelo Pipo. As duas brigam por bilhete sobre como tratar o alecrim."
+			},
+			"situacao": "A tinta da conta tem 'cinza de amanhã'. Ela pede uma amostra da ferrugem do guindaste.",
+			"mudanca": "Descobre que a cinza também é tempo que ainda vai acontecer; começa um 'mapa do tempo' e pede amostras de cada ilha (gancho para a Estação Depois-de-Ontem).",
+			"rotina": {
+				"manha": {
+					"local": "BoticaDaMira/canteiros",
+					"atividade": "peneira cinza para os canteiros",
+					"cue": "manha"
+				},
+				"tarde": {
+					"local": "BoticaDaMira/balcao",
+					"atividade": "atende e mistura essências",
+					"cue": "tarde"
+				},
+				"noite": {
+					"local": "BoticaDaMira/janela",
+					"atividade": "janela entreaberta, anota o que o vento conta",
+					"cue": "noite"
+				},
+				"pos_missao": {
+					"local": "BoticaDaMira/balcao",
+					"atividade": "frasco 'Amanhã, nº 1' na prateleira de cima",
+					"cue": "pos_missao"
+				}
+			},
+			"reacoes": [
+				{
+					"cue": "pista_reconhecida",
+					"exige": [
+						"atrasada_pista_confirmada"
+					],
+					"proibe": [
+						"reacao_mira_pista_reconhecida"
+					]
+				},
+				{
+					"cue": "arma_nova",
+					"exige": [
+						"eco_desbloqueado"
+					],
+					"proibe": [
+						"reacao_mira_arma_vista"
+					]
+				},
+				{
+					"cue": "voltou_expedicao",
+					"exige": [
+						"primeira_expedicao_voltou"
+					],
+					"proibe": [
+						"reacao_mira_voltou"
+					]
+				}
+			]
+		},
+		"estalajadeira": {
+			"nome": "Dona Rosalva",
+			"na_missao": "final (recebe o vidro)",
+			"desejo": "Que todo mundo que sai volte. A lanterna acesa é o caminho de volta da filha, Lia (PROPOSTA), que embarcou num dirigível na semana da Queda.",
+			"contradicao": "Diz que 'não espera nada de ninguém' e passa a vida esperando: uma lanterna que nunca apaga e um prato a mais na mesa vazia.",
+			"relacao": {
+				"com": "guardia",
+				"descricao": "Amiga de infância da Brida, que todo dia aponta que a lanterna dela é a 13ª e viola o Contrato de Penumbra com a Condessa."
+			},
+			"situacao": "O vidro novo da lanterna está preso há três anos no porão da Andorinha, atrás do guindaste quebrado.",
+			"mudanca": "Lanterna com vidro novo e luz mais clara; cria a regra 'quem volta de mina come primeiro, de graça'; a mesa reservada ganha um bilhete também para a Vale. Pode decidir viajar um dia (marca rosalva_pensou_em_viajar).",
+			"rotina": {
+				"manha": {
+					"local": "EstalagemDaLanterna/cozinha",
+					"atividade": "fogão às cinco, pão às seis",
+					"cue": "manha"
+				},
+				"tarde": {
+					"local": "EstalagemDaLanterna/balcao",
+					"atividade": "briga com fornecedores e com o capitão",
+					"cue": "tarde"
+				},
+				"noite": {
+					"local": "EstalagemDaLanterna/lanterna",
+					"atividade": "limpa a lanterna e põe um prato a mais; jura que o uivo do quarto 3 é vento",
+					"cue": "noite"
+				},
+				"pos_missao": {
+					"local": "EstalagemDaLanterna/balcao",
+					"atividade": "lanterna clara; mesa com bilhete",
+					"cue": "pos_missao"
+				}
+			},
+			"reacoes": [
+				{
+					"cue": "voltou_expedicao",
+					"exige": [
+						"primeira_expedicao_voltou"
+					],
+					"proibe": [
+						"reacao_estalajadeira_voltou"
+					]
+				},
+				{
+					"cue": "arma_nova",
+					"exige": [
+						"eco_desbloqueado"
+					],
+					"proibe": [
+						"reacao_estalajadeira_arma_vista"
+					]
+				}
+			]
+		},
+		"capitao": {
+			"nome": "Capitão Bartolomeu Nuvem",
+			"na_missao": true,
+			"desejo": "Reabrir a rota e ficar rico. 'Nessa ordem, se possível.'",
+			"contradicao": "Se gaba de ser o capitão mais destemido do céu, mas não sai da doca há meses. Culpa o guindaste porque ele dá uma desculpa para não enfrentar o pedágio do dragão (e o novo pedágio do recibo).",
+			"relacao": {
+				"com": "estalajadeira",
+				"descricao": "Paga a conta da Estalagem com objetos estranhos (pena de dragão, bússola que aponta pra quinta-feira). Guarda há três anos a caixa que a Rosalva espera."
+			},
+			"situacao": "O guindaste racha de verdade na frente dele. Com a catraca nova, não tem mais desculpa para não voar.",
+			"mudanca": "Descarrega a Andorinha, risca o 'talvez' do mapa e escreve 'Estação Depois-de-Ontem'; marca a viagem para a próxima lua e convida a Vale.",
+			"rotina": {
+				"manha": {
+					"local": "doca/dirigivel",
+					"atividade": "inspeciona o balão e grita com as gaivotas",
+					"cue": "manha"
+				},
+				"tarde": {
+					"local": "doca/guindaste",
+					"atividade": "discute com o guindaste parado; paga os dois Jucas",
+					"cue": "tarde"
+				},
+				"noite": {
+					"local": "EstalagemDaLanterna/mesa_canto",
+					"atividade": "conta história para ganhar sobremesa",
+					"cue": "noite"
+				},
+				"pos_missao": {
+					"local": "doca/guindaste",
+					"atividade": "carrega a Andorinha; negocia o recibo do recibo com o Ambarion",
+					"cue": "pos_missao"
+				}
+			},
+			"reacoes": [
+				{
+					"cue": "guindaste_usado",
+					"exige": [
+						"mundo_guindaste_funcionando"
+					],
+					"proibe": [
+						"reacao_capitao_guindaste_usado"
+					]
+				},
+				{
+					"cue": "arma_nova",
+					"exige": [
+						"eco_desbloqueado"
+					],
+					"proibe": [
+						"reacao_capitao_arma_vista"
+					]
+				}
+			]
+		},
+		"guardia": {
+			"nome": "Brida Ferrolho",
+			"na_missao": "abertura (entrega a conta)",
+			"desejo": "Ordem. Que tudo siga o regulamento. No fundo, ser querida e conseguir contar uma piada que funcione.",
+			"contradicao": "Aplica com rigor regras que ela mesma acha absurdas (Contrato de Penumbra, artigo 7-B, folha de pagamento dos dois Jucas) porque 'desde a Queda, normal é o que tem carimbo'.",
+			"relacao": {
+				"com": "estalajadeira",
+				"descricao": "Amiga de infância da Rosalva. Conta as lanternas toda noite e sempre dá treze por causa dela. Nunca multou."
+			},
+			"situacao": "Entrega a Conta Impossível e precisa 'processar' um documento que chegou antes de ser enviado.",
+			"mudanca": "Cria o carimbo 'RECEBIDO ANTES DE ENVIADO', atualiza o formulário 7-B, resolve o caso dos ratos do armazém quando o beco abre e conta a primeira piada boa.",
+			"rotina": {
+				"manha": {
+					"local": "PostoDaGuarda/mural",
+					"atividade": "revisa o mural de pedidos",
+					"cue": "manha"
+				},
+				"tarde": {
+					"local": "doca/cais",
+					"atividade": "patrulha o cais e audita a folha de pagamento",
+					"cue": "tarde"
+				},
+				"noite": {
+					"local": "portao_norte",
+					"atividade": "fecha os portões e conta lanternas",
+					"cue": "noite"
+				},
+				"pos_missao": {
+					"local": "PostoDaGuarda/balcao",
+					"atividade": "carimbo novo na mesa",
+					"cue": "pos_missao"
+				}
+			},
+			"reacoes": [
+				{
+					"cue": "guindaste_usado",
+					"exige": [
+						"mundo_passagem_armazem_aberta"
+					],
+					"proibe": [
+						"reacao_guardia_guindaste_usado"
+					]
+				},
+				{
+					"cue": "voltou_expedicao",
+					"exige": [
+						"primeira_expedicao_voltou"
+					],
+					"proibe": [
+						"reacao_guardia_voltou"
+					]
+				},
+				{
+					"cue": "arma_nova",
+					"exige": [
+						"eco_desbloqueado"
+					],
+					"proibe": [
+						"reacao_guardia_arma_vista"
+					]
+				}
+			]
+		},
+		"minerador_aposentado": {
+			"nome": "Seu Tião Lamparina",
+			"na_missao": true,
+			"desejo": "Que ninguém mais se perca na mina como o Zeca.",
+			"contradicao": "Faz piada com a mina o dia inteiro e há 32 anos não passa do andar 3. Leva os outros até onde ele mesmo não tem coragem de ir.",
+			"relacao": {
+				"com": "fantasma_mineiro",
+				"descricao": "Ex-parceiro de veio do Zeca Sem-Volta. Subiu mais cedo na noite da Queda e se culpa desde então. Acha que o assobio lá de baixo é bronca."
+			},
+			"situacao": "O recado do Zeca, trazido pela Vale do Bate-Estaca (opcional).",
+			"mudanca": "Volta a descer até o andar 4, pendura uma lamparina para o Zeca e pinta 'Elevador Tião e Zeca'.",
+			"rotina": {
+				"manha": {
+					"local": "cisterna/elevador",
+					"atividade": "engraxa o cabo e leva novatos até o andar 3",
+					"cue": "manha"
+				},
+				"tarde": {
+					"local": "minas_da_cinza/andar_01",
+					"atividade": "opera o elevador e conta histórias",
+					"cue": "tarde"
+				},
+				"noite": {
+					"local": "FerrariaDoPorto/porta",
+					"atividade": "discute o rangido com o Gaspar",
+					"cue": "noite"
+				},
+				"pos_missao": {
+					"local": "cisterna/elevador",
+					"atividade": "elevador pintado; lamparina extra no cinto",
+					"cue": "pos_missao"
+				}
+			},
+			"reacoes": [
+				{
+					"cue": "recado",
+					"arquivo": "res://dialogos/missao_atrasada/tiao.dialogue",
+					"exige": [
+						"zeca_pediu_recado"
+					],
+					"proibe": [
+						"tiao_recebeu_recado"
+					]
+				},
+				{
+					"cue": "arma_nova",
+					"exige": [
+						"eco_desbloqueado"
+					],
+					"proibe": [
+						"reacao_tiao_arma_vista"
+					]
+				}
+			]
+		}
+	}
+}

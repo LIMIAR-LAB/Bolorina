@@ -1,0 +1,23 @@
+# Dra. Mira de Depois: a Mira do Porto Velho, uns quarenta anos mais velha, vinda de uma linha do tempo vizinha. PROPOSTA.
+~ start
+if tem("cientista_mira_conheceu")
+	=> de_novo
+Dra. Mira de Depois: Não grita. Eu sei. Eu também levei um susto quando me vi pela primeira vez. Eu estava com aquela franja.
+Vale: Você... é a Mira? A da Botica?
+Dra. Mira de Depois: Fui. Vou ser. Depois de muita erva e alguns acidentes com portal, virei botânica temporal. Planto sementes que brotam no ano passado.
+- Como você veio parar aqui?
+	Dra. Mira de Depois: O Ozório. Sempre o Ozório. Ele quebrou o Coração do Tempo e esta estação inteira caiu do futuro, comigo dentro. Não conta pra Mira jovem. Ela ainda gosta dele.
+	$> marcar("cientista_mira_culpa_ozorio")
+	$> confiar("cientista_mira", 1)
+- O pote azul da Botica ainda guarda rancor?
+	Dra. Mira de Depois: Guarda. Ele me seguiu até aqui. Está no laboratório, numa câmara de contenção. Ainda bufa quando eu passo.
+	$> marcar("cientista_mira_pote_azul")
+Dra. Mira de Depois: Me traz essências da Mira jovem e cristais de anomalia. Juntas, a gente encanta qualquer espada. É a única parceria em que eu confio: comigo mesma.
+$> marcar("cientista_mira_conheceu")
+=> END
+
+~ de_novo
+% Dra. Mira de Depois: Cuidado com a anomalia no laboratório. Ela envelhece samambaia em três segundos.
+% Dra. Mira de Depois: Aquela ali passou correndo agora era eu de novo? Odeio quando isso acontece.
+% Dra. Mira de Depois: Raiz-de-brasa ainda é o melhor chá. Algumas coisas não mudam em nenhuma linha do tempo.
+=> END

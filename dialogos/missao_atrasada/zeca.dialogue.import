@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=18
+type="Resource"
+uid="uid://b81ywq010goym"
+path="res://.godot/imported/zeca.dialogue-578facfacc212d01e4626caf4734a1e0.tres"
+
+[deps]
+
+source_file="res://dialogos/missao_atrasada/zeca.dialogue"
+dest_files=["res://.godot/imported/zeca.dialogue-578facfacc212d01e4626caf4734a1e0.tres"]
+
+[params]
+
+defaults=true

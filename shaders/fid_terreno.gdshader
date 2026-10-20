@@ -20,8 +20,11 @@ void fragment(){
  vec3 t=texture(terra,uv*0.3).rgb*tom_terra*1.4;
  float sulco=0.5+0.5*sin(world.x*5.2);
  t*=mix(1.0,mix(0.62,1.12,sulco),COLOR.a);
- vec2 side=abs(wn.x)>abs(wn.z)?world.zy:world.xy;
- vec3 r=texture(rocha,side*0.22).rgb*tom_rocha*1.3;
+ // rocha triplanar: o topo plano do patamar usava a projecao de parede (xy/zy) e virava listras
+ vec3 nn=normalize(wn);
+ vec3 pw=pow(abs(nn),vec3(4.0));
+ pw/=max(pw.x+pw.y+pw.z,0.0001);
+ vec3 r=(texture(rocha,world.zy*0.22).rgb*pw.x+texture(rocha,world.xz*0.22).rgb*pw.y+texture(rocha,world.xy*0.22).rgb*pw.z)*tom_rocha*1.3;
  float steep=smoothstep(0.55,0.85,1.0-normalize(wn).y);
  vec3 a=mix(g,c,COLOR.r);
  a=mix(a,t,COLOR.g);

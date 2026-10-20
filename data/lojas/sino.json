@@ -1,0 +1,22 @@
+{
+ "id": "sino",
+ "nome": "Torre do Sino",
+ "npc": "bartolomeu",
+ "compra": [],
+ "vende_categorias": [],
+ "taxa_venda": 0.5,
+ "servicos": [
+  {
+   "id": "hora",
+   "nome": "Perguntar a hora",
+   "preco": 0,
+   "desc": ""
+  },
+  {
+   "id": "pular_dia",
+   "nome": "Tocar o sino do amanhecer (pula para o próximo dia)",
+   "preco": 25,
+   "desc": "Dorme ouvindo o sino."
+  }
+ ]
+}

@@ -1,0 +1,134 @@
+{
+ "fazenda": {
+  "nome": "Fazenda",
+  "centro": [
+   360,
+   610
+  ],
+  "raio": [
+   115,
+   82.8
+  ],
+  "estado": "jogavel",
+  "mundo": [
+   -27,
+   -23,
+   46,
+   23
+  ]
+ },
+ "vila": {
+  "nome": "Vila",
+  "centro": [
+   620,
+   440
+  ],
+  "raio": [
+   108,
+   77.8
+  ],
+  "estado": "jogavel",
+  "mundo": [
+   -43,
+   -41,
+   31,
+   29
+  ]
+ },
+ "ruinas": {
+  "nome": "Ruínas do Norte (borda da vila)",
+  "centro": [
+   600,
+   272
+  ],
+  "raio": [
+   70,
+   50.4
+  ],
+  "estado": "jogavel",
+  "mundo": null
+ },
+ "arena": {
+  "nome": "Arena dos Orcs",
+  "centro": [
+   905,
+   430
+  ],
+  "raio": [
+   80,
+   57.6
+  ],
+  "estado": "jogavel",
+  "mundo": [
+   -11,
+   -9,
+   11,
+   9
+  ]
+ },
+ "masmorra": {
+  "nome": "Masmorra (protótipo)",
+  "centro": [
+   585,
+   98
+  ],
+  "raio": [
+   86,
+   61.9
+  ],
+  "estado": "prototipo",
+  "mundo": null
+ },
+ "floresta": {
+  "nome": "Floresta / Cabana do Bento",
+  "centro": [
+   180,
+   505
+  ],
+  "raio": [
+   72,
+   51.8
+  ],
+  "estado": "em_breve",
+  "mundo": null
+ },
+ "ermida": {
+  "nome": "Ermida da Iara (penhasco)",
+  "centro": [
+   880,
+   225
+  ],
+  "raio": [
+   60,
+   43.2
+  ],
+  "estado": "em_breve",
+  "mundo": null
+ },
+ "lago": {
+  "nome": "Lago Grande / Seu Joaquim",
+  "centro": [
+   690,
+   690
+  ],
+  "raio": [
+   66,
+   47.5
+  ],
+  "estado": "em_breve",
+  "mundo": null
+ },
+ "vila_grande": {
+  "nome": "Vila Grande (lojas/porto)",
+  "centro": [
+   810,
+   545
+  ],
+  "raio": [
+   60,
+   43.2
+  ],
+  "estado": "em_breve",
+  "mundo": null
+ }
+}

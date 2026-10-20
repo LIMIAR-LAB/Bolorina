@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=18
+type="Resource"
+uid="uid://gbbceixd31ub"
+path="res://.godot/imported/mercador_temporal.dialogue-22b4ee120371442b083ff17cb28a1499.tres"
+
+[deps]
+
+source_file="res://dialogos/mercador_temporal.dialogue"
+dest_files=["res://.godot/imported/mercador_temporal.dialogue-22b4ee120371442b083ff17cb28a1499.tres"]
+
+[params]
+
+defaults=true

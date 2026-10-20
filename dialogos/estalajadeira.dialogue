@@ -1,0 +1,27 @@
+# Dona Rosalva, estalajadeira da Estalagem da Lanterna (Porto Velho). Refeicoes dao bonus.
+~ start
+if tem("estalajadeira_conheceu")
+	=> de_novo
+Dona Rosalva: Entra, entra, que lá fora chove cinza e aqui dentro chove caldo!
+Dona Rosalva: Senta perto da lanterna. Ela nunca apagou, nem na noite da Queda. Dizem que foi teimosia minha.
+Vale: Que cheiro bom. O que tem pra comer?
+Dona Rosalva: Pra quem chega, o prato do dia sai por conta da casa. Escolhe com o estômago, não com a cabeça.
+- Ensopado de Brasa.
+	Dona Rosalva: Aquece até a alma. Você vai bater mais forte na próxima briga, eu garanto.
+	$> comer("Ensopado de Brasa")
+- Torta de nabo-cinzento.
+	Dona Rosalva: Escolha de quem vai trabalhar muito. Dá fôlego pra lavoura o dia inteiro.
+	$> comer("Torta de Nabo-Cinzento")
+- Só um chá, obrigada.
+	Dona Rosalva: Chá de quê? Tanto faz, aqui tudo tem um pouco de casa dentro.
+	$> comer("Chá da Lanterna")
+Dona Rosalva: Antes de qualquer expedição, passa aqui. Barriga vazia não volta de ruína nenhuma.
+$> marcar("estalajadeira_conheceu")
+$> confiar("estalajadeira", 1)
+=> END
+
+~ de_novo
+% Dona Rosalva: Voltou! Senta, que o caldo não espera e eu também não.
+% Dona Rosalva: O capitão do dirigível pagou a conta com uma pena de dragão. Aceitei, claro.
+% Dona Rosalva: Se o Arquimago aparecer, finge que a cozinha está fechada. Da última vez ele fez a sopa existir em duas panelas ao mesmo tempo.
+=> END

@@ -1,0 +1,22 @@
+# Quinquilho do Talvez, negociante de minério meio goblin, com falhas no tempo (ecos da quebra do Coração do Tempo). PROPOSTA.
+~ start
+if tem("mercador_minerio_conheceu")
+	=> de_novo
+Quinquilho do Talvez: Psst! Freguesa! Minério fresquinho! Esse aqui é de hoje, esse de ontem e esse... esse é de talvez.
+Quinquilho do Talvez: Desde que o tal do Ozório quebrou o Coração do Tempo, minha banca pula uns segundos. Às vezes eu vendo antes de você comprar.
+- Quanto custa o minério de talvez?
+	Quinquilho do Talvez: Depende! Se você comprar, custa pouco. Se não comprar, custou caro. Não me olhe assim, quem fez o preço foi o tempo.
+	Quinquilho do Talvez: Brincadeira. Troco carvão por ferro, três por um. E pago bem por chip de anomalia, se um dia achar.
+	$> marcar("mercador_minerio_ofereceu_troca")
+	$> confiar("mercador_minerio", 1)
+- Você é um goblin?
+	Quinquilho do Talvez: Sou um empreendedor subterrâneo de estatura econômica. Goblin é o seu primo.
+Quinquilho do Talvez: Volta sempre! Ou volta antes. Do jeito que tá, dá na mesma.
+$> marcar("mercador_minerio_conheceu")
+=> END
+
+~ de_novo
+% Quinquilho do Talvez: Ah, você de novo! Ou pela primeira vez? Tô confuso, mas o preço continua bom.
+% Quinquilho do Talvez: Minério de ferro, só com picareta de cobre. Quem tentar com a mão vira cliente do curandeiro.
+% Quinquilho do Talvez: Ouvi dizer que tem uma ilha que caiu do futuro. Concorrência desleal!
+=> END

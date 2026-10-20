@@ -1,0 +1,42 @@
+# Tutorial de abertura em Porto Velho (PROPOSTA). Passos em data/tutorial/tutorial.json.
+# Antes da crise, uma coisa pequena e querida: o Pipo fez uma faixa de boas-vindas e o gato dormiu em cima dela.
+
+~ chegada
+A Andorinha encosta na doca de Porto Velho. Cai uma cinza fina, devagar, como neve morna.
+Capitão Bartolomeu Nuvem: Terra firme! Ou quase. Bem-vinda a Porto Velho, Vale. Cuidado com o degrau. E com o gato.
+Vale: Que gato?
+Na praça, uma faixa pintada à mão diz "BEM-VIMDA VALE". Em cima do "VIMDA", o Gato da Praça dorme profundamente.
+- Vamos lá ver.
+	Capitão Bartolomeu Nuvem: O Pipo pintou a faixa a semana inteira. Finge que não viu o erro. Ele vai saber que você viu.
+- Já conheço Porto Velho. (pular tutorial)
+	Capitão Bartolomeu Nuvem: Então você sabe o caminho da Ferraria. O Gaspar está precisando de alguém hoje.
+	$> marcar("tutorial_pulado")
+$> marcar("tut_abertura_vista")
+=> END
+
+~ pipo
+Pipo: Você veio! Você é a Vale! Eu fiz uma faixa!
+Vale: Eu vi. Está linda. E o gato achou confortável.
+Pipo: Ele dormiu bem no "BEM". Não, espera, no "VIMDA". Tem erro, né?
+- Não tem erro nenhum.
+	Pipo: Eu sabia! Minha mãe disse que tinha. Vou contar pra ela que a moça da fazenda disse que não tem.
+- Tem um errinho, mas é a faixa mais bonita que já ganhei.
+	Pipo: Então eu conserto amanhã. Ou deixo. Faixa com erro é faixa feita à mão.
+Pipo: Agora você tem que conhecer o Sir Palha! É meu cavaleiro de palha. Ele desafia todo mundo que chega.
+Pipo: Bate nele três vezes seguidas! A terceira tem que ser forte, senão ele não respeita.
+$> marcar("tut_conversou")
+=> END
+
+~ palha_respeito
+Pipo: Ele respeitou! Olha o chapéu dele torto! Mas cuidado, ele sempre devolve. Eu puxo a corda e ele gira!
+Pipo: Quando ele girar, você pula através dele. Esquiva! Se não esquivar, leva vassourada.
+=> END
+
+~ fim_basico
+Pipo: Você esquivou! Ninguém esquiva do Sir Palha. Nem o Capitão. Principalmente o Capitão.
+Gato da Praça: Mrrr.
+Pipo: Ele acordou! Ele gostou de você. Ele só acorda pra quem ele gosta. Ou pra peixe.
+Do lado da Ferraria vem um grito. "BRIDA! VOLTA AQUI! ISSO É UM ABSURDO!"
+Pipo: É o Seu Gaspar. Quando ele grita assim, alguém mandou conta pra ele.
+$> marcar("tutorial_basico_concluido")
+=> END
