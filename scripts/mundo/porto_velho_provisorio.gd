@@ -3,7 +3,7 @@ extends "res://scripts/ilha/vila_jogo.gd"
 ## cada um com loja/servico (scripts/economia/). Quando o mapa da Bolorina (scenes/vila_grande.tscn) chegar, o registro
 ## de areas passa a carregar ele, e os mesmos NPCs vao para os marcadores npc_<id> do mapa.
 const NpcsArea = preload("res://scripts/economia/npcs_area.gd")
-const ROSTER := "res://data/npcs/porto_velho.json"
+const ROSTER := "res://data/npcs/porto_velho_provisorio.json"  # integracao 20/10: roster original do Claude; o mapa real usa data/npcs/porto_velho.json
 var area_npcs
 
 func _init() -> void:

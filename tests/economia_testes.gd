@@ -94,6 +94,10 @@ func _run() -> void:
 	# ------------------------------------------------ forja
 	e = estado_novo()
 	e.ouro = 2000
+	# integracao 20/10: receitas da Bolorina pedem madeira/couro alem dos lingotes
+	e.somar("madeira", 20)
+	e.somar("couro", 10)
+	check(Forja.receitas().size() >= 90 and Forja.materiais().size() >= 9, "forja com os dados da Bolorina (%d receitas, %d metais)" % [Forja.receitas().size(), Forja.materiais().size()])
 	check(Forja.fazer(e, "fundir_cobre") != "", "sem minerio nao funde")
 	e.somar("minerio_cobre", 9)
 	e.somar("carvao", 3)
@@ -145,9 +149,9 @@ func _run() -> void:
 	var antes: int = e.ouro
 	Servicos.executar(e, null, "banco", "sacar")
 	check(e.ouro - antes == 102, "banco: 100 depositados rendem 1%% ao dia (sacou %d)" % (e.ouro - antes))
-	check(Servicos.executar(e, null, "mensageria", "pegar_entrega").contains("Marina") and e.qtd("carta_entrega") == 1, "Nina da a carta")
+	check(Servicos.executar(e, null, "mensageria", "pegar_entrega").contains("Nuvem") and e.qtd("carta_entrega") == 1, "Pipo da a carta")
 	check(Servicos.executar(e, null, "mensageria", "concluir_entrega").contains("ainda não chegou"), "sem entregar nao paga")
-	check(Servicos.ao_falar(e, "marina") != "" and e.qtd("carta_entrega") == 0, "falar com a Capita Marina entrega a carta")
+	check(Servicos.ao_falar(e, "capitao") != "" and e.qtd("carta_entrega") == 0, "falar com o Capitao Nuvem entrega a carta")
 	var o2: int = e.ouro
 	check(Servicos.executar(e, null, "mensageria", "concluir_entrega").begins_with("Obrigada") and e.ouro == o2 + 60, "entrega concluida: +60")
 	Equip.equipar(e.equipamento, "peitoral_adamantium")
@@ -174,26 +178,22 @@ func _run() -> void:
 	OS.set_environment("ILHA_SPAWN", "padrao")
 	jogo = load("res://jogo_ilha.tscn").instantiate()
 	root.add_child(jogo)
-	check(await esperar_area("porto_velho"), "jogo abre Porto Velho (cena provisoria)")
+	check(await esperar_area("porto_velho"), "jogo abre Porto Velho (mapa real da Bolorina)")
 	await fr(4)
 	var pv_area = jogo.atual
 	var an = pv_area.get("area_npcs")
 	check(an != null and an.npcs.size() >= 20, "Porto Velho com %d NPCs no mapa" % (an.npcs.size() if an else 0))
 	jogo.estado.ouro = 500
-	var ih: int = an.npc_por_id("helena")
-	an.falar(ih)
-	an.abrir_balcao()
-	check(an.balcao and an.abas.has("comprar") and an.abas.has("fundir") and an.abas.has("forjar"), "Helena abre o balcao com comprar/fundir/forjar (%s)" % str(an.abas))
+	an.abrir_balcao_de("ferreiro")
+	check(an.balcao and an.abas.has("comprar") and an.abas.has("fundir") and an.abas.has("forjar"), "Gaspar Bigorna abre o balcao com comprar/fundir/forjar (%s)" % str(an.abas))
 	an.aba = an.abas.find("comprar")
 	an._listar()
 	var o3: int = jogo.estado.ouro
 	var m3: String = an.escolher(0)
 	check(jogo.estado.qtd("carvao") >= 1 and jogo.estado.ouro < o3, "compra pelo balcao (%s)" % m3)
 	an.fechar()
-	var imar: int = an.npc_por_id("marina")
-	an.falar(imar)
-	an.abrir_balcao()
-	check(an.abas == ["servicos"], "Capita Marina: servico de viagem")
+	an.abrir_balcao_de("capitao")
+	check(an.abas == ["servicos"], "Capitao Nuvem: servico de viagem")
 	an.fechar()
 	# minerio na fazenda
 	jogo.viajar("fazenda")

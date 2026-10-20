@@ -25,12 +25,24 @@ var aba := 0
 var sel := 0
 var opcoes: Array = []      # [{texto, acao: Callable}]
 var ultima_msg := ""
+## integracao 20/10: roster com "moradores_do_mapa" (Porto Velho real). Quem tem "morador" e o NPC do proprio mapa
+## (rosto/corpo/dialogo da Bolorina): E conversa pelo gerente de dialogos do mapa e, quando a conversa acaba, este no
+## abre o balcao da loja dele. Moradores novos (sem "morador") sao desenhados aqui, no lugar livre mais proximo da "pos".
+var moradores_do_mapa := false
+var dialogos: Node = null
+const InteracaoNpcs = preload("res://scripts/dialogos/interacao_npcs.gd")
+const RegistroNpcs = preload("res://scripts/dialogos/npcs_registro.gd")
 
 func montar(area, roster: String) -> void:
 	g = area
 	name = "NpcsArea"
 	var d = JSON.parse_string(FileAccess.get_file_as_string(roster)) if FileAccess.file_exists(roster) else null
 	if not d is Dictionary:
+		return
+	moradores_do_mapa = bool(d.get("moradores_do_mapa", false))
+	if moradores_do_mapa:
+		_montar_moradores(d.npcs)
+		_ui()
 		return
 	for m in d.npcs:
 		var a := _ator(m)
@@ -54,6 +66,138 @@ func montar(area, roster: String) -> void:
 		r.global_position = pos + Vector3(0, 2.15 * float(m.get("escala", 1.0)), 0)
 		npcs.append({"dados": m, "no": a, "rotulo": r})
 	_ui()
+
+# ------------------------------------------------------------------ integracao 20/10: elenco do mapa + lojas
+func _mapa() -> Node:
+	var m = g.get("mapa")
+	return m if m is Node else g
+
+func _montar_moradores(lista: Array) -> void:
+	var mapa := _mapa()
+	var no_mapa := {}
+	for n in mapa.find_children("*", "Node3D", true, false):
+		if n.is_in_group("npc_conversavel") or n.get("npc_id") != null:
+			no_mapa[String(n.get("npc_id"))] = n
+	var novos: Array = []
+	for m in lista:
+		var mid := String(m.get("morador", ""))
+		var no: Node3D = null
+		var vinculado := false
+		var p: Array = m.get("pos", [0, 0])
+		var pos := Vector3(float(p[0]), _altura(float(p[0]), float(p[1])), float(p[1]))
+		if mid != "" and no_mapa.has(mid):
+			no = no_mapa[mid]
+			vinculado = true
+		elif mid != "" and RegistroNpcs.existe(mid) and mapa is Node3D:
+			no = InteracaoNpcs.criar_npc(mid, mapa, Transform3D(Basis.IDENTITY, pos))
+			vinculado = true
+			novos.append(no)
+		else:
+			no = _ator(m)
+			(mapa as Node).add_child(no)
+			no.global_position = pos
+			no.name = "Npc_" + String(m.id)
+			if no.has_method("set_direction"):
+				no.set_direction(Vector2(0, 1))
+			novos.append(no)
+		var r := Label3D.new()
+		r.text = "%s\n[%s]" % [String(m.nome), String(m.papel)]
+		r.font_size = 28
+		r.pixel_size = 0.0045
+		r.outline_size = 8
+		r.modulate = Color("ffe9b0")
+		r.billboard = BaseMaterial3D.BILLBOARD_ENABLED
+		r.no_depth_test = true
+		r.visible = false
+		no.add_child(r)
+		r.position = Vector3(0, 2.15 * float(m.get("escala", 1.0)), 0)
+		npcs.append({"dados": m, "no": no, "rotulo": r, "vinculado": vinculado})
+	dialogos = null
+	for n in mapa.find_children("*", "Node", true, false):
+		if n.has_signal("conversa_encerrada") and n.has_method("tecla_e"):
+			dialogos = n
+			break
+	if dialogos:
+		dialogos.conversa_encerrada.connect(_ao_encerrar_conversa)
+	_assentar.call_deferred(novos)
+
+func _altura(x: float, z: float) -> float:
+	var m := _mapa()
+	return float(m._y(x, z)) if m.has_method("_y") else 0.0
+
+## poe os moradores novos no chao livre mais proximo (as colisoes do mapa so existem depois de um quadro de fisica)
+func _assentar(lista: Array) -> void:
+	if not is_inside_tree():
+		return
+	await get_tree().physics_frame
+	await get_tree().physics_frame
+	for no in lista:
+		if is_instance_valid(no):
+			no.global_position = _livre_fisico(no.global_position)
+
+func _livre_fisico(p: Vector3) -> Vector3:
+	var space: PhysicsDirectSpaceState3D = (g as Node3D).get_world_3d().direct_space_state
+	var excluir: Array = []
+	var pl = g.get("player")
+	if pl is CollisionObject3D:
+		excluir.append((pl as CollisionObject3D).get_rid())
+	for raio in [0.0, 0.8, 1.6, 2.4, 3.2, 4.0, 5.0, 6.0]:
+		for k in (1 if raio == 0.0 else 12):
+			var a := TAU * float(k) / 12.0
+			var x: float = p.x + cos(a) * float(raio)
+			var z: float = p.z + sin(a) * float(raio)
+			var rq := PhysicsRayQueryParameters3D.create(Vector3(x, 40, z), Vector3(x, -30, z))
+			rq.exclude = excluir
+			var hit := space.intersect_ray(rq)
+			if hit.is_empty() or (hit.normal as Vector3).y < 0.7:
+				continue
+			var q := PhysicsShapeQueryParameters3D.new()
+			var b := BoxShape3D.new()
+			b.size = Vector3(0.7, 1.2, 0.7)
+			q.shape = b
+			q.transform = Transform3D(Basis.IDENTITY, (hit.position as Vector3) + Vector3(0, 0.75, 0))
+			q.exclude = excluir
+			if space.intersect_shape(q, 1).is_empty():
+				return hit.position
+	return p
+
+## fim da conversa do Dialogue Manager com um morador que tem loja: abre o balcao dele
+func _ao_encerrar_conversa(id: String) -> void:
+	for i in npcs.size():
+		if npcs[i].vinculado and String(npcs[i].dados.get("morador", "")) == id and String(npcs[i].dados.get("loja", "")) != "":
+			_registrar_conversa(i)
+			falando = i
+			fala_i = 0
+			ultima_msg = ""
+			painel.visible = true
+			retrato.texture = _retrato(npcs[i].dados)
+			abrir_balcao()
+			return
+
+func _registrar_conversa(i: int) -> void:
+	var e = g.estado
+	if e == null:
+		return
+	var id := String(npcs[i].dados.id)
+	if int(e.conversou.get(id, 0)) != int(e.dia):
+		e.conversou[id] = int(e.dia)
+		e.amizade[id] = int(e.amizade.get(id, 0)) + 1
+	var aviso := Servicos.ao_falar(e, id)
+	if aviso != "":
+		ultima_msg = aviso
+	e.salvar()
+
+## abre direto o balcao de um NPC do roster (testes e atalhos)
+func abrir_balcao_de(id: String) -> bool:
+	var i := npc_por_id(id)
+	if i < 0:
+		return false
+	falando = i
+	fala_i = 0
+	painel.visible = true
+	retrato.texture = _retrato(npcs[i].dados)
+	abrir_balcao()
+	return balcao
 
 func _ator(m: Dictionary) -> Node3D:
 	var a: Node3D
@@ -172,6 +316,8 @@ func perto() -> int:
 	var melhor := -1
 	var dm := RAIO * maxf(1.0, 1.0)
 	for i in npcs.size():
+		if bool(npcs[i].get("vinculado", false)):
+			continue
 		var n: Node3D = npcs[i].no
 		var d := Vector2(n.global_position.x, n.global_position.z).distance_to(pp)
 		if d < dm * float(npcs[i].dados.get("escala", 1.0)):
@@ -269,7 +415,7 @@ func _listar() -> void:
 			if not opcoes.is_empty():
 				opcoes.append({"texto": "Vender tudo o que ele compra", "acao": func(): return "Vendeu tudo: +%d ouro." % Loja.vender_tudo(e, lid)})
 		"fundir", "forjar":
-			for r in Forja.de_tipo(abas[aba]):
+			for r in Forja.de_tipo(abas[aba], String(Loja.dados(lid).get("forja_id", ""))):
 				var rid := String(r.id)
 				var falta := Forja.falta(e, r)
 				opcoes.append({"texto": ("" if falta == "" else "✗ ") + Forja.resumo(e, r),
@@ -389,6 +535,12 @@ func entrada(event: InputEvent) -> bool:
 func cada_quadro(_delta: float) -> void:
 	var i := perto()
 	for j in npcs.size():
-		npcs[j].rotulo.visible = j == i or j == falando
+		npcs[j].rotulo.visible = (j == i or j == falando) and not bool(npcs[j].get("vinculado", false))
 	if aberto() and i != falando:
+		# morador vinculado: fecha o balcao so quando a Vale se afasta
+		if falando >= 0 and falando < npcs.size() and bool(npcs[falando].get("vinculado", false)):
+			var pl = g.get("player")
+			var n: Node3D = npcs[falando].no
+			if pl != null and is_instance_valid(n) and Vector2(n.global_position.x - pl.global_position.x, n.global_position.z - pl.global_position.z).length() < RAIO * 2.5:
+				return
 		fechar()
