@@ -201,7 +201,7 @@ func _jogo() -> void:
 	# ---- abrir / abas
 	await tecla(KEY_B)
 	check(tela.aberto and tela.aba == "tudo" and tela.raiz.visible and paused, "B abre a mochila (aba Tudo) e pausa")
-	check(tela.itens_vis.map(func(x): return x.id).has("madeira") and tela.celulas.size() == tela.itens_vis.size(), "madeira na grade (%d itens)" % tela.itens_vis.size())
+	check(tela.itens_vis.map(func(x): return x.id).has("madeira") and tela.celulas.size() == maxi(60, tela.itens_vis.size()), "madeira na grade (%d itens)" % tela.itens_vis.size())
 	await tecla(KEY_TAB)
 	check(tela.aba == "sementes" and tela.itens_vis.all(func(x): return String(x.aba) == "sementes"), "Tab: proxima aba (Sementes)")
 	await tecla(KEY_TAB, true)

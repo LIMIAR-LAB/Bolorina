@@ -24,6 +24,7 @@ var def: Dictionary = {}
 var jogador_real: Node3D
 var isca: Node3D
 var corpo_visual: Node3D
+var tinta_sprite := Color(1, 1, 1, 1)
 var modelo: Node3D
 var anim: AnimationPlayer
 var nomes_anim := {}
@@ -85,14 +86,20 @@ static func _cena(caminho: String) -> PackedScene:
 
 func _ready() -> void:
 	super._ready()
-	sprite.visible = false
+	# Bolorina 21/10: "visual": "sprite_orc" mantem o sprite pixel do orc da arena (mesma arte, escala,
+	# filtro nearest e sem sombreamento); o modelo 3D so entra nos tipos sem sprite proprio.
+	var usa_sprite := String(def.get("visual", "")) == "sprite_orc"
+	sprite.visible = usa_sprite
+	if usa_sprite:
+		tinta_sprite = Color(String(def.get("tinta_sprite", "ffffff")))
 	add_to_group("inimigo_masmorra")
 	if comportamento in ["fantasma", "chefe_sineiro"]:
 		collision_mask = 0          # atravessa paredes
 	corpo_visual = Node3D.new()
 	corpo_visual.name = "CorpoVisual"
 	add_child(corpo_visual)
-	_montar_modelo()
+	if not usa_sprite:
+		_montar_modelo()
 	isca = IscaAlvo.new()
 	isca.name = "Isca"
 	isca.top_level = true
@@ -569,3 +576,10 @@ func _pos_visual(delta: float) -> void:
 	if barra_fundo:
 		barra_fundo.visible = _t_barra > 0.0 and vivo and not bool(def.get("chefe", false)) and not _invisivel
 		barra_mat.set_shader_parameter("fill", clampf(float(hp) / maxf(hp_max, 1), 0.0, 1.0))
+
+# Bolorina 21/10: variantes do orc em sprite ganham so uma tinta por cima do visual da arena
+func _visual() -> void:
+	super._visual()
+	if sprite.visible and tinta_sprite != Color(1, 1, 1, 1):
+		var m := sprite.modulate
+		sprite.modulate = Color(m.r * tinta_sprite.r, m.g * tinta_sprite.g, m.b * tinta_sprite.b, m.a)

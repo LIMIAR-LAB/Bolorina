@@ -1,7 +1,7 @@
 {
  "versao": 1,
  "status": "PROPOSTA (não é canon) - masmorra procedural com 3 temas",
- "notas": "minerios: [material, andar_min, andar_max, qtd_base] (ids de data/forja/materiais.json). inimigos_por_andar: [de, ate, {tipo: qtd}]. loot/bau: [id, chance, min, max] (ids de materiais.json/itens.json). estilos: [ate_andar, estilo].",
+ "notas": "minerios: [material, andar_min, andar_max, qtd_base] (ids de data/forja/materiais.json). inimigos_por_andar: [de, ate, {tipo: qtd}]. loot/bau: [id, chance, min, max] (ids de materiais.json/itens.json). estilos: [ate_andar, estilo]. visual \"sprite_orc\": usa o mesmo sprite pixel do orc da arena (art/combate/orc, filtro nearest, sem sombreamento) em vez do modelo 3D; tinta_sprite colore variantes; porte define o tamanho.",
  "temas": {
   "minas_da_cinza": {
    "nome": "Minas da Cinza",
@@ -607,7 +607,9 @@
    "alcance": 2.2,
    "raio_golpe": 1.45,
    "preparo": 0.8,
-   "postura": 22
+   "postura": 22,
+   "visual": "sprite_orc",
+   "tinta_sprite": "ffffff"
   },
   "orc_arqueiro": {
    "nome": "Orc Besteiro",
@@ -663,7 +665,9 @@
    "esconder": [
     "Orc_Weapon"
    ],
-   "projetil": "flecha"
+   "projetil": "flecha",
+   "visual": "sprite_orc",
+   "tinta_sprite": "e6dcc0"
   },
   "orc_xama": {
    "nome": "Orc Xamã da Brasa",
@@ -720,7 +724,9 @@
     "Orc_Weapon"
    ],
    "projetil": "fogo",
-   "cura_aliados": 10
+   "cura_aliados": 10,
+   "visual": "sprite_orc",
+   "tinta_sprite": "c8a8ff"
   },
   "orc_bruto": {
    "nome": "Orc Bruto",
@@ -764,7 +770,9 @@
    "postura": 40,
    "porte": 1.3,
    "tinta": "ff9a80",
-   "bruto": true
+   "bruto": true,
+   "visual": "sprite_orc",
+   "tinta_sprite": "ffc8b4"
   },
   "chefe_orc_brasa_viva": {
    "nome": "Chefe Orc Brasa-Viva",
@@ -822,7 +830,9 @@
     "orc_grunt",
     "orc_grunt",
     "orc_xama"
-   ]
+   ],
+   "visual": "sprite_orc",
+   "tinta_sprite": "ffa070"
   },
   "zumbi": {
    "nome": "Zumbi de Cinzalta",

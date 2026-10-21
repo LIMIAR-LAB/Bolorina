@@ -175,6 +175,19 @@
   "mundo": null,
   "estado": "jogavel"
  },
+ "mirante_cascata": {
+  "nome": "Mirante da Cascata",
+  "centro": [
+   760,
+   250
+  ],
+  "raio": [
+   70,
+   50
+  ],
+  "mundo": null,
+  "estado": "jogavel"
+ },
  "ilha_mare": {
   "nome": "Ilha da Maré do Tempo",
   "centro": [

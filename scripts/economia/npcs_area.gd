@@ -3,6 +3,7 @@ extends Node
 ## Posicao: marcador "npc_<id>" da cena (mapas da Bolorina) ou "pos" do roster (x,z). Retrato: art/ui/retratos/<id>.png.
 ## E perto: conversa (E avanca); depois das falas abre o balcao: Tab troca a aba (Comprar/Vender/Servicos/Fundir/Forjar),
 ## setas escolhem, Enter (ou 1-9) executa, Esc/E fecha.
+const UI = preload("res://scripts/ui/tema_vilarejo.gd")
 const Itens = preload("res://scripts/economia/itens.gd")
 const Loja = preload("res://scripts/economia/loja.gd")
 const Servicos = preload("res://scripts/economia/servicos.gd")
@@ -258,12 +259,8 @@ func _ui() -> void:
 	painel = Panel.new()
 	painel.position = Vector2(250, 470)
 	painel.size = Vector2(1100, 330)
-	var st := StyleBoxFlat.new()
-	st.bg_color = Color(0.14, 0.09, 0.05, 0.95)
-	st.border_color = Color("c9a46a")
-	st.set_border_width_all(3)
-	st.set_corner_radius_all(6)
-	painel.add_theme_stylebox_override("panel", st)
+	painel.theme = UI.tema()
+	painel.add_theme_stylebox_override("panel", UI.caixa("moldura"))
 	painel.visible = false
 	camada.add_child(painel)
 	retrato = TextureRect.new()
@@ -284,6 +281,7 @@ func _ui() -> void:
 func _label(p: Vector2, tam: int, cor: Color) -> Label:
 	var l := Label.new()
 	l.position = p
+	l.add_theme_font_override("font", UI.fonte())
 	l.add_theme_font_size_override("font_size", tam)
 	l.add_theme_color_override("font_color", cor)
 	painel.add_child(l)

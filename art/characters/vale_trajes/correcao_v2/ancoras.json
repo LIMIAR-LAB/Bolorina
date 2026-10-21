@@ -1,0 +1,9714 @@
+{
+  "res://art/characters/vale_unica/rotations/east.png": {
+    "algorithm": 4,
+    "direction": "east",
+    "size": 48,
+    "anchors": [
+      [
+        0,
+        0,
+        0.0,
+        1.0
+      ]
+    ],
+    "template_hash": "2acbe8672ff4e398ad181c4c349cf90a999888b8a65758a0f89ad130300947e0"
+  },
+  "res://art/characters/vale_unica/rotations/north-east.png": {
+    "algorithm": 4,
+    "direction": "north-east",
+    "size": 48,
+    "anchors": [
+      [
+        0,
+        0,
+        0.0,
+        1.0
+      ]
+    ],
+    "template_hash": "2acbe8672ff4e398ad181c4c349cf90a999888b8a65758a0f89ad130300947e0"
+  },
+  "res://art/characters/vale_unica/rotations/north-west.png": {
+    "algorithm": 4,
+    "direction": "north-west",
+    "size": 48,
+    "anchors": [
+      [
+        0,
+        0,
+        0.0,
+        1.0
+      ]
+    ],
+    "template_hash": "2acbe8672ff4e398ad181c4c349cf90a999888b8a65758a0f89ad130300947e0"
+  },
+  "res://art/characters/vale_unica/rotations/north.png": {
+    "algorithm": 4,
+    "direction": "north",
+    "size": 48,
+    "anchors": [
+      [
+        0,
+        0,
+        0.0,
+        1.0
+      ]
+    ],
+    "template_hash": "2acbe8672ff4e398ad181c4c349cf90a999888b8a65758a0f89ad130300947e0"
+  },
+  "res://art/characters/vale_unica/rotations/south-east.png": {
+    "algorithm": 4,
+    "direction": "south-east",
+    "size": 48,
+    "anchors": [
+      [
+        0,
+        0,
+        0.0,
+        1.0
+      ]
+    ],
+    "template_hash": "2acbe8672ff4e398ad181c4c349cf90a999888b8a65758a0f89ad130300947e0"
+  },
+  "res://art/characters/vale_unica/rotations/south-west.png": {
+    "algorithm": 4,
+    "direction": "south-west",
+    "size": 48,
+    "anchors": [
+      [
+        0,
+        0,
+        0.0,
+        1.0
+      ]
+    ],
+    "template_hash": "2acbe8672ff4e398ad181c4c349cf90a999888b8a65758a0f89ad130300947e0"
+  },
+  "res://art/characters/vale_unica/rotations/south.png": {
+    "algorithm": 4,
+    "direction": "south",
+    "size": 48,
+    "anchors": [
+      [
+        0,
+        0,
+        0.0,
+        1.0
+      ]
+    ],
+    "template_hash": "2acbe8672ff4e398ad181c4c349cf90a999888b8a65758a0f89ad130300947e0"
+  },
+  "res://art/characters/vale_unica/rotations/west.png": {
+    "algorithm": 4,
+    "direction": "west",
+    "size": 48,
+    "anchors": [
+      [
+        0,
+        0,
+        0.0,
+        1.0
+      ]
+    ],
+    "template_hash": "2acbe8672ff4e398ad181c4c349cf90a999888b8a65758a0f89ad130300947e0"
+  },
+  "res://art/characters/vale_unica/run/east/000.png": {
+    "algorithm": 4,
+    "direction": "east",
+    "size": 48,
+    "anchors": [
+      [
+        0,
+        2,
+        70.84491729736328,
+        1.0
+      ]
+    ],
+    "template_hash": "2acbe8672ff4e398ad181c4c349cf90a999888b8a65758a0f89ad130300947e0"
+  },
+  "res://art/characters/vale_unica/run/east/001.png": {
+    "algorithm": 4,
+    "direction": "east",
+    "size": 48,
+    "anchors": [
+      [
+        0,
+        2,
+        60.87700653076172,
+        1.0
+      ]
+    ],
+    "template_hash": "2acbe8672ff4e398ad181c4c349cf90a999888b8a65758a0f89ad130300947e0"
+  },
+  "res://art/characters/vale_unica/run/east/002.png": {
+    "algorithm": 4,
+    "direction": "east",
+    "size": 48,
+    "anchors": [
+      [
+        -1,
+        1,
+        57.74866485595703,
+        1.0
+      ]
+    ],
+    "template_hash": "2acbe8672ff4e398ad181c4c349cf90a999888b8a65758a0f89ad130300947e0"
+  },
+  "res://art/characters/vale_unica/run/east/003.png": {
+    "algorithm": 4,
+    "direction": "east",
+    "size": 48,
+    "anchors": [
+      [
+        -1,
+        -1,
+        58.67914581298828,
+        1.0
+      ]
+    ],
+    "template_hash": "2acbe8672ff4e398ad181c4c349cf90a999888b8a65758a0f89ad130300947e0"
+  },
+  "res://art/characters/vale_unica/run/east/004.png": {
+    "algorithm": 4,
+    "direction": "east",
+    "size": 48,
+    "anchors": [
+      [
+        -1,
+        -1,
+        57.24599075317383,
+        1.0
+      ]
+    ],
+    "template_hash": "2acbe8672ff4e398ad181c4c349cf90a999888b8a65758a0f89ad130300947e0"
+  },
+  "res://art/characters/vale_unica/run/east/005.png": {
+    "algorithm": 4,
+    "direction": "east",
+    "size": 48,
+    "anchors": [
+      [
+        -1,
+        1,
+        57.31550979614258,
+        1.0
+      ]
+    ],
+    "template_hash": "2acbe8672ff4e398ad181c4c349cf90a999888b8a65758a0f89ad130300947e0"
+  },
+  "res://art/characters/vale_unica/run/east/006.png": {
+    "algorithm": 4,
+    "direction": "east",
+    "size": 48,
+    "anchors": [
+      [
+        -1,
+        1,
+        67.21925354003906,
+        1.0
+      ]
+    ],
+    "template_hash": "2acbe8672ff4e398ad181c4c349cf90a999888b8a65758a0f89ad130300947e0"
+  },
+  "res://art/characters/vale_unica/run/east/007.png": {
+    "algorithm": 4,
+    "direction": "east",
+    "size": 48,
+    "anchors": [
+      [
+        -1,
+        0,
+        72.18181610107422,
+        1.0
+      ]
+    ],
+    "template_hash": "2acbe8672ff4e398ad181c4c349cf90a999888b8a65758a0f89ad130300947e0"
+  },
+  "res://art/characters/vale_unica/run/north-east/000.png": {
+    "algorithm": 4,
+    "direction": "north-east",
+    "size": 48,
+    "anchors": [
+      [
+        3,
+        5,
+        42.224273681640625,
+        0.85
+      ]
+    ],
+    "template_hash": "2acbe8672ff4e398ad181c4c349cf90a999888b8a65758a0f89ad130300947e0"
+  },
+  "res://art/characters/vale_unica/run/north-east/001.png": {
+    "algorithm": 4,
+    "direction": "north-east",
+    "size": 48,
+    "anchors": [
+      [
+        3,
+        4,
+        44.073787689208984,
+        0.85
+      ]
+    ],
+    "template_hash": "2acbe8672ff4e398ad181c4c349cf90a999888b8a65758a0f89ad130300947e0"
+  },
+  "res://art/characters/vale_unica/run/north-east/002.png": {
+    "algorithm": 4,
+    "direction": "north-east",
+    "size": 48,
+    "anchors": [
+      [
+        3,
+        3,
+        49.4815559387207,
+        0.85
+      ]
+    ],
+    "template_hash": "2acbe8672ff4e398ad181c4c349cf90a999888b8a65758a0f89ad130300947e0"
+  },
+  "res://art/characters/vale_unica/run/north-east/003.png": {
+    "algorithm": 4,
+    "direction": "north-east",
+    "size": 48,
+    "anchors": [
+      [
+        3,
+        3,
+        56.18058395385742,
+        0.85
+      ]
+    ],
+    "template_hash": "2acbe8672ff4e398ad181c4c349cf90a999888b8a65758a0f89ad130300947e0"
+  },
+  "res://art/characters/vale_unica/run/north-east/004.png": {
+    "algorithm": 4,
+    "direction": "north-east",
+    "size": 48,
+    "anchors": [
+      [
+        3,
+        3,
+        56.020389556884766,
+        0.85
+      ]
+    ],
+    "template_hash": "2acbe8672ff4e398ad181c4c349cf90a999888b8a65758a0f89ad130300947e0"
+  },
+  "res://art/characters/vale_unica/run/north-east/005.png": {
+    "algorithm": 4,
+    "direction": "north-east",
+    "size": 48,
+    "anchors": [
+      [
+        3,
+        3,
+        42.166019439697266,
+        0.85
+      ]
+    ],
+    "template_hash": "2acbe8672ff4e398ad181c4c349cf90a999888b8a65758a0f89ad130300947e0"
+  },
+  "res://art/characters/vale_unica/run/north-east/006.png": {
+    "algorithm": 4,
+    "direction": "north-east",
+    "size": 48,
+    "anchors": [
+      [
+        4,
+        1,
+        43.35533905029297,
+        0.85
+      ]
+    ],
+    "template_hash": "2acbe8672ff4e398ad181c4c349cf90a999888b8a65758a0f89ad130300947e0"
+  },
+  "res://art/characters/vale_unica/run/north-east/007.png": {
+    "algorithm": 4,
+    "direction": "north-east",
+    "size": 48,
+    "anchors": [
+      [
+        4,
+        1,
+        43.166019439697266,
+        0.85
+      ]
+    ],
+    "template_hash": "2acbe8672ff4e398ad181c4c349cf90a999888b8a65758a0f89ad130300947e0"
+  },
+  "res://art/characters/vale_unica/run/north-west/000.png": {
+    "algorithm": 4,
+    "direction": "north-west",
+    "size": 48,
+    "anchors": [
+      [
+        1,
+        5,
+        44.6271858215332,
+        0.85
+      ]
+    ],
+    "template_hash": "2acbe8672ff4e398ad181c4c349cf90a999888b8a65758a0f89ad130300947e0"
+  },
+  "res://art/characters/vale_unica/run/north-west/001.png": {
+    "algorithm": 4,
+    "direction": "north-west",
+    "size": 48,
+    "anchors": [
+      [
+        1,
+        4,
+        47.24854278564453,
+        0.85
+      ]
+    ],
+    "template_hash": "2acbe8672ff4e398ad181c4c349cf90a999888b8a65758a0f89ad130300947e0"
+  },
+  "res://art/characters/vale_unica/run/north-west/002.png": {
+    "algorithm": 4,
+    "direction": "north-west",
+    "size": 48,
+    "anchors": [
+      [
+        2,
+        3,
+        49.598060607910156,
+        0.85
+      ]
+    ],
+    "template_hash": "2acbe8672ff4e398ad181c4c349cf90a999888b8a65758a0f89ad130300947e0"
+  },
+  "res://art/characters/vale_unica/run/north-west/003.png": {
+    "algorithm": 4,
+    "direction": "north-west",
+    "size": 48,
+    "anchors": [
+      [
+        1,
+        3,
+        56.41359329223633,
+        0.85
+      ]
+    ],
+    "template_hash": "2acbe8672ff4e398ad181c4c349cf90a999888b8a65758a0f89ad130300947e0"
+  },
+  "res://art/characters/vale_unica/run/north-west/004.png": {
+    "algorithm": 4,
+    "direction": "north-west",
+    "size": 48,
+    "anchors": [
+      [
+        1,
+        3,
+        56.520389556884766,
+        0.85
+      ]
+    ],
+    "template_hash": "2acbe8672ff4e398ad181c4c349cf90a999888b8a65758a0f89ad130300947e0"
+  },
+  "res://art/characters/vale_unica/run/north-west/005.png": {
+    "algorithm": 4,
+    "direction": "north-west",
+    "size": 48,
+    "anchors": [
+      [
+        1,
+        3,
+        45.0398063659668,
+        0.85
+      ]
+    ],
+    "template_hash": "2acbe8672ff4e398ad181c4c349cf90a999888b8a65758a0f89ad130300947e0"
+  },
+  "res://art/characters/vale_unica/run/north-west/006.png": {
+    "algorithm": 4,
+    "direction": "north-west",
+    "size": 48,
+    "anchors": [
+      [
+        0,
+        1,
+        45.777671813964844,
+        0.85
+      ]
+    ],
+    "template_hash": "2acbe8672ff4e398ad181c4c349cf90a999888b8a65758a0f89ad130300947e0"
+  },
+  "res://art/characters/vale_unica/run/north-west/007.png": {
+    "algorithm": 4,
+    "direction": "north-west",
+    "size": 48,
+    "anchors": [
+      [
+        0,
+        1,
+        44.04951477050781,
+        0.85
+      ]
+    ],
+    "template_hash": "2acbe8672ff4e398ad181c4c349cf90a999888b8a65758a0f89ad130300947e0"
+  },
+  "res://art/characters/vale_unica/run/north/000.png": {
+    "algorithm": 4,
+    "direction": "north",
+    "size": 48,
+    "anchors": [
+      [
+        2,
+        -1,
+        32.78208923339844,
+        0.85
+      ]
+    ],
+    "template_hash": "2acbe8672ff4e398ad181c4c349cf90a999888b8a65758a0f89ad130300947e0"
+  },
+  "res://art/characters/vale_unica/run/north/001.png": {
+    "algorithm": 4,
+    "direction": "north",
+    "size": 48,
+    "anchors": [
+      [
+        2,
+        -1,
+        33.40895462036133,
+        0.85
+      ]
+    ],
+    "template_hash": "2acbe8672ff4e398ad181c4c349cf90a999888b8a65758a0f89ad130300947e0"
+  },
+  "res://art/characters/vale_unica/run/north/002.png": {
+    "algorithm": 4,
+    "direction": "north",
+    "size": 48,
+    "anchors": [
+      [
+        2,
+        0,
+        32.54328155517578,
+        0.85
+      ]
+    ],
+    "template_hash": "2acbe8672ff4e398ad181c4c349cf90a999888b8a65758a0f89ad130300947e0"
+  },
+  "res://art/characters/vale_unica/run/north/003.png": {
+    "algorithm": 4,
+    "direction": "north",
+    "size": 48,
+    "anchors": [
+      [
+        2,
+        1,
+        35.56816101074219,
+        0.85
+      ]
+    ],
+    "template_hash": "2acbe8672ff4e398ad181c4c349cf90a999888b8a65758a0f89ad130300947e0"
+  },
+  "res://art/characters/vale_unica/run/north/004.png": {
+    "algorithm": 4,
+    "direction": "north",
+    "size": 48,
+    "anchors": [
+      [
+        2,
+        1,
+        36.12537384033203,
+        0.85
+      ]
+    ],
+    "template_hash": "2acbe8672ff4e398ad181c4c349cf90a999888b8a65758a0f89ad130300947e0"
+  },
+  "res://art/characters/vale_unica/run/north/005.png": {
+    "algorithm": 4,
+    "direction": "north",
+    "size": 48,
+    "anchors": [
+      [
+        3,
+        -1,
+        40.816917419433594,
+        0.85
+      ]
+    ],
+    "template_hash": "2acbe8672ff4e398ad181c4c349cf90a999888b8a65758a0f89ad130300947e0"
+  },
+  "res://art/characters/vale_unica/run/north/006.png": {
+    "algorithm": 4,
+    "direction": "north",
+    "size": 48,
+    "anchors": [
+      [
+        3,
+        -1,
+        39.38905715942383,
+        0.85
+      ]
+    ],
+    "template_hash": "2acbe8672ff4e398ad181c4c349cf90a999888b8a65758a0f89ad130300947e0"
+  },
+  "res://art/characters/vale_unica/run/north/007.png": {
+    "algorithm": 4,
+    "direction": "north",
+    "size": 48,
+    "anchors": [
+      [
+        3,
+        1,
+        38.97611999511719,
+        0.85
+      ]
+    ],
+    "template_hash": "2acbe8672ff4e398ad181c4c349cf90a999888b8a65758a0f89ad130300947e0"
+  },
+  "res://art/characters/vale_unica/run/south-east/000.png": {
+    "algorithm": 4,
+    "direction": "south-east",
+    "size": 48,
+    "anchors": [
+      [
+        1,
+        1,
+        61.38071060180664,
+        1.0
+      ]
+    ],
+    "template_hash": "2acbe8672ff4e398ad181c4c349cf90a999888b8a65758a0f89ad130300947e0"
+  },
+  "res://art/characters/vale_unica/run/south-east/001.png": {
+    "algorithm": 4,
+    "direction": "south-east",
+    "size": 48,
+    "anchors": [
+      [
+        1,
+        1,
+        65.33502197265625,
+        1.0
+      ]
+    ],
+    "template_hash": "2acbe8672ff4e398ad181c4c349cf90a999888b8a65758a0f89ad130300947e0"
+  },
+  "res://art/characters/vale_unica/run/south-east/002.png": {
+    "algorithm": 4,
+    "direction": "south-east",
+    "size": 48,
+    "anchors": [
+      [
+        0,
+        0,
+        64.57360076904297,
+        1.0
+      ]
+    ],
+    "template_hash": "2acbe8672ff4e398ad181c4c349cf90a999888b8a65758a0f89ad130300947e0"
+  },
+  "res://art/characters/vale_unica/run/south-east/003.png": {
+    "algorithm": 4,
+    "direction": "south-east",
+    "size": 48,
+    "anchors": [
+      [
+        0,
+        -1,
+        62.456851959228516,
+        1.0
+      ]
+    ],
+    "template_hash": "2acbe8672ff4e398ad181c4c349cf90a999888b8a65758a0f89ad130300947e0"
+  },
+  "res://art/characters/vale_unica/run/south-east/004.png": {
+    "algorithm": 4,
+    "direction": "south-east",
+    "size": 48,
+    "anchors": [
+      [
+        1,
+        0,
+        62.53299331665039,
+        1.0
+      ]
+    ],
+    "template_hash": "2acbe8672ff4e398ad181c4c349cf90a999888b8a65758a0f89ad130300947e0"
+  },
+  "res://art/characters/vale_unica/run/south-east/005.png": {
+    "algorithm": 4,
+    "direction": "south-east",
+    "size": 48,
+    "anchors": [
+      [
+        1,
+        2,
+        71.96446990966797,
+        1.0
+      ]
+    ],
+    "template_hash": "2acbe8672ff4e398ad181c4c349cf90a999888b8a65758a0f89ad130300947e0"
+  },
+  "res://art/characters/vale_unica/run/south-east/006.png": {
+    "algorithm": 4,
+    "direction": "south-east",
+    "size": 48,
+    "anchors": [
+      [
+        1,
+        2,
+        70.59391021728516,
+        1.0
+      ]
+    ],
+    "template_hash": "2acbe8672ff4e398ad181c4c349cf90a999888b8a65758a0f89ad130300947e0"
+  },
+  "res://art/characters/vale_unica/run/south-east/007.png": {
+    "algorithm": 4,
+    "direction": "south-east",
+    "size": 48,
+    "anchors": [
+      [
+        1,
+        1,
+        61.88324737548828,
+        1.0
+      ]
+    ],
+    "template_hash": "2acbe8672ff4e398ad181c4c349cf90a999888b8a65758a0f89ad130300947e0"
+  },
+  "res://art/characters/vale_unica/run/south-west/000.png": {
+    "algorithm": 4,
+    "direction": "south-west",
+    "size": 48,
+    "anchors": [
+      [
+        -1,
+        1,
+        62.55837631225586,
+        1.0
+      ]
+    ],
+    "template_hash": "2acbe8672ff4e398ad181c4c349cf90a999888b8a65758a0f89ad130300947e0"
+  },
+  "res://art/characters/vale_unica/run/south-west/001.png": {
+    "algorithm": 4,
+    "direction": "south-west",
+    "size": 48,
+    "anchors": [
+      [
+        1,
+        3,
+        67.47396850585938,
+        0.85
+      ]
+    ],
+    "template_hash": "2acbe8672ff4e398ad181c4c349cf90a999888b8a65758a0f89ad130300947e0"
+  },
+  "res://art/characters/vale_unica/run/south-west/002.png": {
+    "algorithm": 4,
+    "direction": "south-west",
+    "size": 48,
+    "anchors": [
+      [
+        0,
+        0,
+        65.40101623535156,
+        1.0
+      ]
+    ],
+    "template_hash": "2acbe8672ff4e398ad181c4c349cf90a999888b8a65758a0f89ad130300947e0"
+  },
+  "res://art/characters/vale_unica/run/south-west/003.png": {
+    "algorithm": 4,
+    "direction": "south-west",
+    "size": 48,
+    "anchors": [
+      [
+        0,
+        -1,
+        62.85279083251953,
+        1.0
+      ]
+    ],
+    "template_hash": "2acbe8672ff4e398ad181c4c349cf90a999888b8a65758a0f89ad130300947e0"
+  },
+  "res://art/characters/vale_unica/run/south-west/004.png": {
+    "algorithm": 4,
+    "direction": "south-west",
+    "size": 48,
+    "anchors": [
+      [
+        0,
+        0,
+        63.49746322631836,
+        1.0
+      ]
+    ],
+    "template_hash": "2acbe8672ff4e398ad181c4c349cf90a999888b8a65758a0f89ad130300947e0"
+  },
+  "res://art/characters/vale_unica/run/south-west/005.png": {
+    "algorithm": 4,
+    "direction": "south-west",
+    "size": 48,
+    "anchors": [
+      [
+        -1,
+        2,
+        70.40101623535156,
+        1.0
+      ]
+    ],
+    "template_hash": "2acbe8672ff4e398ad181c4c349cf90a999888b8a65758a0f89ad130300947e0"
+  },
+  "res://art/characters/vale_unica/run/south-west/006.png": {
+    "algorithm": 4,
+    "direction": "south-west",
+    "size": 48,
+    "anchors": [
+      [
+        -1,
+        2,
+        69.47715759277344,
+        1.0
+      ]
+    ],
+    "template_hash": "2acbe8672ff4e398ad181c4c349cf90a999888b8a65758a0f89ad130300947e0"
+  },
+  "res://art/characters/vale_unica/run/south-west/007.png": {
+    "algorithm": 4,
+    "direction": "south-west",
+    "size": 48,
+    "anchors": [
+      [
+        -1,
+        1,
+        60.98984909057617,
+        1.0
+      ]
+    ],
+    "template_hash": "2acbe8672ff4e398ad181c4c349cf90a999888b8a65758a0f89ad130300947e0"
+  },
+  "res://art/characters/vale_unica/run/south/000.png": {
+    "algorithm": 4,
+    "direction": "south",
+    "size": 48,
+    "anchors": [
+      [
+        2,
+        3,
+        80.96604919433594,
+        0.85
+      ]
+    ],
+    "template_hash": "2acbe8672ff4e398ad181c4c349cf90a999888b8a65758a0f89ad130300947e0"
+  },
+  "res://art/characters/vale_unica/run/south/001.png": {
+    "algorithm": 4,
+    "direction": "south",
+    "size": 48,
+    "anchors": [
+      [
+        3,
+        1,
+        77.90641784667969,
+        0.85
+      ]
+    ],
+    "template_hash": "2acbe8672ff4e398ad181c4c349cf90a999888b8a65758a0f89ad130300947e0"
+  },
+  "res://art/characters/vale_unica/run/south/002.png": {
+    "algorithm": 4,
+    "direction": "south",
+    "size": 48,
+    "anchors": [
+      [
+        3,
+        0,
+        78.1082534790039,
+        0.85
+      ]
+    ],
+    "template_hash": "2acbe8672ff4e398ad181c4c349cf90a999888b8a65758a0f89ad130300947e0"
+  },
+  "res://art/characters/vale_unica/run/south/003.png": {
+    "algorithm": 4,
+    "direction": "south",
+    "size": 48,
+    "anchors": [
+      [
+        3,
+        1,
+        73.84678649902344,
+        0.85
+      ]
+    ],
+    "template_hash": "2acbe8672ff4e398ad181c4c349cf90a999888b8a65758a0f89ad130300947e0"
+  },
+  "res://art/characters/vale_unica/run/south/004.png": {
+    "algorithm": 4,
+    "direction": "south",
+    "size": 48,
+    "anchors": [
+      [
+        3,
+        3,
+        74.71834564208984,
+        0.85
+      ]
+    ],
+    "template_hash": "2acbe8672ff4e398ad181c4c349cf90a999888b8a65758a0f89ad130300947e0"
+  },
+  "res://art/characters/vale_unica/run/south/005.png": {
+    "algorithm": 4,
+    "direction": "south",
+    "size": 48,
+    "anchors": [
+      [
+        2,
+        2,
+        81.2779769897461,
+        0.85
+      ]
+    ],
+    "template_hash": "2acbe8672ff4e398ad181c4c349cf90a999888b8a65758a0f89ad130300947e0"
+  },
+  "res://art/characters/vale_unica/run/south/006.png": {
+    "algorithm": 4,
+    "direction": "south",
+    "size": 48,
+    "anchors": [
+      [
+        2,
+        1,
+        79.6954116821289,
+        0.85
+      ]
+    ],
+    "template_hash": "2acbe8672ff4e398ad181c4c349cf90a999888b8a65758a0f89ad130300947e0"
+  },
+  "res://art/characters/vale_unica/run/south/007.png": {
+    "algorithm": 4,
+    "direction": "south",
+    "size": 48,
+    "anchors": [
+      [
+        2,
+        1,
+        79.12201690673828,
+        0.85
+      ]
+    ],
+    "template_hash": "2acbe8672ff4e398ad181c4c349cf90a999888b8a65758a0f89ad130300947e0"
+  },
+  "res://art/characters/vale_unica/run/west/000.png": {
+    "algorithm": 4,
+    "direction": "west",
+    "size": 48,
+    "anchors": [
+      [
+        1,
+        2,
+        67.08021545410156,
+        1.0
+      ]
+    ],
+    "template_hash": "2acbe8672ff4e398ad181c4c349cf90a999888b8a65758a0f89ad130300947e0"
+  },
+  "res://art/characters/vale_unica/run/west/001.png": {
+    "algorithm": 4,
+    "direction": "west",
+    "size": 48,
+    "anchors": [
+      [
+        1,
+        2,
+        57.657752990722656,
+        1.0
+      ]
+    ],
+    "template_hash": "2acbe8672ff4e398ad181c4c349cf90a999888b8a65758a0f89ad130300947e0"
+  },
+  "res://art/characters/vale_unica/run/west/002.png": {
+    "algorithm": 4,
+    "direction": "west",
+    "size": 48,
+    "anchors": [
+      [
+        1,
+        1,
+        58.278076171875,
+        1.0
+      ]
+    ],
+    "template_hash": "2acbe8672ff4e398ad181c4c349cf90a999888b8a65758a0f89ad130300947e0"
+  },
+  "res://art/characters/vale_unica/run/west/003.png": {
+    "algorithm": 4,
+    "direction": "west",
+    "size": 48,
+    "anchors": [
+      [
+        1,
+        -1,
+        53.866310119628906,
+        1.0
+      ]
+    ],
+    "template_hash": "2acbe8672ff4e398ad181c4c349cf90a999888b8a65758a0f89ad130300947e0"
+  },
+  "res://art/characters/vale_unica/run/west/004.png": {
+    "algorithm": 4,
+    "direction": "west",
+    "size": 48,
+    "anchors": [
+      [
+        1,
+        -1,
+        54.87165832519531,
+        1.0
+      ]
+    ],
+    "template_hash": "2acbe8672ff4e398ad181c4c349cf90a999888b8a65758a0f89ad130300947e0"
+  },
+  "res://art/characters/vale_unica/run/west/005.png": {
+    "algorithm": 4,
+    "direction": "west",
+    "size": 48,
+    "anchors": [
+      [
+        1,
+        1,
+        53.05882263183594,
+        1.0
+      ]
+    ],
+    "template_hash": "2acbe8672ff4e398ad181c4c349cf90a999888b8a65758a0f89ad130300947e0"
+  },
+  "res://art/characters/vale_unica/run/west/006.png": {
+    "algorithm": 4,
+    "direction": "west",
+    "size": 48,
+    "anchors": [
+      [
+        1,
+        1,
+        60.786094665527344,
+        1.0
+      ]
+    ],
+    "template_hash": "2acbe8672ff4e398ad181c4c349cf90a999888b8a65758a0f89ad130300947e0"
+  },
+  "res://art/characters/vale_unica/run/west/007.png": {
+    "algorithm": 4,
+    "direction": "west",
+    "size": 48,
+    "anchors": [
+      [
+        1,
+        0,
+        65.48663330078125,
+        1.0
+      ]
+    ],
+    "template_hash": "2acbe8672ff4e398ad181c4c349cf90a999888b8a65758a0f89ad130300947e0"
+  },
+  "res://art/characters/vale_unica/tend/east/000.png": {
+    "algorithm": 4,
+    "direction": "east",
+    "size": 48,
+    "anchors": [
+      [
+        -1,
+        1,
+        24.85026741027832,
+        1.0
+      ]
+    ],
+    "template_hash": "2acbe8672ff4e398ad181c4c349cf90a999888b8a65758a0f89ad130300947e0"
+  },
+  "res://art/characters/vale_unica/tend/east/001.png": {
+    "algorithm": 4,
+    "direction": "east",
+    "size": 48,
+    "anchors": [
+      [
+        5,
+        11,
+        85.84906005859375,
+        0.75
+      ]
+    ],
+    "template_hash": "2acbe8672ff4e398ad181c4c349cf90a999888b8a65758a0f89ad130300947e0"
+  },
+  "res://art/characters/vale_unica/tend/east/002.png": {
+    "algorithm": 4,
+    "direction": "east",
+    "size": 48,
+    "anchors": [
+      [
+        4,
+        10,
+        85.0817642211914,
+        0.75
+      ]
+    ],
+    "template_hash": "2acbe8672ff4e398ad181c4c349cf90a999888b8a65758a0f89ad130300947e0"
+  },
+  "res://art/characters/vale_unica/tend/east/003.png": {
+    "algorithm": 4,
+    "direction": "east",
+    "size": 48,
+    "anchors": [
+      [
+        3,
+        9,
+        83.03773498535156,
+        0.75
+      ]
+    ],
+    "template_hash": "2acbe8672ff4e398ad181c4c349cf90a999888b8a65758a0f89ad130300947e0"
+  },
+  "res://art/characters/vale_unica/tend/east/004.png": {
+    "algorithm": 4,
+    "direction": "east",
+    "size": 48,
+    "anchors": [
+      [
+        4,
+        11,
+        83.42138671875,
+        0.75
+      ]
+    ],
+    "template_hash": "2acbe8672ff4e398ad181c4c349cf90a999888b8a65758a0f89ad130300947e0"
+  },
+  "res://art/characters/vale_unica/tend/north-east/000.png": {
+    "algorithm": 4,
+    "direction": "north-east",
+    "size": 48,
+    "anchors": [
+      [
+        3,
+        5,
+        34.70000076293945,
+        0.85
+      ]
+    ],
+    "template_hash": "2acbe8672ff4e398ad181c4c349cf90a999888b8a65758a0f89ad130300947e0"
+  },
+  "res://art/characters/vale_unica/tend/north-east/001.png": {
+    "algorithm": 4,
+    "direction": "north-east",
+    "size": 48,
+    "anchors": [
+      [
+        7,
+        11,
+        63.04907989501953,
+        0.75
+      ]
+    ],
+    "template_hash": "2acbe8672ff4e398ad181c4c349cf90a999888b8a65758a0f89ad130300947e0"
+  },
+  "res://art/characters/vale_unica/tend/north-east/002.png": {
+    "algorithm": 4,
+    "direction": "north-east",
+    "size": 48,
+    "anchors": [
+      [
+        6,
+        10,
+        61.50306701660156,
+        0.75
+      ]
+    ],
+    "template_hash": "2acbe8672ff4e398ad181c4c349cf90a999888b8a65758a0f89ad130300947e0"
+  },
+  "res://art/characters/vale_unica/tend/north-east/003.png": {
+    "algorithm": 4,
+    "direction": "north-east",
+    "size": 48,
+    "anchors": [
+      [
+        7,
+        11,
+        62.92024612426758,
+        0.75
+      ]
+    ],
+    "template_hash": "2acbe8672ff4e398ad181c4c349cf90a999888b8a65758a0f89ad130300947e0"
+  },
+  "res://art/characters/vale_unica/tend/north-east/004.png": {
+    "algorithm": 4,
+    "direction": "north-east",
+    "size": 48,
+    "anchors": [
+      [
+        6,
+        11,
+        64.58282470703125,
+        0.75
+      ]
+    ],
+    "template_hash": "2acbe8672ff4e398ad181c4c349cf90a999888b8a65758a0f89ad130300947e0"
+  },
+  "res://art/characters/vale_unica/tend/north-west/000.png": {
+    "algorithm": 4,
+    "direction": "north-west",
+    "size": 48,
+    "anchors": [
+      [
+        1,
+        4,
+        34.85533905029297,
+        0.85
+      ]
+    ],
+    "template_hash": "2acbe8672ff4e398ad181c4c349cf90a999888b8a65758a0f89ad130300947e0"
+  },
+  "res://art/characters/vale_unica/tend/north-west/001.png": {
+    "algorithm": 4,
+    "direction": "north-west",
+    "size": 48,
+    "anchors": [
+      [
+        -1,
+        11,
+        59.631900787353516,
+        0.75
+      ]
+    ],
+    "template_hash": "2acbe8672ff4e398ad181c4c349cf90a999888b8a65758a0f89ad130300947e0"
+  },
+  "res://art/characters/vale_unica/tend/north-west/002.png": {
+    "algorithm": 4,
+    "direction": "north-west",
+    "size": 48,
+    "anchors": [
+      [
+        0,
+        10,
+        58.754600524902344,
+        0.75
+      ]
+    ],
+    "template_hash": "2acbe8672ff4e398ad181c4c349cf90a999888b8a65758a0f89ad130300947e0"
+  },
+  "res://art/characters/vale_unica/tend/north-west/003.png": {
+    "algorithm": 4,
+    "direction": "north-west",
+    "size": 48,
+    "anchors": [
+      [
+        -1,
+        11,
+        60.18404769897461,
+        0.75
+      ]
+    ],
+    "template_hash": "2acbe8672ff4e398ad181c4c349cf90a999888b8a65758a0f89ad130300947e0"
+  },
+  "res://art/characters/vale_unica/tend/north-west/004.png": {
+    "algorithm": 4,
+    "direction": "north-west",
+    "size": 48,
+    "anchors": [
+      [
+        -1,
+        11,
+        61.46625900268555,
+        0.75
+      ]
+    ],
+    "template_hash": "2acbe8672ff4e398ad181c4c349cf90a999888b8a65758a0f89ad130300947e0"
+  },
+  "res://art/characters/vale_unica/tend/north/000.png": {
+    "algorithm": 4,
+    "direction": "north",
+    "size": 48,
+    "anchors": [
+      [
+        1,
+        4,
+        47.657711029052734,
+        0.85
+      ]
+    ],
+    "template_hash": "2acbe8672ff4e398ad181c4c349cf90a999888b8a65758a0f89ad130300947e0"
+  },
+  "res://art/characters/vale_unica/tend/north/001.png": {
+    "algorithm": 4,
+    "direction": "north",
+    "size": 48,
+    "anchors": [
+      [
+        7,
+        10,
+        62.43708419799805,
+        0.75
+      ]
+    ],
+    "template_hash": "2acbe8672ff4e398ad181c4c349cf90a999888b8a65758a0f89ad130300947e0"
+  },
+  "res://art/characters/vale_unica/tend/north/002.png": {
+    "algorithm": 4,
+    "direction": "north",
+    "size": 48,
+    "anchors": [
+      [
+        7,
+        9,
+        61.51655578613281,
+        0.75
+      ]
+    ],
+    "template_hash": "2acbe8672ff4e398ad181c4c349cf90a999888b8a65758a0f89ad130300947e0"
+  },
+  "res://art/characters/vale_unica/tend/north/003.png": {
+    "algorithm": 4,
+    "direction": "north",
+    "size": 48,
+    "anchors": [
+      [
+        7,
+        10,
+        61.45695495605469,
+        0.75
+      ]
+    ],
+    "template_hash": "2acbe8672ff4e398ad181c4c349cf90a999888b8a65758a0f89ad130300947e0"
+  },
+  "res://art/characters/vale_unica/tend/north/004.png": {
+    "algorithm": 4,
+    "direction": "north",
+    "size": 48,
+    "anchors": [
+      [
+        8,
+        10,
+        61.033111572265625,
+        0.75
+      ]
+    ],
+    "template_hash": "2acbe8672ff4e398ad181c4c349cf90a999888b8a65758a0f89ad130300947e0"
+  },
+  "res://art/characters/vale_unica/tend/south-east/000.png": {
+    "algorithm": 4,
+    "direction": "south-east",
+    "size": 48,
+    "anchors": [
+      [
+        1,
+        2,
+        51.512691497802734,
+        1.0
+      ]
+    ],
+    "template_hash": "2acbe8672ff4e398ad181c4c349cf90a999888b8a65758a0f89ad130300947e0"
+  },
+  "res://art/characters/vale_unica/tend/south-east/001.png": {
+    "algorithm": 4,
+    "direction": "south-east",
+    "size": 48,
+    "anchors": [
+      [
+        6,
+        9,
+        75.86294555664062,
+        1.0
+      ]
+    ],
+    "template_hash": "2acbe8672ff4e398ad181c4c349cf90a999888b8a65758a0f89ad130300947e0"
+  },
+  "res://art/characters/vale_unica/tend/south-east/002.png": {
+    "algorithm": 4,
+    "direction": "south-east",
+    "size": 48,
+    "anchors": [
+      [
+        6,
+        9,
+        78.71598052978516,
+        0.85
+      ]
+    ],
+    "template_hash": "2acbe8672ff4e398ad181c4c349cf90a999888b8a65758a0f89ad130300947e0"
+  },
+  "res://art/characters/vale_unica/tend/south-east/003.png": {
+    "algorithm": 4,
+    "direction": "south-east",
+    "size": 48,
+    "anchors": [
+      [
+        7,
+        9,
+        77.19542694091797,
+        0.85
+      ]
+    ],
+    "template_hash": "2acbe8672ff4e398ad181c4c349cf90a999888b8a65758a0f89ad130300947e0"
+  },
+  "res://art/characters/vale_unica/tend/south-east/004.png": {
+    "algorithm": 4,
+    "direction": "south-east",
+    "size": 48,
+    "anchors": [
+      [
+        7,
+        9,
+        78.39634704589844,
+        0.85
+      ]
+    ],
+    "template_hash": "2acbe8672ff4e398ad181c4c349cf90a999888b8a65758a0f89ad130300947e0"
+  },
+  "res://art/characters/vale_unica/tend/south-west/000.png": {
+    "algorithm": 4,
+    "direction": "south-west",
+    "size": 48,
+    "anchors": [
+      [
+        0,
+        2,
+        51.12690353393555,
+        1.0
+      ]
+    ],
+    "template_hash": "2acbe8672ff4e398ad181c4c349cf90a999888b8a65758a0f89ad130300947e0"
+  },
+  "res://art/characters/vale_unica/tend/south-west/001.png": {
+    "algorithm": 4,
+    "direction": "south-west",
+    "size": 48,
+    "anchors": [
+      [
+        -6,
+        9,
+        75.25888061523438,
+        1.0
+      ]
+    ],
+    "template_hash": "2acbe8672ff4e398ad181c4c349cf90a999888b8a65758a0f89ad130300947e0"
+  },
+  "res://art/characters/vale_unica/tend/south-west/002.png": {
+    "algorithm": 4,
+    "direction": "south-west",
+    "size": 48,
+    "anchors": [
+      [
+        -6,
+        8,
+        75.76142120361328,
+        1.0
+      ]
+    ],
+    "template_hash": "2acbe8672ff4e398ad181c4c349cf90a999888b8a65758a0f89ad130300947e0"
+  },
+  "res://art/characters/vale_unica/tend/south-west/003.png": {
+    "algorithm": 4,
+    "direction": "south-west",
+    "size": 48,
+    "anchors": [
+      [
+        -6,
+        8,
+        74.67512512207031,
+        1.0
+      ]
+    ],
+    "template_hash": "2acbe8672ff4e398ad181c4c349cf90a999888b8a65758a0f89ad130300947e0"
+  },
+  "res://art/characters/vale_unica/tend/south-west/004.png": {
+    "algorithm": 4,
+    "direction": "south-west",
+    "size": 48,
+    "anchors": [
+      [
+        -6,
+        8,
+        71.84771728515625,
+        1.0
+      ]
+    ],
+    "template_hash": "2acbe8672ff4e398ad181c4c349cf90a999888b8a65758a0f89ad130300947e0"
+  },
+  "res://art/characters/vale_unica/tend/south/000.png": {
+    "algorithm": 4,
+    "direction": "south",
+    "size": 48,
+    "anchors": [
+      [
+        2,
+        5,
+        54.31009292602539,
+        0.85
+      ]
+    ],
+    "template_hash": "2acbe8672ff4e398ad181c4c349cf90a999888b8a65758a0f89ad130300947e0"
+  },
+  "res://art/characters/vale_unica/tend/south/001.png": {
+    "algorithm": 4,
+    "direction": "south",
+    "size": 48,
+    "anchors": [
+      [
+        5,
+        12,
+        79.85595703125,
+        0.85
+      ]
+    ],
+    "template_hash": "2acbe8672ff4e398ad181c4c349cf90a999888b8a65758a0f89ad130300947e0"
+  },
+  "res://art/characters/vale_unica/tend/south/002.png": {
+    "algorithm": 4,
+    "direction": "south",
+    "size": 48,
+    "anchors": [
+      [
+        4,
+        10,
+        80.85595703125,
+        0.85
+      ]
+    ],
+    "template_hash": "2acbe8672ff4e398ad181c4c349cf90a999888b8a65758a0f89ad130300947e0"
+  },
+  "res://art/characters/vale_unica/tend/south/003.png": {
+    "algorithm": 4,
+    "direction": "south",
+    "size": 48,
+    "anchors": [
+      [
+        5,
+        9,
+        81.29632568359375,
+        0.85
+      ]
+    ],
+    "template_hash": "2acbe8672ff4e398ad181c4c349cf90a999888b8a65758a0f89ad130300947e0"
+  },
+  "res://art/characters/vale_unica/tend/south/004.png": {
+    "algorithm": 4,
+    "direction": "south",
+    "size": 48,
+    "anchors": [
+      [
+        5,
+        10,
+        81.56238555908203,
+        0.85
+      ]
+    ],
+    "template_hash": "2acbe8672ff4e398ad181c4c349cf90a999888b8a65758a0f89ad130300947e0"
+  },
+  "res://art/characters/vale_unica/tend/west/000.png": {
+    "algorithm": 4,
+    "direction": "west",
+    "size": 48,
+    "anchors": [
+      [
+        1,
+        1,
+        25.62032127380371,
+        1.0
+      ]
+    ],
+    "template_hash": "2acbe8672ff4e398ad181c4c349cf90a999888b8a65758a0f89ad130300947e0"
+  },
+  "res://art/characters/vale_unica/tend/west/001.png": {
+    "algorithm": 4,
+    "direction": "west",
+    "size": 48,
+    "anchors": [
+      [
+        0,
+        10,
+        86.19502258300781,
+        0.85
+      ]
+    ],
+    "template_hash": "2acbe8672ff4e398ad181c4c349cf90a999888b8a65758a0f89ad130300947e0"
+  },
+  "res://art/characters/vale_unica/tend/west/002.png": {
+    "algorithm": 4,
+    "direction": "west",
+    "size": 48,
+    "anchors": [
+      [
+        0,
+        9,
+        84.28955078125,
+        0.85
+      ]
+    ],
+    "template_hash": "2acbe8672ff4e398ad181c4c349cf90a999888b8a65758a0f89ad130300947e0"
+  },
+  "res://art/characters/vale_unica/tend/west/003.png": {
+    "algorithm": 4,
+    "direction": "west",
+    "size": 48,
+    "anchors": [
+      [
+        -2,
+        8,
+        85.26203155517578,
+        1.0
+      ]
+    ],
+    "template_hash": "2acbe8672ff4e398ad181c4c349cf90a999888b8a65758a0f89ad130300947e0"
+  },
+  "res://art/characters/vale_unica/tend/west/004.png": {
+    "algorithm": 4,
+    "direction": "west",
+    "size": 48,
+    "anchors": [
+      [
+        0,
+        9,
+        82.39402770996094,
+        0.85
+      ]
+    ],
+    "template_hash": "2acbe8672ff4e398ad181c4c349cf90a999888b8a65758a0f89ad130300947e0"
+  },
+  "res://art/characters/vale_unica/walk/east/000.png": {
+    "algorithm": 4,
+    "direction": "east",
+    "size": 48,
+    "anchors": [
+      [
+        0,
+        2,
+        70.84491729736328,
+        1.0
+      ]
+    ],
+    "template_hash": "2acbe8672ff4e398ad181c4c349cf90a999888b8a65758a0f89ad130300947e0"
+  },
+  "res://art/characters/vale_unica/walk/east/001.png": {
+    "algorithm": 4,
+    "direction": "east",
+    "size": 48,
+    "anchors": [
+      [
+        0,
+        2,
+        60.87700653076172,
+        1.0
+      ]
+    ],
+    "template_hash": "2acbe8672ff4e398ad181c4c349cf90a999888b8a65758a0f89ad130300947e0"
+  },
+  "res://art/characters/vale_unica/walk/east/002.png": {
+    "algorithm": 4,
+    "direction": "east",
+    "size": 48,
+    "anchors": [
+      [
+        -1,
+        1,
+        57.74866485595703,
+        1.0
+      ]
+    ],
+    "template_hash": "2acbe8672ff4e398ad181c4c349cf90a999888b8a65758a0f89ad130300947e0"
+  },
+  "res://art/characters/vale_unica/walk/east/003.png": {
+    "algorithm": 4,
+    "direction": "east",
+    "size": 48,
+    "anchors": [
+      [
+        -1,
+        -1,
+        58.67914581298828,
+        1.0
+      ]
+    ],
+    "template_hash": "2acbe8672ff4e398ad181c4c349cf90a999888b8a65758a0f89ad130300947e0"
+  },
+  "res://art/characters/vale_unica/walk/east/004.png": {
+    "algorithm": 4,
+    "direction": "east",
+    "size": 48,
+    "anchors": [
+      [
+        -1,
+        -1,
+        57.24599075317383,
+        1.0
+      ]
+    ],
+    "template_hash": "2acbe8672ff4e398ad181c4c349cf90a999888b8a65758a0f89ad130300947e0"
+  },
+  "res://art/characters/vale_unica/walk/east/005.png": {
+    "algorithm": 4,
+    "direction": "east",
+    "size": 48,
+    "anchors": [
+      [
+        -1,
+        1,
+        57.31550979614258,
+        1.0
+      ]
+    ],
+    "template_hash": "2acbe8672ff4e398ad181c4c349cf90a999888b8a65758a0f89ad130300947e0"
+  },
+  "res://art/characters/vale_unica/walk/east/006.png": {
+    "algorithm": 4,
+    "direction": "east",
+    "size": 48,
+    "anchors": [
+      [
+        -1,
+        1,
+        67.21925354003906,
+        1.0
+      ]
+    ],
+    "template_hash": "2acbe8672ff4e398ad181c4c349cf90a999888b8a65758a0f89ad130300947e0"
+  },
+  "res://art/characters/vale_unica/walk/east/007.png": {
+    "algorithm": 4,
+    "direction": "east",
+    "size": 48,
+    "anchors": [
+      [
+        -1,
+        0,
+        72.18181610107422,
+        1.0
+      ]
+    ],
+    "template_hash": "2acbe8672ff4e398ad181c4c349cf90a999888b8a65758a0f89ad130300947e0"
+  },
+  "res://art/characters/vale_unica/walk/north-east/000.png": {
+    "algorithm": 4,
+    "direction": "north-east",
+    "size": 48,
+    "anchors": [
+      [
+        3,
+        5,
+        42.224273681640625,
+        0.85
+      ]
+    ],
+    "template_hash": "2acbe8672ff4e398ad181c4c349cf90a999888b8a65758a0f89ad130300947e0"
+  },
+  "res://art/characters/vale_unica/walk/north-east/001.png": {
+    "algorithm": 4,
+    "direction": "north-east",
+    "size": 48,
+    "anchors": [
+      [
+        3,
+        4,
+        44.073787689208984,
+        0.85
+      ]
+    ],
+    "template_hash": "2acbe8672ff4e398ad181c4c349cf90a999888b8a65758a0f89ad130300947e0"
+  },
+  "res://art/characters/vale_unica/walk/north-east/002.png": {
+    "algorithm": 4,
+    "direction": "north-east",
+    "size": 48,
+    "anchors": [
+      [
+        3,
+        3,
+        49.4815559387207,
+        0.85
+      ]
+    ],
+    "template_hash": "2acbe8672ff4e398ad181c4c349cf90a999888b8a65758a0f89ad130300947e0"
+  },
+  "res://art/characters/vale_unica/walk/north-east/003.png": {
+    "algorithm": 4,
+    "direction": "north-east",
+    "size": 48,
+    "anchors": [
+      [
+        3,
+        3,
+        56.18058395385742,
+        0.85
+      ]
+    ],
+    "template_hash": "2acbe8672ff4e398ad181c4c349cf90a999888b8a65758a0f89ad130300947e0"
+  },
+  "res://art/characters/vale_unica/walk/north-east/004.png": {
+    "algorithm": 4,
+    "direction": "north-east",
+    "size": 48,
+    "anchors": [
+      [
+        3,
+        3,
+        56.020389556884766,
+        0.85
+      ]
+    ],
+    "template_hash": "2acbe8672ff4e398ad181c4c349cf90a999888b8a65758a0f89ad130300947e0"
+  },
+  "res://art/characters/vale_unica/walk/north-east/005.png": {
+    "algorithm": 4,
+    "direction": "north-east",
+    "size": 48,
+    "anchors": [
+      [
+        3,
+        3,
+        42.166019439697266,
+        0.85
+      ]
+    ],
+    "template_hash": "2acbe8672ff4e398ad181c4c349cf90a999888b8a65758a0f89ad130300947e0"
+  },
+  "res://art/characters/vale_unica/walk/north-east/006.png": {
+    "algorithm": 4,
+    "direction": "north-east",
+    "size": 48,
+    "anchors": [
+      [
+        4,
+        1,
+        43.35533905029297,
+        0.85
+      ]
+    ],
+    "template_hash": "2acbe8672ff4e398ad181c4c349cf90a999888b8a65758a0f89ad130300947e0"
+  },
+  "res://art/characters/vale_unica/walk/north-east/007.png": {
+    "algorithm": 4,
+    "direction": "north-east",
+    "size": 48,
+    "anchors": [
+      [
+        4,
+        1,
+        43.166019439697266,
+        0.85
+      ]
+    ],
+    "template_hash": "2acbe8672ff4e398ad181c4c349cf90a999888b8a65758a0f89ad130300947e0"
+  },
+  "res://art/characters/vale_unica/walk/north-west/000.png": {
+    "algorithm": 4,
+    "direction": "north-west",
+    "size": 48,
+    "anchors": [
+      [
+        1,
+        5,
+        44.6271858215332,
+        0.85
+      ]
+    ],
+    "template_hash": "2acbe8672ff4e398ad181c4c349cf90a999888b8a65758a0f89ad130300947e0"
+  },
+  "res://art/characters/vale_unica/walk/north-west/001.png": {
+    "algorithm": 4,
+    "direction": "north-west",
+    "size": 48,
+    "anchors": [
+      [
+        1,
+        4,
+        47.24854278564453,
+        0.85
+      ]
+    ],
+    "template_hash": "2acbe8672ff4e398ad181c4c349cf90a999888b8a65758a0f89ad130300947e0"
+  },
+  "res://art/characters/vale_unica/walk/north-west/002.png": {
+    "algorithm": 4,
+    "direction": "north-west",
+    "size": 48,
+    "anchors": [
+      [
+        2,
+        3,
+        49.598060607910156,
+        0.85
+      ]
+    ],
+    "template_hash": "2acbe8672ff4e398ad181c4c349cf90a999888b8a65758a0f89ad130300947e0"
+  },
+  "res://art/characters/vale_unica/walk/north-west/003.png": {
+    "algorithm": 4,
+    "direction": "north-west",
+    "size": 48,
+    "anchors": [
+      [
+        1,
+        3,
+        56.41359329223633,
+        0.85
+      ]
+    ],
+    "template_hash": "2acbe8672ff4e398ad181c4c349cf90a999888b8a65758a0f89ad130300947e0"
+  },
+  "res://art/characters/vale_unica/walk/north-west/004.png": {
+    "algorithm": 4,
+    "direction": "north-west",
+    "size": 48,
+    "anchors": [
+      [
+        1,
+        3,
+        56.520389556884766,
+        0.85
+      ]
+    ],
+    "template_hash": "2acbe8672ff4e398ad181c4c349cf90a999888b8a65758a0f89ad130300947e0"
+  },
+  "res://art/characters/vale_unica/walk/north-west/005.png": {
+    "algorithm": 4,
+    "direction": "north-west",
+    "size": 48,
+    "anchors": [
+      [
+        1,
+        3,
+        45.0398063659668,
+        0.85
+      ]
+    ],
+    "template_hash": "2acbe8672ff4e398ad181c4c349cf90a999888b8a65758a0f89ad130300947e0"
+  },
+  "res://art/characters/vale_unica/walk/north-west/006.png": {
+    "algorithm": 4,
+    "direction": "north-west",
+    "size": 48,
+    "anchors": [
+      [
+        0,
+        1,
+        45.777671813964844,
+        0.85
+      ]
+    ],
+    "template_hash": "2acbe8672ff4e398ad181c4c349cf90a999888b8a65758a0f89ad130300947e0"
+  },
+  "res://art/characters/vale_unica/walk/north-west/007.png": {
+    "algorithm": 4,
+    "direction": "north-west",
+    "size": 48,
+    "anchors": [
+      [
+        0,
+        1,
+        44.04951477050781,
+        0.85
+      ]
+    ],
+    "template_hash": "2acbe8672ff4e398ad181c4c349cf90a999888b8a65758a0f89ad130300947e0"
+  },
+  "res://art/characters/vale_unica/walk/north/000.png": {
+    "algorithm": 4,
+    "direction": "north",
+    "size": 48,
+    "anchors": [
+      [
+        2,
+        -1,
+        32.78208923339844,
+        0.85
+      ]
+    ],
+    "template_hash": "2acbe8672ff4e398ad181c4c349cf90a999888b8a65758a0f89ad130300947e0"
+  },
+  "res://art/characters/vale_unica/walk/north/001.png": {
+    "algorithm": 4,
+    "direction": "north",
+    "size": 48,
+    "anchors": [
+      [
+        2,
+        -1,
+        33.40895462036133,
+        0.85
+      ]
+    ],
+    "template_hash": "2acbe8672ff4e398ad181c4c349cf90a999888b8a65758a0f89ad130300947e0"
+  },
+  "res://art/characters/vale_unica/walk/north/002.png": {
+    "algorithm": 4,
+    "direction": "north",
+    "size": 48,
+    "anchors": [
+      [
+        2,
+        0,
+        32.54328155517578,
+        0.85
+      ]
+    ],
+    "template_hash": "2acbe8672ff4e398ad181c4c349cf90a999888b8a65758a0f89ad130300947e0"
+  },
+  "res://art/characters/vale_unica/walk/north/003.png": {
+    "algorithm": 4,
+    "direction": "north",
+    "size": 48,
+    "anchors": [
+      [
+        2,
+        1,
+        35.56816101074219,
+        0.85
+      ]
+    ],
+    "template_hash": "2acbe8672ff4e398ad181c4c349cf90a999888b8a65758a0f89ad130300947e0"
+  },
+  "res://art/characters/vale_unica/walk/north/004.png": {
+    "algorithm": 4,
+    "direction": "north",
+    "size": 48,
+    "anchors": [
+      [
+        2,
+        1,
+        36.12537384033203,
+        0.85
+      ]
+    ],
+    "template_hash": "2acbe8672ff4e398ad181c4c349cf90a999888b8a65758a0f89ad130300947e0"
+  },
+  "res://art/characters/vale_unica/walk/north/005.png": {
+    "algorithm": 4,
+    "direction": "north",
+    "size": 48,
+    "anchors": [
+      [
+        3,
+        -1,
+        40.816917419433594,
+        0.85
+      ]
+    ],
+    "template_hash": "2acbe8672ff4e398ad181c4c349cf90a999888b8a65758a0f89ad130300947e0"
+  },
+  "res://art/characters/vale_unica/walk/north/006.png": {
+    "algorithm": 4,
+    "direction": "north",
+    "size": 48,
+    "anchors": [
+      [
+        3,
+        -1,
+        39.38905715942383,
+        0.85
+      ]
+    ],
+    "template_hash": "2acbe8672ff4e398ad181c4c349cf90a999888b8a65758a0f89ad130300947e0"
+  },
+  "res://art/characters/vale_unica/walk/north/007.png": {
+    "algorithm": 4,
+    "direction": "north",
+    "size": 48,
+    "anchors": [
+      [
+        3,
+        1,
+        38.97611999511719,
+        0.85
+      ]
+    ],
+    "template_hash": "2acbe8672ff4e398ad181c4c349cf90a999888b8a65758a0f89ad130300947e0"
+  },
+  "res://art/characters/vale_unica/walk/south-east/000.png": {
+    "algorithm": 4,
+    "direction": "south-east",
+    "size": 48,
+    "anchors": [
+      [
+        1,
+        1,
+        61.38071060180664,
+        1.0
+      ]
+    ],
+    "template_hash": "2acbe8672ff4e398ad181c4c349cf90a999888b8a65758a0f89ad130300947e0"
+  },
+  "res://art/characters/vale_unica/walk/south-east/001.png": {
+    "algorithm": 4,
+    "direction": "south-east",
+    "size": 48,
+    "anchors": [
+      [
+        1,
+        1,
+        65.33502197265625,
+        1.0
+      ]
+    ],
+    "template_hash": "2acbe8672ff4e398ad181c4c349cf90a999888b8a65758a0f89ad130300947e0"
+  },
+  "res://art/characters/vale_unica/walk/south-east/002.png": {
+    "algorithm": 4,
+    "direction": "south-east",
+    "size": 48,
+    "anchors": [
+      [
+        0,
+        0,
+        64.57360076904297,
+        1.0
+      ]
+    ],
+    "template_hash": "2acbe8672ff4e398ad181c4c349cf90a999888b8a65758a0f89ad130300947e0"
+  },
+  "res://art/characters/vale_unica/walk/south-east/003.png": {
+    "algorithm": 4,
+    "direction": "south-east",
+    "size": 48,
+    "anchors": [
+      [
+        0,
+        -1,
+        62.456851959228516,
+        1.0
+      ]
+    ],
+    "template_hash": "2acbe8672ff4e398ad181c4c349cf90a999888b8a65758a0f89ad130300947e0"
+  },
+  "res://art/characters/vale_unica/walk/south-east/004.png": {
+    "algorithm": 4,
+    "direction": "south-east",
+    "size": 48,
+    "anchors": [
+      [
+        1,
+        0,
+        62.53299331665039,
+        1.0
+      ]
+    ],
+    "template_hash": "2acbe8672ff4e398ad181c4c349cf90a999888b8a65758a0f89ad130300947e0"
+  },
+  "res://art/characters/vale_unica/walk/south-east/005.png": {
+    "algorithm": 4,
+    "direction": "south-east",
+    "size": 48,
+    "anchors": [
+      [
+        1,
+        2,
+        71.96446990966797,
+        1.0
+      ]
+    ],
+    "template_hash": "2acbe8672ff4e398ad181c4c349cf90a999888b8a65758a0f89ad130300947e0"
+  },
+  "res://art/characters/vale_unica/walk/south-east/006.png": {
+    "algorithm": 4,
+    "direction": "south-east",
+    "size": 48,
+    "anchors": [
+      [
+        1,
+        2,
+        70.59391021728516,
+        1.0
+      ]
+    ],
+    "template_hash": "2acbe8672ff4e398ad181c4c349cf90a999888b8a65758a0f89ad130300947e0"
+  },
+  "res://art/characters/vale_unica/walk/south-east/007.png": {
+    "algorithm": 4,
+    "direction": "south-east",
+    "size": 48,
+    "anchors": [
+      [
+        1,
+        1,
+        61.88324737548828,
+        1.0
+      ]
+    ],
+    "template_hash": "2acbe8672ff4e398ad181c4c349cf90a999888b8a65758a0f89ad130300947e0"
+  },
+  "res://art/characters/vale_unica/walk/south-west/000.png": {
+    "algorithm": 4,
+    "direction": "south-west",
+    "size": 48,
+    "anchors": [
+      [
+        -1,
+        1,
+        62.55837631225586,
+        1.0
+      ]
+    ],
+    "template_hash": "2acbe8672ff4e398ad181c4c349cf90a999888b8a65758a0f89ad130300947e0"
+  },
+  "res://art/characters/vale_unica/walk/south-west/001.png": {
+    "algorithm": 4,
+    "direction": "south-west",
+    "size": 48,
+    "anchors": [
+      [
+        1,
+        3,
+        67.47396850585938,
+        0.85
+      ]
+    ],
+    "template_hash": "2acbe8672ff4e398ad181c4c349cf90a999888b8a65758a0f89ad130300947e0"
+  },
+  "res://art/characters/vale_unica/walk/south-west/002.png": {
+    "algorithm": 4,
+    "direction": "south-west",
+    "size": 48,
+    "anchors": [
+      [
+        0,
+        0,
+        65.40101623535156,
+        1.0
+      ]
+    ],
+    "template_hash": "2acbe8672ff4e398ad181c4c349cf90a999888b8a65758a0f89ad130300947e0"
+  },
+  "res://art/characters/vale_unica/walk/south-west/003.png": {
+    "algorithm": 4,
+    "direction": "south-west",
+    "size": 48,
+    "anchors": [
+      [
+        0,
+        -1,
+        62.85279083251953,
+        1.0
+      ]
+    ],
+    "template_hash": "2acbe8672ff4e398ad181c4c349cf90a999888b8a65758a0f89ad130300947e0"
+  },
+  "res://art/characters/vale_unica/walk/south-west/004.png": {
+    "algorithm": 4,
+    "direction": "south-west",
+    "size": 48,
+    "anchors": [
+      [
+        0,
+        0,
+        63.49746322631836,
+        1.0
+      ]
+    ],
+    "template_hash": "2acbe8672ff4e398ad181c4c349cf90a999888b8a65758a0f89ad130300947e0"
+  },
+  "res://art/characters/vale_unica/walk/south-west/005.png": {
+    "algorithm": 4,
+    "direction": "south-west",
+    "size": 48,
+    "anchors": [
+      [
+        -1,
+        2,
+        70.40101623535156,
+        1.0
+      ]
+    ],
+    "template_hash": "2acbe8672ff4e398ad181c4c349cf90a999888b8a65758a0f89ad130300947e0"
+  },
+  "res://art/characters/vale_unica/walk/south-west/006.png": {
+    "algorithm": 4,
+    "direction": "south-west",
+    "size": 48,
+    "anchors": [
+      [
+        -1,
+        2,
+        69.47715759277344,
+        1.0
+      ]
+    ],
+    "template_hash": "2acbe8672ff4e398ad181c4c349cf90a999888b8a65758a0f89ad130300947e0"
+  },
+  "res://art/characters/vale_unica/walk/south-west/007.png": {
+    "algorithm": 4,
+    "direction": "south-west",
+    "size": 48,
+    "anchors": [
+      [
+        -1,
+        1,
+        60.98984909057617,
+        1.0
+      ]
+    ],
+    "template_hash": "2acbe8672ff4e398ad181c4c349cf90a999888b8a65758a0f89ad130300947e0"
+  },
+  "res://art/characters/vale_unica/walk/south/000.png": {
+    "algorithm": 4,
+    "direction": "south",
+    "size": 48,
+    "anchors": [
+      [
+        2,
+        3,
+        80.96604919433594,
+        0.85
+      ]
+    ],
+    "template_hash": "2acbe8672ff4e398ad181c4c349cf90a999888b8a65758a0f89ad130300947e0"
+  },
+  "res://art/characters/vale_unica/walk/south/001.png": {
+    "algorithm": 4,
+    "direction": "south",
+    "size": 48,
+    "anchors": [
+      [
+        3,
+        1,
+        77.90641784667969,
+        0.85
+      ]
+    ],
+    "template_hash": "2acbe8672ff4e398ad181c4c349cf90a999888b8a65758a0f89ad130300947e0"
+  },
+  "res://art/characters/vale_unica/walk/south/002.png": {
+    "algorithm": 4,
+    "direction": "south",
+    "size": 48,
+    "anchors": [
+      [
+        3,
+        0,
+        78.1082534790039,
+        0.85
+      ]
+    ],
+    "template_hash": "2acbe8672ff4e398ad181c4c349cf90a999888b8a65758a0f89ad130300947e0"
+  },
+  "res://art/characters/vale_unica/walk/south/003.png": {
+    "algorithm": 4,
+    "direction": "south",
+    "size": 48,
+    "anchors": [
+      [
+        3,
+        1,
+        73.84678649902344,
+        0.85
+      ]
+    ],
+    "template_hash": "2acbe8672ff4e398ad181c4c349cf90a999888b8a65758a0f89ad130300947e0"
+  },
+  "res://art/characters/vale_unica/walk/south/004.png": {
+    "algorithm": 4,
+    "direction": "south",
+    "size": 48,
+    "anchors": [
+      [
+        3,
+        3,
+        74.71834564208984,
+        0.85
+      ]
+    ],
+    "template_hash": "2acbe8672ff4e398ad181c4c349cf90a999888b8a65758a0f89ad130300947e0"
+  },
+  "res://art/characters/vale_unica/walk/south/005.png": {
+    "algorithm": 4,
+    "direction": "south",
+    "size": 48,
+    "anchors": [
+      [
+        2,
+        2,
+        81.2779769897461,
+        0.85
+      ]
+    ],
+    "template_hash": "2acbe8672ff4e398ad181c4c349cf90a999888b8a65758a0f89ad130300947e0"
+  },
+  "res://art/characters/vale_unica/walk/south/006.png": {
+    "algorithm": 4,
+    "direction": "south",
+    "size": 48,
+    "anchors": [
+      [
+        2,
+        1,
+        79.6954116821289,
+        0.85
+      ]
+    ],
+    "template_hash": "2acbe8672ff4e398ad181c4c349cf90a999888b8a65758a0f89ad130300947e0"
+  },
+  "res://art/characters/vale_unica/walk/south/007.png": {
+    "algorithm": 4,
+    "direction": "south",
+    "size": 48,
+    "anchors": [
+      [
+        2,
+        1,
+        79.12201690673828,
+        0.85
+      ]
+    ],
+    "template_hash": "2acbe8672ff4e398ad181c4c349cf90a999888b8a65758a0f89ad130300947e0"
+  },
+  "res://art/characters/vale_unica/walk/west/000.png": {
+    "algorithm": 4,
+    "direction": "west",
+    "size": 48,
+    "anchors": [
+      [
+        1,
+        2,
+        67.08021545410156,
+        1.0
+      ]
+    ],
+    "template_hash": "2acbe8672ff4e398ad181c4c349cf90a999888b8a65758a0f89ad130300947e0"
+  },
+  "res://art/characters/vale_unica/walk/west/001.png": {
+    "algorithm": 4,
+    "direction": "west",
+    "size": 48,
+    "anchors": [
+      [
+        1,
+        2,
+        57.657752990722656,
+        1.0
+      ]
+    ],
+    "template_hash": "2acbe8672ff4e398ad181c4c349cf90a999888b8a65758a0f89ad130300947e0"
+  },
+  "res://art/characters/vale_unica/walk/west/002.png": {
+    "algorithm": 4,
+    "direction": "west",
+    "size": 48,
+    "anchors": [
+      [
+        1,
+        1,
+        58.278076171875,
+        1.0
+      ]
+    ],
+    "template_hash": "2acbe8672ff4e398ad181c4c349cf90a999888b8a65758a0f89ad130300947e0"
+  },
+  "res://art/characters/vale_unica/walk/west/003.png": {
+    "algorithm": 4,
+    "direction": "west",
+    "size": 48,
+    "anchors": [
+      [
+        1,
+        -1,
+        53.866310119628906,
+        1.0
+      ]
+    ],
+    "template_hash": "2acbe8672ff4e398ad181c4c349cf90a999888b8a65758a0f89ad130300947e0"
+  },
+  "res://art/characters/vale_unica/walk/west/004.png": {
+    "algorithm": 4,
+    "direction": "west",
+    "size": 48,
+    "anchors": [
+      [
+        1,
+        -1,
+        54.87165832519531,
+        1.0
+      ]
+    ],
+    "template_hash": "2acbe8672ff4e398ad181c4c349cf90a999888b8a65758a0f89ad130300947e0"
+  },
+  "res://art/characters/vale_unica/walk/west/005.png": {
+    "algorithm": 4,
+    "direction": "west",
+    "size": 48,
+    "anchors": [
+      [
+        1,
+        1,
+        53.05882263183594,
+        1.0
+      ]
+    ],
+    "template_hash": "2acbe8672ff4e398ad181c4c349cf90a999888b8a65758a0f89ad130300947e0"
+  },
+  "res://art/characters/vale_unica/walk/west/006.png": {
+    "algorithm": 4,
+    "direction": "west",
+    "size": 48,
+    "anchors": [
+      [
+        1,
+        1,
+        60.786094665527344,
+        1.0
+      ]
+    ],
+    "template_hash": "2acbe8672ff4e398ad181c4c349cf90a999888b8a65758a0f89ad130300947e0"
+  },
+  "res://art/characters/vale_unica/walk/west/007.png": {
+    "algorithm": 4,
+    "direction": "west",
+    "size": 48,
+    "anchors": [
+      [
+        1,
+        0,
+        65.48663330078125,
+        1.0
+      ]
+    ],
+    "template_hash": "2acbe8672ff4e398ad181c4c349cf90a999888b8a65758a0f89ad130300947e0"
+  },
+  "res://art/characters/vale_combate_v6pal/dash/dash_east_sheet.png": {
+    "algorithm": 4,
+    "direction": "east",
+    "size": 112,
+    "anchors": [
+      [
+        31,
+        32,
+        74.22994995117188,
+        1.0
+      ],
+      [
+        32,
+        32,
+        70.04277801513672,
+        1.0
+      ],
+      [
+        32,
+        32,
+        70.25133514404297,
+        1.0
+      ],
+      [
+        32,
+        32,
+        69.07486724853516,
+        1.0
+      ],
+      [
+        32,
+        32,
+        69.76470947265625,
+        1.0
+      ],
+      [
+        32,
+        32,
+        70.12834167480469,
+        1.0
+      ],
+      [
+        32,
+        32,
+        70.56684112548828,
+        1.0
+      ],
+      [
+        31,
+        32,
+        69.0,
+        1.0
+      ],
+      [
+        31,
+        33,
+        65.3048095703125,
+        1.0
+      ],
+      [
+        32,
+        38,
+        73.62032318115234,
+        1.0
+      ],
+      [
+        32,
+        38,
+        73.97325897216797,
+        1.0
+      ],
+      [
+        32,
+        38,
+        74.278076171875,
+        1.0
+      ],
+      [
+        32,
+        38,
+        75.63101959228516,
+        1.0
+      ],
+      [
+        32,
+        38,
+        75.6951904296875,
+        1.0
+      ],
+      [
+        32,
+        38,
+        76.08021545410156,
+        1.0
+      ],
+      [
+        32,
+        38,
+        75.64170837402344,
+        1.0
+      ],
+      [
+        36,
+        37,
+        72.51871490478516,
+        1.0
+      ],
+      [
+        47,
+        30,
+        87.22460174560547,
+        1.0
+      ],
+      [
+        52,
+        29,
+        85.54545593261719,
+        1.0
+      ],
+      [
+        55,
+        25,
+        82.6951904296875,
+        1.0
+      ],
+      [
+        56,
+        25,
+        80.47058868408203,
+        1.0
+      ],
+      [
+        57,
+        24,
+        80.01604461669922,
+        1.0
+      ],
+      [
+        57,
+        24,
+        79.81283569335938,
+        1.0
+      ],
+      [
+        57,
+        24,
+        82.4491958618164,
+        1.0
+      ],
+      [
+        57,
+        24,
+        82.21390533447266,
+        1.0
+      ],
+      [
+        57,
+        24,
+        82.49732971191406,
+        1.0
+      ],
+      [
+        57,
+        24,
+        82.7272720336914,
+        1.0
+      ],
+      [
+        57,
+        24,
+        82.32085418701172,
+        1.0
+      ],
+      [
+        57,
+        24,
+        83.19251251220703,
+        1.0
+      ],
+      [
+        57,
+        24,
+        82.98395538330078,
+        1.0
+      ],
+      [
+        59,
+        24,
+        83.31550598144531,
+        1.0
+      ],
+      [
+        59,
+        24,
+        82.64705657958984,
+        1.0
+      ],
+      [
+        59,
+        24,
+        82.46524047851562,
+        1.0
+      ],
+      [
+        59,
+        24,
+        82.66844940185547,
+        1.0
+      ],
+      [
+        57,
+        24,
+        82.98395538330078,
+        1.0
+      ],
+      [
+        59,
+        24,
+        83.16577911376953,
+        1.0
+      ],
+      [
+        57,
+        24,
+        81.4224624633789,
+        1.0
+      ],
+      [
+        55,
+        26,
+        82.5882339477539,
+        1.0
+      ],
+      [
+        34,
+        32,
+        69.9946517944336,
+        1.0
+      ],
+      [
+        32,
+        32,
+        66.8556137084961,
+        1.0
+      ],
+      [
+        31,
+        32,
+        65.63101959228516,
+        1.0
+      ],
+      [
+        31,
+        32,
+        67.55615234375,
+        1.0
+      ],
+      [
+        31,
+        32,
+        67.8663101196289,
+        1.0
+      ],
+      [
+        31,
+        32,
+        69.53475952148438,
+        1.0
+      ],
+      [
+        31,
+        32,
+        69.67379760742188,
+        1.0
+      ],
+      [
+        31,
+        32,
+        69.64705657958984,
+        1.0
+      ],
+      [
+        31,
+        32,
+        70.08021545410156,
+        1.0
+      ],
+      [
+        32,
+        32,
+        69.40641784667969,
+        1.0
+      ],
+      [
+        31,
+        32,
+        69.89305114746094,
+        1.0
+      ]
+    ],
+    "template_hash": "2acbe8672ff4e398ad181c4c349cf90a999888b8a65758a0f89ad130300947e0"
+  },
+  "res://art/characters/vale_combate_v6pal/dash/dash_north-east_sheet.png": {
+    "algorithm": 4,
+    "direction": "north-east",
+    "size": 112,
+    "anchors": [
+      [
+        30,
+        31,
+        64.38541412353516,
+        1.0
+      ],
+      [
+        32,
+        31,
+        55.91666793823242,
+        1.0
+      ],
+      [
+        32,
+        31,
+        54.94270706176758,
+        1.0
+      ],
+      [
+        32,
+        33,
+        54.234375,
+        1.0
+      ],
+      [
+        32,
+        35,
+        62.82291793823242,
+        1.0
+      ],
+      [
+        32,
+        38,
+        70.32291412353516,
+        1.0
+      ],
+      [
+        32,
+        38,
+        69.95833587646484,
+        1.0
+      ],
+      [
+        32,
+        38,
+        70.32291412353516,
+        1.0
+      ],
+      [
+        32,
+        38,
+        70.296875,
+        1.0
+      ],
+      [
+        32,
+        38,
+        70.640625,
+        1.0
+      ],
+      [
+        32,
+        38,
+        70.81771087646484,
+        1.0
+      ],
+      [
+        32,
+        38,
+        69.61458587646484,
+        1.0
+      ],
+      [
+        32,
+        37,
+        67.60416412353516,
+        1.0
+      ],
+      [
+        51,
+        24,
+        66.66146087646484,
+        1.0
+      ],
+      [
+        56,
+        20,
+        65.64583587646484,
+        1.0
+      ],
+      [
+        62,
+        15,
+        58.11979293823242,
+        1.0
+      ],
+      [
+        64,
+        13,
+        61.86979293823242,
+        1.0
+      ],
+      [
+        68,
+        10,
+        60.09375,
+        1.0
+      ],
+      [
+        69,
+        10,
+        59.92708206176758,
+        1.0
+      ],
+      [
+        70,
+        9,
+        57.125,
+        1.0
+      ],
+      [
+        71,
+        8,
+        62.51041793823242,
+        1.0
+      ],
+      [
+        71,
+        8,
+        57.08333206176758,
+        1.0
+      ],
+      [
+        71,
+        8,
+        58.34895706176758,
+        1.0
+      ],
+      [
+        71,
+        8,
+        57.80208206176758,
+        1.0
+      ],
+      [
+        71,
+        8,
+        57.88541793823242,
+        1.0
+      ],
+      [
+        71,
+        8,
+        58.90625,
+        1.0
+      ],
+      [
+        71,
+        8,
+        59.19270706176758,
+        1.0
+      ],
+      [
+        71,
+        8,
+        55.69791793823242,
+        1.0
+      ],
+      [
+        68,
+        7,
+        52.11979293823242,
+        1.0
+      ],
+      [
+        48,
+        11,
+        50.8125,
+        1.0
+      ],
+      [
+        34,
+        25,
+        45.11979293823242,
+        1.0
+      ],
+      [
+        32,
+        38,
+        65.265625,
+        1.0
+      ],
+      [
+        32,
+        38,
+        65.92708587646484,
+        1.0
+      ],
+      [
+        32,
+        38,
+        65.49478912353516,
+        1.0
+      ],
+      [
+        32,
+        38,
+        65.72916412353516,
+        1.0
+      ],
+      [
+        32,
+        37,
+        63.74479293823242,
+        1.0
+      ],
+      [
+        32,
+        36,
+        65.0,
+        1.0
+      ],
+      [
+        32,
+        31,
+        51.55208206176758,
+        1.0
+      ],
+      [
+        32,
+        31,
+        51.52604293823242,
+        1.0
+      ],
+      [
+        32,
+        31,
+        51.15104293823242,
+        1.0
+      ],
+      [
+        32,
+        31,
+        50.61458206176758,
+        1.0
+      ],
+      [
+        32,
+        31,
+        51.26041793823242,
+        1.0
+      ],
+      [
+        32,
+        31,
+        51.453125,
+        1.0
+      ],
+      [
+        32,
+        31,
+        51.515625,
+        1.0
+      ],
+      [
+        32,
+        31,
+        52.296875,
+        1.0
+      ],
+      [
+        32,
+        31,
+        51.84895706176758,
+        1.0
+      ],
+      [
+        32,
+        31,
+        50.77083206176758,
+        1.0
+      ],
+      [
+        32,
+        31,
+        50.56770706176758,
+        1.0
+      ],
+      [
+        32,
+        31,
+        50.77083206176758,
+        1.0
+      ]
+    ],
+    "template_hash": "2acbe8672ff4e398ad181c4c349cf90a999888b8a65758a0f89ad130300947e0"
+  },
+  "res://art/characters/vale_combate_v6pal/dash/dash_north-west_sheet.png": {
+    "algorithm": 4,
+    "direction": "north-west",
+    "size": 112,
+    "anchors": [
+      [
+        34,
+        31,
+        61.66666793823242,
+        1.0
+      ],
+      [
+        33,
+        31,
+        57.19270706176758,
+        1.0
+      ],
+      [
+        33,
+        31,
+        55.828125,
+        1.0
+      ],
+      [
+        32,
+        33,
+        59.22395706176758,
+        1.0
+      ],
+      [
+        32,
+        36,
+        65.76041412353516,
+        1.0
+      ],
+      [
+        32,
+        38,
+        66.859375,
+        1.0
+      ],
+      [
+        32,
+        38,
+        66.09896087646484,
+        1.0
+      ],
+      [
+        32,
+        38,
+        66.02083587646484,
+        1.0
+      ],
+      [
+        32,
+        38,
+        66.33853912353516,
+        1.0
+      ],
+      [
+        32,
+        38,
+        66.16146087646484,
+        1.0
+      ],
+      [
+        32,
+        38,
+        66.609375,
+        1.0
+      ],
+      [
+        32,
+        38,
+        66.20833587646484,
+        1.0
+      ],
+      [
+        32,
+        37,
+        64.953125,
+        1.0
+      ],
+      [
+        14,
+        24,
+        70.47916412353516,
+        1.0
+      ],
+      [
+        9,
+        20,
+        67.53646087646484,
+        1.0
+      ],
+      [
+        3,
+        15,
+        59.96354293823242,
+        1.0
+      ],
+      [
+        0,
+        13,
+        63.921875,
+        1.0
+      ],
+      [
+        -3,
+        10,
+        60.453125,
+        1.0
+      ],
+      [
+        -4,
+        10,
+        60.47395706176758,
+        1.0
+      ],
+      [
+        -6,
+        9,
+        60.32291793823242,
+        1.0
+      ],
+      [
+        -6,
+        8,
+        67.01041412353516,
+        1.0
+      ],
+      [
+        -7,
+        8,
+        64.78125,
+        1.0
+      ],
+      [
+        -6,
+        8,
+        65.99478912353516,
+        1.0
+      ],
+      [
+        -7,
+        8,
+        65.05728912353516,
+        1.0
+      ],
+      [
+        -6,
+        8,
+        64.625,
+        1.0
+      ],
+      [
+        -6,
+        8,
+        64.015625,
+        1.0
+      ],
+      [
+        -6,
+        8,
+        64.36458587646484,
+        1.0
+      ],
+      [
+        -6,
+        8,
+        60.69791793823242,
+        1.0
+      ],
+      [
+        -4,
+        7,
+        52.81770706176758,
+        1.0
+      ],
+      [
+        16,
+        11,
+        50.50520706176758,
+        1.0
+      ],
+      [
+        30,
+        25,
+        51.73958206176758,
+        1.0
+      ],
+      [
+        32,
+        38,
+        65.49478912353516,
+        1.0
+      ],
+      [
+        32,
+        38,
+        66.48958587646484,
+        1.0
+      ],
+      [
+        32,
+        38,
+        65.23958587646484,
+        1.0
+      ],
+      [
+        32,
+        38,
+        65.13021087646484,
+        1.0
+      ],
+      [
+        32,
+        37,
+        64.09896087646484,
+        1.0
+      ],
+      [
+        32,
+        36,
+        61.34895706176758,
+        1.0
+      ],
+      [
+        33,
+        31,
+        50.72395706176758,
+        1.0
+      ],
+      [
+        33,
+        31,
+        51.38541793823242,
+        1.0
+      ],
+      [
+        33,
+        31,
+        51.22395706176758,
+        1.0
+      ],
+      [
+        33,
+        31,
+        52.109375,
+        1.0
+      ],
+      [
+        33,
+        31,
+        51.58333206176758,
+        1.0
+      ],
+      [
+        33,
+        31,
+        53.578125,
+        1.0
+      ],
+      [
+        33,
+        31,
+        52.80729293823242,
+        1.0
+      ],
+      [
+        33,
+        31,
+        51.296875,
+        1.0
+      ],
+      [
+        33,
+        31,
+        53.703125,
+        1.0
+      ],
+      [
+        33,
+        31,
+        52.33333206176758,
+        1.0
+      ],
+      [
+        33,
+        31,
+        52.125,
+        1.0
+      ],
+      [
+        33,
+        31,
+        52.77604293823242,
+        1.0
+      ]
+    ],
+    "template_hash": "2acbe8672ff4e398ad181c4c349cf90a999888b8a65758a0f89ad130300947e0"
+  },
+  "res://art/characters/vale_combate_v6pal/dash/dash_south-east_sheet.png": {
+    "algorithm": 4,
+    "direction": "south-east",
+    "size": 112,
+    "anchors": [
+      [
+        32,
+        30,
+        57.22842788696289,
+        1.0
+      ],
+      [
+        32,
+        31,
+        58.1827392578125,
+        1.0
+      ],
+      [
+        32,
+        31,
+        56.79187774658203,
+        1.0
+      ],
+      [
+        32,
+        31,
+        56.61928939819336,
+        1.0
+      ],
+      [
+        32,
+        31,
+        57.12690353393555,
+        1.0
+      ],
+      [
+        32,
+        36,
+        68.32487487792969,
+        1.0
+      ],
+      [
+        33,
+        37,
+        62.61928939819336,
+        1.0
+      ],
+      [
+        33,
+        37,
+        61.61421203613281,
+        1.0
+      ],
+      [
+        33,
+        37,
+        61.0609130859375,
+        1.0
+      ],
+      [
+        33,
+        37,
+        60.93400955200195,
+        1.0
+      ],
+      [
+        33,
+        37,
+        61.29441452026367,
+        1.0
+      ],
+      [
+        33,
+        37,
+        61.167510986328125,
+        1.0
+      ],
+      [
+        33,
+        37,
+        61.071067810058594,
+        1.0
+      ],
+      [
+        33,
+        37,
+        60.73096466064453,
+        1.0
+      ],
+      [
+        33,
+        37,
+        61.0253791809082,
+        1.0
+      ],
+      [
+        33,
+        37,
+        60.52284240722656,
+        1.0
+      ],
+      [
+        34,
+        39,
+        62.898475646972656,
+        1.0
+      ],
+      [
+        58,
+        59,
+        71.06598663330078,
+        1.0
+      ],
+      [
+        63,
+        61,
+        68.57360076904297,
+        1.0
+      ],
+      [
+        66,
+        62,
+        66.59898376464844,
+        1.0
+      ],
+      [
+        67,
+        63,
+        60.97969436645508,
+        1.0
+      ],
+      [
+        68,
+        63,
+        64.40608978271484,
+        1.0
+      ],
+      [
+        68,
+        63,
+        62.20304489135742,
+        1.0
+      ],
+      [
+        68,
+        63,
+        63.284263610839844,
+        1.0
+      ],
+      [
+        68,
+        63,
+        63.832489013671875,
+        1.0
+      ],
+      [
+        68,
+        63,
+        64.63959503173828,
+        1.0
+      ],
+      [
+        68,
+        63,
+        64.56852722167969,
+        1.0
+      ],
+      [
+        68,
+        63,
+        64.23350524902344,
+        1.0
+      ],
+      [
+        68,
+        63,
+        63.451778411865234,
+        1.0
+      ],
+      [
+        66,
+        55,
+        60.436546325683594,
+        1.0
+      ],
+      [
+        66,
+        55,
+        64.82233428955078,
+        1.0
+      ],
+      [
+        66,
+        54,
+        62.0609130859375,
+        1.0
+      ],
+      [
+        66,
+        54,
+        63.436546325683594,
+        1.0
+      ],
+      [
+        66,
+        54,
+        62.26395797729492,
+        1.0
+      ],
+      [
+        66,
+        54,
+        61.44670104980469,
+        1.0
+      ],
+      [
+        64,
+        53,
+        66.29949188232422,
+        1.0
+      ],
+      [
+        53,
+        42,
+        66.52284240722656,
+        1.0
+      ],
+      [
+        32,
+        31,
+        63.46192932128906,
+        1.0
+      ],
+      [
+        32,
+        31,
+        61.923858642578125,
+        1.0
+      ],
+      [
+        32,
+        31,
+        58.44670104980469,
+        1.0
+      ],
+      [
+        32,
+        31,
+        58.75127029418945,
+        1.0
+      ],
+      [
+        32,
+        31,
+        57.99492263793945,
+        1.0
+      ],
+      [
+        32,
+        31,
+        57.96954345703125,
+        1.0
+      ],
+      [
+        32,
+        32,
+        56.58883285522461,
+        1.0
+      ],
+      [
+        33,
+        34,
+        62.05076217651367,
+        1.0
+      ],
+      [
+        33,
+        37,
+        62.88324737548828,
+        1.0
+      ],
+      [
+        33,
+        37,
+        63.456851959228516,
+        1.0
+      ],
+      [
+        33,
+        37,
+        59.746192932128906,
+        1.0
+      ],
+      [
+        33,
+        37,
+        59.76142120361328,
+        1.0
+      ]
+    ],
+    "template_hash": "2acbe8672ff4e398ad181c4c349cf90a999888b8a65758a0f89ad130300947e0"
+  },
+  "res://art/characters/vale_combate_v6pal/dash/dash_south-west_sheet.png": {
+    "algorithm": 4,
+    "direction": "south-west",
+    "size": 112,
+    "anchors": [
+      [
+        32,
+        31,
+        64.14720916748047,
+        1.0
+      ],
+      [
+        32,
+        31,
+        61.192893981933594,
+        1.0
+      ],
+      [
+        32,
+        31,
+        59.395938873291016,
+        1.0
+      ],
+      [
+        32,
+        31,
+        59.548221588134766,
+        1.0
+      ],
+      [
+        32,
+        31,
+        62.04060745239258,
+        1.0
+      ],
+      [
+        32,
+        36,
+        65.28933715820312,
+        1.0
+      ],
+      [
+        31,
+        37,
+        65.84263610839844,
+        1.0
+      ],
+      [
+        31,
+        37,
+        64.5025405883789,
+        1.0
+      ],
+      [
+        31,
+        37,
+        65.1928939819336,
+        1.0
+      ],
+      [
+        31,
+        37,
+        64.04568481445312,
+        1.0
+      ],
+      [
+        31,
+        37,
+        64.22335052490234,
+        1.0
+      ],
+      [
+        31,
+        37,
+        64.03553009033203,
+        1.0
+      ],
+      [
+        31,
+        37,
+        64.28933715820312,
+        1.0
+      ],
+      [
+        31,
+        37,
+        63.664974212646484,
+        1.0
+      ],
+      [
+        31,
+        37,
+        63.7208137512207,
+        1.0
+      ],
+      [
+        31,
+        37,
+        64.74111938476562,
+        1.0
+      ],
+      [
+        30,
+        39,
+        65.79695129394531,
+        1.0
+      ],
+      [
+        6,
+        59,
+        77.60913848876953,
+        1.0
+      ],
+      [
+        1,
+        61,
+        74.65989685058594,
+        1.0
+      ],
+      [
+        -2,
+        63,
+        66.94416046142578,
+        1.0
+      ],
+      [
+        -3,
+        63,
+        62.928932189941406,
+        1.0
+      ],
+      [
+        -4,
+        63,
+        66.74111938476562,
+        1.0
+      ],
+      [
+        -4,
+        63,
+        66.0,
+        1.0
+      ],
+      [
+        -4,
+        63,
+        65.96954345703125,
+        1.0
+      ],
+      [
+        -4,
+        63,
+        64.80203247070312,
+        1.0
+      ],
+      [
+        -4,
+        63,
+        65.36040496826172,
+        1.0
+      ],
+      [
+        -4,
+        63,
+        64.42131805419922,
+        1.0
+      ],
+      [
+        -4,
+        63,
+        66.02030181884766,
+        1.0
+      ],
+      [
+        -4,
+        63,
+        66.63959503173828,
+        1.0
+      ],
+      [
+        -2,
+        55,
+        63.94416427612305,
+        1.0
+      ],
+      [
+        -2,
+        55,
+        65.93401336669922,
+        1.0
+      ],
+      [
+        -2,
+        54,
+        63.167510986328125,
+        1.0
+      ],
+      [
+        -2,
+        54,
+        65.4416275024414,
+        1.0
+      ],
+      [
+        -2,
+        54,
+        65.30964660644531,
+        1.0
+      ],
+      [
+        -2,
+        54,
+        64.69035339355469,
+        1.0
+      ],
+      [
+        -1,
+        53,
+        67.9289321899414,
+        1.0
+      ],
+      [
+        11,
+        42,
+        69.78172302246094,
+        1.0
+      ],
+      [
+        32,
+        31,
+        68.00507354736328,
+        1.0
+      ],
+      [
+        32,
+        31,
+        65.93401336669922,
+        1.0
+      ],
+      [
+        32,
+        31,
+        58.76142120361328,
+        1.0
+      ],
+      [
+        32,
+        31,
+        59.61421203613281,
+        1.0
+      ],
+      [
+        32,
+        31,
+        59.08629608154297,
+        1.0
+      ],
+      [
+        32,
+        31,
+        59.573604583740234,
+        1.0
+      ],
+      [
+        32,
+        32,
+        63.08121871948242,
+        1.0
+      ],
+      [
+        32,
+        34,
+        66.00507354736328,
+        1.0
+      ],
+      [
+        31,
+        37,
+        67.38578796386719,
+        1.0
+      ],
+      [
+        31,
+        37,
+        64.93401336669922,
+        1.0
+      ],
+      [
+        31,
+        37,
+        62.67005157470703,
+        1.0
+      ],
+      [
+        31,
+        37,
+        62.9390869140625,
+        1.0
+      ]
+    ],
+    "template_hash": "2acbe8672ff4e398ad181c4c349cf90a999888b8a65758a0f89ad130300947e0"
+  },
+  "res://art/characters/vale_combate_v6pal/dash/dash_west_sheet.png": {
+    "algorithm": 4,
+    "direction": "west",
+    "size": 112,
+    "anchors": [
+      [
+        33,
+        32,
+        72.48663330078125,
+        1.0
+      ],
+      [
+        33,
+        32,
+        72.4224624633789,
+        1.0
+      ],
+      [
+        33,
+        32,
+        71.90908813476562,
+        1.0
+      ],
+      [
+        33,
+        32,
+        72.2834243774414,
+        1.0
+      ],
+      [
+        33,
+        32,
+        71.95187377929688,
+        1.0
+      ],
+      [
+        32,
+        31,
+        72.24063873291016,
+        1.0
+      ],
+      [
+        32,
+        31,
+        72.76470947265625,
+        1.0
+      ],
+      [
+        33,
+        32,
+        68.51336669921875,
+        1.0
+      ],
+      [
+        32,
+        33,
+        66.20320892333984,
+        1.0
+      ],
+      [
+        32,
+        38,
+        74.96257019042969,
+        1.0
+      ],
+      [
+        32,
+        38,
+        74.32620239257812,
+        1.0
+      ],
+      [
+        32,
+        37,
+        74.4224624633789,
+        1.0
+      ],
+      [
+        32,
+        37,
+        74.55615234375,
+        1.0
+      ],
+      [
+        32,
+        37,
+        73.85026550292969,
+        1.0
+      ],
+      [
+        32,
+        37,
+        73.98395538330078,
+        1.0
+      ],
+      [
+        32,
+        38,
+        73.3048095703125,
+        1.0
+      ],
+      [
+        28,
+        37,
+        74.44384765625,
+        1.0
+      ],
+      [
+        17,
+        30,
+        85.36898040771484,
+        1.0
+      ],
+      [
+        14,
+        28,
+        82.98930358886719,
+        1.0
+      ],
+      [
+        8,
+        25,
+        76.8663101196289,
+        1.0
+      ],
+      [
+        8,
+        25,
+        80.04812622070312,
+        1.0
+      ],
+      [
+        7,
+        24,
+        78.60962677001953,
+        1.0
+      ],
+      [
+        7,
+        24,
+        78.54010772705078,
+        1.0
+      ],
+      [
+        7,
+        24,
+        79.32620239257812,
+        1.0
+      ],
+      [
+        7,
+        24,
+        79.19786071777344,
+        1.0
+      ],
+      [
+        7,
+        24,
+        79.36898040771484,
+        1.0
+      ],
+      [
+        7,
+        24,
+        79.33689880371094,
+        1.0
+      ],
+      [
+        7,
+        24,
+        78.97860717773438,
+        1.0
+      ],
+      [
+        7,
+        24,
+        80.17646789550781,
+        1.0
+      ],
+      [
+        7,
+        24,
+        79.75401306152344,
+        1.0
+      ],
+      [
+        7,
+        24,
+        80.2834243774414,
+        1.0
+      ],
+      [
+        7,
+        24,
+        80.32085418701172,
+        1.0
+      ],
+      [
+        7,
+        24,
+        80.28877258300781,
+        1.0
+      ],
+      [
+        7,
+        24,
+        80.34224700927734,
+        1.0
+      ],
+      [
+        7,
+        24,
+        80.16043090820312,
+        1.0
+      ],
+      [
+        6,
+        24,
+        80.20320892333984,
+        1.0
+      ],
+      [
+        7,
+        24,
+        80.2727279663086,
+        1.0
+      ],
+      [
+        9,
+        26,
+        83.45989227294922,
+        1.0
+      ],
+      [
+        31,
+        32,
+        73.94652557373047,
+        1.0
+      ],
+      [
+        33,
+        32,
+        69.0,
+        1.0
+      ],
+      [
+        33,
+        32,
+        68.75936126708984,
+        1.0
+      ],
+      [
+        33,
+        32,
+        68.88770294189453,
+        1.0
+      ],
+      [
+        33,
+        32,
+        69.50801849365234,
+        1.0
+      ],
+      [
+        33,
+        32,
+        71.48663330078125,
+        1.0
+      ],
+      [
+        33,
+        32,
+        71.57218933105469,
+        1.0
+      ],
+      [
+        33,
+        32,
+        71.79144287109375,
+        1.0
+      ],
+      [
+        33,
+        31,
+        71.89839935302734,
+        1.0
+      ],
+      [
+        33,
+        32,
+        71.64705657958984,
+        1.0
+      ],
+      [
+        33,
+        31,
+        71.14973449707031,
+        1.0
+      ]
+    ],
+    "template_hash": "2acbe8672ff4e398ad181c4c349cf90a999888b8a65758a0f89ad130300947e0"
+  },
+  "res://art/characters/vale_combate_v6pal/hit/hit_east_sheet.png": {
+    "algorithm": 4,
+    "direction": "east",
+    "size": 112,
+    "anchors": [
+      [
+        32,
+        32,
+        75.88235473632812,
+        1.0
+      ],
+      [
+        32,
+        32,
+        71.5828857421875,
+        1.0
+      ],
+      [
+        31,
+        32,
+        66.278076171875,
+        1.0
+      ],
+      [
+        31,
+        32,
+        65.40641784667969,
+        1.0
+      ],
+      [
+        31,
+        32,
+        64.0,
+        1.0
+      ],
+      [
+        18,
+        32,
+        100.25668334960938,
+        1.0
+      ],
+      [
+        16,
+        31,
+        99.05347442626953,
+        1.0
+      ],
+      [
+        19,
+        29,
+        99.61497497558594,
+        1.0
+      ],
+      [
+        15,
+        30,
+        95.75936126708984,
+        1.0
+      ],
+      [
+        15,
+        30,
+        94.70053100585938,
+        1.0
+      ],
+      [
+        14,
+        31,
+        93.51336669921875,
+        1.0
+      ],
+      [
+        15,
+        30,
+        87.35829162597656,
+        1.0
+      ],
+      [
+        15,
+        30,
+        82.32085418701172,
+        1.0
+      ],
+      [
+        16,
+        30,
+        79.28877258300781,
+        1.0
+      ],
+      [
+        16,
+        30,
+        78.16043090820312,
+        1.0
+      ],
+      [
+        16,
+        30,
+        76.6951904296875,
+        1.0
+      ],
+      [
+        18,
+        31,
+        72.78074645996094,
+        1.0
+      ],
+      [
+        25,
+        31,
+        64.1711196899414,
+        1.0
+      ],
+      [
+        29,
+        32,
+        64.78074645996094,
+        1.0
+      ],
+      [
+        32,
+        32,
+        68.64705657958984,
+        1.0
+      ],
+      [
+        31,
+        32,
+        63.866310119628906,
+        1.0
+      ],
+      [
+        32,
+        32,
+        66.18181610107422,
+        1.0
+      ],
+      [
+        31,
+        32,
+        64.57218933105469,
+        1.0
+      ],
+      [
+        31,
+        32,
+        63.71657943725586,
+        1.0
+      ],
+      [
+        31,
+        32,
+        67.80748748779297,
+        1.0
+      ],
+      [
+        32,
+        32,
+        68.34759521484375,
+        1.0
+      ],
+      [
+        32,
+        31,
+        67.97860717773438,
+        1.0
+      ],
+      [
+        32,
+        32,
+        69.22994995117188,
+        1.0
+      ],
+      [
+        32,
+        32,
+        72.59358215332031,
+        1.0
+      ],
+      [
+        19,
+        30,
+        94.23529052734375,
+        1.0
+      ],
+      [
+        19,
+        30,
+        91.82353210449219,
+        1.0
+      ],
+      [
+        16,
+        31,
+        93.25133514404297,
+        1.0
+      ],
+      [
+        16,
+        31,
+        95.1390380859375,
+        1.0
+      ],
+      [
+        15,
+        32,
+        96.54545593261719,
+        1.0
+      ],
+      [
+        15,
+        32,
+        96.6898422241211,
+        1.0
+      ],
+      [
+        16,
+        31,
+        94.89305114746094,
+        1.0
+      ],
+      [
+        16,
+        31,
+        94.2834243774414,
+        1.0
+      ],
+      [
+        16,
+        31,
+        92.19251251220703,
+        1.0
+      ],
+      [
+        17,
+        31,
+        87.50801849365234,
+        1.0
+      ],
+      [
+        21,
+        31,
+        76.36898040771484,
+        1.0
+      ],
+      [
+        25,
+        31,
+        69.73262023925781,
+        1.0
+      ],
+      [
+        31,
+        32,
+        65.5775375366211,
+        1.0
+      ],
+      [
+        31,
+        32,
+        62.903743743896484,
+        1.0
+      ],
+      [
+        31,
+        32,
+        66.59358215332031,
+        1.0
+      ],
+      [
+        32,
+        32,
+        64.52941131591797,
+        1.0
+      ],
+      [
+        32,
+        32,
+        66.50801849365234,
+        1.0
+      ],
+      [
+        31,
+        32,
+        63.95186996459961,
+        1.0
+      ],
+      [
+        32,
+        32,
+        68.82353210449219,
+        1.0
+      ],
+      [
+        31,
+        32,
+        70.7165756225586,
+        1.0
+      ]
+    ],
+    "template_hash": "2acbe8672ff4e398ad181c4c349cf90a999888b8a65758a0f89ad130300947e0"
+  },
+  "res://art/characters/vale_combate_v6pal/hit/hit_north-east_sheet.png": {
+    "algorithm": 4,
+    "direction": "north-east",
+    "size": 112,
+    "anchors": [
+      [
+        31,
+        31,
+        63.73958206176758,
+        1.0
+      ],
+      [
+        32,
+        31,
+        54.07291793823242,
+        1.0
+      ],
+      [
+        32,
+        31,
+        50.97916793823242,
+        1.0
+      ],
+      [
+        32,
+        31,
+        51.66145706176758,
+        1.0
+      ],
+      [
+        24,
+        31,
+        44.6875,
+        1.0
+      ],
+      [
+        17,
+        31,
+        51.01041793823242,
+        1.0
+      ],
+      [
+        16,
+        32,
+        51.75520706176758,
+        1.0
+      ],
+      [
+        15,
+        32,
+        53.02083206176758,
+        1.0
+      ],
+      [
+        15,
+        32,
+        50.97395706176758,
+        1.0
+      ],
+      [
+        15,
+        32,
+        51.72916793823242,
+        1.0
+      ],
+      [
+        15,
+        32,
+        51.53125,
+        1.0
+      ],
+      [
+        15,
+        32,
+        50.13541793823242,
+        1.0
+      ],
+      [
+        15,
+        32,
+        50.11979293823242,
+        1.0
+      ],
+      [
+        17,
+        31,
+        51.984375,
+        1.0
+      ],
+      [
+        21,
+        31,
+        47.359375,
+        1.0
+      ],
+      [
+        26,
+        31,
+        36.546875,
+        1.0
+      ],
+      [
+        30,
+        31,
+        45.18229293823242,
+        1.0
+      ],
+      [
+        32,
+        31,
+        50.265625,
+        1.0
+      ],
+      [
+        32,
+        32,
+        50.22916793823242,
+        1.0
+      ],
+      [
+        32,
+        31,
+        51.03125,
+        1.0
+      ],
+      [
+        32,
+        31,
+        48.72395706176758,
+        1.0
+      ],
+      [
+        32,
+        31,
+        47.890625,
+        1.0
+      ],
+      [
+        32,
+        31,
+        47.22395706176758,
+        1.0
+      ],
+      [
+        32,
+        31,
+        50.609375,
+        1.0
+      ],
+      [
+        32,
+        31,
+        51.10416793823242,
+        1.0
+      ],
+      [
+        32,
+        31,
+        50.17708206176758,
+        1.0
+      ],
+      [
+        32,
+        31,
+        49.71354293823242,
+        1.0
+      ],
+      [
+        32,
+        31,
+        51.44791793823242,
+        1.0
+      ],
+      [
+        32,
+        31,
+        51.30208206176758,
+        1.0
+      ],
+      [
+        18,
+        31,
+        52.13541793823242,
+        1.0
+      ],
+      [
+        17,
+        31,
+        52.11979293823242,
+        1.0
+      ],
+      [
+        16,
+        32,
+        55.25520706176758,
+        1.0
+      ],
+      [
+        15,
+        32,
+        51.55208206176758,
+        1.0
+      ],
+      [
+        15,
+        32,
+        51.01041793823242,
+        1.0
+      ],
+      [
+        15,
+        32,
+        50.35416793823242,
+        1.0
+      ],
+      [
+        15,
+        32,
+        49.53645706176758,
+        1.0
+      ],
+      [
+        15,
+        32,
+        48.953125,
+        1.0
+      ],
+      [
+        17,
+        31,
+        51.640625,
+        1.0
+      ],
+      [
+        19,
+        31,
+        49.88541793823242,
+        1.0
+      ],
+      [
+        26,
+        31,
+        36.84375,
+        1.0
+      ],
+      [
+        28,
+        31,
+        37.27604293823242,
+        1.0
+      ],
+      [
+        32,
+        32,
+        51.54166793823242,
+        1.0
+      ],
+      [
+        32,
+        31,
+        50.25,
+        1.0
+      ],
+      [
+        32,
+        31,
+        50.265625,
+        1.0
+      ],
+      [
+        32,
+        31,
+        50.46875,
+        1.0
+      ],
+      [
+        32,
+        31,
+        47.734375,
+        1.0
+      ],
+      [
+        32,
+        31,
+        48.89583206176758,
+        1.0
+      ],
+      [
+        32,
+        31,
+        49.75520706176758,
+        1.0
+      ],
+      [
+        32,
+        31,
+        51.0,
+        1.0
+      ]
+    ],
+    "template_hash": "2acbe8672ff4e398ad181c4c349cf90a999888b8a65758a0f89ad130300947e0"
+  },
+  "res://art/characters/vale_combate_v6pal/hit/hit_north-west_sheet.png": {
+    "algorithm": 4,
+    "direction": "north-west",
+    "size": 112,
+    "anchors": [
+      [
+        34,
+        31,
+        61.41145706176758,
+        1.0
+      ],
+      [
+        33,
+        31,
+        49.61458206176758,
+        1.0
+      ],
+      [
+        33,
+        31,
+        49.15625,
+        1.0
+      ],
+      [
+        33,
+        31,
+        49.72916793823242,
+        1.0
+      ],
+      [
+        40,
+        31,
+        50.40104293823242,
+        1.0
+      ],
+      [
+        47,
+        31,
+        53.5625,
+        1.0
+      ],
+      [
+        48,
+        32,
+        54.13020706176758,
+        1.0
+      ],
+      [
+        49,
+        32,
+        56.984375,
+        1.0
+      ],
+      [
+        50,
+        32,
+        57.91666793823242,
+        1.0
+      ],
+      [
+        50,
+        32,
+        55.13541793823242,
+        1.0
+      ],
+      [
+        50,
+        32,
+        55.58333206176758,
+        1.0
+      ],
+      [
+        50,
+        32,
+        56.18229293823242,
+        1.0
+      ],
+      [
+        50,
+        32,
+        57.32291793823242,
+        1.0
+      ],
+      [
+        47,
+        32,
+        58.43229293823242,
+        1.0
+      ],
+      [
+        44,
+        31,
+        51.5625,
+        1.0
+      ],
+      [
+        38,
+        31,
+        40.328125,
+        1.0
+      ],
+      [
+        35,
+        31,
+        40.90104293823242,
+        1.0
+      ],
+      [
+        33,
+        31,
+        48.77083206176758,
+        1.0
+      ],
+      [
+        33,
+        31,
+        49.36458206176758,
+        1.0
+      ],
+      [
+        33,
+        31,
+        49.015625,
+        1.0
+      ],
+      [
+        33,
+        31,
+        49.10416793823242,
+        1.0
+      ],
+      [
+        33,
+        31,
+        50.125,
+        1.0
+      ],
+      [
+        33,
+        31,
+        48.9375,
+        1.0
+      ],
+      [
+        33,
+        31,
+        49.26041793823242,
+        1.0
+      ],
+      [
+        33,
+        31,
+        49.00520706176758,
+        1.0
+      ],
+      [
+        33,
+        31,
+        48.296875,
+        1.0
+      ],
+      [
+        33,
+        31,
+        48.234375,
+        1.0
+      ],
+      [
+        33,
+        31,
+        49.5625,
+        1.0
+      ],
+      [
+        33,
+        31,
+        49.59895706176758,
+        1.0
+      ],
+      [
+        46,
+        31,
+        53.18229293823242,
+        1.0
+      ],
+      [
+        47,
+        32,
+        56.140625,
+        1.0
+      ],
+      [
+        49,
+        32,
+        55.21354293823242,
+        1.0
+      ],
+      [
+        49,
+        32,
+        58.47395706176758,
+        1.0
+      ],
+      [
+        50,
+        32,
+        54.6875,
+        1.0
+      ],
+      [
+        50,
+        32,
+        54.4375,
+        1.0
+      ],
+      [
+        50,
+        32,
+        56.44791793823242,
+        1.0
+      ],
+      [
+        50,
+        32,
+        56.80208206176758,
+        1.0
+      ],
+      [
+        47,
+        32,
+        55.79166793823242,
+        1.0
+      ],
+      [
+        45,
+        31,
+        53.05208206176758,
+        1.0
+      ],
+      [
+        39,
+        31,
+        45.47916793823242,
+        1.0
+      ],
+      [
+        36,
+        31,
+        38.05208206176758,
+        1.0
+      ],
+      [
+        33,
+        31,
+        47.59375,
+        1.0
+      ],
+      [
+        33,
+        31,
+        47.39583206176758,
+        1.0
+      ],
+      [
+        33,
+        31,
+        49.44270706176758,
+        1.0
+      ],
+      [
+        33,
+        31,
+        50.5,
+        1.0
+      ],
+      [
+        33,
+        31,
+        50.71875,
+        1.0
+      ],
+      [
+        33,
+        31,
+        50.64583206176758,
+        1.0
+      ],
+      [
+        33,
+        31,
+        52.31770706176758,
+        1.0
+      ],
+      [
+        33,
+        31,
+        49.703125,
+        1.0
+      ]
+    ],
+    "template_hash": "2acbe8672ff4e398ad181c4c349cf90a999888b8a65758a0f89ad130300947e0"
+  },
+  "res://art/characters/vale_combate_v6pal/hit/hit_south-east_sheet.png": {
+    "algorithm": 4,
+    "direction": "south-east",
+    "size": 112,
+    "anchors": [
+      [
+        32,
+        30,
+        57.08121871948242,
+        1.0
+      ],
+      [
+        32,
+        31,
+        60.15228271484375,
+        1.0
+      ],
+      [
+        32,
+        31,
+        60.55837631225586,
+        1.0
+      ],
+      [
+        26,
+        29,
+        82.5025405883789,
+        1.0
+      ],
+      [
+        18,
+        29,
+        111.66497802734375,
+        1.0
+      ],
+      [
+        17,
+        29,
+        107.55329895019531,
+        1.0
+      ],
+      [
+        17,
+        29,
+        107.8680191040039,
+        1.0
+      ],
+      [
+        17,
+        29,
+        107.03553009033203,
+        1.0
+      ],
+      [
+        16,
+        29,
+        101.21827697753906,
+        1.0
+      ],
+      [
+        17,
+        31,
+        65.75634765625,
+        1.0
+      ],
+      [
+        17,
+        32,
+        71.34010314941406,
+        1.0
+      ],
+      [
+        18,
+        31,
+        69.634521484375,
+        1.0
+      ],
+      [
+        18,
+        31,
+        67.78172302246094,
+        1.0
+      ],
+      [
+        18,
+        31,
+        67.71573638916016,
+        1.0
+      ],
+      [
+        18,
+        31,
+        66.16243743896484,
+        1.0
+      ],
+      [
+        23,
+        30,
+        63.08121871948242,
+        1.0
+      ],
+      [
+        28,
+        30,
+        64.38578796386719,
+        1.0
+      ],
+      [
+        32,
+        32,
+        64.54822540283203,
+        1.0
+      ],
+      [
+        32,
+        31,
+        67.51268768310547,
+        1.0
+      ],
+      [
+        32,
+        31,
+        62.314720153808594,
+        1.0
+      ],
+      [
+        32,
+        31,
+        64.00507354736328,
+        1.0
+      ],
+      [
+        32,
+        30,
+        66.4365463256836,
+        1.0
+      ],
+      [
+        32,
+        30,
+        65.22335052490234,
+        1.0
+      ],
+      [
+        32,
+        30,
+        66.0507583618164,
+        1.0
+      ],
+      [
+        32,
+        31,
+        64.97461700439453,
+        1.0
+      ],
+      [
+        32,
+        31,
+        62.9035530090332,
+        1.0
+      ],
+      [
+        32,
+        31,
+        62.61928939819336,
+        1.0
+      ],
+      [
+        32,
+        31,
+        62.47208023071289,
+        1.0
+      ],
+      [
+        32,
+        31,
+        63.70050811767578,
+        1.0
+      ],
+      [
+        32,
+        31,
+        61.807106018066406,
+        1.0
+      ],
+      [
+        32,
+        31,
+        62.284263610839844,
+        1.0
+      ],
+      [
+        16,
+        29,
+        109.9289321899414,
+        1.0
+      ],
+      [
+        16,
+        29,
+        107.83756256103516,
+        1.0
+      ],
+      [
+        16,
+        29,
+        106.17259216308594,
+        1.0
+      ],
+      [
+        16,
+        29,
+        106.80203247070312,
+        1.0
+      ],
+      [
+        16,
+        29,
+        106.9289321899414,
+        1.0
+      ],
+      [
+        16,
+        29,
+        106.00507354736328,
+        1.0
+      ],
+      [
+        16,
+        29,
+        106.4974594116211,
+        1.0
+      ],
+      [
+        17,
+        29,
+        107.15736389160156,
+        1.0
+      ],
+      [
+        25,
+        29,
+        82.95938873291016,
+        1.0
+      ],
+      [
+        29,
+        30,
+        67.16243743896484,
+        1.0
+      ],
+      [
+        32,
+        32,
+        65.0710678100586,
+        1.0
+      ],
+      [
+        32,
+        31,
+        63.832489013671875,
+        1.0
+      ],
+      [
+        32,
+        31,
+        63.11675262451172,
+        1.0
+      ],
+      [
+        32,
+        31,
+        65.62944030761719,
+        1.0
+      ],
+      [
+        32,
+        30,
+        65.35025024414062,
+        1.0
+      ],
+      [
+        32,
+        30,
+        65.59391021728516,
+        1.0
+      ],
+      [
+        32,
+        30,
+        65.4974594116211,
+        1.0
+      ],
+      [
+        32,
+        31,
+        64.05583953857422,
+        1.0
+      ]
+    ],
+    "template_hash": "2acbe8672ff4e398ad181c4c349cf90a999888b8a65758a0f89ad130300947e0"
+  },
+  "res://art/characters/vale_combate_v6pal/hit/hit_south-west_sheet.png": {
+    "algorithm": 4,
+    "direction": "south-west",
+    "size": 112,
+    "anchors": [
+      [
+        32,
+        31,
+        64.03553009033203,
+        1.0
+      ],
+      [
+        32,
+        31,
+        62.314720153808594,
+        1.0
+      ],
+      [
+        32,
+        31,
+        62.0,
+        1.0
+      ],
+      [
+        38,
+        29,
+        81.97461700439453,
+        1.0
+      ],
+      [
+        45,
+        29,
+        111.79187774658203,
+        1.0
+      ],
+      [
+        46,
+        29,
+        108.95431518554688,
+        1.0
+      ],
+      [
+        46,
+        29,
+        110.75634765625,
+        1.0
+      ],
+      [
+        47,
+        29,
+        110.68020629882812,
+        1.0
+      ],
+      [
+        47,
+        29,
+        105.13705444335938,
+        1.0
+      ],
+      [
+        46,
+        31,
+        73.64974975585938,
+        1.0
+      ],
+      [
+        46,
+        32,
+        72.47715759277344,
+        1.0
+      ],
+      [
+        46,
+        31,
+        71.09644317626953,
+        1.0
+      ],
+      [
+        46,
+        31,
+        70.60913848876953,
+        1.0
+      ],
+      [
+        46,
+        31,
+        69.51268768310547,
+        1.0
+      ],
+      [
+        46,
+        31,
+        68.23857879638672,
+        1.0
+      ],
+      [
+        41,
+        31,
+        64.121826171875,
+        1.0
+      ],
+      [
+        36,
+        30,
+        69.60913848876953,
+        1.0
+      ],
+      [
+        32,
+        32,
+        69.69035339355469,
+        1.0
+      ],
+      [
+        32,
+        31,
+        72.32994842529297,
+        1.0
+      ],
+      [
+        32,
+        31,
+        67.76142120361328,
+        1.0
+      ],
+      [
+        32,
+        31,
+        68.39594268798828,
+        1.0
+      ],
+      [
+        32,
+        30,
+        69.89340209960938,
+        1.0
+      ],
+      [
+        32,
+        30,
+        70.02538299560547,
+        1.0
+      ],
+      [
+        32,
+        30,
+        70.1116714477539,
+        1.0
+      ],
+      [
+        32,
+        31,
+        70.1827392578125,
+        1.0
+      ],
+      [
+        32,
+        31,
+        68.02030181884766,
+        1.0
+      ],
+      [
+        32,
+        31,
+        68.37055969238281,
+        1.0
+      ],
+      [
+        32,
+        31,
+        68.9492416381836,
+        1.0
+      ],
+      [
+        32,
+        31,
+        67.66497802734375,
+        1.0
+      ],
+      [
+        32,
+        31,
+        68.1319808959961,
+        1.0
+      ],
+      [
+        32,
+        31,
+        68.365478515625,
+        1.0
+      ],
+      [
+        46,
+        28,
+        112.91370391845703,
+        1.0
+      ],
+      [
+        50,
+        29,
+        110.47715759277344,
+        1.0
+      ],
+      [
+        48,
+        29,
+        110.30964660644531,
+        1.0
+      ],
+      [
+        48,
+        29,
+        110.85279083251953,
+        1.0
+      ],
+      [
+        48,
+        29,
+        111.02538299560547,
+        1.0
+      ],
+      [
+        48,
+        29,
+        110.5025405883789,
+        1.0
+      ],
+      [
+        48,
+        29,
+        110.3807144165039,
+        1.0
+      ],
+      [
+        46,
+        29,
+        109.96446990966797,
+        1.0
+      ],
+      [
+        38,
+        29,
+        88.74111938476562,
+        1.0
+      ],
+      [
+        35,
+        30,
+        69.83756256103516,
+        1.0
+      ],
+      [
+        32,
+        32,
+        72.41117095947266,
+        1.0
+      ],
+      [
+        32,
+        31,
+        69.35025024414062,
+        1.0
+      ],
+      [
+        32,
+        31,
+        68.41624450683594,
+        1.0
+      ],
+      [
+        32,
+        31,
+        70.34517669677734,
+        1.0
+      ],
+      [
+        32,
+        31,
+        69.51776885986328,
+        1.0
+      ],
+      [
+        32,
+        30,
+        69.64974975585938,
+        1.0
+      ],
+      [
+        32,
+        30,
+        70.25888061523438,
+        1.0
+      ],
+      [
+        32,
+        31,
+        68.9390869140625,
+        1.0
+      ]
+    ],
+    "template_hash": "2acbe8672ff4e398ad181c4c349cf90a999888b8a65758a0f89ad130300947e0"
+  },
+  "res://art/characters/vale_combate_v6pal/hit/hit_west_sheet.png": {
+    "algorithm": 4,
+    "direction": "west",
+    "size": 112,
+    "anchors": [
+      [
+        33,
+        32,
+        74.83422088623047,
+        1.0
+      ],
+      [
+        33,
+        32,
+        73.65775299072266,
+        1.0
+      ],
+      [
+        32,
+        32,
+        67.19786071777344,
+        1.0
+      ],
+      [
+        32,
+        32,
+        65.1336898803711,
+        1.0
+      ],
+      [
+        32,
+        32,
+        66.21390533447266,
+        1.0
+      ],
+      [
+        47,
+        29,
+        96.67379760742188,
+        1.0
+      ],
+      [
+        48,
+        29,
+        90.76470947265625,
+        1.0
+      ],
+      [
+        49,
+        29,
+        94.44384765625,
+        1.0
+      ],
+      [
+        49,
+        29,
+        93.26203155517578,
+        1.0
+      ],
+      [
+        50,
+        30,
+        89.95187377929688,
+        1.0
+      ],
+      [
+        50,
+        30,
+        89.93048095703125,
+        1.0
+      ],
+      [
+        49,
+        30,
+        86.02139282226562,
+        1.0
+      ],
+      [
+        49,
+        30,
+        81.73262023925781,
+        1.0
+      ],
+      [
+        50,
+        30,
+        76.87700653076172,
+        1.0
+      ],
+      [
+        48,
+        30,
+        76.98930358886719,
+        1.0
+      ],
+      [
+        48,
+        30,
+        72.80748748779297,
+        1.0
+      ],
+      [
+        46,
+        30,
+        67.74331665039062,
+        1.0
+      ],
+      [
+        39,
+        31,
+        64.33155059814453,
+        1.0
+      ],
+      [
+        35,
+        32,
+        69.26737976074219,
+        1.0
+      ],
+      [
+        33,
+        32,
+        69.51871490478516,
+        1.0
+      ],
+      [
+        32,
+        32,
+        69.52406311035156,
+        1.0
+      ],
+      [
+        32,
+        32,
+        68.87165832519531,
+        1.0
+      ],
+      [
+        33,
+        32,
+        67.6951904296875,
+        1.0
+      ],
+      [
+        32,
+        32,
+        66.71122741699219,
+        1.0
+      ],
+      [
+        32,
+        32,
+        68.89839935302734,
+        1.0
+      ],
+      [
+        32,
+        31,
+        70.55615234375,
+        1.0
+      ],
+      [
+        33,
+        31,
+        69.65240478515625,
+        1.0
+      ],
+      [
+        32,
+        32,
+        68.8663101196289,
+        1.0
+      ],
+      [
+        32,
+        32,
+        74.81283569335938,
+        1.0
+      ],
+      [
+        46,
+        29,
+        96.89839935302734,
+        1.0
+      ],
+      [
+        45,
+        30,
+        95.06951904296875,
+        1.0
+      ],
+      [
+        49,
+        31,
+        92.78609466552734,
+        1.0
+      ],
+      [
+        49,
+        31,
+        91.65240478515625,
+        1.0
+      ],
+      [
+        49,
+        31,
+        92.06951904296875,
+        1.0
+      ],
+      [
+        49,
+        31,
+        92.75401306152344,
+        1.0
+      ],
+      [
+        49,
+        31,
+        91.87165832519531,
+        1.0
+      ],
+      [
+        49,
+        31,
+        91.93582916259766,
+        1.0
+      ],
+      [
+        48,
+        30,
+        88.63636016845703,
+        1.0
+      ],
+      [
+        45,
+        30,
+        88.53475952148438,
+        1.0
+      ],
+      [
+        42,
+        31,
+        71.5508041381836,
+        1.0
+      ],
+      [
+        39,
+        31,
+        67.36898040771484,
+        1.0
+      ],
+      [
+        33,
+        32,
+        70.05882263183594,
+        1.0
+      ],
+      [
+        33,
+        32,
+        69.44384765625,
+        1.0
+      ],
+      [
+        33,
+        32,
+        68.49198150634766,
+        1.0
+      ],
+      [
+        32,
+        32,
+        67.1711196899414,
+        1.0
+      ],
+      [
+        32,
+        32,
+        65.90908813476562,
+        1.0
+      ],
+      [
+        32,
+        32,
+        64.73796844482422,
+        1.0
+      ],
+      [
+        33,
+        32,
+        70.94117736816406,
+        1.0
+      ],
+      [
+        33,
+        31,
+        69.76470947265625,
+        1.0
+      ]
+    ],
+    "template_hash": "2acbe8672ff4e398ad181c4c349cf90a999888b8a65758a0f89ad130300947e0"
+  },
+  "res://art/characters/vale_combate_v6pal/slash_combo/slash_combo_east_sheet.png": {
+    "algorithm": 4,
+    "direction": "east",
+    "size": 112,
+    "anchors": [
+      [
+        31,
+        32,
+        71.4171142578125,
+        1.0
+      ],
+      [
+        32,
+        31,
+        65.89839935302734,
+        1.0
+      ],
+      [
+        31,
+        31,
+        65.5775375366211,
+        1.0
+      ],
+      [
+        31,
+        31,
+        63.93048095703125,
+        1.0
+      ],
+      [
+        31,
+        31,
+        61.63101577758789,
+        1.0
+      ],
+      [
+        31,
+        31,
+        61.97861099243164,
+        1.0
+      ],
+      [
+        31,
+        31,
+        62.935829162597656,
+        1.0
+      ],
+      [
+        31,
+        31,
+        63.71123123168945,
+        1.0
+      ],
+      [
+        32,
+        31,
+        67.44384765625,
+        1.0
+      ],
+      [
+        31,
+        32,
+        64.5882339477539,
+        1.0
+      ],
+      [
+        32,
+        32,
+        71.34759521484375,
+        1.0
+      ],
+      [
+        35,
+        31,
+        75.21925354003906,
+        1.0
+      ],
+      [
+        35,
+        32,
+        76.1711196899414,
+        1.0
+      ],
+      [
+        35,
+        31,
+        74.82353210449219,
+        1.0
+      ],
+      [
+        34,
+        32,
+        73.6898422241211,
+        1.0
+      ],
+      [
+        30,
+        32,
+        75.06951904296875,
+        1.0
+      ],
+      [
+        30,
+        33,
+        73.93048095703125,
+        1.0
+      ],
+      [
+        30,
+        32,
+        72.35294342041016,
+        1.0
+      ],
+      [
+        30,
+        32,
+        72.81283569335938,
+        1.0
+      ],
+      [
+        29,
+        32,
+        77.60427856445312,
+        1.0
+      ],
+      [
+        30,
+        31,
+        81.4491958618164,
+        1.0
+      ],
+      [
+        30,
+        31,
+        81.15508270263672,
+        1.0
+      ],
+      [
+        32,
+        31,
+        86.4384994506836,
+        1.0
+      ],
+      [
+        41,
+        36,
+        77.56684112548828,
+        1.0
+      ],
+      [
+        41,
+        36,
+        76.09626007080078,
+        1.0
+      ],
+      [
+        41,
+        36,
+        73.01069641113281,
+        1.0
+      ],
+      [
+        41,
+        36,
+        73.25133514404297,
+        1.0
+      ],
+      [
+        41,
+        36,
+        73.70587921142578,
+        1.0
+      ],
+      [
+        41,
+        36,
+        73.77005004882812,
+        1.0
+      ],
+      [
+        41,
+        36,
+        75.81283569335938,
+        1.0
+      ],
+      [
+        41,
+        36,
+        76.01604461669922,
+        1.0
+      ],
+      [
+        41,
+        36,
+        75.0,
+        1.0
+      ],
+      [
+        41,
+        36,
+        74.79144287109375,
+        1.0
+      ],
+      [
+        40,
+        35,
+        75.721923828125,
+        1.0
+      ],
+      [
+        38,
+        35,
+        82.04812622070312,
+        1.0
+      ],
+      [
+        31,
+        32,
+        64.8288803100586,
+        1.0
+      ],
+      [
+        31,
+        32,
+        65.93048095703125,
+        1.0
+      ],
+      [
+        31,
+        32,
+        69.29946899414062,
+        1.0
+      ],
+      [
+        31,
+        31,
+        65.33155059814453,
+        1.0
+      ],
+      [
+        31,
+        31,
+        64.23529052734375,
+        1.0
+      ],
+      [
+        31,
+        31,
+        62.866310119628906,
+        1.0
+      ],
+      [
+        31,
+        31,
+        60.03743362426758,
+        1.0
+      ],
+      [
+        31,
+        31,
+        62.6363639831543,
+        1.0
+      ],
+      [
+        31,
+        31,
+        62.85026550292969,
+        1.0
+      ],
+      [
+        31,
+        31,
+        64.47593688964844,
+        1.0
+      ],
+      [
+        31,
+        32,
+        65.16043090820312,
+        1.0
+      ],
+      [
+        31,
+        32,
+        62.65240478515625,
+        1.0
+      ],
+      [
+        31,
+        32,
+        64.62567138671875,
+        1.0
+      ],
+      [
+        31,
+        32,
+        67.66310119628906,
+        1.0
+      ]
+    ],
+    "template_hash": "2acbe8672ff4e398ad181c4c349cf90a999888b8a65758a0f89ad130300947e0"
+  },
+  "res://art/characters/vale_combate_v6pal/slash_combo/slash_combo_north-east_sheet.png": {
+    "algorithm": 4,
+    "direction": "north-east",
+    "size": 112,
+    "anchors": [
+      [
+        31,
+        31,
+        63.49479293823242,
+        1.0
+      ],
+      [
+        32,
+        31,
+        57.109375,
+        1.0
+      ],
+      [
+        32,
+        31,
+        53.8125,
+        1.0
+      ],
+      [
+        32,
+        32,
+        54.52083206176758,
+        1.0
+      ],
+      [
+        32,
+        31,
+        51.0,
+        1.0
+      ],
+      [
+        32,
+        31,
+        51.6875,
+        1.0
+      ],
+      [
+        32,
+        31,
+        50.71354293823242,
+        1.0
+      ],
+      [
+        31,
+        31,
+        45.953125,
+        1.0
+      ],
+      [
+        30,
+        31,
+        49.671875,
+        1.0
+      ],
+      [
+        36,
+        31,
+        47.43229293823242,
+        1.0
+      ],
+      [
+        36,
+        31,
+        47.69270706176758,
+        1.0
+      ],
+      [
+        36,
+        31,
+        51.53125,
+        1.0
+      ],
+      [
+        36,
+        31,
+        52.671875,
+        1.0
+      ],
+      [
+        36,
+        31,
+        51.70833206176758,
+        1.0
+      ],
+      [
+        32,
+        31,
+        43.984375,
+        1.0
+      ],
+      [
+        30,
+        30,
+        43.875,
+        1.0
+      ],
+      [
+        34,
+        32,
+        57.06770706176758,
+        1.0
+      ],
+      [
+        34,
+        33,
+        58.44270706176758,
+        1.0
+      ],
+      [
+        34,
+        33,
+        57.296875,
+        1.0
+      ],
+      [
+        34,
+        33,
+        57.46354293823242,
+        1.0
+      ],
+      [
+        34,
+        33,
+        56.453125,
+        1.0
+      ],
+      [
+        33,
+        32,
+        47.50520706176758,
+        1.0
+      ],
+      [
+        33,
+        32,
+        55.46354293823242,
+        1.0
+      ],
+      [
+        33,
+        32,
+        56.03125,
+        1.0
+      ],
+      [
+        32,
+        32,
+        56.55729293823242,
+        1.0
+      ],
+      [
+        28,
+        29,
+        49.19791793823242,
+        1.0
+      ],
+      [
+        28,
+        29,
+        74.46353912353516,
+        1.0
+      ],
+      [
+        27,
+        29,
+        75.21353912353516,
+        1.0
+      ],
+      [
+        27,
+        29,
+        75.27083587646484,
+        1.0
+      ],
+      [
+        28,
+        29,
+        76.35416412353516,
+        1.0
+      ],
+      [
+        28,
+        29,
+        77.375,
+        1.0
+      ],
+      [
+        28,
+        29,
+        75.82291412353516,
+        1.0
+      ],
+      [
+        28,
+        29,
+        75.94271087646484,
+        1.0
+      ],
+      [
+        40,
+        27,
+        63.79166793823242,
+        1.0
+      ],
+      [
+        47,
+        28,
+        48.875,
+        1.0
+      ],
+      [
+        47,
+        27,
+        44.91145706176758,
+        1.0
+      ],
+      [
+        47,
+        27,
+        46.4375,
+        1.0
+      ],
+      [
+        47,
+        27,
+        46.5,
+        1.0
+      ],
+      [
+        47,
+        27,
+        46.15104293823242,
+        1.0
+      ],
+      [
+        47,
+        27,
+        46.97916793823242,
+        1.0
+      ],
+      [
+        47,
+        27,
+        46.90104293823242,
+        1.0
+      ],
+      [
+        35,
+        29,
+        41.015625,
+        1.0
+      ],
+      [
+        33,
+        30,
+        49.38541793823242,
+        1.0
+      ],
+      [
+        32,
+        31,
+        52.34895706176758,
+        1.0
+      ],
+      [
+        32,
+        31,
+        53.46354293823242,
+        1.0
+      ],
+      [
+        32,
+        31,
+        52.46875,
+        1.0
+      ],
+      [
+        32,
+        31,
+        49.9375,
+        1.0
+      ],
+      [
+        32,
+        31,
+        50.921875,
+        1.0
+      ],
+      [
+        32,
+        31,
+        50.47395706176758,
+        1.0
+      ]
+    ],
+    "template_hash": "2acbe8672ff4e398ad181c4c349cf90a999888b8a65758a0f89ad130300947e0"
+  },
+  "res://art/characters/vale_combate_v6pal/slash_combo/slash_combo_north-west_sheet.png": {
+    "algorithm": 4,
+    "direction": "north-west",
+    "size": 112,
+    "anchors": [
+      [
+        34,
+        31,
+        60.76041793823242,
+        1.0
+      ],
+      [
+        34,
+        31,
+        55.63020706176758,
+        1.0
+      ],
+      [
+        33,
+        31,
+        53.45833206176758,
+        1.0
+      ],
+      [
+        33,
+        31,
+        53.21354293823242,
+        1.0
+      ],
+      [
+        33,
+        31,
+        51.53645706176758,
+        1.0
+      ],
+      [
+        33,
+        31,
+        54.29166793823242,
+        1.0
+      ],
+      [
+        33,
+        31,
+        53.03645706176758,
+        1.0
+      ],
+      [
+        34,
+        31,
+        49.61458206176758,
+        1.0
+      ],
+      [
+        34,
+        31,
+        47.41145706176758,
+        1.0
+      ],
+      [
+        28,
+        31,
+        54.65625,
+        1.0
+      ],
+      [
+        28,
+        31,
+        53.67708206176758,
+        1.0
+      ],
+      [
+        29,
+        31,
+        54.84895706176758,
+        1.0
+      ],
+      [
+        29,
+        31,
+        55.80729293823242,
+        1.0
+      ],
+      [
+        29,
+        31,
+        55.00520706176758,
+        1.0
+      ],
+      [
+        33,
+        31,
+        51.171875,
+        1.0
+      ],
+      [
+        34,
+        30,
+        50.79166793823242,
+        1.0
+      ],
+      [
+        30,
+        32,
+        61.42708206176758,
+        1.0
+      ],
+      [
+        29,
+        33,
+        59.41145706176758,
+        1.0
+      ],
+      [
+        29,
+        33,
+        59.84895706176758,
+        1.0
+      ],
+      [
+        29,
+        33,
+        61.10416793823242,
+        1.0
+      ],
+      [
+        30,
+        33,
+        59.14583206176758,
+        1.0
+      ],
+      [
+        31,
+        32,
+        56.98958206176758,
+        1.0
+      ],
+      [
+        32,
+        32,
+        58.609375,
+        1.0
+      ],
+      [
+        32,
+        32,
+        58.69791793823242,
+        1.0
+      ],
+      [
+        32,
+        32,
+        58.53125,
+        1.0
+      ],
+      [
+        37,
+        29,
+        54.640625,
+        1.0
+      ],
+      [
+        37,
+        29,
+        73.28646087646484,
+        1.0
+      ],
+      [
+        37,
+        29,
+        72.96353912353516,
+        1.0
+      ],
+      [
+        37,
+        29,
+        72.06771087646484,
+        1.0
+      ],
+      [
+        37,
+        29,
+        73.04166412353516,
+        1.0
+      ],
+      [
+        37,
+        29,
+        73.09375,
+        1.0
+      ],
+      [
+        37,
+        29,
+        73.38021087646484,
+        1.0
+      ],
+      [
+        37,
+        29,
+        73.296875,
+        1.0
+      ],
+      [
+        24,
+        27,
+        63.27083206176758,
+        1.0
+      ],
+      [
+        17,
+        28,
+        48.796875,
+        1.0
+      ],
+      [
+        18,
+        28,
+        53.03645706176758,
+        1.0
+      ],
+      [
+        18,
+        28,
+        52.484375,
+        1.0
+      ],
+      [
+        17,
+        27,
+        52.30729293823242,
+        1.0
+      ],
+      [
+        17,
+        27,
+        52.10416793823242,
+        1.0
+      ],
+      [
+        17,
+        27,
+        53.13020706176758,
+        1.0
+      ],
+      [
+        17,
+        27,
+        53.14583206176758,
+        1.0
+      ],
+      [
+        29,
+        29,
+        42.02604293823242,
+        1.0
+      ],
+      [
+        31,
+        30,
+        51.04166793823242,
+        1.0
+      ],
+      [
+        33,
+        31,
+        51.28125,
+        1.0
+      ],
+      [
+        33,
+        31,
+        50.46354293823242,
+        1.0
+      ],
+      [
+        33,
+        31,
+        50.53645706176758,
+        1.0
+      ],
+      [
+        33,
+        31,
+        50.61458206176758,
+        1.0
+      ],
+      [
+        33,
+        31,
+        52.52604293823242,
+        1.0
+      ],
+      [
+        33,
+        31,
+        51.0,
+        1.0
+      ]
+    ],
+    "template_hash": "2acbe8672ff4e398ad181c4c349cf90a999888b8a65758a0f89ad130300947e0"
+  },
+  "res://art/characters/vale_combate_v6pal/slash_combo/slash_combo_south-east_sheet.png": {
+    "algorithm": 4,
+    "direction": "south-east",
+    "size": 112,
+    "anchors": [
+      [
+        32,
+        30,
+        59.09136962890625,
+        1.0
+      ],
+      [
+        32,
+        31,
+        63.0609130859375,
+        1.0
+      ],
+      [
+        32,
+        31,
+        64.27410888671875,
+        1.0
+      ],
+      [
+        32,
+        31,
+        62.573604583740234,
+        1.0
+      ],
+      [
+        32,
+        32,
+        64.99492645263672,
+        1.0
+      ],
+      [
+        32,
+        32,
+        65.79695129394531,
+        1.0
+      ],
+      [
+        32,
+        31,
+        66.28933715820312,
+        1.0
+      ],
+      [
+        33,
+        31,
+        64.47208404541016,
+        1.0
+      ],
+      [
+        33,
+        31,
+        71.49238586425781,
+        1.0
+      ],
+      [
+        35,
+        31,
+        73.11675262451172,
+        1.0
+      ],
+      [
+        30,
+        33,
+        92.89847564697266,
+        1.0
+      ],
+      [
+        31,
+        31,
+        92.9289321899414,
+        1.0
+      ],
+      [
+        29,
+        32,
+        92.70050811767578,
+        1.0
+      ],
+      [
+        31,
+        31,
+        92.67512512207031,
+        1.0
+      ],
+      [
+        31,
+        31,
+        94.54822540283203,
+        1.0
+      ],
+      [
+        36,
+        34,
+        80.9492416381836,
+        1.0
+      ],
+      [
+        39,
+        34,
+        76.15736389160156,
+        1.0
+      ],
+      [
+        39,
+        34,
+        78.48223114013672,
+        1.0
+      ],
+      [
+        39,
+        34,
+        77.60405731201172,
+        1.0
+      ],
+      [
+        39,
+        34,
+        78.6852798461914,
+        1.0
+      ],
+      [
+        39,
+        34,
+        78.8172607421875,
+        1.0
+      ],
+      [
+        38,
+        33,
+        75.9898452758789,
+        1.0
+      ],
+      [
+        37,
+        32,
+        97.9492416381836,
+        1.0
+      ],
+      [
+        37,
+        31,
+        96.12690734863281,
+        1.0
+      ],
+      [
+        36,
+        31,
+        96.9390869140625,
+        1.0
+      ],
+      [
+        36,
+        31,
+        91.5025405883789,
+        1.0
+      ],
+      [
+        37,
+        30,
+        89.83756256103516,
+        1.0
+      ],
+      [
+        40,
+        33,
+        104.80203247070312,
+        1.0
+      ],
+      [
+        43,
+        38,
+        79.54314422607422,
+        1.0
+      ],
+      [
+        43,
+        37,
+        80.53807067871094,
+        1.0
+      ],
+      [
+        43,
+        37,
+        80.42131805419922,
+        1.0
+      ],
+      [
+        43,
+        37,
+        79.47715759277344,
+        1.0
+      ],
+      [
+        43,
+        37,
+        79.99492645263672,
+        1.0
+      ],
+      [
+        40,
+        35,
+        78.6954345703125,
+        1.0
+      ],
+      [
+        35,
+        32,
+        72.1116714477539,
+        1.0
+      ],
+      [
+        32,
+        30,
+        66.85279083251953,
+        1.0
+      ],
+      [
+        32,
+        31,
+        66.14720916748047,
+        1.0
+      ],
+      [
+        32,
+        31,
+        62.38578796386719,
+        1.0
+      ],
+      [
+        32,
+        31,
+        61.893402099609375,
+        1.0
+      ],
+      [
+        32,
+        31,
+        64.99492645263672,
+        1.0
+      ],
+      [
+        32,
+        32,
+        65.58882904052734,
+        1.0
+      ],
+      [
+        32,
+        32,
+        65.53299713134766,
+        1.0
+      ],
+      [
+        32,
+        31,
+        67.25888061523438,
+        1.0
+      ],
+      [
+        32,
+        31,
+        62.90863037109375,
+        1.0
+      ],
+      [
+        32,
+        31,
+        62.426395416259766,
+        1.0
+      ],
+      [
+        32,
+        31,
+        64.21827697753906,
+        1.0
+      ],
+      [
+        32,
+        31,
+        64.6192855834961,
+        1.0
+      ],
+      [
+        32,
+        31,
+        62.36040496826172,
+        1.0
+      ],
+      [
+        32,
+        31,
+        64.26396179199219,
+        1.0
+      ]
+    ],
+    "template_hash": "2acbe8672ff4e398ad181c4c349cf90a999888b8a65758a0f89ad130300947e0"
+  },
+  "res://art/characters/vale_combate_v6pal/slash_combo/slash_combo_south-west_sheet.png": {
+    "algorithm": 4,
+    "direction": "south-west",
+    "size": 112,
+    "anchors": [
+      [
+        32,
+        31,
+        69.29949188232422,
+        1.0
+      ],
+      [
+        32,
+        31,
+        64.21827697753906,
+        1.0
+      ],
+      [
+        32,
+        31,
+        68.95938873291016,
+        1.0
+      ],
+      [
+        32,
+        31,
+        68.81217956542969,
+        1.0
+      ],
+      [
+        32,
+        32,
+        67.878173828125,
+        1.0
+      ],
+      [
+        32,
+        32,
+        68.97969818115234,
+        1.0
+      ],
+      [
+        32,
+        32,
+        70.56852722167969,
+        1.0
+      ],
+      [
+        31,
+        31,
+        61.64466857910156,
+        1.0
+      ],
+      [
+        31,
+        31,
+        70.3756332397461,
+        1.0
+      ],
+      [
+        29,
+        31,
+        75.26903533935547,
+        1.0
+      ],
+      [
+        33,
+        33,
+        95.64974975585938,
+        1.0
+      ],
+      [
+        34,
+        32,
+        99.43147277832031,
+        1.0
+      ],
+      [
+        34,
+        32,
+        98.35533142089844,
+        1.0
+      ],
+      [
+        34,
+        32,
+        99.24365234375,
+        1.0
+      ],
+      [
+        34,
+        33,
+        99.58375549316406,
+        1.0
+      ],
+      [
+        27,
+        34,
+        87.3045654296875,
+        1.0
+      ],
+      [
+        25,
+        34,
+        77.85279083251953,
+        1.0
+      ],
+      [
+        25,
+        34,
+        80.878173828125,
+        1.0
+      ],
+      [
+        25,
+        34,
+        80.92385864257812,
+        1.0
+      ],
+      [
+        25,
+        34,
+        80.54822540283203,
+        1.0
+      ],
+      [
+        25,
+        34,
+        80.20812225341797,
+        1.0
+      ],
+      [
+        26,
+        33,
+        76.76649475097656,
+        1.0
+      ],
+      [
+        27,
+        32,
+        101.39086151123047,
+        1.0
+      ],
+      [
+        28,
+        31,
+        95.9898452758789,
+        1.0
+      ],
+      [
+        28,
+        31,
+        96.32994842529297,
+        1.0
+      ],
+      [
+        27,
+        31,
+        99.01522827148438,
+        1.0
+      ],
+      [
+        28,
+        31,
+        98.04061126708984,
+        1.0
+      ],
+      [
+        24,
+        33,
+        99.35025024414062,
+        1.0
+      ],
+      [
+        21,
+        38,
+        79.82233428955078,
+        1.0
+      ],
+      [
+        21,
+        37,
+        77.82233428955078,
+        1.0
+      ],
+      [
+        21,
+        37,
+        78.97461700439453,
+        1.0
+      ],
+      [
+        21,
+        37,
+        78.3147201538086,
+        1.0
+      ],
+      [
+        21,
+        37,
+        78.64466857910156,
+        1.0
+      ],
+      [
+        24,
+        35,
+        77.8883285522461,
+        1.0
+      ],
+      [
+        28,
+        32,
+        72.23350524902344,
+        1.0
+      ],
+      [
+        32,
+        31,
+        70.94416046142578,
+        1.0
+      ],
+      [
+        32,
+        31,
+        70.48223114013672,
+        1.0
+      ],
+      [
+        32,
+        31,
+        63.928932189941406,
+        1.0
+      ],
+      [
+        32,
+        31,
+        68.3045654296875,
+        1.0
+      ],
+      [
+        32,
+        31,
+        71.0609130859375,
+        1.0
+      ],
+      [
+        32,
+        32,
+        68.65989685058594,
+        1.0
+      ],
+      [
+        32,
+        32,
+        68.38578796386719,
+        1.0
+      ],
+      [
+        32,
+        31,
+        71.27410888671875,
+        1.0
+      ],
+      [
+        32,
+        31,
+        67.8883285522461,
+        1.0
+      ],
+      [
+        32,
+        31,
+        66.20304870605469,
+        1.0
+      ],
+      [
+        32,
+        31,
+        67.96446990966797,
+        1.0
+      ],
+      [
+        32,
+        31,
+        69.40101623535156,
+        1.0
+      ],
+      [
+        32,
+        31,
+        65.84771728515625,
+        1.0
+      ],
+      [
+        32,
+        31,
+        67.20304870605469,
+        1.0
+      ]
+    ],
+    "template_hash": "2acbe8672ff4e398ad181c4c349cf90a999888b8a65758a0f89ad130300947e0"
+  },
+  "res://art/characters/vale_combate_v6pal/slash_combo/slash_combo_west_sheet.png": {
+    "algorithm": 4,
+    "direction": "west",
+    "size": 112,
+    "anchors": [
+      [
+        33,
+        32,
+        69.95187377929688,
+        1.0
+      ],
+      [
+        32,
+        31,
+        67.02674102783203,
+        1.0
+      ],
+      [
+        33,
+        31,
+        66.9946517944336,
+        1.0
+      ],
+      [
+        33,
+        31,
+        65.16577911376953,
+        1.0
+      ],
+      [
+        33,
+        31,
+        66.65775299072266,
+        1.0
+      ],
+      [
+        33,
+        31,
+        65.67914581298828,
+        1.0
+      ],
+      [
+        33,
+        31,
+        65.57218933105469,
+        1.0
+      ],
+      [
+        33,
+        31,
+        67.5615005493164,
+        1.0
+      ],
+      [
+        33,
+        31,
+        68.32620239257812,
+        1.0
+      ],
+      [
+        33,
+        32,
+        66.10694885253906,
+        1.0
+      ],
+      [
+        32,
+        32,
+        72.96257019042969,
+        1.0
+      ],
+      [
+        30,
+        32,
+        73.9946517944336,
+        1.0
+      ],
+      [
+        30,
+        32,
+        74.02674102783203,
+        1.0
+      ],
+      [
+        30,
+        32,
+        73.70587921142578,
+        1.0
+      ],
+      [
+        30,
+        32,
+        77.95187377929688,
+        1.0
+      ],
+      [
+        33,
+        32,
+        77.22460174560547,
+        1.0
+      ],
+      [
+        34,
+        32,
+        75.48128509521484,
+        1.0
+      ],
+      [
+        34,
+        32,
+        75.25668334960938,
+        1.0
+      ],
+      [
+        34,
+        32,
+        75.31550598144531,
+        1.0
+      ],
+      [
+        35,
+        31,
+        74.87165832519531,
+        1.0
+      ],
+      [
+        35,
+        31,
+        84.59893035888672,
+        1.0
+      ],
+      [
+        33,
+        31,
+        82.65775299072266,
+        1.0
+      ],
+      [
+        33,
+        31,
+        85.59358215332031,
+        1.0
+      ],
+      [
+        23,
+        36,
+        76.5508041381836,
+        1.0
+      ],
+      [
+        23,
+        36,
+        76.64170837402344,
+        1.0
+      ],
+      [
+        23,
+        36,
+        78.11764526367188,
+        1.0
+      ],
+      [
+        22,
+        36,
+        78.39572143554688,
+        1.0
+      ],
+      [
+        22,
+        36,
+        77.92513275146484,
+        1.0
+      ],
+      [
+        22,
+        36,
+        76.90908813476562,
+        1.0
+      ],
+      [
+        23,
+        36,
+        78.1336898803711,
+        1.0
+      ],
+      [
+        22,
+        36,
+        77.19251251220703,
+        1.0
+      ],
+      [
+        22,
+        36,
+        76.90373992919922,
+        1.0
+      ],
+      [
+        22,
+        36,
+        76.6951904296875,
+        1.0
+      ],
+      [
+        24,
+        35,
+        75.84491729736328,
+        1.0
+      ],
+      [
+        26,
+        35,
+        80.21390533447266,
+        1.0
+      ],
+      [
+        32,
+        32,
+        66.93048095703125,
+        1.0
+      ],
+      [
+        33,
+        32,
+        70.18181610107422,
+        1.0
+      ],
+      [
+        33,
+        32,
+        69.34224700927734,
+        1.0
+      ],
+      [
+        33,
+        31,
+        68.75401306152344,
+        1.0
+      ],
+      [
+        33,
+        31,
+        65.08556365966797,
+        1.0
+      ],
+      [
+        33,
+        31,
+        64.73262023925781,
+        1.0
+      ],
+      [
+        33,
+        31,
+        65.34224700927734,
+        1.0
+      ],
+      [
+        33,
+        31,
+        65.06417083740234,
+        1.0
+      ],
+      [
+        33,
+        31,
+        65.4384994506836,
+        1.0
+      ],
+      [
+        32,
+        31,
+        68.52941131591797,
+        1.0
+      ],
+      [
+        33,
+        32,
+        68.08556365966797,
+        1.0
+      ],
+      [
+        33,
+        32,
+        67.49732971191406,
+        1.0
+      ],
+      [
+        33,
+        32,
+        67.19251251220703,
+        1.0
+      ],
+      [
+        33,
+        32,
+        70.0053482055664,
+        1.0
+      ]
+    ],
+    "template_hash": "2acbe8672ff4e398ad181c4c349cf90a999888b8a65758a0f89ad130300947e0"
+  },
+  "res://art/characters/vale_combate_v6pal/special/special_east_sheet.png": {
+    "algorithm": 4,
+    "direction": "east",
+    "size": 112,
+    "anchors": [
+      [
+        31,
+        32,
+        72.53475952148438,
+        1.0
+      ],
+      [
+        31,
+        32,
+        68.47058868408203,
+        1.0
+      ],
+      [
+        31,
+        32,
+        63.96791458129883,
+        1.0
+      ],
+      [
+        31,
+        33,
+        67.84491729736328,
+        1.0
+      ],
+      [
+        31,
+        33,
+        65.66844940185547,
+        1.0
+      ],
+      [
+        31,
+        33,
+        64.71122741699219,
+        1.0
+      ],
+      [
+        31,
+        33,
+        65.06417083740234,
+        1.0
+      ],
+      [
+        31,
+        33,
+        64.90908813476562,
+        1.0
+      ],
+      [
+        31,
+        33,
+        65.06417083740234,
+        1.0
+      ],
+      [
+        31,
+        33,
+        65.60427856445312,
+        1.0
+      ],
+      [
+        31,
+        33,
+        64.8609619140625,
+        1.0
+      ],
+      [
+        32,
+        32,
+        71.5508041381836,
+        1.0
+      ],
+      [
+        31,
+        33,
+        65.81818389892578,
+        1.0
+      ],
+      [
+        31,
+        33,
+        65.87700653076172,
+        1.0
+      ],
+      [
+        31,
+        33,
+        65.16577911376953,
+        1.0
+      ],
+      [
+        31,
+        33,
+        66.40106964111328,
+        1.0
+      ],
+      [
+        31,
+        33,
+        65.74331665039062,
+        1.0
+      ],
+      [
+        31,
+        33,
+        65.66310119628906,
+        1.0
+      ],
+      [
+        31,
+        33,
+        65.49732971191406,
+        1.0
+      ],
+      [
+        32,
+        32,
+        71.36898040771484,
+        1.0
+      ],
+      [
+        31,
+        33,
+        65.66844940185547,
+        1.0
+      ],
+      [
+        31,
+        33,
+        65.89839935302734,
+        1.0
+      ],
+      [
+        31,
+        33,
+        64.93048095703125,
+        1.0
+      ],
+      [
+        36,
+        31,
+        76.6951904296875,
+        1.0
+      ],
+      [
+        38,
+        28,
+        73.74331665039062,
+        1.0
+      ],
+      [
+        32,
+        24,
+        95.50267028808594,
+        1.0
+      ],
+      [
+        31,
+        23,
+        98.06951904296875,
+        1.0
+      ],
+      [
+        32,
+        22,
+        82.24598693847656,
+        1.0
+      ],
+      [
+        32,
+        22,
+        86.19786071777344,
+        1.0
+      ],
+      [
+        27,
+        42,
+        94.44384765625,
+        1.0
+      ],
+      [
+        27,
+        43,
+        94.20320892333984,
+        1.0
+      ],
+      [
+        27,
+        41,
+        94.96257019042969,
+        1.0
+      ],
+      [
+        27,
+        41,
+        96.54545593261719,
+        1.0
+      ],
+      [
+        27,
+        39,
+        96.45989227294922,
+        1.0
+      ],
+      [
+        27,
+        39,
+        96.06417083740234,
+        1.0
+      ],
+      [
+        27,
+        39,
+        96.73262023925781,
+        1.0
+      ],
+      [
+        27,
+        39,
+        96.4117660522461,
+        1.0
+      ],
+      [
+        27,
+        39,
+        97.39037322998047,
+        1.0
+      ],
+      [
+        27,
+        39,
+        97.48663330078125,
+        1.0
+      ],
+      [
+        28,
+        39,
+        95.51336669921875,
+        1.0
+      ],
+      [
+        27,
+        37,
+        97.50801849365234,
+        1.0
+      ],
+      [
+        32,
+        33,
+        68.12834167480469,
+        1.0
+      ],
+      [
+        32,
+        33,
+        65.77539825439453,
+        1.0
+      ],
+      [
+        31,
+        32,
+        64.80213928222656,
+        1.0
+      ],
+      [
+        31,
+        32,
+        63.887699127197266,
+        1.0
+      ],
+      [
+        31,
+        32,
+        65.50267028808594,
+        1.0
+      ],
+      [
+        31,
+        32,
+        64.98930358886719,
+        1.0
+      ],
+      [
+        31,
+        32,
+        67.10694885253906,
+        1.0
+      ],
+      [
+        31,
+        32,
+        68.1711196899414,
+        1.0
+      ]
+    ],
+    "template_hash": "2acbe8672ff4e398ad181c4c349cf90a999888b8a65758a0f89ad130300947e0"
+  },
+  "res://art/characters/vale_combate_v6pal/special/special_north-east_sheet.png": {
+    "algorithm": 4,
+    "direction": "north-east",
+    "size": 112,
+    "anchors": [
+      [
+        32,
+        31,
+        65.046875,
+        1.0
+      ],
+      [
+        32,
+        32,
+        54.40625,
+        1.0
+      ],
+      [
+        32,
+        32,
+        54.40104293823242,
+        1.0
+      ],
+      [
+        33,
+        33,
+        52.55729293823242,
+        1.0
+      ],
+      [
+        33,
+        33,
+        54.19791793823242,
+        1.0
+      ],
+      [
+        33,
+        33,
+        55.28645706176758,
+        1.0
+      ],
+      [
+        33,
+        33,
+        54.75,
+        1.0
+      ],
+      [
+        33,
+        33,
+        55.30208206176758,
+        1.0
+      ],
+      [
+        33,
+        33,
+        54.96354293823242,
+        1.0
+      ],
+      [
+        33,
+        33,
+        55.11979293823242,
+        1.0
+      ],
+      [
+        33,
+        33,
+        55.55208206176758,
+        1.0
+      ],
+      [
+        33,
+        33,
+        54.26041793823242,
+        1.0
+      ],
+      [
+        33,
+        34,
+        59.47916793823242,
+        1.0
+      ],
+      [
+        27,
+        32,
+        76.42708587646484,
+        1.0
+      ],
+      [
+        29,
+        28,
+        77.83853912353516,
+        1.0
+      ],
+      [
+        35,
+        30,
+        45.30208206176758,
+        1.0
+      ],
+      [
+        37,
+        32,
+        73.921875,
+        1.0
+      ],
+      [
+        31,
+        37,
+        89.48958587646484,
+        1.0
+      ],
+      [
+        29,
+        38,
+        92.63021087646484,
+        1.0
+      ],
+      [
+        29,
+        39,
+        94.75521087646484,
+        1.0
+      ],
+      [
+        29,
+        39,
+        92.625,
+        1.0
+      ],
+      [
+        29,
+        39,
+        92.46353912353516,
+        1.0
+      ],
+      [
+        26,
+        38,
+        98.29166412353516,
+        1.0
+      ],
+      [
+        29,
+        39,
+        92.52603912353516,
+        1.0
+      ],
+      [
+        26,
+        38,
+        96.046875,
+        1.0
+      ],
+      [
+        29,
+        39,
+        92.32291412353516,
+        1.0
+      ],
+      [
+        26,
+        38,
+        96.39583587646484,
+        1.0
+      ],
+      [
+        26,
+        38,
+        96.15103912353516,
+        1.0
+      ],
+      [
+        28,
+        37,
+        94.04166412353516,
+        1.0
+      ],
+      [
+        26,
+        38,
+        96.35416412353516,
+        1.0
+      ],
+      [
+        26,
+        38,
+        96.34896087646484,
+        1.0
+      ],
+      [
+        29,
+        39,
+        92.22916412353516,
+        1.0
+      ],
+      [
+        28,
+        37,
+        89.453125,
+        1.0
+      ],
+      [
+        30,
+        35,
+        79.60416412353516,
+        1.0
+      ],
+      [
+        32,
+        34,
+        75.54166412353516,
+        1.0
+      ],
+      [
+        33,
+        32,
+        72.8125,
+        1.0
+      ],
+      [
+        33,
+        32,
+        69.94271087646484,
+        1.0
+      ],
+      [
+        32,
+        31,
+        52.47395706176758,
+        1.0
+      ],
+      [
+        32,
+        31,
+        50.78645706176758,
+        1.0
+      ],
+      [
+        32,
+        31,
+        49.90625,
+        1.0
+      ],
+      [
+        32,
+        31,
+        51.35416793823242,
+        1.0
+      ],
+      [
+        32,
+        31,
+        52.43229293823242,
+        1.0
+      ],
+      [
+        32,
+        31,
+        51.60416793823242,
+        1.0
+      ],
+      [
+        32,
+        31,
+        49.63020706176758,
+        1.0
+      ],
+      [
+        32,
+        31,
+        49.96354293823242,
+        1.0
+      ],
+      [
+        32,
+        31,
+        49.91145706176758,
+        1.0
+      ],
+      [
+        32,
+        31,
+        51.35416793823242,
+        1.0
+      ],
+      [
+        32,
+        31,
+        51.953125,
+        1.0
+      ],
+      [
+        32,
+        31,
+        52.59375,
+        1.0
+      ]
+    ],
+    "template_hash": "2acbe8672ff4e398ad181c4c349cf90a999888b8a65758a0f89ad130300947e0"
+  },
+  "res://art/characters/vale_combate_v6pal/special/special_north-west_sheet.png": {
+    "algorithm": 4,
+    "direction": "north-west",
+    "size": 112,
+    "anchors": [
+      [
+        33,
+        31,
+        64.3125,
+        1.0
+      ],
+      [
+        32,
+        32,
+        54.31770706176758,
+        1.0
+      ],
+      [
+        32,
+        32,
+        56.02604293823242,
+        1.0
+      ],
+      [
+        32,
+        33,
+        56.34895706176758,
+        1.0
+      ],
+      [
+        31,
+        33,
+        57.44270706176758,
+        1.0
+      ],
+      [
+        31,
+        33,
+        56.93229293823242,
+        1.0
+      ],
+      [
+        31,
+        33,
+        56.27083206176758,
+        1.0
+      ],
+      [
+        31,
+        33,
+        56.53645706176758,
+        1.0
+      ],
+      [
+        31,
+        33,
+        56.578125,
+        1.0
+      ],
+      [
+        31,
+        33,
+        56.94791793823242,
+        1.0
+      ],
+      [
+        31,
+        33,
+        57.16145706176758,
+        1.0
+      ],
+      [
+        32,
+        34,
+        58.52604293823242,
+        1.0
+      ],
+      [
+        32,
+        34,
+        62.53125,
+        1.0
+      ],
+      [
+        37,
+        32,
+        75.66666412353516,
+        1.0
+      ],
+      [
+        36,
+        28,
+        78.92708587646484,
+        1.0
+      ],
+      [
+        29,
+        30,
+        47.25520706176758,
+        1.0
+      ],
+      [
+        28,
+        32,
+        71.03646087646484,
+        1.0
+      ],
+      [
+        33,
+        37,
+        88.5625,
+        1.0
+      ],
+      [
+        36,
+        38,
+        89.95833587646484,
+        1.0
+      ],
+      [
+        35,
+        38,
+        94.31771087646484,
+        1.0
+      ],
+      [
+        35,
+        38,
+        93.40625,
+        1.0
+      ],
+      [
+        35,
+        38,
+        94.703125,
+        1.0
+      ],
+      [
+        35,
+        38,
+        92.80208587646484,
+        1.0
+      ],
+      [
+        35,
+        38,
+        92.91666412353516,
+        1.0
+      ],
+      [
+        35,
+        38,
+        92.69791412353516,
+        1.0
+      ],
+      [
+        35,
+        38,
+        92.921875,
+        1.0
+      ],
+      [
+        35,
+        38,
+        92.890625,
+        1.0
+      ],
+      [
+        35,
+        38,
+        92.734375,
+        1.0
+      ],
+      [
+        35,
+        38,
+        93.98958587646484,
+        1.0
+      ],
+      [
+        35,
+        38,
+        92.99478912353516,
+        1.0
+      ],
+      [
+        35,
+        38,
+        93.390625,
+        1.0
+      ],
+      [
+        35,
+        38,
+        93.30208587646484,
+        1.0
+      ],
+      [
+        36,
+        38,
+        91.94791412353516,
+        1.0
+      ],
+      [
+        34,
+        35,
+        82.578125,
+        1.0
+      ],
+      [
+        32,
+        34,
+        79.77603912353516,
+        1.0
+      ],
+      [
+        31,
+        32,
+        72.68228912353516,
+        1.0
+      ],
+      [
+        31,
+        32,
+        70.10416412353516,
+        1.0
+      ],
+      [
+        32,
+        31,
+        53.484375,
+        1.0
+      ],
+      [
+        32,
+        31,
+        53.18229293823242,
+        1.0
+      ],
+      [
+        33,
+        31,
+        48.9375,
+        1.0
+      ],
+      [
+        33,
+        31,
+        50.36979293823242,
+        1.0
+      ],
+      [
+        33,
+        31,
+        50.60416793823242,
+        1.0
+      ],
+      [
+        33,
+        31,
+        50.91145706176758,
+        1.0
+      ],
+      [
+        33,
+        31,
+        48.96354293823242,
+        1.0
+      ],
+      [
+        33,
+        31,
+        49.09895706176758,
+        1.0
+      ],
+      [
+        33,
+        31,
+        51.80208206176758,
+        1.0
+      ],
+      [
+        33,
+        31,
+        51.39583206176758,
+        1.0
+      ],
+      [
+        33,
+        31,
+        51.09895706176758,
+        1.0
+      ],
+      [
+        33,
+        31,
+        51.1875,
+        1.0
+      ]
+    ],
+    "template_hash": "2acbe8672ff4e398ad181c4c349cf90a999888b8a65758a0f89ad130300947e0"
+  },
+  "res://art/characters/vale_combate_v6pal/special/special_south-east_sheet.png": {
+    "algorithm": 4,
+    "direction": "south-east",
+    "size": 112,
+    "anchors": [
+      [
+        32,
+        30,
+        55.1827392578125,
+        1.0
+      ],
+      [
+        32,
+        30,
+        60.23857879638672,
+        1.0
+      ],
+      [
+        32,
+        31,
+        63.35025405883789,
+        1.0
+      ],
+      [
+        32,
+        31,
+        63.045684814453125,
+        1.0
+      ],
+      [
+        32,
+        31,
+        60.162437438964844,
+        1.0
+      ],
+      [
+        32,
+        31,
+        64.23857879638672,
+        1.0
+      ],
+      [
+        32,
+        31,
+        64.88324737548828,
+        1.0
+      ],
+      [
+        32,
+        31,
+        65.04061126708984,
+        1.0
+      ],
+      [
+        32,
+        31,
+        67.78680419921875,
+        1.0
+      ],
+      [
+        32,
+        31,
+        69.0507583618164,
+        1.0
+      ],
+      [
+        32,
+        31,
+        68.85786437988281,
+        1.0
+      ],
+      [
+        32,
+        31,
+        69.54822540283203,
+        1.0
+      ],
+      [
+        32,
+        32,
+        70.48223114013672,
+        1.0
+      ],
+      [
+        32,
+        31,
+        70.02538299560547,
+        1.0
+      ],
+      [
+        32,
+        31,
+        71.70558166503906,
+        1.0
+      ],
+      [
+        32,
+        31,
+        70.37055969238281,
+        1.0
+      ],
+      [
+        32,
+        31,
+        70.79187774658203,
+        1.0
+      ],
+      [
+        32,
+        31,
+        69.03045654296875,
+        1.0
+      ],
+      [
+        32,
+        31,
+        68.39594268798828,
+        1.0
+      ],
+      [
+        32,
+        32,
+        69.19796752929688,
+        1.0
+      ],
+      [
+        32,
+        31,
+        71.18782043457031,
+        1.0
+      ],
+      [
+        32,
+        32,
+        68.4365463256836,
+        1.0
+      ],
+      [
+        32,
+        31,
+        70.40608978271484,
+        1.0
+      ],
+      [
+        32,
+        32,
+        69.57360076904297,
+        1.0
+      ],
+      [
+        32,
+        31,
+        69.90863037109375,
+        1.0
+      ],
+      [
+        32,
+        31,
+        68.87309265136719,
+        1.0
+      ],
+      [
+        32,
+        31,
+        70.22842407226562,
+        1.0
+      ],
+      [
+        33,
+        31,
+        70.05583953857422,
+        1.0
+      ],
+      [
+        35,
+        32,
+        70.37055969238281,
+        1.0
+      ],
+      [
+        35,
+        29,
+        88.13705444335938,
+        1.0
+      ],
+      [
+        30,
+        29,
+        91.25888061523438,
+        1.0
+      ],
+      [
+        36,
+        28,
+        88.17766571044922,
+        1.0
+      ],
+      [
+        36,
+        29,
+        82.58375549316406,
+        1.0
+      ],
+      [
+        32,
+        40,
+        77.10659790039062,
+        1.0
+      ],
+      [
+        32,
+        40,
+        76.46700286865234,
+        1.0
+      ],
+      [
+        32,
+        40,
+        71.73096466064453,
+        1.0
+      ],
+      [
+        32,
+        40,
+        72.51776885986328,
+        1.0
+      ],
+      [
+        32,
+        40,
+        72.11675262451172,
+        1.0
+      ],
+      [
+        32,
+        40,
+        71.25888061523438,
+        1.0
+      ],
+      [
+        32,
+        36,
+        70.57360076904297,
+        1.0
+      ],
+      [
+        32,
+        33,
+        64.20812225341797,
+        1.0
+      ],
+      [
+        32,
+        31,
+        61.1573600769043,
+        1.0
+      ],
+      [
+        32,
+        31,
+        61.64466857910156,
+        1.0
+      ],
+      [
+        32,
+        30,
+        62.304569244384766,
+        1.0
+      ],
+      [
+        32,
+        31,
+        63.131980895996094,
+        1.0
+      ],
+      [
+        32,
+        30,
+        61.878173828125,
+        1.0
+      ],
+      [
+        32,
+        31,
+        63.32994842529297,
+        1.0
+      ],
+      [
+        32,
+        30,
+        61.79187774658203,
+        1.0
+      ],
+      [
+        32,
+        31,
+        63.46700668334961,
+        1.0
+      ]
+    ],
+    "template_hash": "2acbe8672ff4e398ad181c4c349cf90a999888b8a65758a0f89ad130300947e0"
+  },
+  "res://art/characters/vale_combate_v6pal/special/special_south-west_sheet.png": {
+    "algorithm": 4,
+    "direction": "south-west",
+    "size": 112,
+    "anchors": [
+      [
+        32,
+        30,
+        63.57868194580078,
+        1.0
+      ],
+      [
+        32,
+        31,
+        64.7461929321289,
+        1.0
+      ],
+      [
+        32,
+        31,
+        62.654823303222656,
+        1.0
+      ],
+      [
+        32,
+        31,
+        68.3147201538086,
+        1.0
+      ],
+      [
+        32,
+        31,
+        66.54314422607422,
+        1.0
+      ],
+      [
+        32,
+        32,
+        64.63959503173828,
+        1.0
+      ],
+      [
+        32,
+        32,
+        65.01522827148438,
+        1.0
+      ],
+      [
+        32,
+        32,
+        64.17259216308594,
+        1.0
+      ],
+      [
+        32,
+        32,
+        66.24873352050781,
+        1.0
+      ],
+      [
+        32,
+        32,
+        67.21319580078125,
+        1.0
+      ],
+      [
+        32,
+        32,
+        67.76649475097656,
+        1.0
+      ],
+      [
+        32,
+        32,
+        67.78680419921875,
+        1.0
+      ],
+      [
+        32,
+        32,
+        70.21827697753906,
+        1.0
+      ],
+      [
+        32,
+        32,
+        68.23857879638672,
+        1.0
+      ],
+      [
+        32,
+        32,
+        69.68020629882812,
+        1.0
+      ],
+      [
+        32,
+        32,
+        69.02538299560547,
+        1.0
+      ],
+      [
+        32,
+        32,
+        68.58882904052734,
+        1.0
+      ],
+      [
+        32,
+        32,
+        67.78172302246094,
+        1.0
+      ],
+      [
+        32,
+        32,
+        67.3807144165039,
+        1.0
+      ],
+      [
+        32,
+        32,
+        68.0101547241211,
+        1.0
+      ],
+      [
+        32,
+        32,
+        69.9289321899414,
+        1.0
+      ],
+      [
+        32,
+        32,
+        68.43147277832031,
+        1.0
+      ],
+      [
+        32,
+        32,
+        70.1827392578125,
+        1.0
+      ],
+      [
+        32,
+        32,
+        68.86294555664062,
+        1.0
+      ],
+      [
+        32,
+        32,
+        69.79695129394531,
+        1.0
+      ],
+      [
+        32,
+        32,
+        69.75634765625,
+        1.0
+      ],
+      [
+        32,
+        32,
+        70.52284240722656,
+        1.0
+      ],
+      [
+        32,
+        32,
+        70.78172302246094,
+        1.0
+      ],
+      [
+        29,
+        32,
+        72.29441833496094,
+        1.0
+      ],
+      [
+        28,
+        29,
+        91.52284240722656,
+        1.0
+      ],
+      [
+        34,
+        29,
+        94.72589111328125,
+        1.0
+      ],
+      [
+        28,
+        29,
+        88.28426361083984,
+        1.0
+      ],
+      [
+        28,
+        29,
+        86.6192855834961,
+        1.0
+      ],
+      [
+        33,
+        40,
+        82.2538070678711,
+        1.0
+      ],
+      [
+        33,
+        40,
+        80.121826171875,
+        1.0
+      ],
+      [
+        33,
+        40,
+        78.24365234375,
+        1.0
+      ],
+      [
+        33,
+        40,
+        77.37055969238281,
+        1.0
+      ],
+      [
+        33,
+        40,
+        75.45177459716797,
+        1.0
+      ],
+      [
+        33,
+        40,
+        75.29949188232422,
+        1.0
+      ],
+      [
+        32,
+        36,
+        72.71066284179688,
+        1.0
+      ],
+      [
+        32,
+        34,
+        69.21319580078125,
+        1.0
+      ],
+      [
+        32,
+        31,
+        62.1827392578125,
+        1.0
+      ],
+      [
+        32,
+        31,
+        62.39086151123047,
+        1.0
+      ],
+      [
+        32,
+        31,
+        63.44162368774414,
+        1.0
+      ],
+      [
+        32,
+        31,
+        64.15736389160156,
+        1.0
+      ],
+      [
+        32,
+        31,
+        64.21827697753906,
+        1.0
+      ],
+      [
+        32,
+        31,
+        64.37055969238281,
+        1.0
+      ],
+      [
+        32,
+        31,
+        65.1928939819336,
+        1.0
+      ],
+      [
+        32,
+        31,
+        64.36040496826172,
+        1.0
+      ]
+    ],
+    "template_hash": "2acbe8672ff4e398ad181c4c349cf90a999888b8a65758a0f89ad130300947e0"
+  },
+  "res://art/characters/vale_combate_v6pal/special/special_west_sheet.png": {
+    "algorithm": 4,
+    "direction": "west",
+    "size": 112,
+    "anchors": [
+      [
+        33,
+        32,
+        71.29946899414062,
+        1.0
+      ],
+      [
+        33,
+        32,
+        70.95187377929688,
+        1.0
+      ],
+      [
+        33,
+        31,
+        69.1711196899414,
+        1.0
+      ],
+      [
+        33,
+        32,
+        70.37967681884766,
+        1.0
+      ],
+      [
+        33,
+        32,
+        70.95187377929688,
+        1.0
+      ],
+      [
+        32,
+        33,
+        69.20320892333984,
+        1.0
+      ],
+      [
+        32,
+        33,
+        70.49198150634766,
+        1.0
+      ],
+      [
+        32,
+        33,
+        68.65775299072266,
+        1.0
+      ],
+      [
+        32,
+        33,
+        68.5775375366211,
+        1.0
+      ],
+      [
+        32,
+        33,
+        68.4117660522461,
+        1.0
+      ],
+      [
+        32,
+        33,
+        67.80748748779297,
+        1.0
+      ],
+      [
+        33,
+        32,
+        71.40106964111328,
+        1.0
+      ],
+      [
+        32,
+        33,
+        68.5882339477539,
+        1.0
+      ],
+      [
+        33,
+        30,
+        99.28877258300781,
+        1.0
+      ],
+      [
+        32,
+        33,
+        69.15508270263672,
+        1.0
+      ],
+      [
+        32,
+        33,
+        69.47593688964844,
+        1.0
+      ],
+      [
+        32,
+        33,
+        69.63101959228516,
+        1.0
+      ],
+      [
+        32,
+        33,
+        69.02139282226562,
+        1.0
+      ],
+      [
+        32,
+        33,
+        69.32085418701172,
+        1.0
+      ],
+      [
+        33,
+        32,
+        70.92513275146484,
+        1.0
+      ],
+      [
+        32,
+        33,
+        70.54545593261719,
+        1.0
+      ],
+      [
+        32,
+        33,
+        69.36363983154297,
+        1.0
+      ],
+      [
+        32,
+        33,
+        70.5775375366211,
+        1.0
+      ],
+      [
+        28,
+        31,
+        75.5615005493164,
+        1.0
+      ],
+      [
+        26,
+        28,
+        75.47058868408203,
+        1.0
+      ],
+      [
+        32,
+        24,
+        97.32620239257812,
+        1.0
+      ],
+      [
+        33,
+        23,
+        93.04812622070312,
+        1.0
+      ],
+      [
+        32,
+        22,
+        82.14973449707031,
+        1.0
+      ],
+      [
+        32,
+        21,
+        84.60962677001953,
+        1.0
+      ],
+      [
+        37,
+        42,
+        94.55615234375,
+        1.0
+      ],
+      [
+        38,
+        42,
+        96.4171142578125,
+        1.0
+      ],
+      [
+        37,
+        41,
+        96.84491729736328,
+        1.0
+      ],
+      [
+        37,
+        41,
+        93.75401306152344,
+        1.0
+      ],
+      [
+        37,
+        41,
+        92.8663101196289,
+        1.0
+      ],
+      [
+        37,
+        41,
+        93.37967681884766,
+        1.0
+      ],
+      [
+        37,
+        41,
+        94.81818389892578,
+        1.0
+      ],
+      [
+        37,
+        41,
+        94.03208923339844,
+        1.0
+      ],
+      [
+        37,
+        41,
+        93.91978454589844,
+        1.0
+      ],
+      [
+        37,
+        41,
+        94.12834167480469,
+        1.0
+      ],
+      [
+        37,
+        39,
+        95.71122741699219,
+        1.0
+      ],
+      [
+        37,
+        39,
+        93.39572143554688,
+        1.0
+      ],
+      [
+        32,
+        33,
+        72.64170837402344,
+        1.0
+      ],
+      [
+        32,
+        33,
+        71.87700653076172,
+        1.0
+      ],
+      [
+        32,
+        32,
+        70.35829162597656,
+        1.0
+      ],
+      [
+        33,
+        32,
+        70.78074645996094,
+        1.0
+      ],
+      [
+        33,
+        31,
+        68.8556137084961,
+        1.0
+      ],
+      [
+        33,
+        31,
+        69.28877258300781,
+        1.0
+      ],
+      [
+        33,
+        31,
+        72.62032318115234,
+        1.0
+      ],
+      [
+        33,
+        31,
+        72.96791076660156,
+        1.0
+      ]
+    ],
+    "template_hash": "2acbe8672ff4e398ad181c4c349cf90a999888b8a65758a0f89ad130300947e0"
+  }
+}

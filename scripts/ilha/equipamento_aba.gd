@@ -21,6 +21,18 @@ func embutir(pai: Control) -> void:
 		raiz.get_parent().remove_child(raiz)
 	pai.add_child(raiz)
 	raiz.mouse_filter = Control.MOUSE_FILTER_IGNORE
+	embutida = true
+	raiz.set_anchors_preset(Control.PRESET_TOP_LEFT)
+	raiz.size = Vector2(1600,900)
+	raiz.scale = Vector2(0.9,0.9)
+	raiz.position = Vector2(80,105)
+	# Apenas a moldura externa do inventario, sem painel duplicado.
+	(raiz.get_child(1) as Panel).add_theme_stylebox_override("panel",StyleBoxEmpty.new())
+	raiz.get_child(3).position = Vector2(1300,-39)
+	# Cabecalho e rodape pertencem ao inventario nesta aba.
+	for child in raiz.get_children():
+		if child is Control and (child.position.y == 74 or child.position.y == 798):
+			child.hide()
 	if raiz.get_child_count() > 0 and raiz.get_child(0) is ColorRect:
 		(raiz.get_child(0) as ColorRect).visible = false
 

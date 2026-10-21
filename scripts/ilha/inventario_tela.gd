@@ -7,11 +7,12 @@ extends CanvasLayer
 ## Enter/F/Espaco: acao (no bau: move 1; Shift: a pilha toda) | R: ordenar | G (bau): guardar iguais |
 ## C (Fabricar): fabricar | I/B/Esc: fechar.  Mouse: clique escolhe; no bau clique move 1, Shift+clique a pilha,
 ## botao direito a metade. Controle: direcional, A acao, X pilha, Y ordenar, LB/RB abas, B/Select fecha.
+const UI = preload("res://scripts/ui/tema_vilarejo.gd")
 const Inv = preload("res://scripts/ilha/inventario.gd")
 const EquipAba = preload("res://scripts/ilha/equipamento_aba.gd")
 const COLS := 10
 const COLS_BAU := 9
-const CEL := 64
+const CEL := 76
 const GAP := 8
 const BEGE := Color("f1e2bd")
 const ESCURO := Color("3a2412")
@@ -91,17 +92,15 @@ func montar(gerenciador, est = null) -> void:
 	equip.embutir(conteudo_equip)
 
 # ---------------------------------------------------------------- estilo
-func _estilo(bg: Color, borda: Color, w: int, r := 4) -> StyleBoxFlat:
-	var s := StyleBoxFlat.new()
-	s.bg_color = bg
-	s.border_color = borda
-	s.set_border_width_all(w)
-	s.set_corner_radius_all(r)
-	return s
+func _estilo(bg: Color, borda: Color, w: int, r := 4) -> StyleBox:
+	if bg.r > 0.45:
+		return UI.caixa("slot_selecionado" if borda.r > 0.9 else "slot", 6)
+	return UI.caixa("moldura" if w >= 4 else "painel", 12)
 
 func _rotulo(pai: Control, pos: Vector2, tam: int, cor := BEGE, texto := "") -> Label:
 	var l := Label.new()
 	l.position = pos
+	l.add_theme_font_override("font", UI.fonte())
 	l.text = texto
 	l.add_theme_font_size_override("font_size", tam)
 	l.add_theme_color_override("font_color", cor)
@@ -119,13 +118,10 @@ func _botao(pai: Control, pos: Vector2, tam: Vector2, texto: String, cb: Callabl
 	b.text = texto
 	b.focus_mode = Control.FOCUS_NONE
 	b.add_theme_font_size_override("font_size", 15)
-	b.add_theme_stylebox_override("normal", _estilo(Color("c9a46a"), Color("7a5230"), 2))
-	b.add_theme_stylebox_override("hover", _estilo(Color("e8cf98"), Color("fff1b8"), 2))
-	b.add_theme_stylebox_override("pressed", _estilo(Color("e8cf98"), Color("fff1b8"), 3))
-	b.add_theme_stylebox_override("disabled", _estilo(Color("6b5a44"), Color("4a3a28"), 2))
-	for k in ["font_color", "font_hover_color", "font_pressed_color"]:
-		b.add_theme_color_override(k, ESCURO)
-	b.add_theme_color_override("font_disabled_color", Color("a89878"))
+	b.theme = UI.tema()
+	b.add_theme_font_size_override("font_size", 17)
+	b.add_theme_stylebox_override("normal", UI.caixa("botao_ativo", 8))
+	b.add_theme_color_override("font_color", ESCURO)
 	b.pressed.connect(cb)
 	pai.add_child(b)
 	return b
@@ -174,20 +170,26 @@ func _selo() -> void:
 
 # ---------------------------------------------------------------- construcao (inventario)
 func _moldura(pai: Control, titulo_txt: String) -> Label:
+	pai.theme = UI.tema()
 	var fundo := ColorRect.new()
-	fundo.color = Color(0.02, 0.015, 0.03, 0.62)
 	fundo.set_anchors_preset(Control.PRESET_FULL_RECT)
 	fundo.mouse_filter = Control.MOUSE_FILTER_IGNORE
+	UI.aplicar_fundo(fundo)
 	pai.add_child(fundo)
 	var pn := Panel.new()
-	pn.position = Vector2(180, 10)
-	pn.size = Vector2(1240, 878)
-	pn.add_theme_stylebox_override("panel", _estilo(Color(0.16, 0.1, 0.06, 0.97), Color("6b4a2a"), 4, 6))
+	pn.position = Vector2(86, 110)
+	pn.size = Vector2(1428, 700)
 	pn.mouse_filter = Control.MOUSE_FILTER_IGNORE
+	pn.add_theme_stylebox_override("panel", UI.caixa("moldura"))
 	pai.add_child(pn)
-	var t := _rotulo(pai, Vector2(204, 16), 26, Color("e6d4a6"), titulo_txt)
-	_titulo_fonte(t)
-	return t
+	var rodape := Panel.new()
+	rodape.position=Vector2(108,820)
+	rodape.size=Vector2(1384,68)
+	rodape.mouse_filter=Control.MOUSE_FILTER_IGNORE
+	rodape.add_theme_stylebox_override("panel",UI.caixa("painel",10))
+	pai.add_child(rodape)
+	var banner := UI.cabecalho(pai, titulo_txt, Vector2(104, 62), Vector2(544, 76), UI.textura("mochila.svg"))
+	return banner.get_child(banner.get_child_count()-1) as Label
 
 func _construir() -> void:
 	raiz = Control.new()
@@ -196,37 +198,44 @@ func _construir() -> void:
 	raiz.mouse_filter = Control.MOUSE_FILTER_STOP
 	add_child(raiz)
 	titulo = _moldura(raiz, "INVENTÁRIO DA VALE")
-	ouro_label = _rotulo(raiz, Vector2(1000, 20), 20, Color("ffd76a"))
-	ouro_label.size = Vector2(396, 28)
+	var bolsa := Panel.new()
+	bolsa.name="PlacaOuro"
+	bolsa.position=Vector2(1250,70)
+	bolsa.size=Vector2(236,62)
+	bolsa.mouse_filter=Control.MOUSE_FILTER_IGNORE
+	bolsa.add_theme_stylebox_override("panel",UI.caixa("madeira",10))
+	raiz.add_child(bolsa)
+	ouro_label = _rotulo(raiz, Vector2(1084, 82), 20, Color("ffd76a"))
+	ouro_label.size = Vector2(390, 34)
 	ouro_label.horizontal_alignment = HORIZONTAL_ALIGNMENT_RIGHT
-	var x := 196.0
+	var x := 120.0
 	for a in Inv.ABAS:
 		var id := String(a.id)
 		var b := Button.new()
 		b.name = "Aba_" + id
 		b.text = String(a.nome)
-		b.position = Vector2(x, 54)
-		b.size = Vector2(104, 34)
+		b.position = Vector2(x, 146)
+		b.size = Vector2(118, 42)
 		b.focus_mode = Control.FOCUS_NONE
-		b.add_theme_font_size_override("font_size", 14)
+		b.add_theme_font_size_override("font_size", 17)
 		b.pressed.connect(ir_aba.bind(id))
 		raiz.add_child(b)
 		botoes_aba[id] = b
-		x += 110.0
+		x += 123.0
 	# ---- itens
 	conteudo_itens = Control.new()
 	conteudo_itens.set_anchors_preset(Control.PRESET_FULL_RECT)
 	conteudo_itens.mouse_filter = Control.MOUSE_FILTER_IGNORE
 	raiz.add_child(conteudo_itens)
 	var fg := Panel.new()
-	fg.position = Vector2(196, 100)
-	fg.size = Vector2(752, 680)
+	fg.position = Vector2(108, 200)
+	fg.size = Vector2(878, 586)
 	fg.add_theme_stylebox_override("panel", _estilo(Color("2b1c12"), Color("7a5230"), 3, 4))
 	fg.mouse_filter = Control.MOUSE_FILTER_IGNORE
 	conteudo_itens.add_child(fg)
 	rolagem = ScrollContainer.new()
-	rolagem.position = Vector2(206, 110)
-	rolagem.size = Vector2(736, 662)
+	rolagem.position = Vector2(126, 220)
+	rolagem.size = Vector2(850, 550)
 	rolagem.horizontal_scroll_mode = ScrollContainer.SCROLL_MODE_DISABLED
 	conteudo_itens.add_child(rolagem)
 	grade = GridContainer.new()
@@ -234,25 +243,25 @@ func _construir() -> void:
 	grade.add_theme_constant_override("h_separation", GAP)
 	grade.add_theme_constant_override("v_separation", GAP)
 	rolagem.add_child(grade)
-	vazio_label = _rotulo(conteudo_itens, Vector2(220, 130), 16, Color("cbb48a"), "")
+	vazio_label = _rotulo(conteudo_itens, Vector2(140, 238), 16, Color("cbb48a"), "")
 	# ---- fabricar
 	conteudo_fab = Control.new()
 	conteudo_fab.set_anchors_preset(Control.PRESET_FULL_RECT)
 	conteudo_fab.mouse_filter = Control.MOUSE_FILTER_IGNORE
 	raiz.add_child(conteudo_fab)
 	var ff := Panel.new()
-	ff.position = Vector2(196, 100)
-	ff.size = Vector2(752, 680)
+	ff.position = Vector2(108, 200)
+	ff.size = Vector2(878, 586)
 	ff.add_theme_stylebox_override("panel", _estilo(Color("2b1c12"), Color("7a5230"), 3, 4))
 	ff.mouse_filter = Control.MOUSE_FILTER_IGNORE
 	conteudo_fab.add_child(ff)
-	_rotulo(conteudo_fab, Vector2(214, 110), 15, Color("cbb48a"), "RECEITAS")
-	var y := 140.0
+	_rotulo(conteudo_fab, Vector2(132, 220), 15, Color("cbb48a"), "RECEITAS")
+	var y := 260.0
 	for rid in Inv.receitas():
 		var r: Dictionary = Inv.receitas()[rid]
 		var p := Panel.new()
-		p.position = Vector2(212, y)
-		p.size = Vector2(720, 96)
+		p.position = Vector2(128, y)
+		p.size = Vector2(832, 104)
 		p.mouse_filter = Control.MOUSE_FILTER_STOP
 		p.mouse_entered.connect(_sobre_fab.bind(String(rid)))
 		conteudo_fab.add_child(p)
@@ -262,11 +271,11 @@ func _construir() -> void:
 		var ing := _rotulo(p, Vector2(98, 42), 15, BEGE, "")
 		ing.size = Vector2(440, 22)
 		var st := _rotulo(p, Vector2(98, 66), 13, Color("cbb48a"), "")
-		var bf := _botao(p, Vector2(574, 26), Vector2(130, 44), "Fabricar", fabricar.bind(rid))
+		var bf := _botao(p, Vector2(674, 26), Vector2(130, 44), "Fabricar", fabricar.bind(rid))
 		fab_linhas.append({"rid": rid, "painel": p, "ing": ing, "status": st, "botao": bf, "nome": nm})
 		y += 108.0
-	fab_botao_colocar = _botao(conteudo_fab, Vector2(212, y + 8), Vector2(300, 46), "Colocar baú", colocar_bau)
-	_rotulo(conteudo_fab, Vector2(212, y + 66), 13, Color("9c8662"),
+	fab_botao_colocar = _botao(conteudo_fab, Vector2(132, y + 8), Vector2(300, 46), "Colocar baú", colocar_bau)
+	_rotulo(conteudo_fab, Vector2(132, y + 76), 13, Color("9c8662"),
 		"A madeira vem do machado: galhos (+1), tocos (+3) e árvores (3 toras + o toco). O baú só pode ser\ncolocado na fazenda (inclusive dentro de casa). Para recolher, abra o baú vazio e use \"Recolher baú\".")
 	# ---- equipamento (a tela do Codex entra aqui em montar())
 	conteudo_equip = Control.new()
@@ -276,8 +285,8 @@ func _construir() -> void:
 	raiz.add_child(conteudo_equip)
 	# ---- informacoes (itens e fabricar)
 	info = Panel.new()
-	info.position = Vector2(962, 100)
-	info.size = Vector2(440, 430)
+	info.position = Vector2(1002, 200)
+	info.size = Vector2(490, 418)
 	info.add_theme_stylebox_override("panel", _estilo(Color("2b1c12"), Color("7a5230"), 3, 4))
 	info.mouse_filter = Control.MOUSE_FILTER_IGNORE
 	raiz.add_child(info)
@@ -288,27 +297,27 @@ func _construir() -> void:
 	moldura_ic.mouse_filter = Control.MOUSE_FILTER_IGNORE
 	info.add_child(moldura_ic)
 	info_icone = _icone_rect(moldura_ic, Vector2(4, 4), 96)
-	info_nome = _rotulo(info, Vector2(134, 18), 21, Color("f6e7c1"))
-	info_nome.size = Vector2(296, 56)
+	info_nome = _rotulo(info, Vector2(134, 18), 26, Color("f6e7c1"))
+	info_nome.size = Vector2(336, 58)
 	info_nome.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
-	info_cat = _rotulo(info, Vector2(134, 76), 14, Color("cbb48a"))
-	info_qtd = _rotulo(info, Vector2(16, 134), 16, BEGE)
-	info_qtd.size = Vector2(410, 50)
-	info_desc = _rotulo(info, Vector2(16, 190), 15, BEGE)
-	info_desc.size = Vector2(408, 170)
+	info_cat = _rotulo(info, Vector2(134, 86), 16, Color("cbb48a"))
+	info_qtd = _rotulo(info, Vector2(24, 144), 19, BEGE)
+	info_qtd.size = Vector2(444, 58)
+	info_desc = _rotulo(info, Vector2(24, 218), 18, BEGE)
+	info_desc.size = Vector2(440, 130)
 	info_desc.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
-	info_acao = _rotulo(info, Vector2(16, 372), 14, Color("8fd86a"))
-	info_acao.size = Vector2(408, 48)
+	info_acao = _rotulo(info, Vector2(24, 366), 17, Color("8fd86a"))
+	info_acao.size = Vector2(440, 42)
 	info_acao.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
-	botao_ordem = _botao(raiz, Vector2(962, 544), Vector2(214, 44), "", ciclar_ordem)
-	botao_acao = _botao(raiz, Vector2(1188, 544), Vector2(214, 44), "", acao)
-	resumo = _rotulo(raiz, Vector2(962, 600), 14, Color("cbb48a"))
-	resumo.size = Vector2(440, 120)
+	botao_ordem = _botao(raiz, Vector2(1002, 634), Vector2(238, 48), "", ciclar_ordem)
+	botao_acao = _botao(raiz, Vector2(1254, 634), Vector2(238, 48), "", acao)
+	resumo = _rotulo(raiz, Vector2(1008, 704), 16, Color("cbb48a"))
+	resumo.size = Vector2(466, 90)
 	resumo.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
-	msg = _rotulo(raiz, Vector2(204, 790), 16, Color("ffe08a"))
+	msg = _rotulo(raiz, Vector2(120, 792), 16, Color("ffe08a"))
 	msg.size = Vector2(1190, 26)
-	dica = _rotulo(raiz, Vector2(204, 822), 13, Color("cbb48a"))
-	dica.size = Vector2(1200, 60)
+	dica = _rotulo(raiz, Vector2(130, 834), 14, Color("cbb48a"))
+	dica.size = Vector2(1360, 60)
 	dica.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
 
 func _sobre_fab(rid: String) -> void:
@@ -330,26 +339,26 @@ func _construir_bau() -> void:
 	add_child(raiz_bau)
 	bau_titulo = _moldura(raiz_bau, "BAÚ")
 	var fb := Panel.new()
-	fb.position = Vector2(196, 56)
-	fb.size = Vector2(672, 312)
+	fb.position = Vector2(108, 142)
+	fb.size = Vector2(804, 354)
 	fb.add_theme_stylebox_override("panel", _estilo(Color("3a2616"), Color("a0763c"), 3, 4))
 	fb.mouse_filter = Control.MOUSE_FILTER_IGNORE
 	raiz_bau.add_child(fb)
 	for i in Inv.SLOTS_BAU:
-		var c := _celula(raiz_bau, Vector2(208 + (i % COLS_BAU) * (CEL + GAP), 68 + (i / COLS_BAU) * (CEL + GAP)))
+		var c := _celula(raiz_bau, Vector2(130 + (i % COLS_BAU) * (CEL + GAP), 154 + (i / COLS_BAU) * (CEL + GAP)))
 		c.gui_input.connect(_clique_bau.bind(0, i))
 		c.mouse_entered.connect(_sobre_bau.bind(0, i))
 		bau_cels.append(c)
-	_rotulo(raiz_bau, Vector2(206, 378), 15, Color("cbb48a"), "MOCHILA DA VALE  (clique: 1 · Shift+clique: a pilha · botão direito: metade)")
+	_rotulo(raiz_bau, Vector2(126, 504), 15, Color("cbb48a"), "MOCHILA DA VALE  (clique: 1 · Shift+clique: a pilha · botão direito: metade)")
 	var fm := Panel.new()
-	fm.position = Vector2(196, 402)
-	fm.size = Vector2(752, 382)
+	fm.position = Vector2(108, 538)
+	fm.size = Vector2(878, 250)
 	fm.add_theme_stylebox_override("panel", _estilo(Color("2b1c12"), Color("7a5230"), 3, 4))
 	fm.mouse_filter = Control.MOUSE_FILTER_IGNORE
 	raiz_bau.add_child(fm)
 	moc_rolagem = ScrollContainer.new()
-	moc_rolagem.position = Vector2(206, 412)
-	moc_rolagem.size = Vector2(736, 364)
+	moc_rolagem.position = Vector2(126, 550)
+	moc_rolagem.size = Vector2(850, 224)
 	moc_rolagem.horizontal_scroll_mode = ScrollContainer.SCROLL_MODE_DISABLED
 	raiz_bau.add_child(moc_rolagem)
 	moc_grade = GridContainer.new()
@@ -358,8 +367,8 @@ func _construir_bau() -> void:
 	moc_grade.add_theme_constant_override("v_separation", GAP)
 	moc_rolagem.add_child(moc_grade)
 	var bi := Panel.new()
-	bi.position = Vector2(962, 56)
-	bi.size = Vector2(440, 380)
+	bi.position = Vector2(1002, 142)
+	bi.size = Vector2(490, 396)
 	bi.add_theme_stylebox_override("panel", _estilo(Color("2b1c12"), Color("7a5230"), 3, 4))
 	bi.mouse_filter = Control.MOUSE_FILTER_IGNORE
 	raiz_bau.add_child(bi)
@@ -378,16 +387,16 @@ func _construir_bau() -> void:
 	b_info_desc = _rotulo(bi, Vector2(16, 214), 15, BEGE)
 	b_info_desc.size = Vector2(408, 150)
 	b_info_desc.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
-	_botao(raiz_bau, Vector2(962, 450), Vector2(214, 44), "Ordenar baú (R)", ordenar_bau)
-	_botao(raiz_bau, Vector2(1188, 450), Vector2(214, 44), "Guardar iguais (G)", guardar_iguais)
-	b_recolher = _botao(raiz_bau, Vector2(962, 506), Vector2(214, 44), "Recolher baú", recolher_bau)
-	_botao(raiz_bau, Vector2(1188, 506), Vector2(214, 44), "Fechar (Esc)", fechar)
-	b_msg = _rotulo(raiz_bau, Vector2(962, 566), 16, Color("ffe08a"))
+	_botao(raiz_bau, Vector2(1002, 558), Vector2(238, 48), "Ordenar baú (R)", ordenar_bau)
+	_botao(raiz_bau, Vector2(1254, 558), Vector2(238, 48), "Guardar iguais (G)", guardar_iguais)
+	b_recolher = _botao(raiz_bau, Vector2(1002, 620), Vector2(238, 48), "Recolher baú", recolher_bau)
+	_botao(raiz_bau, Vector2(1254, 620), Vector2(238, 48), "Fechar (Esc)", fechar)
+	b_msg = _rotulo(raiz_bau, Vector2(1010, 690), 16, Color("ffe08a"))
 	b_msg.size = Vector2(440, 90)
 	b_msg.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
-	var bd := _rotulo(raiz_bau, Vector2(204, 796), 13, Color("cbb48a"),
+	var bd := _rotulo(raiz_bau, Vector2(130, 834), 14, Color("cbb48a"),
 		"Setas/WASD: escolher  ·  Tab: baú ↔ mochila  ·  Enter/F/Espaço: mover 1  ·  Shift+Enter: mover a pilha  ·  R: ordenar  ·  G: guardar iguais  ·  E/Esc/I: fechar\nControle: direcional, A move 1, X a pilha, Y ordena, LB/RB troca baú ↔ mochila, B fecha.")
-	bd.size = Vector2(1200, 60)
+	bd.size = Vector2(1360, 60)
 
 func _celula(pai: Control, pos = null) -> Panel:
 	var p := Panel.new()
@@ -397,11 +406,14 @@ func _celula(pai: Control, pos = null) -> Panel:
 		p.position = pos
 	p.mouse_filter = Control.MOUSE_FILTER_STOP
 	pai.add_child(p)
-	var ic := _icone_rect(p, Vector2(8, 6), 48)
+	var ic := _icone_rect(p, Vector2(8, 6), 60)
 	ic.name = "Icone"
-	var q := _rotulo(p, Vector2(4, 42), 14, Color.WHITE)
+	var q := _rotulo(p, Vector2(4, 51), 20, Color.WHITE)
 	q.name = "Qtd"
-	q.size = Vector2(56, 20)
+	q.add_theme_font_override("font",UI.fonte(true))
+	q.add_theme_color_override("font_outline_color",Color("211a17"))
+	q.add_theme_constant_override("outline_size",3)
+	q.size = Vector2(66, 24)
 	q.horizontal_alignment = HORIZONTAL_ALIGNMENT_RIGHT
 	return p
 
@@ -412,7 +424,7 @@ func _pintar(c: Panel, id: String, q: int, escolhida: bool, apagada := false, mo
 	var bg := Color("e8cf98") if escolhida else (Color("8f7350") if apagada else Color("c9a46a"))
 	if id == "" and not escolhida:
 		bg = Color("6b5238")
-	c.add_theme_stylebox_override("panel", _estilo(bg, Color("fff1b8") if escolhida else Color("7a5230"), 4 if escolhida else 2))
+	c.add_theme_stylebox_override("panel", UI.caixa("slot_selecionado" if escolhida else ("vazio" if id == "" else "slot"), 4))
 	c.tooltip_text = "%s ×%d\n%s\nValor: %d ouro" % [Inv.nome(id), q, Inv.desc(id), Inv.preco(id)] if id != "" else ""
 
 # ---------------------------------------------------------------- abrir / fechar
@@ -469,7 +481,7 @@ func _mostrar_aba(_inicio: bool) -> void:
 	for id in botoes_aba:
 		var b: Button = botoes_aba[id]
 		var ativa: bool = id == aba
-		b.add_theme_stylebox_override("normal", _estilo(Color("e8cf98") if ativa else Color("8a6238"), Color("fff1b8") if ativa else Color("5a3a1e"), 3 if ativa else 2, 4))
+		b.add_theme_stylebox_override("normal", UI.caixa("botao_ativo" if ativa else "botao", 8))
 		b.add_theme_stylebox_override("hover", _estilo(Color("f2dcaa"), Color("fff1b8"), 2, 4))
 		b.add_theme_color_override("font_color", ESCURO if ativa else BEGE)
 		b.add_theme_color_override("font_hover_color", ESCURO)
@@ -482,12 +494,15 @@ func _mostrar_aba(_inicio: bool) -> void:
 	botao_ordem.visible = not eh_equip and not eh_fab
 	botao_acao.visible = not eh_equip
 	resumo.visible = not eh_equip
-	titulo.visible = not eh_equip
+	titulo.visible = true
+	titulo.text="INVENTÁRIO · "+String(estado.extras.get("aparencia",{}).get("nome","Vale")).to_upper()
+	ouro_label.visible = aba != "equipamento"
+	raiz.get_node("PlacaOuro").visible = aba != "equipamento"
 	ouro_label.text = "Ouro  %d" % int(estado.ouro)
 	if eh_equip:
 		if not equip.aberta:
 			equip.abrir()
-		dica.text = "Tab/Shift+Tab ou PgDn/PgUp: trocar de aba  ·  I/B/Esc: fechar  ·  (dentro da aba valem as teclas do Equipamento)"
+		dica.text = "WASD: escolher · Enter/F: equipar · X: retirar · Q/E: girar · Espaço: animar · Tab: trocar de aba · Esc: fechar"
 		msg.position.y = 790
 		return
 	if equip.aberta:
@@ -502,12 +517,13 @@ func _mostrar_aba(_inicio: bool) -> void:
 func _atualizar_itens(reconstruir := false) -> void:
 	itens_vis = Inv.lista(estado, aba, ordem)
 	sel = clampi(sel, 0, maxi(0, itens_vis.size() - 1))
-	if reconstruir or celulas.size() != itens_vis.size():
+	if reconstruir or celulas.size() != maxi(60, itens_vis.size()):
 		for c in celulas:
 			c.queue_free()
 		celulas.clear()
-		for i in itens_vis.size():
+		for i in maxi(60, itens_vis.size()):
 			var c := _celula(grade)
+			c.add_theme_stylebox_override("panel", UI.caixa("vazio",4))
 			c.gui_input.connect(_clique_item.bind(i))
 			c.mouse_entered.connect(_sobre_item.bind(i))
 			celulas.append(c)
@@ -656,6 +672,8 @@ func fabricar(rid: String) -> void:
 	if antes == "" and estado.has_method("salvar"):
 		estado.salvar()
 	msg.text = r
+	ouro_label.visible = aba != "equipamento"
+	raiz.get_node("PlacaOuro").visible = aba != "equipamento"
 	ouro_label.text = "Ouro  %d" % int(estado.ouro)
 	if aba == "fabricar":
 		_atualizar_fab()
@@ -705,7 +723,8 @@ func _atualizar_bau(reconstruir := false) -> void:
 	sel_moc = clampi(sel_moc, 0, maxi(0, moc_vis.size() - 1))
 	if painel == 1 and moc_vis.is_empty():
 		painel = 0
-	bau_titulo.text = "%s   ·   %d de %d espaços livres" % [Inv.nome_bau(bau).to_upper(), Inv.livres(bau), Inv.SLOTS_BAU]
+	bau_titulo.text = "%s · %d/%d livres" % [Inv.nome_bau(bau).to_upper(), Inv.livres(bau), Inv.SLOTS_BAU]
+	bau_titulo.add_theme_font_size_override("font_size",22)
 	for i in bau_cels.size():
 		var s = bau.slots[i]
 		var tem: bool = s is Dictionary and not s.is_empty()
@@ -1007,3 +1026,4 @@ func _controle(b: int) -> void:
 		JOY_BUTTON_DPAD_DOWN: _mover_sel(0, 1)
 		JOY_BUTTON_A: acao()
 		JOY_BUTTON_Y: ciclar_ordem()
+

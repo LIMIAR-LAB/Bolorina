@@ -1,5 +1,6 @@
 {
  "versao": 3,
+ "viagens_livres": true,
  "nota": "Registro unico de areas (scripts/mundo/registro_areas.gd). Formato do Claude (id, nome, cena, chegada, mapa [x,y] no mapa pintado 1200x800, raio, mundo, bioma, desc, adaptador, requer) + campos da Bolorina (categoria, regiao, arte, pontos_de_entrada, entradas_de_masmorra, ponto_de_viagem, tema, ligada_a, requer_visita). Tudo o que existia até a integração de 20/10 fica na primeira ilha flutuante (ilha: primeira_ilha); a Ilha da Maré do Tempo (ilha_mare, do Claude) é a segunda ilha (ilha: ilha_mare_do_tempo), em breve. Area sem cena = 'em breve'.",
  "areas": [
   {
@@ -617,6 +618,35 @@
     "estacao_depois_de_ontem"
    ],
    "requer_visita": "estacao_depois_de_ontem"
+  },
+  {
+   "id": "mirante_cascata",
+   "nome": "Mirante da Cascata",
+   "cena": "res://scenes/mirante_cascata/mirante_cascata.tscn",
+   "tipo": "mapa_novo",
+   "categoria": "mirante",
+   "chegada": "viagem",
+   "mapa": [
+    760,
+    250
+   ],
+   "raio": [
+    70,
+    50
+   ],
+   "mundo": null,
+   "bioma": "penhasco",
+   "desc": "Beira de penhasco com a grande cascata e o pôr do sol eterno. Pise no altar dourado para admirar a vista.",
+   "adaptador": "res://scripts/mundo/area_mapa_novo.gd",
+   "ilha": "primeira_ilha",
+   "regiao": "Ilha das Cinzas",
+   "pontos_de_entrada": [
+    {
+     "id": "viagem",
+     "descricao": "Trilha do mirante (chegada pelo mapa-múndi)"
+    }
+   ],
+   "autor": "Bolorina 21/10/2026: cena 3D com luz (arte-mundos)"
   },
   {
    "id": "ilha_mare",

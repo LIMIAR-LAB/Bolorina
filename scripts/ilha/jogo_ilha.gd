@@ -2,6 +2,7 @@ extends Node
 ## Gerenciador das 3 areas: Fazenda <-> Vila <-> Arena. Fade + spawns.
 ## Debug: F7 masmorra | F10 vila | F11 arena | F12 fazenda | M mapa | I inventario (ultima aba; 1a vez: Equipamento) | B mochila.
 ## Save: user://ilha_fazenda_v1.json.
+const UI = preload("res://scripts/ui/tema_vilarejo.gd")
 const Estado = preload("res://scripts/ilha/fazenda_estado.gd")
 ## equipamento (I): tela + paper-doll da Vale nas 4 areas (docs/EQUIPAMENTO.md)
 const Equip = preload("res://scripts/ilha/equipamento.gd")
@@ -66,6 +67,9 @@ func _ready() -> void:
 	DisplayServer.window_set_title("Ilha das Cinzas | Fazenda, Vila e Combate")
 	var area: String = OS.get_environment("ILHA_AREA")
 	var spawn: String = OS.get_environment("ILHA_SPAWN")
+	if area == "":
+		area = String(estado.extras.get("ultima_area","fazenda"))
+		if not Registro.disponivel(area): area="fazenda"
 	await _trocar(area if area != "" else "fazenda", spawn if spawn != "" else "inicio", false)
 
 func _unhandled_key_input(event: InputEvent) -> void:
@@ -91,6 +95,13 @@ func _unhandled_key_input(event: InputEvent) -> void:
 		alternar_mapa()
 		get_viewport().set_input_as_handled()
 		return
+	if event.physical_keycode == KEY_ESCAPE:
+		var menu=load("res://scripts/inicio/menu_inicial.gd").new()
+		menu.gerenciador=self
+		add_child(menu)
+		get_tree().paused=true
+		get_viewport().set_input_as_handled()
+		return
 	match event.physical_keycode:
 		KEY_F7:
 			ir("masmorra", "inicio")
@@ -110,6 +121,7 @@ func ir(area: String, spawn: String) -> void:
 func _trocar(area: String, spawn: String, com_fade: bool) -> void:
 	ocupado = true
 	estado.area = area
+	estado.extras.ultima_area=area
 	estado.salvar()
 	if com_fade:
 		var tw := create_tween()
@@ -208,13 +220,13 @@ func vestir_atual() -> void:
 	if nome == "arena":
 		var j = atual.get("jogador")
 		if j:
-			EquipVisual.vestir_combate(j, cam)
+			EquipVisual.vestir_combate(j, cam, estado.extras.get("aparencia",{}))
 			if "defesa_equip" in j:
 				j.defesa_equip = Equip.defesa(estado.equipamento)
 	else:
 		var s = atual.get("sprite")
 		if s is AnimatedSprite3D:
-			EquipVisual.vestir_sprite(s, cam)
+			EquipVisual.vestir_sprite(s, cam, estado.extras.get("aparencia",{}))
 
 # ---------------------------------------------------------------- mapa (M)
 func _montar_mapa() -> void:
@@ -223,10 +235,16 @@ func _montar_mapa() -> void:
 	mapa_camada.visible = false
 	add_child(mapa_camada)
 	var fundo := ColorRect.new()
-	fundo.color = Color(0, 0, 0, 0.6)
+	UI.aplicar_fundo(fundo)
 	fundo.set_anchors_preset(Control.PRESET_FULL_RECT)
 	fundo.mouse_filter = Control.MOUSE_FILTER_IGNORE
 	mapa_camada.add_child(fundo)
+	var moldura := Panel.new()
+	moldura.position=Vector2(176,28)
+	moldura.size=Vector2(1248,842)
+	moldura.mouse_filter=Control.MOUSE_FILTER_IGNORE
+	moldura.add_theme_stylebox_override("panel",UI.caixa("moldura"))
+	mapa_camada.add_child(moldura)
 	mapa_img = TextureRect.new()
 	mapa_img.position = Vector2(200, 50)
 	mapa_img.size = Vector2(1200, 800)
@@ -234,6 +252,7 @@ func _montar_mapa() -> void:
 	mapa_img.stretch_mode = TextureRect.STRETCH_KEEP_ASPECT_CENTERED
 	mapa_img.mouse_filter = Control.MOUSE_FILTER_IGNORE
 	mapa_camada.add_child(mapa_img)
+	UI.cabecalho(mapa_camada,"MAPA-MÚNDI",Vector2(200,8),Vector2(404,70))
 	mapa_marca = Label.new()
 	mapa_marca.text = "◆ Você está aqui"
 	mapa_marca.add_theme_font_size_override("font_size", 20)
@@ -354,7 +373,8 @@ func _montar_botoes() -> void:
 		mapa_botoes.mouse_filter = Control.MOUSE_FILTER_IGNORE
 		mapa_camada.add_child(mapa_botoes)
 		mapa_info = Label.new()
-		mapa_info.position = Vector2(210, 18)
+		mapa_info.position = Vector2(224, 810)
+		mapa_info.add_theme_font_override("font", UI.fonte())
 		mapa_info.add_theme_font_size_override("font_size", 16)
 		mapa_info.add_theme_color_override("font_color", Color("f1e2bd"))
 		mapa_info.add_theme_color_override("font_outline_color", Color.BLACK)

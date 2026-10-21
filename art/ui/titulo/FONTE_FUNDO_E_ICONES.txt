@@ -1,0 +1,4 @@
+fundo_titulo.png: arte conceitual do próprio Thiago Martinelli (referência enviada em 21/10/2026), 1672x941.
+A interface que vinha pintada na imagem (logo, botões e textos) foi removida pela Bolorina com preenchimento
+por difusão (push-pull) e textura de nuvem sintética (scripts em /workspace/titulo_ref/limpar.py, fora do repo).
+icones/*.png: desenhados pela Bolorina com PIL (autoria própria, sem licença de terceiros).

@@ -1,0 +1,4212 @@
+{
+  "version": 1,
+  "base_id": "vale_unica_gamelab_v1",
+  "regions": {
+    "1": "pele",
+    "2": "camisa",
+    "3": "calca",
+    "4": "cabelo"
+  },
+  "sources": {
+    "res://art/characters/vale_unica/rotations/east.png": {
+      "mask": "res://art/characters/avatar_mascaras/vila/rotations/east.png",
+      "source_sha256": "ae925ba821dbb80fa3c30ad77ebffaab8fdb8f258ef0f7f2d1572b44ed4d5c7e",
+      "size": [
+        48,
+        48
+      ],
+      "pixels": {
+        "0": 1808,
+        "1": 98,
+        "2": 37,
+        "3": 64,
+        "4": 297
+      },
+      "value_ref": {
+        "1": 0.9490196078431372,
+        "2": 0.4235294117647059,
+        "3": 0.24705882352941178,
+        "4": 0.396078431372549
+      }
+    },
+    "res://art/characters/vale_unica/rotations/north-east.png": {
+      "mask": "res://art/characters/avatar_mascaras/vila/rotations/north-east.png",
+      "source_sha256": "2b9454c2a17cc8a1b5b56aa5d7ab23df3bd2f4980b089d75929913d6f0359292",
+      "size": [
+        48,
+        48
+      ],
+      "pixels": {
+        "0": 1825,
+        "1": 31,
+        "2": 37,
+        "3": 40,
+        "4": 371
+      },
+      "value_ref": {
+        "1": 0.9058823529411765,
+        "2": 0.34901960784313724,
+        "3": 0.13725490196078433,
+        "4": 0.396078431372549
+      }
+    },
+    "res://art/characters/vale_unica/rotations/north-west.png": {
+      "mask": "res://art/characters/avatar_mascaras/vila/rotations/north-west.png",
+      "source_sha256": "4ad32769e319745b6e30cfc6fef6e6177e9e89324986b8aeb0af8970a15d7115",
+      "size": [
+        48,
+        48
+      ],
+      "pixels": {
+        "0": 1825,
+        "1": 31,
+        "2": 37,
+        "3": 40,
+        "4": 371
+      },
+      "value_ref": {
+        "1": 0.9058823529411765,
+        "2": 0.34901960784313724,
+        "3": 0.13725490196078433,
+        "4": 0.396078431372549
+      }
+    },
+    "res://art/characters/vale_unica/rotations/north.png": {
+      "mask": "res://art/characters/avatar_mascaras/vila/rotations/north.png",
+      "source_sha256": "bd4868a059495b20a7bb294714d8daad276f125d46385b2ab2a03c64b0f4d8ac",
+      "size": [
+        48,
+        48
+      ],
+      "pixels": {
+        "0": 1801,
+        "1": 29,
+        "2": 48,
+        "3": 56,
+        "4": 370
+      },
+      "value_ref": {
+        "1": 0.9176470588235294,
+        "2": 0.38627450980392153,
+        "3": 0.20392156862745098,
+        "4": 0.396078431372549
+      }
+    },
+    "res://art/characters/vale_unica/rotations/south-east.png": {
+      "mask": "res://art/characters/avatar_mascaras/vila/rotations/south-east.png",
+      "source_sha256": "e2df9d76c8860dadb8a895a5f7376c1a6a01a748a81d2fd0c49974f39beaa77d",
+      "size": [
+        48,
+        48
+      ],
+      "pixels": {
+        "0": 1783,
+        "1": 121,
+        "2": 47,
+        "3": 64,
+        "4": 289
+      },
+      "value_ref": {
+        "1": 0.9490196078431372,
+        "2": 0.4235294117647059,
+        "3": 0.20392156862745098,
+        "4": 0.396078431372549
+      }
+    },
+    "res://art/characters/vale_unica/rotations/south-west.png": {
+      "mask": "res://art/characters/avatar_mascaras/vila/rotations/south-west.png",
+      "source_sha256": "086c0b7b347993fe9e787a1834e66bb4f0a11d73482f23e63b615d7b0281a09c",
+      "size": [
+        48,
+        48
+      ],
+      "pixels": {
+        "0": 1783,
+        "1": 121,
+        "2": 47,
+        "3": 64,
+        "4": 289
+      },
+      "value_ref": {
+        "1": 0.9490196078431372,
+        "2": 0.4235294117647059,
+        "3": 0.20392156862745098,
+        "4": 0.396078431372549
+      }
+    },
+    "res://art/characters/vale_unica/rotations/south.png": {
+      "mask": "res://art/characters/avatar_mascaras/vila/rotations/south.png",
+      "source_sha256": "97d2399c34f9ecf4c7e0b619d0dac6e28e90e0c9da1294640ff458b57b84a243",
+      "size": [
+        48,
+        48
+      ],
+      "pixels": {
+        "0": 1790,
+        "1": 111,
+        "2": 46,
+        "3": 72,
+        "4": 285
+      },
+      "value_ref": {
+        "1": 0.9490196078431372,
+        "2": 0.4235294117647059,
+        "3": 0.24705882352941178,
+        "4": 0.396078431372549
+      }
+    },
+    "res://art/characters/vale_unica/rotations/west.png": {
+      "mask": "res://art/characters/avatar_mascaras/vila/rotations/west.png",
+      "source_sha256": "7b7a898d0a0d7cb996df1a35ff09a4048f5b89825fa736a84e2dab9e1763af62",
+      "size": [
+        48,
+        48
+      ],
+      "pixels": {
+        "0": 1808,
+        "1": 98,
+        "2": 37,
+        "3": 64,
+        "4": 297
+      },
+      "value_ref": {
+        "1": 0.9490196078431372,
+        "2": 0.4235294117647059,
+        "3": 0.24705882352941178,
+        "4": 0.396078431372549
+      }
+    },
+    "res://art/characters/vale_unica/run/east/000.png": {
+      "mask": "res://art/characters/avatar_mascaras/vila/run/east/000.png",
+      "source_sha256": "006e34aa1e10175c36b577ee91159dab9592fc1aacd368f572b19e1e00ef56b7",
+      "size": [
+        48,
+        48
+      ],
+      "pixels": {
+        "0": 1780,
+        "1": 100,
+        "2": 31,
+        "3": 71,
+        "4": 322
+      },
+      "value_ref": {
+        "1": 0.9490196078431372,
+        "2": 0.45098039215686275,
+        "3": 0.20392156862745098,
+        "4": 0.3607843137254902
+      }
+    },
+    "res://art/characters/vale_unica/run/east/001.png": {
+      "mask": "res://art/characters/avatar_mascaras/vila/run/east/001.png",
+      "source_sha256": "44bff8536bea9ef04bfd60b4b3a3e8211e73bc18fca8b06783f1ffe95df72b4f",
+      "size": [
+        48,
+        48
+      ],
+      "pixels": {
+        "0": 1782,
+        "1": 111,
+        "2": 37,
+        "3": 61,
+        "4": 313
+      },
+      "value_ref": {
+        "1": 0.9490196078431372,
+        "2": 0.4235294117647059,
+        "3": 0.20392156862745098,
+        "4": 0.39215686274509803
+      }
+    },
+    "res://art/characters/vale_unica/run/east/002.png": {
+      "mask": "res://art/characters/avatar_mascaras/vila/run/east/002.png",
+      "source_sha256": "d54826c31f167e9b7648a57689d7184a35548930e9abce1763fd5171de108b65",
+      "size": [
+        48,
+        48
+      ],
+      "pixels": {
+        "0": 1750,
+        "1": 102,
+        "2": 45,
+        "3": 75,
+        "4": 332
+      },
+      "value_ref": {
+        "1": 0.9490196078431372,
+        "2": 0.3411764705882353,
+        "3": 0.20392156862745098,
+        "4": 0.39215686274509803
+      }
+    },
+    "res://art/characters/vale_unica/run/east/003.png": {
+      "mask": "res://art/characters/avatar_mascaras/vila/run/east/003.png",
+      "source_sha256": "6f2bac1ddbd3368c7ac995317e0441b54e5916f1f6daf301d130006c6293088c",
+      "size": [
+        48,
+        48
+      ],
+      "pixels": {
+        "0": 1736,
+        "1": 105,
+        "2": 46,
+        "3": 78,
+        "4": 339
+      },
+      "value_ref": {
+        "1": 0.9490196078431372,
+        "2": 0.38235294117647056,
+        "3": 0.20392156862745098,
+        "4": 0.3607843137254902
+      }
+    },
+    "res://art/characters/vale_unica/run/east/004.png": {
+      "mask": "res://art/characters/avatar_mascaras/vila/run/east/004.png",
+      "source_sha256": "2540e0645cfd29292a55c1b74a66ec24428b09966f77b3a727ed6a47dc7e8e73",
+      "size": [
+        48,
+        48
+      ],
+      "pixels": {
+        "0": 1744,
+        "1": 104,
+        "2": 49,
+        "3": 81,
+        "4": 326
+      },
+      "value_ref": {
+        "1": 0.9490196078431372,
+        "2": 0.3411764705882353,
+        "3": 0.20392156862745098,
+        "4": 0.3941176470588235
+      }
+    },
+    "res://art/characters/vale_unica/run/east/005.png": {
+      "mask": "res://art/characters/avatar_mascaras/vila/run/east/005.png",
+      "source_sha256": "151e026c81a4228620e4b005bf3173bdf1b20ba1c06163872b49736da23844c6",
+      "size": [
+        48,
+        48
+      ],
+      "pixels": {
+        "0": 1738,
+        "1": 104,
+        "2": 40,
+        "3": 92,
+        "4": 330
+      },
+      "value_ref": {
+        "1": 0.9490196078431372,
+        "2": 0.34509803921568627,
+        "3": 0.24705882352941178,
+        "4": 0.3607843137254902
+      }
+    },
+    "res://art/characters/vale_unica/run/east/006.png": {
+      "mask": "res://art/characters/avatar_mascaras/vila/run/east/006.png",
+      "source_sha256": "a63cc65094654c3417ca014e59c01715f90957b0cbe55d52112031444961880e",
+      "size": [
+        48,
+        48
+      ],
+      "pixels": {
+        "0": 1767,
+        "1": 102,
+        "2": 36,
+        "3": 75,
+        "4": 324
+      },
+      "value_ref": {
+        "1": 0.9490196078431372,
+        "2": 0.34509803921568627,
+        "3": 0.20392156862745098,
+        "4": 0.396078431372549
+      }
+    },
+    "res://art/characters/vale_unica/run/east/007.png": {
+      "mask": "res://art/characters/avatar_mascaras/vila/run/east/007.png",
+      "source_sha256": "49e08ef3dbc22b7d5c4863e46a891169c475e472f70c6fc32bc5273849dedb24",
+      "size": [
+        48,
+        48
+      ],
+      "pixels": {
+        "0": 1783,
+        "1": 95,
+        "2": 27,
+        "3": 82,
+        "4": 317
+      },
+      "value_ref": {
+        "1": 0.9490196078431372,
+        "2": 0.45098039215686275,
+        "3": 0.20392156862745098,
+        "4": 0.39215686274509803
+      }
+    },
+    "res://art/characters/vale_unica/run/north-east/000.png": {
+      "mask": "res://art/characters/avatar_mascaras/vila/run/north-east/000.png",
+      "source_sha256": "c4e0bfa11141744e9822a8c4aaf795dee0599282aa8f06768909284b5db02230",
+      "size": [
+        48,
+        48
+      ],
+      "pixels": {
+        "0": 1773,
+        "1": 25,
+        "2": 86,
+        "3": 32,
+        "4": 388
+      },
+      "value_ref": {
+        "1": 0.9176470588235294,
+        "2": 0.3411764705882353,
+        "3": 0.2,
+        "4": 0.3607843137254902
+      }
+    },
+    "res://art/characters/vale_unica/run/north-east/001.png": {
+      "mask": "res://art/characters/avatar_mascaras/vila/run/north-east/001.png",
+      "source_sha256": "950a6b18e55e519c79f6ee64002ae17c52de0d21bb625962cdbde0a00f3bcb5f",
+      "size": [
+        48,
+        48
+      ],
+      "pixels": {
+        "0": 1792,
+        "1": 22,
+        "2": 82,
+        "3": 30,
+        "4": 378
+      },
+      "value_ref": {
+        "1": 0.9490196078431372,
+        "2": 0.3411764705882353,
+        "3": 0.1411764705882353,
+        "4": 0.3607843137254902
+      }
+    },
+    "res://art/characters/vale_unica/run/north-east/002.png": {
+      "mask": "res://art/characters/avatar_mascaras/vila/run/north-east/002.png",
+      "source_sha256": "84accd8410739dd9ecade43f8f2dadefddc14c3d4778f08f556c67da0294eef3",
+      "size": [
+        48,
+        48
+      ],
+      "pixels": {
+        "0": 1779,
+        "1": 30,
+        "2": 62,
+        "3": 45,
+        "4": 388
+      },
+      "value_ref": {
+        "1": 0.9333333333333333,
+        "2": 0.4372549019607843,
+        "3": 0.2,
+        "4": 0.3607843137254902
+      }
+    },
+    "res://art/characters/vale_unica/run/north-east/003.png": {
+      "mask": "res://art/characters/avatar_mascaras/vila/run/north-east/003.png",
+      "source_sha256": "3c00a3cf8a09d649737406aebb715d546b08a9d387810417984627a096373485",
+      "size": [
+        48,
+        48
+      ],
+      "pixels": {
+        "0": 1810,
+        "1": 30,
+        "2": 66,
+        "3": 33,
+        "4": 365
+      },
+      "value_ref": {
+        "1": 0.9490196078431372,
+        "2": 0.38235294117647056,
+        "3": 0.1411764705882353,
+        "4": 0.3607843137254902
+      }
+    },
+    "res://art/characters/vale_unica/run/north-east/004.png": {
+      "mask": "res://art/characters/avatar_mascaras/vila/run/north-east/004.png",
+      "source_sha256": "a3988f4e0698ec3ffde382cd61a91b5530c753e34275e3802f279055b7359c4d",
+      "size": [
+        48,
+        48
+      ],
+      "pixels": {
+        "0": 1819,
+        "1": 28,
+        "2": 65,
+        "3": 28,
+        "4": 364
+      },
+      "value_ref": {
+        "1": 0.9647058823529412,
+        "2": 0.3411764705882353,
+        "3": 0.1411764705882353,
+        "4": 0.3607843137254902
+      }
+    },
+    "res://art/characters/vale_unica/run/north-east/005.png": {
+      "mask": "res://art/characters/avatar_mascaras/vila/run/north-east/005.png",
+      "source_sha256": "b5d764940713101837d40f67615e98c6dae82bdbfbd887810427e070fd0d2bc1",
+      "size": [
+        48,
+        48
+      ],
+      "pixels": {
+        "0": 1766,
+        "1": 25,
+        "2": 85,
+        "3": 42,
+        "4": 386
+      },
+      "value_ref": {
+        "1": 0.9450980392156862,
+        "2": 0.3411764705882353,
+        "3": 0.1411764705882353,
+        "4": 0.3607843137254902
+      }
+    },
+    "res://art/characters/vale_unica/run/north-east/006.png": {
+      "mask": "res://art/characters/avatar_mascaras/vila/run/north-east/006.png",
+      "source_sha256": "1e8c0abd6de10d5ba23f900279faba06b55cf6b0a254235a280b8369f01e28a8",
+      "size": [
+        48,
+        48
+      ],
+      "pixels": {
+        "0": 1754,
+        "1": 30,
+        "2": 93,
+        "3": 37,
+        "4": 390
+      },
+      "value_ref": {
+        "1": 0.9490196078431372,
+        "2": 0.4235294117647059,
+        "3": 0.2,
+        "4": 0.396078431372549
+      }
+    },
+    "res://art/characters/vale_unica/run/north-east/007.png": {
+      "mask": "res://art/characters/avatar_mascaras/vila/run/north-east/007.png",
+      "source_sha256": "a9f675f082d19d16e430295ef01099c5605a2fa93d86b29246beeb3d751a8365",
+      "size": [
+        48,
+        48
+      ],
+      "pixels": {
+        "0": 1724,
+        "1": 27,
+        "2": 97,
+        "3": 43,
+        "4": 413
+      },
+      "value_ref": {
+        "1": 0.9490196078431372,
+        "2": 0.4235294117647059,
+        "3": 0.2,
+        "4": 0.3607843137254902
+      }
+    },
+    "res://art/characters/vale_unica/run/north-west/000.png": {
+      "mask": "res://art/characters/avatar_mascaras/vila/run/north-west/000.png",
+      "source_sha256": "25b8c53a40f220672f614814e25bdbdc61b0fa812456e2388a5f20b32f64fead",
+      "size": [
+        48,
+        48
+      ],
+      "pixels": {
+        "0": 1773,
+        "1": 25,
+        "2": 86,
+        "3": 32,
+        "4": 388
+      },
+      "value_ref": {
+        "1": 0.9176470588235294,
+        "2": 0.3411764705882353,
+        "3": 0.2,
+        "4": 0.3607843137254902
+      }
+    },
+    "res://art/characters/vale_unica/run/north-west/001.png": {
+      "mask": "res://art/characters/avatar_mascaras/vila/run/north-west/001.png",
+      "source_sha256": "eeaa579ba544e344c1c24bb601d9a98476a2ec46027f400764d49f086d954fd3",
+      "size": [
+        48,
+        48
+      ],
+      "pixels": {
+        "0": 1792,
+        "1": 22,
+        "2": 82,
+        "3": 30,
+        "4": 378
+      },
+      "value_ref": {
+        "1": 0.9490196078431372,
+        "2": 0.3411764705882353,
+        "3": 0.1411764705882353,
+        "4": 0.3607843137254902
+      }
+    },
+    "res://art/characters/vale_unica/run/north-west/002.png": {
+      "mask": "res://art/characters/avatar_mascaras/vila/run/north-west/002.png",
+      "source_sha256": "d6c6ceda5dfcb479bbac600341f6ecd762453db85fd77057ee05e1c271881015",
+      "size": [
+        48,
+        48
+      ],
+      "pixels": {
+        "0": 1779,
+        "1": 30,
+        "2": 62,
+        "3": 45,
+        "4": 388
+      },
+      "value_ref": {
+        "1": 0.9333333333333333,
+        "2": 0.4372549019607843,
+        "3": 0.2,
+        "4": 0.3607843137254902
+      }
+    },
+    "res://art/characters/vale_unica/run/north-west/003.png": {
+      "mask": "res://art/characters/avatar_mascaras/vila/run/north-west/003.png",
+      "source_sha256": "f5cdbe60ab0d58c7477b2978c56641c93b6ebed43b720c8b6a0e07dcbb0af37a",
+      "size": [
+        48,
+        48
+      ],
+      "pixels": {
+        "0": 1810,
+        "1": 30,
+        "2": 66,
+        "3": 33,
+        "4": 365
+      },
+      "value_ref": {
+        "1": 0.9490196078431372,
+        "2": 0.38235294117647056,
+        "3": 0.1411764705882353,
+        "4": 0.3607843137254902
+      }
+    },
+    "res://art/characters/vale_unica/run/north-west/004.png": {
+      "mask": "res://art/characters/avatar_mascaras/vila/run/north-west/004.png",
+      "source_sha256": "170cdafc38b10f8e310ba3d5518c64f4701986b855e6fa07576d56b3a32d4634",
+      "size": [
+        48,
+        48
+      ],
+      "pixels": {
+        "0": 1819,
+        "1": 28,
+        "2": 65,
+        "3": 28,
+        "4": 364
+      },
+      "value_ref": {
+        "1": 0.9647058823529412,
+        "2": 0.3411764705882353,
+        "3": 0.1411764705882353,
+        "4": 0.3607843137254902
+      }
+    },
+    "res://art/characters/vale_unica/run/north-west/005.png": {
+      "mask": "res://art/characters/avatar_mascaras/vila/run/north-west/005.png",
+      "source_sha256": "6385b3441b9eb055af6f9cd13b98ec311d70a0e8888d6f26a46342dcea08fff5",
+      "size": [
+        48,
+        48
+      ],
+      "pixels": {
+        "0": 1766,
+        "1": 25,
+        "2": 85,
+        "3": 42,
+        "4": 386
+      },
+      "value_ref": {
+        "1": 0.9450980392156862,
+        "2": 0.3411764705882353,
+        "3": 0.1411764705882353,
+        "4": 0.3607843137254902
+      }
+    },
+    "res://art/characters/vale_unica/run/north-west/006.png": {
+      "mask": "res://art/characters/avatar_mascaras/vila/run/north-west/006.png",
+      "source_sha256": "5e9147c307538d54a3d6bc6d082f3dd1ac547086d0c41d0a4ffc41640503c707",
+      "size": [
+        48,
+        48
+      ],
+      "pixels": {
+        "0": 1754,
+        "1": 30,
+        "2": 93,
+        "3": 37,
+        "4": 390
+      },
+      "value_ref": {
+        "1": 0.9490196078431372,
+        "2": 0.4235294117647059,
+        "3": 0.2,
+        "4": 0.396078431372549
+      }
+    },
+    "res://art/characters/vale_unica/run/north-west/007.png": {
+      "mask": "res://art/characters/avatar_mascaras/vila/run/north-west/007.png",
+      "source_sha256": "af3e5bbcc7f8552c527928808516bc7adeeb7ad74797b8930d5677c69cb8d961",
+      "size": [
+        48,
+        48
+      ],
+      "pixels": {
+        "0": 1724,
+        "1": 27,
+        "2": 97,
+        "3": 43,
+        "4": 413
+      },
+      "value_ref": {
+        "1": 0.9490196078431372,
+        "2": 0.4235294117647059,
+        "3": 0.2,
+        "4": 0.3607843137254902
+      }
+    },
+    "res://art/characters/vale_unica/run/north/000.png": {
+      "mask": "res://art/characters/avatar_mascaras/vila/run/north/000.png",
+      "source_sha256": "37faf2ff7de49158e8284e7f6b727a78197878637f38e12d54a3f358fb9e27fd",
+      "size": [
+        48,
+        48
+      ],
+      "pixels": {
+        "0": 1806,
+        "1": 27,
+        "2": 41,
+        "3": 86,
+        "4": 344
+      },
+      "value_ref": {
+        "1": 0.9490196078431372,
+        "2": 0.45098039215686275,
+        "3": 0.22549019607843138,
+        "4": 0.39215686274509803
+      }
+    },
+    "res://art/characters/vale_unica/run/north/001.png": {
+      "mask": "res://art/characters/avatar_mascaras/vila/run/north/001.png",
+      "source_sha256": "bb561c4a1e8874fa0e0637dbd5c0417537e27b56fcc9f1e4604a1567fdc1fcc5",
+      "size": [
+        48,
+        48
+      ],
+      "pixels": {
+        "0": 1816,
+        "1": 28,
+        "2": 42,
+        "3": 80,
+        "4": 338
+      },
+      "value_ref": {
+        "1": 0.9313725490196079,
+        "2": 0.45098039215686275,
+        "3": 0.20392156862745098,
+        "4": 0.39215686274509803
+      }
+    },
+    "res://art/characters/vale_unica/run/north/002.png": {
+      "mask": "res://art/characters/avatar_mascaras/vila/run/north/002.png",
+      "source_sha256": "fdf9b5ef9ffe06e26bce7290a0641773c777af83dc9ae53ba7203c537fa01d50",
+      "size": [
+        48,
+        48
+      ],
+      "pixels": {
+        "0": 1818,
+        "1": 28,
+        "2": 43,
+        "3": 78,
+        "4": 337
+      },
+      "value_ref": {
+        "1": 0.9450980392156862,
+        "2": 0.4235294117647059,
+        "3": 0.20392156862745098,
+        "4": 0.39215686274509803
+      }
+    },
+    "res://art/characters/vale_unica/run/north/003.png": {
+      "mask": "res://art/characters/avatar_mascaras/vila/run/north/003.png",
+      "source_sha256": "69ddcb0ab808844347ea42fef1370a7a0e4216195f02da814ef7ae3a07bab8b9",
+      "size": [
+        48,
+        48
+      ],
+      "pixels": {
+        "0": 1832,
+        "1": 21,
+        "2": 45,
+        "3": 78,
+        "4": 328
+      },
+      "value_ref": {
+        "1": 0.9176470588235294,
+        "2": 0.3411764705882353,
+        "3": 0.20392156862745098,
+        "4": 0.3941176470588235
+      }
+    },
+    "res://art/characters/vale_unica/run/north/004.png": {
+      "mask": "res://art/characters/avatar_mascaras/vila/run/north/004.png",
+      "source_sha256": "f0dcca7e4326506ab855af9b1f6ddb9593fac64387f52c9d56d60984fe430a1c",
+      "size": [
+        48,
+        48
+      ],
+      "pixels": {
+        "0": 1823,
+        "1": 21,
+        "2": 46,
+        "3": 78,
+        "4": 336
+      },
+      "value_ref": {
+        "1": 0.9176470588235294,
+        "2": 0.3411764705882353,
+        "3": 0.20392156862745098,
+        "4": 0.3941176470588235
+      }
+    },
+    "res://art/characters/vale_unica/run/north/005.png": {
+      "mask": "res://art/characters/avatar_mascaras/vila/run/north/005.png",
+      "source_sha256": "b7a7a94ded248bc9580e52657a527324eff61baba53acd14906c7e58a1ad2cfc",
+      "size": [
+        48,
+        48
+      ],
+      "pixels": {
+        "0": 1819,
+        "1": 25,
+        "2": 41,
+        "3": 83,
+        "4": 336
+      },
+      "value_ref": {
+        "1": 0.9490196078431372,
+        "2": 0.3411764705882353,
+        "3": 0.24705882352941178,
+        "4": 0.396078431372549
+      }
+    },
+    "res://art/characters/vale_unica/run/north/006.png": {
+      "mask": "res://art/characters/avatar_mascaras/vila/run/north/006.png",
+      "source_sha256": "ded6d2fbab17f5980fe16bbfa1369c3e6b26731a30a71dadeeff0d9c7252147f",
+      "size": [
+        48,
+        48
+      ],
+      "pixels": {
+        "0": 1814,
+        "1": 30,
+        "2": 40,
+        "3": 78,
+        "4": 342
+      },
+      "value_ref": {
+        "1": 0.9490196078431372,
+        "2": 0.3411764705882353,
+        "3": 0.24705882352941178,
+        "4": 0.3941176470588235
+      }
+    },
+    "res://art/characters/vale_unica/run/north/007.png": {
+      "mask": "res://art/characters/avatar_mascaras/vila/run/north/007.png",
+      "source_sha256": "6e5ecf0691fc66ba35afbb1c0c72b86528d33dc68ed620851591e381f4d84abf",
+      "size": [
+        48,
+        48
+      ],
+      "pixels": {
+        "0": 1804,
+        "1": 26,
+        "2": 43,
+        "3": 78,
+        "4": 353
+      },
+      "value_ref": {
+        "1": 0.9490196078431372,
+        "2": 0.3411764705882353,
+        "3": 0.20392156862745098,
+        "4": 0.39215686274509803
+      }
+    },
+    "res://art/characters/vale_unica/run/south-east/000.png": {
+      "mask": "res://art/characters/avatar_mascaras/vila/run/south-east/000.png",
+      "source_sha256": "0f07b1e4fbac3e243083ddf4175c6037e86c14e8d1676f57d4590fc385be0d3a",
+      "size": [
+        48,
+        48
+      ],
+      "pixels": {
+        "0": 1740,
+        "1": 115,
+        "2": 50,
+        "3": 93,
+        "4": 306
+      },
+      "value_ref": {
+        "1": 0.9176470588235294,
+        "2": 0.45098039215686275,
+        "3": 0.20392156862745098,
+        "4": 0.3607843137254902
+      }
+    },
+    "res://art/characters/vale_unica/run/south-east/001.png": {
+      "mask": "res://art/characters/avatar_mascaras/vila/run/south-east/001.png",
+      "source_sha256": "8dd477f672a384caf57d3217df370ab6d5e186a734ddd6975ffffe4c0807b93e",
+      "size": [
+        48,
+        48
+      ],
+      "pixels": {
+        "0": 1741,
+        "1": 126,
+        "2": 56,
+        "3": 70,
+        "4": 311
+      },
+      "value_ref": {
+        "1": 0.9431372549019608,
+        "2": 0.4372549019607843,
+        "3": 0.20392156862745098,
+        "4": 0.2980392156862745
+      }
+    },
+    "res://art/characters/vale_unica/run/south-east/002.png": {
+      "mask": "res://art/characters/avatar_mascaras/vila/run/south-east/002.png",
+      "source_sha256": "9d4044f8c43d0bc8bd8d97c0c542499075a51f5f9de87a8f6808a5fa62f96425",
+      "size": [
+        48,
+        48
+      ],
+      "pixels": {
+        "0": 1688,
+        "1": 130,
+        "2": 57,
+        "3": 105,
+        "4": 324
+      },
+      "value_ref": {
+        "1": 0.9176470588235294,
+        "2": 0.3411764705882353,
+        "3": 0.20392156862745098,
+        "4": 0.2980392156862745
+      }
+    },
+    "res://art/characters/vale_unica/run/south-east/003.png": {
+      "mask": "res://art/characters/avatar_mascaras/vila/run/south-east/003.png",
+      "source_sha256": "d28a9c0f6dac19db7601ef89f74a1b67bb16e42656523ec73dc195746df871b1",
+      "size": [
+        48,
+        48
+      ],
+      "pixels": {
+        "0": 1710,
+        "1": 130,
+        "2": 55,
+        "3": 93,
+        "4": 316
+      },
+      "value_ref": {
+        "1": 0.9176470588235294,
+        "2": 0.3411764705882353,
+        "3": 0.20392156862745098,
+        "4": 0.3607843137254902
+      }
+    },
+    "res://art/characters/vale_unica/run/south-east/004.png": {
+      "mask": "res://art/characters/avatar_mascaras/vila/run/south-east/004.png",
+      "source_sha256": "738726407d27fe9f201c002db54ac0ffbb876be7e86acec9034452b48bddb34f",
+      "size": [
+        48,
+        48
+      ],
+      "pixels": {
+        "0": 1719,
+        "1": 117,
+        "2": 49,
+        "3": 92,
+        "4": 327
+      },
+      "value_ref": {
+        "1": 0.9490196078431372,
+        "2": 0.3411764705882353,
+        "3": 0.20392156862745098,
+        "4": 0.2980392156862745
+      }
+    },
+    "res://art/characters/vale_unica/run/south-east/005.png": {
+      "mask": "res://art/characters/avatar_mascaras/vila/run/south-east/005.png",
+      "source_sha256": "5366a52796744d8d9eb25994e769687b431e222356021fbfb1ad629b9aab3c26",
+      "size": [
+        48,
+        48
+      ],
+      "pixels": {
+        "0": 1779,
+        "1": 109,
+        "2": 35,
+        "3": 88,
+        "4": 293
+      },
+      "value_ref": {
+        "1": 0.9490196078431372,
+        "2": 0.45098039215686275,
+        "3": 0.20392156862745098,
+        "4": 0.3607843137254902
+      }
+    },
+    "res://art/characters/vale_unica/run/south-east/006.png": {
+      "mask": "res://art/characters/avatar_mascaras/vila/run/south-east/006.png",
+      "source_sha256": "cdc2597bdf514a4ec3a67ddb1617ef3e13a243d8519c0196ee6c3b05140fa730",
+      "size": [
+        48,
+        48
+      ],
+      "pixels": {
+        "0": 1768,
+        "1": 111,
+        "2": 34,
+        "3": 98,
+        "4": 293
+      },
+      "value_ref": {
+        "1": 0.9490196078431372,
+        "2": 0.45098039215686275,
+        "3": 0.20392156862745098,
+        "4": 0.2980392156862745
+      }
+    },
+    "res://art/characters/vale_unica/run/south-east/007.png": {
+      "mask": "res://art/characters/avatar_mascaras/vila/run/south-east/007.png",
+      "source_sha256": "1d58bdbd5d41b679308ad2e288d99619403f58236b0008ac6e84b900b048f589",
+      "size": [
+        48,
+        48
+      ],
+      "pixels": {
+        "0": 1744,
+        "1": 124,
+        "2": 41,
+        "3": 97,
+        "4": 298
+      },
+      "value_ref": {
+        "1": 0.9490196078431372,
+        "2": 0.4823529411764706,
+        "3": 0.20392156862745098,
+        "4": 0.2980392156862745
+      }
+    },
+    "res://art/characters/vale_unica/run/south-west/000.png": {
+      "mask": "res://art/characters/avatar_mascaras/vila/run/south-west/000.png",
+      "source_sha256": "8441967154e6a7208caf50ccf03f2562c297a2171fc22d6ae64db2d88b03fa4f",
+      "size": [
+        48,
+        48
+      ],
+      "pixels": {
+        "0": 1740,
+        "1": 115,
+        "2": 50,
+        "3": 93,
+        "4": 306
+      },
+      "value_ref": {
+        "1": 0.9176470588235294,
+        "2": 0.45098039215686275,
+        "3": 0.20392156862745098,
+        "4": 0.3607843137254902
+      }
+    },
+    "res://art/characters/vale_unica/run/south-west/001.png": {
+      "mask": "res://art/characters/avatar_mascaras/vila/run/south-west/001.png",
+      "source_sha256": "d8bb99efc6b99d3ead5afc57f35d46dd9dd9faa0f137d3431a199d74f66d2fbe",
+      "size": [
+        48,
+        48
+      ],
+      "pixels": {
+        "0": 1741,
+        "1": 126,
+        "2": 56,
+        "3": 70,
+        "4": 311
+      },
+      "value_ref": {
+        "1": 0.9431372549019608,
+        "2": 0.4372549019607843,
+        "3": 0.20392156862745098,
+        "4": 0.2980392156862745
+      }
+    },
+    "res://art/characters/vale_unica/run/south-west/002.png": {
+      "mask": "res://art/characters/avatar_mascaras/vila/run/south-west/002.png",
+      "source_sha256": "250e58da732b61f507fbe296b304b0cb9f924dbe60af96c9e8ea786af0400e03",
+      "size": [
+        48,
+        48
+      ],
+      "pixels": {
+        "0": 1688,
+        "1": 130,
+        "2": 57,
+        "3": 105,
+        "4": 324
+      },
+      "value_ref": {
+        "1": 0.9176470588235294,
+        "2": 0.3411764705882353,
+        "3": 0.20392156862745098,
+        "4": 0.2980392156862745
+      }
+    },
+    "res://art/characters/vale_unica/run/south-west/003.png": {
+      "mask": "res://art/characters/avatar_mascaras/vila/run/south-west/003.png",
+      "source_sha256": "a94ca3df341a327e898b9bc6b3e40f7bf2b188b6ae0eea0eacbe7f8f1b95a75a",
+      "size": [
+        48,
+        48
+      ],
+      "pixels": {
+        "0": 1710,
+        "1": 130,
+        "2": 55,
+        "3": 93,
+        "4": 316
+      },
+      "value_ref": {
+        "1": 0.9176470588235294,
+        "2": 0.3411764705882353,
+        "3": 0.20392156862745098,
+        "4": 0.3607843137254902
+      }
+    },
+    "res://art/characters/vale_unica/run/south-west/004.png": {
+      "mask": "res://art/characters/avatar_mascaras/vila/run/south-west/004.png",
+      "source_sha256": "4c28df2496fa1ae4e836ffa637d0fccc7c05d9bb6c8c3ed071b89191c8fd9405",
+      "size": [
+        48,
+        48
+      ],
+      "pixels": {
+        "0": 1719,
+        "1": 117,
+        "2": 49,
+        "3": 92,
+        "4": 327
+      },
+      "value_ref": {
+        "1": 0.9490196078431372,
+        "2": 0.3411764705882353,
+        "3": 0.20392156862745098,
+        "4": 0.2980392156862745
+      }
+    },
+    "res://art/characters/vale_unica/run/south-west/005.png": {
+      "mask": "res://art/characters/avatar_mascaras/vila/run/south-west/005.png",
+      "source_sha256": "442af28661147469399be78d16fefbc21e39a3b7e62e581186a9b5fe0028489a",
+      "size": [
+        48,
+        48
+      ],
+      "pixels": {
+        "0": 1779,
+        "1": 109,
+        "2": 35,
+        "3": 88,
+        "4": 293
+      },
+      "value_ref": {
+        "1": 0.9490196078431372,
+        "2": 0.45098039215686275,
+        "3": 0.20392156862745098,
+        "4": 0.3607843137254902
+      }
+    },
+    "res://art/characters/vale_unica/run/south-west/006.png": {
+      "mask": "res://art/characters/avatar_mascaras/vila/run/south-west/006.png",
+      "source_sha256": "504c61eb2d4af11575451b87bced0f316a1782b10250417437deb0737dee8613",
+      "size": [
+        48,
+        48
+      ],
+      "pixels": {
+        "0": 1768,
+        "1": 111,
+        "2": 34,
+        "3": 98,
+        "4": 293
+      },
+      "value_ref": {
+        "1": 0.9490196078431372,
+        "2": 0.45098039215686275,
+        "3": 0.20392156862745098,
+        "4": 0.2980392156862745
+      }
+    },
+    "res://art/characters/vale_unica/run/south-west/007.png": {
+      "mask": "res://art/characters/avatar_mascaras/vila/run/south-west/007.png",
+      "source_sha256": "52eb08dd73345470d7928decb0a172210d57380ab9f8cf79b99c6c92b7bb437f",
+      "size": [
+        48,
+        48
+      ],
+      "pixels": {
+        "0": 1744,
+        "1": 124,
+        "2": 41,
+        "3": 97,
+        "4": 298
+      },
+      "value_ref": {
+        "1": 0.9490196078431372,
+        "2": 0.4823529411764706,
+        "3": 0.20392156862745098,
+        "4": 0.2980392156862745
+      }
+    },
+    "res://art/characters/vale_unica/run/south/000.png": {
+      "mask": "res://art/characters/avatar_mascaras/vila/run/south/000.png",
+      "source_sha256": "653efd6fc3ba3264c7bc1ae0ea25bc9671fa404e0ca7c5c5e3413ed1428b1d8a",
+      "size": [
+        48,
+        48
+      ],
+      "pixels": {
+        "0": 1777,
+        "1": 93,
+        "2": 51,
+        "3": 97,
+        "4": 286
+      },
+      "value_ref": {
+        "1": 0.9490196078431372,
+        "2": 0.3411764705882353,
+        "3": 0.24705882352941178,
+        "4": 0.3607843137254902
+      }
+    },
+    "res://art/characters/vale_unica/run/south/001.png": {
+      "mask": "res://art/characters/avatar_mascaras/vila/run/south/001.png",
+      "source_sha256": "eab0396ab26b3308eb1d7b095e186a9ac442f0db33b915431c6d4a2baa80abba",
+      "size": [
+        48,
+        48
+      ],
+      "pixels": {
+        "0": 1795,
+        "1": 93,
+        "2": 48,
+        "3": 84,
+        "4": 284
+      },
+      "value_ref": {
+        "1": 0.9490196078431372,
+        "2": 0.3411764705882353,
+        "3": 0.2529411764705882,
+        "4": 0.3607843137254902
+      }
+    },
+    "res://art/characters/vale_unica/run/south/002.png": {
+      "mask": "res://art/characters/avatar_mascaras/vila/run/south/002.png",
+      "source_sha256": "3d2599efd9deba794c54210e44fc571a54113724b750153833084045793f15d7",
+      "size": [
+        48,
+        48
+      ],
+      "pixels": {
+        "0": 1761,
+        "1": 94,
+        "2": 48,
+        "3": 101,
+        "4": 300
+      },
+      "value_ref": {
+        "1": 0.9490196078431372,
+        "2": 0.3411764705882353,
+        "3": 0.20392156862745098,
+        "4": 0.3607843137254902
+      }
+    },
+    "res://art/characters/vale_unica/run/south/003.png": {
+      "mask": "res://art/characters/avatar_mascaras/vila/run/south/003.png",
+      "source_sha256": "9b75ff11418d43215ce92ccc685dbac28cf880fd3e2eb5a082da3f6eba633579",
+      "size": [
+        48,
+        48
+      ],
+      "pixels": {
+        "0": 1742,
+        "1": 99,
+        "2": 54,
+        "3": 103,
+        "4": 306
+      },
+      "value_ref": {
+        "1": 0.9490196078431372,
+        "2": 0.45098039215686275,
+        "3": 0.25882352941176473,
+        "4": 0.2980392156862745
+      }
+    },
+    "res://art/characters/vale_unica/run/south/004.png": {
+      "mask": "res://art/characters/avatar_mascaras/vila/run/south/004.png",
+      "source_sha256": "d7ae80b790c09b9d6a4948870cb53c8b5c8df2bab7982866be1fd137c2afdd95",
+      "size": [
+        48,
+        48
+      ],
+      "pixels": {
+        "0": 1750,
+        "1": 88,
+        "2": 57,
+        "3": 109,
+        "4": 300
+      },
+      "value_ref": {
+        "1": 0.9490196078431372,
+        "2": 0.3411764705882353,
+        "3": 0.24705882352941178,
+        "4": 0.3607843137254902
+      }
+    },
+    "res://art/characters/vale_unica/run/south/005.png": {
+      "mask": "res://art/characters/avatar_mascaras/vila/run/south/005.png",
+      "source_sha256": "a8d2d39a3c0d9198fecc6478c83ddca0ac022b9c9ad7f99b56404f3c6ef16fb5",
+      "size": [
+        48,
+        48
+      ],
+      "pixels": {
+        "0": 1778,
+        "1": 93,
+        "2": 48,
+        "3": 95,
+        "4": 290
+      },
+      "value_ref": {
+        "1": 0.9490196078431372,
+        "2": 0.3411764705882353,
+        "3": 0.20392156862745098,
+        "4": 0.32941176470588235
+      }
+    },
+    "res://art/characters/vale_unica/run/south/006.png": {
+      "mask": "res://art/characters/avatar_mascaras/vila/run/south/006.png",
+      "source_sha256": "0b8af5e24ea4a08c2e2718dfafc49b3cfd5183802854f067c0f43a35cd5df235",
+      "size": [
+        48,
+        48
+      ],
+      "pixels": {
+        "0": 1770,
+        "1": 101,
+        "2": 48,
+        "3": 107,
+        "4": 278
+      },
+      "value_ref": {
+        "1": 0.9490196078431372,
+        "2": 0.3411764705882353,
+        "3": 0.20392156862745098,
+        "4": 0.3607843137254902
+      }
+    },
+    "res://art/characters/vale_unica/run/south/007.png": {
+      "mask": "res://art/characters/avatar_mascaras/vila/run/south/007.png",
+      "source_sha256": "771fac4887449f518d9bbc4cf237be1a2c95ddfb27a3945a4003d42d5bec91d8",
+      "size": [
+        48,
+        48
+      ],
+      "pixels": {
+        "0": 1770,
+        "1": 97,
+        "2": 49,
+        "3": 97,
+        "4": 291
+      },
+      "value_ref": {
+        "1": 0.9490196078431372,
+        "2": 0.3411764705882353,
+        "3": 0.24705882352941178,
+        "4": 0.3607843137254902
+      }
+    },
+    "res://art/characters/vale_unica/run/west/000.png": {
+      "mask": "res://art/characters/avatar_mascaras/vila/run/west/000.png",
+      "source_sha256": "133d3937589a3a1ae9ed4ff78eb1c7194137bbc15884be70eff0b34bf19071c7",
+      "size": [
+        48,
+        48
+      ],
+      "pixels": {
+        "0": 1780,
+        "1": 100,
+        "2": 31,
+        "3": 71,
+        "4": 322
+      },
+      "value_ref": {
+        "1": 0.9490196078431372,
+        "2": 0.45098039215686275,
+        "3": 0.20392156862745098,
+        "4": 0.3607843137254902
+      }
+    },
+    "res://art/characters/vale_unica/run/west/001.png": {
+      "mask": "res://art/characters/avatar_mascaras/vila/run/west/001.png",
+      "source_sha256": "a8cf879d48bf64c379be09f51e6df6fc481c269440ada464ca8954010e4f625f",
+      "size": [
+        48,
+        48
+      ],
+      "pixels": {
+        "0": 1782,
+        "1": 111,
+        "2": 37,
+        "3": 61,
+        "4": 313
+      },
+      "value_ref": {
+        "1": 0.9490196078431372,
+        "2": 0.4235294117647059,
+        "3": 0.20392156862745098,
+        "4": 0.39215686274509803
+      }
+    },
+    "res://art/characters/vale_unica/run/west/002.png": {
+      "mask": "res://art/characters/avatar_mascaras/vila/run/west/002.png",
+      "source_sha256": "4f26ee6ba70c735821f25cadfaa510cd70bf6cc68b6e6d25924149abe8896650",
+      "size": [
+        48,
+        48
+      ],
+      "pixels": {
+        "0": 1750,
+        "1": 102,
+        "2": 45,
+        "3": 75,
+        "4": 332
+      },
+      "value_ref": {
+        "1": 0.9490196078431372,
+        "2": 0.3411764705882353,
+        "3": 0.20392156862745098,
+        "4": 0.39215686274509803
+      }
+    },
+    "res://art/characters/vale_unica/run/west/003.png": {
+      "mask": "res://art/characters/avatar_mascaras/vila/run/west/003.png",
+      "source_sha256": "2d1af3c6a4ae02a8ff675f578cce5ed867f34d49fdd91907eef6af79b8d860a7",
+      "size": [
+        48,
+        48
+      ],
+      "pixels": {
+        "0": 1736,
+        "1": 105,
+        "2": 46,
+        "3": 78,
+        "4": 339
+      },
+      "value_ref": {
+        "1": 0.9490196078431372,
+        "2": 0.38235294117647056,
+        "3": 0.20392156862745098,
+        "4": 0.3607843137254902
+      }
+    },
+    "res://art/characters/vale_unica/run/west/004.png": {
+      "mask": "res://art/characters/avatar_mascaras/vila/run/west/004.png",
+      "source_sha256": "82dfb50ec24b1c955934c7ed8d67caeae6d07542ecfd7e604d403df9ce14bd97",
+      "size": [
+        48,
+        48
+      ],
+      "pixels": {
+        "0": 1744,
+        "1": 104,
+        "2": 49,
+        "3": 81,
+        "4": 326
+      },
+      "value_ref": {
+        "1": 0.9490196078431372,
+        "2": 0.3411764705882353,
+        "3": 0.20392156862745098,
+        "4": 0.3941176470588235
+      }
+    },
+    "res://art/characters/vale_unica/run/west/005.png": {
+      "mask": "res://art/characters/avatar_mascaras/vila/run/west/005.png",
+      "source_sha256": "c35cfb4040325d421cd6048134ee30ec5d170e7d4cf48c2167e951555858e01e",
+      "size": [
+        48,
+        48
+      ],
+      "pixels": {
+        "0": 1738,
+        "1": 104,
+        "2": 40,
+        "3": 92,
+        "4": 330
+      },
+      "value_ref": {
+        "1": 0.9490196078431372,
+        "2": 0.34509803921568627,
+        "3": 0.24705882352941178,
+        "4": 0.3607843137254902
+      }
+    },
+    "res://art/characters/vale_unica/run/west/006.png": {
+      "mask": "res://art/characters/avatar_mascaras/vila/run/west/006.png",
+      "source_sha256": "6f6f9686aaf64f437f365a8fe7802ee75c52874480a850fde6dbd9fa444d01f0",
+      "size": [
+        48,
+        48
+      ],
+      "pixels": {
+        "0": 1767,
+        "1": 102,
+        "2": 36,
+        "3": 75,
+        "4": 324
+      },
+      "value_ref": {
+        "1": 0.9490196078431372,
+        "2": 0.34509803921568627,
+        "3": 0.20392156862745098,
+        "4": 0.396078431372549
+      }
+    },
+    "res://art/characters/vale_unica/run/west/007.png": {
+      "mask": "res://art/characters/avatar_mascaras/vila/run/west/007.png",
+      "source_sha256": "870cd3d623aed450c502216baac0b962f32c6b395c8184c1d04308a630c752eb",
+      "size": [
+        48,
+        48
+      ],
+      "pixels": {
+        "0": 1783,
+        "1": 95,
+        "2": 27,
+        "3": 82,
+        "4": 317
+      },
+      "value_ref": {
+        "1": 0.9490196078431372,
+        "2": 0.45098039215686275,
+        "3": 0.20392156862745098,
+        "4": 0.39215686274509803
+      }
+    },
+    "res://art/characters/vale_unica/tend/east/000.png": {
+      "mask": "res://art/characters/avatar_mascaras/vila/tend/east/000.png",
+      "source_sha256": "ac44091cad049a25b58bd3cb81d7684a18bb305d5f18cb354ca2df1d6b6f2b19",
+      "size": [
+        48,
+        48
+      ],
+      "pixels": {
+        "0": 1813,
+        "1": 97,
+        "2": 22,
+        "3": 93,
+        "4": 279
+      },
+      "value_ref": {
+        "1": 0.9490196078431372,
+        "2": 0.4235294117647059,
+        "3": 0.20392156862745098,
+        "4": 0.396078431372549
+      }
+    },
+    "res://art/characters/vale_unica/tend/east/001.png": {
+      "mask": "res://art/characters/avatar_mascaras/vila/tend/east/001.png",
+      "source_sha256": "32d1223ba851fa8c905baa63ba39a53d5d7faa4b04f41de24fff666c2be74403",
+      "size": [
+        48,
+        48
+      ],
+      "pixels": {
+        "0": 1734,
+        "1": 117,
+        "2": 41,
+        "3": 97,
+        "4": 315
+      },
+      "value_ref": {
+        "1": 0.9490196078431372,
+        "2": 0.4235294117647059,
+        "3": 0.20392156862745098,
+        "4": 0.39215686274509803
+      }
+    },
+    "res://art/characters/vale_unica/tend/east/002.png": {
+      "mask": "res://art/characters/avatar_mascaras/vila/tend/east/002.png",
+      "source_sha256": "0bca0c039d557f06063a7bec5bb2d5f4b469e61535741948bd60a28a74e8dc46",
+      "size": [
+        48,
+        48
+      ],
+      "pixels": {
+        "0": 1717,
+        "1": 106,
+        "2": 50,
+        "3": 114,
+        "4": 317
+      },
+      "value_ref": {
+        "1": 0.9490196078431372,
+        "2": 0.4823529411764706,
+        "3": 0.20392156862745098,
+        "4": 0.39215686274509803
+      }
+    },
+    "res://art/characters/vale_unica/tend/east/003.png": {
+      "mask": "res://art/characters/avatar_mascaras/vila/tend/east/003.png",
+      "source_sha256": "c3b0c350127aafe7fa69baa2130115c1655327338ceae7acc002047f67e75fa8",
+      "size": [
+        48,
+        48
+      ],
+      "pixels": {
+        "0": 1710,
+        "1": 101,
+        "2": 51,
+        "3": 113,
+        "4": 329
+      },
+      "value_ref": {
+        "1": 0.9490196078431372,
+        "2": 0.45098039215686275,
+        "3": 0.20392156862745098,
+        "4": 0.39215686274509803
+      }
+    },
+    "res://art/characters/vale_unica/tend/east/004.png": {
+      "mask": "res://art/characters/avatar_mascaras/vila/tend/east/004.png",
+      "source_sha256": "f2a30d74e9fad2694bb1155602348d8ad114e2aa145fd0e822eaeaf3ff5302cd",
+      "size": [
+        48,
+        48
+      ],
+      "pixels": {
+        "0": 1717,
+        "1": 105,
+        "2": 57,
+        "3": 91,
+        "4": 334
+      },
+      "value_ref": {
+        "1": 0.9490196078431372,
+        "2": 0.4235294117647059,
+        "3": 0.20392156862745098,
+        "4": 0.39215686274509803
+      }
+    },
+    "res://art/characters/vale_unica/tend/north-east/000.png": {
+      "mask": "res://art/characters/avatar_mascaras/vila/tend/north-east/000.png",
+      "source_sha256": "5a2ac8dbca27a2948813a6f7d5e5315dd2b64611d387fbcdf45415bde02aac1c",
+      "size": [
+        48,
+        48
+      ],
+      "pixels": {
+        "0": 1879,
+        "1": 29,
+        "2": 26,
+        "3": 61,
+        "4": 309
+      },
+      "value_ref": {
+        "1": 0.9176470588235294,
+        "2": 0.34901960784313724,
+        "3": 0.2,
+        "4": 0.39215686274509803
+      }
+    },
+    "res://art/characters/vale_unica/tend/north-east/001.png": {
+      "mask": "res://art/characters/avatar_mascaras/vila/tend/north-east/001.png",
+      "source_sha256": "1ca57d92381d0c4c871e05215849be31febf342a15644ccb54344a3a1f8725d1",
+      "size": [
+        48,
+        48
+      ],
+      "pixels": {
+        "0": 1862,
+        "1": 23,
+        "2": 26,
+        "3": 90,
+        "4": 303
+      },
+      "value_ref": {
+        "1": 0.9490196078431372,
+        "2": 0.4372549019607843,
+        "3": 0.2,
+        "4": 0.2980392156862745
+      }
+    },
+    "res://art/characters/vale_unica/tend/north-east/002.png": {
+      "mask": "res://art/characters/avatar_mascaras/vila/tend/north-east/002.png",
+      "source_sha256": "f337eadcfbae9c5896bd4bf325e7641fc38700d431c4aa29a8a3a989b512a565",
+      "size": [
+        48,
+        48
+      ],
+      "pixels": {
+        "0": 1857,
+        "1": 19,
+        "2": 25,
+        "3": 90,
+        "4": 313
+      },
+      "value_ref": {
+        "1": 0.9450980392156862,
+        "2": 0.4235294117647059,
+        "3": 0.2,
+        "4": 0.2980392156862745
+      }
+    },
+    "res://art/characters/vale_unica/tend/north-east/003.png": {
+      "mask": "res://art/characters/avatar_mascaras/vila/tend/north-east/003.png",
+      "source_sha256": "3f0eb8ef61b76796e1ca3fad4421cb40821f9bacd8695e2bfea99e3c530bb516",
+      "size": [
+        48,
+        48
+      ],
+      "pixels": {
+        "0": 1855,
+        "1": 26,
+        "2": 23,
+        "3": 86,
+        "4": 314
+      },
+      "value_ref": {
+        "1": 0.9490196078431372,
+        "2": 0.45098039215686275,
+        "3": 0.2,
+        "4": 0.2980392156862745
+      }
+    },
+    "res://art/characters/vale_unica/tend/north-east/004.png": {
+      "mask": "res://art/characters/avatar_mascaras/vila/tend/north-east/004.png",
+      "source_sha256": "de02a5bdc621eabd1a800974cacca136d65823a232e30c4470dbd308a391dcf5",
+      "size": [
+        48,
+        48
+      ],
+      "pixels": {
+        "0": 1865,
+        "1": 20,
+        "2": 21,
+        "3": 89,
+        "4": 309
+      },
+      "value_ref": {
+        "1": 0.9313725490196079,
+        "2": 0.4823529411764706,
+        "3": 0.2,
+        "4": 0.2980392156862745
+      }
+    },
+    "res://art/characters/vale_unica/tend/north-west/000.png": {
+      "mask": "res://art/characters/avatar_mascaras/vila/tend/north-west/000.png",
+      "source_sha256": "bfb7d5c04aa3a474e24784205ac37638eabd7b99bb6ee51415355183b633db88",
+      "size": [
+        48,
+        48
+      ],
+      "pixels": {
+        "0": 1879,
+        "1": 29,
+        "2": 26,
+        "3": 61,
+        "4": 309
+      },
+      "value_ref": {
+        "1": 0.9176470588235294,
+        "2": 0.34901960784313724,
+        "3": 0.2,
+        "4": 0.39215686274509803
+      }
+    },
+    "res://art/characters/vale_unica/tend/north-west/001.png": {
+      "mask": "res://art/characters/avatar_mascaras/vila/tend/north-west/001.png",
+      "source_sha256": "cf1d3c3c17302677150ed775e0ce86c1f35871cf10a17ad4b118d3aba3e70123",
+      "size": [
+        48,
+        48
+      ],
+      "pixels": {
+        "0": 1862,
+        "1": 23,
+        "2": 26,
+        "3": 90,
+        "4": 303
+      },
+      "value_ref": {
+        "1": 0.9490196078431372,
+        "2": 0.4372549019607843,
+        "3": 0.2,
+        "4": 0.2980392156862745
+      }
+    },
+    "res://art/characters/vale_unica/tend/north-west/002.png": {
+      "mask": "res://art/characters/avatar_mascaras/vila/tend/north-west/002.png",
+      "source_sha256": "523b716dc3469d8b19ce1dc19d42fb8cde02da1db3f4fecdfb87c4e843336853",
+      "size": [
+        48,
+        48
+      ],
+      "pixels": {
+        "0": 1857,
+        "1": 19,
+        "2": 25,
+        "3": 90,
+        "4": 313
+      },
+      "value_ref": {
+        "1": 0.9450980392156862,
+        "2": 0.4235294117647059,
+        "3": 0.2,
+        "4": 0.2980392156862745
+      }
+    },
+    "res://art/characters/vale_unica/tend/north-west/003.png": {
+      "mask": "res://art/characters/avatar_mascaras/vila/tend/north-west/003.png",
+      "source_sha256": "fb1d2cd85cb4270aeb22e15e2b88234d0397f704dda5cfe17d500ba66da6c3c7",
+      "size": [
+        48,
+        48
+      ],
+      "pixels": {
+        "0": 1855,
+        "1": 26,
+        "2": 23,
+        "3": 86,
+        "4": 314
+      },
+      "value_ref": {
+        "1": 0.9490196078431372,
+        "2": 0.45098039215686275,
+        "3": 0.2,
+        "4": 0.2980392156862745
+      }
+    },
+    "res://art/characters/vale_unica/tend/north-west/004.png": {
+      "mask": "res://art/characters/avatar_mascaras/vila/tend/north-west/004.png",
+      "source_sha256": "78d1ef32d512362c6ebd548dd877cf3c970ea39858880d84f3aa2e33915cbfee",
+      "size": [
+        48,
+        48
+      ],
+      "pixels": {
+        "0": 1865,
+        "1": 20,
+        "2": 21,
+        "3": 89,
+        "4": 309
+      },
+      "value_ref": {
+        "1": 0.9313725490196079,
+        "2": 0.4823529411764706,
+        "3": 0.2,
+        "4": 0.2980392156862745
+      }
+    },
+    "res://art/characters/vale_unica/tend/north/000.png": {
+      "mask": "res://art/characters/avatar_mascaras/vila/tend/north/000.png",
+      "source_sha256": "5a2ac8dbca27a2948813a6f7d5e5315dd2b64611d387fbcdf45415bde02aac1c",
+      "size": [
+        48,
+        48
+      ],
+      "pixels": {
+        "0": 1879,
+        "1": 29,
+        "2": 26,
+        "3": 61,
+        "4": 309
+      },
+      "value_ref": {
+        "1": 0.9176470588235294,
+        "2": 0.34901960784313724,
+        "3": 0.2,
+        "4": 0.39215686274509803
+      }
+    },
+    "res://art/characters/vale_unica/tend/north/001.png": {
+      "mask": "res://art/characters/avatar_mascaras/vila/tend/north/001.png",
+      "source_sha256": "1ca57d92381d0c4c871e05215849be31febf342a15644ccb54344a3a1f8725d1",
+      "size": [
+        48,
+        48
+      ],
+      "pixels": {
+        "0": 1862,
+        "1": 23,
+        "2": 26,
+        "3": 90,
+        "4": 303
+      },
+      "value_ref": {
+        "1": 0.9490196078431372,
+        "2": 0.4372549019607843,
+        "3": 0.2,
+        "4": 0.2980392156862745
+      }
+    },
+    "res://art/characters/vale_unica/tend/north/002.png": {
+      "mask": "res://art/characters/avatar_mascaras/vila/tend/north/002.png",
+      "source_sha256": "f337eadcfbae9c5896bd4bf325e7641fc38700d431c4aa29a8a3a989b512a565",
+      "size": [
+        48,
+        48
+      ],
+      "pixels": {
+        "0": 1857,
+        "1": 19,
+        "2": 25,
+        "3": 90,
+        "4": 313
+      },
+      "value_ref": {
+        "1": 0.9450980392156862,
+        "2": 0.4235294117647059,
+        "3": 0.2,
+        "4": 0.2980392156862745
+      }
+    },
+    "res://art/characters/vale_unica/tend/north/003.png": {
+      "mask": "res://art/characters/avatar_mascaras/vila/tend/north/003.png",
+      "source_sha256": "3f0eb8ef61b76796e1ca3fad4421cb40821f9bacd8695e2bfea99e3c530bb516",
+      "size": [
+        48,
+        48
+      ],
+      "pixels": {
+        "0": 1855,
+        "1": 26,
+        "2": 23,
+        "3": 86,
+        "4": 314
+      },
+      "value_ref": {
+        "1": 0.9490196078431372,
+        "2": 0.45098039215686275,
+        "3": 0.2,
+        "4": 0.2980392156862745
+      }
+    },
+    "res://art/characters/vale_unica/tend/north/004.png": {
+      "mask": "res://art/characters/avatar_mascaras/vila/tend/north/004.png",
+      "source_sha256": "de02a5bdc621eabd1a800974cacca136d65823a232e30c4470dbd308a391dcf5",
+      "size": [
+        48,
+        48
+      ],
+      "pixels": {
+        "0": 1865,
+        "1": 20,
+        "2": 21,
+        "3": 89,
+        "4": 309
+      },
+      "value_ref": {
+        "1": 0.9313725490196079,
+        "2": 0.4823529411764706,
+        "3": 0.2,
+        "4": 0.2980392156862745
+      }
+    },
+    "res://art/characters/vale_unica/tend/south-east/000.png": {
+      "mask": "res://art/characters/avatar_mascaras/vila/tend/south-east/000.png",
+      "source_sha256": "e9cf857a2735add9ff1c4c7cc1ba57fb110b57149bce90a0b20f14b59b93ce5e",
+      "size": [
+        48,
+        48
+      ],
+      "pixels": {
+        "0": 1804,
+        "1": 112,
+        "2": 30,
+        "3": 90,
+        "4": 268
+      },
+      "value_ref": {
+        "1": 0.9490196078431372,
+        "2": 0.4235294117647059,
+        "3": 0.20392156862745098,
+        "4": 0.3607843137254902
+      }
+    },
+    "res://art/characters/vale_unica/tend/south-east/001.png": {
+      "mask": "res://art/characters/avatar_mascaras/vila/tend/south-east/001.png",
+      "source_sha256": "a499dbbe02ae929ad3bcc617ba90e3207d65d52f6e6b21a878e184bcd50a59b1",
+      "size": [
+        48,
+        48
+      ],
+      "pixels": {
+        "0": 1693,
+        "1": 132,
+        "2": 46,
+        "3": 110,
+        "4": 323
+      },
+      "value_ref": {
+        "1": 0.9490196078431372,
+        "2": 0.4372549019607843,
+        "3": 0.20392156862745098,
+        "4": 0.39215686274509803
+      }
+    },
+    "res://art/characters/vale_unica/tend/south-east/002.png": {
+      "mask": "res://art/characters/avatar_mascaras/vila/tend/south-east/002.png",
+      "source_sha256": "1c736ecadbaa93b4bec382a67ff958ac166f8581d148770913f0358bd5817610",
+      "size": [
+        48,
+        48
+      ],
+      "pixels": {
+        "0": 1697,
+        "1": 125,
+        "2": 58,
+        "3": 98,
+        "4": 326
+      },
+      "value_ref": {
+        "1": 0.9490196078431372,
+        "2": 0.4372549019607843,
+        "3": 0.20392156862745098,
+        "4": 0.3607843137254902
+      }
+    },
+    "res://art/characters/vale_unica/tend/south-east/003.png": {
+      "mask": "res://art/characters/avatar_mascaras/vila/tend/south-east/003.png",
+      "source_sha256": "829a8d3f8961210638cc83ee22103abeab0eab66f775de56d9c2ba3cad4a340d",
+      "size": [
+        48,
+        48
+      ],
+      "pixels": {
+        "0": 1697,
+        "1": 125,
+        "2": 56,
+        "3": 95,
+        "4": 331
+      },
+      "value_ref": {
+        "1": 0.9490196078431372,
+        "2": 0.4372549019607843,
+        "3": 0.20392156862745098,
+        "4": 0.3607843137254902
+      }
+    },
+    "res://art/characters/vale_unica/tend/south-east/004.png": {
+      "mask": "res://art/characters/avatar_mascaras/vila/tend/south-east/004.png",
+      "source_sha256": "4a595401a0dbe1be624c7c2133c987543cc389dc4908545491dae420f3d82ad6",
+      "size": [
+        48,
+        48
+      ],
+      "pixels": {
+        "0": 1706,
+        "1": 125,
+        "2": 56,
+        "3": 90,
+        "4": 327
+      },
+      "value_ref": {
+        "1": 0.9490196078431372,
+        "2": 0.45098039215686275,
+        "3": 0.20392156862745098,
+        "4": 0.3607843137254902
+      }
+    },
+    "res://art/characters/vale_unica/tend/south-west/000.png": {
+      "mask": "res://art/characters/avatar_mascaras/vila/tend/south-west/000.png",
+      "source_sha256": "3484a16cf93fe89ed8c6645b76a6b9fb7580afeda42a902ab8665627d2085fef",
+      "size": [
+        48,
+        48
+      ],
+      "pixels": {
+        "0": 1804,
+        "1": 112,
+        "2": 30,
+        "3": 90,
+        "4": 268
+      },
+      "value_ref": {
+        "1": 0.9490196078431372,
+        "2": 0.4235294117647059,
+        "3": 0.20392156862745098,
+        "4": 0.3607843137254902
+      }
+    },
+    "res://art/characters/vale_unica/tend/south-west/001.png": {
+      "mask": "res://art/characters/avatar_mascaras/vila/tend/south-west/001.png",
+      "source_sha256": "7b46a8a2630eb1da8b67da04554c18e308f834a83ea17bef04310967896062ff",
+      "size": [
+        48,
+        48
+      ],
+      "pixels": {
+        "0": 1693,
+        "1": 132,
+        "2": 46,
+        "3": 110,
+        "4": 323
+      },
+      "value_ref": {
+        "1": 0.9490196078431372,
+        "2": 0.4372549019607843,
+        "3": 0.20392156862745098,
+        "4": 0.39215686274509803
+      }
+    },
+    "res://art/characters/vale_unica/tend/south-west/002.png": {
+      "mask": "res://art/characters/avatar_mascaras/vila/tend/south-west/002.png",
+      "source_sha256": "937892ef26a943c461bc5965ee7f53655eda380d61bedcc038fcfcfe25f106de",
+      "size": [
+        48,
+        48
+      ],
+      "pixels": {
+        "0": 1697,
+        "1": 125,
+        "2": 58,
+        "3": 98,
+        "4": 326
+      },
+      "value_ref": {
+        "1": 0.9490196078431372,
+        "2": 0.4372549019607843,
+        "3": 0.20392156862745098,
+        "4": 0.3607843137254902
+      }
+    },
+    "res://art/characters/vale_unica/tend/south-west/003.png": {
+      "mask": "res://art/characters/avatar_mascaras/vila/tend/south-west/003.png",
+      "source_sha256": "629ea67bd594b0850731c36571f3795498f243d80aafe1433cdcb2d81ab7209f",
+      "size": [
+        48,
+        48
+      ],
+      "pixels": {
+        "0": 1697,
+        "1": 125,
+        "2": 56,
+        "3": 95,
+        "4": 331
+      },
+      "value_ref": {
+        "1": 0.9490196078431372,
+        "2": 0.4372549019607843,
+        "3": 0.20392156862745098,
+        "4": 0.3607843137254902
+      }
+    },
+    "res://art/characters/vale_unica/tend/south-west/004.png": {
+      "mask": "res://art/characters/avatar_mascaras/vila/tend/south-west/004.png",
+      "source_sha256": "dd930ae6723564404c873bf72355f813ba9c4925e8f73a85583bc35283e02d63",
+      "size": [
+        48,
+        48
+      ],
+      "pixels": {
+        "0": 1706,
+        "1": 125,
+        "2": 56,
+        "3": 90,
+        "4": 327
+      },
+      "value_ref": {
+        "1": 0.9490196078431372,
+        "2": 0.45098039215686275,
+        "3": 0.20392156862745098,
+        "4": 0.3607843137254902
+      }
+    },
+    "res://art/characters/vale_unica/tend/south/000.png": {
+      "mask": "res://art/characters/avatar_mascaras/vila/tend/south/000.png",
+      "source_sha256": "2eab977bb46a2bf1c37f7eefac4d710dfc40f6b784ca23974cbe11255d532356",
+      "size": [
+        48,
+        48
+      ],
+      "pixels": {
+        "0": 1896,
+        "1": 88,
+        "2": 23,
+        "3": 89,
+        "4": 208
+      },
+      "value_ref": {
+        "1": 0.9568627450980391,
+        "2": 0.4235294117647059,
+        "3": 0.20392156862745098,
+        "4": 0.396078431372549
+      }
+    },
+    "res://art/characters/vale_unica/tend/south/001.png": {
+      "mask": "res://art/characters/avatar_mascaras/vila/tend/south/001.png",
+      "source_sha256": "da3f3e63de1c8c254d2e400d6c03eedd931c3e3643b625e3eac5b9c74b0b45dd",
+      "size": [
+        48,
+        48
+      ],
+      "pixels": {
+        "0": 1803,
+        "1": 103,
+        "2": 39,
+        "3": 88,
+        "4": 271
+      },
+      "value_ref": {
+        "1": 0.9490196078431372,
+        "2": 0.4235294117647059,
+        "3": 0.20392156862745098,
+        "4": 0.3607843137254902
+      }
+    },
+    "res://art/characters/vale_unica/tend/south/002.png": {
+      "mask": "res://art/characters/avatar_mascaras/vila/tend/south/002.png",
+      "source_sha256": "66c1a77558bc5765d06ed25806a1c42cbea5149fa79daad8e13edad77a82af7b",
+      "size": [
+        48,
+        48
+      ],
+      "pixels": {
+        "0": 1832,
+        "1": 104,
+        "2": 39,
+        "3": 74,
+        "4": 255
+      },
+      "value_ref": {
+        "1": 0.9490196078431372,
+        "2": 0.4235294117647059,
+        "3": 0.20392156862745098,
+        "4": 0.3607843137254902
+      }
+    },
+    "res://art/characters/vale_unica/tend/south/003.png": {
+      "mask": "res://art/characters/avatar_mascaras/vila/tend/south/003.png",
+      "source_sha256": "a8329364c65731da63dc19007c2dfb29115373f73a8cd68eec1411240bfbb50d",
+      "size": [
+        48,
+        48
+      ],
+      "pixels": {
+        "0": 1808,
+        "1": 107,
+        "2": 37,
+        "3": 73,
+        "4": 279
+      },
+      "value_ref": {
+        "1": 0.9490196078431372,
+        "2": 0.4235294117647059,
+        "3": 0.20392156862745098,
+        "4": 0.3607843137254902
+      }
+    },
+    "res://art/characters/vale_unica/tend/south/004.png": {
+      "mask": "res://art/characters/avatar_mascaras/vila/tend/south/004.png",
+      "source_sha256": "35d4903e05a47d527b4812b19611f131587b6c22a7ba2dc30bbb840fed88ff86",
+      "size": [
+        48,
+        48
+      ],
+      "pixels": {
+        "0": 1808,
+        "1": 99,
+        "2": 37,
+        "3": 91,
+        "4": 269
+      },
+      "value_ref": {
+        "1": 0.9647058823529412,
+        "2": 0.4235294117647059,
+        "3": 0.20392156862745098,
+        "4": 0.3607843137254902
+      }
+    },
+    "res://art/characters/vale_unica/tend/west/000.png": {
+      "mask": "res://art/characters/avatar_mascaras/vila/tend/west/000.png",
+      "source_sha256": "d8a0ffaa062f104f64186f26b16fbe70b6486734fdcdcf47638479f8ed224a17",
+      "size": [
+        48,
+        48
+      ],
+      "pixels": {
+        "0": 1813,
+        "1": 97,
+        "2": 22,
+        "3": 93,
+        "4": 279
+      },
+      "value_ref": {
+        "1": 0.9490196078431372,
+        "2": 0.4235294117647059,
+        "3": 0.20392156862745098,
+        "4": 0.396078431372549
+      }
+    },
+    "res://art/characters/vale_unica/tend/west/001.png": {
+      "mask": "res://art/characters/avatar_mascaras/vila/tend/west/001.png",
+      "source_sha256": "643d6141f71b5a3c2495fd24e3da5a29b90f4fe9712d02c903ce5c1579deeaa7",
+      "size": [
+        48,
+        48
+      ],
+      "pixels": {
+        "0": 1734,
+        "1": 117,
+        "2": 41,
+        "3": 97,
+        "4": 315
+      },
+      "value_ref": {
+        "1": 0.9490196078431372,
+        "2": 0.4235294117647059,
+        "3": 0.20392156862745098,
+        "4": 0.39215686274509803
+      }
+    },
+    "res://art/characters/vale_unica/tend/west/002.png": {
+      "mask": "res://art/characters/avatar_mascaras/vila/tend/west/002.png",
+      "source_sha256": "09a2df76ab1b80b11c02581a8ae149089830198094300c545e050cadc05f2a77",
+      "size": [
+        48,
+        48
+      ],
+      "pixels": {
+        "0": 1717,
+        "1": 106,
+        "2": 50,
+        "3": 114,
+        "4": 317
+      },
+      "value_ref": {
+        "1": 0.9490196078431372,
+        "2": 0.4823529411764706,
+        "3": 0.20392156862745098,
+        "4": 0.39215686274509803
+      }
+    },
+    "res://art/characters/vale_unica/tend/west/003.png": {
+      "mask": "res://art/characters/avatar_mascaras/vila/tend/west/003.png",
+      "source_sha256": "d55e33435cd68567a593ba89be5efd9543c9f97ff8b76ebead6683ce7af598fc",
+      "size": [
+        48,
+        48
+      ],
+      "pixels": {
+        "0": 1710,
+        "1": 101,
+        "2": 51,
+        "3": 113,
+        "4": 329
+      },
+      "value_ref": {
+        "1": 0.9490196078431372,
+        "2": 0.45098039215686275,
+        "3": 0.20392156862745098,
+        "4": 0.39215686274509803
+      }
+    },
+    "res://art/characters/vale_unica/tend/west/004.png": {
+      "mask": "res://art/characters/avatar_mascaras/vila/tend/west/004.png",
+      "source_sha256": "15a29e56c9927ddd76d692c416d27380d1c909804689df4ae851dbfe27c1baa8",
+      "size": [
+        48,
+        48
+      ],
+      "pixels": {
+        "0": 1717,
+        "1": 105,
+        "2": 57,
+        "3": 91,
+        "4": 334
+      },
+      "value_ref": {
+        "1": 0.9490196078431372,
+        "2": 0.4235294117647059,
+        "3": 0.20392156862745098,
+        "4": 0.39215686274509803
+      }
+    },
+    "res://art/characters/vale_unica/walk/east/000.png": {
+      "mask": "res://art/characters/avatar_mascaras/vila/walk/east/000.png",
+      "source_sha256": "006e34aa1e10175c36b577ee91159dab9592fc1aacd368f572b19e1e00ef56b7",
+      "size": [
+        48,
+        48
+      ],
+      "pixels": {
+        "0": 1780,
+        "1": 100,
+        "2": 31,
+        "3": 71,
+        "4": 322
+      },
+      "value_ref": {
+        "1": 0.9490196078431372,
+        "2": 0.45098039215686275,
+        "3": 0.20392156862745098,
+        "4": 0.3607843137254902
+      }
+    },
+    "res://art/characters/vale_unica/walk/east/001.png": {
+      "mask": "res://art/characters/avatar_mascaras/vila/walk/east/001.png",
+      "source_sha256": "44bff8536bea9ef04bfd60b4b3a3e8211e73bc18fca8b06783f1ffe95df72b4f",
+      "size": [
+        48,
+        48
+      ],
+      "pixels": {
+        "0": 1782,
+        "1": 111,
+        "2": 37,
+        "3": 61,
+        "4": 313
+      },
+      "value_ref": {
+        "1": 0.9490196078431372,
+        "2": 0.4235294117647059,
+        "3": 0.20392156862745098,
+        "4": 0.39215686274509803
+      }
+    },
+    "res://art/characters/vale_unica/walk/east/002.png": {
+      "mask": "res://art/characters/avatar_mascaras/vila/walk/east/002.png",
+      "source_sha256": "d54826c31f167e9b7648a57689d7184a35548930e9abce1763fd5171de108b65",
+      "size": [
+        48,
+        48
+      ],
+      "pixels": {
+        "0": 1750,
+        "1": 102,
+        "2": 45,
+        "3": 75,
+        "4": 332
+      },
+      "value_ref": {
+        "1": 0.9490196078431372,
+        "2": 0.3411764705882353,
+        "3": 0.20392156862745098,
+        "4": 0.39215686274509803
+      }
+    },
+    "res://art/characters/vale_unica/walk/east/003.png": {
+      "mask": "res://art/characters/avatar_mascaras/vila/walk/east/003.png",
+      "source_sha256": "6f2bac1ddbd3368c7ac995317e0441b54e5916f1f6daf301d130006c6293088c",
+      "size": [
+        48,
+        48
+      ],
+      "pixels": {
+        "0": 1736,
+        "1": 105,
+        "2": 46,
+        "3": 78,
+        "4": 339
+      },
+      "value_ref": {
+        "1": 0.9490196078431372,
+        "2": 0.38235294117647056,
+        "3": 0.20392156862745098,
+        "4": 0.3607843137254902
+      }
+    },
+    "res://art/characters/vale_unica/walk/east/004.png": {
+      "mask": "res://art/characters/avatar_mascaras/vila/walk/east/004.png",
+      "source_sha256": "2540e0645cfd29292a55c1b74a66ec24428b09966f77b3a727ed6a47dc7e8e73",
+      "size": [
+        48,
+        48
+      ],
+      "pixels": {
+        "0": 1744,
+        "1": 104,
+        "2": 49,
+        "3": 81,
+        "4": 326
+      },
+      "value_ref": {
+        "1": 0.9490196078431372,
+        "2": 0.3411764705882353,
+        "3": 0.20392156862745098,
+        "4": 0.3941176470588235
+      }
+    },
+    "res://art/characters/vale_unica/walk/east/005.png": {
+      "mask": "res://art/characters/avatar_mascaras/vila/walk/east/005.png",
+      "source_sha256": "151e026c81a4228620e4b005bf3173bdf1b20ba1c06163872b49736da23844c6",
+      "size": [
+        48,
+        48
+      ],
+      "pixels": {
+        "0": 1738,
+        "1": 104,
+        "2": 40,
+        "3": 92,
+        "4": 330
+      },
+      "value_ref": {
+        "1": 0.9490196078431372,
+        "2": 0.34509803921568627,
+        "3": 0.24705882352941178,
+        "4": 0.3607843137254902
+      }
+    },
+    "res://art/characters/vale_unica/walk/east/006.png": {
+      "mask": "res://art/characters/avatar_mascaras/vila/walk/east/006.png",
+      "source_sha256": "a63cc65094654c3417ca014e59c01715f90957b0cbe55d52112031444961880e",
+      "size": [
+        48,
+        48
+      ],
+      "pixels": {
+        "0": 1767,
+        "1": 102,
+        "2": 36,
+        "3": 75,
+        "4": 324
+      },
+      "value_ref": {
+        "1": 0.9490196078431372,
+        "2": 0.34509803921568627,
+        "3": 0.20392156862745098,
+        "4": 0.396078431372549
+      }
+    },
+    "res://art/characters/vale_unica/walk/east/007.png": {
+      "mask": "res://art/characters/avatar_mascaras/vila/walk/east/007.png",
+      "source_sha256": "49e08ef3dbc22b7d5c4863e46a891169c475e472f70c6fc32bc5273849dedb24",
+      "size": [
+        48,
+        48
+      ],
+      "pixels": {
+        "0": 1783,
+        "1": 95,
+        "2": 27,
+        "3": 82,
+        "4": 317
+      },
+      "value_ref": {
+        "1": 0.9490196078431372,
+        "2": 0.45098039215686275,
+        "3": 0.20392156862745098,
+        "4": 0.39215686274509803
+      }
+    },
+    "res://art/characters/vale_unica/walk/north-east/000.png": {
+      "mask": "res://art/characters/avatar_mascaras/vila/walk/north-east/000.png",
+      "source_sha256": "c4e0bfa11141744e9822a8c4aaf795dee0599282aa8f06768909284b5db02230",
+      "size": [
+        48,
+        48
+      ],
+      "pixels": {
+        "0": 1773,
+        "1": 25,
+        "2": 86,
+        "3": 32,
+        "4": 388
+      },
+      "value_ref": {
+        "1": 0.9176470588235294,
+        "2": 0.3411764705882353,
+        "3": 0.2,
+        "4": 0.3607843137254902
+      }
+    },
+    "res://art/characters/vale_unica/walk/north-east/001.png": {
+      "mask": "res://art/characters/avatar_mascaras/vila/walk/north-east/001.png",
+      "source_sha256": "950a6b18e55e519c79f6ee64002ae17c52de0d21bb625962cdbde0a00f3bcb5f",
+      "size": [
+        48,
+        48
+      ],
+      "pixels": {
+        "0": 1792,
+        "1": 22,
+        "2": 82,
+        "3": 30,
+        "4": 378
+      },
+      "value_ref": {
+        "1": 0.9490196078431372,
+        "2": 0.3411764705882353,
+        "3": 0.1411764705882353,
+        "4": 0.3607843137254902
+      }
+    },
+    "res://art/characters/vale_unica/walk/north-east/002.png": {
+      "mask": "res://art/characters/avatar_mascaras/vila/walk/north-east/002.png",
+      "source_sha256": "84accd8410739dd9ecade43f8f2dadefddc14c3d4778f08f556c67da0294eef3",
+      "size": [
+        48,
+        48
+      ],
+      "pixels": {
+        "0": 1779,
+        "1": 30,
+        "2": 62,
+        "3": 45,
+        "4": 388
+      },
+      "value_ref": {
+        "1": 0.9333333333333333,
+        "2": 0.4372549019607843,
+        "3": 0.2,
+        "4": 0.3607843137254902
+      }
+    },
+    "res://art/characters/vale_unica/walk/north-east/003.png": {
+      "mask": "res://art/characters/avatar_mascaras/vila/walk/north-east/003.png",
+      "source_sha256": "3c00a3cf8a09d649737406aebb715d546b08a9d387810417984627a096373485",
+      "size": [
+        48,
+        48
+      ],
+      "pixels": {
+        "0": 1810,
+        "1": 30,
+        "2": 66,
+        "3": 33,
+        "4": 365
+      },
+      "value_ref": {
+        "1": 0.9490196078431372,
+        "2": 0.38235294117647056,
+        "3": 0.1411764705882353,
+        "4": 0.3607843137254902
+      }
+    },
+    "res://art/characters/vale_unica/walk/north-east/004.png": {
+      "mask": "res://art/characters/avatar_mascaras/vila/walk/north-east/004.png",
+      "source_sha256": "a3988f4e0698ec3ffde382cd61a91b5530c753e34275e3802f279055b7359c4d",
+      "size": [
+        48,
+        48
+      ],
+      "pixels": {
+        "0": 1819,
+        "1": 28,
+        "2": 65,
+        "3": 28,
+        "4": 364
+      },
+      "value_ref": {
+        "1": 0.9647058823529412,
+        "2": 0.3411764705882353,
+        "3": 0.1411764705882353,
+        "4": 0.3607843137254902
+      }
+    },
+    "res://art/characters/vale_unica/walk/north-east/005.png": {
+      "mask": "res://art/characters/avatar_mascaras/vila/walk/north-east/005.png",
+      "source_sha256": "b5d764940713101837d40f67615e98c6dae82bdbfbd887810427e070fd0d2bc1",
+      "size": [
+        48,
+        48
+      ],
+      "pixels": {
+        "0": 1766,
+        "1": 25,
+        "2": 85,
+        "3": 42,
+        "4": 386
+      },
+      "value_ref": {
+        "1": 0.9450980392156862,
+        "2": 0.3411764705882353,
+        "3": 0.1411764705882353,
+        "4": 0.3607843137254902
+      }
+    },
+    "res://art/characters/vale_unica/walk/north-east/006.png": {
+      "mask": "res://art/characters/avatar_mascaras/vila/walk/north-east/006.png",
+      "source_sha256": "1e8c0abd6de10d5ba23f900279faba06b55cf6b0a254235a280b8369f01e28a8",
+      "size": [
+        48,
+        48
+      ],
+      "pixels": {
+        "0": 1754,
+        "1": 30,
+        "2": 93,
+        "3": 37,
+        "4": 390
+      },
+      "value_ref": {
+        "1": 0.9490196078431372,
+        "2": 0.4235294117647059,
+        "3": 0.2,
+        "4": 0.396078431372549
+      }
+    },
+    "res://art/characters/vale_unica/walk/north-east/007.png": {
+      "mask": "res://art/characters/avatar_mascaras/vila/walk/north-east/007.png",
+      "source_sha256": "a9f675f082d19d16e430295ef01099c5605a2fa93d86b29246beeb3d751a8365",
+      "size": [
+        48,
+        48
+      ],
+      "pixels": {
+        "0": 1724,
+        "1": 27,
+        "2": 97,
+        "3": 43,
+        "4": 413
+      },
+      "value_ref": {
+        "1": 0.9490196078431372,
+        "2": 0.4235294117647059,
+        "3": 0.2,
+        "4": 0.3607843137254902
+      }
+    },
+    "res://art/characters/vale_unica/walk/north-west/000.png": {
+      "mask": "res://art/characters/avatar_mascaras/vila/walk/north-west/000.png",
+      "source_sha256": "25b8c53a40f220672f614814e25bdbdc61b0fa812456e2388a5f20b32f64fead",
+      "size": [
+        48,
+        48
+      ],
+      "pixels": {
+        "0": 1773,
+        "1": 25,
+        "2": 86,
+        "3": 32,
+        "4": 388
+      },
+      "value_ref": {
+        "1": 0.9176470588235294,
+        "2": 0.3411764705882353,
+        "3": 0.2,
+        "4": 0.3607843137254902
+      }
+    },
+    "res://art/characters/vale_unica/walk/north-west/001.png": {
+      "mask": "res://art/characters/avatar_mascaras/vila/walk/north-west/001.png",
+      "source_sha256": "eeaa579ba544e344c1c24bb601d9a98476a2ec46027f400764d49f086d954fd3",
+      "size": [
+        48,
+        48
+      ],
+      "pixels": {
+        "0": 1792,
+        "1": 22,
+        "2": 82,
+        "3": 30,
+        "4": 378
+      },
+      "value_ref": {
+        "1": 0.9490196078431372,
+        "2": 0.3411764705882353,
+        "3": 0.1411764705882353,
+        "4": 0.3607843137254902
+      }
+    },
+    "res://art/characters/vale_unica/walk/north-west/002.png": {
+      "mask": "res://art/characters/avatar_mascaras/vila/walk/north-west/002.png",
+      "source_sha256": "d6c6ceda5dfcb479bbac600341f6ecd762453db85fd77057ee05e1c271881015",
+      "size": [
+        48,
+        48
+      ],
+      "pixels": {
+        "0": 1779,
+        "1": 30,
+        "2": 62,
+        "3": 45,
+        "4": 388
+      },
+      "value_ref": {
+        "1": 0.9333333333333333,
+        "2": 0.4372549019607843,
+        "3": 0.2,
+        "4": 0.3607843137254902
+      }
+    },
+    "res://art/characters/vale_unica/walk/north-west/003.png": {
+      "mask": "res://art/characters/avatar_mascaras/vila/walk/north-west/003.png",
+      "source_sha256": "f5cdbe60ab0d58c7477b2978c56641c93b6ebed43b720c8b6a0e07dcbb0af37a",
+      "size": [
+        48,
+        48
+      ],
+      "pixels": {
+        "0": 1810,
+        "1": 30,
+        "2": 66,
+        "3": 33,
+        "4": 365
+      },
+      "value_ref": {
+        "1": 0.9490196078431372,
+        "2": 0.38235294117647056,
+        "3": 0.1411764705882353,
+        "4": 0.3607843137254902
+      }
+    },
+    "res://art/characters/vale_unica/walk/north-west/004.png": {
+      "mask": "res://art/characters/avatar_mascaras/vila/walk/north-west/004.png",
+      "source_sha256": "170cdafc38b10f8e310ba3d5518c64f4701986b855e6fa07576d56b3a32d4634",
+      "size": [
+        48,
+        48
+      ],
+      "pixels": {
+        "0": 1819,
+        "1": 28,
+        "2": 65,
+        "3": 28,
+        "4": 364
+      },
+      "value_ref": {
+        "1": 0.9647058823529412,
+        "2": 0.3411764705882353,
+        "3": 0.1411764705882353,
+        "4": 0.3607843137254902
+      }
+    },
+    "res://art/characters/vale_unica/walk/north-west/005.png": {
+      "mask": "res://art/characters/avatar_mascaras/vila/walk/north-west/005.png",
+      "source_sha256": "6385b3441b9eb055af6f9cd13b98ec311d70a0e8888d6f26a46342dcea08fff5",
+      "size": [
+        48,
+        48
+      ],
+      "pixels": {
+        "0": 1766,
+        "1": 25,
+        "2": 85,
+        "3": 42,
+        "4": 386
+      },
+      "value_ref": {
+        "1": 0.9450980392156862,
+        "2": 0.3411764705882353,
+        "3": 0.1411764705882353,
+        "4": 0.3607843137254902
+      }
+    },
+    "res://art/characters/vale_unica/walk/north-west/006.png": {
+      "mask": "res://art/characters/avatar_mascaras/vila/walk/north-west/006.png",
+      "source_sha256": "5e9147c307538d54a3d6bc6d082f3dd1ac547086d0c41d0a4ffc41640503c707",
+      "size": [
+        48,
+        48
+      ],
+      "pixels": {
+        "0": 1754,
+        "1": 30,
+        "2": 93,
+        "3": 37,
+        "4": 390
+      },
+      "value_ref": {
+        "1": 0.9490196078431372,
+        "2": 0.4235294117647059,
+        "3": 0.2,
+        "4": 0.396078431372549
+      }
+    },
+    "res://art/characters/vale_unica/walk/north-west/007.png": {
+      "mask": "res://art/characters/avatar_mascaras/vila/walk/north-west/007.png",
+      "source_sha256": "af3e5bbcc7f8552c527928808516bc7adeeb7ad74797b8930d5677c69cb8d961",
+      "size": [
+        48,
+        48
+      ],
+      "pixels": {
+        "0": 1724,
+        "1": 27,
+        "2": 97,
+        "3": 43,
+        "4": 413
+      },
+      "value_ref": {
+        "1": 0.9490196078431372,
+        "2": 0.4235294117647059,
+        "3": 0.2,
+        "4": 0.3607843137254902
+      }
+    },
+    "res://art/characters/vale_unica/walk/north/000.png": {
+      "mask": "res://art/characters/avatar_mascaras/vila/walk/north/000.png",
+      "source_sha256": "37faf2ff7de49158e8284e7f6b727a78197878637f38e12d54a3f358fb9e27fd",
+      "size": [
+        48,
+        48
+      ],
+      "pixels": {
+        "0": 1806,
+        "1": 27,
+        "2": 41,
+        "3": 86,
+        "4": 344
+      },
+      "value_ref": {
+        "1": 0.9490196078431372,
+        "2": 0.45098039215686275,
+        "3": 0.22549019607843138,
+        "4": 0.39215686274509803
+      }
+    },
+    "res://art/characters/vale_unica/walk/north/001.png": {
+      "mask": "res://art/characters/avatar_mascaras/vila/walk/north/001.png",
+      "source_sha256": "bb561c4a1e8874fa0e0637dbd5c0417537e27b56fcc9f1e4604a1567fdc1fcc5",
+      "size": [
+        48,
+        48
+      ],
+      "pixels": {
+        "0": 1816,
+        "1": 28,
+        "2": 42,
+        "3": 80,
+        "4": 338
+      },
+      "value_ref": {
+        "1": 0.9313725490196079,
+        "2": 0.45098039215686275,
+        "3": 0.20392156862745098,
+        "4": 0.39215686274509803
+      }
+    },
+    "res://art/characters/vale_unica/walk/north/002.png": {
+      "mask": "res://art/characters/avatar_mascaras/vila/walk/north/002.png",
+      "source_sha256": "fdf9b5ef9ffe06e26bce7290a0641773c777af83dc9ae53ba7203c537fa01d50",
+      "size": [
+        48,
+        48
+      ],
+      "pixels": {
+        "0": 1818,
+        "1": 28,
+        "2": 43,
+        "3": 78,
+        "4": 337
+      },
+      "value_ref": {
+        "1": 0.9450980392156862,
+        "2": 0.4235294117647059,
+        "3": 0.20392156862745098,
+        "4": 0.39215686274509803
+      }
+    },
+    "res://art/characters/vale_unica/walk/north/003.png": {
+      "mask": "res://art/characters/avatar_mascaras/vila/walk/north/003.png",
+      "source_sha256": "69ddcb0ab808844347ea42fef1370a7a0e4216195f02da814ef7ae3a07bab8b9",
+      "size": [
+        48,
+        48
+      ],
+      "pixels": {
+        "0": 1832,
+        "1": 21,
+        "2": 45,
+        "3": 78,
+        "4": 328
+      },
+      "value_ref": {
+        "1": 0.9176470588235294,
+        "2": 0.3411764705882353,
+        "3": 0.20392156862745098,
+        "4": 0.3941176470588235
+      }
+    },
+    "res://art/characters/vale_unica/walk/north/004.png": {
+      "mask": "res://art/characters/avatar_mascaras/vila/walk/north/004.png",
+      "source_sha256": "f0dcca7e4326506ab855af9b1f6ddb9593fac64387f52c9d56d60984fe430a1c",
+      "size": [
+        48,
+        48
+      ],
+      "pixels": {
+        "0": 1823,
+        "1": 21,
+        "2": 46,
+        "3": 78,
+        "4": 336
+      },
+      "value_ref": {
+        "1": 0.9176470588235294,
+        "2": 0.3411764705882353,
+        "3": 0.20392156862745098,
+        "4": 0.3941176470588235
+      }
+    },
+    "res://art/characters/vale_unica/walk/north/005.png": {
+      "mask": "res://art/characters/avatar_mascaras/vila/walk/north/005.png",
+      "source_sha256": "b7a7a94ded248bc9580e52657a527324eff61baba53acd14906c7e58a1ad2cfc",
+      "size": [
+        48,
+        48
+      ],
+      "pixels": {
+        "0": 1819,
+        "1": 25,
+        "2": 41,
+        "3": 83,
+        "4": 336
+      },
+      "value_ref": {
+        "1": 0.9490196078431372,
+        "2": 0.3411764705882353,
+        "3": 0.24705882352941178,
+        "4": 0.396078431372549
+      }
+    },
+    "res://art/characters/vale_unica/walk/north/006.png": {
+      "mask": "res://art/characters/avatar_mascaras/vila/walk/north/006.png",
+      "source_sha256": "ded6d2fbab17f5980fe16bbfa1369c3e6b26731a30a71dadeeff0d9c7252147f",
+      "size": [
+        48,
+        48
+      ],
+      "pixels": {
+        "0": 1814,
+        "1": 30,
+        "2": 40,
+        "3": 78,
+        "4": 342
+      },
+      "value_ref": {
+        "1": 0.9490196078431372,
+        "2": 0.3411764705882353,
+        "3": 0.24705882352941178,
+        "4": 0.3941176470588235
+      }
+    },
+    "res://art/characters/vale_unica/walk/north/007.png": {
+      "mask": "res://art/characters/avatar_mascaras/vila/walk/north/007.png",
+      "source_sha256": "6e5ecf0691fc66ba35afbb1c0c72b86528d33dc68ed620851591e381f4d84abf",
+      "size": [
+        48,
+        48
+      ],
+      "pixels": {
+        "0": 1804,
+        "1": 26,
+        "2": 43,
+        "3": 78,
+        "4": 353
+      },
+      "value_ref": {
+        "1": 0.9490196078431372,
+        "2": 0.3411764705882353,
+        "3": 0.20392156862745098,
+        "4": 0.39215686274509803
+      }
+    },
+    "res://art/characters/vale_unica/walk/south-east/000.png": {
+      "mask": "res://art/characters/avatar_mascaras/vila/walk/south-east/000.png",
+      "source_sha256": "0f07b1e4fbac3e243083ddf4175c6037e86c14e8d1676f57d4590fc385be0d3a",
+      "size": [
+        48,
+        48
+      ],
+      "pixels": {
+        "0": 1740,
+        "1": 115,
+        "2": 50,
+        "3": 93,
+        "4": 306
+      },
+      "value_ref": {
+        "1": 0.9176470588235294,
+        "2": 0.45098039215686275,
+        "3": 0.20392156862745098,
+        "4": 0.3607843137254902
+      }
+    },
+    "res://art/characters/vale_unica/walk/south-east/001.png": {
+      "mask": "res://art/characters/avatar_mascaras/vila/walk/south-east/001.png",
+      "source_sha256": "8dd477f672a384caf57d3217df370ab6d5e186a734ddd6975ffffe4c0807b93e",
+      "size": [
+        48,
+        48
+      ],
+      "pixels": {
+        "0": 1741,
+        "1": 126,
+        "2": 56,
+        "3": 70,
+        "4": 311
+      },
+      "value_ref": {
+        "1": 0.9431372549019608,
+        "2": 0.4372549019607843,
+        "3": 0.20392156862745098,
+        "4": 0.2980392156862745
+      }
+    },
+    "res://art/characters/vale_unica/walk/south-east/002.png": {
+      "mask": "res://art/characters/avatar_mascaras/vila/walk/south-east/002.png",
+      "source_sha256": "9d4044f8c43d0bc8bd8d97c0c542499075a51f5f9de87a8f6808a5fa62f96425",
+      "size": [
+        48,
+        48
+      ],
+      "pixels": {
+        "0": 1688,
+        "1": 130,
+        "2": 57,
+        "3": 105,
+        "4": 324
+      },
+      "value_ref": {
+        "1": 0.9176470588235294,
+        "2": 0.3411764705882353,
+        "3": 0.20392156862745098,
+        "4": 0.2980392156862745
+      }
+    },
+    "res://art/characters/vale_unica/walk/south-east/003.png": {
+      "mask": "res://art/characters/avatar_mascaras/vila/walk/south-east/003.png",
+      "source_sha256": "d28a9c0f6dac19db7601ef89f74a1b67bb16e42656523ec73dc195746df871b1",
+      "size": [
+        48,
+        48
+      ],
+      "pixels": {
+        "0": 1710,
+        "1": 130,
+        "2": 55,
+        "3": 93,
+        "4": 316
+      },
+      "value_ref": {
+        "1": 0.9176470588235294,
+        "2": 0.3411764705882353,
+        "3": 0.20392156862745098,
+        "4": 0.3607843137254902
+      }
+    },
+    "res://art/characters/vale_unica/walk/south-east/004.png": {
+      "mask": "res://art/characters/avatar_mascaras/vila/walk/south-east/004.png",
+      "source_sha256": "738726407d27fe9f201c002db54ac0ffbb876be7e86acec9034452b48bddb34f",
+      "size": [
+        48,
+        48
+      ],
+      "pixels": {
+        "0": 1719,
+        "1": 117,
+        "2": 49,
+        "3": 92,
+        "4": 327
+      },
+      "value_ref": {
+        "1": 0.9490196078431372,
+        "2": 0.3411764705882353,
+        "3": 0.20392156862745098,
+        "4": 0.2980392156862745
+      }
+    },
+    "res://art/characters/vale_unica/walk/south-east/005.png": {
+      "mask": "res://art/characters/avatar_mascaras/vila/walk/south-east/005.png",
+      "source_sha256": "5366a52796744d8d9eb25994e769687b431e222356021fbfb1ad629b9aab3c26",
+      "size": [
+        48,
+        48
+      ],
+      "pixels": {
+        "0": 1779,
+        "1": 109,
+        "2": 35,
+        "3": 88,
+        "4": 293
+      },
+      "value_ref": {
+        "1": 0.9490196078431372,
+        "2": 0.45098039215686275,
+        "3": 0.20392156862745098,
+        "4": 0.3607843137254902
+      }
+    },
+    "res://art/characters/vale_unica/walk/south-east/006.png": {
+      "mask": "res://art/characters/avatar_mascaras/vila/walk/south-east/006.png",
+      "source_sha256": "cdc2597bdf514a4ec3a67ddb1617ef3e13a243d8519c0196ee6c3b05140fa730",
+      "size": [
+        48,
+        48
+      ],
+      "pixels": {
+        "0": 1768,
+        "1": 111,
+        "2": 34,
+        "3": 98,
+        "4": 293
+      },
+      "value_ref": {
+        "1": 0.9490196078431372,
+        "2": 0.45098039215686275,
+        "3": 0.20392156862745098,
+        "4": 0.2980392156862745
+      }
+    },
+    "res://art/characters/vale_unica/walk/south-east/007.png": {
+      "mask": "res://art/characters/avatar_mascaras/vila/walk/south-east/007.png",
+      "source_sha256": "1d58bdbd5d41b679308ad2e288d99619403f58236b0008ac6e84b900b048f589",
+      "size": [
+        48,
+        48
+      ],
+      "pixels": {
+        "0": 1744,
+        "1": 124,
+        "2": 41,
+        "3": 97,
+        "4": 298
+      },
+      "value_ref": {
+        "1": 0.9490196078431372,
+        "2": 0.4823529411764706,
+        "3": 0.20392156862745098,
+        "4": 0.2980392156862745
+      }
+    },
+    "res://art/characters/vale_unica/walk/south-west/000.png": {
+      "mask": "res://art/characters/avatar_mascaras/vila/walk/south-west/000.png",
+      "source_sha256": "8441967154e6a7208caf50ccf03f2562c297a2171fc22d6ae64db2d88b03fa4f",
+      "size": [
+        48,
+        48
+      ],
+      "pixels": {
+        "0": 1740,
+        "1": 115,
+        "2": 50,
+        "3": 93,
+        "4": 306
+      },
+      "value_ref": {
+        "1": 0.9176470588235294,
+        "2": 0.45098039215686275,
+        "3": 0.20392156862745098,
+        "4": 0.3607843137254902
+      }
+    },
+    "res://art/characters/vale_unica/walk/south-west/001.png": {
+      "mask": "res://art/characters/avatar_mascaras/vila/walk/south-west/001.png",
+      "source_sha256": "d8bb99efc6b99d3ead5afc57f35d46dd9dd9faa0f137d3431a199d74f66d2fbe",
+      "size": [
+        48,
+        48
+      ],
+      "pixels": {
+        "0": 1741,
+        "1": 126,
+        "2": 56,
+        "3": 70,
+        "4": 311
+      },
+      "value_ref": {
+        "1": 0.9431372549019608,
+        "2": 0.4372549019607843,
+        "3": 0.20392156862745098,
+        "4": 0.2980392156862745
+      }
+    },
+    "res://art/characters/vale_unica/walk/south-west/002.png": {
+      "mask": "res://art/characters/avatar_mascaras/vila/walk/south-west/002.png",
+      "source_sha256": "250e58da732b61f507fbe296b304b0cb9f924dbe60af96c9e8ea786af0400e03",
+      "size": [
+        48,
+        48
+      ],
+      "pixels": {
+        "0": 1688,
+        "1": 130,
+        "2": 57,
+        "3": 105,
+        "4": 324
+      },
+      "value_ref": {
+        "1": 0.9176470588235294,
+        "2": 0.3411764705882353,
+        "3": 0.20392156862745098,
+        "4": 0.2980392156862745
+      }
+    },
+    "res://art/characters/vale_unica/walk/south-west/003.png": {
+      "mask": "res://art/characters/avatar_mascaras/vila/walk/south-west/003.png",
+      "source_sha256": "a94ca3df341a327e898b9bc6b3e40f7bf2b188b6ae0eea0eacbe7f8f1b95a75a",
+      "size": [
+        48,
+        48
+      ],
+      "pixels": {
+        "0": 1710,
+        "1": 130,
+        "2": 55,
+        "3": 93,
+        "4": 316
+      },
+      "value_ref": {
+        "1": 0.9176470588235294,
+        "2": 0.3411764705882353,
+        "3": 0.20392156862745098,
+        "4": 0.3607843137254902
+      }
+    },
+    "res://art/characters/vale_unica/walk/south-west/004.png": {
+      "mask": "res://art/characters/avatar_mascaras/vila/walk/south-west/004.png",
+      "source_sha256": "4c28df2496fa1ae4e836ffa637d0fccc7c05d9bb6c8c3ed071b89191c8fd9405",
+      "size": [
+        48,
+        48
+      ],
+      "pixels": {
+        "0": 1719,
+        "1": 117,
+        "2": 49,
+        "3": 92,
+        "4": 327
+      },
+      "value_ref": {
+        "1": 0.9490196078431372,
+        "2": 0.3411764705882353,
+        "3": 0.20392156862745098,
+        "4": 0.2980392156862745
+      }
+    },
+    "res://art/characters/vale_unica/walk/south-west/005.png": {
+      "mask": "res://art/characters/avatar_mascaras/vila/walk/south-west/005.png",
+      "source_sha256": "442af28661147469399be78d16fefbc21e39a3b7e62e581186a9b5fe0028489a",
+      "size": [
+        48,
+        48
+      ],
+      "pixels": {
+        "0": 1779,
+        "1": 109,
+        "2": 35,
+        "3": 88,
+        "4": 293
+      },
+      "value_ref": {
+        "1": 0.9490196078431372,
+        "2": 0.45098039215686275,
+        "3": 0.20392156862745098,
+        "4": 0.3607843137254902
+      }
+    },
+    "res://art/characters/vale_unica/walk/south-west/006.png": {
+      "mask": "res://art/characters/avatar_mascaras/vila/walk/south-west/006.png",
+      "source_sha256": "504c61eb2d4af11575451b87bced0f316a1782b10250417437deb0737dee8613",
+      "size": [
+        48,
+        48
+      ],
+      "pixels": {
+        "0": 1768,
+        "1": 111,
+        "2": 34,
+        "3": 98,
+        "4": 293
+      },
+      "value_ref": {
+        "1": 0.9490196078431372,
+        "2": 0.45098039215686275,
+        "3": 0.20392156862745098,
+        "4": 0.2980392156862745
+      }
+    },
+    "res://art/characters/vale_unica/walk/south-west/007.png": {
+      "mask": "res://art/characters/avatar_mascaras/vila/walk/south-west/007.png",
+      "source_sha256": "52eb08dd73345470d7928decb0a172210d57380ab9f8cf79b99c6c92b7bb437f",
+      "size": [
+        48,
+        48
+      ],
+      "pixels": {
+        "0": 1744,
+        "1": 124,
+        "2": 41,
+        "3": 97,
+        "4": 298
+      },
+      "value_ref": {
+        "1": 0.9490196078431372,
+        "2": 0.4823529411764706,
+        "3": 0.20392156862745098,
+        "4": 0.2980392156862745
+      }
+    },
+    "res://art/characters/vale_unica/walk/south/000.png": {
+      "mask": "res://art/characters/avatar_mascaras/vila/walk/south/000.png",
+      "source_sha256": "653efd6fc3ba3264c7bc1ae0ea25bc9671fa404e0ca7c5c5e3413ed1428b1d8a",
+      "size": [
+        48,
+        48
+      ],
+      "pixels": {
+        "0": 1777,
+        "1": 93,
+        "2": 51,
+        "3": 97,
+        "4": 286
+      },
+      "value_ref": {
+        "1": 0.9490196078431372,
+        "2": 0.3411764705882353,
+        "3": 0.24705882352941178,
+        "4": 0.3607843137254902
+      }
+    },
+    "res://art/characters/vale_unica/walk/south/001.png": {
+      "mask": "res://art/characters/avatar_mascaras/vila/walk/south/001.png",
+      "source_sha256": "eab0396ab26b3308eb1d7b095e186a9ac442f0db33b915431c6d4a2baa80abba",
+      "size": [
+        48,
+        48
+      ],
+      "pixels": {
+        "0": 1795,
+        "1": 93,
+        "2": 48,
+        "3": 84,
+        "4": 284
+      },
+      "value_ref": {
+        "1": 0.9490196078431372,
+        "2": 0.3411764705882353,
+        "3": 0.2529411764705882,
+        "4": 0.3607843137254902
+      }
+    },
+    "res://art/characters/vale_unica/walk/south/002.png": {
+      "mask": "res://art/characters/avatar_mascaras/vila/walk/south/002.png",
+      "source_sha256": "3d2599efd9deba794c54210e44fc571a54113724b750153833084045793f15d7",
+      "size": [
+        48,
+        48
+      ],
+      "pixels": {
+        "0": 1761,
+        "1": 94,
+        "2": 48,
+        "3": 101,
+        "4": 300
+      },
+      "value_ref": {
+        "1": 0.9490196078431372,
+        "2": 0.3411764705882353,
+        "3": 0.20392156862745098,
+        "4": 0.3607843137254902
+      }
+    },
+    "res://art/characters/vale_unica/walk/south/003.png": {
+      "mask": "res://art/characters/avatar_mascaras/vila/walk/south/003.png",
+      "source_sha256": "9b75ff11418d43215ce92ccc685dbac28cf880fd3e2eb5a082da3f6eba633579",
+      "size": [
+        48,
+        48
+      ],
+      "pixels": {
+        "0": 1742,
+        "1": 99,
+        "2": 54,
+        "3": 103,
+        "4": 306
+      },
+      "value_ref": {
+        "1": 0.9490196078431372,
+        "2": 0.45098039215686275,
+        "3": 0.25882352941176473,
+        "4": 0.2980392156862745
+      }
+    },
+    "res://art/characters/vale_unica/walk/south/004.png": {
+      "mask": "res://art/characters/avatar_mascaras/vila/walk/south/004.png",
+      "source_sha256": "d7ae80b790c09b9d6a4948870cb53c8b5c8df2bab7982866be1fd137c2afdd95",
+      "size": [
+        48,
+        48
+      ],
+      "pixels": {
+        "0": 1750,
+        "1": 88,
+        "2": 57,
+        "3": 109,
+        "4": 300
+      },
+      "value_ref": {
+        "1": 0.9490196078431372,
+        "2": 0.3411764705882353,
+        "3": 0.24705882352941178,
+        "4": 0.3607843137254902
+      }
+    },
+    "res://art/characters/vale_unica/walk/south/005.png": {
+      "mask": "res://art/characters/avatar_mascaras/vila/walk/south/005.png",
+      "source_sha256": "a8d2d39a3c0d9198fecc6478c83ddca0ac022b9c9ad7f99b56404f3c6ef16fb5",
+      "size": [
+        48,
+        48
+      ],
+      "pixels": {
+        "0": 1778,
+        "1": 93,
+        "2": 48,
+        "3": 95,
+        "4": 290
+      },
+      "value_ref": {
+        "1": 0.9490196078431372,
+        "2": 0.3411764705882353,
+        "3": 0.20392156862745098,
+        "4": 0.32941176470588235
+      }
+    },
+    "res://art/characters/vale_unica/walk/south/006.png": {
+      "mask": "res://art/characters/avatar_mascaras/vila/walk/south/006.png",
+      "source_sha256": "0b8af5e24ea4a08c2e2718dfafc49b3cfd5183802854f067c0f43a35cd5df235",
+      "size": [
+        48,
+        48
+      ],
+      "pixels": {
+        "0": 1770,
+        "1": 101,
+        "2": 48,
+        "3": 107,
+        "4": 278
+      },
+      "value_ref": {
+        "1": 0.9490196078431372,
+        "2": 0.3411764705882353,
+        "3": 0.20392156862745098,
+        "4": 0.3607843137254902
+      }
+    },
+    "res://art/characters/vale_unica/walk/south/007.png": {
+      "mask": "res://art/characters/avatar_mascaras/vila/walk/south/007.png",
+      "source_sha256": "771fac4887449f518d9bbc4cf237be1a2c95ddfb27a3945a4003d42d5bec91d8",
+      "size": [
+        48,
+        48
+      ],
+      "pixels": {
+        "0": 1770,
+        "1": 97,
+        "2": 49,
+        "3": 97,
+        "4": 291
+      },
+      "value_ref": {
+        "1": 0.9490196078431372,
+        "2": 0.3411764705882353,
+        "3": 0.24705882352941178,
+        "4": 0.3607843137254902
+      }
+    },
+    "res://art/characters/vale_unica/walk/west/000.png": {
+      "mask": "res://art/characters/avatar_mascaras/vila/walk/west/000.png",
+      "source_sha256": "133d3937589a3a1ae9ed4ff78eb1c7194137bbc15884be70eff0b34bf19071c7",
+      "size": [
+        48,
+        48
+      ],
+      "pixels": {
+        "0": 1780,
+        "1": 100,
+        "2": 31,
+        "3": 71,
+        "4": 322
+      },
+      "value_ref": {
+        "1": 0.9490196078431372,
+        "2": 0.45098039215686275,
+        "3": 0.20392156862745098,
+        "4": 0.3607843137254902
+      }
+    },
+    "res://art/characters/vale_unica/walk/west/001.png": {
+      "mask": "res://art/characters/avatar_mascaras/vila/walk/west/001.png",
+      "source_sha256": "a8cf879d48bf64c379be09f51e6df6fc481c269440ada464ca8954010e4f625f",
+      "size": [
+        48,
+        48
+      ],
+      "pixels": {
+        "0": 1782,
+        "1": 111,
+        "2": 37,
+        "3": 61,
+        "4": 313
+      },
+      "value_ref": {
+        "1": 0.9490196078431372,
+        "2": 0.4235294117647059,
+        "3": 0.20392156862745098,
+        "4": 0.39215686274509803
+      }
+    },
+    "res://art/characters/vale_unica/walk/west/002.png": {
+      "mask": "res://art/characters/avatar_mascaras/vila/walk/west/002.png",
+      "source_sha256": "4f26ee6ba70c735821f25cadfaa510cd70bf6cc68b6e6d25924149abe8896650",
+      "size": [
+        48,
+        48
+      ],
+      "pixels": {
+        "0": 1750,
+        "1": 102,
+        "2": 45,
+        "3": 75,
+        "4": 332
+      },
+      "value_ref": {
+        "1": 0.9490196078431372,
+        "2": 0.3411764705882353,
+        "3": 0.20392156862745098,
+        "4": 0.39215686274509803
+      }
+    },
+    "res://art/characters/vale_unica/walk/west/003.png": {
+      "mask": "res://art/characters/avatar_mascaras/vila/walk/west/003.png",
+      "source_sha256": "2d1af3c6a4ae02a8ff675f578cce5ed867f34d49fdd91907eef6af79b8d860a7",
+      "size": [
+        48,
+        48
+      ],
+      "pixels": {
+        "0": 1736,
+        "1": 105,
+        "2": 46,
+        "3": 78,
+        "4": 339
+      },
+      "value_ref": {
+        "1": 0.9490196078431372,
+        "2": 0.38235294117647056,
+        "3": 0.20392156862745098,
+        "4": 0.3607843137254902
+      }
+    },
+    "res://art/characters/vale_unica/walk/west/004.png": {
+      "mask": "res://art/characters/avatar_mascaras/vila/walk/west/004.png",
+      "source_sha256": "82dfb50ec24b1c955934c7ed8d67caeae6d07542ecfd7e604d403df9ce14bd97",
+      "size": [
+        48,
+        48
+      ],
+      "pixels": {
+        "0": 1744,
+        "1": 104,
+        "2": 49,
+        "3": 81,
+        "4": 326
+      },
+      "value_ref": {
+        "1": 0.9490196078431372,
+        "2": 0.3411764705882353,
+        "3": 0.20392156862745098,
+        "4": 0.3941176470588235
+      }
+    },
+    "res://art/characters/vale_unica/walk/west/005.png": {
+      "mask": "res://art/characters/avatar_mascaras/vila/walk/west/005.png",
+      "source_sha256": "c35cfb4040325d421cd6048134ee30ec5d170e7d4cf48c2167e951555858e01e",
+      "size": [
+        48,
+        48
+      ],
+      "pixels": {
+        "0": 1738,
+        "1": 104,
+        "2": 40,
+        "3": 92,
+        "4": 330
+      },
+      "value_ref": {
+        "1": 0.9490196078431372,
+        "2": 0.34509803921568627,
+        "3": 0.24705882352941178,
+        "4": 0.3607843137254902
+      }
+    },
+    "res://art/characters/vale_unica/walk/west/006.png": {
+      "mask": "res://art/characters/avatar_mascaras/vila/walk/west/006.png",
+      "source_sha256": "6f6f9686aaf64f437f365a8fe7802ee75c52874480a850fde6dbd9fa444d01f0",
+      "size": [
+        48,
+        48
+      ],
+      "pixels": {
+        "0": 1767,
+        "1": 102,
+        "2": 36,
+        "3": 75,
+        "4": 324
+      },
+      "value_ref": {
+        "1": 0.9490196078431372,
+        "2": 0.34509803921568627,
+        "3": 0.20392156862745098,
+        "4": 0.396078431372549
+      }
+    },
+    "res://art/characters/vale_unica/walk/west/007.png": {
+      "mask": "res://art/characters/avatar_mascaras/vila/walk/west/007.png",
+      "source_sha256": "870cd3d623aed450c502216baac0b962f32c6b395c8184c1d04308a630c752eb",
+      "size": [
+        48,
+        48
+      ],
+      "pixels": {
+        "0": 1783,
+        "1": 95,
+        "2": 27,
+        "3": 82,
+        "4": 317
+      },
+      "value_ref": {
+        "1": 0.9490196078431372,
+        "2": 0.45098039215686275,
+        "3": 0.20392156862745098,
+        "4": 0.39215686274509803
+      }
+    },
+    "res://art/characters/vale_combate_v6pal/dash/dash_east_sheet.png": {
+      "mask": "res://art/characters/avatar_mascaras/combate/dash/dash_east_sheet.png",
+      "source_sha256": "c31bbfe2c3a8a6d8abe9aff8c9b7e2a83abc598e837fd192811fabd59de207f6",
+      "size": [
+        896,
+        784
+      ],
+      "pixels": {
+        "0": 677332,
+        "1": 4740,
+        "2": 1760,
+        "3": 2680,
+        "4": 15952
+      },
+      "value_ref": {
+        "1": 0.9490196078431372,
+        "2": 0.3058823529411765,
+        "3": 0.13725490196078433,
+        "4": 0.396078431372549
+      }
+    },
+    "res://art/characters/vale_combate_v6pal/dash/dash_north-east_sheet.png": {
+      "mask": "res://art/characters/avatar_mascaras/combate/dash/dash_north-east_sheet.png",
+      "source_sha256": "b29754e4147acd472c48e7b75af74d536db8ed4a9b422eab1b5085a49d16fa69",
+      "size": [
+        896,
+        784
+      ],
+      "pixels": {
+        "0": 679864,
+        "1": 2894,
+        "2": 2096,
+        "3": 1833,
+        "4": 15777
+      },
+      "value_ref": {
+        "1": 0.9058823529411765,
+        "2": 0.4823529411764706,
+        "3": 0.13725490196078433,
+        "4": 0.396078431372549
+      }
+    },
+    "res://art/characters/vale_combate_v6pal/dash/dash_north-west_sheet.png": {
+      "mask": "res://art/characters/avatar_mascaras/combate/dash/dash_north-west_sheet.png",
+      "source_sha256": "9b7f72a99edef79ad4ba5f79e9ddff14e9852b033e66ea36e089e816099e2b55",
+      "size": [
+        896,
+        784
+      ],
+      "pixels": {
+        "0": 679864,
+        "1": 2894,
+        "2": 2096,
+        "3": 1833,
+        "4": 15777
+      },
+      "value_ref": {
+        "1": 0.9058823529411765,
+        "2": 0.4823529411764706,
+        "3": 0.13725490196078433,
+        "4": 0.396078431372549
+      }
+    },
+    "res://art/characters/vale_combate_v6pal/dash/dash_south-east_sheet.png": {
+      "mask": "res://art/characters/avatar_mascaras/combate/dash/dash_south-east_sheet.png",
+      "source_sha256": "9153057ee6bbb0d4974d7cb238879c23f9aed08c7c47d70e9d352c29411b46c9",
+      "size": [
+        896,
+        784
+      ],
+      "pixels": {
+        "0": 675836,
+        "1": 7943,
+        "2": 2754,
+        "3": 2554,
+        "4": 13377
+      },
+      "value_ref": {
+        "1": 0.9490196078431372,
+        "2": 0.4235294117647059,
+        "3": 0.13725490196078433,
+        "4": 0.396078431372549
+      }
+    },
+    "res://art/characters/vale_combate_v6pal/dash/dash_south-west_sheet.png": {
+      "mask": "res://art/characters/avatar_mascaras/combate/dash/dash_south-west_sheet.png",
+      "source_sha256": "9b6e3be2798cf32897c3c5c789735d9bb26e468658c2f9351bff90c2465d1288",
+      "size": [
+        896,
+        784
+      ],
+      "pixels": {
+        "0": 675836,
+        "1": 7943,
+        "2": 2754,
+        "3": 2554,
+        "4": 13377
+      },
+      "value_ref": {
+        "1": 0.9490196078431372,
+        "2": 0.4235294117647059,
+        "3": 0.13725490196078433,
+        "4": 0.396078431372549
+      }
+    },
+    "res://art/characters/vale_combate_v6pal/dash/dash_west_sheet.png": {
+      "mask": "res://art/characters/avatar_mascaras/combate/dash/dash_west_sheet.png",
+      "source_sha256": "30ad33659b3723fd7966d55964660172cf0fe1a7ecd4b3e10f311a95255f2c6f",
+      "size": [
+        896,
+        784
+      ],
+      "pixels": {
+        "0": 677332,
+        "1": 4740,
+        "2": 1760,
+        "3": 2680,
+        "4": 15952
+      },
+      "value_ref": {
+        "1": 0.9490196078431372,
+        "2": 0.3058823529411765,
+        "3": 0.13725490196078433,
+        "4": 0.396078431372549
+      }
+    },
+    "res://art/characters/vale_combate_v6pal/hit/hit_east_sheet.png": {
+      "mask": "res://art/characters/avatar_mascaras/combate/hit/hit_east_sheet.png",
+      "source_sha256": "6c35cccb5278d75efb6b7cc00c38ce95c58c7d1d014a5f9d930fd2479cda220c",
+      "size": [
+        896,
+        784
+      ],
+      "pixels": {
+        "0": 676879,
+        "1": 6722,
+        "2": 4105,
+        "3": 886,
+        "4": 13872
+      },
+      "value_ref": {
+        "1": 0.9490196078431372,
+        "2": 0.3411764705882353,
+        "3": 0.13725490196078433,
+        "4": 0.396078431372549
+      }
+    },
+    "res://art/characters/vale_combate_v6pal/hit/hit_north-east_sheet.png": {
+      "mask": "res://art/characters/avatar_mascaras/combate/hit/hit_north-east_sheet.png",
+      "source_sha256": "b249951dea87c33901a6e80fba0d5da7cf96abf82ce157ceb8fc3633e9f1bcdb",
+      "size": [
+        896,
+        784
+      ],
+      "pixels": {
+        "0": 678019,
+        "1": 2284,
+        "2": 2277,
+        "3": 2849,
+        "4": 17035
+      },
+      "value_ref": {
+        "1": 0.8666666666666667,
+        "2": 0.3411764705882353,
+        "3": 0.20392156862745098,
+        "4": 0.396078431372549
+      }
+    },
+    "res://art/characters/vale_combate_v6pal/hit/hit_north-west_sheet.png": {
+      "mask": "res://art/characters/avatar_mascaras/combate/hit/hit_north-west_sheet.png",
+      "source_sha256": "e8cc6d72914f3b258cb9a2f761afae8cd09b21a577fcf879650afd11e9d1e743",
+      "size": [
+        896,
+        784
+      ],
+      "pixels": {
+        "0": 678019,
+        "1": 2284,
+        "2": 2277,
+        "3": 2849,
+        "4": 17035
+      },
+      "value_ref": {
+        "1": 0.8666666666666667,
+        "2": 0.3411764705882353,
+        "3": 0.20392156862745098,
+        "4": 0.396078431372549
+      }
+    },
+    "res://art/characters/vale_combate_v6pal/hit/hit_south-east_sheet.png": {
+      "mask": "res://art/characters/avatar_mascaras/combate/hit/hit_south-east_sheet.png",
+      "source_sha256": "03841baa6e87effa41d05db933b0bed7132c93b9e77a8fa3a1ccb06b2004370c",
+      "size": [
+        896,
+        784
+      ],
+      "pixels": {
+        "0": 674895,
+        "1": 8018,
+        "2": 3774,
+        "3": 2081,
+        "4": 13696
+      },
+      "value_ref": {
+        "1": 0.9490196078431372,
+        "2": 0.3411764705882353,
+        "3": 0.13725490196078433,
+        "4": 0.3607843137254902
+      }
+    },
+    "res://art/characters/vale_combate_v6pal/hit/hit_south-west_sheet.png": {
+      "mask": "res://art/characters/avatar_mascaras/combate/hit/hit_south-west_sheet.png",
+      "source_sha256": "9ce28c6e4205ced3412e438532e39effa37d89f9d10881f867d84a1292ef8c0e",
+      "size": [
+        896,
+        784
+      ],
+      "pixels": {
+        "0": 674895,
+        "1": 8018,
+        "2": 3774,
+        "3": 2081,
+        "4": 13696
+      },
+      "value_ref": {
+        "1": 0.9490196078431372,
+        "2": 0.3411764705882353,
+        "3": 0.13725490196078433,
+        "4": 0.3607843137254902
+      }
+    },
+    "res://art/characters/vale_combate_v6pal/hit/hit_west_sheet.png": {
+      "mask": "res://art/characters/avatar_mascaras/combate/hit/hit_west_sheet.png",
+      "source_sha256": "277c143656ae1615ede41d3f2738b8906a761e23e9a23fa349babf07c3cb6c04",
+      "size": [
+        896,
+        784
+      ],
+      "pixels": {
+        "0": 676879,
+        "1": 6722,
+        "2": 4105,
+        "3": 886,
+        "4": 13872
+      },
+      "value_ref": {
+        "1": 0.9490196078431372,
+        "2": 0.3411764705882353,
+        "3": 0.13725490196078433,
+        "4": 0.396078431372549
+      }
+    },
+    "res://art/characters/vale_combate_v6pal/slash_combo/slash_combo_east_sheet.png": {
+      "mask": "res://art/characters/avatar_mascaras/combate/slash_combo/slash_combo_east_sheet.png",
+      "source_sha256": "8a26664c45a18b44b34c9fca635ee74d6f4a7c74755f3fe897f2107145843dc4",
+      "size": [
+        896,
+        784
+      ],
+      "pixels": {
+        "0": 676707,
+        "1": 6116,
+        "2": 2962,
+        "3": 2185,
+        "4": 14494
+      },
+      "value_ref": {
+        "1": 0.9176470588235294,
+        "2": 0.3411764705882353,
+        "3": 0.13725490196078433,
+        "4": 0.396078431372549
+      }
+    },
+    "res://art/characters/vale_combate_v6pal/slash_combo/slash_combo_north-east_sheet.png": {
+      "mask": "res://art/characters/avatar_mascaras/combate/slash_combo/slash_combo_north-east_sheet.png",
+      "source_sha256": "6fbcac970d4ee63c36199ac2961943a52a0917c2c7a2929817507da19321b92b",
+      "size": [
+        896,
+        784
+      ],
+      "pixels": {
+        "0": 677552,
+        "1": 3424,
+        "2": 3666,
+        "3": 2272,
+        "4": 15550
+      },
+      "value_ref": {
+        "1": 0.9176470588235294,
+        "2": 0.3411764705882353,
+        "3": 0.13725490196078433,
+        "4": 0.396078431372549
+      }
+    },
+    "res://art/characters/vale_combate_v6pal/slash_combo/slash_combo_north-west_sheet.png": {
+      "mask": "res://art/characters/avatar_mascaras/combate/slash_combo/slash_combo_north-west_sheet.png",
+      "source_sha256": "970afb5a67dabcb8a0a80e87ba3ae8664449bf10199e98128b00f48f8f7156c8",
+      "size": [
+        896,
+        784
+      ],
+      "pixels": {
+        "0": 677552,
+        "1": 3424,
+        "2": 3666,
+        "3": 2272,
+        "4": 15550
+      },
+      "value_ref": {
+        "1": 0.9176470588235294,
+        "2": 0.3411764705882353,
+        "3": 0.13725490196078433,
+        "4": 0.396078431372549
+      }
+    },
+    "res://art/characters/vale_combate_v6pal/slash_combo/slash_combo_south-east_sheet.png": {
+      "mask": "res://art/characters/avatar_mascaras/combate/slash_combo/slash_combo_south-east_sheet.png",
+      "source_sha256": "b9e69fc1068e0280ed870797b1a76a8c81de8377fed2caec228bd51f01dfc18f",
+      "size": [
+        896,
+        784
+      ],
+      "pixels": {
+        "0": 675745,
+        "1": 6266,
+        "2": 5627,
+        "3": 1062,
+        "4": 13764
+      },
+      "value_ref": {
+        "1": 0.9176470588235294,
+        "2": 0.3411764705882353,
+        "3": 0.13725490196078433,
+        "4": 0.396078431372549
+      }
+    },
+    "res://art/characters/vale_combate_v6pal/slash_combo/slash_combo_south-west_sheet.png": {
+      "mask": "res://art/characters/avatar_mascaras/combate/slash_combo/slash_combo_south-west_sheet.png",
+      "source_sha256": "642fb696fec7889c2918d3417fe990a50129cfddda7387a78104b94f0e79bd04",
+      "size": [
+        896,
+        784
+      ],
+      "pixels": {
+        "0": 675745,
+        "1": 6266,
+        "2": 5627,
+        "3": 1062,
+        "4": 13764
+      },
+      "value_ref": {
+        "1": 0.9176470588235294,
+        "2": 0.3411764705882353,
+        "3": 0.13725490196078433,
+        "4": 0.396078431372549
+      }
+    },
+    "res://art/characters/vale_combate_v6pal/slash_combo/slash_combo_west_sheet.png": {
+      "mask": "res://art/characters/avatar_mascaras/combate/slash_combo/slash_combo_west_sheet.png",
+      "source_sha256": "1450a26a5015c8431c45bf36efb995b8a13511a85a28893a8523c83826a98f58",
+      "size": [
+        896,
+        784
+      ],
+      "pixels": {
+        "0": 676707,
+        "1": 6116,
+        "2": 2962,
+        "3": 2185,
+        "4": 14494
+      },
+      "value_ref": {
+        "1": 0.9176470588235294,
+        "2": 0.3411764705882353,
+        "3": 0.13725490196078433,
+        "4": 0.396078431372549
+      }
+    },
+    "res://art/characters/vale_combate_v6pal/special/special_east_sheet.png": {
+      "mask": "res://art/characters/avatar_mascaras/combate/special/special_east_sheet.png",
+      "source_sha256": "29983f53b53e2b286f39f0d8d316a5e9704d66f7eee781bf07edd66ace180d0a",
+      "size": [
+        896,
+        784
+      ],
+      "pixels": {
+        "0": 675559,
+        "1": 7736,
+        "2": 2154,
+        "3": 1121,
+        "4": 15894
+      },
+      "value_ref": {
+        "1": 0.8666666666666667,
+        "2": 0.3411764705882353,
+        "3": 0.20392156862745098,
+        "4": 0.396078431372549
+      }
+    },
+    "res://art/characters/vale_combate_v6pal/special/special_north-east_sheet.png": {
+      "mask": "res://art/characters/avatar_mascaras/combate/special/special_north-east_sheet.png",
+      "source_sha256": "173b1f37cf5b30f888714e2df6930642794788966ccac0c6f9665bc6c14ab455",
+      "size": [
+        896,
+        784
+      ],
+      "pixels": {
+        "0": 671835,
+        "1": 9342,
+        "2": 2012,
+        "3": 1761,
+        "4": 17514
+      },
+      "value_ref": {
+        "1": 0.8980392156862745,
+        "2": 0.3411764705882353,
+        "3": 0.20392156862745098,
+        "4": 0.396078431372549
+      }
+    },
+    "res://art/characters/vale_combate_v6pal/special/special_north-west_sheet.png": {
+      "mask": "res://art/characters/avatar_mascaras/combate/special/special_north-west_sheet.png",
+      "source_sha256": "50540c17aed8b004f79c5146b3a53ad0e77f6b3e417c0eb3e1e11b2e2bd85b7d",
+      "size": [
+        896,
+        784
+      ],
+      "pixels": {
+        "0": 671835,
+        "1": 9342,
+        "2": 2012,
+        "3": 1761,
+        "4": 17514
+      },
+      "value_ref": {
+        "1": 0.8980392156862745,
+        "2": 0.3411764705882353,
+        "3": 0.20392156862745098,
+        "4": 0.396078431372549
+      }
+    },
+    "res://art/characters/vale_combate_v6pal/special/special_south-east_sheet.png": {
+      "mask": "res://art/characters/avatar_mascaras/combate/special/special_south-east_sheet.png",
+      "source_sha256": "dbec0bc1cd708a6fcf0cb5b13a65ffa52704e1951fd1a1cacab083be1cfec03a",
+      "size": [
+        896,
+        784
+      ],
+      "pixels": {
+        "0": 669225,
+        "1": 14682,
+        "2": 2259,
+        "3": 1221,
+        "4": 15077
+      },
+      "value_ref": {
+        "1": 0.803921568627451,
+        "2": 0.45098039215686275,
+        "3": 0.24705882352941178,
+        "4": 0.396078431372549
+      }
+    },
+    "res://art/characters/vale_combate_v6pal/special/special_south-west_sheet.png": {
+      "mask": "res://art/characters/avatar_mascaras/combate/special/special_south-west_sheet.png",
+      "source_sha256": "ff4a417a2dc0f8e26143937ec2c8b5cdfe8132180a485c38b724f0dd64ce117d",
+      "size": [
+        896,
+        784
+      ],
+      "pixels": {
+        "0": 669225,
+        "1": 14682,
+        "2": 2259,
+        "3": 1221,
+        "4": 15077
+      },
+      "value_ref": {
+        "1": 0.803921568627451,
+        "2": 0.45098039215686275,
+        "3": 0.24705882352941178,
+        "4": 0.396078431372549
+      }
+    },
+    "res://art/characters/vale_combate_v6pal/special/special_west_sheet.png": {
+      "mask": "res://art/characters/avatar_mascaras/combate/special/special_west_sheet.png",
+      "source_sha256": "1054785ec751d02ef8f583b348b513ac9070a2ea80c03bef57fdebbb12ef0702",
+      "size": [
+        896,
+        784
+      ],
+      "pixels": {
+        "0": 675559,
+        "1": 7736,
+        "2": 2154,
+        "3": 1121,
+        "4": 15894
+      },
+      "value_ref": {
+        "1": 0.8666666666666667,
+        "2": 0.3411764705882353,
+        "3": 0.20392156862745098,
+        "4": 0.396078431372549
+      }
+    }
+  }
+}
