@@ -37,3 +37,13 @@ Cada pasta tem seu `FONTE_E_LICENCA.txt`.
 - `art/ui/titulo/fundo_titulo.png`: arte conceitual do próprio Thiago Martinelli. A interface pintada na imagem foi removida pela Bolorina.
 - `art/ui/titulo/icones/` (folha, baú, engrenagem, porta, chevron e ornamentos): desenhados pela Bolorina, autoria própria.
 - `shaders/titulo/fundo_titulo.gdshader`: autoria própria.
+
+## 4ª passada: acampamento orc nas Minas da Cinza
+- `art/models/kaykit_halloween_bits/` (bone_A, bone_B, bone_C, skull, post_skull): KayKit Halloween Bits 1.0 (FREE), Kay Lousberg, CC0, https://kaylousberg.itch.io/halloween-bits
+- Também reaproveita modelos CC0 que já estavam no projeto:
+  - Quaternius Props: Banner_1/2, WeaponStand, Cage_Small, Table_Large, Shield_Wooden, Barrel;
+  - KayKit Dungeon: torch_lit;
+  - KayKit Resource Bits: Wood_Log_Stack;
+  - Kenney Graveyard e Survival: rochas.
+- Tendas, paliçadas e fogueiras: geometria procedural da Bolorina.
+- Partículas: Kenney Particle Pack (já creditado).

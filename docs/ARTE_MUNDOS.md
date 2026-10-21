@@ -23,3 +23,14 @@
 - **Animação do fundo:** Ken Burns lento (zoom entre 1,045 e 1,095 e deslocamento, ciclo de 36 s), brilho correndo nas 6 cachoeiras, sol pulsando, cinzas caindo e brasas subindo.
 - **Reserva:** o fundo 3D do Mirante (`TituloVisual.fundo_3d`) só entra se a imagem não carregar.
 - **Menu:** quatro placas separadas, cada uma com moldura dupla e ícone. No foco: borda dourada, brilho, chevron e leve deslize. Carregar jogo fica apagado sem save. A navegação por teclado e controle continua igual.
+
+## 4ª passada: masmorra dos orcs (Minas da Cinza) consistente com a arena
+- **Orcs:** os orcs da masmorra (grunt, besteiro, xamã, bruto e o chefe Brasa-Viva) usam o MESMO sprite pixel do orc da arena (`art/combate/orc`, filtro nearest, sem sombreamento). Tudo vem de dados: `"visual": "sprite_orc"` e `"tinta_sprite"` em `data/dungeon/temas.json`. O porte define o tamanho. O modelo 3D Quaternius só entra nos tipos sem sprite próprio.
+- **Câmera:** a da masmorra agora é igual à da arena (yaw 45°, pitch 40°, tamanho ortográfico 15,5), então Vale e os orcs têm o mesmo tamanho na tela.
+- **Decoração:** acampamento de guerra decorado por dados (`DecoracaoMundos`, `"acampamento_orc": true`), com RNG próprio e sem colisão. Fica fora das células ocupadas, então o gerador e os testes de layout não mudam.
+  - Acampamento: tendas, fogueira, paliçadas, estandarte, armas e lenha.
+  - Jaulas: gaiolas, ossadas, totem e paliçada.
+  - Sala de guerra: mesa, estandartes, suportes de armas, escudo, totem, fogueira e tochas.
+  - Covil do chefe: fogueiras grandes, 3 totens, estandartes e ossadas.
+  - No andar todo: rochas escuras nas beiradas, manchas de lama, brasas e fumaça baixa.
+- **Outros temas** (criptas e fenda): ganharam a mesma câmera da arena. Os inimigos continuam em 3D, porque não existe sprite pixel equivalente no projeto.

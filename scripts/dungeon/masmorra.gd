@@ -16,6 +16,11 @@ const Registro = preload("res://scripts/mundo/registro_areas.gd")
 const Combate = preload("res://scripts/dungeon/combate_masmorra.gd")
 const Hud = preload("res://scripts/dungeon/hud_masmorra.gd")
 const JogadorCombate = preload("res://scripts/combate/jogador_combate.gd")
+## Bolorina 21/10: mesma camera da arena (scripts/combate/arena_combate.gd: YAW 45, PITCH 40, tamanho 15.5)
+## para Vale e os orcs terem o mesmo tamanho e angulo na tela nos dois lugares.
+const TAM_CAMERA_COMBATE := 15.5
+const CAM_YAW_COMBATE := 45.0
+const CAM_PITCH_COMBATE := 40.0
 
 signal saiu_da_masmorra(area: String, ponto: String)
 signal desceu(de: int, para: int)
@@ -882,6 +887,13 @@ func _ambiente() -> void:
 			k += 1
 
 # ------------------------------------------------------------------ jogadora de combate / câmera
+func _mirar(alvo: Vector3, tam: float) -> void:
+	var y := deg_to_rad(CAM_YAW_COMBATE)
+	var p := deg_to_rad(CAM_PITCH_COMBATE)
+	var tras := Vector3(cos(p) * sin(y), sin(p), cos(p) * cos(y))
+	camera.size = tam
+	camera.global_transform = Transform3D(Basis.IDENTITY, alvo + tras * 60.0).looking_at(alvo, Vector3.UP)
+
 func _jogador_e_camera() -> void:
 	jogador = JogadorCombate.new()
 	jogador.name = "Vale"
@@ -901,12 +913,12 @@ func _jogador_e_camera() -> void:
 	camera = Camera3D.new()
 	camera.name = "CameraIsometrica"
 	camera.projection = Camera3D.PROJECTION_ORTHOGONAL
-	camera.size = TAM_CAMERA
+	camera.size = TAM_CAMERA_COMBATE
 	camera.near = 0.15
 	camera.far = 600
 	add_child(camera)
 	camera.make_current()
-	_mirar(jogador.position, TAM_CAMERA)
+	_mirar(jogador.position, TAM_CAMERA_COMBATE)
 	_aviso = _rotulo(self, "", Vector3.ZERO, Color("fff0c0"), 0.8)
 	_aviso.name = "AvisoDeSaida"
 	_aviso.visible = false
@@ -947,7 +959,7 @@ func _physics_process(delta: float) -> void:
 		if Input.is_physical_key_pressed(KEY_S) or Input.is_action_pressed("ui_down"): inp.y -= 1
 		jogador.entrada_mov = Vector2.ZERO if (demo_mode or _morta) else inp.limit_length(1.0)
 	if not capturando:
-		var tam := maxf(g.w, g.h) * Gerador.CELULA * 0.8 if visao_geral else TAM_CAMERA * zoom
+		var tam := maxf(g.w, g.h) * Gerador.CELULA * 0.8 if visao_geral else TAM_CAMERA_COMBATE * zoom
 		var alvo := Vector3.ZERO if visao_geral else Vector3(jogador.position.x, 0, jogador.position.z)
 		_tremor = maxf(0.0, _tremor - delta * 2.5)
 		if _tremor > 0.0:

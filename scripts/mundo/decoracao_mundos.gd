@@ -306,7 +306,10 @@ func _masmorra(m: Node) -> void:
 		var p: Vector3 = gen.mundo(c)
 		_modelo(g, String(cfg.get("lanterna", "")), p, rng.randf_range(0, 360), 1.6)
 		_luz(g, p + Vector3(0, 1.6, 0), Color("ffb070"), 1.4, 6.0, true)
-	m.set_meta("decoracao_bolorina", {"cristais": int(cfg.get("cristais", 0)), "celulas": usados.size()})
+	var salas := {}
+	if bool(cfg.get("acampamento_orc", false)):
+		salas = _acampamento_orc(m, gen, ocupadas, usados, g)
+	m.set_meta("decoracao_bolorina", {"cristais": int(cfg.get("cristais", 0)), "celulas": usados.size(), "salas": salas})
 
 func _cristal(g: Node3D, p: Vector3, cor: Color, rng: RandomNumberGenerator, com_luz: bool) -> void:
 	var raiz := Node3D.new()
@@ -334,3 +337,280 @@ func _cristal(g: Node3D, p: Vector3, cor: Color, rng: RandomNumberGenerator, com
 		raiz.add_child(mi)
 	if com_luz:
 		_luz(g, p + Vector3(0, 0.9, 0), cor, 1.2, 4.5)
+
+# ------------------------------------------------------------------ acampamento orc (Minas da Cinza)
+## Bolorina 21/10 (passo 4): o andar dos orcs vira acampamento de guerra. Salas por distancia da entrada:
+## acampamento (tendas, fogueira, paliçada), jaulas (gaiolas, ossos), sala de guerra (mesa, estandartes,
+## armas) e covil do chefe (totens, fogueiras grandes, ossadas). Tudo com RNG proprio (semente do andar),
+## sem colisao e fora das celulas ocupadas (trilho, minerio, baus, inimigos), entao o layout e os testes
+## do gerador nao mudam.
+const PROPS := "res://art/models/"
+var _mats := {}
+
+func _mat(cor: String, rug := 0.9, emissao := 0.0) -> StandardMaterial3D:
+	var k := "%s_%s_%s" % [cor, rug, emissao]
+	if not _mats.has(k):
+		var m := StandardMaterial3D.new()
+		m.albedo_color = Color(cor)
+		m.roughness = rug
+		if emissao > 0.0:
+			m.emission_enabled = true
+			m.emission = Color(cor)
+			m.emission_energy_multiplier = emissao
+		_mats[k] = m
+	return _mats[k]
+
+func _mesh(g: Node3D, mesh: Mesh, p: Vector3, mat: Material, rot := Vector3.ZERO) -> MeshInstance3D:
+	var mi := MeshInstance3D.new()
+	mi.mesh = mesh
+	mi.material_override = mat
+	mi.position = p
+	mi.rotation = rot
+	g.add_child(mi)
+	return mi
+
+func _acampamento_orc(m: Node, gen, ocupadas: Dictionary, usados: Array, g: Node3D) -> Dictionary:
+	var rng := RandomNumberGenerator.new()
+	rng.seed = int(gen.semente) ^ 0x0c0a
+	_celula_mundo = func(c: Vector2i) -> Vector3: return gen.mundo(c)
+	# --- salas: retangulos do gerador, ordenados pela distancia da entrada; sem salas, aglomerados por distancia
+	var grupos: Array = []
+	for r in gen.salas:
+		var cel: Array = []
+		for x in range(r.position.x, r.end.x):
+			for y in range(r.position.y, r.end.y):
+				var c := Vector2i(x, y)
+				if gen.distancia.has(c): cel.append(c)
+		if cel.size() >= 6: grupos.append(cel)
+	if grupos.size() < 3:
+		grupos.clear()
+		var maxd := 1
+		for c in gen.distancia: maxd = maxi(maxd, int(gen.distancia[c]))
+		for q in [0.12, 0.42, 0.7, 0.95]:
+			var alvo := int(maxd * q)
+			var ancora := Vector2i(-999, -999)
+			for c in gen.distancia:
+				if int(gen.distancia[c]) == alvo and gen.cercado(c, 1): ancora = c; break
+			if ancora.x == -999: continue
+			var cel: Array = []
+			for c in gen.distancia:
+				if absi(c.x - ancora.x) <= 4 and absi(c.y - ancora.y) <= 4: cel.append(c)
+			grupos.append(cel)
+	var dist := func(cel: Array) -> float:
+		var s := 0.0
+		for c in cel: s += float(gen.distancia[c])
+		return s / maxf(cel.size(), 1)
+	grupos.sort_custom(func(a, b): return dist.call(a) < dist.call(b))
+	var papeis: Array = []
+	for i in grupos.size():
+		var pp := "mista"
+		if i == 0: pp = "acampamento"
+		elif i == grupos.size() - 1: pp = "chefe" if bool(gen.chefe) else "guerra"
+		elif i == grupos.size() / 2: pp = "jaulas"
+		elif i == grupos.size() - 2: pp = "guerra"
+		papeis.append(pp)
+	var livre := func(c: Vector2i) -> bool:
+		if ocupadas.has(c) or not gen.distancia.has(c): return false
+		for u in usados:
+			if absi(u.x - c.x) + absi(u.y - c.y) < 2: return false
+		return true
+	var resumo := {}
+	for i in grupos.size():
+		var cel: Array = grupos[i].duplicate()
+		cel.sort()
+		for k in range(cel.size() - 1, 0, -1):
+			var j := rng.randi_range(0, k)
+			var t = cel[k]; cel[k] = cel[j]; cel[j] = t
+		var centrais: Array = cel.filter(func(c): return gen.cercado(c, 1))
+		var borda: Array = cel.filter(func(c): return not gen.cercado(c, 1))
+		var tomar := func(lista: Array) -> Variant:
+			while not lista.is_empty():
+				var c: Vector2i = lista.pop_back()
+				if livre.call(c):
+					usados.append(c)
+					return c
+			return null
+		var n := 0
+		match papeis[i]:
+			"acampamento":
+				n += _por(tomar.call(centrais), func(p): _fogueira(g, p, rng, 1.0))
+				for k in 3: n += _por(tomar.call(borda), func(p): _tenda(g, p, rng))
+				for k in 3: n += _por(tomar.call(borda), func(p): _palicada(g, p, rng, 5))
+				n += _por(tomar.call(cel), func(p): _ossada(g, p, rng, 4))
+				n += _por(tomar.call(borda), func(p): _tocha(g, p, rng))
+				n += _por(tomar.call(borda), func(p): _modelo(g, PROPS + "quaternius_props/Banner_1.gltf", p, rng.randf_range(0, 360), 0.9))
+				n += _por(tomar.call(borda), func(p): _modelo(g, PROPS + "kaykit_resource_bits/Wood_Log_Stack.gltf", p, rng.randf_range(0, 360), 1.5))
+				n += _por(tomar.call(borda), func(p): _modelo(g, PROPS + "quaternius_props/WeaponStand.gltf", p, rng.randf_range(0, 360), 0.9))
+			"jaulas":
+				for k in 3: n += _por(tomar.call(borda if k < 2 else centrais), func(p): _modelo(g, PROPS + "quaternius_props/Cage_Small.gltf", p, rng.randf_range(0, 360), 1.0))
+				for k in 3: n += _por(tomar.call(cel), func(p): _ossada(g, p, rng, 5))
+				n += _por(tomar.call(borda), func(p): _tocha(g, p, rng))
+				n += _por(tomar.call(borda), func(p): _totem(g, p, rng))
+				n += _por(tomar.call(borda), func(p): _palicada(g, p, rng, 6))
+			"guerra":
+				n += _por(tomar.call(centrais), func(p): _modelo(g, PROPS + "quaternius_props/Table_Large.gltf", p, rng.randf_range(0, 360), 0.9))
+				for k in 2: n += _por(tomar.call(borda), func(p): _modelo(g, PROPS + "quaternius_props/Banner_2.gltf", p, rng.randf_range(0, 360), 0.9))
+				for k in 2: n += _por(tomar.call(borda), func(p): _modelo(g, PROPS + "quaternius_props/WeaponStand.gltf", p, rng.randf_range(0, 360), 0.9))
+				n += _por(tomar.call(borda), func(p): _totem(g, p, rng))
+				n += _por(tomar.call(borda), func(p): _tocha(g, p, rng))
+				n += _por(tomar.call(borda), func(p): _modelo(g, PROPS + "quaternius_props/Shield_Wooden.gltf", p, rng.randf_range(0, 360), 1.0))
+				n += _por(tomar.call(centrais), func(p): _fogueira(g, p, rng, 0.8))
+			"chefe":
+				for k in 2: n += _por(tomar.call(centrais), func(p): _fogueira(g, p, rng, 1.5))
+				for k in 3: n += _por(tomar.call(borda), func(p): _totem(g, p, rng))
+				for k in 3: n += _por(tomar.call(borda), func(p): _modelo(g, PROPS + "quaternius_props/Banner_%d.gltf" % (1 + k % 2), p, rng.randf_range(0, 360), 1.05))
+				for k in 3: n += _por(tomar.call(cel), func(p): _ossada(g, p, rng, 7))
+				n += _por(tomar.call(borda), func(p): _palicada(g, p, rng, 6))
+			_:
+				n += _por(tomar.call(borda), func(p): _tocha(g, p, rng))
+				n += _por(tomar.call(cel), func(p): _ossada(g, p, rng, 4))
+				n += _por(tomar.call(borda), func(p): _tenda(g, p, rng))
+				n += _por(tomar.call(borda), func(p): _modelo(g, PROPS + "quaternius_props/Banner_%d.gltf" % (1 + rng.randi() % 2), p, rng.randf_range(0, 360), 0.9))
+				if rng.randf() < 0.5:
+					n += _por(tomar.call(borda), func(p): _palicada(g, p, rng, 4))
+				else:
+					n += _por(tomar.call(borda), func(p): _modelo(g, PROPS + "quaternius_props/Barrel.gltf", p, 0.0, 0.9))
+		resumo[papeis[i]] = int(resumo.get(papeis[i], 0)) + n
+		if not resumo.has("centro_" + papeis[i]):
+			var soma := Vector3.ZERO
+			for c in grupos[i]: soma += gen.mundo(c)
+			resumo["centro_" + papeis[i]] = soma / maxf(grupos[i].size(), 1)
+	# --- rochas e estalagmites encostadas nas paredes (quebram os blocos retos)
+	var pedras := [PROPS + "kenney_graveyard_kit/rocks-tall.glb", PROPS + "kenney_graveyard_kit/rocks.glb", PROPS + "kenney_survival_kit/rock-a.glb", PROPS + "kenney_survival_kit/rock-b.glb", PROPS + "kenney_survival_kit/rock-c.glb"]
+	var beiradas: Array = gen.distancia.keys().filter(func(c): return not gen.cercado(c, 1) and livre.call(c))
+	beiradas.sort()
+	for k in mini(28, beiradas.size()):
+		var c: Vector2i = beiradas[rng.randi() % beiradas.size()]
+		if not livre.call(c): continue
+		usados.append(c)
+		var o := _modelo(g, String(pedras[rng.randi() % pedras.size()]), gen.mundo(c) + Vector3(rng.randf_range(-0.5, 0.5), 0, rng.randf_range(-0.5, 0.5)), rng.randf_range(0, 360), rng.randf_range(1.2, 2.2))
+		if o:
+			o.scale.y *= rng.randf_range(1.0, 1.8)
+			var rocha := _mat(["3a2c24", "33261f", "42322a"][k % 3], 1.0)
+			for mi: MeshInstance3D in o.find_children("*", "MeshInstance3D", true, false):
+				mi.material_override = rocha
+	# --- chao de lama/terra com manchas e brasas no ar por todo o andar
+	var lama := _mat("2a1a10", 1.0)
+	lama.transparency = BaseMaterial3D.TRANSPARENCY_ALPHA
+	var todas: Array = gen.distancia.keys()
+	todas.sort()
+	for k in mini(36, todas.size()):
+		var c: Vector2i = todas[rng.randi() % todas.size()]
+		var d := CylinderMesh.new()
+		d.top_radius = rng.randf_range(0.6, 1.4)
+		d.bottom_radius = d.top_radius
+		d.height = 0.01
+		d.radial_segments = 9
+		var mm := lama.duplicate() as StandardMaterial3D
+		mm.albedo_color = Color(0.16 + rng.randf() * 0.06, 0.1 + rng.randf() * 0.04, 0.06, rng.randf_range(0.35, 0.6))
+		var mi := _mesh(g, d, gen.mundo(c) + Vector3(rng.randf_range(-0.6, 0.6), 0.015 + k * 0.0004, rng.randf_range(-0.6, 0.6)), mm, Vector3(0, rng.randf() * TAU, 0))
+		mi.scale = Vector3(1.0, 1.0, rng.randf_range(0.5, 1.0))
+		mi.cast_shadow = GeometryInstance3D.SHADOW_CASTING_SETTING_OFF
+	var cx := 0.0
+	var cz := 0.0
+	for c in todas:
+		var p: Vector3 = gen.mundo(c); cx += p.x; cz += p.z
+	cx /= maxf(todas.size(), 1); cz /= maxf(todas.size(), 1)
+	var ext := float(maxi(gen.w, gen.h)) * 1.0
+	_particulas(g, Vector3(cx, 0.6, cz), Color(1.0, 0.55, 0.2, 0.9), Vector3(ext, 0.3, ext), 90, Vector3(0.15, 0.7, 0.05), 0.07, 6.0, "res://art/vfx/particulas/spark_01.png")
+	_particulas(g, Vector3(cx, 0.4, cz), Color(0.55, 0.42, 0.36, 0.25), Vector3(ext, 0.2, ext), 40, Vector3(0.2, 0.05, 0.1), 2.6, 9.0, "res://art/vfx/particulas/smoke_04.png", false)
+	return resumo
+
+func _por(c, f: Callable) -> int:
+	if c == null: return 0
+	var gen_mundo: Vector3 = _celula_mundo.call(c)
+	f.call(gen_mundo)
+	return 1
+
+var _celula_mundo: Callable
+
+func _fogueira(g: Node3D, p: Vector3, rng: RandomNumberGenerator, tam: float) -> void:
+	var tora := CylinderMesh.new()
+	tora.top_radius = 0.09 * tam; tora.bottom_radius = 0.11 * tam; tora.height = 0.9 * tam
+	for k in 5:
+		var a := k * TAU / 5.0 + rng.randf() * 0.3
+		_mesh(g, tora, p + Vector3(cos(a) * 0.22 * tam, 0.12, sin(a) * 0.22 * tam), _mat("4a2c18"), Vector3(PI / 2 - 0.35, -a, 0))
+	var pedra := SphereMesh.new()
+	pedra.radius = 0.16 * tam; pedra.height = 0.22 * tam
+	for k in 9:
+		var a := k * TAU / 9.0
+		_mesh(g, pedra, p + Vector3(cos(a) * 0.62 * tam, 0.05, sin(a) * 0.62 * tam), _mat("4c4440"))
+	var brasa := CylinderMesh.new()
+	brasa.top_radius = 0.3 * tam; brasa.bottom_radius = 0.34 * tam; brasa.height = 0.06
+	_mesh(g, brasa, p + Vector3(0, 0.04, 0), _mat("ff5a10", 0.6, 3.0))
+	_particulas(g, p + Vector3(0, 0.45 * tam, 0), Color(1.0, 0.6, 0.2, 1.0), Vector3(0.18, 0.1, 0.18) * tam, 26, Vector3(0, 1.4, 0), 0.5 * tam, 0.7, "res://art/vfx/particulas/magic_02.png")
+	_particulas(g, p + Vector3(0, 0.6 * tam, 0), Color(1.0, 0.75, 0.3, 1.0), Vector3(0.2, 0.1, 0.2) * tam, 14, Vector3(0.1, 1.8, 0), 0.06, 1.8, "res://art/vfx/particulas/spark_01.png")
+	_particulas(g, p + Vector3(0, 1.4 * tam, 0), Color(0.25, 0.2, 0.2, 0.35), Vector3(0.2, 0.1, 0.2), 10, Vector3(0.15, 0.9, 0), 1.2 * tam, 3.5, "res://art/vfx/particulas/smoke_04.png", false)
+	_luz(g, p + Vector3(0, 1.0, 0), Color("ff8a3a"), 2.2 * tam, 7.0 * tam, true)
+
+func _tenda(g: Node3D, p: Vector3, rng: RandomNumberGenerator) -> void:
+	var raiz := Node3D.new()
+	raiz.position = p
+	raiz.rotation.y = rng.randf() * TAU
+	g.add_child(raiz)
+	var lona := PrismMesh.new()
+	lona.size = Vector3(1.9, 1.5, 2.2)
+	var cor: String = ["4a3424", "3e2a1e", "553222"][rng.randi() % 3]
+	_mesh(raiz, lona, Vector3(0, 0.75, 0), _mat(cor, 1.0))
+	var porta := PrismMesh.new()
+	porta.size = Vector3(0.7, 0.9, 0.02)
+	_mesh(raiz, porta, Vector3(0, 0.45, 1.11), _mat("1a100a"))
+	var vara := CylinderMesh.new()
+	vara.top_radius = 0.04; vara.bottom_radius = 0.05; vara.height = 2.1
+	for z in [-1.1, 1.1]:
+		_mesh(raiz, vara, Vector3(0, 0.95, z), _mat("3a2414"))
+	var faixa := BoxMesh.new()
+	faixa.size = Vector3(0.05, 0.5, 0.35)
+	_mesh(raiz, faixa, Vector3(0, 1.75, 1.15), _mat("8a1a12"))   # flamula vermelha do cla
+	var cranio := _modelo(raiz, PROPS + "kaykit_halloween_bits/skull.gltf", Vector3(0, 2.0, 1.12), 0.0, 0.5)
+	if cranio: _tingir_osso(cranio)
+
+func _palicada(g: Node3D, p: Vector3, rng: RandomNumberGenerator, n: int) -> void:
+	var raiz := Node3D.new()
+	raiz.position = p
+	raiz.rotation.y = rng.randf() * TAU
+	g.add_child(raiz)
+	var estaca := CylinderMesh.new()
+	estaca.top_radius = 0.11; estaca.bottom_radius = 0.13; estaca.height = 1.6
+	estaca.radial_segments = 7
+	var ponta := CylinderMesh.new()
+	ponta.top_radius = 0.0; ponta.bottom_radius = 0.11; ponta.height = 0.35; ponta.radial_segments = 7
+	for k in n:
+		var x := (k - (n - 1) * 0.5) * 0.27
+		var h := rng.randf_range(0.85, 1.15)
+		var mi := _mesh(raiz, estaca, Vector3(x, 0.8 * h, rng.randf_range(-0.05, 0.05)), _mat(["5a3a22", "4e321e", "634228"][k % 3]), Vector3(rng.randf_range(-0.08, 0.08), 0, rng.randf_range(-0.08, 0.08)))
+		mi.scale.y = h
+		_mesh(raiz, ponta, Vector3(x, 1.6 * h + 0.17, 0), _mat("6e4c30"))
+	var amarra := BoxMesh.new()
+	amarra.size = Vector3(n * 0.27, 0.08, 0.3)
+	_mesh(raiz, amarra, Vector3(0, 0.95, 0), _mat("2e2016"))
+
+func _ossada(g: Node3D, p: Vector3, rng: RandomNumberGenerator, n: int) -> void:
+	for k in n:
+		var nome: String = ["bone_A", "bone_B", "bone_C", "bone_A", "skull"][rng.randi() % 5]
+		var o := _modelo(g, PROPS + "kaykit_halloween_bits/%s.gltf" % nome, p + Vector3(rng.randf_range(-0.5, 0.5), 0.02 + k * 0.03, rng.randf_range(-0.5, 0.5)), rng.randf_range(0, 360), rng.randf_range(0.7, 1.0))
+		if o:
+			o.rotation_degrees.x = rng.randf_range(-20, 20)
+			_tingir_osso(o)
+
+func _tingir_osso(o: Node3D) -> void:
+	# ossos e cranios em marfim sujo (o branco puro do kit estourava na luz da fogueira)
+	for mi: MeshInstance3D in o.find_children("*", "MeshInstance3D", true, false):
+		var base := mi.get_active_material(0)
+		if base is StandardMaterial3D:
+			var m := (base as StandardMaterial3D).duplicate() as StandardMaterial3D
+			m.albedo_color = Color(0.62, 0.55, 0.45)
+			mi.material_override = m
+
+func _totem(g: Node3D, p: Vector3, rng: RandomNumberGenerator) -> void:
+	var t := _modelo(g, PROPS + "kaykit_halloween_bits/post_skull.gltf", p, rng.randf_range(0, 360), 1.5)
+	if t: _tingir_osso(t)
+	var faixa := BoxMesh.new()
+	faixa.size = Vector3(0.06, 0.9, 0.4)
+	_mesh(g, faixa, p + Vector3(0.2, 1.3, 0), _mat("8a1a12"), Vector3(0, rng.randf() * TAU, 0.1))
+	_luz(g, p + Vector3(0, 1.9, 0), Color("ff6a2a"), 0.8, 3.5, true)
+
+func _tocha(g: Node3D, p: Vector3, rng: RandomNumberGenerator) -> void:
+	_modelo(g, PROPS + "kaykit_dungeon/torch_lit.gltf", p, rng.randf_range(0, 360), 1.4)
+	_particulas(g, p + Vector3(0, 1.5, 0), Color(1.0, 0.6, 0.2, 1.0), Vector3(0.05, 0.05, 0.05), 10, Vector3(0, 1.0, 0), 0.25, 0.5, "res://art/vfx/particulas/magic_02.png")
+	_luz(g, p + Vector3(0, 1.6, 0), Color("ff9a40"), 1.5, 6.0, true)
