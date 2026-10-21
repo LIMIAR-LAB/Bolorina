@@ -1,0 +1,10562 @@
+[
+  {
+    "peca": "capuz_couro",
+    "arquivo": "rotations/south.png",
+    "ancora": [
+      0,
+      0,
+      0.0,
+      1.0
+    ]
+  },
+  {
+    "peca": "capuz_couro",
+    "arquivo": "run/south/000.png",
+    "ancora": [
+      2,
+      0,
+      80.96604919433594,
+      0.85
+    ]
+  },
+  {
+    "peca": "capuz_couro",
+    "arquivo": "run/south/001.png",
+    "ancora": [
+      3,
+      -1,
+      77.90641784667969,
+      0.85
+    ]
+  },
+  {
+    "peca": "capuz_couro",
+    "arquivo": "run/south/002.png",
+    "ancora": [
+      3,
+      -2,
+      78.1082534790039,
+      0.85
+    ]
+  },
+  {
+    "peca": "capuz_couro",
+    "arquivo": "run/south/003.png",
+    "ancora": [
+      3,
+      -1,
+      73.84678649902344,
+      0.85
+    ]
+  },
+  {
+    "peca": "capuz_couro",
+    "arquivo": "run/south/004.png",
+    "ancora": [
+      3,
+      0,
+      74.71834564208984,
+      0.85
+    ]
+  },
+  {
+    "peca": "capuz_couro",
+    "arquivo": "run/south/005.png",
+    "ancora": [
+      2,
+      0,
+      81.2779769897461,
+      0.85
+    ]
+  },
+  {
+    "peca": "capuz_couro",
+    "arquivo": "run/south/006.png",
+    "ancora": [
+      2,
+      -1,
+      79.6954116821289,
+      0.85
+    ]
+  },
+  {
+    "peca": "capuz_couro",
+    "arquivo": "run/south/007.png",
+    "ancora": [
+      2,
+      -1,
+      79.12201690673828,
+      0.85
+    ]
+  },
+  {
+    "peca": "capuz_couro",
+    "arquivo": "walk/south/000.png",
+    "ancora": [
+      2,
+      3,
+      80.96604919433594,
+      0.85
+    ]
+  },
+  {
+    "peca": "capuz_couro",
+    "arquivo": "walk/south/001.png",
+    "ancora": [
+      3,
+      1,
+      77.90641784667969,
+      0.85
+    ]
+  },
+  {
+    "peca": "capuz_couro",
+    "arquivo": "walk/south/002.png",
+    "ancora": [
+      3,
+      0,
+      78.1082534790039,
+      0.85
+    ]
+  },
+  {
+    "peca": "capuz_couro",
+    "arquivo": "walk/south/003.png",
+    "ancora": [
+      3,
+      1,
+      73.84678649902344,
+      0.85
+    ]
+  },
+  {
+    "peca": "capuz_couro",
+    "arquivo": "walk/south/004.png",
+    "ancora": [
+      3,
+      3,
+      74.71834564208984,
+      0.85
+    ]
+  },
+  {
+    "peca": "capuz_couro",
+    "arquivo": "walk/south/005.png",
+    "ancora": [
+      2,
+      2,
+      81.2779769897461,
+      0.85
+    ]
+  },
+  {
+    "peca": "capuz_couro",
+    "arquivo": "walk/south/006.png",
+    "ancora": [
+      2,
+      1,
+      79.6954116821289,
+      0.85
+    ]
+  },
+  {
+    "peca": "capuz_couro",
+    "arquivo": "walk/south/007.png",
+    "ancora": [
+      2,
+      1,
+      79.12201690673828,
+      0.85
+    ]
+  },
+  {
+    "peca": "capuz_couro",
+    "arquivo": "tend/south/000.png",
+    "ancora": [
+      2,
+      5,
+      54.31009292602539,
+      0.85
+    ]
+  },
+  {
+    "peca": "capuz_couro",
+    "arquivo": "tend/south/001.png",
+    "ancora": [
+      5,
+      12,
+      79.85595703125,
+      0.85
+    ]
+  },
+  {
+    "peca": "capuz_couro",
+    "arquivo": "tend/south/002.png",
+    "ancora": [
+      4,
+      10,
+      80.85595703125,
+      0.85
+    ]
+  },
+  {
+    "peca": "capuz_couro",
+    "arquivo": "tend/south/003.png",
+    "ancora": [
+      5,
+      9,
+      81.29632568359375,
+      0.85
+    ]
+  },
+  {
+    "peca": "capuz_couro",
+    "arquivo": "tend/south/004.png",
+    "ancora": [
+      5,
+      10,
+      81.56238555908203,
+      0.85
+    ]
+  },
+  {
+    "peca": "capuz_couro",
+    "arquivo": "rotations/south-west.png",
+    "ancora": [
+      0,
+      0,
+      0.0,
+      1.0
+    ]
+  },
+  {
+    "peca": "capuz_couro",
+    "arquivo": "run/south-west/000.png",
+    "ancora": [
+      0,
+      1,
+      62.55837631225586,
+      1.0
+    ]
+  },
+  {
+    "peca": "capuz_couro",
+    "arquivo": "run/south-west/001.png",
+    "ancora": [
+      1,
+      2,
+      67.47396850585938,
+      0.85
+    ]
+  },
+  {
+    "peca": "capuz_couro",
+    "arquivo": "run/south-west/002.png",
+    "ancora": [
+      0,
+      -1,
+      65.40101623535156,
+      1.0
+    ]
+  },
+  {
+    "peca": "capuz_couro",
+    "arquivo": "run/south-west/003.png",
+    "ancora": [
+      0,
+      -1,
+      62.85279083251953,
+      1.0
+    ]
+  },
+  {
+    "peca": "capuz_couro",
+    "arquivo": "run/south-west/004.png",
+    "ancora": [
+      0,
+      0,
+      63.49746322631836,
+      1.0
+    ]
+  },
+  {
+    "peca": "capuz_couro",
+    "arquivo": "run/south-west/005.png",
+    "ancora": [
+      0,
+      2,
+      70.40101623535156,
+      1.0
+    ]
+  },
+  {
+    "peca": "capuz_couro",
+    "arquivo": "run/south-west/006.png",
+    "ancora": [
+      0,
+      2,
+      69.47715759277344,
+      1.0
+    ]
+  },
+  {
+    "peca": "capuz_couro",
+    "arquivo": "run/south-west/007.png",
+    "ancora": [
+      -1,
+      1,
+      60.98984909057617,
+      1.0
+    ]
+  },
+  {
+    "peca": "capuz_couro",
+    "arquivo": "walk/south-west/000.png",
+    "ancora": [
+      -1,
+      1,
+      62.55837631225586,
+      1.0
+    ]
+  },
+  {
+    "peca": "capuz_couro",
+    "arquivo": "walk/south-west/001.png",
+    "ancora": [
+      1,
+      3,
+      67.47396850585938,
+      0.85
+    ]
+  },
+  {
+    "peca": "capuz_couro",
+    "arquivo": "walk/south-west/002.png",
+    "ancora": [
+      0,
+      0,
+      65.40101623535156,
+      1.0
+    ]
+  },
+  {
+    "peca": "capuz_couro",
+    "arquivo": "walk/south-west/003.png",
+    "ancora": [
+      0,
+      -1,
+      62.85279083251953,
+      1.0
+    ]
+  },
+  {
+    "peca": "capuz_couro",
+    "arquivo": "walk/south-west/004.png",
+    "ancora": [
+      0,
+      0,
+      63.49746322631836,
+      1.0
+    ]
+  },
+  {
+    "peca": "capuz_couro",
+    "arquivo": "walk/south-west/005.png",
+    "ancora": [
+      -1,
+      2,
+      70.40101623535156,
+      1.0
+    ]
+  },
+  {
+    "peca": "capuz_couro",
+    "arquivo": "walk/south-west/006.png",
+    "ancora": [
+      -1,
+      2,
+      69.47715759277344,
+      1.0
+    ]
+  },
+  {
+    "peca": "capuz_couro",
+    "arquivo": "walk/south-west/007.png",
+    "ancora": [
+      -1,
+      1,
+      60.98984909057617,
+      1.0
+    ]
+  },
+  {
+    "peca": "capuz_couro",
+    "arquivo": "tend/south-west/000.png",
+    "ancora": [
+      0,
+      2,
+      51.12690353393555,
+      1.0
+    ]
+  },
+  {
+    "peca": "capuz_couro",
+    "arquivo": "tend/south-west/001.png",
+    "ancora": [
+      -6,
+      9,
+      75.25888061523438,
+      1.0
+    ]
+  },
+  {
+    "peca": "capuz_couro",
+    "arquivo": "tend/south-west/002.png",
+    "ancora": [
+      -6,
+      8,
+      75.76142120361328,
+      1.0
+    ]
+  },
+  {
+    "peca": "capuz_couro",
+    "arquivo": "tend/south-west/003.png",
+    "ancora": [
+      -6,
+      8,
+      74.67512512207031,
+      1.0
+    ]
+  },
+  {
+    "peca": "capuz_couro",
+    "arquivo": "tend/south-west/004.png",
+    "ancora": [
+      -6,
+      8,
+      71.84771728515625,
+      1.0
+    ]
+  },
+  {
+    "peca": "capuz_couro",
+    "arquivo": "rotations/west.png",
+    "ancora": [
+      0,
+      0,
+      0.0,
+      1.0
+    ]
+  },
+  {
+    "peca": "capuz_couro",
+    "arquivo": "run/west/000.png",
+    "ancora": [
+      1,
+      0,
+      67.08021545410156,
+      1.0
+    ]
+  },
+  {
+    "peca": "capuz_couro",
+    "arquivo": "run/west/001.png",
+    "ancora": [
+      1,
+      1,
+      57.657752990722656,
+      1.0
+    ]
+  },
+  {
+    "peca": "capuz_couro",
+    "arquivo": "run/west/002.png",
+    "ancora": [
+      0,
+      0,
+      58.278076171875,
+      1.0
+    ]
+  },
+  {
+    "peca": "capuz_couro",
+    "arquivo": "run/west/003.png",
+    "ancora": [
+      1,
+      -2,
+      53.866310119628906,
+      1.0
+    ]
+  },
+  {
+    "peca": "capuz_couro",
+    "arquivo": "run/west/004.png",
+    "ancora": [
+      1,
+      -2,
+      54.87165832519531,
+      1.0
+    ]
+  },
+  {
+    "peca": "capuz_couro",
+    "arquivo": "run/west/005.png",
+    "ancora": [
+      1,
+      0,
+      53.05882263183594,
+      1.0
+    ]
+  },
+  {
+    "peca": "capuz_couro",
+    "arquivo": "run/west/006.png",
+    "ancora": [
+      1,
+      0,
+      60.786094665527344,
+      1.0
+    ]
+  },
+  {
+    "peca": "capuz_couro",
+    "arquivo": "run/west/007.png",
+    "ancora": [
+      2,
+      0,
+      65.48663330078125,
+      1.0
+    ]
+  },
+  {
+    "peca": "capuz_couro",
+    "arquivo": "walk/west/000.png",
+    "ancora": [
+      1,
+      2,
+      67.08021545410156,
+      1.0
+    ]
+  },
+  {
+    "peca": "capuz_couro",
+    "arquivo": "walk/west/001.png",
+    "ancora": [
+      1,
+      2,
+      57.657752990722656,
+      1.0
+    ]
+  },
+  {
+    "peca": "capuz_couro",
+    "arquivo": "walk/west/002.png",
+    "ancora": [
+      1,
+      1,
+      58.278076171875,
+      1.0
+    ]
+  },
+  {
+    "peca": "capuz_couro",
+    "arquivo": "walk/west/003.png",
+    "ancora": [
+      1,
+      -1,
+      53.866310119628906,
+      1.0
+    ]
+  },
+  {
+    "peca": "capuz_couro",
+    "arquivo": "walk/west/004.png",
+    "ancora": [
+      1,
+      -1,
+      54.87165832519531,
+      1.0
+    ]
+  },
+  {
+    "peca": "capuz_couro",
+    "arquivo": "walk/west/005.png",
+    "ancora": [
+      1,
+      1,
+      53.05882263183594,
+      1.0
+    ]
+  },
+  {
+    "peca": "capuz_couro",
+    "arquivo": "walk/west/006.png",
+    "ancora": [
+      1,
+      1,
+      60.786094665527344,
+      1.0
+    ]
+  },
+  {
+    "peca": "capuz_couro",
+    "arquivo": "walk/west/007.png",
+    "ancora": [
+      1,
+      0,
+      65.48663330078125,
+      1.0
+    ]
+  },
+  {
+    "peca": "capuz_couro",
+    "arquivo": "tend/west/000.png",
+    "ancora": [
+      1,
+      1,
+      25.62032127380371,
+      1.0
+    ]
+  },
+  {
+    "peca": "capuz_couro",
+    "arquivo": "tend/west/001.png",
+    "ancora": [
+      0,
+      10,
+      86.19502258300781,
+      0.85
+    ]
+  },
+  {
+    "peca": "capuz_couro",
+    "arquivo": "tend/west/002.png",
+    "ancora": [
+      0,
+      9,
+      84.28955078125,
+      0.85
+    ]
+  },
+  {
+    "peca": "capuz_couro",
+    "arquivo": "tend/west/003.png",
+    "ancora": [
+      -2,
+      8,
+      85.26203155517578,
+      1.0
+    ]
+  },
+  {
+    "peca": "capuz_couro",
+    "arquivo": "tend/west/004.png",
+    "ancora": [
+      0,
+      9,
+      82.39402770996094,
+      0.85
+    ]
+  },
+  {
+    "peca": "capuz_couro",
+    "arquivo": "rotations/north-west.png",
+    "ancora": [
+      0,
+      0,
+      0.0,
+      1.0
+    ]
+  },
+  {
+    "peca": "capuz_couro",
+    "arquivo": "run/north-west/000.png",
+    "ancora": [
+      0,
+      1,
+      44.6271858215332,
+      0.85
+    ]
+  },
+  {
+    "peca": "capuz_couro",
+    "arquivo": "run/north-west/001.png",
+    "ancora": [
+      -1,
+      0,
+      47.24854278564453,
+      0.85
+    ]
+  },
+  {
+    "peca": "capuz_couro",
+    "arquivo": "run/north-west/002.png",
+    "ancora": [
+      0,
+      0,
+      49.598060607910156,
+      0.85
+    ]
+  },
+  {
+    "peca": "capuz_couro",
+    "arquivo": "run/north-west/003.png",
+    "ancora": [
+      0,
+      0,
+      56.41359329223633,
+      0.85
+    ]
+  },
+  {
+    "peca": "capuz_couro",
+    "arquivo": "run/north-west/004.png",
+    "ancora": [
+      -1,
+      0,
+      56.520389556884766,
+      0.85
+    ]
+  },
+  {
+    "peca": "capuz_couro",
+    "arquivo": "run/north-west/005.png",
+    "ancora": [
+      0,
+      -1,
+      45.0398063659668,
+      0.85
+    ]
+  },
+  {
+    "peca": "capuz_couro",
+    "arquivo": "run/north-west/006.png",
+    "ancora": [
+      -1,
+      -3,
+      45.777671813964844,
+      0.85
+    ]
+  },
+  {
+    "peca": "capuz_couro",
+    "arquivo": "run/north-west/007.png",
+    "ancora": [
+      -1,
+      -3,
+      44.04951477050781,
+      0.85
+    ]
+  },
+  {
+    "peca": "capuz_couro",
+    "arquivo": "walk/north-west/000.png",
+    "ancora": [
+      1,
+      5,
+      44.6271858215332,
+      0.85
+    ]
+  },
+  {
+    "peca": "capuz_couro",
+    "arquivo": "walk/north-west/001.png",
+    "ancora": [
+      1,
+      4,
+      47.24854278564453,
+      0.85
+    ]
+  },
+  {
+    "peca": "capuz_couro",
+    "arquivo": "walk/north-west/002.png",
+    "ancora": [
+      2,
+      3,
+      49.598060607910156,
+      0.85
+    ]
+  },
+  {
+    "peca": "capuz_couro",
+    "arquivo": "walk/north-west/003.png",
+    "ancora": [
+      1,
+      3,
+      56.41359329223633,
+      0.85
+    ]
+  },
+  {
+    "peca": "capuz_couro",
+    "arquivo": "walk/north-west/004.png",
+    "ancora": [
+      1,
+      3,
+      56.520389556884766,
+      0.85
+    ]
+  },
+  {
+    "peca": "capuz_couro",
+    "arquivo": "walk/north-west/005.png",
+    "ancora": [
+      1,
+      3,
+      45.0398063659668,
+      0.85
+    ]
+  },
+  {
+    "peca": "capuz_couro",
+    "arquivo": "walk/north-west/006.png",
+    "ancora": [
+      0,
+      1,
+      45.777671813964844,
+      0.85
+    ]
+  },
+  {
+    "peca": "capuz_couro",
+    "arquivo": "walk/north-west/007.png",
+    "ancora": [
+      0,
+      1,
+      44.04951477050781,
+      0.85
+    ]
+  },
+  {
+    "peca": "capuz_couro",
+    "arquivo": "tend/north-west/000.png",
+    "ancora": [
+      1,
+      4,
+      34.85533905029297,
+      0.85
+    ]
+  },
+  {
+    "peca": "capuz_couro",
+    "arquivo": "tend/north-west/001.png",
+    "ancora": [
+      -1,
+      11,
+      59.631900787353516,
+      0.75
+    ]
+  },
+  {
+    "peca": "capuz_couro",
+    "arquivo": "tend/north-west/002.png",
+    "ancora": [
+      0,
+      10,
+      58.754600524902344,
+      0.75
+    ]
+  },
+  {
+    "peca": "capuz_couro",
+    "arquivo": "tend/north-west/003.png",
+    "ancora": [
+      -1,
+      11,
+      60.18404769897461,
+      0.75
+    ]
+  },
+  {
+    "peca": "capuz_couro",
+    "arquivo": "tend/north-west/004.png",
+    "ancora": [
+      -1,
+      11,
+      61.46625900268555,
+      0.75
+    ]
+  },
+  {
+    "peca": "capuz_couro",
+    "arquivo": "rotations/north.png",
+    "ancora": [
+      0,
+      0,
+      0.0,
+      1.0
+    ]
+  },
+  {
+    "peca": "capuz_couro",
+    "arquivo": "run/north/000.png",
+    "ancora": [
+      2,
+      -2,
+      32.78208923339844,
+      0.85
+    ]
+  },
+  {
+    "peca": "capuz_couro",
+    "arquivo": "run/north/001.png",
+    "ancora": [
+      2,
+      -2,
+      33.40895462036133,
+      0.85
+    ]
+  },
+  {
+    "peca": "capuz_couro",
+    "arquivo": "run/north/002.png",
+    "ancora": [
+      2,
+      -1,
+      32.54328155517578,
+      0.85
+    ]
+  },
+  {
+    "peca": "capuz_couro",
+    "arquivo": "run/north/003.png",
+    "ancora": [
+      2,
+      0,
+      35.56816101074219,
+      0.85
+    ]
+  },
+  {
+    "peca": "capuz_couro",
+    "arquivo": "run/north/004.png",
+    "ancora": [
+      2,
+      0,
+      36.12537384033203,
+      0.85
+    ]
+  },
+  {
+    "peca": "capuz_couro",
+    "arquivo": "run/north/005.png",
+    "ancora": [
+      3,
+      -2,
+      40.816917419433594,
+      0.85
+    ]
+  },
+  {
+    "peca": "capuz_couro",
+    "arquivo": "run/north/006.png",
+    "ancora": [
+      2,
+      -2,
+      39.38905715942383,
+      0.85
+    ]
+  },
+  {
+    "peca": "capuz_couro",
+    "arquivo": "run/north/007.png",
+    "ancora": [
+      2,
+      0,
+      38.97611999511719,
+      0.85
+    ]
+  },
+  {
+    "peca": "capuz_couro",
+    "arquivo": "walk/north/000.png",
+    "ancora": [
+      2,
+      -1,
+      32.78208923339844,
+      0.85
+    ]
+  },
+  {
+    "peca": "capuz_couro",
+    "arquivo": "walk/north/001.png",
+    "ancora": [
+      2,
+      -1,
+      33.40895462036133,
+      0.85
+    ]
+  },
+  {
+    "peca": "capuz_couro",
+    "arquivo": "walk/north/002.png",
+    "ancora": [
+      2,
+      0,
+      32.54328155517578,
+      0.85
+    ]
+  },
+  {
+    "peca": "capuz_couro",
+    "arquivo": "walk/north/003.png",
+    "ancora": [
+      2,
+      1,
+      35.56816101074219,
+      0.85
+    ]
+  },
+  {
+    "peca": "capuz_couro",
+    "arquivo": "walk/north/004.png",
+    "ancora": [
+      2,
+      1,
+      36.12537384033203,
+      0.85
+    ]
+  },
+  {
+    "peca": "capuz_couro",
+    "arquivo": "walk/north/005.png",
+    "ancora": [
+      3,
+      -1,
+      40.816917419433594,
+      0.85
+    ]
+  },
+  {
+    "peca": "capuz_couro",
+    "arquivo": "walk/north/006.png",
+    "ancora": [
+      3,
+      -1,
+      39.38905715942383,
+      0.85
+    ]
+  },
+  {
+    "peca": "capuz_couro",
+    "arquivo": "walk/north/007.png",
+    "ancora": [
+      3,
+      1,
+      38.97611999511719,
+      0.85
+    ]
+  },
+  {
+    "peca": "capuz_couro",
+    "arquivo": "tend/north/000.png",
+    "ancora": [
+      1,
+      4,
+      47.657711029052734,
+      0.85
+    ]
+  },
+  {
+    "peca": "capuz_couro",
+    "arquivo": "tend/north/001.png",
+    "ancora": [
+      7,
+      10,
+      62.43708419799805,
+      0.75
+    ]
+  },
+  {
+    "peca": "capuz_couro",
+    "arquivo": "tend/north/002.png",
+    "ancora": [
+      7,
+      9,
+      61.51655578613281,
+      0.75
+    ]
+  },
+  {
+    "peca": "capuz_couro",
+    "arquivo": "tend/north/003.png",
+    "ancora": [
+      7,
+      10,
+      61.45695495605469,
+      0.75
+    ]
+  },
+  {
+    "peca": "capuz_couro",
+    "arquivo": "tend/north/004.png",
+    "ancora": [
+      8,
+      10,
+      61.033111572265625,
+      0.75
+    ]
+  },
+  {
+    "peca": "capuz_couro",
+    "arquivo": "rotations/north-east.png",
+    "ancora": [
+      0,
+      0,
+      0.0,
+      1.0
+    ]
+  },
+  {
+    "peca": "capuz_couro",
+    "arquivo": "run/north-east/000.png",
+    "ancora": [
+      4,
+      1,
+      42.224273681640625,
+      0.85
+    ]
+  },
+  {
+    "peca": "capuz_couro",
+    "arquivo": "run/north-east/001.png",
+    "ancora": [
+      4,
+      0,
+      44.073787689208984,
+      0.85
+    ]
+  },
+  {
+    "peca": "capuz_couro",
+    "arquivo": "run/north-east/002.png",
+    "ancora": [
+      4,
+      0,
+      49.4815559387207,
+      0.85
+    ]
+  },
+  {
+    "peca": "capuz_couro",
+    "arquivo": "run/north-east/003.png",
+    "ancora": [
+      4,
+      0,
+      56.18058395385742,
+      0.85
+    ]
+  },
+  {
+    "peca": "capuz_couro",
+    "arquivo": "run/north-east/004.png",
+    "ancora": [
+      4,
+      0,
+      56.020389556884766,
+      0.85
+    ]
+  },
+  {
+    "peca": "capuz_couro",
+    "arquivo": "run/north-east/005.png",
+    "ancora": [
+      4,
+      -1,
+      42.166019439697266,
+      0.85
+    ]
+  },
+  {
+    "peca": "capuz_couro",
+    "arquivo": "run/north-east/006.png",
+    "ancora": [
+      5,
+      -3,
+      43.35533905029297,
+      0.85
+    ]
+  },
+  {
+    "peca": "capuz_couro",
+    "arquivo": "run/north-east/007.png",
+    "ancora": [
+      4,
+      -3,
+      43.166019439697266,
+      0.85
+    ]
+  },
+  {
+    "peca": "capuz_couro",
+    "arquivo": "walk/north-east/000.png",
+    "ancora": [
+      3,
+      5,
+      42.224273681640625,
+      0.85
+    ]
+  },
+  {
+    "peca": "capuz_couro",
+    "arquivo": "walk/north-east/001.png",
+    "ancora": [
+      3,
+      4,
+      44.073787689208984,
+      0.85
+    ]
+  },
+  {
+    "peca": "capuz_couro",
+    "arquivo": "walk/north-east/002.png",
+    "ancora": [
+      3,
+      3,
+      49.4815559387207,
+      0.85
+    ]
+  },
+  {
+    "peca": "capuz_couro",
+    "arquivo": "walk/north-east/003.png",
+    "ancora": [
+      3,
+      3,
+      56.18058395385742,
+      0.85
+    ]
+  },
+  {
+    "peca": "capuz_couro",
+    "arquivo": "walk/north-east/004.png",
+    "ancora": [
+      3,
+      3,
+      56.020389556884766,
+      0.85
+    ]
+  },
+  {
+    "peca": "capuz_couro",
+    "arquivo": "walk/north-east/005.png",
+    "ancora": [
+      3,
+      3,
+      42.166019439697266,
+      0.85
+    ]
+  },
+  {
+    "peca": "capuz_couro",
+    "arquivo": "walk/north-east/006.png",
+    "ancora": [
+      4,
+      1,
+      43.35533905029297,
+      0.85
+    ]
+  },
+  {
+    "peca": "capuz_couro",
+    "arquivo": "walk/north-east/007.png",
+    "ancora": [
+      4,
+      1,
+      43.166019439697266,
+      0.85
+    ]
+  },
+  {
+    "peca": "capuz_couro",
+    "arquivo": "tend/north-east/000.png",
+    "ancora": [
+      3,
+      5,
+      34.70000076293945,
+      0.85
+    ]
+  },
+  {
+    "peca": "capuz_couro",
+    "arquivo": "tend/north-east/001.png",
+    "ancora": [
+      7,
+      11,
+      63.04907989501953,
+      0.75
+    ]
+  },
+  {
+    "peca": "capuz_couro",
+    "arquivo": "tend/north-east/002.png",
+    "ancora": [
+      6,
+      10,
+      61.50306701660156,
+      0.75
+    ]
+  },
+  {
+    "peca": "capuz_couro",
+    "arquivo": "tend/north-east/003.png",
+    "ancora": [
+      7,
+      11,
+      62.92024612426758,
+      0.75
+    ]
+  },
+  {
+    "peca": "capuz_couro",
+    "arquivo": "tend/north-east/004.png",
+    "ancora": [
+      6,
+      11,
+      64.58282470703125,
+      0.75
+    ]
+  },
+  {
+    "peca": "capuz_couro",
+    "arquivo": "rotations/east.png",
+    "ancora": [
+      0,
+      0,
+      0.0,
+      1.0
+    ]
+  },
+  {
+    "peca": "capuz_couro",
+    "arquivo": "run/east/000.png",
+    "ancora": [
+      -1,
+      0,
+      70.84491729736328,
+      1.0
+    ]
+  },
+  {
+    "peca": "capuz_couro",
+    "arquivo": "run/east/001.png",
+    "ancora": [
+      -1,
+      1,
+      60.87700653076172,
+      1.0
+    ]
+  },
+  {
+    "peca": "capuz_couro",
+    "arquivo": "run/east/002.png",
+    "ancora": [
+      0,
+      0,
+      57.74866485595703,
+      1.0
+    ]
+  },
+  {
+    "peca": "capuz_couro",
+    "arquivo": "run/east/003.png",
+    "ancora": [
+      -1,
+      -2,
+      58.67914581298828,
+      1.0
+    ]
+  },
+  {
+    "peca": "capuz_couro",
+    "arquivo": "run/east/004.png",
+    "ancora": [
+      -1,
+      -2,
+      57.24599075317383,
+      1.0
+    ]
+  },
+  {
+    "peca": "capuz_couro",
+    "arquivo": "run/east/005.png",
+    "ancora": [
+      -1,
+      0,
+      57.31550979614258,
+      1.0
+    ]
+  },
+  {
+    "peca": "capuz_couro",
+    "arquivo": "run/east/006.png",
+    "ancora": [
+      -1,
+      0,
+      67.21925354003906,
+      1.0
+    ]
+  },
+  {
+    "peca": "capuz_couro",
+    "arquivo": "run/east/007.png",
+    "ancora": [
+      -2,
+      0,
+      72.18181610107422,
+      1.0
+    ]
+  },
+  {
+    "peca": "capuz_couro",
+    "arquivo": "walk/east/000.png",
+    "ancora": [
+      0,
+      2,
+      70.84491729736328,
+      1.0
+    ]
+  },
+  {
+    "peca": "capuz_couro",
+    "arquivo": "walk/east/001.png",
+    "ancora": [
+      0,
+      2,
+      60.87700653076172,
+      1.0
+    ]
+  },
+  {
+    "peca": "capuz_couro",
+    "arquivo": "walk/east/002.png",
+    "ancora": [
+      -1,
+      1,
+      57.74866485595703,
+      1.0
+    ]
+  },
+  {
+    "peca": "capuz_couro",
+    "arquivo": "walk/east/003.png",
+    "ancora": [
+      -1,
+      -1,
+      58.67914581298828,
+      1.0
+    ]
+  },
+  {
+    "peca": "capuz_couro",
+    "arquivo": "walk/east/004.png",
+    "ancora": [
+      -1,
+      -1,
+      57.24599075317383,
+      1.0
+    ]
+  },
+  {
+    "peca": "capuz_couro",
+    "arquivo": "walk/east/005.png",
+    "ancora": [
+      -1,
+      1,
+      57.31550979614258,
+      1.0
+    ]
+  },
+  {
+    "peca": "capuz_couro",
+    "arquivo": "walk/east/006.png",
+    "ancora": [
+      -1,
+      1,
+      67.21925354003906,
+      1.0
+    ]
+  },
+  {
+    "peca": "capuz_couro",
+    "arquivo": "walk/east/007.png",
+    "ancora": [
+      -1,
+      0,
+      72.18181610107422,
+      1.0
+    ]
+  },
+  {
+    "peca": "capuz_couro",
+    "arquivo": "tend/east/000.png",
+    "ancora": [
+      -1,
+      1,
+      24.85026741027832,
+      1.0
+    ]
+  },
+  {
+    "peca": "capuz_couro",
+    "arquivo": "tend/east/001.png",
+    "ancora": [
+      5,
+      11,
+      85.84906005859375,
+      0.75
+    ]
+  },
+  {
+    "peca": "capuz_couro",
+    "arquivo": "tend/east/002.png",
+    "ancora": [
+      4,
+      10,
+      85.0817642211914,
+      0.75
+    ]
+  },
+  {
+    "peca": "capuz_couro",
+    "arquivo": "tend/east/003.png",
+    "ancora": [
+      3,
+      9,
+      83.03773498535156,
+      0.75
+    ]
+  },
+  {
+    "peca": "capuz_couro",
+    "arquivo": "tend/east/004.png",
+    "ancora": [
+      4,
+      11,
+      83.42138671875,
+      0.75
+    ]
+  },
+  {
+    "peca": "capuz_couro",
+    "arquivo": "rotations/south-east.png",
+    "ancora": [
+      0,
+      0,
+      0.0,
+      1.0
+    ]
+  },
+  {
+    "peca": "capuz_couro",
+    "arquivo": "run/south-east/000.png",
+    "ancora": [
+      0,
+      1,
+      61.38071060180664,
+      1.0
+    ]
+  },
+  {
+    "peca": "capuz_couro",
+    "arquivo": "run/south-east/001.png",
+    "ancora": [
+      0,
+      2,
+      65.33502197265625,
+      1.0
+    ]
+  },
+  {
+    "peca": "capuz_couro",
+    "arquivo": "run/south-east/002.png",
+    "ancora": [
+      0,
+      -1,
+      64.57360076904297,
+      1.0
+    ]
+  },
+  {
+    "peca": "capuz_couro",
+    "arquivo": "run/south-east/003.png",
+    "ancora": [
+      0,
+      -1,
+      62.456851959228516,
+      1.0
+    ]
+  },
+  {
+    "peca": "capuz_couro",
+    "arquivo": "run/south-east/004.png",
+    "ancora": [
+      0,
+      0,
+      62.53299331665039,
+      1.0
+    ]
+  },
+  {
+    "peca": "capuz_couro",
+    "arquivo": "run/south-east/005.png",
+    "ancora": [
+      0,
+      2,
+      71.96446990966797,
+      1.0
+    ]
+  },
+  {
+    "peca": "capuz_couro",
+    "arquivo": "run/south-east/006.png",
+    "ancora": [
+      0,
+      2,
+      70.59391021728516,
+      1.0
+    ]
+  },
+  {
+    "peca": "capuz_couro",
+    "arquivo": "run/south-east/007.png",
+    "ancora": [
+      1,
+      1,
+      61.88324737548828,
+      1.0
+    ]
+  },
+  {
+    "peca": "capuz_couro",
+    "arquivo": "walk/south-east/000.png",
+    "ancora": [
+      1,
+      1,
+      61.38071060180664,
+      1.0
+    ]
+  },
+  {
+    "peca": "capuz_couro",
+    "arquivo": "walk/south-east/001.png",
+    "ancora": [
+      1,
+      1,
+      65.33502197265625,
+      1.0
+    ]
+  },
+  {
+    "peca": "capuz_couro",
+    "arquivo": "walk/south-east/002.png",
+    "ancora": [
+      0,
+      0,
+      64.57360076904297,
+      1.0
+    ]
+  },
+  {
+    "peca": "capuz_couro",
+    "arquivo": "walk/south-east/003.png",
+    "ancora": [
+      0,
+      -1,
+      62.456851959228516,
+      1.0
+    ]
+  },
+  {
+    "peca": "capuz_couro",
+    "arquivo": "walk/south-east/004.png",
+    "ancora": [
+      1,
+      0,
+      62.53299331665039,
+      1.0
+    ]
+  },
+  {
+    "peca": "capuz_couro",
+    "arquivo": "walk/south-east/005.png",
+    "ancora": [
+      1,
+      2,
+      71.96446990966797,
+      1.0
+    ]
+  },
+  {
+    "peca": "capuz_couro",
+    "arquivo": "walk/south-east/006.png",
+    "ancora": [
+      1,
+      2,
+      70.59391021728516,
+      1.0
+    ]
+  },
+  {
+    "peca": "capuz_couro",
+    "arquivo": "walk/south-east/007.png",
+    "ancora": [
+      1,
+      1,
+      61.88324737548828,
+      1.0
+    ]
+  },
+  {
+    "peca": "capuz_couro",
+    "arquivo": "tend/south-east/000.png",
+    "ancora": [
+      1,
+      2,
+      51.512691497802734,
+      1.0
+    ]
+  },
+  {
+    "peca": "capuz_couro",
+    "arquivo": "tend/south-east/001.png",
+    "ancora": [
+      6,
+      9,
+      75.86294555664062,
+      1.0
+    ]
+  },
+  {
+    "peca": "capuz_couro",
+    "arquivo": "tend/south-east/002.png",
+    "ancora": [
+      6,
+      9,
+      78.71598052978516,
+      0.85
+    ]
+  },
+  {
+    "peca": "capuz_couro",
+    "arquivo": "tend/south-east/003.png",
+    "ancora": [
+      7,
+      9,
+      77.19542694091797,
+      0.85
+    ]
+  },
+  {
+    "peca": "capuz_couro",
+    "arquivo": "tend/south-east/004.png",
+    "ancora": [
+      7,
+      9,
+      78.39634704589844,
+      0.85
+    ]
+  },
+  {
+    "peca": "elmo_ferro",
+    "arquivo": "rotations/south.png",
+    "ancora": [
+      0,
+      0,
+      0.0,
+      1.0
+    ]
+  },
+  {
+    "peca": "elmo_ferro",
+    "arquivo": "run/south/000.png",
+    "ancora": [
+      2,
+      0,
+      80.96604919433594,
+      0.85
+    ]
+  },
+  {
+    "peca": "elmo_ferro",
+    "arquivo": "run/south/001.png",
+    "ancora": [
+      3,
+      -1,
+      77.90641784667969,
+      0.85
+    ]
+  },
+  {
+    "peca": "elmo_ferro",
+    "arquivo": "run/south/002.png",
+    "ancora": [
+      3,
+      -2,
+      78.1082534790039,
+      0.85
+    ]
+  },
+  {
+    "peca": "elmo_ferro",
+    "arquivo": "run/south/003.png",
+    "ancora": [
+      3,
+      -1,
+      73.84678649902344,
+      0.85
+    ]
+  },
+  {
+    "peca": "elmo_ferro",
+    "arquivo": "run/south/004.png",
+    "ancora": [
+      3,
+      0,
+      74.71834564208984,
+      0.85
+    ]
+  },
+  {
+    "peca": "elmo_ferro",
+    "arquivo": "run/south/005.png",
+    "ancora": [
+      2,
+      0,
+      81.2779769897461,
+      0.85
+    ]
+  },
+  {
+    "peca": "elmo_ferro",
+    "arquivo": "run/south/006.png",
+    "ancora": [
+      2,
+      -1,
+      79.6954116821289,
+      0.85
+    ]
+  },
+  {
+    "peca": "elmo_ferro",
+    "arquivo": "run/south/007.png",
+    "ancora": [
+      2,
+      -1,
+      79.12201690673828,
+      0.85
+    ]
+  },
+  {
+    "peca": "elmo_ferro",
+    "arquivo": "walk/south/000.png",
+    "ancora": [
+      2,
+      3,
+      80.96604919433594,
+      0.85
+    ]
+  },
+  {
+    "peca": "elmo_ferro",
+    "arquivo": "walk/south/001.png",
+    "ancora": [
+      3,
+      1,
+      77.90641784667969,
+      0.85
+    ]
+  },
+  {
+    "peca": "elmo_ferro",
+    "arquivo": "walk/south/002.png",
+    "ancora": [
+      3,
+      0,
+      78.1082534790039,
+      0.85
+    ]
+  },
+  {
+    "peca": "elmo_ferro",
+    "arquivo": "walk/south/003.png",
+    "ancora": [
+      3,
+      1,
+      73.84678649902344,
+      0.85
+    ]
+  },
+  {
+    "peca": "elmo_ferro",
+    "arquivo": "walk/south/004.png",
+    "ancora": [
+      3,
+      3,
+      74.71834564208984,
+      0.85
+    ]
+  },
+  {
+    "peca": "elmo_ferro",
+    "arquivo": "walk/south/005.png",
+    "ancora": [
+      2,
+      2,
+      81.2779769897461,
+      0.85
+    ]
+  },
+  {
+    "peca": "elmo_ferro",
+    "arquivo": "walk/south/006.png",
+    "ancora": [
+      2,
+      1,
+      79.6954116821289,
+      0.85
+    ]
+  },
+  {
+    "peca": "elmo_ferro",
+    "arquivo": "walk/south/007.png",
+    "ancora": [
+      2,
+      1,
+      79.12201690673828,
+      0.85
+    ]
+  },
+  {
+    "peca": "elmo_ferro",
+    "arquivo": "tend/south/000.png",
+    "ancora": [
+      2,
+      5,
+      54.31009292602539,
+      0.85
+    ]
+  },
+  {
+    "peca": "elmo_ferro",
+    "arquivo": "tend/south/001.png",
+    "ancora": [
+      5,
+      12,
+      79.85595703125,
+      0.85
+    ]
+  },
+  {
+    "peca": "elmo_ferro",
+    "arquivo": "tend/south/002.png",
+    "ancora": [
+      4,
+      10,
+      80.85595703125,
+      0.85
+    ]
+  },
+  {
+    "peca": "elmo_ferro",
+    "arquivo": "tend/south/003.png",
+    "ancora": [
+      5,
+      9,
+      81.29632568359375,
+      0.85
+    ]
+  },
+  {
+    "peca": "elmo_ferro",
+    "arquivo": "tend/south/004.png",
+    "ancora": [
+      5,
+      10,
+      81.56238555908203,
+      0.85
+    ]
+  },
+  {
+    "peca": "elmo_ferro",
+    "arquivo": "rotations/south-west.png",
+    "ancora": [
+      0,
+      0,
+      0.0,
+      1.0
+    ]
+  },
+  {
+    "peca": "elmo_ferro",
+    "arquivo": "run/south-west/000.png",
+    "ancora": [
+      0,
+      1,
+      62.55837631225586,
+      1.0
+    ]
+  },
+  {
+    "peca": "elmo_ferro",
+    "arquivo": "run/south-west/001.png",
+    "ancora": [
+      1,
+      2,
+      67.47396850585938,
+      0.85
+    ]
+  },
+  {
+    "peca": "elmo_ferro",
+    "arquivo": "run/south-west/002.png",
+    "ancora": [
+      0,
+      -1,
+      65.40101623535156,
+      1.0
+    ]
+  },
+  {
+    "peca": "elmo_ferro",
+    "arquivo": "run/south-west/003.png",
+    "ancora": [
+      0,
+      -1,
+      62.85279083251953,
+      1.0
+    ]
+  },
+  {
+    "peca": "elmo_ferro",
+    "arquivo": "run/south-west/004.png",
+    "ancora": [
+      0,
+      0,
+      63.49746322631836,
+      1.0
+    ]
+  },
+  {
+    "peca": "elmo_ferro",
+    "arquivo": "run/south-west/005.png",
+    "ancora": [
+      0,
+      2,
+      70.40101623535156,
+      1.0
+    ]
+  },
+  {
+    "peca": "elmo_ferro",
+    "arquivo": "run/south-west/006.png",
+    "ancora": [
+      0,
+      2,
+      69.47715759277344,
+      1.0
+    ]
+  },
+  {
+    "peca": "elmo_ferro",
+    "arquivo": "run/south-west/007.png",
+    "ancora": [
+      -1,
+      1,
+      60.98984909057617,
+      1.0
+    ]
+  },
+  {
+    "peca": "elmo_ferro",
+    "arquivo": "walk/south-west/000.png",
+    "ancora": [
+      -1,
+      1,
+      62.55837631225586,
+      1.0
+    ]
+  },
+  {
+    "peca": "elmo_ferro",
+    "arquivo": "walk/south-west/001.png",
+    "ancora": [
+      1,
+      3,
+      67.47396850585938,
+      0.85
+    ]
+  },
+  {
+    "peca": "elmo_ferro",
+    "arquivo": "walk/south-west/002.png",
+    "ancora": [
+      0,
+      0,
+      65.40101623535156,
+      1.0
+    ]
+  },
+  {
+    "peca": "elmo_ferro",
+    "arquivo": "walk/south-west/003.png",
+    "ancora": [
+      0,
+      -1,
+      62.85279083251953,
+      1.0
+    ]
+  },
+  {
+    "peca": "elmo_ferro",
+    "arquivo": "walk/south-west/004.png",
+    "ancora": [
+      0,
+      0,
+      63.49746322631836,
+      1.0
+    ]
+  },
+  {
+    "peca": "elmo_ferro",
+    "arquivo": "walk/south-west/005.png",
+    "ancora": [
+      -1,
+      2,
+      70.40101623535156,
+      1.0
+    ]
+  },
+  {
+    "peca": "elmo_ferro",
+    "arquivo": "walk/south-west/006.png",
+    "ancora": [
+      -1,
+      2,
+      69.47715759277344,
+      1.0
+    ]
+  },
+  {
+    "peca": "elmo_ferro",
+    "arquivo": "walk/south-west/007.png",
+    "ancora": [
+      -1,
+      1,
+      60.98984909057617,
+      1.0
+    ]
+  },
+  {
+    "peca": "elmo_ferro",
+    "arquivo": "tend/south-west/000.png",
+    "ancora": [
+      0,
+      2,
+      51.12690353393555,
+      1.0
+    ]
+  },
+  {
+    "peca": "elmo_ferro",
+    "arquivo": "tend/south-west/001.png",
+    "ancora": [
+      -6,
+      9,
+      75.25888061523438,
+      1.0
+    ]
+  },
+  {
+    "peca": "elmo_ferro",
+    "arquivo": "tend/south-west/002.png",
+    "ancora": [
+      -6,
+      8,
+      75.76142120361328,
+      1.0
+    ]
+  },
+  {
+    "peca": "elmo_ferro",
+    "arquivo": "tend/south-west/003.png",
+    "ancora": [
+      -6,
+      8,
+      74.67512512207031,
+      1.0
+    ]
+  },
+  {
+    "peca": "elmo_ferro",
+    "arquivo": "tend/south-west/004.png",
+    "ancora": [
+      -6,
+      8,
+      71.84771728515625,
+      1.0
+    ]
+  },
+  {
+    "peca": "elmo_ferro",
+    "arquivo": "rotations/west.png",
+    "ancora": [
+      0,
+      0,
+      0.0,
+      1.0
+    ]
+  },
+  {
+    "peca": "elmo_ferro",
+    "arquivo": "run/west/000.png",
+    "ancora": [
+      1,
+      0,
+      67.08021545410156,
+      1.0
+    ]
+  },
+  {
+    "peca": "elmo_ferro",
+    "arquivo": "run/west/001.png",
+    "ancora": [
+      1,
+      1,
+      57.657752990722656,
+      1.0
+    ]
+  },
+  {
+    "peca": "elmo_ferro",
+    "arquivo": "run/west/002.png",
+    "ancora": [
+      0,
+      0,
+      58.278076171875,
+      1.0
+    ]
+  },
+  {
+    "peca": "elmo_ferro",
+    "arquivo": "run/west/003.png",
+    "ancora": [
+      1,
+      -2,
+      53.866310119628906,
+      1.0
+    ]
+  },
+  {
+    "peca": "elmo_ferro",
+    "arquivo": "run/west/004.png",
+    "ancora": [
+      1,
+      -2,
+      54.87165832519531,
+      1.0
+    ]
+  },
+  {
+    "peca": "elmo_ferro",
+    "arquivo": "run/west/005.png",
+    "ancora": [
+      1,
+      0,
+      53.05882263183594,
+      1.0
+    ]
+  },
+  {
+    "peca": "elmo_ferro",
+    "arquivo": "run/west/006.png",
+    "ancora": [
+      1,
+      0,
+      60.786094665527344,
+      1.0
+    ]
+  },
+  {
+    "peca": "elmo_ferro",
+    "arquivo": "run/west/007.png",
+    "ancora": [
+      2,
+      0,
+      65.48663330078125,
+      1.0
+    ]
+  },
+  {
+    "peca": "elmo_ferro",
+    "arquivo": "walk/west/000.png",
+    "ancora": [
+      1,
+      2,
+      67.08021545410156,
+      1.0
+    ]
+  },
+  {
+    "peca": "elmo_ferro",
+    "arquivo": "walk/west/001.png",
+    "ancora": [
+      1,
+      2,
+      57.657752990722656,
+      1.0
+    ]
+  },
+  {
+    "peca": "elmo_ferro",
+    "arquivo": "walk/west/002.png",
+    "ancora": [
+      1,
+      1,
+      58.278076171875,
+      1.0
+    ]
+  },
+  {
+    "peca": "elmo_ferro",
+    "arquivo": "walk/west/003.png",
+    "ancora": [
+      1,
+      -1,
+      53.866310119628906,
+      1.0
+    ]
+  },
+  {
+    "peca": "elmo_ferro",
+    "arquivo": "walk/west/004.png",
+    "ancora": [
+      1,
+      -1,
+      54.87165832519531,
+      1.0
+    ]
+  },
+  {
+    "peca": "elmo_ferro",
+    "arquivo": "walk/west/005.png",
+    "ancora": [
+      1,
+      1,
+      53.05882263183594,
+      1.0
+    ]
+  },
+  {
+    "peca": "elmo_ferro",
+    "arquivo": "walk/west/006.png",
+    "ancora": [
+      1,
+      1,
+      60.786094665527344,
+      1.0
+    ]
+  },
+  {
+    "peca": "elmo_ferro",
+    "arquivo": "walk/west/007.png",
+    "ancora": [
+      1,
+      0,
+      65.48663330078125,
+      1.0
+    ]
+  },
+  {
+    "peca": "elmo_ferro",
+    "arquivo": "tend/west/000.png",
+    "ancora": [
+      1,
+      1,
+      25.62032127380371,
+      1.0
+    ]
+  },
+  {
+    "peca": "elmo_ferro",
+    "arquivo": "tend/west/001.png",
+    "ancora": [
+      0,
+      10,
+      86.19502258300781,
+      0.85
+    ]
+  },
+  {
+    "peca": "elmo_ferro",
+    "arquivo": "tend/west/002.png",
+    "ancora": [
+      0,
+      9,
+      84.28955078125,
+      0.85
+    ]
+  },
+  {
+    "peca": "elmo_ferro",
+    "arquivo": "tend/west/003.png",
+    "ancora": [
+      -2,
+      8,
+      85.26203155517578,
+      1.0
+    ]
+  },
+  {
+    "peca": "elmo_ferro",
+    "arquivo": "tend/west/004.png",
+    "ancora": [
+      0,
+      9,
+      82.39402770996094,
+      0.85
+    ]
+  },
+  {
+    "peca": "elmo_ferro",
+    "arquivo": "rotations/north-west.png",
+    "ancora": [
+      0,
+      0,
+      0.0,
+      1.0
+    ]
+  },
+  {
+    "peca": "elmo_ferro",
+    "arquivo": "run/north-west/000.png",
+    "ancora": [
+      0,
+      1,
+      44.6271858215332,
+      0.85
+    ]
+  },
+  {
+    "peca": "elmo_ferro",
+    "arquivo": "run/north-west/001.png",
+    "ancora": [
+      -1,
+      0,
+      47.24854278564453,
+      0.85
+    ]
+  },
+  {
+    "peca": "elmo_ferro",
+    "arquivo": "run/north-west/002.png",
+    "ancora": [
+      0,
+      0,
+      49.598060607910156,
+      0.85
+    ]
+  },
+  {
+    "peca": "elmo_ferro",
+    "arquivo": "run/north-west/003.png",
+    "ancora": [
+      0,
+      0,
+      56.41359329223633,
+      0.85
+    ]
+  },
+  {
+    "peca": "elmo_ferro",
+    "arquivo": "run/north-west/004.png",
+    "ancora": [
+      -1,
+      0,
+      56.520389556884766,
+      0.85
+    ]
+  },
+  {
+    "peca": "elmo_ferro",
+    "arquivo": "run/north-west/005.png",
+    "ancora": [
+      0,
+      -1,
+      45.0398063659668,
+      0.85
+    ]
+  },
+  {
+    "peca": "elmo_ferro",
+    "arquivo": "run/north-west/006.png",
+    "ancora": [
+      -1,
+      -3,
+      45.777671813964844,
+      0.85
+    ]
+  },
+  {
+    "peca": "elmo_ferro",
+    "arquivo": "run/north-west/007.png",
+    "ancora": [
+      -1,
+      -3,
+      44.04951477050781,
+      0.85
+    ]
+  },
+  {
+    "peca": "elmo_ferro",
+    "arquivo": "walk/north-west/000.png",
+    "ancora": [
+      1,
+      5,
+      44.6271858215332,
+      0.85
+    ]
+  },
+  {
+    "peca": "elmo_ferro",
+    "arquivo": "walk/north-west/001.png",
+    "ancora": [
+      1,
+      4,
+      47.24854278564453,
+      0.85
+    ]
+  },
+  {
+    "peca": "elmo_ferro",
+    "arquivo": "walk/north-west/002.png",
+    "ancora": [
+      2,
+      3,
+      49.598060607910156,
+      0.85
+    ]
+  },
+  {
+    "peca": "elmo_ferro",
+    "arquivo": "walk/north-west/003.png",
+    "ancora": [
+      1,
+      3,
+      56.41359329223633,
+      0.85
+    ]
+  },
+  {
+    "peca": "elmo_ferro",
+    "arquivo": "walk/north-west/004.png",
+    "ancora": [
+      1,
+      3,
+      56.520389556884766,
+      0.85
+    ]
+  },
+  {
+    "peca": "elmo_ferro",
+    "arquivo": "walk/north-west/005.png",
+    "ancora": [
+      1,
+      3,
+      45.0398063659668,
+      0.85
+    ]
+  },
+  {
+    "peca": "elmo_ferro",
+    "arquivo": "walk/north-west/006.png",
+    "ancora": [
+      0,
+      1,
+      45.777671813964844,
+      0.85
+    ]
+  },
+  {
+    "peca": "elmo_ferro",
+    "arquivo": "walk/north-west/007.png",
+    "ancora": [
+      0,
+      1,
+      44.04951477050781,
+      0.85
+    ]
+  },
+  {
+    "peca": "elmo_ferro",
+    "arquivo": "tend/north-west/000.png",
+    "ancora": [
+      1,
+      4,
+      34.85533905029297,
+      0.85
+    ]
+  },
+  {
+    "peca": "elmo_ferro",
+    "arquivo": "tend/north-west/001.png",
+    "ancora": [
+      -1,
+      11,
+      59.631900787353516,
+      0.75
+    ]
+  },
+  {
+    "peca": "elmo_ferro",
+    "arquivo": "tend/north-west/002.png",
+    "ancora": [
+      0,
+      10,
+      58.754600524902344,
+      0.75
+    ]
+  },
+  {
+    "peca": "elmo_ferro",
+    "arquivo": "tend/north-west/003.png",
+    "ancora": [
+      -1,
+      11,
+      60.18404769897461,
+      0.75
+    ]
+  },
+  {
+    "peca": "elmo_ferro",
+    "arquivo": "tend/north-west/004.png",
+    "ancora": [
+      -1,
+      11,
+      61.46625900268555,
+      0.75
+    ]
+  },
+  {
+    "peca": "elmo_ferro",
+    "arquivo": "rotations/north.png",
+    "ancora": [
+      0,
+      0,
+      0.0,
+      1.0
+    ]
+  },
+  {
+    "peca": "elmo_ferro",
+    "arquivo": "run/north/000.png",
+    "ancora": [
+      2,
+      -2,
+      32.78208923339844,
+      0.85
+    ]
+  },
+  {
+    "peca": "elmo_ferro",
+    "arquivo": "run/north/001.png",
+    "ancora": [
+      2,
+      -2,
+      33.40895462036133,
+      0.85
+    ]
+  },
+  {
+    "peca": "elmo_ferro",
+    "arquivo": "run/north/002.png",
+    "ancora": [
+      2,
+      -1,
+      32.54328155517578,
+      0.85
+    ]
+  },
+  {
+    "peca": "elmo_ferro",
+    "arquivo": "run/north/003.png",
+    "ancora": [
+      2,
+      0,
+      35.56816101074219,
+      0.85
+    ]
+  },
+  {
+    "peca": "elmo_ferro",
+    "arquivo": "run/north/004.png",
+    "ancora": [
+      2,
+      0,
+      36.12537384033203,
+      0.85
+    ]
+  },
+  {
+    "peca": "elmo_ferro",
+    "arquivo": "run/north/005.png",
+    "ancora": [
+      3,
+      -2,
+      40.816917419433594,
+      0.85
+    ]
+  },
+  {
+    "peca": "elmo_ferro",
+    "arquivo": "run/north/006.png",
+    "ancora": [
+      2,
+      -2,
+      39.38905715942383,
+      0.85
+    ]
+  },
+  {
+    "peca": "elmo_ferro",
+    "arquivo": "run/north/007.png",
+    "ancora": [
+      2,
+      0,
+      38.97611999511719,
+      0.85
+    ]
+  },
+  {
+    "peca": "elmo_ferro",
+    "arquivo": "walk/north/000.png",
+    "ancora": [
+      2,
+      -1,
+      32.78208923339844,
+      0.85
+    ]
+  },
+  {
+    "peca": "elmo_ferro",
+    "arquivo": "walk/north/001.png",
+    "ancora": [
+      2,
+      -1,
+      33.40895462036133,
+      0.85
+    ]
+  },
+  {
+    "peca": "elmo_ferro",
+    "arquivo": "walk/north/002.png",
+    "ancora": [
+      2,
+      0,
+      32.54328155517578,
+      0.85
+    ]
+  },
+  {
+    "peca": "elmo_ferro",
+    "arquivo": "walk/north/003.png",
+    "ancora": [
+      2,
+      1,
+      35.56816101074219,
+      0.85
+    ]
+  },
+  {
+    "peca": "elmo_ferro",
+    "arquivo": "walk/north/004.png",
+    "ancora": [
+      2,
+      1,
+      36.12537384033203,
+      0.85
+    ]
+  },
+  {
+    "peca": "elmo_ferro",
+    "arquivo": "walk/north/005.png",
+    "ancora": [
+      3,
+      -1,
+      40.816917419433594,
+      0.85
+    ]
+  },
+  {
+    "peca": "elmo_ferro",
+    "arquivo": "walk/north/006.png",
+    "ancora": [
+      3,
+      -1,
+      39.38905715942383,
+      0.85
+    ]
+  },
+  {
+    "peca": "elmo_ferro",
+    "arquivo": "walk/north/007.png",
+    "ancora": [
+      3,
+      1,
+      38.97611999511719,
+      0.85
+    ]
+  },
+  {
+    "peca": "elmo_ferro",
+    "arquivo": "tend/north/000.png",
+    "ancora": [
+      1,
+      4,
+      47.657711029052734,
+      0.85
+    ]
+  },
+  {
+    "peca": "elmo_ferro",
+    "arquivo": "tend/north/001.png",
+    "ancora": [
+      7,
+      10,
+      62.43708419799805,
+      0.75
+    ]
+  },
+  {
+    "peca": "elmo_ferro",
+    "arquivo": "tend/north/002.png",
+    "ancora": [
+      7,
+      9,
+      61.51655578613281,
+      0.75
+    ]
+  },
+  {
+    "peca": "elmo_ferro",
+    "arquivo": "tend/north/003.png",
+    "ancora": [
+      7,
+      10,
+      61.45695495605469,
+      0.75
+    ]
+  },
+  {
+    "peca": "elmo_ferro",
+    "arquivo": "tend/north/004.png",
+    "ancora": [
+      8,
+      10,
+      61.033111572265625,
+      0.75
+    ]
+  },
+  {
+    "peca": "elmo_ferro",
+    "arquivo": "rotations/north-east.png",
+    "ancora": [
+      0,
+      0,
+      0.0,
+      1.0
+    ]
+  },
+  {
+    "peca": "elmo_ferro",
+    "arquivo": "run/north-east/000.png",
+    "ancora": [
+      4,
+      1,
+      42.224273681640625,
+      0.85
+    ]
+  },
+  {
+    "peca": "elmo_ferro",
+    "arquivo": "run/north-east/001.png",
+    "ancora": [
+      4,
+      0,
+      44.073787689208984,
+      0.85
+    ]
+  },
+  {
+    "peca": "elmo_ferro",
+    "arquivo": "run/north-east/002.png",
+    "ancora": [
+      4,
+      0,
+      49.4815559387207,
+      0.85
+    ]
+  },
+  {
+    "peca": "elmo_ferro",
+    "arquivo": "run/north-east/003.png",
+    "ancora": [
+      4,
+      0,
+      56.18058395385742,
+      0.85
+    ]
+  },
+  {
+    "peca": "elmo_ferro",
+    "arquivo": "run/north-east/004.png",
+    "ancora": [
+      4,
+      0,
+      56.020389556884766,
+      0.85
+    ]
+  },
+  {
+    "peca": "elmo_ferro",
+    "arquivo": "run/north-east/005.png",
+    "ancora": [
+      4,
+      -1,
+      42.166019439697266,
+      0.85
+    ]
+  },
+  {
+    "peca": "elmo_ferro",
+    "arquivo": "run/north-east/006.png",
+    "ancora": [
+      5,
+      -3,
+      43.35533905029297,
+      0.85
+    ]
+  },
+  {
+    "peca": "elmo_ferro",
+    "arquivo": "run/north-east/007.png",
+    "ancora": [
+      4,
+      -3,
+      43.166019439697266,
+      0.85
+    ]
+  },
+  {
+    "peca": "elmo_ferro",
+    "arquivo": "walk/north-east/000.png",
+    "ancora": [
+      3,
+      5,
+      42.224273681640625,
+      0.85
+    ]
+  },
+  {
+    "peca": "elmo_ferro",
+    "arquivo": "walk/north-east/001.png",
+    "ancora": [
+      3,
+      4,
+      44.073787689208984,
+      0.85
+    ]
+  },
+  {
+    "peca": "elmo_ferro",
+    "arquivo": "walk/north-east/002.png",
+    "ancora": [
+      3,
+      3,
+      49.4815559387207,
+      0.85
+    ]
+  },
+  {
+    "peca": "elmo_ferro",
+    "arquivo": "walk/north-east/003.png",
+    "ancora": [
+      3,
+      3,
+      56.18058395385742,
+      0.85
+    ]
+  },
+  {
+    "peca": "elmo_ferro",
+    "arquivo": "walk/north-east/004.png",
+    "ancora": [
+      3,
+      3,
+      56.020389556884766,
+      0.85
+    ]
+  },
+  {
+    "peca": "elmo_ferro",
+    "arquivo": "walk/north-east/005.png",
+    "ancora": [
+      3,
+      3,
+      42.166019439697266,
+      0.85
+    ]
+  },
+  {
+    "peca": "elmo_ferro",
+    "arquivo": "walk/north-east/006.png",
+    "ancora": [
+      4,
+      1,
+      43.35533905029297,
+      0.85
+    ]
+  },
+  {
+    "peca": "elmo_ferro",
+    "arquivo": "walk/north-east/007.png",
+    "ancora": [
+      4,
+      1,
+      43.166019439697266,
+      0.85
+    ]
+  },
+  {
+    "peca": "elmo_ferro",
+    "arquivo": "tend/north-east/000.png",
+    "ancora": [
+      3,
+      5,
+      34.70000076293945,
+      0.85
+    ]
+  },
+  {
+    "peca": "elmo_ferro",
+    "arquivo": "tend/north-east/001.png",
+    "ancora": [
+      7,
+      11,
+      63.04907989501953,
+      0.75
+    ]
+  },
+  {
+    "peca": "elmo_ferro",
+    "arquivo": "tend/north-east/002.png",
+    "ancora": [
+      6,
+      10,
+      61.50306701660156,
+      0.75
+    ]
+  },
+  {
+    "peca": "elmo_ferro",
+    "arquivo": "tend/north-east/003.png",
+    "ancora": [
+      7,
+      11,
+      62.92024612426758,
+      0.75
+    ]
+  },
+  {
+    "peca": "elmo_ferro",
+    "arquivo": "tend/north-east/004.png",
+    "ancora": [
+      6,
+      11,
+      64.58282470703125,
+      0.75
+    ]
+  },
+  {
+    "peca": "elmo_ferro",
+    "arquivo": "rotations/east.png",
+    "ancora": [
+      0,
+      0,
+      0.0,
+      1.0
+    ]
+  },
+  {
+    "peca": "elmo_ferro",
+    "arquivo": "run/east/000.png",
+    "ancora": [
+      -1,
+      0,
+      70.84491729736328,
+      1.0
+    ]
+  },
+  {
+    "peca": "elmo_ferro",
+    "arquivo": "run/east/001.png",
+    "ancora": [
+      -1,
+      1,
+      60.87700653076172,
+      1.0
+    ]
+  },
+  {
+    "peca": "elmo_ferro",
+    "arquivo": "run/east/002.png",
+    "ancora": [
+      0,
+      0,
+      57.74866485595703,
+      1.0
+    ]
+  },
+  {
+    "peca": "elmo_ferro",
+    "arquivo": "run/east/003.png",
+    "ancora": [
+      -1,
+      -2,
+      58.67914581298828,
+      1.0
+    ]
+  },
+  {
+    "peca": "elmo_ferro",
+    "arquivo": "run/east/004.png",
+    "ancora": [
+      -1,
+      -2,
+      57.24599075317383,
+      1.0
+    ]
+  },
+  {
+    "peca": "elmo_ferro",
+    "arquivo": "run/east/005.png",
+    "ancora": [
+      -1,
+      0,
+      57.31550979614258,
+      1.0
+    ]
+  },
+  {
+    "peca": "elmo_ferro",
+    "arquivo": "run/east/006.png",
+    "ancora": [
+      -1,
+      0,
+      67.21925354003906,
+      1.0
+    ]
+  },
+  {
+    "peca": "elmo_ferro",
+    "arquivo": "run/east/007.png",
+    "ancora": [
+      -2,
+      0,
+      72.18181610107422,
+      1.0
+    ]
+  },
+  {
+    "peca": "elmo_ferro",
+    "arquivo": "walk/east/000.png",
+    "ancora": [
+      0,
+      2,
+      70.84491729736328,
+      1.0
+    ]
+  },
+  {
+    "peca": "elmo_ferro",
+    "arquivo": "walk/east/001.png",
+    "ancora": [
+      0,
+      2,
+      60.87700653076172,
+      1.0
+    ]
+  },
+  {
+    "peca": "elmo_ferro",
+    "arquivo": "walk/east/002.png",
+    "ancora": [
+      -1,
+      1,
+      57.74866485595703,
+      1.0
+    ]
+  },
+  {
+    "peca": "elmo_ferro",
+    "arquivo": "walk/east/003.png",
+    "ancora": [
+      -1,
+      -1,
+      58.67914581298828,
+      1.0
+    ]
+  },
+  {
+    "peca": "elmo_ferro",
+    "arquivo": "walk/east/004.png",
+    "ancora": [
+      -1,
+      -1,
+      57.24599075317383,
+      1.0
+    ]
+  },
+  {
+    "peca": "elmo_ferro",
+    "arquivo": "walk/east/005.png",
+    "ancora": [
+      -1,
+      1,
+      57.31550979614258,
+      1.0
+    ]
+  },
+  {
+    "peca": "elmo_ferro",
+    "arquivo": "walk/east/006.png",
+    "ancora": [
+      -1,
+      1,
+      67.21925354003906,
+      1.0
+    ]
+  },
+  {
+    "peca": "elmo_ferro",
+    "arquivo": "walk/east/007.png",
+    "ancora": [
+      -1,
+      0,
+      72.18181610107422,
+      1.0
+    ]
+  },
+  {
+    "peca": "elmo_ferro",
+    "arquivo": "tend/east/000.png",
+    "ancora": [
+      -1,
+      1,
+      24.85026741027832,
+      1.0
+    ]
+  },
+  {
+    "peca": "elmo_ferro",
+    "arquivo": "tend/east/001.png",
+    "ancora": [
+      5,
+      11,
+      85.84906005859375,
+      0.75
+    ]
+  },
+  {
+    "peca": "elmo_ferro",
+    "arquivo": "tend/east/002.png",
+    "ancora": [
+      4,
+      10,
+      85.0817642211914,
+      0.75
+    ]
+  },
+  {
+    "peca": "elmo_ferro",
+    "arquivo": "tend/east/003.png",
+    "ancora": [
+      3,
+      9,
+      83.03773498535156,
+      0.75
+    ]
+  },
+  {
+    "peca": "elmo_ferro",
+    "arquivo": "tend/east/004.png",
+    "ancora": [
+      4,
+      11,
+      83.42138671875,
+      0.75
+    ]
+  },
+  {
+    "peca": "elmo_ferro",
+    "arquivo": "rotations/south-east.png",
+    "ancora": [
+      0,
+      0,
+      0.0,
+      1.0
+    ]
+  },
+  {
+    "peca": "elmo_ferro",
+    "arquivo": "run/south-east/000.png",
+    "ancora": [
+      0,
+      1,
+      61.38071060180664,
+      1.0
+    ]
+  },
+  {
+    "peca": "elmo_ferro",
+    "arquivo": "run/south-east/001.png",
+    "ancora": [
+      0,
+      2,
+      65.33502197265625,
+      1.0
+    ]
+  },
+  {
+    "peca": "elmo_ferro",
+    "arquivo": "run/south-east/002.png",
+    "ancora": [
+      0,
+      -1,
+      64.57360076904297,
+      1.0
+    ]
+  },
+  {
+    "peca": "elmo_ferro",
+    "arquivo": "run/south-east/003.png",
+    "ancora": [
+      0,
+      -1,
+      62.456851959228516,
+      1.0
+    ]
+  },
+  {
+    "peca": "elmo_ferro",
+    "arquivo": "run/south-east/004.png",
+    "ancora": [
+      0,
+      0,
+      62.53299331665039,
+      1.0
+    ]
+  },
+  {
+    "peca": "elmo_ferro",
+    "arquivo": "run/south-east/005.png",
+    "ancora": [
+      0,
+      2,
+      71.96446990966797,
+      1.0
+    ]
+  },
+  {
+    "peca": "elmo_ferro",
+    "arquivo": "run/south-east/006.png",
+    "ancora": [
+      0,
+      2,
+      70.59391021728516,
+      1.0
+    ]
+  },
+  {
+    "peca": "elmo_ferro",
+    "arquivo": "run/south-east/007.png",
+    "ancora": [
+      1,
+      1,
+      61.88324737548828,
+      1.0
+    ]
+  },
+  {
+    "peca": "elmo_ferro",
+    "arquivo": "walk/south-east/000.png",
+    "ancora": [
+      1,
+      1,
+      61.38071060180664,
+      1.0
+    ]
+  },
+  {
+    "peca": "elmo_ferro",
+    "arquivo": "walk/south-east/001.png",
+    "ancora": [
+      1,
+      1,
+      65.33502197265625,
+      1.0
+    ]
+  },
+  {
+    "peca": "elmo_ferro",
+    "arquivo": "walk/south-east/002.png",
+    "ancora": [
+      0,
+      0,
+      64.57360076904297,
+      1.0
+    ]
+  },
+  {
+    "peca": "elmo_ferro",
+    "arquivo": "walk/south-east/003.png",
+    "ancora": [
+      0,
+      -1,
+      62.456851959228516,
+      1.0
+    ]
+  },
+  {
+    "peca": "elmo_ferro",
+    "arquivo": "walk/south-east/004.png",
+    "ancora": [
+      1,
+      0,
+      62.53299331665039,
+      1.0
+    ]
+  },
+  {
+    "peca": "elmo_ferro",
+    "arquivo": "walk/south-east/005.png",
+    "ancora": [
+      1,
+      2,
+      71.96446990966797,
+      1.0
+    ]
+  },
+  {
+    "peca": "elmo_ferro",
+    "arquivo": "walk/south-east/006.png",
+    "ancora": [
+      1,
+      2,
+      70.59391021728516,
+      1.0
+    ]
+  },
+  {
+    "peca": "elmo_ferro",
+    "arquivo": "walk/south-east/007.png",
+    "ancora": [
+      1,
+      1,
+      61.88324737548828,
+      1.0
+    ]
+  },
+  {
+    "peca": "elmo_ferro",
+    "arquivo": "tend/south-east/000.png",
+    "ancora": [
+      1,
+      2,
+      51.512691497802734,
+      1.0
+    ]
+  },
+  {
+    "peca": "elmo_ferro",
+    "arquivo": "tend/south-east/001.png",
+    "ancora": [
+      6,
+      9,
+      75.86294555664062,
+      1.0
+    ]
+  },
+  {
+    "peca": "elmo_ferro",
+    "arquivo": "tend/south-east/002.png",
+    "ancora": [
+      6,
+      9,
+      78.71598052978516,
+      0.85
+    ]
+  },
+  {
+    "peca": "elmo_ferro",
+    "arquivo": "tend/south-east/003.png",
+    "ancora": [
+      7,
+      9,
+      77.19542694091797,
+      0.85
+    ]
+  },
+  {
+    "peca": "elmo_ferro",
+    "arquivo": "tend/south-east/004.png",
+    "ancora": [
+      7,
+      9,
+      78.39634704589844,
+      0.85
+    ]
+  },
+  {
+    "peca": "elmo_adamantium",
+    "arquivo": "rotations/south.png",
+    "ancora": [
+      0,
+      0,
+      0.0,
+      1.0
+    ]
+  },
+  {
+    "peca": "elmo_adamantium",
+    "arquivo": "run/south/000.png",
+    "ancora": [
+      2,
+      0,
+      80.96604919433594,
+      0.85
+    ]
+  },
+  {
+    "peca": "elmo_adamantium",
+    "arquivo": "run/south/001.png",
+    "ancora": [
+      3,
+      -1,
+      77.90641784667969,
+      0.85
+    ]
+  },
+  {
+    "peca": "elmo_adamantium",
+    "arquivo": "run/south/002.png",
+    "ancora": [
+      3,
+      -2,
+      78.1082534790039,
+      0.85
+    ]
+  },
+  {
+    "peca": "elmo_adamantium",
+    "arquivo": "run/south/003.png",
+    "ancora": [
+      3,
+      -1,
+      73.84678649902344,
+      0.85
+    ]
+  },
+  {
+    "peca": "elmo_adamantium",
+    "arquivo": "run/south/004.png",
+    "ancora": [
+      3,
+      0,
+      74.71834564208984,
+      0.85
+    ]
+  },
+  {
+    "peca": "elmo_adamantium",
+    "arquivo": "run/south/005.png",
+    "ancora": [
+      2,
+      0,
+      81.2779769897461,
+      0.85
+    ]
+  },
+  {
+    "peca": "elmo_adamantium",
+    "arquivo": "run/south/006.png",
+    "ancora": [
+      2,
+      -1,
+      79.6954116821289,
+      0.85
+    ]
+  },
+  {
+    "peca": "elmo_adamantium",
+    "arquivo": "run/south/007.png",
+    "ancora": [
+      2,
+      -1,
+      79.12201690673828,
+      0.85
+    ]
+  },
+  {
+    "peca": "elmo_adamantium",
+    "arquivo": "walk/south/000.png",
+    "ancora": [
+      2,
+      3,
+      80.96604919433594,
+      0.85
+    ]
+  },
+  {
+    "peca": "elmo_adamantium",
+    "arquivo": "walk/south/001.png",
+    "ancora": [
+      3,
+      1,
+      77.90641784667969,
+      0.85
+    ]
+  },
+  {
+    "peca": "elmo_adamantium",
+    "arquivo": "walk/south/002.png",
+    "ancora": [
+      3,
+      0,
+      78.1082534790039,
+      0.85
+    ]
+  },
+  {
+    "peca": "elmo_adamantium",
+    "arquivo": "walk/south/003.png",
+    "ancora": [
+      3,
+      1,
+      73.84678649902344,
+      0.85
+    ]
+  },
+  {
+    "peca": "elmo_adamantium",
+    "arquivo": "walk/south/004.png",
+    "ancora": [
+      3,
+      3,
+      74.71834564208984,
+      0.85
+    ]
+  },
+  {
+    "peca": "elmo_adamantium",
+    "arquivo": "walk/south/005.png",
+    "ancora": [
+      2,
+      2,
+      81.2779769897461,
+      0.85
+    ]
+  },
+  {
+    "peca": "elmo_adamantium",
+    "arquivo": "walk/south/006.png",
+    "ancora": [
+      2,
+      1,
+      79.6954116821289,
+      0.85
+    ]
+  },
+  {
+    "peca": "elmo_adamantium",
+    "arquivo": "walk/south/007.png",
+    "ancora": [
+      2,
+      1,
+      79.12201690673828,
+      0.85
+    ]
+  },
+  {
+    "peca": "elmo_adamantium",
+    "arquivo": "tend/south/000.png",
+    "ancora": [
+      2,
+      5,
+      54.31009292602539,
+      0.85
+    ]
+  },
+  {
+    "peca": "elmo_adamantium",
+    "arquivo": "tend/south/001.png",
+    "ancora": [
+      5,
+      12,
+      79.85595703125,
+      0.85
+    ]
+  },
+  {
+    "peca": "elmo_adamantium",
+    "arquivo": "tend/south/002.png",
+    "ancora": [
+      4,
+      10,
+      80.85595703125,
+      0.85
+    ]
+  },
+  {
+    "peca": "elmo_adamantium",
+    "arquivo": "tend/south/003.png",
+    "ancora": [
+      5,
+      9,
+      81.29632568359375,
+      0.85
+    ]
+  },
+  {
+    "peca": "elmo_adamantium",
+    "arquivo": "tend/south/004.png",
+    "ancora": [
+      5,
+      10,
+      81.56238555908203,
+      0.85
+    ]
+  },
+  {
+    "peca": "elmo_adamantium",
+    "arquivo": "rotations/south-west.png",
+    "ancora": [
+      0,
+      0,
+      0.0,
+      1.0
+    ]
+  },
+  {
+    "peca": "elmo_adamantium",
+    "arquivo": "run/south-west/000.png",
+    "ancora": [
+      0,
+      1,
+      62.55837631225586,
+      1.0
+    ]
+  },
+  {
+    "peca": "elmo_adamantium",
+    "arquivo": "run/south-west/001.png",
+    "ancora": [
+      1,
+      2,
+      67.47396850585938,
+      0.85
+    ]
+  },
+  {
+    "peca": "elmo_adamantium",
+    "arquivo": "run/south-west/002.png",
+    "ancora": [
+      0,
+      -1,
+      65.40101623535156,
+      1.0
+    ]
+  },
+  {
+    "peca": "elmo_adamantium",
+    "arquivo": "run/south-west/003.png",
+    "ancora": [
+      0,
+      -1,
+      62.85279083251953,
+      1.0
+    ]
+  },
+  {
+    "peca": "elmo_adamantium",
+    "arquivo": "run/south-west/004.png",
+    "ancora": [
+      0,
+      0,
+      63.49746322631836,
+      1.0
+    ]
+  },
+  {
+    "peca": "elmo_adamantium",
+    "arquivo": "run/south-west/005.png",
+    "ancora": [
+      0,
+      2,
+      70.40101623535156,
+      1.0
+    ]
+  },
+  {
+    "peca": "elmo_adamantium",
+    "arquivo": "run/south-west/006.png",
+    "ancora": [
+      0,
+      2,
+      69.47715759277344,
+      1.0
+    ]
+  },
+  {
+    "peca": "elmo_adamantium",
+    "arquivo": "run/south-west/007.png",
+    "ancora": [
+      -1,
+      1,
+      60.98984909057617,
+      1.0
+    ]
+  },
+  {
+    "peca": "elmo_adamantium",
+    "arquivo": "walk/south-west/000.png",
+    "ancora": [
+      -1,
+      1,
+      62.55837631225586,
+      1.0
+    ]
+  },
+  {
+    "peca": "elmo_adamantium",
+    "arquivo": "walk/south-west/001.png",
+    "ancora": [
+      1,
+      3,
+      67.47396850585938,
+      0.85
+    ]
+  },
+  {
+    "peca": "elmo_adamantium",
+    "arquivo": "walk/south-west/002.png",
+    "ancora": [
+      0,
+      0,
+      65.40101623535156,
+      1.0
+    ]
+  },
+  {
+    "peca": "elmo_adamantium",
+    "arquivo": "walk/south-west/003.png",
+    "ancora": [
+      0,
+      -1,
+      62.85279083251953,
+      1.0
+    ]
+  },
+  {
+    "peca": "elmo_adamantium",
+    "arquivo": "walk/south-west/004.png",
+    "ancora": [
+      0,
+      0,
+      63.49746322631836,
+      1.0
+    ]
+  },
+  {
+    "peca": "elmo_adamantium",
+    "arquivo": "walk/south-west/005.png",
+    "ancora": [
+      -1,
+      2,
+      70.40101623535156,
+      1.0
+    ]
+  },
+  {
+    "peca": "elmo_adamantium",
+    "arquivo": "walk/south-west/006.png",
+    "ancora": [
+      -1,
+      2,
+      69.47715759277344,
+      1.0
+    ]
+  },
+  {
+    "peca": "elmo_adamantium",
+    "arquivo": "walk/south-west/007.png",
+    "ancora": [
+      -1,
+      1,
+      60.98984909057617,
+      1.0
+    ]
+  },
+  {
+    "peca": "elmo_adamantium",
+    "arquivo": "tend/south-west/000.png",
+    "ancora": [
+      0,
+      2,
+      51.12690353393555,
+      1.0
+    ]
+  },
+  {
+    "peca": "elmo_adamantium",
+    "arquivo": "tend/south-west/001.png",
+    "ancora": [
+      -6,
+      9,
+      75.25888061523438,
+      1.0
+    ]
+  },
+  {
+    "peca": "elmo_adamantium",
+    "arquivo": "tend/south-west/002.png",
+    "ancora": [
+      -6,
+      8,
+      75.76142120361328,
+      1.0
+    ]
+  },
+  {
+    "peca": "elmo_adamantium",
+    "arquivo": "tend/south-west/003.png",
+    "ancora": [
+      -6,
+      8,
+      74.67512512207031,
+      1.0
+    ]
+  },
+  {
+    "peca": "elmo_adamantium",
+    "arquivo": "tend/south-west/004.png",
+    "ancora": [
+      -6,
+      8,
+      71.84771728515625,
+      1.0
+    ]
+  },
+  {
+    "peca": "elmo_adamantium",
+    "arquivo": "rotations/west.png",
+    "ancora": [
+      0,
+      0,
+      0.0,
+      1.0
+    ]
+  },
+  {
+    "peca": "elmo_adamantium",
+    "arquivo": "run/west/000.png",
+    "ancora": [
+      1,
+      0,
+      67.08021545410156,
+      1.0
+    ]
+  },
+  {
+    "peca": "elmo_adamantium",
+    "arquivo": "run/west/001.png",
+    "ancora": [
+      1,
+      1,
+      57.657752990722656,
+      1.0
+    ]
+  },
+  {
+    "peca": "elmo_adamantium",
+    "arquivo": "run/west/002.png",
+    "ancora": [
+      0,
+      0,
+      58.278076171875,
+      1.0
+    ]
+  },
+  {
+    "peca": "elmo_adamantium",
+    "arquivo": "run/west/003.png",
+    "ancora": [
+      1,
+      -2,
+      53.866310119628906,
+      1.0
+    ]
+  },
+  {
+    "peca": "elmo_adamantium",
+    "arquivo": "run/west/004.png",
+    "ancora": [
+      1,
+      -2,
+      54.87165832519531,
+      1.0
+    ]
+  },
+  {
+    "peca": "elmo_adamantium",
+    "arquivo": "run/west/005.png",
+    "ancora": [
+      1,
+      0,
+      53.05882263183594,
+      1.0
+    ]
+  },
+  {
+    "peca": "elmo_adamantium",
+    "arquivo": "run/west/006.png",
+    "ancora": [
+      1,
+      0,
+      60.786094665527344,
+      1.0
+    ]
+  },
+  {
+    "peca": "elmo_adamantium",
+    "arquivo": "run/west/007.png",
+    "ancora": [
+      2,
+      0,
+      65.48663330078125,
+      1.0
+    ]
+  },
+  {
+    "peca": "elmo_adamantium",
+    "arquivo": "walk/west/000.png",
+    "ancora": [
+      1,
+      2,
+      67.08021545410156,
+      1.0
+    ]
+  },
+  {
+    "peca": "elmo_adamantium",
+    "arquivo": "walk/west/001.png",
+    "ancora": [
+      1,
+      2,
+      57.657752990722656,
+      1.0
+    ]
+  },
+  {
+    "peca": "elmo_adamantium",
+    "arquivo": "walk/west/002.png",
+    "ancora": [
+      1,
+      1,
+      58.278076171875,
+      1.0
+    ]
+  },
+  {
+    "peca": "elmo_adamantium",
+    "arquivo": "walk/west/003.png",
+    "ancora": [
+      1,
+      -1,
+      53.866310119628906,
+      1.0
+    ]
+  },
+  {
+    "peca": "elmo_adamantium",
+    "arquivo": "walk/west/004.png",
+    "ancora": [
+      1,
+      -1,
+      54.87165832519531,
+      1.0
+    ]
+  },
+  {
+    "peca": "elmo_adamantium",
+    "arquivo": "walk/west/005.png",
+    "ancora": [
+      1,
+      1,
+      53.05882263183594,
+      1.0
+    ]
+  },
+  {
+    "peca": "elmo_adamantium",
+    "arquivo": "walk/west/006.png",
+    "ancora": [
+      1,
+      1,
+      60.786094665527344,
+      1.0
+    ]
+  },
+  {
+    "peca": "elmo_adamantium",
+    "arquivo": "walk/west/007.png",
+    "ancora": [
+      1,
+      0,
+      65.48663330078125,
+      1.0
+    ]
+  },
+  {
+    "peca": "elmo_adamantium",
+    "arquivo": "tend/west/000.png",
+    "ancora": [
+      1,
+      1,
+      25.62032127380371,
+      1.0
+    ]
+  },
+  {
+    "peca": "elmo_adamantium",
+    "arquivo": "tend/west/001.png",
+    "ancora": [
+      0,
+      10,
+      86.19502258300781,
+      0.85
+    ]
+  },
+  {
+    "peca": "elmo_adamantium",
+    "arquivo": "tend/west/002.png",
+    "ancora": [
+      0,
+      9,
+      84.28955078125,
+      0.85
+    ]
+  },
+  {
+    "peca": "elmo_adamantium",
+    "arquivo": "tend/west/003.png",
+    "ancora": [
+      -2,
+      8,
+      85.26203155517578,
+      1.0
+    ]
+  },
+  {
+    "peca": "elmo_adamantium",
+    "arquivo": "tend/west/004.png",
+    "ancora": [
+      0,
+      9,
+      82.39402770996094,
+      0.85
+    ]
+  },
+  {
+    "peca": "elmo_adamantium",
+    "arquivo": "rotations/north-west.png",
+    "ancora": [
+      0,
+      0,
+      0.0,
+      1.0
+    ]
+  },
+  {
+    "peca": "elmo_adamantium",
+    "arquivo": "run/north-west/000.png",
+    "ancora": [
+      0,
+      1,
+      44.6271858215332,
+      0.85
+    ]
+  },
+  {
+    "peca": "elmo_adamantium",
+    "arquivo": "run/north-west/001.png",
+    "ancora": [
+      -1,
+      0,
+      47.24854278564453,
+      0.85
+    ]
+  },
+  {
+    "peca": "elmo_adamantium",
+    "arquivo": "run/north-west/002.png",
+    "ancora": [
+      0,
+      0,
+      49.598060607910156,
+      0.85
+    ]
+  },
+  {
+    "peca": "elmo_adamantium",
+    "arquivo": "run/north-west/003.png",
+    "ancora": [
+      0,
+      0,
+      56.41359329223633,
+      0.85
+    ]
+  },
+  {
+    "peca": "elmo_adamantium",
+    "arquivo": "run/north-west/004.png",
+    "ancora": [
+      -1,
+      0,
+      56.520389556884766,
+      0.85
+    ]
+  },
+  {
+    "peca": "elmo_adamantium",
+    "arquivo": "run/north-west/005.png",
+    "ancora": [
+      0,
+      -1,
+      45.0398063659668,
+      0.85
+    ]
+  },
+  {
+    "peca": "elmo_adamantium",
+    "arquivo": "run/north-west/006.png",
+    "ancora": [
+      -1,
+      -3,
+      45.777671813964844,
+      0.85
+    ]
+  },
+  {
+    "peca": "elmo_adamantium",
+    "arquivo": "run/north-west/007.png",
+    "ancora": [
+      -1,
+      -3,
+      44.04951477050781,
+      0.85
+    ]
+  },
+  {
+    "peca": "elmo_adamantium",
+    "arquivo": "walk/north-west/000.png",
+    "ancora": [
+      1,
+      5,
+      44.6271858215332,
+      0.85
+    ]
+  },
+  {
+    "peca": "elmo_adamantium",
+    "arquivo": "walk/north-west/001.png",
+    "ancora": [
+      1,
+      4,
+      47.24854278564453,
+      0.85
+    ]
+  },
+  {
+    "peca": "elmo_adamantium",
+    "arquivo": "walk/north-west/002.png",
+    "ancora": [
+      2,
+      3,
+      49.598060607910156,
+      0.85
+    ]
+  },
+  {
+    "peca": "elmo_adamantium",
+    "arquivo": "walk/north-west/003.png",
+    "ancora": [
+      1,
+      3,
+      56.41359329223633,
+      0.85
+    ]
+  },
+  {
+    "peca": "elmo_adamantium",
+    "arquivo": "walk/north-west/004.png",
+    "ancora": [
+      1,
+      3,
+      56.520389556884766,
+      0.85
+    ]
+  },
+  {
+    "peca": "elmo_adamantium",
+    "arquivo": "walk/north-west/005.png",
+    "ancora": [
+      1,
+      3,
+      45.0398063659668,
+      0.85
+    ]
+  },
+  {
+    "peca": "elmo_adamantium",
+    "arquivo": "walk/north-west/006.png",
+    "ancora": [
+      0,
+      1,
+      45.777671813964844,
+      0.85
+    ]
+  },
+  {
+    "peca": "elmo_adamantium",
+    "arquivo": "walk/north-west/007.png",
+    "ancora": [
+      0,
+      1,
+      44.04951477050781,
+      0.85
+    ]
+  },
+  {
+    "peca": "elmo_adamantium",
+    "arquivo": "tend/north-west/000.png",
+    "ancora": [
+      1,
+      4,
+      34.85533905029297,
+      0.85
+    ]
+  },
+  {
+    "peca": "elmo_adamantium",
+    "arquivo": "tend/north-west/001.png",
+    "ancora": [
+      -1,
+      11,
+      59.631900787353516,
+      0.75
+    ]
+  },
+  {
+    "peca": "elmo_adamantium",
+    "arquivo": "tend/north-west/002.png",
+    "ancora": [
+      0,
+      10,
+      58.754600524902344,
+      0.75
+    ]
+  },
+  {
+    "peca": "elmo_adamantium",
+    "arquivo": "tend/north-west/003.png",
+    "ancora": [
+      -1,
+      11,
+      60.18404769897461,
+      0.75
+    ]
+  },
+  {
+    "peca": "elmo_adamantium",
+    "arquivo": "tend/north-west/004.png",
+    "ancora": [
+      -1,
+      11,
+      61.46625900268555,
+      0.75
+    ]
+  },
+  {
+    "peca": "elmo_adamantium",
+    "arquivo": "rotations/north.png",
+    "ancora": [
+      0,
+      0,
+      0.0,
+      1.0
+    ]
+  },
+  {
+    "peca": "elmo_adamantium",
+    "arquivo": "run/north/000.png",
+    "ancora": [
+      2,
+      -2,
+      32.78208923339844,
+      0.85
+    ]
+  },
+  {
+    "peca": "elmo_adamantium",
+    "arquivo": "run/north/001.png",
+    "ancora": [
+      2,
+      -2,
+      33.40895462036133,
+      0.85
+    ]
+  },
+  {
+    "peca": "elmo_adamantium",
+    "arquivo": "run/north/002.png",
+    "ancora": [
+      2,
+      -1,
+      32.54328155517578,
+      0.85
+    ]
+  },
+  {
+    "peca": "elmo_adamantium",
+    "arquivo": "run/north/003.png",
+    "ancora": [
+      2,
+      0,
+      35.56816101074219,
+      0.85
+    ]
+  },
+  {
+    "peca": "elmo_adamantium",
+    "arquivo": "run/north/004.png",
+    "ancora": [
+      2,
+      0,
+      36.12537384033203,
+      0.85
+    ]
+  },
+  {
+    "peca": "elmo_adamantium",
+    "arquivo": "run/north/005.png",
+    "ancora": [
+      3,
+      -2,
+      40.816917419433594,
+      0.85
+    ]
+  },
+  {
+    "peca": "elmo_adamantium",
+    "arquivo": "run/north/006.png",
+    "ancora": [
+      2,
+      -2,
+      39.38905715942383,
+      0.85
+    ]
+  },
+  {
+    "peca": "elmo_adamantium",
+    "arquivo": "run/north/007.png",
+    "ancora": [
+      2,
+      0,
+      38.97611999511719,
+      0.85
+    ]
+  },
+  {
+    "peca": "elmo_adamantium",
+    "arquivo": "walk/north/000.png",
+    "ancora": [
+      2,
+      -1,
+      32.78208923339844,
+      0.85
+    ]
+  },
+  {
+    "peca": "elmo_adamantium",
+    "arquivo": "walk/north/001.png",
+    "ancora": [
+      2,
+      -1,
+      33.40895462036133,
+      0.85
+    ]
+  },
+  {
+    "peca": "elmo_adamantium",
+    "arquivo": "walk/north/002.png",
+    "ancora": [
+      2,
+      0,
+      32.54328155517578,
+      0.85
+    ]
+  },
+  {
+    "peca": "elmo_adamantium",
+    "arquivo": "walk/north/003.png",
+    "ancora": [
+      2,
+      1,
+      35.56816101074219,
+      0.85
+    ]
+  },
+  {
+    "peca": "elmo_adamantium",
+    "arquivo": "walk/north/004.png",
+    "ancora": [
+      2,
+      1,
+      36.12537384033203,
+      0.85
+    ]
+  },
+  {
+    "peca": "elmo_adamantium",
+    "arquivo": "walk/north/005.png",
+    "ancora": [
+      3,
+      -1,
+      40.816917419433594,
+      0.85
+    ]
+  },
+  {
+    "peca": "elmo_adamantium",
+    "arquivo": "walk/north/006.png",
+    "ancora": [
+      3,
+      -1,
+      39.38905715942383,
+      0.85
+    ]
+  },
+  {
+    "peca": "elmo_adamantium",
+    "arquivo": "walk/north/007.png",
+    "ancora": [
+      3,
+      1,
+      38.97611999511719,
+      0.85
+    ]
+  },
+  {
+    "peca": "elmo_adamantium",
+    "arquivo": "tend/north/000.png",
+    "ancora": [
+      1,
+      4,
+      47.657711029052734,
+      0.85
+    ]
+  },
+  {
+    "peca": "elmo_adamantium",
+    "arquivo": "tend/north/001.png",
+    "ancora": [
+      7,
+      10,
+      62.43708419799805,
+      0.75
+    ]
+  },
+  {
+    "peca": "elmo_adamantium",
+    "arquivo": "tend/north/002.png",
+    "ancora": [
+      7,
+      9,
+      61.51655578613281,
+      0.75
+    ]
+  },
+  {
+    "peca": "elmo_adamantium",
+    "arquivo": "tend/north/003.png",
+    "ancora": [
+      7,
+      10,
+      61.45695495605469,
+      0.75
+    ]
+  },
+  {
+    "peca": "elmo_adamantium",
+    "arquivo": "tend/north/004.png",
+    "ancora": [
+      8,
+      10,
+      61.033111572265625,
+      0.75
+    ]
+  },
+  {
+    "peca": "elmo_adamantium",
+    "arquivo": "rotations/north-east.png",
+    "ancora": [
+      0,
+      0,
+      0.0,
+      1.0
+    ]
+  },
+  {
+    "peca": "elmo_adamantium",
+    "arquivo": "run/north-east/000.png",
+    "ancora": [
+      4,
+      1,
+      42.224273681640625,
+      0.85
+    ]
+  },
+  {
+    "peca": "elmo_adamantium",
+    "arquivo": "run/north-east/001.png",
+    "ancora": [
+      4,
+      0,
+      44.073787689208984,
+      0.85
+    ]
+  },
+  {
+    "peca": "elmo_adamantium",
+    "arquivo": "run/north-east/002.png",
+    "ancora": [
+      4,
+      0,
+      49.4815559387207,
+      0.85
+    ]
+  },
+  {
+    "peca": "elmo_adamantium",
+    "arquivo": "run/north-east/003.png",
+    "ancora": [
+      4,
+      0,
+      56.18058395385742,
+      0.85
+    ]
+  },
+  {
+    "peca": "elmo_adamantium",
+    "arquivo": "run/north-east/004.png",
+    "ancora": [
+      4,
+      0,
+      56.020389556884766,
+      0.85
+    ]
+  },
+  {
+    "peca": "elmo_adamantium",
+    "arquivo": "run/north-east/005.png",
+    "ancora": [
+      4,
+      -1,
+      42.166019439697266,
+      0.85
+    ]
+  },
+  {
+    "peca": "elmo_adamantium",
+    "arquivo": "run/north-east/006.png",
+    "ancora": [
+      5,
+      -3,
+      43.35533905029297,
+      0.85
+    ]
+  },
+  {
+    "peca": "elmo_adamantium",
+    "arquivo": "run/north-east/007.png",
+    "ancora": [
+      4,
+      -3,
+      43.166019439697266,
+      0.85
+    ]
+  },
+  {
+    "peca": "elmo_adamantium",
+    "arquivo": "walk/north-east/000.png",
+    "ancora": [
+      3,
+      5,
+      42.224273681640625,
+      0.85
+    ]
+  },
+  {
+    "peca": "elmo_adamantium",
+    "arquivo": "walk/north-east/001.png",
+    "ancora": [
+      3,
+      4,
+      44.073787689208984,
+      0.85
+    ]
+  },
+  {
+    "peca": "elmo_adamantium",
+    "arquivo": "walk/north-east/002.png",
+    "ancora": [
+      3,
+      3,
+      49.4815559387207,
+      0.85
+    ]
+  },
+  {
+    "peca": "elmo_adamantium",
+    "arquivo": "walk/north-east/003.png",
+    "ancora": [
+      3,
+      3,
+      56.18058395385742,
+      0.85
+    ]
+  },
+  {
+    "peca": "elmo_adamantium",
+    "arquivo": "walk/north-east/004.png",
+    "ancora": [
+      3,
+      3,
+      56.020389556884766,
+      0.85
+    ]
+  },
+  {
+    "peca": "elmo_adamantium",
+    "arquivo": "walk/north-east/005.png",
+    "ancora": [
+      3,
+      3,
+      42.166019439697266,
+      0.85
+    ]
+  },
+  {
+    "peca": "elmo_adamantium",
+    "arquivo": "walk/north-east/006.png",
+    "ancora": [
+      4,
+      1,
+      43.35533905029297,
+      0.85
+    ]
+  },
+  {
+    "peca": "elmo_adamantium",
+    "arquivo": "walk/north-east/007.png",
+    "ancora": [
+      4,
+      1,
+      43.166019439697266,
+      0.85
+    ]
+  },
+  {
+    "peca": "elmo_adamantium",
+    "arquivo": "tend/north-east/000.png",
+    "ancora": [
+      3,
+      5,
+      34.70000076293945,
+      0.85
+    ]
+  },
+  {
+    "peca": "elmo_adamantium",
+    "arquivo": "tend/north-east/001.png",
+    "ancora": [
+      7,
+      11,
+      63.04907989501953,
+      0.75
+    ]
+  },
+  {
+    "peca": "elmo_adamantium",
+    "arquivo": "tend/north-east/002.png",
+    "ancora": [
+      6,
+      10,
+      61.50306701660156,
+      0.75
+    ]
+  },
+  {
+    "peca": "elmo_adamantium",
+    "arquivo": "tend/north-east/003.png",
+    "ancora": [
+      7,
+      11,
+      62.92024612426758,
+      0.75
+    ]
+  },
+  {
+    "peca": "elmo_adamantium",
+    "arquivo": "tend/north-east/004.png",
+    "ancora": [
+      6,
+      11,
+      64.58282470703125,
+      0.75
+    ]
+  },
+  {
+    "peca": "elmo_adamantium",
+    "arquivo": "rotations/east.png",
+    "ancora": [
+      0,
+      0,
+      0.0,
+      1.0
+    ]
+  },
+  {
+    "peca": "elmo_adamantium",
+    "arquivo": "run/east/000.png",
+    "ancora": [
+      -1,
+      0,
+      70.84491729736328,
+      1.0
+    ]
+  },
+  {
+    "peca": "elmo_adamantium",
+    "arquivo": "run/east/001.png",
+    "ancora": [
+      -1,
+      1,
+      60.87700653076172,
+      1.0
+    ]
+  },
+  {
+    "peca": "elmo_adamantium",
+    "arquivo": "run/east/002.png",
+    "ancora": [
+      0,
+      0,
+      57.74866485595703,
+      1.0
+    ]
+  },
+  {
+    "peca": "elmo_adamantium",
+    "arquivo": "run/east/003.png",
+    "ancora": [
+      -1,
+      -2,
+      58.67914581298828,
+      1.0
+    ]
+  },
+  {
+    "peca": "elmo_adamantium",
+    "arquivo": "run/east/004.png",
+    "ancora": [
+      -1,
+      -2,
+      57.24599075317383,
+      1.0
+    ]
+  },
+  {
+    "peca": "elmo_adamantium",
+    "arquivo": "run/east/005.png",
+    "ancora": [
+      -1,
+      0,
+      57.31550979614258,
+      1.0
+    ]
+  },
+  {
+    "peca": "elmo_adamantium",
+    "arquivo": "run/east/006.png",
+    "ancora": [
+      -1,
+      0,
+      67.21925354003906,
+      1.0
+    ]
+  },
+  {
+    "peca": "elmo_adamantium",
+    "arquivo": "run/east/007.png",
+    "ancora": [
+      -2,
+      0,
+      72.18181610107422,
+      1.0
+    ]
+  },
+  {
+    "peca": "elmo_adamantium",
+    "arquivo": "walk/east/000.png",
+    "ancora": [
+      0,
+      2,
+      70.84491729736328,
+      1.0
+    ]
+  },
+  {
+    "peca": "elmo_adamantium",
+    "arquivo": "walk/east/001.png",
+    "ancora": [
+      0,
+      2,
+      60.87700653076172,
+      1.0
+    ]
+  },
+  {
+    "peca": "elmo_adamantium",
+    "arquivo": "walk/east/002.png",
+    "ancora": [
+      -1,
+      1,
+      57.74866485595703,
+      1.0
+    ]
+  },
+  {
+    "peca": "elmo_adamantium",
+    "arquivo": "walk/east/003.png",
+    "ancora": [
+      -1,
+      -1,
+      58.67914581298828,
+      1.0
+    ]
+  },
+  {
+    "peca": "elmo_adamantium",
+    "arquivo": "walk/east/004.png",
+    "ancora": [
+      -1,
+      -1,
+      57.24599075317383,
+      1.0
+    ]
+  },
+  {
+    "peca": "elmo_adamantium",
+    "arquivo": "walk/east/005.png",
+    "ancora": [
+      -1,
+      1,
+      57.31550979614258,
+      1.0
+    ]
+  },
+  {
+    "peca": "elmo_adamantium",
+    "arquivo": "walk/east/006.png",
+    "ancora": [
+      -1,
+      1,
+      67.21925354003906,
+      1.0
+    ]
+  },
+  {
+    "peca": "elmo_adamantium",
+    "arquivo": "walk/east/007.png",
+    "ancora": [
+      -1,
+      0,
+      72.18181610107422,
+      1.0
+    ]
+  },
+  {
+    "peca": "elmo_adamantium",
+    "arquivo": "tend/east/000.png",
+    "ancora": [
+      -1,
+      1,
+      24.85026741027832,
+      1.0
+    ]
+  },
+  {
+    "peca": "elmo_adamantium",
+    "arquivo": "tend/east/001.png",
+    "ancora": [
+      5,
+      11,
+      85.84906005859375,
+      0.75
+    ]
+  },
+  {
+    "peca": "elmo_adamantium",
+    "arquivo": "tend/east/002.png",
+    "ancora": [
+      4,
+      10,
+      85.0817642211914,
+      0.75
+    ]
+  },
+  {
+    "peca": "elmo_adamantium",
+    "arquivo": "tend/east/003.png",
+    "ancora": [
+      3,
+      9,
+      83.03773498535156,
+      0.75
+    ]
+  },
+  {
+    "peca": "elmo_adamantium",
+    "arquivo": "tend/east/004.png",
+    "ancora": [
+      4,
+      11,
+      83.42138671875,
+      0.75
+    ]
+  },
+  {
+    "peca": "elmo_adamantium",
+    "arquivo": "rotations/south-east.png",
+    "ancora": [
+      0,
+      0,
+      0.0,
+      1.0
+    ]
+  },
+  {
+    "peca": "elmo_adamantium",
+    "arquivo": "run/south-east/000.png",
+    "ancora": [
+      0,
+      1,
+      61.38071060180664,
+      1.0
+    ]
+  },
+  {
+    "peca": "elmo_adamantium",
+    "arquivo": "run/south-east/001.png",
+    "ancora": [
+      0,
+      2,
+      65.33502197265625,
+      1.0
+    ]
+  },
+  {
+    "peca": "elmo_adamantium",
+    "arquivo": "run/south-east/002.png",
+    "ancora": [
+      0,
+      -1,
+      64.57360076904297,
+      1.0
+    ]
+  },
+  {
+    "peca": "elmo_adamantium",
+    "arquivo": "run/south-east/003.png",
+    "ancora": [
+      0,
+      -1,
+      62.456851959228516,
+      1.0
+    ]
+  },
+  {
+    "peca": "elmo_adamantium",
+    "arquivo": "run/south-east/004.png",
+    "ancora": [
+      0,
+      0,
+      62.53299331665039,
+      1.0
+    ]
+  },
+  {
+    "peca": "elmo_adamantium",
+    "arquivo": "run/south-east/005.png",
+    "ancora": [
+      0,
+      2,
+      71.96446990966797,
+      1.0
+    ]
+  },
+  {
+    "peca": "elmo_adamantium",
+    "arquivo": "run/south-east/006.png",
+    "ancora": [
+      0,
+      2,
+      70.59391021728516,
+      1.0
+    ]
+  },
+  {
+    "peca": "elmo_adamantium",
+    "arquivo": "run/south-east/007.png",
+    "ancora": [
+      1,
+      1,
+      61.88324737548828,
+      1.0
+    ]
+  },
+  {
+    "peca": "elmo_adamantium",
+    "arquivo": "walk/south-east/000.png",
+    "ancora": [
+      1,
+      1,
+      61.38071060180664,
+      1.0
+    ]
+  },
+  {
+    "peca": "elmo_adamantium",
+    "arquivo": "walk/south-east/001.png",
+    "ancora": [
+      1,
+      1,
+      65.33502197265625,
+      1.0
+    ]
+  },
+  {
+    "peca": "elmo_adamantium",
+    "arquivo": "walk/south-east/002.png",
+    "ancora": [
+      0,
+      0,
+      64.57360076904297,
+      1.0
+    ]
+  },
+  {
+    "peca": "elmo_adamantium",
+    "arquivo": "walk/south-east/003.png",
+    "ancora": [
+      0,
+      -1,
+      62.456851959228516,
+      1.0
+    ]
+  },
+  {
+    "peca": "elmo_adamantium",
+    "arquivo": "walk/south-east/004.png",
+    "ancora": [
+      1,
+      0,
+      62.53299331665039,
+      1.0
+    ]
+  },
+  {
+    "peca": "elmo_adamantium",
+    "arquivo": "walk/south-east/005.png",
+    "ancora": [
+      1,
+      2,
+      71.96446990966797,
+      1.0
+    ]
+  },
+  {
+    "peca": "elmo_adamantium",
+    "arquivo": "walk/south-east/006.png",
+    "ancora": [
+      1,
+      2,
+      70.59391021728516,
+      1.0
+    ]
+  },
+  {
+    "peca": "elmo_adamantium",
+    "arquivo": "walk/south-east/007.png",
+    "ancora": [
+      1,
+      1,
+      61.88324737548828,
+      1.0
+    ]
+  },
+  {
+    "peca": "elmo_adamantium",
+    "arquivo": "tend/south-east/000.png",
+    "ancora": [
+      1,
+      2,
+      51.512691497802734,
+      1.0
+    ]
+  },
+  {
+    "peca": "elmo_adamantium",
+    "arquivo": "tend/south-east/001.png",
+    "ancora": [
+      6,
+      9,
+      75.86294555664062,
+      1.0
+    ]
+  },
+  {
+    "peca": "elmo_adamantium",
+    "arquivo": "tend/south-east/002.png",
+    "ancora": [
+      6,
+      9,
+      78.71598052978516,
+      0.85
+    ]
+  },
+  {
+    "peca": "elmo_adamantium",
+    "arquivo": "tend/south-east/003.png",
+    "ancora": [
+      7,
+      9,
+      77.19542694091797,
+      0.85
+    ]
+  },
+  {
+    "peca": "elmo_adamantium",
+    "arquivo": "tend/south-east/004.png",
+    "ancora": [
+      7,
+      9,
+      78.39634704589844,
+      0.85
+    ]
+  },
+  {
+    "peca": "capacete_cobre",
+    "arquivo": "rotations/south.png",
+    "ancora": [
+      0,
+      0,
+      0.0,
+      1.0
+    ]
+  },
+  {
+    "peca": "capacete_cobre",
+    "arquivo": "run/south/000.png",
+    "ancora": [
+      2,
+      0,
+      80.96604919433594,
+      0.85
+    ]
+  },
+  {
+    "peca": "capacete_cobre",
+    "arquivo": "run/south/001.png",
+    "ancora": [
+      3,
+      -1,
+      77.90641784667969,
+      0.85
+    ]
+  },
+  {
+    "peca": "capacete_cobre",
+    "arquivo": "run/south/002.png",
+    "ancora": [
+      3,
+      -2,
+      78.1082534790039,
+      0.85
+    ]
+  },
+  {
+    "peca": "capacete_cobre",
+    "arquivo": "run/south/003.png",
+    "ancora": [
+      3,
+      -1,
+      73.84678649902344,
+      0.85
+    ]
+  },
+  {
+    "peca": "capacete_cobre",
+    "arquivo": "run/south/004.png",
+    "ancora": [
+      3,
+      0,
+      74.71834564208984,
+      0.85
+    ]
+  },
+  {
+    "peca": "capacete_cobre",
+    "arquivo": "run/south/005.png",
+    "ancora": [
+      2,
+      0,
+      81.2779769897461,
+      0.85
+    ]
+  },
+  {
+    "peca": "capacete_cobre",
+    "arquivo": "run/south/006.png",
+    "ancora": [
+      2,
+      -1,
+      79.6954116821289,
+      0.85
+    ]
+  },
+  {
+    "peca": "capacete_cobre",
+    "arquivo": "run/south/007.png",
+    "ancora": [
+      2,
+      -1,
+      79.12201690673828,
+      0.85
+    ]
+  },
+  {
+    "peca": "capacete_cobre",
+    "arquivo": "walk/south/000.png",
+    "ancora": [
+      2,
+      3,
+      80.96604919433594,
+      0.85
+    ]
+  },
+  {
+    "peca": "capacete_cobre",
+    "arquivo": "walk/south/001.png",
+    "ancora": [
+      3,
+      1,
+      77.90641784667969,
+      0.85
+    ]
+  },
+  {
+    "peca": "capacete_cobre",
+    "arquivo": "walk/south/002.png",
+    "ancora": [
+      3,
+      0,
+      78.1082534790039,
+      0.85
+    ]
+  },
+  {
+    "peca": "capacete_cobre",
+    "arquivo": "walk/south/003.png",
+    "ancora": [
+      3,
+      1,
+      73.84678649902344,
+      0.85
+    ]
+  },
+  {
+    "peca": "capacete_cobre",
+    "arquivo": "walk/south/004.png",
+    "ancora": [
+      3,
+      3,
+      74.71834564208984,
+      0.85
+    ]
+  },
+  {
+    "peca": "capacete_cobre",
+    "arquivo": "walk/south/005.png",
+    "ancora": [
+      2,
+      2,
+      81.2779769897461,
+      0.85
+    ]
+  },
+  {
+    "peca": "capacete_cobre",
+    "arquivo": "walk/south/006.png",
+    "ancora": [
+      2,
+      1,
+      79.6954116821289,
+      0.85
+    ]
+  },
+  {
+    "peca": "capacete_cobre",
+    "arquivo": "walk/south/007.png",
+    "ancora": [
+      2,
+      1,
+      79.12201690673828,
+      0.85
+    ]
+  },
+  {
+    "peca": "capacete_cobre",
+    "arquivo": "tend/south/000.png",
+    "ancora": [
+      2,
+      5,
+      54.31009292602539,
+      0.85
+    ]
+  },
+  {
+    "peca": "capacete_cobre",
+    "arquivo": "tend/south/001.png",
+    "ancora": [
+      5,
+      12,
+      79.85595703125,
+      0.85
+    ]
+  },
+  {
+    "peca": "capacete_cobre",
+    "arquivo": "tend/south/002.png",
+    "ancora": [
+      4,
+      10,
+      80.85595703125,
+      0.85
+    ]
+  },
+  {
+    "peca": "capacete_cobre",
+    "arquivo": "tend/south/003.png",
+    "ancora": [
+      5,
+      9,
+      81.29632568359375,
+      0.85
+    ]
+  },
+  {
+    "peca": "capacete_cobre",
+    "arquivo": "tend/south/004.png",
+    "ancora": [
+      5,
+      10,
+      81.56238555908203,
+      0.85
+    ]
+  },
+  {
+    "peca": "capacete_cobre",
+    "arquivo": "rotations/south-west.png",
+    "ancora": [
+      0,
+      0,
+      0.0,
+      1.0
+    ]
+  },
+  {
+    "peca": "capacete_cobre",
+    "arquivo": "run/south-west/000.png",
+    "ancora": [
+      0,
+      1,
+      62.55837631225586,
+      1.0
+    ]
+  },
+  {
+    "peca": "capacete_cobre",
+    "arquivo": "run/south-west/001.png",
+    "ancora": [
+      1,
+      2,
+      67.47396850585938,
+      0.85
+    ]
+  },
+  {
+    "peca": "capacete_cobre",
+    "arquivo": "run/south-west/002.png",
+    "ancora": [
+      0,
+      -1,
+      65.40101623535156,
+      1.0
+    ]
+  },
+  {
+    "peca": "capacete_cobre",
+    "arquivo": "run/south-west/003.png",
+    "ancora": [
+      0,
+      -1,
+      62.85279083251953,
+      1.0
+    ]
+  },
+  {
+    "peca": "capacete_cobre",
+    "arquivo": "run/south-west/004.png",
+    "ancora": [
+      0,
+      0,
+      63.49746322631836,
+      1.0
+    ]
+  },
+  {
+    "peca": "capacete_cobre",
+    "arquivo": "run/south-west/005.png",
+    "ancora": [
+      0,
+      2,
+      70.40101623535156,
+      1.0
+    ]
+  },
+  {
+    "peca": "capacete_cobre",
+    "arquivo": "run/south-west/006.png",
+    "ancora": [
+      0,
+      2,
+      69.47715759277344,
+      1.0
+    ]
+  },
+  {
+    "peca": "capacete_cobre",
+    "arquivo": "run/south-west/007.png",
+    "ancora": [
+      -1,
+      1,
+      60.98984909057617,
+      1.0
+    ]
+  },
+  {
+    "peca": "capacete_cobre",
+    "arquivo": "walk/south-west/000.png",
+    "ancora": [
+      -1,
+      1,
+      62.55837631225586,
+      1.0
+    ]
+  },
+  {
+    "peca": "capacete_cobre",
+    "arquivo": "walk/south-west/001.png",
+    "ancora": [
+      1,
+      3,
+      67.47396850585938,
+      0.85
+    ]
+  },
+  {
+    "peca": "capacete_cobre",
+    "arquivo": "walk/south-west/002.png",
+    "ancora": [
+      0,
+      0,
+      65.40101623535156,
+      1.0
+    ]
+  },
+  {
+    "peca": "capacete_cobre",
+    "arquivo": "walk/south-west/003.png",
+    "ancora": [
+      0,
+      -1,
+      62.85279083251953,
+      1.0
+    ]
+  },
+  {
+    "peca": "capacete_cobre",
+    "arquivo": "walk/south-west/004.png",
+    "ancora": [
+      0,
+      0,
+      63.49746322631836,
+      1.0
+    ]
+  },
+  {
+    "peca": "capacete_cobre",
+    "arquivo": "walk/south-west/005.png",
+    "ancora": [
+      -1,
+      2,
+      70.40101623535156,
+      1.0
+    ]
+  },
+  {
+    "peca": "capacete_cobre",
+    "arquivo": "walk/south-west/006.png",
+    "ancora": [
+      -1,
+      2,
+      69.47715759277344,
+      1.0
+    ]
+  },
+  {
+    "peca": "capacete_cobre",
+    "arquivo": "walk/south-west/007.png",
+    "ancora": [
+      -1,
+      1,
+      60.98984909057617,
+      1.0
+    ]
+  },
+  {
+    "peca": "capacete_cobre",
+    "arquivo": "tend/south-west/000.png",
+    "ancora": [
+      0,
+      2,
+      51.12690353393555,
+      1.0
+    ]
+  },
+  {
+    "peca": "capacete_cobre",
+    "arquivo": "tend/south-west/001.png",
+    "ancora": [
+      -6,
+      9,
+      75.25888061523438,
+      1.0
+    ]
+  },
+  {
+    "peca": "capacete_cobre",
+    "arquivo": "tend/south-west/002.png",
+    "ancora": [
+      -6,
+      8,
+      75.76142120361328,
+      1.0
+    ]
+  },
+  {
+    "peca": "capacete_cobre",
+    "arquivo": "tend/south-west/003.png",
+    "ancora": [
+      -6,
+      8,
+      74.67512512207031,
+      1.0
+    ]
+  },
+  {
+    "peca": "capacete_cobre",
+    "arquivo": "tend/south-west/004.png",
+    "ancora": [
+      -6,
+      8,
+      71.84771728515625,
+      1.0
+    ]
+  },
+  {
+    "peca": "capacete_cobre",
+    "arquivo": "rotations/west.png",
+    "ancora": [
+      0,
+      0,
+      0.0,
+      1.0
+    ]
+  },
+  {
+    "peca": "capacete_cobre",
+    "arquivo": "run/west/000.png",
+    "ancora": [
+      1,
+      0,
+      67.08021545410156,
+      1.0
+    ]
+  },
+  {
+    "peca": "capacete_cobre",
+    "arquivo": "run/west/001.png",
+    "ancora": [
+      1,
+      1,
+      57.657752990722656,
+      1.0
+    ]
+  },
+  {
+    "peca": "capacete_cobre",
+    "arquivo": "run/west/002.png",
+    "ancora": [
+      0,
+      0,
+      58.278076171875,
+      1.0
+    ]
+  },
+  {
+    "peca": "capacete_cobre",
+    "arquivo": "run/west/003.png",
+    "ancora": [
+      1,
+      -2,
+      53.866310119628906,
+      1.0
+    ]
+  },
+  {
+    "peca": "capacete_cobre",
+    "arquivo": "run/west/004.png",
+    "ancora": [
+      1,
+      -2,
+      54.87165832519531,
+      1.0
+    ]
+  },
+  {
+    "peca": "capacete_cobre",
+    "arquivo": "run/west/005.png",
+    "ancora": [
+      1,
+      0,
+      53.05882263183594,
+      1.0
+    ]
+  },
+  {
+    "peca": "capacete_cobre",
+    "arquivo": "run/west/006.png",
+    "ancora": [
+      1,
+      0,
+      60.786094665527344,
+      1.0
+    ]
+  },
+  {
+    "peca": "capacete_cobre",
+    "arquivo": "run/west/007.png",
+    "ancora": [
+      2,
+      0,
+      65.48663330078125,
+      1.0
+    ]
+  },
+  {
+    "peca": "capacete_cobre",
+    "arquivo": "walk/west/000.png",
+    "ancora": [
+      1,
+      2,
+      67.08021545410156,
+      1.0
+    ]
+  },
+  {
+    "peca": "capacete_cobre",
+    "arquivo": "walk/west/001.png",
+    "ancora": [
+      1,
+      2,
+      57.657752990722656,
+      1.0
+    ]
+  },
+  {
+    "peca": "capacete_cobre",
+    "arquivo": "walk/west/002.png",
+    "ancora": [
+      1,
+      1,
+      58.278076171875,
+      1.0
+    ]
+  },
+  {
+    "peca": "capacete_cobre",
+    "arquivo": "walk/west/003.png",
+    "ancora": [
+      1,
+      -1,
+      53.866310119628906,
+      1.0
+    ]
+  },
+  {
+    "peca": "capacete_cobre",
+    "arquivo": "walk/west/004.png",
+    "ancora": [
+      1,
+      -1,
+      54.87165832519531,
+      1.0
+    ]
+  },
+  {
+    "peca": "capacete_cobre",
+    "arquivo": "walk/west/005.png",
+    "ancora": [
+      1,
+      1,
+      53.05882263183594,
+      1.0
+    ]
+  },
+  {
+    "peca": "capacete_cobre",
+    "arquivo": "walk/west/006.png",
+    "ancora": [
+      1,
+      1,
+      60.786094665527344,
+      1.0
+    ]
+  },
+  {
+    "peca": "capacete_cobre",
+    "arquivo": "walk/west/007.png",
+    "ancora": [
+      1,
+      0,
+      65.48663330078125,
+      1.0
+    ]
+  },
+  {
+    "peca": "capacete_cobre",
+    "arquivo": "tend/west/000.png",
+    "ancora": [
+      1,
+      1,
+      25.62032127380371,
+      1.0
+    ]
+  },
+  {
+    "peca": "capacete_cobre",
+    "arquivo": "tend/west/001.png",
+    "ancora": [
+      0,
+      10,
+      86.19502258300781,
+      0.85
+    ]
+  },
+  {
+    "peca": "capacete_cobre",
+    "arquivo": "tend/west/002.png",
+    "ancora": [
+      0,
+      9,
+      84.28955078125,
+      0.85
+    ]
+  },
+  {
+    "peca": "capacete_cobre",
+    "arquivo": "tend/west/003.png",
+    "ancora": [
+      -2,
+      8,
+      85.26203155517578,
+      1.0
+    ]
+  },
+  {
+    "peca": "capacete_cobre",
+    "arquivo": "tend/west/004.png",
+    "ancora": [
+      0,
+      9,
+      82.39402770996094,
+      0.85
+    ]
+  },
+  {
+    "peca": "capacete_cobre",
+    "arquivo": "rotations/north-west.png",
+    "ancora": [
+      0,
+      0,
+      0.0,
+      1.0
+    ]
+  },
+  {
+    "peca": "capacete_cobre",
+    "arquivo": "run/north-west/000.png",
+    "ancora": [
+      0,
+      1,
+      44.6271858215332,
+      0.85
+    ]
+  },
+  {
+    "peca": "capacete_cobre",
+    "arquivo": "run/north-west/001.png",
+    "ancora": [
+      -1,
+      0,
+      47.24854278564453,
+      0.85
+    ]
+  },
+  {
+    "peca": "capacete_cobre",
+    "arquivo": "run/north-west/002.png",
+    "ancora": [
+      0,
+      0,
+      49.598060607910156,
+      0.85
+    ]
+  },
+  {
+    "peca": "capacete_cobre",
+    "arquivo": "run/north-west/003.png",
+    "ancora": [
+      0,
+      0,
+      56.41359329223633,
+      0.85
+    ]
+  },
+  {
+    "peca": "capacete_cobre",
+    "arquivo": "run/north-west/004.png",
+    "ancora": [
+      -1,
+      0,
+      56.520389556884766,
+      0.85
+    ]
+  },
+  {
+    "peca": "capacete_cobre",
+    "arquivo": "run/north-west/005.png",
+    "ancora": [
+      0,
+      -1,
+      45.0398063659668,
+      0.85
+    ]
+  },
+  {
+    "peca": "capacete_cobre",
+    "arquivo": "run/north-west/006.png",
+    "ancora": [
+      -1,
+      -3,
+      45.777671813964844,
+      0.85
+    ]
+  },
+  {
+    "peca": "capacete_cobre",
+    "arquivo": "run/north-west/007.png",
+    "ancora": [
+      -1,
+      -3,
+      44.04951477050781,
+      0.85
+    ]
+  },
+  {
+    "peca": "capacete_cobre",
+    "arquivo": "walk/north-west/000.png",
+    "ancora": [
+      1,
+      5,
+      44.6271858215332,
+      0.85
+    ]
+  },
+  {
+    "peca": "capacete_cobre",
+    "arquivo": "walk/north-west/001.png",
+    "ancora": [
+      1,
+      4,
+      47.24854278564453,
+      0.85
+    ]
+  },
+  {
+    "peca": "capacete_cobre",
+    "arquivo": "walk/north-west/002.png",
+    "ancora": [
+      2,
+      3,
+      49.598060607910156,
+      0.85
+    ]
+  },
+  {
+    "peca": "capacete_cobre",
+    "arquivo": "walk/north-west/003.png",
+    "ancora": [
+      1,
+      3,
+      56.41359329223633,
+      0.85
+    ]
+  },
+  {
+    "peca": "capacete_cobre",
+    "arquivo": "walk/north-west/004.png",
+    "ancora": [
+      1,
+      3,
+      56.520389556884766,
+      0.85
+    ]
+  },
+  {
+    "peca": "capacete_cobre",
+    "arquivo": "walk/north-west/005.png",
+    "ancora": [
+      1,
+      3,
+      45.0398063659668,
+      0.85
+    ]
+  },
+  {
+    "peca": "capacete_cobre",
+    "arquivo": "walk/north-west/006.png",
+    "ancora": [
+      0,
+      1,
+      45.777671813964844,
+      0.85
+    ]
+  },
+  {
+    "peca": "capacete_cobre",
+    "arquivo": "walk/north-west/007.png",
+    "ancora": [
+      0,
+      1,
+      44.04951477050781,
+      0.85
+    ]
+  },
+  {
+    "peca": "capacete_cobre",
+    "arquivo": "tend/north-west/000.png",
+    "ancora": [
+      1,
+      4,
+      34.85533905029297,
+      0.85
+    ]
+  },
+  {
+    "peca": "capacete_cobre",
+    "arquivo": "tend/north-west/001.png",
+    "ancora": [
+      -1,
+      11,
+      59.631900787353516,
+      0.75
+    ]
+  },
+  {
+    "peca": "capacete_cobre",
+    "arquivo": "tend/north-west/002.png",
+    "ancora": [
+      0,
+      10,
+      58.754600524902344,
+      0.75
+    ]
+  },
+  {
+    "peca": "capacete_cobre",
+    "arquivo": "tend/north-west/003.png",
+    "ancora": [
+      -1,
+      11,
+      60.18404769897461,
+      0.75
+    ]
+  },
+  {
+    "peca": "capacete_cobre",
+    "arquivo": "tend/north-west/004.png",
+    "ancora": [
+      -1,
+      11,
+      61.46625900268555,
+      0.75
+    ]
+  },
+  {
+    "peca": "capacete_cobre",
+    "arquivo": "rotations/north.png",
+    "ancora": [
+      0,
+      0,
+      0.0,
+      1.0
+    ]
+  },
+  {
+    "peca": "capacete_cobre",
+    "arquivo": "run/north/000.png",
+    "ancora": [
+      2,
+      -2,
+      32.78208923339844,
+      0.85
+    ]
+  },
+  {
+    "peca": "capacete_cobre",
+    "arquivo": "run/north/001.png",
+    "ancora": [
+      2,
+      -2,
+      33.40895462036133,
+      0.85
+    ]
+  },
+  {
+    "peca": "capacete_cobre",
+    "arquivo": "run/north/002.png",
+    "ancora": [
+      2,
+      -1,
+      32.54328155517578,
+      0.85
+    ]
+  },
+  {
+    "peca": "capacete_cobre",
+    "arquivo": "run/north/003.png",
+    "ancora": [
+      2,
+      0,
+      35.56816101074219,
+      0.85
+    ]
+  },
+  {
+    "peca": "capacete_cobre",
+    "arquivo": "run/north/004.png",
+    "ancora": [
+      2,
+      0,
+      36.12537384033203,
+      0.85
+    ]
+  },
+  {
+    "peca": "capacete_cobre",
+    "arquivo": "run/north/005.png",
+    "ancora": [
+      3,
+      -2,
+      40.816917419433594,
+      0.85
+    ]
+  },
+  {
+    "peca": "capacete_cobre",
+    "arquivo": "run/north/006.png",
+    "ancora": [
+      2,
+      -2,
+      39.38905715942383,
+      0.85
+    ]
+  },
+  {
+    "peca": "capacete_cobre",
+    "arquivo": "run/north/007.png",
+    "ancora": [
+      2,
+      0,
+      38.97611999511719,
+      0.85
+    ]
+  },
+  {
+    "peca": "capacete_cobre",
+    "arquivo": "walk/north/000.png",
+    "ancora": [
+      2,
+      -1,
+      32.78208923339844,
+      0.85
+    ]
+  },
+  {
+    "peca": "capacete_cobre",
+    "arquivo": "walk/north/001.png",
+    "ancora": [
+      2,
+      -1,
+      33.40895462036133,
+      0.85
+    ]
+  },
+  {
+    "peca": "capacete_cobre",
+    "arquivo": "walk/north/002.png",
+    "ancora": [
+      2,
+      0,
+      32.54328155517578,
+      0.85
+    ]
+  },
+  {
+    "peca": "capacete_cobre",
+    "arquivo": "walk/north/003.png",
+    "ancora": [
+      2,
+      1,
+      35.56816101074219,
+      0.85
+    ]
+  },
+  {
+    "peca": "capacete_cobre",
+    "arquivo": "walk/north/004.png",
+    "ancora": [
+      2,
+      1,
+      36.12537384033203,
+      0.85
+    ]
+  },
+  {
+    "peca": "capacete_cobre",
+    "arquivo": "walk/north/005.png",
+    "ancora": [
+      3,
+      -1,
+      40.816917419433594,
+      0.85
+    ]
+  },
+  {
+    "peca": "capacete_cobre",
+    "arquivo": "walk/north/006.png",
+    "ancora": [
+      3,
+      -1,
+      39.38905715942383,
+      0.85
+    ]
+  },
+  {
+    "peca": "capacete_cobre",
+    "arquivo": "walk/north/007.png",
+    "ancora": [
+      3,
+      1,
+      38.97611999511719,
+      0.85
+    ]
+  },
+  {
+    "peca": "capacete_cobre",
+    "arquivo": "tend/north/000.png",
+    "ancora": [
+      1,
+      4,
+      47.657711029052734,
+      0.85
+    ]
+  },
+  {
+    "peca": "capacete_cobre",
+    "arquivo": "tend/north/001.png",
+    "ancora": [
+      7,
+      10,
+      62.43708419799805,
+      0.75
+    ]
+  },
+  {
+    "peca": "capacete_cobre",
+    "arquivo": "tend/north/002.png",
+    "ancora": [
+      7,
+      9,
+      61.51655578613281,
+      0.75
+    ]
+  },
+  {
+    "peca": "capacete_cobre",
+    "arquivo": "tend/north/003.png",
+    "ancora": [
+      7,
+      10,
+      61.45695495605469,
+      0.75
+    ]
+  },
+  {
+    "peca": "capacete_cobre",
+    "arquivo": "tend/north/004.png",
+    "ancora": [
+      8,
+      10,
+      61.033111572265625,
+      0.75
+    ]
+  },
+  {
+    "peca": "capacete_cobre",
+    "arquivo": "rotations/north-east.png",
+    "ancora": [
+      0,
+      0,
+      0.0,
+      1.0
+    ]
+  },
+  {
+    "peca": "capacete_cobre",
+    "arquivo": "run/north-east/000.png",
+    "ancora": [
+      4,
+      1,
+      42.224273681640625,
+      0.85
+    ]
+  },
+  {
+    "peca": "capacete_cobre",
+    "arquivo": "run/north-east/001.png",
+    "ancora": [
+      4,
+      0,
+      44.073787689208984,
+      0.85
+    ]
+  },
+  {
+    "peca": "capacete_cobre",
+    "arquivo": "run/north-east/002.png",
+    "ancora": [
+      4,
+      0,
+      49.4815559387207,
+      0.85
+    ]
+  },
+  {
+    "peca": "capacete_cobre",
+    "arquivo": "run/north-east/003.png",
+    "ancora": [
+      4,
+      0,
+      56.18058395385742,
+      0.85
+    ]
+  },
+  {
+    "peca": "capacete_cobre",
+    "arquivo": "run/north-east/004.png",
+    "ancora": [
+      4,
+      0,
+      56.020389556884766,
+      0.85
+    ]
+  },
+  {
+    "peca": "capacete_cobre",
+    "arquivo": "run/north-east/005.png",
+    "ancora": [
+      4,
+      -1,
+      42.166019439697266,
+      0.85
+    ]
+  },
+  {
+    "peca": "capacete_cobre",
+    "arquivo": "run/north-east/006.png",
+    "ancora": [
+      5,
+      -3,
+      43.35533905029297,
+      0.85
+    ]
+  },
+  {
+    "peca": "capacete_cobre",
+    "arquivo": "run/north-east/007.png",
+    "ancora": [
+      4,
+      -3,
+      43.166019439697266,
+      0.85
+    ]
+  },
+  {
+    "peca": "capacete_cobre",
+    "arquivo": "walk/north-east/000.png",
+    "ancora": [
+      3,
+      5,
+      42.224273681640625,
+      0.85
+    ]
+  },
+  {
+    "peca": "capacete_cobre",
+    "arquivo": "walk/north-east/001.png",
+    "ancora": [
+      3,
+      4,
+      44.073787689208984,
+      0.85
+    ]
+  },
+  {
+    "peca": "capacete_cobre",
+    "arquivo": "walk/north-east/002.png",
+    "ancora": [
+      3,
+      3,
+      49.4815559387207,
+      0.85
+    ]
+  },
+  {
+    "peca": "capacete_cobre",
+    "arquivo": "walk/north-east/003.png",
+    "ancora": [
+      3,
+      3,
+      56.18058395385742,
+      0.85
+    ]
+  },
+  {
+    "peca": "capacete_cobre",
+    "arquivo": "walk/north-east/004.png",
+    "ancora": [
+      3,
+      3,
+      56.020389556884766,
+      0.85
+    ]
+  },
+  {
+    "peca": "capacete_cobre",
+    "arquivo": "walk/north-east/005.png",
+    "ancora": [
+      3,
+      3,
+      42.166019439697266,
+      0.85
+    ]
+  },
+  {
+    "peca": "capacete_cobre",
+    "arquivo": "walk/north-east/006.png",
+    "ancora": [
+      4,
+      1,
+      43.35533905029297,
+      0.85
+    ]
+  },
+  {
+    "peca": "capacete_cobre",
+    "arquivo": "walk/north-east/007.png",
+    "ancora": [
+      4,
+      1,
+      43.166019439697266,
+      0.85
+    ]
+  },
+  {
+    "peca": "capacete_cobre",
+    "arquivo": "tend/north-east/000.png",
+    "ancora": [
+      3,
+      5,
+      34.70000076293945,
+      0.85
+    ]
+  },
+  {
+    "peca": "capacete_cobre",
+    "arquivo": "tend/north-east/001.png",
+    "ancora": [
+      7,
+      11,
+      63.04907989501953,
+      0.75
+    ]
+  },
+  {
+    "peca": "capacete_cobre",
+    "arquivo": "tend/north-east/002.png",
+    "ancora": [
+      6,
+      10,
+      61.50306701660156,
+      0.75
+    ]
+  },
+  {
+    "peca": "capacete_cobre",
+    "arquivo": "tend/north-east/003.png",
+    "ancora": [
+      7,
+      11,
+      62.92024612426758,
+      0.75
+    ]
+  },
+  {
+    "peca": "capacete_cobre",
+    "arquivo": "tend/north-east/004.png",
+    "ancora": [
+      6,
+      11,
+      64.58282470703125,
+      0.75
+    ]
+  },
+  {
+    "peca": "capacete_cobre",
+    "arquivo": "rotations/east.png",
+    "ancora": [
+      0,
+      0,
+      0.0,
+      1.0
+    ]
+  },
+  {
+    "peca": "capacete_cobre",
+    "arquivo": "run/east/000.png",
+    "ancora": [
+      -1,
+      0,
+      70.84491729736328,
+      1.0
+    ]
+  },
+  {
+    "peca": "capacete_cobre",
+    "arquivo": "run/east/001.png",
+    "ancora": [
+      -1,
+      1,
+      60.87700653076172,
+      1.0
+    ]
+  },
+  {
+    "peca": "capacete_cobre",
+    "arquivo": "run/east/002.png",
+    "ancora": [
+      0,
+      0,
+      57.74866485595703,
+      1.0
+    ]
+  },
+  {
+    "peca": "capacete_cobre",
+    "arquivo": "run/east/003.png",
+    "ancora": [
+      -1,
+      -2,
+      58.67914581298828,
+      1.0
+    ]
+  },
+  {
+    "peca": "capacete_cobre",
+    "arquivo": "run/east/004.png",
+    "ancora": [
+      -1,
+      -2,
+      57.24599075317383,
+      1.0
+    ]
+  },
+  {
+    "peca": "capacete_cobre",
+    "arquivo": "run/east/005.png",
+    "ancora": [
+      -1,
+      0,
+      57.31550979614258,
+      1.0
+    ]
+  },
+  {
+    "peca": "capacete_cobre",
+    "arquivo": "run/east/006.png",
+    "ancora": [
+      -1,
+      0,
+      67.21925354003906,
+      1.0
+    ]
+  },
+  {
+    "peca": "capacete_cobre",
+    "arquivo": "run/east/007.png",
+    "ancora": [
+      -2,
+      0,
+      72.18181610107422,
+      1.0
+    ]
+  },
+  {
+    "peca": "capacete_cobre",
+    "arquivo": "walk/east/000.png",
+    "ancora": [
+      0,
+      2,
+      70.84491729736328,
+      1.0
+    ]
+  },
+  {
+    "peca": "capacete_cobre",
+    "arquivo": "walk/east/001.png",
+    "ancora": [
+      0,
+      2,
+      60.87700653076172,
+      1.0
+    ]
+  },
+  {
+    "peca": "capacete_cobre",
+    "arquivo": "walk/east/002.png",
+    "ancora": [
+      -1,
+      1,
+      57.74866485595703,
+      1.0
+    ]
+  },
+  {
+    "peca": "capacete_cobre",
+    "arquivo": "walk/east/003.png",
+    "ancora": [
+      -1,
+      -1,
+      58.67914581298828,
+      1.0
+    ]
+  },
+  {
+    "peca": "capacete_cobre",
+    "arquivo": "walk/east/004.png",
+    "ancora": [
+      -1,
+      -1,
+      57.24599075317383,
+      1.0
+    ]
+  },
+  {
+    "peca": "capacete_cobre",
+    "arquivo": "walk/east/005.png",
+    "ancora": [
+      -1,
+      1,
+      57.31550979614258,
+      1.0
+    ]
+  },
+  {
+    "peca": "capacete_cobre",
+    "arquivo": "walk/east/006.png",
+    "ancora": [
+      -1,
+      1,
+      67.21925354003906,
+      1.0
+    ]
+  },
+  {
+    "peca": "capacete_cobre",
+    "arquivo": "walk/east/007.png",
+    "ancora": [
+      -1,
+      0,
+      72.18181610107422,
+      1.0
+    ]
+  },
+  {
+    "peca": "capacete_cobre",
+    "arquivo": "tend/east/000.png",
+    "ancora": [
+      -1,
+      1,
+      24.85026741027832,
+      1.0
+    ]
+  },
+  {
+    "peca": "capacete_cobre",
+    "arquivo": "tend/east/001.png",
+    "ancora": [
+      5,
+      11,
+      85.84906005859375,
+      0.75
+    ]
+  },
+  {
+    "peca": "capacete_cobre",
+    "arquivo": "tend/east/002.png",
+    "ancora": [
+      4,
+      10,
+      85.0817642211914,
+      0.75
+    ]
+  },
+  {
+    "peca": "capacete_cobre",
+    "arquivo": "tend/east/003.png",
+    "ancora": [
+      3,
+      9,
+      83.03773498535156,
+      0.75
+    ]
+  },
+  {
+    "peca": "capacete_cobre",
+    "arquivo": "tend/east/004.png",
+    "ancora": [
+      4,
+      11,
+      83.42138671875,
+      0.75
+    ]
+  },
+  {
+    "peca": "capacete_cobre",
+    "arquivo": "rotations/south-east.png",
+    "ancora": [
+      0,
+      0,
+      0.0,
+      1.0
+    ]
+  },
+  {
+    "peca": "capacete_cobre",
+    "arquivo": "run/south-east/000.png",
+    "ancora": [
+      0,
+      1,
+      61.38071060180664,
+      1.0
+    ]
+  },
+  {
+    "peca": "capacete_cobre",
+    "arquivo": "run/south-east/001.png",
+    "ancora": [
+      0,
+      2,
+      65.33502197265625,
+      1.0
+    ]
+  },
+  {
+    "peca": "capacete_cobre",
+    "arquivo": "run/south-east/002.png",
+    "ancora": [
+      0,
+      -1,
+      64.57360076904297,
+      1.0
+    ]
+  },
+  {
+    "peca": "capacete_cobre",
+    "arquivo": "run/south-east/003.png",
+    "ancora": [
+      0,
+      -1,
+      62.456851959228516,
+      1.0
+    ]
+  },
+  {
+    "peca": "capacete_cobre",
+    "arquivo": "run/south-east/004.png",
+    "ancora": [
+      0,
+      0,
+      62.53299331665039,
+      1.0
+    ]
+  },
+  {
+    "peca": "capacete_cobre",
+    "arquivo": "run/south-east/005.png",
+    "ancora": [
+      0,
+      2,
+      71.96446990966797,
+      1.0
+    ]
+  },
+  {
+    "peca": "capacete_cobre",
+    "arquivo": "run/south-east/006.png",
+    "ancora": [
+      0,
+      2,
+      70.59391021728516,
+      1.0
+    ]
+  },
+  {
+    "peca": "capacete_cobre",
+    "arquivo": "run/south-east/007.png",
+    "ancora": [
+      1,
+      1,
+      61.88324737548828,
+      1.0
+    ]
+  },
+  {
+    "peca": "capacete_cobre",
+    "arquivo": "walk/south-east/000.png",
+    "ancora": [
+      1,
+      1,
+      61.38071060180664,
+      1.0
+    ]
+  },
+  {
+    "peca": "capacete_cobre",
+    "arquivo": "walk/south-east/001.png",
+    "ancora": [
+      1,
+      1,
+      65.33502197265625,
+      1.0
+    ]
+  },
+  {
+    "peca": "capacete_cobre",
+    "arquivo": "walk/south-east/002.png",
+    "ancora": [
+      0,
+      0,
+      64.57360076904297,
+      1.0
+    ]
+  },
+  {
+    "peca": "capacete_cobre",
+    "arquivo": "walk/south-east/003.png",
+    "ancora": [
+      0,
+      -1,
+      62.456851959228516,
+      1.0
+    ]
+  },
+  {
+    "peca": "capacete_cobre",
+    "arquivo": "walk/south-east/004.png",
+    "ancora": [
+      1,
+      0,
+      62.53299331665039,
+      1.0
+    ]
+  },
+  {
+    "peca": "capacete_cobre",
+    "arquivo": "walk/south-east/005.png",
+    "ancora": [
+      1,
+      2,
+      71.96446990966797,
+      1.0
+    ]
+  },
+  {
+    "peca": "capacete_cobre",
+    "arquivo": "walk/south-east/006.png",
+    "ancora": [
+      1,
+      2,
+      70.59391021728516,
+      1.0
+    ]
+  },
+  {
+    "peca": "capacete_cobre",
+    "arquivo": "walk/south-east/007.png",
+    "ancora": [
+      1,
+      1,
+      61.88324737548828,
+      1.0
+    ]
+  },
+  {
+    "peca": "capacete_cobre",
+    "arquivo": "tend/south-east/000.png",
+    "ancora": [
+      1,
+      2,
+      51.512691497802734,
+      1.0
+    ]
+  },
+  {
+    "peca": "capacete_cobre",
+    "arquivo": "tend/south-east/001.png",
+    "ancora": [
+      6,
+      9,
+      75.86294555664062,
+      1.0
+    ]
+  },
+  {
+    "peca": "capacete_cobre",
+    "arquivo": "tend/south-east/002.png",
+    "ancora": [
+      6,
+      9,
+      78.71598052978516,
+      0.85
+    ]
+  },
+  {
+    "peca": "capacete_cobre",
+    "arquivo": "tend/south-east/003.png",
+    "ancora": [
+      7,
+      9,
+      77.19542694091797,
+      0.85
+    ]
+  },
+  {
+    "peca": "capacete_cobre",
+    "arquivo": "tend/south-east/004.png",
+    "ancora": [
+      7,
+      9,
+      78.39634704589844,
+      0.85
+    ]
+  },
+  {
+    "peca": "capacete_ferro",
+    "arquivo": "rotations/south.png",
+    "ancora": [
+      0,
+      0,
+      0.0,
+      1.0
+    ]
+  },
+  {
+    "peca": "capacete_ferro",
+    "arquivo": "run/south/000.png",
+    "ancora": [
+      2,
+      0,
+      80.96604919433594,
+      0.85
+    ]
+  },
+  {
+    "peca": "capacete_ferro",
+    "arquivo": "run/south/001.png",
+    "ancora": [
+      3,
+      -1,
+      77.90641784667969,
+      0.85
+    ]
+  },
+  {
+    "peca": "capacete_ferro",
+    "arquivo": "run/south/002.png",
+    "ancora": [
+      3,
+      -2,
+      78.1082534790039,
+      0.85
+    ]
+  },
+  {
+    "peca": "capacete_ferro",
+    "arquivo": "run/south/003.png",
+    "ancora": [
+      3,
+      -1,
+      73.84678649902344,
+      0.85
+    ]
+  },
+  {
+    "peca": "capacete_ferro",
+    "arquivo": "run/south/004.png",
+    "ancora": [
+      3,
+      0,
+      74.71834564208984,
+      0.85
+    ]
+  },
+  {
+    "peca": "capacete_ferro",
+    "arquivo": "run/south/005.png",
+    "ancora": [
+      2,
+      0,
+      81.2779769897461,
+      0.85
+    ]
+  },
+  {
+    "peca": "capacete_ferro",
+    "arquivo": "run/south/006.png",
+    "ancora": [
+      2,
+      -1,
+      79.6954116821289,
+      0.85
+    ]
+  },
+  {
+    "peca": "capacete_ferro",
+    "arquivo": "run/south/007.png",
+    "ancora": [
+      2,
+      -1,
+      79.12201690673828,
+      0.85
+    ]
+  },
+  {
+    "peca": "capacete_ferro",
+    "arquivo": "walk/south/000.png",
+    "ancora": [
+      2,
+      3,
+      80.96604919433594,
+      0.85
+    ]
+  },
+  {
+    "peca": "capacete_ferro",
+    "arquivo": "walk/south/001.png",
+    "ancora": [
+      3,
+      1,
+      77.90641784667969,
+      0.85
+    ]
+  },
+  {
+    "peca": "capacete_ferro",
+    "arquivo": "walk/south/002.png",
+    "ancora": [
+      3,
+      0,
+      78.1082534790039,
+      0.85
+    ]
+  },
+  {
+    "peca": "capacete_ferro",
+    "arquivo": "walk/south/003.png",
+    "ancora": [
+      3,
+      1,
+      73.84678649902344,
+      0.85
+    ]
+  },
+  {
+    "peca": "capacete_ferro",
+    "arquivo": "walk/south/004.png",
+    "ancora": [
+      3,
+      3,
+      74.71834564208984,
+      0.85
+    ]
+  },
+  {
+    "peca": "capacete_ferro",
+    "arquivo": "walk/south/005.png",
+    "ancora": [
+      2,
+      2,
+      81.2779769897461,
+      0.85
+    ]
+  },
+  {
+    "peca": "capacete_ferro",
+    "arquivo": "walk/south/006.png",
+    "ancora": [
+      2,
+      1,
+      79.6954116821289,
+      0.85
+    ]
+  },
+  {
+    "peca": "capacete_ferro",
+    "arquivo": "walk/south/007.png",
+    "ancora": [
+      2,
+      1,
+      79.12201690673828,
+      0.85
+    ]
+  },
+  {
+    "peca": "capacete_ferro",
+    "arquivo": "tend/south/000.png",
+    "ancora": [
+      2,
+      5,
+      54.31009292602539,
+      0.85
+    ]
+  },
+  {
+    "peca": "capacete_ferro",
+    "arquivo": "tend/south/001.png",
+    "ancora": [
+      5,
+      12,
+      79.85595703125,
+      0.85
+    ]
+  },
+  {
+    "peca": "capacete_ferro",
+    "arquivo": "tend/south/002.png",
+    "ancora": [
+      4,
+      10,
+      80.85595703125,
+      0.85
+    ]
+  },
+  {
+    "peca": "capacete_ferro",
+    "arquivo": "tend/south/003.png",
+    "ancora": [
+      5,
+      9,
+      81.29632568359375,
+      0.85
+    ]
+  },
+  {
+    "peca": "capacete_ferro",
+    "arquivo": "tend/south/004.png",
+    "ancora": [
+      5,
+      10,
+      81.56238555908203,
+      0.85
+    ]
+  },
+  {
+    "peca": "capacete_ferro",
+    "arquivo": "rotations/south-west.png",
+    "ancora": [
+      0,
+      0,
+      0.0,
+      1.0
+    ]
+  },
+  {
+    "peca": "capacete_ferro",
+    "arquivo": "run/south-west/000.png",
+    "ancora": [
+      0,
+      1,
+      62.55837631225586,
+      1.0
+    ]
+  },
+  {
+    "peca": "capacete_ferro",
+    "arquivo": "run/south-west/001.png",
+    "ancora": [
+      1,
+      2,
+      67.47396850585938,
+      0.85
+    ]
+  },
+  {
+    "peca": "capacete_ferro",
+    "arquivo": "run/south-west/002.png",
+    "ancora": [
+      0,
+      -1,
+      65.40101623535156,
+      1.0
+    ]
+  },
+  {
+    "peca": "capacete_ferro",
+    "arquivo": "run/south-west/003.png",
+    "ancora": [
+      0,
+      -1,
+      62.85279083251953,
+      1.0
+    ]
+  },
+  {
+    "peca": "capacete_ferro",
+    "arquivo": "run/south-west/004.png",
+    "ancora": [
+      0,
+      0,
+      63.49746322631836,
+      1.0
+    ]
+  },
+  {
+    "peca": "capacete_ferro",
+    "arquivo": "run/south-west/005.png",
+    "ancora": [
+      0,
+      2,
+      70.40101623535156,
+      1.0
+    ]
+  },
+  {
+    "peca": "capacete_ferro",
+    "arquivo": "run/south-west/006.png",
+    "ancora": [
+      0,
+      2,
+      69.47715759277344,
+      1.0
+    ]
+  },
+  {
+    "peca": "capacete_ferro",
+    "arquivo": "run/south-west/007.png",
+    "ancora": [
+      -1,
+      1,
+      60.98984909057617,
+      1.0
+    ]
+  },
+  {
+    "peca": "capacete_ferro",
+    "arquivo": "walk/south-west/000.png",
+    "ancora": [
+      -1,
+      1,
+      62.55837631225586,
+      1.0
+    ]
+  },
+  {
+    "peca": "capacete_ferro",
+    "arquivo": "walk/south-west/001.png",
+    "ancora": [
+      1,
+      3,
+      67.47396850585938,
+      0.85
+    ]
+  },
+  {
+    "peca": "capacete_ferro",
+    "arquivo": "walk/south-west/002.png",
+    "ancora": [
+      0,
+      0,
+      65.40101623535156,
+      1.0
+    ]
+  },
+  {
+    "peca": "capacete_ferro",
+    "arquivo": "walk/south-west/003.png",
+    "ancora": [
+      0,
+      -1,
+      62.85279083251953,
+      1.0
+    ]
+  },
+  {
+    "peca": "capacete_ferro",
+    "arquivo": "walk/south-west/004.png",
+    "ancora": [
+      0,
+      0,
+      63.49746322631836,
+      1.0
+    ]
+  },
+  {
+    "peca": "capacete_ferro",
+    "arquivo": "walk/south-west/005.png",
+    "ancora": [
+      -1,
+      2,
+      70.40101623535156,
+      1.0
+    ]
+  },
+  {
+    "peca": "capacete_ferro",
+    "arquivo": "walk/south-west/006.png",
+    "ancora": [
+      -1,
+      2,
+      69.47715759277344,
+      1.0
+    ]
+  },
+  {
+    "peca": "capacete_ferro",
+    "arquivo": "walk/south-west/007.png",
+    "ancora": [
+      -1,
+      1,
+      60.98984909057617,
+      1.0
+    ]
+  },
+  {
+    "peca": "capacete_ferro",
+    "arquivo": "tend/south-west/000.png",
+    "ancora": [
+      0,
+      2,
+      51.12690353393555,
+      1.0
+    ]
+  },
+  {
+    "peca": "capacete_ferro",
+    "arquivo": "tend/south-west/001.png",
+    "ancora": [
+      -6,
+      9,
+      75.25888061523438,
+      1.0
+    ]
+  },
+  {
+    "peca": "capacete_ferro",
+    "arquivo": "tend/south-west/002.png",
+    "ancora": [
+      -6,
+      8,
+      75.76142120361328,
+      1.0
+    ]
+  },
+  {
+    "peca": "capacete_ferro",
+    "arquivo": "tend/south-west/003.png",
+    "ancora": [
+      -6,
+      8,
+      74.67512512207031,
+      1.0
+    ]
+  },
+  {
+    "peca": "capacete_ferro",
+    "arquivo": "tend/south-west/004.png",
+    "ancora": [
+      -6,
+      8,
+      71.84771728515625,
+      1.0
+    ]
+  },
+  {
+    "peca": "capacete_ferro",
+    "arquivo": "rotations/west.png",
+    "ancora": [
+      0,
+      0,
+      0.0,
+      1.0
+    ]
+  },
+  {
+    "peca": "capacete_ferro",
+    "arquivo": "run/west/000.png",
+    "ancora": [
+      1,
+      0,
+      67.08021545410156,
+      1.0
+    ]
+  },
+  {
+    "peca": "capacete_ferro",
+    "arquivo": "run/west/001.png",
+    "ancora": [
+      1,
+      1,
+      57.657752990722656,
+      1.0
+    ]
+  },
+  {
+    "peca": "capacete_ferro",
+    "arquivo": "run/west/002.png",
+    "ancora": [
+      0,
+      0,
+      58.278076171875,
+      1.0
+    ]
+  },
+  {
+    "peca": "capacete_ferro",
+    "arquivo": "run/west/003.png",
+    "ancora": [
+      1,
+      -2,
+      53.866310119628906,
+      1.0
+    ]
+  },
+  {
+    "peca": "capacete_ferro",
+    "arquivo": "run/west/004.png",
+    "ancora": [
+      1,
+      -2,
+      54.87165832519531,
+      1.0
+    ]
+  },
+  {
+    "peca": "capacete_ferro",
+    "arquivo": "run/west/005.png",
+    "ancora": [
+      1,
+      0,
+      53.05882263183594,
+      1.0
+    ]
+  },
+  {
+    "peca": "capacete_ferro",
+    "arquivo": "run/west/006.png",
+    "ancora": [
+      1,
+      0,
+      60.786094665527344,
+      1.0
+    ]
+  },
+  {
+    "peca": "capacete_ferro",
+    "arquivo": "run/west/007.png",
+    "ancora": [
+      2,
+      0,
+      65.48663330078125,
+      1.0
+    ]
+  },
+  {
+    "peca": "capacete_ferro",
+    "arquivo": "walk/west/000.png",
+    "ancora": [
+      1,
+      2,
+      67.08021545410156,
+      1.0
+    ]
+  },
+  {
+    "peca": "capacete_ferro",
+    "arquivo": "walk/west/001.png",
+    "ancora": [
+      1,
+      2,
+      57.657752990722656,
+      1.0
+    ]
+  },
+  {
+    "peca": "capacete_ferro",
+    "arquivo": "walk/west/002.png",
+    "ancora": [
+      1,
+      1,
+      58.278076171875,
+      1.0
+    ]
+  },
+  {
+    "peca": "capacete_ferro",
+    "arquivo": "walk/west/003.png",
+    "ancora": [
+      1,
+      -1,
+      53.866310119628906,
+      1.0
+    ]
+  },
+  {
+    "peca": "capacete_ferro",
+    "arquivo": "walk/west/004.png",
+    "ancora": [
+      1,
+      -1,
+      54.87165832519531,
+      1.0
+    ]
+  },
+  {
+    "peca": "capacete_ferro",
+    "arquivo": "walk/west/005.png",
+    "ancora": [
+      1,
+      1,
+      53.05882263183594,
+      1.0
+    ]
+  },
+  {
+    "peca": "capacete_ferro",
+    "arquivo": "walk/west/006.png",
+    "ancora": [
+      1,
+      1,
+      60.786094665527344,
+      1.0
+    ]
+  },
+  {
+    "peca": "capacete_ferro",
+    "arquivo": "walk/west/007.png",
+    "ancora": [
+      1,
+      0,
+      65.48663330078125,
+      1.0
+    ]
+  },
+  {
+    "peca": "capacete_ferro",
+    "arquivo": "tend/west/000.png",
+    "ancora": [
+      1,
+      1,
+      25.62032127380371,
+      1.0
+    ]
+  },
+  {
+    "peca": "capacete_ferro",
+    "arquivo": "tend/west/001.png",
+    "ancora": [
+      0,
+      10,
+      86.19502258300781,
+      0.85
+    ]
+  },
+  {
+    "peca": "capacete_ferro",
+    "arquivo": "tend/west/002.png",
+    "ancora": [
+      0,
+      9,
+      84.28955078125,
+      0.85
+    ]
+  },
+  {
+    "peca": "capacete_ferro",
+    "arquivo": "tend/west/003.png",
+    "ancora": [
+      -2,
+      8,
+      85.26203155517578,
+      1.0
+    ]
+  },
+  {
+    "peca": "capacete_ferro",
+    "arquivo": "tend/west/004.png",
+    "ancora": [
+      0,
+      9,
+      82.39402770996094,
+      0.85
+    ]
+  },
+  {
+    "peca": "capacete_ferro",
+    "arquivo": "rotations/north-west.png",
+    "ancora": [
+      0,
+      0,
+      0.0,
+      1.0
+    ]
+  },
+  {
+    "peca": "capacete_ferro",
+    "arquivo": "run/north-west/000.png",
+    "ancora": [
+      0,
+      1,
+      44.6271858215332,
+      0.85
+    ]
+  },
+  {
+    "peca": "capacete_ferro",
+    "arquivo": "run/north-west/001.png",
+    "ancora": [
+      -1,
+      0,
+      47.24854278564453,
+      0.85
+    ]
+  },
+  {
+    "peca": "capacete_ferro",
+    "arquivo": "run/north-west/002.png",
+    "ancora": [
+      0,
+      0,
+      49.598060607910156,
+      0.85
+    ]
+  },
+  {
+    "peca": "capacete_ferro",
+    "arquivo": "run/north-west/003.png",
+    "ancora": [
+      0,
+      0,
+      56.41359329223633,
+      0.85
+    ]
+  },
+  {
+    "peca": "capacete_ferro",
+    "arquivo": "run/north-west/004.png",
+    "ancora": [
+      -1,
+      0,
+      56.520389556884766,
+      0.85
+    ]
+  },
+  {
+    "peca": "capacete_ferro",
+    "arquivo": "run/north-west/005.png",
+    "ancora": [
+      0,
+      -1,
+      45.0398063659668,
+      0.85
+    ]
+  },
+  {
+    "peca": "capacete_ferro",
+    "arquivo": "run/north-west/006.png",
+    "ancora": [
+      -1,
+      -3,
+      45.777671813964844,
+      0.85
+    ]
+  },
+  {
+    "peca": "capacete_ferro",
+    "arquivo": "run/north-west/007.png",
+    "ancora": [
+      -1,
+      -3,
+      44.04951477050781,
+      0.85
+    ]
+  },
+  {
+    "peca": "capacete_ferro",
+    "arquivo": "walk/north-west/000.png",
+    "ancora": [
+      1,
+      5,
+      44.6271858215332,
+      0.85
+    ]
+  },
+  {
+    "peca": "capacete_ferro",
+    "arquivo": "walk/north-west/001.png",
+    "ancora": [
+      1,
+      4,
+      47.24854278564453,
+      0.85
+    ]
+  },
+  {
+    "peca": "capacete_ferro",
+    "arquivo": "walk/north-west/002.png",
+    "ancora": [
+      2,
+      3,
+      49.598060607910156,
+      0.85
+    ]
+  },
+  {
+    "peca": "capacete_ferro",
+    "arquivo": "walk/north-west/003.png",
+    "ancora": [
+      1,
+      3,
+      56.41359329223633,
+      0.85
+    ]
+  },
+  {
+    "peca": "capacete_ferro",
+    "arquivo": "walk/north-west/004.png",
+    "ancora": [
+      1,
+      3,
+      56.520389556884766,
+      0.85
+    ]
+  },
+  {
+    "peca": "capacete_ferro",
+    "arquivo": "walk/north-west/005.png",
+    "ancora": [
+      1,
+      3,
+      45.0398063659668,
+      0.85
+    ]
+  },
+  {
+    "peca": "capacete_ferro",
+    "arquivo": "walk/north-west/006.png",
+    "ancora": [
+      0,
+      1,
+      45.777671813964844,
+      0.85
+    ]
+  },
+  {
+    "peca": "capacete_ferro",
+    "arquivo": "walk/north-west/007.png",
+    "ancora": [
+      0,
+      1,
+      44.04951477050781,
+      0.85
+    ]
+  },
+  {
+    "peca": "capacete_ferro",
+    "arquivo": "tend/north-west/000.png",
+    "ancora": [
+      1,
+      4,
+      34.85533905029297,
+      0.85
+    ]
+  },
+  {
+    "peca": "capacete_ferro",
+    "arquivo": "tend/north-west/001.png",
+    "ancora": [
+      -1,
+      11,
+      59.631900787353516,
+      0.75
+    ]
+  },
+  {
+    "peca": "capacete_ferro",
+    "arquivo": "tend/north-west/002.png",
+    "ancora": [
+      0,
+      10,
+      58.754600524902344,
+      0.75
+    ]
+  },
+  {
+    "peca": "capacete_ferro",
+    "arquivo": "tend/north-west/003.png",
+    "ancora": [
+      -1,
+      11,
+      60.18404769897461,
+      0.75
+    ]
+  },
+  {
+    "peca": "capacete_ferro",
+    "arquivo": "tend/north-west/004.png",
+    "ancora": [
+      -1,
+      11,
+      61.46625900268555,
+      0.75
+    ]
+  },
+  {
+    "peca": "capacete_ferro",
+    "arquivo": "rotations/north.png",
+    "ancora": [
+      0,
+      0,
+      0.0,
+      1.0
+    ]
+  },
+  {
+    "peca": "capacete_ferro",
+    "arquivo": "run/north/000.png",
+    "ancora": [
+      2,
+      -2,
+      32.78208923339844,
+      0.85
+    ]
+  },
+  {
+    "peca": "capacete_ferro",
+    "arquivo": "run/north/001.png",
+    "ancora": [
+      2,
+      -2,
+      33.40895462036133,
+      0.85
+    ]
+  },
+  {
+    "peca": "capacete_ferro",
+    "arquivo": "run/north/002.png",
+    "ancora": [
+      2,
+      -1,
+      32.54328155517578,
+      0.85
+    ]
+  },
+  {
+    "peca": "capacete_ferro",
+    "arquivo": "run/north/003.png",
+    "ancora": [
+      2,
+      0,
+      35.56816101074219,
+      0.85
+    ]
+  },
+  {
+    "peca": "capacete_ferro",
+    "arquivo": "run/north/004.png",
+    "ancora": [
+      2,
+      0,
+      36.12537384033203,
+      0.85
+    ]
+  },
+  {
+    "peca": "capacete_ferro",
+    "arquivo": "run/north/005.png",
+    "ancora": [
+      3,
+      -2,
+      40.816917419433594,
+      0.85
+    ]
+  },
+  {
+    "peca": "capacete_ferro",
+    "arquivo": "run/north/006.png",
+    "ancora": [
+      2,
+      -2,
+      39.38905715942383,
+      0.85
+    ]
+  },
+  {
+    "peca": "capacete_ferro",
+    "arquivo": "run/north/007.png",
+    "ancora": [
+      2,
+      0,
+      38.97611999511719,
+      0.85
+    ]
+  },
+  {
+    "peca": "capacete_ferro",
+    "arquivo": "walk/north/000.png",
+    "ancora": [
+      2,
+      -1,
+      32.78208923339844,
+      0.85
+    ]
+  },
+  {
+    "peca": "capacete_ferro",
+    "arquivo": "walk/north/001.png",
+    "ancora": [
+      2,
+      -1,
+      33.40895462036133,
+      0.85
+    ]
+  },
+  {
+    "peca": "capacete_ferro",
+    "arquivo": "walk/north/002.png",
+    "ancora": [
+      2,
+      0,
+      32.54328155517578,
+      0.85
+    ]
+  },
+  {
+    "peca": "capacete_ferro",
+    "arquivo": "walk/north/003.png",
+    "ancora": [
+      2,
+      1,
+      35.56816101074219,
+      0.85
+    ]
+  },
+  {
+    "peca": "capacete_ferro",
+    "arquivo": "walk/north/004.png",
+    "ancora": [
+      2,
+      1,
+      36.12537384033203,
+      0.85
+    ]
+  },
+  {
+    "peca": "capacete_ferro",
+    "arquivo": "walk/north/005.png",
+    "ancora": [
+      3,
+      -1,
+      40.816917419433594,
+      0.85
+    ]
+  },
+  {
+    "peca": "capacete_ferro",
+    "arquivo": "walk/north/006.png",
+    "ancora": [
+      3,
+      -1,
+      39.38905715942383,
+      0.85
+    ]
+  },
+  {
+    "peca": "capacete_ferro",
+    "arquivo": "walk/north/007.png",
+    "ancora": [
+      3,
+      1,
+      38.97611999511719,
+      0.85
+    ]
+  },
+  {
+    "peca": "capacete_ferro",
+    "arquivo": "tend/north/000.png",
+    "ancora": [
+      1,
+      4,
+      47.657711029052734,
+      0.85
+    ]
+  },
+  {
+    "peca": "capacete_ferro",
+    "arquivo": "tend/north/001.png",
+    "ancora": [
+      7,
+      10,
+      62.43708419799805,
+      0.75
+    ]
+  },
+  {
+    "peca": "capacete_ferro",
+    "arquivo": "tend/north/002.png",
+    "ancora": [
+      7,
+      9,
+      61.51655578613281,
+      0.75
+    ]
+  },
+  {
+    "peca": "capacete_ferro",
+    "arquivo": "tend/north/003.png",
+    "ancora": [
+      7,
+      10,
+      61.45695495605469,
+      0.75
+    ]
+  },
+  {
+    "peca": "capacete_ferro",
+    "arquivo": "tend/north/004.png",
+    "ancora": [
+      8,
+      10,
+      61.033111572265625,
+      0.75
+    ]
+  },
+  {
+    "peca": "capacete_ferro",
+    "arquivo": "rotations/north-east.png",
+    "ancora": [
+      0,
+      0,
+      0.0,
+      1.0
+    ]
+  },
+  {
+    "peca": "capacete_ferro",
+    "arquivo": "run/north-east/000.png",
+    "ancora": [
+      4,
+      1,
+      42.224273681640625,
+      0.85
+    ]
+  },
+  {
+    "peca": "capacete_ferro",
+    "arquivo": "run/north-east/001.png",
+    "ancora": [
+      4,
+      0,
+      44.073787689208984,
+      0.85
+    ]
+  },
+  {
+    "peca": "capacete_ferro",
+    "arquivo": "run/north-east/002.png",
+    "ancora": [
+      4,
+      0,
+      49.4815559387207,
+      0.85
+    ]
+  },
+  {
+    "peca": "capacete_ferro",
+    "arquivo": "run/north-east/003.png",
+    "ancora": [
+      4,
+      0,
+      56.18058395385742,
+      0.85
+    ]
+  },
+  {
+    "peca": "capacete_ferro",
+    "arquivo": "run/north-east/004.png",
+    "ancora": [
+      4,
+      0,
+      56.020389556884766,
+      0.85
+    ]
+  },
+  {
+    "peca": "capacete_ferro",
+    "arquivo": "run/north-east/005.png",
+    "ancora": [
+      4,
+      -1,
+      42.166019439697266,
+      0.85
+    ]
+  },
+  {
+    "peca": "capacete_ferro",
+    "arquivo": "run/north-east/006.png",
+    "ancora": [
+      5,
+      -3,
+      43.35533905029297,
+      0.85
+    ]
+  },
+  {
+    "peca": "capacete_ferro",
+    "arquivo": "run/north-east/007.png",
+    "ancora": [
+      4,
+      -3,
+      43.166019439697266,
+      0.85
+    ]
+  },
+  {
+    "peca": "capacete_ferro",
+    "arquivo": "walk/north-east/000.png",
+    "ancora": [
+      3,
+      5,
+      42.224273681640625,
+      0.85
+    ]
+  },
+  {
+    "peca": "capacete_ferro",
+    "arquivo": "walk/north-east/001.png",
+    "ancora": [
+      3,
+      4,
+      44.073787689208984,
+      0.85
+    ]
+  },
+  {
+    "peca": "capacete_ferro",
+    "arquivo": "walk/north-east/002.png",
+    "ancora": [
+      3,
+      3,
+      49.4815559387207,
+      0.85
+    ]
+  },
+  {
+    "peca": "capacete_ferro",
+    "arquivo": "walk/north-east/003.png",
+    "ancora": [
+      3,
+      3,
+      56.18058395385742,
+      0.85
+    ]
+  },
+  {
+    "peca": "capacete_ferro",
+    "arquivo": "walk/north-east/004.png",
+    "ancora": [
+      3,
+      3,
+      56.020389556884766,
+      0.85
+    ]
+  },
+  {
+    "peca": "capacete_ferro",
+    "arquivo": "walk/north-east/005.png",
+    "ancora": [
+      3,
+      3,
+      42.166019439697266,
+      0.85
+    ]
+  },
+  {
+    "peca": "capacete_ferro",
+    "arquivo": "walk/north-east/006.png",
+    "ancora": [
+      4,
+      1,
+      43.35533905029297,
+      0.85
+    ]
+  },
+  {
+    "peca": "capacete_ferro",
+    "arquivo": "walk/north-east/007.png",
+    "ancora": [
+      4,
+      1,
+      43.166019439697266,
+      0.85
+    ]
+  },
+  {
+    "peca": "capacete_ferro",
+    "arquivo": "tend/north-east/000.png",
+    "ancora": [
+      3,
+      5,
+      34.70000076293945,
+      0.85
+    ]
+  },
+  {
+    "peca": "capacete_ferro",
+    "arquivo": "tend/north-east/001.png",
+    "ancora": [
+      7,
+      11,
+      63.04907989501953,
+      0.75
+    ]
+  },
+  {
+    "peca": "capacete_ferro",
+    "arquivo": "tend/north-east/002.png",
+    "ancora": [
+      6,
+      10,
+      61.50306701660156,
+      0.75
+    ]
+  },
+  {
+    "peca": "capacete_ferro",
+    "arquivo": "tend/north-east/003.png",
+    "ancora": [
+      7,
+      11,
+      62.92024612426758,
+      0.75
+    ]
+  },
+  {
+    "peca": "capacete_ferro",
+    "arquivo": "tend/north-east/004.png",
+    "ancora": [
+      6,
+      11,
+      64.58282470703125,
+      0.75
+    ]
+  },
+  {
+    "peca": "capacete_ferro",
+    "arquivo": "rotations/east.png",
+    "ancora": [
+      0,
+      0,
+      0.0,
+      1.0
+    ]
+  },
+  {
+    "peca": "capacete_ferro",
+    "arquivo": "run/east/000.png",
+    "ancora": [
+      -1,
+      0,
+      70.84491729736328,
+      1.0
+    ]
+  },
+  {
+    "peca": "capacete_ferro",
+    "arquivo": "run/east/001.png",
+    "ancora": [
+      -1,
+      1,
+      60.87700653076172,
+      1.0
+    ]
+  },
+  {
+    "peca": "capacete_ferro",
+    "arquivo": "run/east/002.png",
+    "ancora": [
+      0,
+      0,
+      57.74866485595703,
+      1.0
+    ]
+  },
+  {
+    "peca": "capacete_ferro",
+    "arquivo": "run/east/003.png",
+    "ancora": [
+      -1,
+      -2,
+      58.67914581298828,
+      1.0
+    ]
+  },
+  {
+    "peca": "capacete_ferro",
+    "arquivo": "run/east/004.png",
+    "ancora": [
+      -1,
+      -2,
+      57.24599075317383,
+      1.0
+    ]
+  },
+  {
+    "peca": "capacete_ferro",
+    "arquivo": "run/east/005.png",
+    "ancora": [
+      -1,
+      0,
+      57.31550979614258,
+      1.0
+    ]
+  },
+  {
+    "peca": "capacete_ferro",
+    "arquivo": "run/east/006.png",
+    "ancora": [
+      -1,
+      0,
+      67.21925354003906,
+      1.0
+    ]
+  },
+  {
+    "peca": "capacete_ferro",
+    "arquivo": "run/east/007.png",
+    "ancora": [
+      -2,
+      0,
+      72.18181610107422,
+      1.0
+    ]
+  },
+  {
+    "peca": "capacete_ferro",
+    "arquivo": "walk/east/000.png",
+    "ancora": [
+      0,
+      2,
+      70.84491729736328,
+      1.0
+    ]
+  },
+  {
+    "peca": "capacete_ferro",
+    "arquivo": "walk/east/001.png",
+    "ancora": [
+      0,
+      2,
+      60.87700653076172,
+      1.0
+    ]
+  },
+  {
+    "peca": "capacete_ferro",
+    "arquivo": "walk/east/002.png",
+    "ancora": [
+      -1,
+      1,
+      57.74866485595703,
+      1.0
+    ]
+  },
+  {
+    "peca": "capacete_ferro",
+    "arquivo": "walk/east/003.png",
+    "ancora": [
+      -1,
+      -1,
+      58.67914581298828,
+      1.0
+    ]
+  },
+  {
+    "peca": "capacete_ferro",
+    "arquivo": "walk/east/004.png",
+    "ancora": [
+      -1,
+      -1,
+      57.24599075317383,
+      1.0
+    ]
+  },
+  {
+    "peca": "capacete_ferro",
+    "arquivo": "walk/east/005.png",
+    "ancora": [
+      -1,
+      1,
+      57.31550979614258,
+      1.0
+    ]
+  },
+  {
+    "peca": "capacete_ferro",
+    "arquivo": "walk/east/006.png",
+    "ancora": [
+      -1,
+      1,
+      67.21925354003906,
+      1.0
+    ]
+  },
+  {
+    "peca": "capacete_ferro",
+    "arquivo": "walk/east/007.png",
+    "ancora": [
+      -1,
+      0,
+      72.18181610107422,
+      1.0
+    ]
+  },
+  {
+    "peca": "capacete_ferro",
+    "arquivo": "tend/east/000.png",
+    "ancora": [
+      -1,
+      1,
+      24.85026741027832,
+      1.0
+    ]
+  },
+  {
+    "peca": "capacete_ferro",
+    "arquivo": "tend/east/001.png",
+    "ancora": [
+      5,
+      11,
+      85.84906005859375,
+      0.75
+    ]
+  },
+  {
+    "peca": "capacete_ferro",
+    "arquivo": "tend/east/002.png",
+    "ancora": [
+      4,
+      10,
+      85.0817642211914,
+      0.75
+    ]
+  },
+  {
+    "peca": "capacete_ferro",
+    "arquivo": "tend/east/003.png",
+    "ancora": [
+      3,
+      9,
+      83.03773498535156,
+      0.75
+    ]
+  },
+  {
+    "peca": "capacete_ferro",
+    "arquivo": "tend/east/004.png",
+    "ancora": [
+      4,
+      11,
+      83.42138671875,
+      0.75
+    ]
+  },
+  {
+    "peca": "capacete_ferro",
+    "arquivo": "rotations/south-east.png",
+    "ancora": [
+      0,
+      0,
+      0.0,
+      1.0
+    ]
+  },
+  {
+    "peca": "capacete_ferro",
+    "arquivo": "run/south-east/000.png",
+    "ancora": [
+      0,
+      1,
+      61.38071060180664,
+      1.0
+    ]
+  },
+  {
+    "peca": "capacete_ferro",
+    "arquivo": "run/south-east/001.png",
+    "ancora": [
+      0,
+      2,
+      65.33502197265625,
+      1.0
+    ]
+  },
+  {
+    "peca": "capacete_ferro",
+    "arquivo": "run/south-east/002.png",
+    "ancora": [
+      0,
+      -1,
+      64.57360076904297,
+      1.0
+    ]
+  },
+  {
+    "peca": "capacete_ferro",
+    "arquivo": "run/south-east/003.png",
+    "ancora": [
+      0,
+      -1,
+      62.456851959228516,
+      1.0
+    ]
+  },
+  {
+    "peca": "capacete_ferro",
+    "arquivo": "run/south-east/004.png",
+    "ancora": [
+      0,
+      0,
+      62.53299331665039,
+      1.0
+    ]
+  },
+  {
+    "peca": "capacete_ferro",
+    "arquivo": "run/south-east/005.png",
+    "ancora": [
+      0,
+      2,
+      71.96446990966797,
+      1.0
+    ]
+  },
+  {
+    "peca": "capacete_ferro",
+    "arquivo": "run/south-east/006.png",
+    "ancora": [
+      0,
+      2,
+      70.59391021728516,
+      1.0
+    ]
+  },
+  {
+    "peca": "capacete_ferro",
+    "arquivo": "run/south-east/007.png",
+    "ancora": [
+      1,
+      1,
+      61.88324737548828,
+      1.0
+    ]
+  },
+  {
+    "peca": "capacete_ferro",
+    "arquivo": "walk/south-east/000.png",
+    "ancora": [
+      1,
+      1,
+      61.38071060180664,
+      1.0
+    ]
+  },
+  {
+    "peca": "capacete_ferro",
+    "arquivo": "walk/south-east/001.png",
+    "ancora": [
+      1,
+      1,
+      65.33502197265625,
+      1.0
+    ]
+  },
+  {
+    "peca": "capacete_ferro",
+    "arquivo": "walk/south-east/002.png",
+    "ancora": [
+      0,
+      0,
+      64.57360076904297,
+      1.0
+    ]
+  },
+  {
+    "peca": "capacete_ferro",
+    "arquivo": "walk/south-east/003.png",
+    "ancora": [
+      0,
+      -1,
+      62.456851959228516,
+      1.0
+    ]
+  },
+  {
+    "peca": "capacete_ferro",
+    "arquivo": "walk/south-east/004.png",
+    "ancora": [
+      1,
+      0,
+      62.53299331665039,
+      1.0
+    ]
+  },
+  {
+    "peca": "capacete_ferro",
+    "arquivo": "walk/south-east/005.png",
+    "ancora": [
+      1,
+      2,
+      71.96446990966797,
+      1.0
+    ]
+  },
+  {
+    "peca": "capacete_ferro",
+    "arquivo": "walk/south-east/006.png",
+    "ancora": [
+      1,
+      2,
+      70.59391021728516,
+      1.0
+    ]
+  },
+  {
+    "peca": "capacete_ferro",
+    "arquivo": "walk/south-east/007.png",
+    "ancora": [
+      1,
+      1,
+      61.88324737548828,
+      1.0
+    ]
+  },
+  {
+    "peca": "capacete_ferro",
+    "arquivo": "tend/south-east/000.png",
+    "ancora": [
+      1,
+      2,
+      51.512691497802734,
+      1.0
+    ]
+  },
+  {
+    "peca": "capacete_ferro",
+    "arquivo": "tend/south-east/001.png",
+    "ancora": [
+      6,
+      9,
+      75.86294555664062,
+      1.0
+    ]
+  },
+  {
+    "peca": "capacete_ferro",
+    "arquivo": "tend/south-east/002.png",
+    "ancora": [
+      6,
+      9,
+      78.71598052978516,
+      0.85
+    ]
+  },
+  {
+    "peca": "capacete_ferro",
+    "arquivo": "tend/south-east/003.png",
+    "ancora": [
+      7,
+      9,
+      77.19542694091797,
+      0.85
+    ]
+  },
+  {
+    "peca": "capacete_ferro",
+    "arquivo": "tend/south-east/004.png",
+    "ancora": [
+      7,
+      9,
+      78.39634704589844,
+      0.85
+    ]
+  },
+  {
+    "peca": "capacete_prata",
+    "arquivo": "rotations/south.png",
+    "ancora": [
+      0,
+      0,
+      0.0,
+      1.0
+    ]
+  },
+  {
+    "peca": "capacete_prata",
+    "arquivo": "run/south/000.png",
+    "ancora": [
+      2,
+      0,
+      80.96604919433594,
+      0.85
+    ]
+  },
+  {
+    "peca": "capacete_prata",
+    "arquivo": "run/south/001.png",
+    "ancora": [
+      3,
+      -1,
+      77.90641784667969,
+      0.85
+    ]
+  },
+  {
+    "peca": "capacete_prata",
+    "arquivo": "run/south/002.png",
+    "ancora": [
+      3,
+      -2,
+      78.1082534790039,
+      0.85
+    ]
+  },
+  {
+    "peca": "capacete_prata",
+    "arquivo": "run/south/003.png",
+    "ancora": [
+      3,
+      -1,
+      73.84678649902344,
+      0.85
+    ]
+  },
+  {
+    "peca": "capacete_prata",
+    "arquivo": "run/south/004.png",
+    "ancora": [
+      3,
+      0,
+      74.71834564208984,
+      0.85
+    ]
+  },
+  {
+    "peca": "capacete_prata",
+    "arquivo": "run/south/005.png",
+    "ancora": [
+      2,
+      0,
+      81.2779769897461,
+      0.85
+    ]
+  },
+  {
+    "peca": "capacete_prata",
+    "arquivo": "run/south/006.png",
+    "ancora": [
+      2,
+      -1,
+      79.6954116821289,
+      0.85
+    ]
+  },
+  {
+    "peca": "capacete_prata",
+    "arquivo": "run/south/007.png",
+    "ancora": [
+      2,
+      -1,
+      79.12201690673828,
+      0.85
+    ]
+  },
+  {
+    "peca": "capacete_prata",
+    "arquivo": "walk/south/000.png",
+    "ancora": [
+      2,
+      3,
+      80.96604919433594,
+      0.85
+    ]
+  },
+  {
+    "peca": "capacete_prata",
+    "arquivo": "walk/south/001.png",
+    "ancora": [
+      3,
+      1,
+      77.90641784667969,
+      0.85
+    ]
+  },
+  {
+    "peca": "capacete_prata",
+    "arquivo": "walk/south/002.png",
+    "ancora": [
+      3,
+      0,
+      78.1082534790039,
+      0.85
+    ]
+  },
+  {
+    "peca": "capacete_prata",
+    "arquivo": "walk/south/003.png",
+    "ancora": [
+      3,
+      1,
+      73.84678649902344,
+      0.85
+    ]
+  },
+  {
+    "peca": "capacete_prata",
+    "arquivo": "walk/south/004.png",
+    "ancora": [
+      3,
+      3,
+      74.71834564208984,
+      0.85
+    ]
+  },
+  {
+    "peca": "capacete_prata",
+    "arquivo": "walk/south/005.png",
+    "ancora": [
+      2,
+      2,
+      81.2779769897461,
+      0.85
+    ]
+  },
+  {
+    "peca": "capacete_prata",
+    "arquivo": "walk/south/006.png",
+    "ancora": [
+      2,
+      1,
+      79.6954116821289,
+      0.85
+    ]
+  },
+  {
+    "peca": "capacete_prata",
+    "arquivo": "walk/south/007.png",
+    "ancora": [
+      2,
+      1,
+      79.12201690673828,
+      0.85
+    ]
+  },
+  {
+    "peca": "capacete_prata",
+    "arquivo": "tend/south/000.png",
+    "ancora": [
+      2,
+      5,
+      54.31009292602539,
+      0.85
+    ]
+  },
+  {
+    "peca": "capacete_prata",
+    "arquivo": "tend/south/001.png",
+    "ancora": [
+      5,
+      12,
+      79.85595703125,
+      0.85
+    ]
+  },
+  {
+    "peca": "capacete_prata",
+    "arquivo": "tend/south/002.png",
+    "ancora": [
+      4,
+      10,
+      80.85595703125,
+      0.85
+    ]
+  },
+  {
+    "peca": "capacete_prata",
+    "arquivo": "tend/south/003.png",
+    "ancora": [
+      5,
+      9,
+      81.29632568359375,
+      0.85
+    ]
+  },
+  {
+    "peca": "capacete_prata",
+    "arquivo": "tend/south/004.png",
+    "ancora": [
+      5,
+      10,
+      81.56238555908203,
+      0.85
+    ]
+  },
+  {
+    "peca": "capacete_prata",
+    "arquivo": "rotations/south-west.png",
+    "ancora": [
+      0,
+      0,
+      0.0,
+      1.0
+    ]
+  },
+  {
+    "peca": "capacete_prata",
+    "arquivo": "run/south-west/000.png",
+    "ancora": [
+      0,
+      1,
+      62.55837631225586,
+      1.0
+    ]
+  },
+  {
+    "peca": "capacete_prata",
+    "arquivo": "run/south-west/001.png",
+    "ancora": [
+      1,
+      2,
+      67.47396850585938,
+      0.85
+    ]
+  },
+  {
+    "peca": "capacete_prata",
+    "arquivo": "run/south-west/002.png",
+    "ancora": [
+      0,
+      -1,
+      65.40101623535156,
+      1.0
+    ]
+  },
+  {
+    "peca": "capacete_prata",
+    "arquivo": "run/south-west/003.png",
+    "ancora": [
+      0,
+      -1,
+      62.85279083251953,
+      1.0
+    ]
+  },
+  {
+    "peca": "capacete_prata",
+    "arquivo": "run/south-west/004.png",
+    "ancora": [
+      0,
+      0,
+      63.49746322631836,
+      1.0
+    ]
+  },
+  {
+    "peca": "capacete_prata",
+    "arquivo": "run/south-west/005.png",
+    "ancora": [
+      0,
+      2,
+      70.40101623535156,
+      1.0
+    ]
+  },
+  {
+    "peca": "capacete_prata",
+    "arquivo": "run/south-west/006.png",
+    "ancora": [
+      0,
+      2,
+      69.47715759277344,
+      1.0
+    ]
+  },
+  {
+    "peca": "capacete_prata",
+    "arquivo": "run/south-west/007.png",
+    "ancora": [
+      -1,
+      1,
+      60.98984909057617,
+      1.0
+    ]
+  },
+  {
+    "peca": "capacete_prata",
+    "arquivo": "walk/south-west/000.png",
+    "ancora": [
+      -1,
+      1,
+      62.55837631225586,
+      1.0
+    ]
+  },
+  {
+    "peca": "capacete_prata",
+    "arquivo": "walk/south-west/001.png",
+    "ancora": [
+      1,
+      3,
+      67.47396850585938,
+      0.85
+    ]
+  },
+  {
+    "peca": "capacete_prata",
+    "arquivo": "walk/south-west/002.png",
+    "ancora": [
+      0,
+      0,
+      65.40101623535156,
+      1.0
+    ]
+  },
+  {
+    "peca": "capacete_prata",
+    "arquivo": "walk/south-west/003.png",
+    "ancora": [
+      0,
+      -1,
+      62.85279083251953,
+      1.0
+    ]
+  },
+  {
+    "peca": "capacete_prata",
+    "arquivo": "walk/south-west/004.png",
+    "ancora": [
+      0,
+      0,
+      63.49746322631836,
+      1.0
+    ]
+  },
+  {
+    "peca": "capacete_prata",
+    "arquivo": "walk/south-west/005.png",
+    "ancora": [
+      -1,
+      2,
+      70.40101623535156,
+      1.0
+    ]
+  },
+  {
+    "peca": "capacete_prata",
+    "arquivo": "walk/south-west/006.png",
+    "ancora": [
+      -1,
+      2,
+      69.47715759277344,
+      1.0
+    ]
+  },
+  {
+    "peca": "capacete_prata",
+    "arquivo": "walk/south-west/007.png",
+    "ancora": [
+      -1,
+      1,
+      60.98984909057617,
+      1.0
+    ]
+  },
+  {
+    "peca": "capacete_prata",
+    "arquivo": "tend/south-west/000.png",
+    "ancora": [
+      0,
+      2,
+      51.12690353393555,
+      1.0
+    ]
+  },
+  {
+    "peca": "capacete_prata",
+    "arquivo": "tend/south-west/001.png",
+    "ancora": [
+      -6,
+      9,
+      75.25888061523438,
+      1.0
+    ]
+  },
+  {
+    "peca": "capacete_prata",
+    "arquivo": "tend/south-west/002.png",
+    "ancora": [
+      -6,
+      8,
+      75.76142120361328,
+      1.0
+    ]
+  },
+  {
+    "peca": "capacete_prata",
+    "arquivo": "tend/south-west/003.png",
+    "ancora": [
+      -6,
+      8,
+      74.67512512207031,
+      1.0
+    ]
+  },
+  {
+    "peca": "capacete_prata",
+    "arquivo": "tend/south-west/004.png",
+    "ancora": [
+      -6,
+      8,
+      71.84771728515625,
+      1.0
+    ]
+  },
+  {
+    "peca": "capacete_prata",
+    "arquivo": "rotations/west.png",
+    "ancora": [
+      0,
+      0,
+      0.0,
+      1.0
+    ]
+  },
+  {
+    "peca": "capacete_prata",
+    "arquivo": "run/west/000.png",
+    "ancora": [
+      1,
+      0,
+      67.08021545410156,
+      1.0
+    ]
+  },
+  {
+    "peca": "capacete_prata",
+    "arquivo": "run/west/001.png",
+    "ancora": [
+      1,
+      1,
+      57.657752990722656,
+      1.0
+    ]
+  },
+  {
+    "peca": "capacete_prata",
+    "arquivo": "run/west/002.png",
+    "ancora": [
+      0,
+      0,
+      58.278076171875,
+      1.0
+    ]
+  },
+  {
+    "peca": "capacete_prata",
+    "arquivo": "run/west/003.png",
+    "ancora": [
+      1,
+      -2,
+      53.866310119628906,
+      1.0
+    ]
+  },
+  {
+    "peca": "capacete_prata",
+    "arquivo": "run/west/004.png",
+    "ancora": [
+      1,
+      -2,
+      54.87165832519531,
+      1.0
+    ]
+  },
+  {
+    "peca": "capacete_prata",
+    "arquivo": "run/west/005.png",
+    "ancora": [
+      1,
+      0,
+      53.05882263183594,
+      1.0
+    ]
+  },
+  {
+    "peca": "capacete_prata",
+    "arquivo": "run/west/006.png",
+    "ancora": [
+      1,
+      0,
+      60.786094665527344,
+      1.0
+    ]
+  },
+  {
+    "peca": "capacete_prata",
+    "arquivo": "run/west/007.png",
+    "ancora": [
+      2,
+      0,
+      65.48663330078125,
+      1.0
+    ]
+  },
+  {
+    "peca": "capacete_prata",
+    "arquivo": "walk/west/000.png",
+    "ancora": [
+      1,
+      2,
+      67.08021545410156,
+      1.0
+    ]
+  },
+  {
+    "peca": "capacete_prata",
+    "arquivo": "walk/west/001.png",
+    "ancora": [
+      1,
+      2,
+      57.657752990722656,
+      1.0
+    ]
+  },
+  {
+    "peca": "capacete_prata",
+    "arquivo": "walk/west/002.png",
+    "ancora": [
+      1,
+      1,
+      58.278076171875,
+      1.0
+    ]
+  },
+  {
+    "peca": "capacete_prata",
+    "arquivo": "walk/west/003.png",
+    "ancora": [
+      1,
+      -1,
+      53.866310119628906,
+      1.0
+    ]
+  },
+  {
+    "peca": "capacete_prata",
+    "arquivo": "walk/west/004.png",
+    "ancora": [
+      1,
+      -1,
+      54.87165832519531,
+      1.0
+    ]
+  },
+  {
+    "peca": "capacete_prata",
+    "arquivo": "walk/west/005.png",
+    "ancora": [
+      1,
+      1,
+      53.05882263183594,
+      1.0
+    ]
+  },
+  {
+    "peca": "capacete_prata",
+    "arquivo": "walk/west/006.png",
+    "ancora": [
+      1,
+      1,
+      60.786094665527344,
+      1.0
+    ]
+  },
+  {
+    "peca": "capacete_prata",
+    "arquivo": "walk/west/007.png",
+    "ancora": [
+      1,
+      0,
+      65.48663330078125,
+      1.0
+    ]
+  },
+  {
+    "peca": "capacete_prata",
+    "arquivo": "tend/west/000.png",
+    "ancora": [
+      1,
+      1,
+      25.62032127380371,
+      1.0
+    ]
+  },
+  {
+    "peca": "capacete_prata",
+    "arquivo": "tend/west/001.png",
+    "ancora": [
+      0,
+      10,
+      86.19502258300781,
+      0.85
+    ]
+  },
+  {
+    "peca": "capacete_prata",
+    "arquivo": "tend/west/002.png",
+    "ancora": [
+      0,
+      9,
+      84.28955078125,
+      0.85
+    ]
+  },
+  {
+    "peca": "capacete_prata",
+    "arquivo": "tend/west/003.png",
+    "ancora": [
+      -2,
+      8,
+      85.26203155517578,
+      1.0
+    ]
+  },
+  {
+    "peca": "capacete_prata",
+    "arquivo": "tend/west/004.png",
+    "ancora": [
+      0,
+      9,
+      82.39402770996094,
+      0.85
+    ]
+  },
+  {
+    "peca": "capacete_prata",
+    "arquivo": "rotations/north-west.png",
+    "ancora": [
+      0,
+      0,
+      0.0,
+      1.0
+    ]
+  },
+  {
+    "peca": "capacete_prata",
+    "arquivo": "run/north-west/000.png",
+    "ancora": [
+      0,
+      1,
+      44.6271858215332,
+      0.85
+    ]
+  },
+  {
+    "peca": "capacete_prata",
+    "arquivo": "run/north-west/001.png",
+    "ancora": [
+      -1,
+      0,
+      47.24854278564453,
+      0.85
+    ]
+  },
+  {
+    "peca": "capacete_prata",
+    "arquivo": "run/north-west/002.png",
+    "ancora": [
+      0,
+      0,
+      49.598060607910156,
+      0.85
+    ]
+  },
+  {
+    "peca": "capacete_prata",
+    "arquivo": "run/north-west/003.png",
+    "ancora": [
+      0,
+      0,
+      56.41359329223633,
+      0.85
+    ]
+  },
+  {
+    "peca": "capacete_prata",
+    "arquivo": "run/north-west/004.png",
+    "ancora": [
+      -1,
+      0,
+      56.520389556884766,
+      0.85
+    ]
+  },
+  {
+    "peca": "capacete_prata",
+    "arquivo": "run/north-west/005.png",
+    "ancora": [
+      0,
+      -1,
+      45.0398063659668,
+      0.85
+    ]
+  },
+  {
+    "peca": "capacete_prata",
+    "arquivo": "run/north-west/006.png",
+    "ancora": [
+      -1,
+      -3,
+      45.777671813964844,
+      0.85
+    ]
+  },
+  {
+    "peca": "capacete_prata",
+    "arquivo": "run/north-west/007.png",
+    "ancora": [
+      -1,
+      -3,
+      44.04951477050781,
+      0.85
+    ]
+  },
+  {
+    "peca": "capacete_prata",
+    "arquivo": "walk/north-west/000.png",
+    "ancora": [
+      1,
+      5,
+      44.6271858215332,
+      0.85
+    ]
+  },
+  {
+    "peca": "capacete_prata",
+    "arquivo": "walk/north-west/001.png",
+    "ancora": [
+      1,
+      4,
+      47.24854278564453,
+      0.85
+    ]
+  },
+  {
+    "peca": "capacete_prata",
+    "arquivo": "walk/north-west/002.png",
+    "ancora": [
+      2,
+      3,
+      49.598060607910156,
+      0.85
+    ]
+  },
+  {
+    "peca": "capacete_prata",
+    "arquivo": "walk/north-west/003.png",
+    "ancora": [
+      1,
+      3,
+      56.41359329223633,
+      0.85
+    ]
+  },
+  {
+    "peca": "capacete_prata",
+    "arquivo": "walk/north-west/004.png",
+    "ancora": [
+      1,
+      3,
+      56.520389556884766,
+      0.85
+    ]
+  },
+  {
+    "peca": "capacete_prata",
+    "arquivo": "walk/north-west/005.png",
+    "ancora": [
+      1,
+      3,
+      45.0398063659668,
+      0.85
+    ]
+  },
+  {
+    "peca": "capacete_prata",
+    "arquivo": "walk/north-west/006.png",
+    "ancora": [
+      0,
+      1,
+      45.777671813964844,
+      0.85
+    ]
+  },
+  {
+    "peca": "capacete_prata",
+    "arquivo": "walk/north-west/007.png",
+    "ancora": [
+      0,
+      1,
+      44.04951477050781,
+      0.85
+    ]
+  },
+  {
+    "peca": "capacete_prata",
+    "arquivo": "tend/north-west/000.png",
+    "ancora": [
+      1,
+      4,
+      34.85533905029297,
+      0.85
+    ]
+  },
+  {
+    "peca": "capacete_prata",
+    "arquivo": "tend/north-west/001.png",
+    "ancora": [
+      -1,
+      11,
+      59.631900787353516,
+      0.75
+    ]
+  },
+  {
+    "peca": "capacete_prata",
+    "arquivo": "tend/north-west/002.png",
+    "ancora": [
+      0,
+      10,
+      58.754600524902344,
+      0.75
+    ]
+  },
+  {
+    "peca": "capacete_prata",
+    "arquivo": "tend/north-west/003.png",
+    "ancora": [
+      -1,
+      11,
+      60.18404769897461,
+      0.75
+    ]
+  },
+  {
+    "peca": "capacete_prata",
+    "arquivo": "tend/north-west/004.png",
+    "ancora": [
+      -1,
+      11,
+      61.46625900268555,
+      0.75
+    ]
+  },
+  {
+    "peca": "capacete_prata",
+    "arquivo": "rotations/north.png",
+    "ancora": [
+      0,
+      0,
+      0.0,
+      1.0
+    ]
+  },
+  {
+    "peca": "capacete_prata",
+    "arquivo": "run/north/000.png",
+    "ancora": [
+      2,
+      -2,
+      32.78208923339844,
+      0.85
+    ]
+  },
+  {
+    "peca": "capacete_prata",
+    "arquivo": "run/north/001.png",
+    "ancora": [
+      2,
+      -2,
+      33.40895462036133,
+      0.85
+    ]
+  },
+  {
+    "peca": "capacete_prata",
+    "arquivo": "run/north/002.png",
+    "ancora": [
+      2,
+      -1,
+      32.54328155517578,
+      0.85
+    ]
+  },
+  {
+    "peca": "capacete_prata",
+    "arquivo": "run/north/003.png",
+    "ancora": [
+      2,
+      0,
+      35.56816101074219,
+      0.85
+    ]
+  },
+  {
+    "peca": "capacete_prata",
+    "arquivo": "run/north/004.png",
+    "ancora": [
+      2,
+      0,
+      36.12537384033203,
+      0.85
+    ]
+  },
+  {
+    "peca": "capacete_prata",
+    "arquivo": "run/north/005.png",
+    "ancora": [
+      3,
+      -2,
+      40.816917419433594,
+      0.85
+    ]
+  },
+  {
+    "peca": "capacete_prata",
+    "arquivo": "run/north/006.png",
+    "ancora": [
+      2,
+      -2,
+      39.38905715942383,
+      0.85
+    ]
+  },
+  {
+    "peca": "capacete_prata",
+    "arquivo": "run/north/007.png",
+    "ancora": [
+      2,
+      0,
+      38.97611999511719,
+      0.85
+    ]
+  },
+  {
+    "peca": "capacete_prata",
+    "arquivo": "walk/north/000.png",
+    "ancora": [
+      2,
+      -1,
+      32.78208923339844,
+      0.85
+    ]
+  },
+  {
+    "peca": "capacete_prata",
+    "arquivo": "walk/north/001.png",
+    "ancora": [
+      2,
+      -1,
+      33.40895462036133,
+      0.85
+    ]
+  },
+  {
+    "peca": "capacete_prata",
+    "arquivo": "walk/north/002.png",
+    "ancora": [
+      2,
+      0,
+      32.54328155517578,
+      0.85
+    ]
+  },
+  {
+    "peca": "capacete_prata",
+    "arquivo": "walk/north/003.png",
+    "ancora": [
+      2,
+      1,
+      35.56816101074219,
+      0.85
+    ]
+  },
+  {
+    "peca": "capacete_prata",
+    "arquivo": "walk/north/004.png",
+    "ancora": [
+      2,
+      1,
+      36.12537384033203,
+      0.85
+    ]
+  },
+  {
+    "peca": "capacete_prata",
+    "arquivo": "walk/north/005.png",
+    "ancora": [
+      3,
+      -1,
+      40.816917419433594,
+      0.85
+    ]
+  },
+  {
+    "peca": "capacete_prata",
+    "arquivo": "walk/north/006.png",
+    "ancora": [
+      3,
+      -1,
+      39.38905715942383,
+      0.85
+    ]
+  },
+  {
+    "peca": "capacete_prata",
+    "arquivo": "walk/north/007.png",
+    "ancora": [
+      3,
+      1,
+      38.97611999511719,
+      0.85
+    ]
+  },
+  {
+    "peca": "capacete_prata",
+    "arquivo": "tend/north/000.png",
+    "ancora": [
+      1,
+      4,
+      47.657711029052734,
+      0.85
+    ]
+  },
+  {
+    "peca": "capacete_prata",
+    "arquivo": "tend/north/001.png",
+    "ancora": [
+      7,
+      10,
+      62.43708419799805,
+      0.75
+    ]
+  },
+  {
+    "peca": "capacete_prata",
+    "arquivo": "tend/north/002.png",
+    "ancora": [
+      7,
+      9,
+      61.51655578613281,
+      0.75
+    ]
+  },
+  {
+    "peca": "capacete_prata",
+    "arquivo": "tend/north/003.png",
+    "ancora": [
+      7,
+      10,
+      61.45695495605469,
+      0.75
+    ]
+  },
+  {
+    "peca": "capacete_prata",
+    "arquivo": "tend/north/004.png",
+    "ancora": [
+      8,
+      10,
+      61.033111572265625,
+      0.75
+    ]
+  },
+  {
+    "peca": "capacete_prata",
+    "arquivo": "rotations/north-east.png",
+    "ancora": [
+      0,
+      0,
+      0.0,
+      1.0
+    ]
+  },
+  {
+    "peca": "capacete_prata",
+    "arquivo": "run/north-east/000.png",
+    "ancora": [
+      4,
+      1,
+      42.224273681640625,
+      0.85
+    ]
+  },
+  {
+    "peca": "capacete_prata",
+    "arquivo": "run/north-east/001.png",
+    "ancora": [
+      4,
+      0,
+      44.073787689208984,
+      0.85
+    ]
+  },
+  {
+    "peca": "capacete_prata",
+    "arquivo": "run/north-east/002.png",
+    "ancora": [
+      4,
+      0,
+      49.4815559387207,
+      0.85
+    ]
+  },
+  {
+    "peca": "capacete_prata",
+    "arquivo": "run/north-east/003.png",
+    "ancora": [
+      4,
+      0,
+      56.18058395385742,
+      0.85
+    ]
+  },
+  {
+    "peca": "capacete_prata",
+    "arquivo": "run/north-east/004.png",
+    "ancora": [
+      4,
+      0,
+      56.020389556884766,
+      0.85
+    ]
+  },
+  {
+    "peca": "capacete_prata",
+    "arquivo": "run/north-east/005.png",
+    "ancora": [
+      4,
+      -1,
+      42.166019439697266,
+      0.85
+    ]
+  },
+  {
+    "peca": "capacete_prata",
+    "arquivo": "run/north-east/006.png",
+    "ancora": [
+      5,
+      -3,
+      43.35533905029297,
+      0.85
+    ]
+  },
+  {
+    "peca": "capacete_prata",
+    "arquivo": "run/north-east/007.png",
+    "ancora": [
+      4,
+      -3,
+      43.166019439697266,
+      0.85
+    ]
+  },
+  {
+    "peca": "capacete_prata",
+    "arquivo": "walk/north-east/000.png",
+    "ancora": [
+      3,
+      5,
+      42.224273681640625,
+      0.85
+    ]
+  },
+  {
+    "peca": "capacete_prata",
+    "arquivo": "walk/north-east/001.png",
+    "ancora": [
+      3,
+      4,
+      44.073787689208984,
+      0.85
+    ]
+  },
+  {
+    "peca": "capacete_prata",
+    "arquivo": "walk/north-east/002.png",
+    "ancora": [
+      3,
+      3,
+      49.4815559387207,
+      0.85
+    ]
+  },
+  {
+    "peca": "capacete_prata",
+    "arquivo": "walk/north-east/003.png",
+    "ancora": [
+      3,
+      3,
+      56.18058395385742,
+      0.85
+    ]
+  },
+  {
+    "peca": "capacete_prata",
+    "arquivo": "walk/north-east/004.png",
+    "ancora": [
+      3,
+      3,
+      56.020389556884766,
+      0.85
+    ]
+  },
+  {
+    "peca": "capacete_prata",
+    "arquivo": "walk/north-east/005.png",
+    "ancora": [
+      3,
+      3,
+      42.166019439697266,
+      0.85
+    ]
+  },
+  {
+    "peca": "capacete_prata",
+    "arquivo": "walk/north-east/006.png",
+    "ancora": [
+      4,
+      1,
+      43.35533905029297,
+      0.85
+    ]
+  },
+  {
+    "peca": "capacete_prata",
+    "arquivo": "walk/north-east/007.png",
+    "ancora": [
+      4,
+      1,
+      43.166019439697266,
+      0.85
+    ]
+  },
+  {
+    "peca": "capacete_prata",
+    "arquivo": "tend/north-east/000.png",
+    "ancora": [
+      3,
+      5,
+      34.70000076293945,
+      0.85
+    ]
+  },
+  {
+    "peca": "capacete_prata",
+    "arquivo": "tend/north-east/001.png",
+    "ancora": [
+      7,
+      11,
+      63.04907989501953,
+      0.75
+    ]
+  },
+  {
+    "peca": "capacete_prata",
+    "arquivo": "tend/north-east/002.png",
+    "ancora": [
+      6,
+      10,
+      61.50306701660156,
+      0.75
+    ]
+  },
+  {
+    "peca": "capacete_prata",
+    "arquivo": "tend/north-east/003.png",
+    "ancora": [
+      7,
+      11,
+      62.92024612426758,
+      0.75
+    ]
+  },
+  {
+    "peca": "capacete_prata",
+    "arquivo": "tend/north-east/004.png",
+    "ancora": [
+      6,
+      11,
+      64.58282470703125,
+      0.75
+    ]
+  },
+  {
+    "peca": "capacete_prata",
+    "arquivo": "rotations/east.png",
+    "ancora": [
+      0,
+      0,
+      0.0,
+      1.0
+    ]
+  },
+  {
+    "peca": "capacete_prata",
+    "arquivo": "run/east/000.png",
+    "ancora": [
+      -1,
+      0,
+      70.84491729736328,
+      1.0
+    ]
+  },
+  {
+    "peca": "capacete_prata",
+    "arquivo": "run/east/001.png",
+    "ancora": [
+      -1,
+      1,
+      60.87700653076172,
+      1.0
+    ]
+  },
+  {
+    "peca": "capacete_prata",
+    "arquivo": "run/east/002.png",
+    "ancora": [
+      0,
+      0,
+      57.74866485595703,
+      1.0
+    ]
+  },
+  {
+    "peca": "capacete_prata",
+    "arquivo": "run/east/003.png",
+    "ancora": [
+      -1,
+      -2,
+      58.67914581298828,
+      1.0
+    ]
+  },
+  {
+    "peca": "capacete_prata",
+    "arquivo": "run/east/004.png",
+    "ancora": [
+      -1,
+      -2,
+      57.24599075317383,
+      1.0
+    ]
+  },
+  {
+    "peca": "capacete_prata",
+    "arquivo": "run/east/005.png",
+    "ancora": [
+      -1,
+      0,
+      57.31550979614258,
+      1.0
+    ]
+  },
+  {
+    "peca": "capacete_prata",
+    "arquivo": "run/east/006.png",
+    "ancora": [
+      -1,
+      0,
+      67.21925354003906,
+      1.0
+    ]
+  },
+  {
+    "peca": "capacete_prata",
+    "arquivo": "run/east/007.png",
+    "ancora": [
+      -2,
+      0,
+      72.18181610107422,
+      1.0
+    ]
+  },
+  {
+    "peca": "capacete_prata",
+    "arquivo": "walk/east/000.png",
+    "ancora": [
+      0,
+      2,
+      70.84491729736328,
+      1.0
+    ]
+  },
+  {
+    "peca": "capacete_prata",
+    "arquivo": "walk/east/001.png",
+    "ancora": [
+      0,
+      2,
+      60.87700653076172,
+      1.0
+    ]
+  },
+  {
+    "peca": "capacete_prata",
+    "arquivo": "walk/east/002.png",
+    "ancora": [
+      -1,
+      1,
+      57.74866485595703,
+      1.0
+    ]
+  },
+  {
+    "peca": "capacete_prata",
+    "arquivo": "walk/east/003.png",
+    "ancora": [
+      -1,
+      -1,
+      58.67914581298828,
+      1.0
+    ]
+  },
+  {
+    "peca": "capacete_prata",
+    "arquivo": "walk/east/004.png",
+    "ancora": [
+      -1,
+      -1,
+      57.24599075317383,
+      1.0
+    ]
+  },
+  {
+    "peca": "capacete_prata",
+    "arquivo": "walk/east/005.png",
+    "ancora": [
+      -1,
+      1,
+      57.31550979614258,
+      1.0
+    ]
+  },
+  {
+    "peca": "capacete_prata",
+    "arquivo": "walk/east/006.png",
+    "ancora": [
+      -1,
+      1,
+      67.21925354003906,
+      1.0
+    ]
+  },
+  {
+    "peca": "capacete_prata",
+    "arquivo": "walk/east/007.png",
+    "ancora": [
+      -1,
+      0,
+      72.18181610107422,
+      1.0
+    ]
+  },
+  {
+    "peca": "capacete_prata",
+    "arquivo": "tend/east/000.png",
+    "ancora": [
+      -1,
+      1,
+      24.85026741027832,
+      1.0
+    ]
+  },
+  {
+    "peca": "capacete_prata",
+    "arquivo": "tend/east/001.png",
+    "ancora": [
+      5,
+      11,
+      85.84906005859375,
+      0.75
+    ]
+  },
+  {
+    "peca": "capacete_prata",
+    "arquivo": "tend/east/002.png",
+    "ancora": [
+      4,
+      10,
+      85.0817642211914,
+      0.75
+    ]
+  },
+  {
+    "peca": "capacete_prata",
+    "arquivo": "tend/east/003.png",
+    "ancora": [
+      3,
+      9,
+      83.03773498535156,
+      0.75
+    ]
+  },
+  {
+    "peca": "capacete_prata",
+    "arquivo": "tend/east/004.png",
+    "ancora": [
+      4,
+      11,
+      83.42138671875,
+      0.75
+    ]
+  },
+  {
+    "peca": "capacete_prata",
+    "arquivo": "rotations/south-east.png",
+    "ancora": [
+      0,
+      0,
+      0.0,
+      1.0
+    ]
+  },
+  {
+    "peca": "capacete_prata",
+    "arquivo": "run/south-east/000.png",
+    "ancora": [
+      0,
+      1,
+      61.38071060180664,
+      1.0
+    ]
+  },
+  {
+    "peca": "capacete_prata",
+    "arquivo": "run/south-east/001.png",
+    "ancora": [
+      0,
+      2,
+      65.33502197265625,
+      1.0
+    ]
+  },
+  {
+    "peca": "capacete_prata",
+    "arquivo": "run/south-east/002.png",
+    "ancora": [
+      0,
+      -1,
+      64.57360076904297,
+      1.0
+    ]
+  },
+  {
+    "peca": "capacete_prata",
+    "arquivo": "run/south-east/003.png",
+    "ancora": [
+      0,
+      -1,
+      62.456851959228516,
+      1.0
+    ]
+  },
+  {
+    "peca": "capacete_prata",
+    "arquivo": "run/south-east/004.png",
+    "ancora": [
+      0,
+      0,
+      62.53299331665039,
+      1.0
+    ]
+  },
+  {
+    "peca": "capacete_prata",
+    "arquivo": "run/south-east/005.png",
+    "ancora": [
+      0,
+      2,
+      71.96446990966797,
+      1.0
+    ]
+  },
+  {
+    "peca": "capacete_prata",
+    "arquivo": "run/south-east/006.png",
+    "ancora": [
+      0,
+      2,
+      70.59391021728516,
+      1.0
+    ]
+  },
+  {
+    "peca": "capacete_prata",
+    "arquivo": "run/south-east/007.png",
+    "ancora": [
+      1,
+      1,
+      61.88324737548828,
+      1.0
+    ]
+  },
+  {
+    "peca": "capacete_prata",
+    "arquivo": "walk/south-east/000.png",
+    "ancora": [
+      1,
+      1,
+      61.38071060180664,
+      1.0
+    ]
+  },
+  {
+    "peca": "capacete_prata",
+    "arquivo": "walk/south-east/001.png",
+    "ancora": [
+      1,
+      1,
+      65.33502197265625,
+      1.0
+    ]
+  },
+  {
+    "peca": "capacete_prata",
+    "arquivo": "walk/south-east/002.png",
+    "ancora": [
+      0,
+      0,
+      64.57360076904297,
+      1.0
+    ]
+  },
+  {
+    "peca": "capacete_prata",
+    "arquivo": "walk/south-east/003.png",
+    "ancora": [
+      0,
+      -1,
+      62.456851959228516,
+      1.0
+    ]
+  },
+  {
+    "peca": "capacete_prata",
+    "arquivo": "walk/south-east/004.png",
+    "ancora": [
+      1,
+      0,
+      62.53299331665039,
+      1.0
+    ]
+  },
+  {
+    "peca": "capacete_prata",
+    "arquivo": "walk/south-east/005.png",
+    "ancora": [
+      1,
+      2,
+      71.96446990966797,
+      1.0
+    ]
+  },
+  {
+    "peca": "capacete_prata",
+    "arquivo": "walk/south-east/006.png",
+    "ancora": [
+      1,
+      2,
+      70.59391021728516,
+      1.0
+    ]
+  },
+  {
+    "peca": "capacete_prata",
+    "arquivo": "walk/south-east/007.png",
+    "ancora": [
+      1,
+      1,
+      61.88324737548828,
+      1.0
+    ]
+  },
+  {
+    "peca": "capacete_prata",
+    "arquivo": "tend/south-east/000.png",
+    "ancora": [
+      1,
+      2,
+      51.512691497802734,
+      1.0
+    ]
+  },
+  {
+    "peca": "capacete_prata",
+    "arquivo": "tend/south-east/001.png",
+    "ancora": [
+      6,
+      9,
+      75.86294555664062,
+      1.0
+    ]
+  },
+  {
+    "peca": "capacete_prata",
+    "arquivo": "tend/south-east/002.png",
+    "ancora": [
+      6,
+      9,
+      78.71598052978516,
+      0.85
+    ]
+  },
+  {
+    "peca": "capacete_prata",
+    "arquivo": "tend/south-east/003.png",
+    "ancora": [
+      7,
+      9,
+      77.19542694091797,
+      0.85
+    ]
+  },
+  {
+    "peca": "capacete_prata",
+    "arquivo": "tend/south-east/004.png",
+    "ancora": [
+      7,
+      9,
+      78.39634704589844,
+      0.85
+    ]
+  }
+]

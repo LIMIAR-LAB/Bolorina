@@ -67,6 +67,9 @@ func _ready() -> void:
 	DisplayServer.window_set_title("Ilha das Cinzas | Fazenda, Vila e Combate")
 	var area: String = OS.get_environment("ILHA_AREA")
 	var spawn: String = OS.get_environment("ILHA_SPAWN")
+	if area == "":
+		area = String(estado.extras.get("ultima_area","fazenda"))
+		if not Registro.disponivel(area): area="fazenda"
 	await _trocar(area if area != "" else "fazenda", spawn if spawn != "" else "inicio", false)
 
 func _unhandled_key_input(event: InputEvent) -> void:
@@ -92,6 +95,13 @@ func _unhandled_key_input(event: InputEvent) -> void:
 		alternar_mapa()
 		get_viewport().set_input_as_handled()
 		return
+	if event.physical_keycode == KEY_ESCAPE:
+		var menu=load("res://scripts/inicio/menu_inicial.gd").new()
+		menu.gerenciador=self
+		add_child(menu)
+		get_tree().paused=true
+		get_viewport().set_input_as_handled()
+		return
 	match event.physical_keycode:
 		KEY_F7:
 			ir("masmorra", "inicio")
@@ -111,6 +121,7 @@ func ir(area: String, spawn: String) -> void:
 func _trocar(area: String, spawn: String, com_fade: bool) -> void:
 	ocupado = true
 	estado.area = area
+	estado.extras.ultima_area=area
 	estado.salvar()
 	if com_fade:
 		var tw := create_tween()
@@ -209,13 +220,13 @@ func vestir_atual() -> void:
 	if nome == "arena":
 		var j = atual.get("jogador")
 		if j:
-			EquipVisual.vestir_combate(j, cam)
+			EquipVisual.vestir_combate(j, cam, estado.extras.get("aparencia",{}))
 			if "defesa_equip" in j:
 				j.defesa_equip = Equip.defesa(estado.equipamento)
 	else:
 		var s = atual.get("sprite")
 		if s is AnimatedSprite3D:
-			EquipVisual.vestir_sprite(s, cam)
+			EquipVisual.vestir_sprite(s, cam, estado.extras.get("aparencia",{}))
 
 # ---------------------------------------------------------------- mapa (M)
 func _montar_mapa() -> void:

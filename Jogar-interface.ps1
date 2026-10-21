@@ -9,5 +9,5 @@ if ((-not (Test-Path -LiteralPath $previewSave)) -and (Test-Path -LiteralPath $o
 $beforeSave = $env:ILHA_SAVE
 try {
     $env:ILHA_SAVE = 'user://ilha_interface_preview.json'
-    Start-Process -FilePath $GodotPath -ArgumentList @('--path', ('"' + $PSScriptRoot + '"'), 'res://jogo_ilha.tscn') -WindowStyle Normal
+    Start-Process -FilePath $GodotPath -ArgumentList @('--path', ('"' + $PSScriptRoot + '"'), 'res://inicio.tscn') -WindowStyle Normal
 } finally { $env:ILHA_SAVE = $beforeSave }

@@ -24,7 +24,8 @@ static func indice() -> Dictionary:
 		var d = JSON.parse_string(txt) if txt != "" else null
 		_indice = d if d is Dictionary else {"vila": {"quadros": []}, "camadas": {}}
 		# Patch derivado: fontes anteriores continuam intactas para auditoria/regressao.
-		var correcao := PASTA + "correcao_v2/indice.json"
+		var correcao := PASTA + "correcao_v3/indice.json"
+		if not FileAccess.file_exists(correcao): correcao=PASTA+"correcao_v2/indice.json"
 		if OS.get_environment("EQUIP_LEGADO") != "1" and FileAccess.file_exists(correcao):
 			var patch = JSON.parse_string(FileAccess.get_file_as_string(correcao))
 			if patch is Dictionary and patch.get("base_id", "") == Aparencia.BASE_ID:

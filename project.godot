@@ -2,7 +2,7 @@ config_version=5
 
 [application]
 config/name="Ilha das Cinzas - V4"
-run/main_scene="res://main.tscn"
+run/main_scene="res://inicio.tscn"
 run/main_scene.template="res://jogo_ilha.tscn"
 config/features=PackedStringArray("4.7", "Forward Plus")
 config/use_custom_user_dir=true

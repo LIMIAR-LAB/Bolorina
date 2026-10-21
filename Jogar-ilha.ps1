@@ -4,4 +4,4 @@ $ErrorActionPreference = 'Stop'
 if (-not (Test-Path -LiteralPath $GodotPath)) {
     throw 'Informe o executavel Godot 4.7.2 com -GodotPath ou abra jogo_ilha.tscn no editor.'
 }
-Start-Process -FilePath $GodotPath -ArgumentList @('--path', ('"' + $PSScriptRoot + '"'), 'res://jogo_ilha.tscn')
+Start-Process -FilePath $GodotPath -ArgumentList @('--path', ('"' + $PSScriptRoot + '"'), 'res://inicio.tscn')

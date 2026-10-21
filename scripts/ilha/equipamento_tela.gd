@@ -190,7 +190,7 @@ func _construir() -> void:
 	pv.add_child(previa)
 	var tag:=Panel.new();tag.position=Vector2(10,10);tag.size=Vector2(116,42)
 	tag.add_theme_stylebox_override("panel",UI.caixa("botao",8));pv.add_child(tag)
-	UI.rotulo(tag,"VALE",Vector2(15,9),20,true)
+	UI.rotulo(tag,String(estado.extras.get("aparencia",{}).get("nome","Vale")).left(10).to_upper(),Vector2(15,9),18,true)
 	previa_dir=UI.rotulo(pv,"",Vector2(12,493),16)
 	previa_dir.size=Vector2(336,56);previa_dir.horizontal_alignment=HORIZONTAL_ALIGNMENT_CENTER
 	for lado in [-1,1]:

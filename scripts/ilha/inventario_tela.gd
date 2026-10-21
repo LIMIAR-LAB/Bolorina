@@ -495,6 +495,7 @@ func _mostrar_aba(_inicio: bool) -> void:
 	botao_acao.visible = not eh_equip
 	resumo.visible = not eh_equip
 	titulo.visible = true
+	titulo.text="INVENTÁRIO · "+String(estado.extras.get("aparencia",{}).get("nome","Vale")).to_upper()
 	ouro_label.visible = aba != "equipamento"
 	raiz.get_node("PlacaOuro").visible = aba != "equipamento"
 	ouro_label.text = "Ouro  %d" % int(estado.ouro)
