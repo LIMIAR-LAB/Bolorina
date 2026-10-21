@@ -3,6 +3,7 @@ const UI = preload("res://scripts/ui/tema_vilarejo.gd")
 const Partidas = preload("res://scripts/inicio/partidas.gd")
 const Aparencia = preload("res://scripts/avatar/aparencia.gd")
 const Visual = preload("res://scripts/ilha/equipamento_visual.gd")
+const TituloVisual = preload("res://scripts/inicio/titulo_visual.gd")
 const DIRS := ["south","south-west","west","north-west","north","north-east","east","south-east"]
 const CORES := {
 	"pele":["e7b382","f4c99e","dba17c","be8059","9b6347","754832","50352d"],
@@ -40,23 +41,27 @@ func _ready() -> void:
 	raiz.set_anchors_preset(Control.PRESET_FULL_RECT)
 	raiz.theme=UI.tema()
 	add_child(raiz)
-	var bg:=TextureRect.new()
-	bg.set_anchors_preset(Control.PRESET_FULL_RECT)
-	bg.expand_mode=TextureRect.EXPAND_IGNORE_SIZE
-	bg.stretch_mode=TextureRect.STRETCH_KEEP_ASPECT_COVERED
-	var imagem:=Image.load_from_file(ProjectSettings.globalize_path("res://art/ui/telas/porto_velho.png"))
-	var atlas:=AtlasTexture.new()
-	atlas.atlas=ImageTexture.create_from_image(imagem)
-	# Usa a parte do cenario sem a legenda incorporada na imagem de apresentacao.
-	atlas.region=Rect2(0,0,imagem.get_width(),imagem.get_height()*0.78)
-	bg.texture=atlas
-	bg.mouse_filter=Control.MOUSE_FILTER_IGNORE
-	raiz.add_child(bg)
-	var shade:=ColorRect.new()
-	shade.set_anchors_preset(Control.PRESET_FULL_RECT)
-	shade.color=Color(0.04,0.05,0.07,0.70)
-	shade.mouse_filter=Control.MOUSE_FILTER_IGNORE
-	raiz.add_child(shade)
+	# Bolorina 21/10: tela inicial com fundo vivo 3D (Mirante da Cascata); a pausa mantem o fundo antigo
+	if gerenciador == null:
+		TituloVisual.fundo(raiz)
+	else:
+		var bg:=TextureRect.new()
+		bg.set_anchors_preset(Control.PRESET_FULL_RECT)
+		bg.expand_mode=TextureRect.EXPAND_IGNORE_SIZE
+		bg.stretch_mode=TextureRect.STRETCH_KEEP_ASPECT_COVERED
+		var imagem:=Image.load_from_file(ProjectSettings.globalize_path("res://art/ui/telas/porto_velho.png"))
+		var atlas:=AtlasTexture.new()
+		atlas.atlas=ImageTexture.create_from_image(imagem)
+		# Usa a parte do cenario sem a legenda incorporada na imagem de apresentacao.
+		atlas.region=Rect2(0,0,imagem.get_width(),imagem.get_height()*0.78)
+		bg.texture=atlas
+		bg.mouse_filter=Control.MOUSE_FILTER_IGNORE
+		raiz.add_child(bg)
+		var shade:=ColorRect.new()
+		shade.set_anchors_preset(Control.PRESET_FULL_RECT)
+		shade.color=Color(0.04,0.05,0.07,0.70)
+		shade.mouse_filter=Control.MOUSE_FILTER_IGNORE
+		raiz.add_child(shade)
 	pagina=Control.new()
 	pagina.set_anchors_preset(Control.PRESET_FULL_RECT)
 	raiz.add_child(pagina)
@@ -95,6 +100,9 @@ func botao(pai: Node, txt: String, pos: Vector2, tam: Vector2, acao: Callable) -
 
 func principal() -> void:
 	limpar("principal")
+	if gerenciador == null:
+		principal_titulo()
+		return
 	UI.rotulo(pagina,"ILHA DAS\nCINZAS",Vector2(110,210),78,true)
 	texto(pagina,"Cultive um lar. Explore o que restou.",Vector2(118,430),25)
 	var p:=painel(Vector2(1000,190),Vector2(460,530))
@@ -112,6 +120,38 @@ func principal() -> void:
 	else:
 		botao(p,"Sair",Vector2(40,y),Vector2(380,60),func():get_tree().quit())
 	texto(pagina,"Ilha das Cinzas · Protótipo em desenvolvimento",Vector2(116,814),18)
+
+## Bolorina 21/10: menu inicial redesenhado (mesmas acoes: novo jogo, carregar, configuracoes, sair)
+func principal_titulo() -> void:
+	var fonte := UI.fonte(true)
+	TituloVisual.logo(pagina, Vector2(104, 92), fonte)
+	var p := TituloVisual.painel(pagina, Vector2(96, 382), Vector2(470, 352))
+	var itens := [["Novo jogo", novo_jogo, false], ["Carregar jogo", carregar, Partidas.listar().is_empty()], ["Configurações", configuracoes, false], ["Sair", func(): get_tree().quit(), false]]
+	var y := 34.0
+	var primeiro: Button = null
+	var anterior: Button = null
+	for it in itens:
+		var b := Button.new()
+		b.text = String(it[0])
+		b.position = Vector2(26, y)
+		b.size = Vector2(418, 62)
+		b.disabled = bool(it[2])
+		b.pressed.connect(it[1])
+		p.add_child(b)
+		TituloVisual.estilizar(b, fonte, it[0] == "Novo jogo")
+		if anterior:
+			anterior.focus_neighbor_bottom = anterior.get_path_to(b)
+			b.focus_neighbor_top = b.get_path_to(anterior)
+		if primeiro == null and not b.disabled:
+			primeiro = b
+		anterior = b
+		y += 74.0
+	if primeiro:
+		primeiro.call_deferred("grab_focus")
+	var dica := texto(pagina, "↑ ↓  escolher   ·   Enter / A  confirmar", Vector2(124, 752), 17)
+	dica.modulate = Color(1, 1, 1, 0.7)
+	var rodape := texto(pagina, "Protótipo em desenvolvimento  ·  música: RandomMind (CC0)", Vector2(1080, 852), 15)
+	rodape.modulate = Color(1, 1, 1, 0.6)
 
 func novo_jogo() -> void:
 	perfil=Aparencia.novo()

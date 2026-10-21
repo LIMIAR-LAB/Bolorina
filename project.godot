@@ -23,6 +23,7 @@ environment/defaults/default_clear_color=Color(0.055,0.07,0.10,1)
 PhantomCameraManager="*res://addons/phantom_camera/scripts/managers/phantom_camera_manager.gd"
 SimpleGrass="*res://addons/simplegrasstextured/singleton.tscn"
 DialogueManager="*res://addons/dialogue_manager/dialogue_manager.gd"
+Musica="*res://scripts/audio/musica.gd"
 
 [editor_plugins]
 enabled=PackedStringArray("res://addons/phantom_camera/plugin.cfg", "res://addons/simplegrasstextured/plugin.cfg", "res://addons/dialogue_manager/plugin.cfg")

@@ -620,6 +620,35 @@
    "requer_visita": "estacao_depois_de_ontem"
   },
   {
+   "id": "mirante_cascata",
+   "nome": "Mirante da Cascata",
+   "cena": "res://scenes/mirante_cascata/mirante_cascata.tscn",
+   "tipo": "mapa_novo",
+   "categoria": "mirante",
+   "chegada": "viagem",
+   "mapa": [
+    760,
+    250
+   ],
+   "raio": [
+    70,
+    50
+   ],
+   "mundo": null,
+   "bioma": "penhasco",
+   "desc": "Beira de penhasco com a grande cascata e o pôr do sol eterno. Pise no altar dourado para admirar a vista.",
+   "adaptador": "res://scripts/mundo/area_mapa_novo.gd",
+   "ilha": "primeira_ilha",
+   "regiao": "Ilha das Cinzas",
+   "pontos_de_entrada": [
+    {
+     "id": "viagem",
+     "descricao": "Trilha do mirante (chegada pelo mapa-múndi)"
+    }
+   ],
+   "autor": "Bolorina 21/10/2026: cena 3D com luz (arte-mundos)"
+  },
+  {
    "id": "ilha_mare",
    "nome": "Ilha da Maré do Tempo",
    "cena": "res://scenes/ilha_mare_do_tempo.tscn",

@@ -1,0 +1,14 @@
+{
+ "nota": "Trilhas da Bolorina (21/10/2026). Todas CC0 (RandomMind, OpenGameArt). Ver art/audio/musica/CREDITOS.md. 'areas' escolhe a trilha por id de area; 'categorias' por categoria do data/areas.json; o resto toca 'exploracao'.",
+ "trilhas": {
+  "titulo": "res://art/audio/musica/titulo_rising_moon.ogg",
+  "exploracao": "res://art/audio/musica/exploracao_medieval_exploration.ogg",
+  "vila": "res://art/audio/musica/vila_old_tower_inn_loop.ogg",
+  "batalha": "res://art/audio/musica/batalha_medieval_battle.ogg"
+ },
+ "volume_db": {"titulo": -6.0, "exploracao": -9.0, "vila": -9.0, "batalha": -7.0},
+ "areas": {"arena": "batalha", "masmorra": "batalha", "vila": "vila", "porto_velho": "vila", "mirante_cascata": "titulo"},
+ "categorias": {"masmorra": "batalha", "arena": "batalha", "masmorra_prototipo": "batalha"},
+ "cenas": {"res://inicio.tscn": "titulo", "res://combat_arena.tscn": "batalha", "res://dungeon_teste.tscn": "batalha"},
+ "crossfade_s": 2.0
+}
