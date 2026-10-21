@@ -21,4 +21,14 @@ Só entraram no repositório os arquivos efetivamente usados.
 ## Interface (`art/ui/titulo/`)
 - Kenney Fantasy UI Borders: https://kenney.nl/assets/fantasy-ui-borders (moldura_menu, moldura_botao, divisor)
 
-Shaders do Mirante (`shaders/mirante/`): autoria própria (Bolorina). Esta entrega não usa sprites, ícones nem VFX em pixel art.
+Shaders do Mirante (`shaders/mirante/`, inclusive `chao` e `holograma` da 2ª passada): autoria própria (Bolorina).
+
+## 2ª passada: decoração e VFX (todos CC0 1.0, baixados de graça em 20/10/2026)
+| Pasta | Pack | Autor | Fonte | Arquivos usados |
+|---|---|---|---|---|
+| `art/decoracao/warped_city/` | Warped City | ansimuz | https://ansimuz.itch.io/warped-city | letreiros neon, monitor, placa do hotel, antena |
+| `art/vfx/portal/` | Magic pack | SpritePilot | https://spritepilot.com/free-game-assets/magic | portal-32px_strip8, teleport-32px_strip12 |
+| `art/vfx/portal/` | Animation-32x32 Portal | Virusystem | https://virusystem.itch.io/animation-portal | portal_virusystem_strip8 |
+| `art/vfx/particulas/` | Particle Pack | Kenney | https://kenney.nl/assets/particle-pack | magic_02, spark_01, smoke_04 |
+
+Cada pasta tem seu `FONTE_E_LICENCA.txt`.

@@ -174,6 +174,16 @@ func _ambiente() -> void:
 	sol.shadow_enabled = true
 	sol.directional_shadow_max_distance = 120.0
 	vista.add_child(sol)
+	_sol = sol
+	sol.shadow_blur = 1.5
+	var rim := DirectionalLight3D.new()
+	rim.name = "LuzDeContorno"
+	rim.light_color = Color(1.0, 0.70, 0.45)
+	rim.light_energy = 0.0
+	rim.light_specular = 1.2
+	vista.add_child(rim)
+	rim.rotation_degrees = Vector3(-14.0, 180.0, 0.0)
+	_rim = rim
 	sol.rotation_degrees = Vector3(-19.0, 172.0, 0.0)
 	# luz de preenchimento fria vinda do lado da camera
 	var fill := DirectionalLight3D.new()
@@ -208,10 +218,10 @@ func _terreno() -> void:
 	_bloco(t, Vector3(17, -10, -30), Vector3(26, 34, 22), Vector3.ZERO, false)
 	_bloco(t, Vector3(0, -12, -32), Vector3(9, 34, 18), Vector3.ZERO, false)
 	# laterais do canion (fecham o enquadramento)
-	_bloco(t, Vector3(-24, -14, -14), Vector3(12, 30, 16), Vector3(0, 8, 0), false)
-	_bloco(t, Vector3(24, -14, -14), Vector3(12, 30, 16), Vector3(0, -8, 0), false)
+	_bloco(t, Vector3(-24, -17, -14), Vector3(12, 30, 16), Vector3(0, 8, 0), false)
+	_bloco(t, Vector3(24, -17, -14), Vector3(12, 30, 16), Vector3(0, -8, 0), false)
 	# picos ao longe (silhuetas 3D com neblina)
-	for i in 9:
+	for i in 0:
 		var x := -70.0 + i * 17.0 + r.randf_range(-5, 5)
 		var alt := r.randf_range(18, 42)
 		var pico := MeshInstance3D.new()
@@ -271,7 +281,7 @@ func _agua() -> void:
 	var pp := PlaneMesh.new()
 	pp.size = Vector2(60, 26)
 	poco.mesh = pp
-	poco.material_override = _mat("agua", {"fluxo": Vector2(0.05, 0.12)})
+	poco.material_override = _mat("agua", {"fluxo": Vector2(0.05, 0.12), "centro_ondas": vista.to_global(Vector3(0, -26.5, -20.5)), "ondas": 1.0})
 	poco.position = Vector3(0, -26.5, -14)
 	vista.add_child(poco)
 
@@ -283,9 +293,9 @@ func _props() -> void:
 	var arv := _modelo(h + "tree_pine_yellow_large.gltf", Vector3(-15, 7, -36), 6.0, 20)
 	_modelo(h + "tree_pine_orange_large.gltf", Vector3(-22, 7, -26), 3.0, 70)
 	_modelo(h + "tree_pine_yellow_medium.gltf", Vector3(-9, 7, -25), 2.2, 10)
-	_modelo(h + "tree_pine_orange_medium.gltf", Vector3(11, 7, -25), 2.4, 40)
-	_modelo(h + "tree_pine_yellow_large.gltf", Vector3(20, 7, -30), 3.2, 120)
-	_modelo(h + "tree_dead_large.gltf", Vector3(7.5, 7, -22.5), 2.6, 200)
+	_modelo(h + "tree_pine_orange_medium.gltf", Vector3(16, 7, -27), 2.4, 40)
+	_modelo(h + "tree_pine_yellow_large.gltf", Vector3(25, 7, -32), 3.2, 120)
+	_modelo(h + "tree_dead_large.gltf", Vector3(-7.5, 7, -22.5), 2.2, 200)
 	if arv:
 		var luz := OmniLight3D.new()
 		luz.light_color = Color(1.0, 0.78, 0.35)
@@ -310,16 +320,7 @@ func _props() -> void:
 	# planalto: pinheiros, rochas, cerca de pedra quebrada e o caminho
 	var r := RandomNumberGenerator.new()
 	r.seed = 77
-	for p in [Vector3(-11, 0, 10), Vector3(-10.5, 0, 1), Vector3(-12, 0, 6), Vector3(11, 0, 9.5), Vector3(11.8, 0, 2.5), Vector3(9.5, 0, 11)]:
-		_modelo(k + ["pine.glb", "pine-crooked.glb", "pine-fall.glb"][r.randi() % 3], p, r.randf_range(2.2, 3.0), r.randf_range(0, 360))
-	for p in [Vector3(-7, 0, -2.6), Vector3(7.5, 0, -2.4), Vector3(-12, 0, -2), Vector3(12, 0, -1.5), Vector3(-5, 0, 11), Vector3(6, 0, 10.5)]:
-		_modelo(k + ["rocks.glb", "rocks-tall.glb"][r.randi() % 2], p, r.randf_range(1.8, 2.8), r.randf_range(0, 360))
-	for i in 5:
-		_modelo(k + "stone-wall-damaged.glb", Vector3(-11.5 + i * 2.0, 0, -3.4), 1.4, 0)
-		_modelo(k + "stone-wall-damaged.glb", Vector3(4.5 + i * 2.0, 0, -3.4), 1.4, 180)
-	_modelo(k + "debris.glb", Vector3(-4.5, 0, -2.6), 1.6, 30)
-	_modelo(k + "trunk-long.glb", Vector3(-8, 0, 4.5), 1.8, 70)
-	_modelo(k + "bench-damaged.glb", Vector3(4.2, 0, -1.8), 1.6, 180)
+	_planalto()
 	# o Mirante: altar de pedra com chama dourada (a "graca" do lugar) e braseiros
 	_modelo(k + "altar-stone.glb", Vector3(0, 0, -7.4), 1.6, 0)
 	for x in [-2.9, 2.9]:
@@ -349,6 +350,87 @@ func _props() -> void:
 		raio.rotation_degrees = Vector3(-78.0, 0.0, -10.0 + i * 7.0)
 		raio.cast_shadow = GeometryInstance3D.SHADOW_CASTING_SETTING_OFF
 		vista.add_child(raio)
+
+# ------------------------------------------------------------------ planalto (passo 2)
+const QN := "quaternius_natureza/"
+func _trilha_x(z: float) -> float:
+	# mesma curva do shader chao.gdshader (z local da malha = z da vista - 11)
+	return sin((z - 11.0) * 0.22) * 1.3
+
+func _longe_da_trilha(p: Vector3, folga: float) -> bool:
+	return absf(p.x - _trilha_x(p.z)) > folga
+
+func _planalto() -> void:
+	# chao com textura (grama dourada, flores e trilha ate o altar)
+	var chao := MeshInstance3D.new()
+	var pm := PlaneMesh.new()
+	pm.size = Vector2(30, 30)
+	pm.subdivide_width = 1
+	chao.mesh = pm
+	chao.material_override = _mat("chao")
+	chao.position = Vector3(0, 0.012, 11.0)
+	vista.add_child(chao)
+	var lip := MeshInstance3D.new()
+	var pm2 := PlaneMesh.new()
+	pm2.size = Vector2(7, 5)
+	lip.mesh = pm2
+	lip.material_override = _mat("chao", {"trilha_z0": -40.0})
+	lip.position = Vector3(0, 0.012, -6.0)
+	vista.add_child(lip)
+	var r := RandomNumberGenerator.new()
+	r.seed = 4242
+	# pedras da trilha
+	var z := 20.0
+	while z > -6.0:
+		_modelo(QN + ["RockPath_Round_Small_1.gltf", "RockPath_Round_Small_2.gltf", "RockPath_Round_Small_3.gltf"][r.randi() % 3], Vector3(_trilha_x(z) + r.randf_range(-0.4, 0.4), 0.02, z), r.randf_range(0.9, 1.3), r.randf_range(0, 360))
+		z -= r.randf_range(1.4, 2.2)
+	# arvores variadas (outono/poente), longe da trilha e das bordas do penhasco
+	var arvores := ["CommonTree_3_Outono.gltf", "Pine_1.gltf", "CommonTree_4_Outono.gltf", "TwistedTree_1.gltf", "TwistedTree_3.gltf", "Pine_2.gltf", "Pine_4.gltf"]
+	var spots := [Vector3(-11.5, 0, 9.5), Vector3(-10.5, 0, 1.5), Vector3(-12, 0, 16), Vector3(-9, 0, 21), Vector3(11, 0, 8.5), Vector3(12, 0, 2), Vector3(9.5, 0, 15), Vector3(12, 0, 21), Vector3(-6, 0, 24), Vector3(6, 0, 24)]
+	for i in spots.size():
+		_modelo(QN + arvores[i % arvores.size()], spots[i], r.randf_range(0.75, 1.05), r.randf_range(0, 360))
+	_modelo("kaykit_halloween_bits/tree_pine_yellow_medium.gltf", Vector3(-12.2, 0, 5), 1.8, 10)
+	_modelo("kaykit_halloween_bits/tree_pine_orange_medium.gltf", Vector3(12.4, 0, 12), 1.8, 50)
+	# grama alta, flores, arbustos, samambaias, seixos
+	var miudos := ["Grass_Common_Tall.gltf", "Grass_Wispy_Tall.gltf", "Flower_3_Group.gltf", "Flower_4_Group.gltf", "Bush_Common_Flowers.gltf", "Fern_1.gltf", "Clover_1.gltf", "Pebble_Round_1.gltf", "Plant_1.gltf"]
+	var n := 0
+	var tent := 0
+	while n < 90 and tent < 600:
+		tent += 1
+		var p := Vector3(r.randf_range(-12.5, 12.5), 0.0, r.randf_range(-3.0, 25.0))
+		if not _longe_da_trilha(p, 1.6) or p.distance_to(Vector3(0, 0, 7.5)) < 2.2 or p.distance_to(Vector3(-7.5, 0, 6)) < 3.0:
+			continue
+		_modelo(QN + miudos[r.randi() % miudos.size()], p, r.randf_range(0.7, 1.3), r.randf_range(0, 360))
+		n += 1
+	# rochas naturais na beira do penhasco (balaustrada natural) e nas quinas
+	for i in 11:
+		var x := -12.5 + i * 2.5
+		if absf(x) < 3.6:
+			continue
+		_modelo(QN + ["Rock_Medium_1.gltf", "Rock_Medium_2.gltf", "Rock_Medium_3.gltf"][i % 3], Vector3(x + r.randf_range(-0.5, 0.5), -0.2, -3.6 + r.randf_range(-0.3, 0.3)), r.randf_range(1.3, 2.1), r.randf_range(0, 360))
+	for p in [Vector3(-3.5, 0, -8.2), Vector3(3.4, 0, -8.0), Vector3(-3.8, 0, -4.2), Vector3(3.9, 0, -4.0)]:
+		_modelo(QN + "Rock_Medium_2.gltf", p, r.randf_range(1.0, 1.4), r.randf_range(0, 360))
+	_modelo("kenney_graveyard_kit/pillar-small.glb", Vector3(-2.2, 0, -5.0), 1.6, 0)
+	_modelo("kenney_graveyard_kit/pillar-small.glb", Vector3(2.2, 0, -5.0), 1.6, 0)
+	_modelo("kenney_graveyard_kit/bench-damaged.glb", Vector3(5.2, 0, -1.6), 1.6, 200)
+	_modelo("kenney_graveyard_kit/trunk-long.glb", Vector3(-8.5, 0, 12.5), 1.8, 70)
+	# lagoa com mini cascata (ondulacoes) a esquerda da trilha
+	var lagoa := MeshInstance3D.new()
+	var cil := CylinderMesh.new()
+	cil.top_radius = 2.6
+	cil.bottom_radius = 2.6
+	cil.height = 0.05
+	cil.radial_segments = 28
+	lagoa.mesh = cil
+	lagoa.material_override = _mat("agua", {"fluxo": Vector2(0.02, 0.05), "centro_ondas": vista.to_global(Vector3(-8.6, 0, 4.4)), "ondas": 1.0})
+	lagoa.position = Vector3(-7.5, 0.05, 6.0)
+	vista.add_child(lagoa)
+	for i in 12:
+		var ang := TAU * i / 12.0
+		_modelo(QN + ["Rock_Medium_1.gltf", "Pebble_Round_2.gltf", "Rock_Medium_3.gltf"][i % 3], Vector3(-7.5 + cos(ang) * 2.8, -0.15, 6.0 + sin(ang) * 2.8), r.randf_range(0.55, 0.9) if i % 3 != 1 else 1.4, r.randf_range(0, 360))
+	_modelo(QN + "Rock_Medium_1.gltf", Vector3(-8.9, 0, 3.6), 2.0, 30)
+	_queda(Vector3(-8.6, 1.35, 4.25), 0.9, 1.35, 2.2, 3.0)
+	_parede(Vector3(-7.5, 1, 6.0), Vector3(4.6, 3, 4.6))
 
 # ------------------------------------------------------------------ particulas
 func _textura_suave() -> Texture2D:
@@ -446,7 +528,7 @@ func _ceu_seguir() -> void:
 	var m: ShaderMaterial = ceu.material_override
 	m.set_shader_parameter("horizonte", hz)
 	m.set_shader_parameter("aspecto", asp)
-	m.set_shader_parameter("sol", Vector2(0.5, hz - 0.03))
+	m.set_shader_parameter("sol", Vector2(0.66 if vitrine else 0.5, hz - 0.03))
 
 # ------------------------------------------------------------------ o mirante (tomada cinematografica)
 func _mirante_area() -> void:
@@ -484,11 +566,18 @@ func _saiu(b: Node) -> void:
 func _pose_cine(t: float) -> void:
 	# passeio lento: de frente para a queda, com o sol atras da cortina d'agua
 	var s := sin(t * 0.07)
+	if vitrine:
+		# tela inicial: menu a esquerda; cachoeira e sol a direita do centro
+		cam_cine.position = Vector3(-4.0 + s * 1.5, 12.0 + cos(t * 0.05) * 0.6, 9.0 - s * 1.0)
+		cam_cine.look_at(vista.to_global(Vector3(-7.5 + s * 1.0, 4.0, -34.0)), Vector3.UP)
+		return
 	var pos := Vector3(4.0 + s * 5.0, 13.0 + cos(t * 0.05) * 1.2, 15.0 - s * 2.0)
 	cam_cine.position = pos
 	cam_cine.look_at(vista.to_global(Vector3(-1.0 + s * 2.0, 3.0, -34.0)), Vector3.UP)
 
 var _we: WorldEnvironment
+var _sol: DirectionalLight3D
+var _rim: DirectionalLight3D
 func _ajustar_neblina() -> void:
 	# camera isometrica (ortografica, 40 m de distancia) acumula neblina demais: versao mais limpa
 	var cam := get_viewport().get_camera_3d()
@@ -497,8 +586,17 @@ func _ajustar_neblina() -> void:
 	if cam == null or _we == null:
 		return
 	var orto := cam.projection == Camera3D.PROJECTION_ORTHOGONAL
-	_we.environment.volumetric_fog_density = 0.0008 if orto else 0.0045
-	_we.environment.fog_density = 0.0006 if orto else 0.0022
+	_we.environment.volumetric_fog_density = 0.0008 if orto else 0.0028
+	_we.environment.fog_density = 0.0006 if orto else 0.0016
+	_we.environment.adjustment_contrast = 1.06 if orto else 1.12
+	# isometrica: sol mais alto e de lado (sombras curtas e suaves) + luz de contorno quente por tras;
+	# cinematografica: sol baixo em contraluz, sombras longas do poente
+	if _sol:
+		_sol.rotation_degrees = Vector3(-42.0, 205.0, 0.0) if orto else Vector3(-19.0, 172.0, 0.0)
+		_sol.shadow_opacity = 0.55 if orto else 0.85
+		_sol.light_energy = 1.35 if orto else 1.6
+	if _rim:
+		_rim.light_energy = 0.9 if orto else 0.35
 	if orto and is_instance_valid(get_parent()) and get_parent().get("cam_size") != null and cam.size < 22.0:
 		get_parent().cam_size = 22.0
 		cam.size = 22.0

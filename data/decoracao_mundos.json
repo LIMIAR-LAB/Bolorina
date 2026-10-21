@@ -1,0 +1,36 @@
+{
+ "nota": "Bolorina 21/10/2026 (arte-mundos, passo 2). Lido pelo autoload DecoracaoMundos (scripts/mundo/decoracao_mundos.gd): enfeita cenas pelo caminho da cena, as masmorras pelo tema e poe portal nas pedras/pontos de viagem. So decoracao (sem colisao, sem logica). Posicoes [x, z] no mapa; y relativo ao chao.",
+ "portal": {"folha": "res://art/vfx/portal/portal-32px_strip8.png", "quadros": 8, "fps": 10, "altura": 2.4, "y": 1.5, "cor_luz": "b07cff"},
+ "cenas": {
+  "res://scenes/ilha_futurista/ilha_futurista.tscn": [
+   {"tipo": "holograma", "pos": [0, 1], "y": 4.2, "tam": [5.5, 2.4], "cor": "3ae0ff", "texto": "AGORA: ONTEM · 23:59:59\nrelógio oficial da estação", "gira": true},
+   {"tipo": "holograma", "pos": [44, -4], "y": 3.0, "tam": [4.0, 1.6], "cor": "ff3df0", "texto": "PARTIDAS: ONTEM 23:59"},
+   {"tipo": "neon", "quadros": ["res://art/decoracao/warped_city/banner-neon/banner-neon-1.png", "res://art/decoracao/warped_city/banner-neon/banner-neon-2.png", "res://art/decoracao/warped_city/banner-neon/banner-neon-3.png", "res://art/decoracao/warped_city/banner-neon/banner-neon-4.png"], "pos": [-8, -6], "y": 0.2, "altura": 4.2, "luz": "ff3df0"},
+   {"tipo": "neon", "quadros": ["res://art/decoracao/warped_city/banner-big/banner-big-1.png", "res://art/decoracao/warped_city/banner-big/banner-big-2.png", "res://art/decoracao/warped_city/banner-big/banner-big-3.png", "res://art/decoracao/warped_city/banner-big/banner-big-4.png"], "pos": [8, -6], "y": 0.2, "altura": 5.0, "luz": "3ae0ff"},
+   {"tipo": "neon", "quadros": ["res://art/decoracao/warped_city/banner-coke/banner-coke-1.png", "res://art/decoracao/warped_city/banner-coke/banner-coke-2.png", "res://art/decoracao/warped_city/banner-coke/banner-coke-3.png"], "pos": [-9, 8], "y": 0.2, "altura": 4.0, "luz": "ff5050"},
+   {"tipo": "neon", "quadros": ["res://art/decoracao/warped_city/banner-side/banner-side-1.png", "res://art/decoracao/warped_city/banner-side/banner-side-2.png", "res://art/decoracao/warped_city/banner-side/banner-side-3.png", "res://art/decoracao/warped_city/banner-side/banner-side-4.png"], "pos": [9, 8], "y": 0.2, "altura": 4.0, "luz": "b8f0ff"},
+   {"tipo": "neon", "quadros": ["res://art/decoracao/warped_city/hotel-sign.png"], "pos": [-3.5, 16], "y": 2.2, "altura": 1.6, "luz": "ffb03a"},
+   {"tipo": "neon", "quadros": ["res://art/decoracao/warped_city/banner-sushi/banner-sushi-1.png", "res://art/decoracao/warped_city/banner-sushi/banner-sushi-2.png", "res://art/decoracao/warped_city/banner-sushi/banner-sushi-3.png"], "pos": [3.5, 18], "y": 2.4, "altura": 0.9, "luz": "ff3df0"},
+   {"tipo": "neon", "quadros": ["res://art/decoracao/warped_city/monitorface/monitor-face-1.png", "res://art/decoracao/warped_city/monitorface/monitor-face-2.png", "res://art/decoracao/warped_city/monitorface/monitor-face-3.png", "res://art/decoracao/warped_city/monitorface/monitor-face-4.png"], "pos": [-3.5, 24], "y": 1.6, "altura": 1.2, "luz": "3ae0ff"},
+   {"tipo": "neon", "quadros": ["res://art/decoracao/warped_city/banner-open.png"], "pos": [3.5, 26], "y": 0.4, "altura": 2.6, "luz": "60ff9a"},
+   {"tipo": "neon", "quadros": ["res://art/decoracao/warped_city/antenna.png"], "pos": [12, -12], "y": 0.0, "altura": 6.0, "luz": "ff3df0"},
+   {"tipo": "luz", "pos": [0, 12], "y": 2.5, "cor": "3ae0ff", "energia": 2.0, "alcance": 9},
+   {"tipo": "luz", "pos": [0, 24], "y": 2.5, "cor": "ff3df0", "energia": 2.0, "alcance": 9},
+   {"tipo": "faiscas", "pos": [0, 1], "y": 1.0, "cor": "8ff0ff", "area": [9, 2, 9]}
+  ],
+  "res://scenes/vila_grande/vila_grande.tscn": [
+   {"tipo": "modelo", "m": "res://art/models/kaykit_resource_bits/Iron_Bars_Stack_Small.gltf", "pos": [-34.4, -4.4], "ang": 20, "escala": 1.5},
+   {"tipo": "modelo", "m": "res://art/models/kaykit_resource_bits/Wood_Log_Stack.gltf", "pos": [-42.2, -4.6], "ang": 90, "escala": 1.4},
+   {"tipo": "modelo", "m": "res://art/models/kaykit_resource_bits/Copper_Nugget_Large.gltf", "pos": [-34.0, -6.3], "ang": 0, "escala": 1.6},
+   {"tipo": "modelo", "m": "res://art/models/kaykit_resource_bits/Stone_Chunks_Large.gltf", "pos": [-42.0, -6.6], "ang": 40, "escala": 1.4},
+   {"tipo": "luz", "pos": [-38, -4.4], "y": 1.2, "cor": "ff8a3a", "energia": 2.4, "alcance": 7, "tremula": true},
+   {"tipo": "brasas", "pos": [-38, -4.6], "y": 0.8, "cor": "ffa040", "area": [1.4, 0.3, 0.6]},
+   {"tipo": "fumaca", "pos": [-38, -10], "y": 7.5, "cor": "6a6260"}
+  ]
+ },
+ "masmorras": {
+  "minas_da_cinza": {"cristais": 18, "cores": ["58e0ff", "ffb04a", "b07cff"], "pilhas": 12, "lanternas": 6,
+   "modelos_pilha": ["res://art/models/kaykit_resource_bits/Copper_Nugget_Large.gltf", "res://art/models/kaykit_resource_bits/Iron_Nugget_Large.gltf", "res://art/models/kaykit_resource_bits/Gold_Nugget_Large.gltf", "res://art/models/kaykit_resource_bits/Silver_Nuggets.gltf", "res://art/models/kaykit_resource_bits/Stone_Chunks_Large.gltf", "res://art/models/kaykit_resource_bits/Parts_Pile_Medium.gltf", "res://art/models/kaykit_resource_bits/Wood_Planks_Stack_Medium.gltf"],
+   "lanterna": "res://art/models/kaykit_halloween_bits/lantern_standing.gltf"}
+ }
+}
