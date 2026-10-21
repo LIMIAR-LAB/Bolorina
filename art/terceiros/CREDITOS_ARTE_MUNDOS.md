@@ -32,3 +32,8 @@ Shaders do Mirante (`shaders/mirante/`, inclusive `chao` e `holograma` da 2ª pa
 | `art/vfx/particulas/` | Particle Pack | Kenney | https://kenney.nl/assets/particle-pack | magic_02, spark_01, smoke_04 |
 
 Cada pasta tem seu `FONTE_E_LICENCA.txt`.
+
+## 3ª passada: tela inicial
+- `art/ui/titulo/fundo_titulo.png`: arte conceitual do próprio Thiago Martinelli. A interface pintada na imagem foi removida pela Bolorina.
+- `art/ui/titulo/icones/` (folha, baú, engrenagem, porta, chevron e ornamentos): desenhados pela Bolorina, autoria própria.
+- `shaders/titulo/fundo_titulo.gdshader`: autoria própria.

@@ -45,8 +45,29 @@ func run() -> void:
 		current_scene = menu
 		await frames(45)
 		await foto("inicio_titulo")
+		var botoes: Array = menu.pagina.find_children("*", "Button", true, false)
+		var carregar_b: Button = null
+		for b in botoes:
+			if b.text == "Carregar jogo": carregar_b = b
+		for estado in [true, false]:
+			carregar_b.disabled = estado
+			carregar_b.get_node("Icone").modulate = Color(0.8, 0.72, 0.64, 0.42) if estado else Color("e8d2ae")
+			for i in botoes.size():
+				var b: Button = botoes[i]
+				if b.disabled: continue
+				b.grab_focus(); await frames(14)
+				await foto("inicio_foco_%d_%s" % [i, "carregar_apagado" if estado else "carregar_ativo"])
 		menu.carregar(); await frames(10); await foto("inicio_carregar")
 		menu.configuracoes(); await frames(10); await foto("inicio_configuracoes")
+	elif alvo == "filme_titulo":
+		var menu = load("res://inicio.tscn").instantiate()
+		root.add_child(menu); current_scene = menu
+		await frames(20)
+		var botoes: Array = menu.pagina.find_children("*", "Button", true, false)
+		await gravar(210, func(t):
+			var alvo_i := int(t * 4.0) % 4
+			if botoes[alvo_i].disabled: alvo_i = 0
+			if not botoes[alvo_i].has_focus(): botoes[alvo_i].grab_focus())
 	elif alvo == "tour":
 		await tour()
 	elif alvo.begins_with("cena:"):

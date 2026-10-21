@@ -17,3 +17,9 @@
   - Props, brasas, fumaça e luz tremulante em volta da Ferraria do Porto. O código da forja não foi tocado.
   - Para desligar: `ILHA_SEM_DECORACAO=1`.
 - Monstros pixel nas masmorras: **não feito**. Não havia ponto seguro e só por dados sem mexer no combate.
+
+## 3ª passada: tela inicial no estilo da referência do Thiago
+- **Fundo:** a própria arte do Thiago em resolução cheia (1672x941), com a interface pintada removida. Preenche a tela em qualquer proporção (cover).
+- **Animação do fundo:** Ken Burns lento (zoom entre 1,045 e 1,095 e deslocamento, ciclo de 36 s), brilho correndo nas 6 cachoeiras, sol pulsando, cinzas caindo e brasas subindo.
+- **Reserva:** o fundo 3D do Mirante (`TituloVisual.fundo_3d`) só entra se a imagem não carregar.
+- **Menu:** quatro placas separadas, cada uma com moldura dupla e ícone. No foco: borda dourada, brilho, chevron e leve deslize. Carregar jogo fica apagado sem save. A navegação por teclado e controle continua igual.

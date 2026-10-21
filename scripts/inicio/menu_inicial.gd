@@ -121,37 +121,38 @@ func principal() -> void:
 		botao(p,"Sair",Vector2(40,y),Vector2(380,60),func():get_tree().quit())
 	texto(pagina,"Ilha das Cinzas · Protótipo em desenvolvimento",Vector2(116,814),18)
 
-## Bolorina 21/10: menu inicial redesenhado (mesmas acoes: novo jogo, carregar, configuracoes, sair)
+## Bolorina 21/10: menu inicial no layout da referencia do Thiago (mesmas acoes: novo jogo, carregar, configuracoes, sair)
 func principal_titulo() -> void:
 	var fonte := UI.fonte(true)
-	TituloVisual.logo(pagina, Vector2(104, 92), fonte)
-	var p := TituloVisual.painel(pagina, Vector2(96, 382), Vector2(470, 352))
-	var itens := [["Novo jogo", novo_jogo, false], ["Carregar jogo", carregar, Partidas.listar().is_empty()], ["Configurações", configuracoes, false], ["Sair", func(): get_tree().quit(), false]]
-	var y := 34.0
+	TituloVisual.logo_ref(pagina, Vector2(86, 96), fonte)
+	var itens := [["Novo jogo", novo_jogo, false, "folha"], ["Carregar jogo", carregar, Partidas.listar().is_empty(), "bau"], ["Configurações", configuracoes, false, "engrenagem"], ["Sair", func(): get_tree().quit(), false, "porta"]]
+	var y := 352.0
 	var primeiro: Button = null
 	var anterior: Button = null
 	for it in itens:
 		var b := Button.new()
 		b.text = String(it[0])
-		b.position = Vector2(26, y)
-		b.size = Vector2(418, 62)
+		b.position = Vector2(70, y)
+		b.size = Vector2(440, 70)
 		b.disabled = bool(it[2])
 		b.pressed.connect(it[1])
-		p.add_child(b)
-		TituloVisual.estilizar(b, fonte, it[0] == "Novo jogo")
+		pagina.add_child(b)
+		TituloVisual.placa(b, fonte, String(it[3]))
 		if anterior:
 			anterior.focus_neighbor_bottom = anterior.get_path_to(b)
 			b.focus_neighbor_top = b.get_path_to(anterior)
 		if primeiro == null and not b.disabled:
 			primeiro = b
 		anterior = b
-		y += 74.0
+		y += 84.0
 	if primeiro:
 		primeiro.call_deferred("grab_focus")
-	var dica := texto(pagina, "↑ ↓  escolher   ·   Enter / A  confirmar", Vector2(124, 752), 17)
-	dica.modulate = Color(1, 1, 1, 0.7)
-	var rodape := texto(pagina, "Protótipo em desenvolvimento  ·  música: RandomMind (CC0)", Vector2(1080, 852), 15)
-	rodape.modulate = Color(1, 1, 1, 0.6)
+	var dica := texto(pagina, "↑ ↓  escolher   ·   Enter / A  confirmar", Vector2(54, 836), 17)
+	dica.modulate = Color(1, 1, 1, 0.75)
+	var rodape := texto(pagina, "Protótipo em desenvolvimento  ·  música: RandomMind (CC0)", Vector2(1000, 836), 15)
+	rodape.size = Vector2(560, 30)
+	rodape.horizontal_alignment = HORIZONTAL_ALIGNMENT_RIGHT
+	rodape.modulate = Color(1, 1, 1, 0.65)
 
 func novo_jogo() -> void:
 	perfil=Aparencia.novo()
