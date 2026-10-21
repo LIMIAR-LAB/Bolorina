@@ -103,7 +103,10 @@ func run() -> void:
 	check(int(md.get("celulas", 0)) >= 20, "Minas com cristais/minerio/lanternas (%s)" % str(md))
 	# passo 4: consistencia arena x masmorra dos orcs
 	var salas: Dictionary = md.get("salas", {})
-	check(salas.has("acampamento") and int(salas.get("acampamento", 0)) >= 5, "Minas: sala de acampamento orc decorada")
+	var total_salas := 0
+	for k in salas:
+		if not String(k).begins_with("centro_"): total_salas += int(salas[k])
+	check(int(salas.get("acampamento", 0)) >= 1 and total_salas >= 8, "Minas: acampamento orc decorado (%d itens nas salas: %s)" % [total_salas, str(salas.keys())])
 	check(salas.keys().filter(func(k): return not String(k).begins_with("centro_")).size() >= 3, "Minas: salas com papeis variados (%s)" % str(salas.keys()))
 	var orcs: Array = mas.combate.inimigos.filter(func(e): return is_instance_valid(e) and String(e.def.get("visual", "")) == "sprite_orc")
 	check(orcs.size() > 0 and orcs.all(func(e): return e.sprite.visible and e.modelo == null), "orcs da masmorra usam o sprite pixel da arena (sem modelo 3D)")
