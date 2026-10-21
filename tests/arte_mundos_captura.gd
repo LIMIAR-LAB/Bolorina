@@ -27,7 +27,7 @@ func run() -> void:
 		if alvo == "vitrine":
 			await foto("mirante_vitrine")
 		else:
-			for i in 240:
+			for i in 150:
 				await process_frame
 				await foto("f_%04d" % i)
 	elif alvo.begins_with("mirante"):
